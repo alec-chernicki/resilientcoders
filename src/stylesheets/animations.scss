@@ -1,0 +1,50 @@
+@keyframes home-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4,1.4);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    float: left;
+    width: 0;
+    animation-timing-function: cubic-bezier(0, 0, 0.15, 1);
+  }
+  30% {
+    float: left;
+    width: 100%;
+  }
+  31% {
+    float: right;
+    animation-timing-function: cubic-bezier(1, 0, 0, 0);
+  }
+  69% {
+    float: right;
+    width: 0%;
+  }
+
+  70% {
+    float: left;
+    animation-timing-function: cubic-bezier(0, 0, 0.15, 1);
+  }
+  100% {
+    float: left;
+    width: 100%;
+  }
+}

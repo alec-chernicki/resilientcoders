@@ -1,0 +1,14 @@
+footer {
+  background: #333;
+  padding: 40px;
+
+  p {
+    max-width: 600px;
+    font-size: 14px;
+    color: #666;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

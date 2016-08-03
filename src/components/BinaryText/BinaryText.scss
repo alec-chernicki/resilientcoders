@@ -1,0 +1,10 @@
+@import '../../stylesheets/variables';
+
+.letter {
+  font-size: $font-size-primary;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+  height: 77px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

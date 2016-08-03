@@ -1,0 +1,51 @@
+// Aligns an absolute element within a relative container horizontally
+@mixin absolute-horizontal-center {
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+
+// Aligns an absolute element within a relative container
+@mixin absolute-all-center {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@mixin partial-width {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin transition {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+// Uses fancy @content to allow inline breakpoints
+@mixin breakpoint($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content;
+  }
+}
+
+@mixin background-image-with-dots($imageUrl) {
+  background-image: url(./dot.svg),
+                    url($imageUrl);
+}
+
+@mixin background-color-with-dots($background-color) {
+  background-image: url(./dot-dark.svg),
+                    linear-gradient($background-color, $background-color);
+
+  background-size: 6px, auto;
+}
+
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}

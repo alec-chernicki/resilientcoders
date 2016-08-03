@@ -1,0 +1,321 @@
+@import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
+
+@keyframes slick-dot-active {
+  0% {
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.3, 1.3);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.home {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  .video-container {
+    position: absolute;
+    top: -14%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  video {
+    width: 115%;
+    max-height: 115%;
+    background: transparent no-repeat url('./home-video-poster.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    color: #FFF;
+  }
+
+  .heading-one {
+    animation: home-fade-in 1s cubic-bezier(0, 1, 0.58, 1) 0.2s backwards;
+  }
+
+  .heading-two {
+    animation: home-fade-in 1s cubic-bezier(0, 1, 0.58, 1) 0.4s backwards;
+  }
+
+  p {
+    color: $text-tertiary;
+    margin-bottom: 40px;
+  }
+
+  .home-container {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    height: 410px;
+    z-index: 30;
+  }
+
+  .home-overlay {
+    background-image: url(./dot.svg),
+                      linear-gradient(90deg, rgba($background-secondary, 0.6) 30%, rgba($background-secondary, 0.3));
+    background-size: 6px, auto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+}
+
+.section-overview {
+  height: 670px;
+  position: relative;
+  background-color: $background-primary;
+  z-index: 1000;
+
+  .slick-dots {
+    text-align: left;
+    background-color: $background-secondary;
+    padding: 20px;
+    bottom: -69px;
+    width: auto;
+    float: left;
+    border-top: solid 5px #ed1b24;
+
+    li {
+      margin: 0 9px;
+    }
+
+    button {
+      &:before {
+        font-size: 10px;
+        opacity: 1;
+        content: '';
+        position: absolute;
+        font-size: 0;
+        height: 10px;
+        width: 10px;
+        top: 4px;
+        left: 4px;
+        background-color: $text-tertiary;
+        border-radius: 50%;
+      }
+
+      &:after {
+        border: solid 1px $text-tertiary;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        opacity: 0;
+        transition: opacity 0.25s ease-out, background-color 0.25s ease-out;
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+
+    .slick-active button {
+      &:before {
+        opacity: 1;
+        background-color: $accent-primary;
+      }
+      &:after {
+        animation: slick-dot-active 400ms ease-out;
+        animation-fill-mode: both;
+      }
+    }
+  }
+
+  h1 {
+    color: $text-primary;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 35px;
+  }
+
+  .section-overview-container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .program-text {
+    background: #FFF;
+    float: left;
+    width: 50%;
+    padding: 110px 60px 60px;
+    margin-top: -27px;
+    height: 625px;
+  }
+
+  .program-photo {
+    width: 50%;
+    margin-top: -81px;
+    float: right;
+    height: 610px;
+    background-color: $background-secondary;
+
+    div {
+      height: 100%;
+      width: 100%;
+    }
+
+    .one {
+      background-image: url("./coding-camp.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .two {
+      background-image: url('https://resilientcoders.s3.amazonaws.com/i/julio.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .three {
+      background-image: url('https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/willdandevin1200.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .four {
+      background-image: url('https://pbs.twimg.com/media/CknuiH8UoAAC1FU.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.section-micah {
+  background-image: radial-gradient(circle closest-corner at 80% 50%, rgba($background-secondary, 0.4) 30%, rgba($background-secondary, 0.9)),
+                    url('./micah_bw.jpg');
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;;
+  background-size: cover, cover;
+  padding: 225px 0 300px !important;
+
+  h1 {
+    animation: home-fade-in 1s cubic-bezier(0, 1, 0.58, 1) 0.5s backwards;
+  }
+
+  p {
+    color: $text-tertiary;
+  }
+}
+
+.call-to-action-container, .email-form-short {
+  @include partial-width;
+  z-index: 1000;
+}
+
+.call-to-action {
+  margin-top: -110px;
+}
+
+.video-play {
+  height: 100px;
+  background-color: rgba($background-tertiary, 0.4);
+  cursor: pointer;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid #FFF;
+  bottom: 10px;
+  right: 0;
+  @include transition;
+
+  &:hover {
+    border: 2px solid $accent-primary;
+    transform: scale(1.075, 1.075);
+
+    &:before {
+      border: 2px solid $accent-primary;
+    }
+  }
+
+  &:active {
+    transform: scale(0.925, 0.925);
+  }
+
+  &:after {
+    content: '';
+    @include absolute-all-center;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid $accent-primary;
+  }
+
+  &:before {
+    animation: pulse 2s infinite;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+  }
+}
+
+.program {
+  position: relative;
+}
+
+.tiered-program-background {
+  background-color: $background-primary;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.tiered-program {
+  text-align: center;
+  padding: 80px 0px 80px 0px;
+  background: #FFF;
+  max-width: 1150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+
+  .divider {
+    margin: 30px auto;
+  }
+
+  h1 {
+    color: $text-primary;
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  p {
+    color: $text-secondary;
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

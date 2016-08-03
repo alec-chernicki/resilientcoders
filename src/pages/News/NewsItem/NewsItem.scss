@@ -1,0 +1,88 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+.news-text {
+  font-size: 14px;
+  width: 100%;
+  margin: 0;
+  flex-shrink: 6;
+  @include transition;
+}
+
+.news-item {
+  font-family: $roboto-slab;
+  display: flex;
+  position: relative;
+
+  & + .news-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: $border-primary;
+  }
+
+  &:hover {
+    .news-note-text {
+      color: $accent-primary;
+    }
+
+    .news-text {
+      color: $text-primary;
+    }
+  }
+
+  a {
+    color: $text-secondary;
+  }
+}
+
+.news-link {
+  text-align: left;
+  display: flex;
+  padding: 18px 20px;
+}
+
+.news-featured-text {
+  color: $text-primary;
+  background: #FFF;
+  position: relative;
+  border-bottom: solid 1px $border-primary;
+  padding: 10px 15px;
+  z-index: 10;
+}
+
+.news-featured {
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    right: 0;
+    background-color: rgba($background-secondary, 0.45);
+  }
+}
+
+.news-note-text {
+  @include transition;
+  line-height: 20px;
+  font-family: $league-gothic;
+  color: $text-secondary;
+  float: left;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.news-note {
+  width: 120px;
+  flex-grow: 2;
+}

@@ -1,0 +1,89 @@
+@import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
+
+.team {
+  height: 2000px;
+  background-color: #333;
+  background-size: cover;
+  padding: 150px 60px;
+}
+
+.photo-group {
+  overflow: hidden;
+  width: 100%;
+}
+
+.photo-box {
+  float: left;
+  width: 25%;
+  cursor: pointer;
+  border: solid 1px #333;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    &:before {
+      background: rgba(#333, 0.8);
+    }
+
+    &:after,
+    .photo-box-container {
+      opacity: 1;
+    }
+
+    .photo-box-container {
+      transform: translateY(0px) rotateX(0deg);
+    }
+  }
+
+  &:before {
+    @include absolute-all-center;
+    background: rgba(#333, 0.4);
+    z-index: 100;
+    @include transition;
+    content: '';
+  }
+
+  &:after {
+    content: '';
+    height: 90%;
+    width: 90%;
+    border: solid 1px #FFF;
+    opacity: 0;
+    @include absolute-all-center;
+    @include transition;
+    z-index: 200;
+  }
+
+  img {
+    position: absolute;
+  }
+}
+
+.photo-box-container {
+  opacity: 0;
+  margin: 0 auto;
+  @include transition;
+  z-index: 200;
+  transform: translateY(-25px) rotateX(-80deg);
+  position: relative;
+}
+
+.photo-name {
+  font-size: 45px;
+  color: #FFF;
+  font-family: $league-gothic;
+  text-transform: uppercase;
+}
+
+.photo-title {
+  font-size: 18px;
+  color: #FFF;
+}
+
+.photo-text {
+
+}

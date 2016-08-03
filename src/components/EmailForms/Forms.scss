@@ -1,0 +1,40 @@
+@import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
+
+.email-form {
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+  }
+
+  input {
+    border: solid 1px #444;
+    border-right: none;
+    background: #333;
+    outline: none;
+    color: $text-tertiary;
+    width: 100%;
+    font-size: $font-size-secondary;
+    padding: 15px 25px;
+    font-family: $roboto-slab;
+
+    &:focus {
+      border: solid 1px $background-tertiary;
+      border-right: none;
+    }
+  }
+
+  button {
+    border: none;
+    outline: none;
+    background-color: $background-tertiary;
+    @include transition;
+
+    &:hover {
+      background-color: $accent-primary;
+    }
+  }
+}

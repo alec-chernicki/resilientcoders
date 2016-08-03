@@ -1,0 +1,28 @@
+@import '../../../../stylesheets/variables';
+@import '../../../../stylesheets/mixins';
+
+.work-item {
+  position: relative;
+  width: 50%;
+  padding: 25px;
+  flex-grow: 2;
+}
+
+.work-details {
+  background-color: #FFF;
+  position: absolute;
+  max-width: 90%;
+  height: 200px;
+  padding: 25px;
+  max-width: 100%;
+  bottom: -50px;
+  text-align: left;
+  left: 20%;
+  right: 0;
+}
+
+.work-company {
+  font-family: $league-gothic;
+  text-transform: uppercase;
+  font-size: $font-size-tertiary;
+}

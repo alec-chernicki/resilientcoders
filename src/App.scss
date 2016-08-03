@@ -1,0 +1,139 @@
+@import './stylesheets/variables.scss';
+@import './stylesheets/mixins';
+
+body {
+  font-family: $league-gothic;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .letter {
+  color: #FFF;
+  font-size: $font-size-primary;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+  height: 77px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $text-primary;
+  font-family: $league-gothic;
+  margin: 0 0 10px 0;
+  font-size: $font-size-tertiary;
+  text-transform: uppercase;
+}
+
+.accent-link-underline {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content:'';
+    height: 6px;
+    background-color: rgba($background-tertiary, 0.2);
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    left: -2.5%;
+    right: 2.5%;
+    width: 0;
+    bottom: 2.5%;
+    @include transition;
+  }
+
+  .accent-link-underline-trigger:hover &:after {
+    width: 105%;
+  }
+}
+
+p {
+  font-family: $roboto-slab;
+  font-size: $font-size-secondary;
+  line-height: $secondary-line-height;
+
+  a,
+  span {
+    color: $accent-primary;
+    cursor: pointer;
+
+    &:visited {
+      color: $accent-primary;
+    }
+  }
+
+  a, span {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      content:'';
+      height: 6px;
+      background-color: rgba($background-tertiary, 0.2);
+      width: 0;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+      @include transition;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+};
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+};
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+};
+
+@import './stylesheets/containers';
+@import './stylesheets/buttons';
+@import './stylesheets/design-accents';
+@import './stylesheets/animations';

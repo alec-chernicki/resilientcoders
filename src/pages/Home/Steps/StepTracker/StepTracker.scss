@@ -1,0 +1,77 @@
+@import '../../../../stylesheets/variables';
+
+.step-tracker {
+  width: 20px;
+  display: flex;
+  position: absolute;
+  height: 1136px;
+  flex-direction: column;
+
+  &.left {
+    left: 50px;
+    top: 0px;
+  }
+
+  &.right {
+    right: 50px;
+    bottom: -80px;
+  }
+}
+
+
+
+.connecting-line-horizontal {
+  width: 100%;
+  height: 2px;
+  background-color: $background-primary;
+}
+
+.connecting-line {
+  flex-grow: 2;
+  width: 2px;
+  margin: 0 auto;
+  background-color: $background-primary;
+}
+
+.dot-with-circle {
+  height: 20px;
+  width: 20px;
+  position: relative;
+
+  &:before {
+    content: '';
+    max-height: 10px;
+    height: 50%;
+    max-width: 10px;
+    width: 50%;
+    background-color: $background-primary;
+    position: absolute;
+    left:0;
+    right: 0;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &:after {
+    content: '';
+    height: 20px;
+    max-width: 20px;
+    width: 100%;
+    height: 100%;
+    border: solid 1px $background-primary;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
+
+  &.active:after {
+    border-color: $accent-primary;
+  }
+
+  &.active:before {
+    background-color: $accent-primary;
+  }
+}

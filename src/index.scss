@@ -1,0 +1,14 @@
+@import './stylesheets/variables';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $background-secondary;
+}
