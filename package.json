@@ -49,6 +49,8 @@
   },
   "dependencies": {
     "axios": "^0.13.1",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
     "gsap": "^1.19.0",
     "odometer": "^0.4.7",
     "react": "^15.3.0",

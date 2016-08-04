@@ -16,9 +16,9 @@ app.listen(app.get('port'));
 // Controllers
 
 // Assign Routes and Controllers
-app.get('/:palette', (req, res) => {
-  res.sendFile(path.join(__dirname + '/build/index.html'));
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname + './build/index.html'));
 });
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/build/index.html'));
+  res.sendFile(path.resolve(__dirname + './build/index.html'));
 });
