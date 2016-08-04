@@ -29,6 +29,13 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.json'],
     alias: {
+      "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
+      "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
+      "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
+      "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
+      "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+      "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+      "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'),
       // This `alias` section can be safely removed after ejection.
       // We do this because `babel-runtime` may be inside `react-scripts`,
       // so when `babel-plugin-transform-runtime` imports it, it will not be
@@ -38,7 +45,7 @@ module.exports = {
       // a dependency in generated projects.
       // See https://github.com/facebookincubator/create-react-app/issues/255
       'babel-runtime/regenerator': require.resolve('babel-runtime/regenerator')
-    }
+    },
   },
   resolveLoader: {
     root: paths.ownNodeModules,
@@ -58,6 +65,11 @@ module.exports = {
         include: paths.appSrc,
         loader: 'babel',
         query: require('./babel.prod')
+      },
+      {
+        test: /\.css$/,
+        include: [paths.appSrc, paths.appNodeModules],
+        loader: 'style!css!postcss'
       },
       {
         test: /\.scss$/,
