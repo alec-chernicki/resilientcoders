@@ -43,7 +43,7 @@
 
 .second-step-image-two {
   position: absolute;
-  bottom: 100px;
+  top: 0;
   float: left;
   left: 50px;
 }
@@ -51,7 +51,7 @@
 .second-step-section {
   .step-text {
     margin-left: 500px;
-    margin-top: 100px;
+    margin-top: 40px;
   }
 }
 
@@ -59,6 +59,6 @@
   max-width: 425px;
   width: 100%;
   float: left;
-  margin-top: 300px;
+  margin-top: 260px;
   text-align: left;
 }

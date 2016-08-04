@@ -22,7 +22,11 @@
   margin: 0 auto;
 }
 
-@mixin transition {
+@mixin transition() {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@mixin transition-property($property) {
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
