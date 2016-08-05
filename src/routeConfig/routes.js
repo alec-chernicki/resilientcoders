@@ -10,11 +10,11 @@ import App from '../App';
 
 export default (
   <Route path="/" component={App}>
-    <Route path="bootcamp" component={Bootcamp} />
+    <Route path="bootcamp" component={Bootcamp} key="bootcamp" />
     <Route path="lab" component={Lab} />
     <Route path="team" component={Team} />
     <Route path="news" component={News} />
     <Route path="get-involved" component={GetInvolvedPage} />
-    <IndexRoute component={Home} />
+    <IndexRoute component={Home} key="home"/>
   </Route>
 );

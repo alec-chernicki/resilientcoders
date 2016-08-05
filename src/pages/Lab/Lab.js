@@ -6,7 +6,7 @@ import Work from './Work/Work';
 
 const Lab = (props) => {
   return (
-    <div>
+    <div> 
       <div className="panel-container">
         <div className="panel-visibility-container">
           <div className="panel-item panel-left">
