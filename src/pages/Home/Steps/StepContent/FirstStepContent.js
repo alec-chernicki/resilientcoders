@@ -12,10 +12,10 @@ const FirstStepContent = (props) => {
       <div className="step-text">
         <h2>Bootcamp</h2>
         <p>
-          Our full-day "bootcamp" model is offered in partnership with the Mayor's Office of Public Safety, to young people who are not in school. Students meet for five hours a day, five days a week, for 8 weeks.
+          For seven weeks, daily, a select cohort of early-career individuals meet to receive direct instruction from tech professionals on front-end development skills.
         </p>
         <p>
-          During this time, they are working out of a coworking space, receiving instruction and direct mentorship from tech professionals. The program is built around key "milestones," identified in our curriculum and informed by the needs of the market.
+          By the end of their time with us, they have solid proficiency in semantically structured HTML, well-crafted and responsive CSS, JavaScript fundamentals, jQuery, and Git. They have an appreciation for progressive enhancement, accessibility, and usability. At the end, we recruit out of our Bootcamp into Resilient Lab.
         </p>
         <Link to="/bootcamp" className="button">
           LEARN MORE

@@ -54,14 +54,10 @@ class Home extends Component {
                 <div className="program-text">
                   <h1>OUR MISSION</h1>
                   <p>
-                    We have a&nbsp;
-                    <span className="text-link">multi-tiered program</span>
-                    &nbsp;that funnels students from learning HTML after school, through our downtown "Coworking" sessions, and ultimately, hourly employment.
+                    We believe in social justice through economic empowerment, and in the opportunity for meritocracy in tech. We think holistically about the school-to-workforce pipeline, offering a chaining series of programs that guide our hackers through the extensive journey of learning web development.
                   </p>
                   <p>
-                    Our higher performers participate in&nbsp;
-                    <Link to="/lab">Resilient Lab</Link>
-                    , a web design and development shop with real clients. Aligning them with a lucrative and meaningful career path.
+                    This isn't about one-off camps or hackathons. This is about meaningful change.
                   </p>
                 </div>
                 <HomeCarousel />

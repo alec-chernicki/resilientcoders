@@ -43,7 +43,8 @@ class MicahVideo extends React.Component {
                 </BinaryText>
               </h1>
               <span className="divider divider__red"></span>
-              <p>Micah is an aspiring engineer. He's our Dev Lead at Resilient Lab, an initiative of Resilient Coders. Earlier this year, he and our Design Lead, Fredy Melo, were accepted into Startup Institute, an intensive 8-week bootcamp. They've since graduated and have begun working for other companies. Hear why web development is so important to Micah.</p>
+              <p>Micah was a young, aspiring coder, when we met him. Watch the crowdfunding video with which we were able to send him and another one of our coders, Fredy Melo, to Startup Institute. Today, Micah is a full stack web developer at the Boston Globe. As he says in the clip, he's just trying to make somebody to look up to.</p>
+
             </div>
           </div>
         </div>

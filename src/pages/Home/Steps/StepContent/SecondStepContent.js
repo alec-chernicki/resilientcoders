@@ -12,7 +12,7 @@ const SecondStepContent = (props) => {
       <div className="step-text">
         <h2>Resilient Lab</h2>
         <p>
-          We run a web development shop that provides meaningful employment opportunities for our highest-performing youth. Client projects include design and development of City Awake, and designing the interface for the iPhone app released by Wanderu, a local tech startup.
+          We run a web development agency that provides meaningful employment opportunities for our highest-performing youth. We've designed and built websites for local startups, non profits, schools, and small businesses.
         </p>
         <p>
           Probably some more text here. Probably some more text here. Probably some more text here. Probably some more text here. Probably some more text here.

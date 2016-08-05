@@ -2,6 +2,7 @@
 const express = require('express');
 const compress = require('compression');
 const path = require('path');
+const axios = require('axios');
 
 // Create Express App
 const app = express();
@@ -14,6 +15,24 @@ app.use(express.static(`${__dirname}/build`));
 app.listen(app.get('port'));
 
 // Controllers
+
+const fetchTweets = () => {
+  const twitterAPIURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+
+  axios.get(twitterAPIURL, {
+    screen_name: 'resilientcoders',
+    count: 3,
+  })
+  .then(response => {
+    return response
+  });
+}
+
+app.get('/api/tweets', (req, res, next) => {
+  fetchTweets()
+    .then(tweets => res.json(tweets))
+    .catch(() => next(new Error('Error fetching tweets')));
+});
 
 // Assign Routes and Controllers
 app.get('/', (req, res) => {

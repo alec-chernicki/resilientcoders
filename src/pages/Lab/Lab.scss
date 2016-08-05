@@ -113,14 +113,18 @@
 }
 
 .offset-container {
-  background-color: #FFF;
   position: relative;
   z-index: 1000;
-  margin-top: -75px !important;
+  margin-top: -100px !important;
+  margin-bottom: -200px !important;
   text-align: center;
   padding: 60px !important;
 
   h1 {
     color: $text-primary;
   }
+}
+
+.work-background-container {
+  background-color: $background-primary;
 }
