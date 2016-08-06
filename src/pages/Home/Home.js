@@ -9,6 +9,11 @@ import HomeCarousel from './PhotoCarousel/PhotoCarousel';
 import Steps from './Steps/Steps';
 
 class Home extends Component {
+  componentDidMount () {
+    setTimeout(() => {
+      document.body.scrollTop = 0;
+    }, 400)
+  }
   render() {
     return (
       <div>

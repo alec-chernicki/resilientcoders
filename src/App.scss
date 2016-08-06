@@ -110,8 +110,7 @@ img {
 
 .example-enter.example-enter-active {
   opacity: 1;
-  transition: opacity 400ms ease-in;
-
+  transition: opacity 150ms ease-in-out;
 }
 
 .example-leave {
@@ -120,7 +119,8 @@ img {
 
 .example-leave.example-leave-active {
   opacity: 0.01;
-  transition: opacity 400ms ease-out;
+  transition-delay: 150ms;
+  transition: opacity 150ms ease-in-out;
 }
 
 @keyframes slideFadeIn {

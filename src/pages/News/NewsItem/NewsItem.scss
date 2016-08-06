@@ -46,12 +46,12 @@
 }
 
 .news-featured-text {
-  color: $text-primary;
-  background: #FFF;
+  color: #FFF;
   position: relative;
-  border-bottom: solid 1px $border-primary;
+  bottom: 0;
   padding: 10px 15px;
   z-index: 10;
+  position: absolute;
 }
 
 .news-featured {
@@ -69,6 +69,14 @@
     content: '';
     right: 0;
     background-color: rgba($background-secondary, 0.45);
+  }
+
+  .video-play {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -30px;
+    margin: auto;
   }
 }
 

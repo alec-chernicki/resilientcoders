@@ -14,7 +14,7 @@ export default (
     <Route path="lab" component={Lab} />
     <Route path="team" component={Team} />
     <Route path="news" component={News} />
-    <Route path="get-involved" component={GetInvolvedPage} />
+    <Route path="donate" component={GetInvolvedPage} />
     <IndexRoute component={Home} key="home"/>
   </Route>
 );

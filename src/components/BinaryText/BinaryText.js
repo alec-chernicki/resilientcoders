@@ -79,6 +79,8 @@ class BinaryText extends Component {
     clearInterval(this.intervalMain);
     clearInterval(this.interval);
   }
+  componentDidUpdate() {
+  }
   isScrolledIntoView() {
     if (!this.el) {
       return false;
@@ -87,11 +89,14 @@ class BinaryText extends Component {
     const elemBottom = this.el.getBoundingClientRect().bottom;
     const isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight * 1.2);
 
-    this.setState({ isVisible, hasBeenShown: true });
+    if (!this.state.hasBeenShown) {
+      this.setState({ isVisible });
+    }
+
     return isVisible;
   }
   renderIfValid() {
-    if (!this.state.isVisible && !this.state.HasBeenShown) {
+    if (!this.state.isVisible && !this.state.hasBeenShown) {
       return null;
     }
     return this.renderWrappedText();

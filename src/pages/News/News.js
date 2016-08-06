@@ -47,6 +47,7 @@ class News extends React.Component {
               </div>
               <div className="news-featured">
                 <img src="http://blog.microsoftnewengland.com/wp-content/uploads/sites/31/2016/05/20160428_121105-e1462393008132-1024x576.jpg"/>
+                <div className="video-play" />
                 <div className="news-featured-text">
                   <p>Hour Of Code 2016</p>
                 </div>

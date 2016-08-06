@@ -9,14 +9,14 @@ const App = ({ children, location }) => (
     <Navigation />
     <ReactCSSTransitionGroup
       component="div"
-      className="hereIam"
       transitionName="example"
-      transitionEnterTimeout={400}
-      transitionLeaveTimeout={400}
+      transitionEnterTimeout={150}
+      transitionLeaveTimeout={150}
     >
       {React.cloneElement(children, {
         key: location.pathname
       })}
+      <div className="route-transition" />
     </ReactCSSTransitionGroup>
     <Footer />
   </div>
