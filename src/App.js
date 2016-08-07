@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { transitionTime } from './routeConfig/routeTransition';
 
 const App = ({ children, location }) => (
   <div>
@@ -10,8 +11,8 @@ const App = ({ children, location }) => (
     <ReactCSSTransitionGroup
       component="div"
       transitionName="example"
-      transitionEnterTimeout={150}
-      transitionLeaveTimeout={150}
+      transitionEnterTimeout={transitionTime}
+      transitionLeaveTimeout={transitionTime}
     >
       {React.cloneElement(children, {
         key: location.pathname

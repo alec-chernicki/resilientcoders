@@ -1,0 +1,29 @@
+@import '../../../../stylesheets/variables';
+@import '../../../../stylesheets/mixins';
+
+.team-item {
+  position: relative;
+  padding: 25px;
+  background: #FFF;
+  flex-grow: 2;
+  cursor: pointer;
+}
+
+.team-details {
+  background-color: #FFF;
+  position: absolute;
+  max-width: 90%;
+  height: 200px;
+  padding: 25px;
+  max-width: 100%;
+  bottom: 0px;
+  text-align: left;
+  left: 20%;
+  right: 0;
+}
+
+.team-company {
+  font-family: $league-gothic;
+  text-transform: uppercase;
+  font-size: $font-size-tertiary;
+}

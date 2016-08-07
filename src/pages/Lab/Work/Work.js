@@ -4,46 +4,24 @@ import WorkItem from './WorkItem/WorkItem';
 import workConfig from './workConfig';
 
 class Work extends React.Component {
-  renderColumnOneItems () {
-    let items = [];
-    for (let i = 0; i <= 2; i++) {
-      let item = workConfig[i];
-      console.log(item);
-      items.push(
-        <WorkItem
-          key={i}
-          image={item.image}
-          title={item.title}
-          description={item.description}
-        />
-      )
-    }
-    return items;
-  }
-  renderColumnTwoItems () {
-    let items = [];
-    for (let i = 3; i <= 5; i++) {
-      let item = workConfig[i];
-      console.log(item);
-      items.push(
-        <WorkItem
-          key={i}
-          image={item.image}
-          title={item.title}
-          description={item.description}
-        />
-      )
-    }
-    return items;
+  renderWorkItems () {
+    return workConfig.map((item, index) => (
+      <WorkItem
+        key={index}
+        image={item.image}
+        title={item.title}
+        note={item.note}
+        description={item.description}
+      />
+    ))
   }
   render () {
     return (
-      <div className="work">
-        <div className="work-column one">
-          {this.renderColumnOneItems()}
-        </div>
-        <div className="work-column two">
-          {this.renderColumnTwoItems()}
+      <div className="work-background-container">
+        <div className="work-items-container">
+          <div className="work">
+            {this.renderWorkItems()}
+          </div>
         </div>
       </div>
     );

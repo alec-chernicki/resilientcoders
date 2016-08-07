@@ -1,0 +1,18 @@
+.team {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.team-title {
+  margin-left: 30px;
+}
+
+.team-column {
+  flex-grow: 2;
+  width: 50%;
+
+  &.one {
+    margin-top: -100px;
+  }
+}

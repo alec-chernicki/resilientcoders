@@ -5,8 +5,14 @@ import EmailFormShort from '../../components/EmailForms/EmailFormShort';
 import NewsItem from './NewsItem/NewsItem';
 import NewsTweet from './NewsTweet/NewsTweet';
 import newsItemConfig from './newsItemConfig';
+import { scrollTime } from '../../routeConfig/routeTransition';
 
 class News extends React.Component {
+  componentDidMount () {
+    setTimeout(() => {
+      document.body.scrollTop = 0;
+    }, scrollTime)
+  }
   renderPressItems () {
     return newsItemConfig.press.map((item, i) => (
       <NewsItem

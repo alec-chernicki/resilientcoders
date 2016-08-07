@@ -4,7 +4,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import React from 'react'
 import ReactDOM from 'react-dom';
 
-class ConnectingLineHorizontal extends React.Component {
+class ConnectingDot extends React.Component {
   componentWillMount () {
     this.controller = new ScrollMagic.Controller();
   }
@@ -13,7 +13,7 @@ class ConnectingLineHorizontal extends React.Component {
       return
     }
 
-    new ScrollMagic.Scene({
+    this.scene = new ScrollMagic.Scene({
         offset: 0,
         triggerHook: 0.5,
     })
@@ -27,6 +27,10 @@ class ConnectingLineHorizontal extends React.Component {
   setTriggerElementRef (element) {
     this.triggerElement = element;
   }
+  componentWillUnmount() {
+    this.scene.destroy(true)
+    this.scene = null;
+  }
   render () {
     return (
       <div ref={this.setTriggerElementRef.bind(this)}>
@@ -38,4 +42,4 @@ class ConnectingLineHorizontal extends React.Component {
   }
 }
 
-export default ConnectingLineHorizontal;
+export default ConnectingDot;

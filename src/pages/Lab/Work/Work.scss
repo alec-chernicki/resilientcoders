@@ -1,17 +1,38 @@
+@import '../../../stylesheets/variables';
+
 .work {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: left;
+  margin-top: -50px
 }
 
-.work-title {
-  margin-left: 30px;
+.work-faq {
+  z-index: 1000;
+  background-color: $background-primary;
 }
 
-.work-column {
-  flex-grow: 2;
+.offset-container {
+  position: relative;
+  z-index: 1000;
+  margin-top: -100px !important;
+  margin-bottom: -200px !important;
+  text-align: center;
+  padding: 60px 0 !important;
 
-  &.one {
-    margin-top: -100px;
+  h1 {
+    color: $text-primary;
   }
+}
+
+.work-background-container {
+  background-color: $background-primary;
+}
+
+// This neesd to be refactored into a reusable container class
+.work-items-container {
+  width: 1150px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }

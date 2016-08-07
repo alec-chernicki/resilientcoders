@@ -7,12 +7,13 @@ import EmailFormShort from '../../components/EmailForms/EmailFormShort';
 import MicahVideo from './MicahVideo/MicahVideo';
 import HomeCarousel from './PhotoCarousel/PhotoCarousel';
 import Steps from './Steps/Steps';
+import transitionTime from '../../routeConfig/routeTransition';
 
 class Home extends Component {
   componentDidMount () {
     setTimeout(() => {
       document.body.scrollTop = 0;
-    }, 400)
+    }, transitionTime.scrollTime)
   }
   render() {
     return (
@@ -82,7 +83,8 @@ class Home extends Component {
               </div>
               <div className="tiered-program">
                 <h1>AN END TO END SOLUTION</h1>
-                <p>In order to effectively educate and employ our students we’ve developed a funnel with overlapping means of engagement.</p><span className="divider divider__red"></span>
+                <p>In order to effectively educate and employ our students we’ve developed a funnel with overlapping means of engagement.</p>
+                <span className="divider divider__red" />
                 <Steps />
               </div>
               <EmailFormShort />

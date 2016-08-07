@@ -18,13 +18,13 @@ class Parallax extends React.Component {
       ]);
 
     new ScrollMagic.Scene({
-        duration: window.innerWidth,       // the scene should last for a scroll distance of 100px
+        duration: window.innerWidth,
         offset: 0.3,
-        triggerHook: 1,           // start this scene after scrolling for 50px
+        triggerHook: 1,
     })
-      .setTween(tween)            // pins the element for the the scene's duration
+      .setTween(tween)
       .addTo(this.controller)
-      .triggerElement(this.triggerElement)      // assign the scene to the controller
+      .triggerElement(this.triggerElement)
   }
   getWindowHeight () {
     return window.innerWidth

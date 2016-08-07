@@ -17,14 +17,18 @@ class ConnectingLineHorizontal extends React.Component {
         TweenMax.fromTo(this.targetElement, 1, {width: '0%'}, {width: '100%', ease: Linear.easeNone})
       ]);
 
-    new ScrollMagic.Scene({
+    this.scene = new ScrollMagic.Scene({
         duration: this.triggerElement.clientHeight,
         offset: 0,
-        triggerHook: 0.5,           // start this scene after scrolling for 50px
+        triggerHook: 0.5,
     })
-      .setTween(tween)            // pins the element for the the scene's duration
+      .setTween(tween)
       .addTo(this.controller)
-      .triggerElement(this.triggerElement)      // assign the scene to the controller
+      .triggerElement(this.triggerElement)
+  }
+  componentWillUnmount() {
+    this.scene.destroy(true)
+    this.scene = null;
   }
   getWindowHeight () {
     return window.innerWidth

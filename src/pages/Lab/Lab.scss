@@ -1,130 +1,56 @@
 @import '../../stylesheets/variables';
 
-@keyframes line-expand {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-@keyframes panel-expand-left {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes panel-expand-right {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.panel-right {
-  animation: panel-expand-right 500ms ease-out;
-  animation-delay: 600ms;
-  animation-fill-mode: backwards;
-  background-position: left;
-  left: 0;
-}
-
-.panel-left {
-  animation: panel-expand-left 500ms ease-out;
-  animation-delay: 600ms;
-  animation-fill-mode: backwards;
-  background-position: right;
-  right: 0;
-}
-
-.panel-visibility-container {
-  height: 100%;
-  width: 50%;
-  position: relative;
-  float: left;
-}
-
-.panel-container {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-
-  &:after {
-    animation: line-expand 400ms ease-out;
-    animation-delay: 200ms;
-    animation-fill-mode: backwards;
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 2px;
-    z-index: 30;
-    background-color: #FFF;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 0;
-  }
-}
-
-.panel-number {
-  font-size: 150px;
-  display: inline-block;
-  clear: both;
-  text-align: center;
-}
-
-.odometer-value {
-  font-family: $league-gothic;
-}
-
-.odometer-digit {
-  margin: 0 -10px;
-  font-size: 150px;
-}
-
-.panel-item {
-  display: flex;
-  overflow: hidden;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  justify-content: center;
+.lab {
   align-items: center;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
   background-image: url('./dot.svg'),
-                    radial-gradient(circle closest-corner at 80% 50%, rgba($background-secondary, 0.7) 30%, rgba($background-secondary, 0.7)),
-                    url('https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/lawrence_1200.jpg');
+                    linear-gradient(90deg, rgba($background-secondary, 0.6) 30%, rgba($background-secondary, 0.3)),
+                    url('./lab-hero.png');
   background-size: 6px, auto, cover;
-  background-position: auto, auto, center;
-  position: absolute;
-
-  h2 {
-    color: #FFF;
-    width: 250px;
-    position: relative;
-    z-index: 20;
-    text-align: center;
-  }
 }
 
-.offset-container {
+.lab-about {
+  background-color: $background-primary;
   position: relative;
-  z-index: 1000;
-  margin-top: -100px !important;
-  margin-bottom: -200px !important;
-  text-align: center;
-  padding: 60px !important;
+}
+
+.lab-about-container {
+  display: flex;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: -30px 0;
+  align-items: center;
+}
+
+.lab-abilities {
+  width: 40%;
+  background-color: $background-secondary;
+  color: #FFF;
+  padding: 100px 50px;
+  z-index: 500;
+  margin-top: -40px;
+  border-bottom: solid 5px $accent-primary;
+}
+
+.lab-abilities-title {
+  color: $accent-primary;
+  font-size: $font-size-tertiary;
+  font-family: $league-gothic;
+  text-transform: uppercase;
+}
+
+.lab-description {
+  background-color: #FFF;
+  height: auto;
+  padding: 90px 60px 50px;
+  flex-shrink: 2;
+  margin: -210px 0 -100px;
+  z-index: 500;
 
   h1 {
     color: $text-primary;
+    height: auto;
   }
-}
-
-.work-background-container {
-  background-color: $background-primary;
 }
