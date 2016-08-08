@@ -1,45 +1,10 @@
 @import '../../../stylesheets/variables';
 
-@keyframes line-expand {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-
-@keyframes panel-expand-left {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes panel-expand-right {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-
 .panel-right {
   background-image: radial-gradient(circle closest-corner at 80% 50%, rgba($background-secondary, 0.8) 30%, rgba($background-secondary, 0.8)),
                     url('./panel-right.png');
   background-position: left;
   left: 0;
-
-  .active & {
-    animation: panel-expand-right 500ms ease-out;
-    animation-delay: 800ms;
-    animation-fill-mode: backwards;
-  }
 }
 
 .panel-left {
@@ -47,12 +12,6 @@
                     url('./panel-left.png');
   background-position: right;
   right: 0;
-
-  .active & {
-    animation: panel-expand-left 500ms ease-out;
-    animation-delay: 800ms;
-    animation-fill-mode: backwards;
-  }
 }
 
 .panel-visibility-container {
@@ -64,18 +23,14 @@
 
 .panel-container {
   height: 100vh;
+  min-height: 600px;
+  max-height: 1000px;
   position: relative;
   overflow: hidden;
   z-index: 50;
   background-color: $background-secondary;
 
-  &.active:after{
-    animation: line-expand 600ms ease-out;
-  }
-
   &:after {
-    animation-delay: 200ms;
-    animation-fill-mode: backwards;
     content: '';
     position: absolute;
     height: 100%;

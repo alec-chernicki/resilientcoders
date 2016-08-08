@@ -5,12 +5,24 @@
   position: relative;
   padding: 25px;
   background: #FFF;
-  // flex-grow: 2;
   background-color: #FFF;
   width: 100%;
   display: flex;
   height: 350px;
   z-index: 500;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: $background-secondary;
+    z-index: -1;
+    width: 0;
+    @include transition-property (width);
+    transition-duration: 1200ms;
+  }
 
   &:before {
     content: '';
@@ -21,15 +33,18 @@
     right: -30px;
     top: 50px;
     z-index: 110;
-    @include transition;
-    transition-delay: 300ms;
+    @include transition-property (width);
+    transition-delay: 400ms;
+  }
+
+  &:hover:before {
+    width: 160px;
   }
 
   &.active {
-    .work-item-image:after {
-      opacity: 0.1;
+    &:after {
+      width: calc(50% - 1px);
     }
-
     &:before {
       width: 120px;
     }
@@ -55,6 +70,10 @@
     .work-item {
       flex-direction: row-reverse;
 
+      &:after {
+        left: 0;
+      }
+
       &:before {
         left: -30px;
         right: auto;
@@ -67,21 +86,11 @@
   width: 40%;
   max-width: 550px;
   margin-top: -60px;
+  margin-left: 1px;
+  margin-right: 1px;
   flex-grow: 2;
   overflow: hidden;
   position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba($background-secondary, 0.9);
-    z-index: 100;
-    @include transition;
-  }
 }
 
 .work-note {

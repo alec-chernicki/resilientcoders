@@ -6,7 +6,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { transitionTime } from './routeConfig/routeTransition';
 
 const App = ({ children, location }) => (
-  <div>
+  <div className="app">
     <Navigation />
     <ReactCSSTransitionGroup
       component="div"

@@ -14,7 +14,6 @@ class WorkItem extends React.Component {
     }
 
     this.scene = new ScrollMagic.Scene({
-        duration: 450,
         offset: 0,
         triggerHook: 0.5,
     })

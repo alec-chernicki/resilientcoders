@@ -1,22 +1,6 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
 
-@keyframes slick-dot-active {
-  0% {
-    opacity: 0;
-    transform: scale(0.8, 0.8);
-  }
-  70% {
-    opacity: 1;
-    transform: scale(1.3, 1.3);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
-}
-
 .home {
   align-items: center;
   display: flex;
@@ -79,69 +63,23 @@
   }
 }
 
+.program {
+  .slick-dots {
+    text-align: left;
+    background-color: $background-secondary;
+    border-top: solid 5px #ed1b24;
+    bottom: -69px;
+    padding: 20px;
+    width: auto;
+    float: left;
+  }
+}
+
 .section-overview {
   height: 670px;
   position: relative;
   background-color: $background-primary;
   z-index: 1000;
-
-  .slick-dots {
-    text-align: left;
-    background-color: $background-secondary;
-    padding: 20px;
-    bottom: -69px;
-    width: auto;
-    float: left;
-    border-top: solid 5px #ed1b24;
-
-    li {
-      margin: 0 9px;
-    }
-
-    button {
-      &:before {
-        font-size: 10px;
-        opacity: 1;
-        content: '';
-        position: absolute;
-        font-size: 0;
-        height: 10px;
-        width: 10px;
-        top: 4px;
-        left: 4px;
-        background-color: $text-tertiary;
-        border-radius: 50%;
-      }
-
-      &:after {
-        border: solid 1px $text-tertiary;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        content: '';
-        position: absolute;
-        top: -1px;
-        left: -1px;
-        opacity: 0;
-        transition: opacity 0.25s ease-out, background-color 0.25s ease-out;
-      }
-
-      &:hover:after {
-        opacity: 1;
-      }
-    }
-
-    .slick-active button {
-      &:before {
-        opacity: 1;
-        background-color: $accent-primary;
-      }
-      &:after {
-        animation: slick-dot-active 400ms ease-out;
-        animation-fill-mode: both;
-      }
-    }
-  }
 
   h1 {
     color: $text-primary;

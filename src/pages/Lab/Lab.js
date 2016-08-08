@@ -3,7 +3,9 @@ import React, { PropTypes } from 'react';
 import BinaryText from '../../components/BinaryText/BinaryText';
 import Work from './Work/Work';
 import HalfPanels from './HalfPanels/HalfPanels';
+import Alumni from './Alumni/Alumni';
 import scrollTime from '../../routeConfig/routeTransition';
+
 
 
 class Lab extends React.Component {
@@ -27,6 +29,7 @@ class Lab extends React.Component {
                 digital agency
               </BinaryText>
             </h1>
+            <a href="http://resilientcoders.org/quote/" target="blank" className="button">Get a quote</a>
           </div>
         </div>
         <div className="lab-about">
@@ -54,21 +57,21 @@ class Lab extends React.Component {
         </div>
         <HalfPanels />
         <Work />
-        <HalfPanels />
-        <div className="offset-contai work-faq">
+        <Alumni />
+        <div className="centered-container-outer work-faq">
           <div className="call-to-action-container clearfix">
-            <div className="section-main section-tertiary section-tertiary__alert call-to-action">
+            <div className="section-main section-tertiary section-tertiary__alert call-to-action lab-cta">
               <div className="section-container-primary">
                 <p>
                   Need an estimate? Use our quote generator to see how much your project will cost.
                 </p>
                 <a className="button button__slice" target="blank" href="http://resilientcoders.org/quote">
-                  <span>GET AN INSTANT QUOTE</span>
+                  <span>GET A QUOTE</span>
                 </a>
               </div>
             </div>
-            
-            <div className="tiered-program">
+
+            <div className="centered-container-inner">
               <h1>How It All Works</h1>
               <span className="divider divider__red" />
               <div className="faq">

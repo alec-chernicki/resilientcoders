@@ -9,11 +9,19 @@
                     linear-gradient(90deg, rgba($background-secondary, 0.6) 30%, rgba($background-secondary, 0.3)),
                     url('./lab-hero.png');
   background-size: 6px, auto, cover;
+
+  .button {
+    margin-top: 30px;
+  }
 }
 
 .lab-about {
   background-color: $background-primary;
   position: relative;
+}
+
+.lab-cta {
+  z-index: 500;
 }
 
 .lab-about-container {
@@ -46,11 +54,23 @@
   height: auto;
   padding: 90px 60px 50px;
   flex-shrink: 2;
-  margin: -210px 0 -100px;
+  margin: -210px 0 -170px;
   z-index: 500;
 
   h1 {
     color: $text-primary;
     height: auto;
+  }
+}
+
+.faq {
+  margin-top: 30px;
+
+  h2 {
+    color: $text-secondary;
+  }
+
+  p {
+    margin-bottom: 50px;
   }
 }

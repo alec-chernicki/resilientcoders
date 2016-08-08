@@ -1,0 +1,19 @@
+.alumni {
+  height: 100vh;
+  min-height: 800px;
+  max-height: 1000px;
+
+  .alumni-photos,
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+
+  .slick-dots {
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 268px;
+  }
+}

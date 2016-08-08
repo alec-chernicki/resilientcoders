@@ -24,7 +24,7 @@ const Navigation = () => (
         <Link to="/team">Team</Link>
       </li>
       <li>
-        <Link to="/donate">Donate</Link>
+        <Link to="/get-involved">Get Involved</Link>
       </li>
     </ul>
   </Headroom>
