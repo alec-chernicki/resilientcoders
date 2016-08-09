@@ -50,27 +50,15 @@
   display: inline-block;
   clear: both;
   text-align: center;
-  width: 100%;
-}
-
-.odometer {
-  line-height: 150px;
 }
 
 .odometer-value {
   font-family: $league-gothic;
-  overflow: hidden;
-}
-
-.odometer-inside * {
-  width: 80px !important;
 }
 
 .odometer-digit {
   margin: 0 -10px;
   font-size: 150px;
-  overflow: hidden;
-  text-align: center;
 }
 
 .panel-item {

@@ -58,7 +58,7 @@ class Lab extends React.Component {
         <HalfPanels />
         <Work />
         <Alumni />
-        <div className="centered-container-outer work-faq">
+        <div className="centered-container-outer">
           <div className="call-to-action-container clearfix">
             <div className="section-main section-tertiary section-tertiary__alert call-to-action lab-cta">
               <div className="section-container-primary">
@@ -71,7 +71,7 @@ class Lab extends React.Component {
               </div>
             </div>
 
-            <div className="centered-container-inner">
+            <div className="centered-container-inner lab-faq">
               <h1>How It All Works</h1>
               <span className="divider divider__red" />
               <div className="faq">
@@ -93,6 +93,16 @@ class Lab extends React.Component {
                 <p>
                   Some of it, yes. Your invoice will itemize out the straight cost of building your project, versus the investment you're making in our coders' education. Within the hourly rate that you're quoted, usually half of that is a donation, and will be spent on training the coders to be ready to work on your project. The other half is your payment for a service. This will vary depending on the specific needs of a project. We'll be transparent about those proportions when we start.
                 </p>
+              </div>
+            </div>
+            <div className="section-main section-tertiary section-tertiary__subtle">
+              <div className="section-container-primary">
+                <p>
+                  Ready to get started?
+                </p>
+                <a className="button" target="blank" href="http://resilientcoders.org/quote">
+                  <span>Start your project</span>
+                </a>
               </div>
             </div>
           </div>

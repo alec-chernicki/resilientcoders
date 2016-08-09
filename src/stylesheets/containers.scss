@@ -49,6 +49,9 @@
   position: relative;
   height: 400px;
   background-position: center 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:after {
     position: absolute;
@@ -69,13 +72,17 @@
 }
 
 .centered-container-inner {
-  text-align: center;
   padding: 80px;
   background: #FFF;
   max-width: 1150px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+
+  h1 {
+    color: $text-primary;
+  }
 }

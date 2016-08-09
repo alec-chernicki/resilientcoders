@@ -37,10 +37,6 @@
     transition-delay: 400ms;
   }
 
-  &:hover:before {
-    width: 160px;
-  }
-
   &.active {
     &:after {
       width: calc(50% - 1px);
@@ -79,6 +75,15 @@
         right: auto;
       }
     }
+
+    .work-details {
+      padding-left: 50px;
+      padding-right: 25px;
+    }
+
+    .button {
+      left: 50px;
+    }
   }
 }
 
@@ -86,6 +91,7 @@
   width: 40%;
   max-width: 550px;
   margin-top: -60px;
+  background-color: #FFF;
   margin-left: 1px;
   margin-right: 1px;
   flex-grow: 2;
@@ -101,7 +107,7 @@
 
 .work-details {
   background-color: #FFF;
-  padding: 25px;
+  padding: 25px 50px 25px 25px;
   text-align: left;
   flex-shrink: 2;
   position: relative;
