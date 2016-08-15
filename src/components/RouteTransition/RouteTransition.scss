@@ -1,0 +1,52 @@
+@import '../../stylesheets/variables';
+
+@keyframes content-enter {
+  from {
+    height: 0;
+    width: 0;
+    margin-bottom: 100vh
+  }
+  to {
+    height: auto;
+    width: auto;
+    margin-bottom: 100vh
+  }
+}
+
+.route-changing-enter-active + .route-changing-leave {
+  margin-bottom: 100vh;
+}
+
+.route-changing-enter {
+  .route-content {
+    opacity: 0.01;
+    height: 0;
+    width: 0;
+  }
+}
+
+.route-changing-enter.route-changing-enter-active {
+  .route-content {
+    opacity: 1;
+
+    transition: opacity 250ms ease-in;
+    transition-delay: 250ms;
+
+    animation: content-enter 0ms;
+    animation-delay: 250ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+.route-changing-leave {
+  .route-content {
+    opacity: 1;
+  }
+}
+
+.route-changing-leave.route-changing-leave-active {
+  .route-content {
+    opacity: 0.01;
+    transition: opacity 250ms ease-out;
+  }
+}

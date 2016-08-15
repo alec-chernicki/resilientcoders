@@ -1,21 +1,35 @@
 import './Team.scss';
 import React from 'react';
 import BinaryText from '../../components/BinaryText/BinaryText';
-import { scrollTime } from '../../routeConfig/routeTransition';
 import TeamMembers from './TeamMembers/TeamMembers';
+import TeamPartners from './TeamPartners/TeamPartners';
+import RouteTransition from '../../components/RouteTransition/RouteTransition';
+
+import Hero from '../../components/Containers/Hero/Hero';
+import TeamHeroImage from './lab-hero.png';
 
 const Team = (props) => {
   return (
-    <div className="team">
-      <div className="section-container-secondary">
-        <h1>
-          <BinaryText>
-            The gang
-          </BinaryText>
-        </h1>
-        <TeamMembers />
+    <RouteTransition>
+      <Hero
+        titleLineOne="The team"
+        image={TeamHeroImage}
+        centered={true}
+      >
+        <div className="divider divider__red" />
+        <p>
+          Strong student leadership, dedicated staff, and an impressive board make Resilient Coders
+          what it is. The ranges of experience and background vary across the team. But our people
+          have in common a belief in the social mission, and the muscle to make real change.
+        </p>
+      </Hero>
+      <div className="team">
+        <div className="team-container">
+          <TeamMembers/>
+        </div>
       </div>
-    </div>
+      <TeamPartners />
+    </RouteTransition>
   )
 }
 

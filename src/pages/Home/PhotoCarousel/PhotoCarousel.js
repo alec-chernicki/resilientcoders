@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import Slider from 'react-slick';
 
 class HomeCarousel extends React.Component {
@@ -14,18 +14,17 @@ class HomeCarousel extends React.Component {
       fade: true,
       arrows: false,
       slidesToScroll: 1,
-      cssEase: 'cubic-bezier(0.260, 0.530, 0.385, 0.970)',
+      cssEase: 'cubic-bezier(0.260, 0.530, 0.385, 0.970)'
     };
     return (
       <Slider className="program-photo" {...settings}>
-        <div className="one" />
-        <div className="two" />
-        <div className="three" />
-        <div className="four" />
+        <div className="one"/>
+        <div className="two"/>
+        <div className="three"/>
+        <div className="four"/>
       </Slider>
     );
   }
 }
-
 
 export default HomeCarousel;

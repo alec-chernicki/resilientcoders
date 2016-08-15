@@ -5,25 +5,50 @@
   position: relative;
   padding: 25px;
   background: #FFF;
-  flex-grow: 2;
-  cursor: pointer;
+  flex: 2 2 40%;
+  margin-bottom: 60px;
+
+  &:nth-child(odd) {
+    margin-right: 60px;
+  }
 }
 
-.team-details {
-  background-color: #FFF;
+.team-item__button {
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+  border: 0;
+  width: 70px;
+  font-size: 50px;
+  background-color: $accent-primary;
   position: absolute;
-  max-width: 90%;
-  height: 200px;
-  padding: 25px;
-  max-width: 100%;
-  bottom: 0px;
-  text-align: left;
-  left: 20%;
-  right: 0;
+  right: 25px;
+  color: #FFF;
+  top: 25px;
+  @include transition;
+
+  &:hover {
+    background-color: darken($accent-primary, 10%);
+  }
 }
 
-.team-company {
+.team-item__name {
   font-family: $league-gothic;
   text-transform: uppercase;
   font-size: $font-size-tertiary;
+  color: #FFF;
+  line-height: 1;
+}
+
+.team-item__title {
+  color: $text-tertiary;
+  margin: 0;
+}
+
+.team-item-container {
+  background-color: $background-secondary;
+  border-top: solid 5px $accent-primary;
+  padding: 25px;
+  position: relative;
+  text-align: left;
 }

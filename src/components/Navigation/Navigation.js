@@ -1,14 +1,14 @@
 import './Navigation.scss';
+import React from 'react';
 
 import logoRed from './logo_red.png';
-import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import {Link} from 'react-router';
 import Headroom from 'react-headroom';
 
 const Navigation = () => (
   <Headroom>
     <Link to="/" className="nav-logo">
-      <img src={logoRed}/>
+      <img src={logoRed} alt="Resilient Coders logo"/>
     </Link>
     <ul className="nav-links">
       <li>

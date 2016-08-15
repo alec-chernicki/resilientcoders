@@ -1,13 +1,13 @@
 import './Steps.scss';
 import './StepTracker/StepTracker.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import FirstStepContent from './StepContent/FirstStepContent';
 import SecondStepContent from './StepContent/SecondStepContent';
 import ConnectingLineVertical from './ConnectingLineVertical';
 import ConnectingLineHorizontal from './ConnectingLineHorizontal';
 import ConnectingDot from './ConnectingDot';
 
-const Steps = (props) => {
+const Steps = () => {
   return (
     <div>
       <div className="step-tracker left">

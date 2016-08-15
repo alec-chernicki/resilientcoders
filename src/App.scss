@@ -1,6 +1,11 @@
 @import './stylesheets/variables.scss';
 @import './stylesheets/mixins';
 
+::selection {
+  background: $accent-primary;
+  color: #FFF;
+}
+
 body {
   font-family: $league-gothic;
   -webkit-font-smoothing: antialiased;
@@ -11,7 +16,6 @@ h1, .letter {
   font-size: $font-size-primary;
   margin: 0 0 10px 0;
   line-height: 1.1;
-  height: 77px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -104,25 +108,6 @@ img {
   width: 100%;
 }
 
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in-out;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition-delay: 500ms;
-  transition: opacity 500ms ease-in-out;
-}
-
 @keyframes slideFadeIn {
   0% {
     opacity: 0;
@@ -153,6 +138,5 @@ img {
 };
 
 @import './stylesheets/containers';
-@import './stylesheets/buttons';
 @import './stylesheets/design-accents';
 @import './stylesheets/animations';

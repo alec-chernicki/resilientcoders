@@ -1,3 +1,6 @@
+@import '../../../../stylesheets/variables';
+@import '../../../../stylesheets/mixins';
+
 .alumni-item {
   background-size: cover;
   background-position: center;
@@ -16,7 +19,39 @@
     z-index: 400;
     top: 0;
     left: 0;
-    background-color: rgba(#333, 0.6);
+    background-color: rgba($background-secondary, 0.6);
+  }
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.alumni-progress-bar-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 1150px;
+  margin: 0 auto;
+  bottom: 110px;
+  z-index: 500;
+  overflow: hidden;
+
+}
+
+.alumni-progress-bar {
+  height: 8px;
+  width: 100%;
+  background-color: $background-primary;
+
+  .slick-active & {
+    animation: progress-bar 10000ms linear;
+    animation-fill-mode: backwards;
   }
 }
 
@@ -26,8 +61,19 @@
   margin: 0 auto;
   text-align: center;
   margin-bottom: 80px;
+  transform: translateY(30px);
+  opacity: 0;
+  @include transition;
+  transition-delay: 625ms;
+  transition-duration: 800ms;
+
 
   p {
     max-width: 600px;
+  }
+
+  .slick-active & {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

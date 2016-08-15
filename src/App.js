@@ -1,30 +1,25 @@
 import './App.scss';
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import { transitionTime } from './routeConfig/routeTransition';
 
-const App = ({ children, location }) => (
+const App = ({children, location}) => (
   <div className="app">
-    <Navigation />
+    <Navigation/>
     <ReactCSSTransitionGroup
       component="div"
-      transitionName="example"
-      transitionEnterTimeout={transitionTime}
-      transitionLeaveTimeout={transitionTime}
-    >
-      {React.cloneElement(children, {
-        key: location.pathname
-      })}
-      <div className="route-transition" />
+      transitionName="route-changing"
+      transitionEnterTimeout={500}
+      transitionLeaveTimeout={250}>
+      {React.cloneElement(children, {key: location.pathname})}
     </ReactCSSTransitionGroup>
-    <Footer />
+    <Footer/>
   </div>
 );
 
 App.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default App;

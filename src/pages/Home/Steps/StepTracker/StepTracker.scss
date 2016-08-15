@@ -34,12 +34,6 @@
 }
 
 .connecting-line {
-  flex-grow: 2;
-  width: 2px;
-  margin: 0 auto;
-  background-color: $background-primary;
-  position: relative;
-
   &.first-vertical {
     height: 635px;
   }

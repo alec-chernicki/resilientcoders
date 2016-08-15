@@ -1,7 +1,9 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
 .alumni {
-  height: 100vh;
+  height: 125vh;
   min-height: 800px;
-  max-height: 1000px;
 
   .alumni-photos,
   .slick-list,
@@ -15,5 +17,45 @@
     right: 0;
     margin: 0 auto;
     width: 268px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    background-color: $background-secondary;
+    height: 70px;
+    width: 110px;
+    color: #FFF;
+    @include transition;
+
+    &:hover {
+      width: 140px;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &:before {
+      content: '<';
+      right: 20px;
+      top: 0;
+      position: absolute;
+      font-family: none;
+      line-height: 70px;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    &:before {
+      content: '>';
+      text-align: left;
+      left: 20px;
+      top: 0;
+      position: absolute;
+      font-family: none;
+      line-height: 70px;
+    }
   }
 }

@@ -1,3 +1,15 @@
+@import '../../stylesheets/variables';
+
+.get-involved-hero {
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  background-image: url('./dot.svg'),
+                    linear-gradient(90deg, rgba($background-secondary, 0.6) 30%, rgba($background-secondary, 0.3)),
+                    url('./get-involved-hero.jpg');
+  background-size: 6px, auto, cover;
+}
+
 .get-involved-info {
   margin-bottom: 80px;
   display: flex;

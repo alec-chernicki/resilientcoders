@@ -16,8 +16,8 @@ export default [
   },
   {
     title: 'Alec Ortega',
-    image: 'http://placehold.it/600x600',
-    description: 'Mentorship Lead',
+    image: 'https://pbs.twimg.com/profile_images/764889240043974657/eNax_wFQ.jpg',
+    description: 'TBD',
   },
   {
     title: 'Chris Swenor',

@@ -1,68 +1,6 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
 
-.home {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-
-  .video-container {
-    position: absolute;
-    top: -14%;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-  }
-
-  video {
-    width: 115%;
-    max-height: 115%;
-    background: transparent no-repeat url('./home-video-poster.png');
-    background-size: cover;
-    background-position: center;
-  }
-
-  h1 {
-    color: #FFF;
-  }
-
-  .heading-one {
-    animation: home-fade-in 1s cubic-bezier(0, 1, 0.58, 1) 0.2s backwards;
-  }
-
-  .heading-two {
-    animation: home-fade-in 1s cubic-bezier(0, 1, 0.58, 1) 0.4s backwards;
-  }
-
-  p {
-    color: $text-tertiary;
-    margin-bottom: 40px;
-  }
-
-  .home-container {
-    max-width: 600px;
-    width: 100%;
-    position: relative;
-    height: 410px;
-    z-index: 30;
-  }
-
-  .home-overlay {
-    background-image: url(./dot.svg),
-                      linear-gradient(90deg, rgba($background-secondary, 0.6) 30%, rgba($background-secondary, 0.3));
-    background-size: 6px, auto;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-  }
-}
-
 .program {
   .slick-dots {
     text-align: left;

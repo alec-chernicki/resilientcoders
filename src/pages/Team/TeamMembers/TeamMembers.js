@@ -1,47 +1,42 @@
 import './TeamMembers.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import TeamMember from './TeamMember/TeamMember';
 import teamMembersConfig from './teamMembersConfig';
+import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
+import {Link} from 'react-router';
 
 class Work extends React.Component {
-  renderColumnOneItems () {
-    let items = [];
-    for (let i = 0; i <= 2; i++) {
-      let item = teamMembersConfig[i];
-      items.push(
-        <TeamMember
-          key={i}
-          image={item.image}
-          title={item.title}
-          description={item.description}
-        />
-      )
-    }
-    return items;
+  renderTeamMembers() {
+    return teamMembersConfig.map((item, i) => (
+      <TeamMember
+        key={i}
+        image={item.image}
+        title={item.title}
+        description={item.description}
+      />
+    ));
   }
-  renderColumnTwoItems () {
-    let items = [];
-    for (let i = 3; i <= 5; i++) {
-      let item = teamMembersConfig[i];
-      items.push(
-        <TeamMember
-          key={i}
-          image={item.image}
-          title={item.title}
-          description={item.description}
-        />
-      )
-    }
-    return items;
-  }
-  render () {
+  render() {
     return (
-      <div className="team">
-        <div className="team-column one">
-          {this.renderColumnOneItems()}
-        </div>
-        <div className="team-column two">
-          {this.renderColumnTwoItems()}
+      <div className="team-members">
+        {this.renderTeamMembers()}
+        <div className="team-members__join">
+          <div className="team-members__join__container">
+            <div>
+              <h2>
+                Interested in joining?
+              </h2>
+              <p>
+                There's more than one way to join the code literacy movement. Check out our
+                opportunities for both companies and individuals.
+              </p>
+              <ButtonPrimary>
+                <Link to="/get-involved">
+                  Get Involved
+                </Link>
+              </ButtonPrimary>
+            </div>
+          </div>
         </div>
       </div>
     );

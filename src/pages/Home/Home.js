@@ -1,58 +1,43 @@
 import './Home.scss';
-import homeVideo from './home-background.mp4';
-import React, { Component } from 'react';
-import { Link } from 'react-router';
+import React, {Component} from 'react';
+import {Link} from 'react-router';
 import BinaryText from '../../components/BinaryText/BinaryText';
 import EmailFormShort from '../../components/EmailForms/EmailFormShort';
+import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import MicahVideo from './MicahVideo/MicahVideo';
 import HomeCarousel from './PhotoCarousel/PhotoCarousel';
 import Steps from './Steps/Steps';
-import transitionTime from '../../routeConfig/routeTransition';
+import RouteTransition from '../../components/RouteTransition/RouteTransition';
+
+import Hero from '../../components/Containers/Hero/Hero';
+import SideBySide from '../../components/Containers/SideBySide/SideBySide';
+import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
+
 
 class Home extends Component {
-  componentDidMount () {
-    setTimeout(() => {
-      document.body.scrollTop = 0;
-    }, transitionTime.scrollTime)
-  }
   render() {
     return (
-      <div>
-        <section className="home">
-          <div className="home-overlay"></div>
-          <div className="video-container">
-            <video
-              preload="preload"
-              poster="data:image/gif,AAAA"
-              autoPlay
-              muted="muted"
-              loop="loop"
-            >
-              <source src={homeVideo}type="video/mp4" />
-            </video>
-          </div>
-          <div className="section-container-primary">
-            <div className="home-container">
-              <div className="heading-one">
-                <h1>
-                  <BinaryText>
-                    HACKING THE
-                  </BinaryText>
-                </h1>
-              </div>
-              <div className="heading-two">
-                <h1>
-                  <BinaryText>
-                    OPPORTUNITY GAP
-                  </BinaryText>
-                </h1>
-              </div>
-              <span className="divider divider__red"></span>
-              <p>Spreading code literacy to young people from traditionally underserved communities.</p>
-              <a href="#" className="button">LEARN MORE</a>
-            </div>
-          </div>
-        </section>
+      <RouteTransition>
+        <Hero
+          titleLineOne="Hacking the"
+          titleLineTwo="opportunity gap"
+        >
+          <span className="divider divider__red"></span>
+          <p>Spreading code literacy to young people from traditionally underserved communities.</p>
+          <ButtonPrimary>
+            <Link to="/get-involved">
+              Get Involved
+            </Link>
+          </ButtonPrimary>
+        </Hero>
+        <SideBySide>
+          <SideItem>
+
+          </SideItem>
+          <SideItem type="image">
+
+          </SideItem>
+        </SideBySide>
         <div>
           <div className="program">
             <div className="section-overview">
@@ -60,16 +45,17 @@ class Home extends Component {
                 <div className="program-text">
                   <h1>OUR MISSION</h1>
                   <p>
-                    We believe in social justice through economic empowerment, and in the opportunity for meritocracy in tech. We think holistically about the school-to-workforce pipeline, offering a chaining series of programs that guide our hackers through the extensive journey of learning web development.
+                    We believe in social justice through economic empowerment, and in the opportunity for meritocracy in tech. We think holistically about the
+                    school-to-workforce pipeline, offering a chaining series of programs that guide our hackers through the extensive journey of learning web development.
                   </p>
                   <p>
                     This isn't about one-off camps or hackathons. This is about meaningful change.
                   </p>
                 </div>
-                <HomeCarousel />
+                <HomeCarousel/>
               </div>
             </div>
-            <MicahVideo />
+            <MicahVideo/>
             <div className="tiered-program-background">
               <div className="call-to-action-container clearfix">
                 <div className="section-main section-tertiary section-tertiary__alert call-to-action">
@@ -84,14 +70,14 @@ class Home extends Component {
               <div className="tiered-program">
                 <h1>AN END TO END SOLUTION</h1>
                 <p>In order to effectively educate and employ our students we’ve developed a funnel with overlapping means of engagement.</p>
-                <span className="divider divider__red" />
-                <Steps />
+                <span className="divider divider__red"/>
+                <Steps/>
               </div>
-              <EmailFormShort />
+              <EmailFormShort/>
             </div>
           </div>
         </div>
-      </div>
+      </RouteTransition>
     );
   }
 }

@@ -1,6 +1,6 @@
 import './VideoPlayer.scss';
 import videoJS from 'video.js';
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
 class VideoPlayer extends React.Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class VideoPlayer extends React.Component {
   }
   componentWillUnmount() {
     this.videoPlayer.dispose();
+    this.videoPlayer = null;
   }
   onVideoClose() {
     this.props.onClose();
@@ -24,19 +25,22 @@ class VideoPlayer extends React.Component {
   render() {
     return (
       <div className="fullscreen-video">
-        <div className="video-close js-video-close" onClick={this.onVideoClose.bind(this)} />
+        <div
+          className="video-close js-video-close"
+          onClick={this.onVideoClose.bind(this)}/>
         <video
           id={this.getVideoId()}
           className="video-js vjs-default-skin"
           controls
-          autoPlay
-        >
-          <source src={this.props.mp4} type="video/mp4" />
-          <source src={this.props.webm} type="video/webm" />
+          autoPlay>
+          <source src={this.props.mp4} type="video/mp4"/>
+          <source src={this.props.webm} type="video/webm"/>
         </video>
         <p className=".vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a web browser that
-          <a href="http://videojs.com/html5-video-support/" target="_blank"> supports HTML5 video</a>
+          To view this video please enable JavaScript, and consider upgrading to a web
+          browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">
+            supports HTML5 video</a>
         </p>
       </div>
     );
@@ -44,7 +48,7 @@ class VideoPlayer extends React.Component {
 }
 
 VideoPlayer.propTypes = {
-  onClose: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired
 };
 
 export default VideoPlayer;

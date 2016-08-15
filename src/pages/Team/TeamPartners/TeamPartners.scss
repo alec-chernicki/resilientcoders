@@ -1,0 +1,25 @@
+@import '../../../stylesheets/variables';
+
+.main-partners {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 !important;
+
+  h2 {
+    color: $text-secondary;
+  }
+}
+
+.main-partner-companies {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > div {
+    margin: 20px;
+    flex-basis: 15%;
+  }
+}

@@ -19,7 +19,7 @@
     height: 100%;
     background-color: $background-secondary;
     z-index: -1;
-    width: 0;
+    width: calc(50% + 1px);
     @include transition-property (width);
     transition-duration: 1200ms;
   }
@@ -30,7 +30,7 @@
     height: 8px;
     width: 0;
     background-color: $accent-primary;
-    right: -30px;
+    left: -30px;
     top: 50px;
     z-index: 110;
     @include transition-property (width);
@@ -38,9 +38,6 @@
   }
 
   &.active {
-    &:after {
-      width: calc(50% - 1px);
-    }
     &:before {
       width: 120px;
     }
@@ -68,17 +65,18 @@
 
       &:after {
         left: 0;
+        right: auto;
       }
 
       &:before {
-        left: -30px;
-        right: auto;
+        right: -30px;
+        left: auto;
       }
     }
 
     .work-details {
-      padding-left: 50px;
-      padding-right: 25px;
+      padding-right: 50px;
+      padding-left: 25px;
     }
 
     .button {
@@ -106,8 +104,8 @@
 }
 
 .work-details {
-  background-color: #FFF;
-  padding: 25px 50px 25px 25px;
+  color: #FFF;
+  padding: 25px 25px 25px 50px;
   text-align: left;
   flex-shrink: 2;
   position: relative;

@@ -1,0 +1,92 @@
+@import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
+
+.button {
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 35px;
+  font-size: 26px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 10;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #FFF;
+  }
+
+  a {
+    color: #FFF;
+  }
+}
+
+.button-container {
+  position: relative;
+  float: left;
+  background-color: $accent-primary;
+
+  &:hover:before {
+    width: 100%;
+  }
+
+  &:before {
+    content: '';
+    background-color: darken($accent-primary, 10%);
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 0;
+    top: 0;
+    z-index: 5;
+    @include transition;
+  }
+}
+
+.button__slice,
+.button__slice:visited {
+  background-color: #f8f8f8;
+  color: #333;
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+  margin-top: 20px;
+
+  &:hover {
+    color: #f8f8f8;
+
+    &:before,
+    &:after {
+      transform: skew(-25deg) translateY(0%);
+    }
+  }
+
+  &:before,
+  &:after {
+    cursor: pointer;
+    content: '';
+    background: #333;
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    top:0;
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:before {
+    transform: skew(-25deg) translateY(-100%);
+    left: -24%;
+  }
+
+  &:after {
+    transform: skew(-25deg) translateY(100%);
+    right: -24%;
+  }
+
+  span {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+}

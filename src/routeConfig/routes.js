@@ -5,16 +5,16 @@ import Lab from '../pages/Lab/Lab';
 import Team from '../pages/Team/Team';
 import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
-import { Route, IndexRoute } from 'react-router';
+import {Route, IndexRoute} from 'react-router';
 import App from '../App';
 
-export default (
+export default(
   <Route path="/" component={App}>
-    <Route path="bootcamp" component={Bootcamp} key="bootcamp" />
-    <Route path="lab" component={Lab} />
-    <Route path="team" component={Team} />
-    <Route path="news" component={News} />
-    <Route path="get-involved" component={GetInvolvedPage} />
+    <Route path="bootcamp" component={Bootcamp} key="bootcamp"/>
+    <Route path="lab" component={Lab}/>
+    <Route path="team" component={Team}/>
+    <Route path="news" component={News}/>
+    <Route path="get-involved" component={GetInvolvedPage}/>
     <IndexRoute component={Home} key="home"/>
   </Route>
 );

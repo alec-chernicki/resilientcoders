@@ -1,18 +1,14 @@
 import './Alumni.scss';
-import React, { PropTypes } from 'react'
+import React from 'react'
 import Slider from 'react-slick';
 import AlumniItem from './AlumniItem/AlumniItem';
 import alumniConfig from './alumniConfig';
 
 class Alumni extends React.Component {
-  renderAlumni () {
+  renderAlumni() {
     return alumniConfig.map((item, index) => (
       <div key={index}>
-        <AlumniItem
-          image={item.image}
-          name={item.name}
-          biography={item.biography}
-        />
+        <AlumniItem image={item.image} name={item.name} biography={item.biography}/>
       </div>
     ));
 
@@ -27,9 +23,9 @@ class Alumni extends React.Component {
       draggable: false,
       slidesToShow: 1,
       fade: true,
-      arrows: false,
+      arrows: true,
       slidesToScroll: 1,
-      cssEase: 'cubic-bezier(0.260, 0.530, 0.385, 0.970)',
+      cssEase: 'cubic-bezier(0.260, 0.530, 0.385, 0.970)'
     };
 
     return (
@@ -41,6 +37,5 @@ class Alumni extends React.Component {
     );
   }
 }
-
 
 export default Alumni;

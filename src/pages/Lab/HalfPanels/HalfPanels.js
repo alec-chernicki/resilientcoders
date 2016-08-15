@@ -1,73 +1,76 @@
 import './HalfPanels.scss';
-import React, { PropTypes } from 'react'
+import React from 'react'
 import ScrollMagic from 'scrollmagic';
 import NumberAnimation from './NumberAnimation';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 class HalfPanels extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
 
     this.state = {
-      hasStartedAnimation: false,
+      hasStartedAnimation: false
     };
   }
-  componentWillMount () {
+  componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }
-  componentDidMount () {
+  componentDidMount() {
     if (!this.triggerElement || !this.targetElement) {
       return
     }
 
-    this.scene = new ScrollMagic.Scene({
-        offset: 0,
-        triggerHook: 0.5,
-    })
+    this.scene = new ScrollMagic
+      .Scene({offset: 0, triggerHook: 0.5})
       .setClassToggle(this.targetElement, 'active')
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
 
-    this.scene.on('start', this.setHasStartedAnimation.bind(this))
-    this.scene.on('leave', this.setHasEndedAnimation.bind(this))
+    this
+      .scene
+      .on('start', this.setHasStartedAnimation.bind(this))
+    this
+      .scene
+      .on('leave', this.setHasEndedAnimation.bind(this))
   }
   componentWillUnmount() {
-    this.scene.destroy(true)
+    this
+      .scene
+      .destroy(true)
     this.scene = null;
   }
-  getHasStartedAnimation () {
+  getHasStartedAnimation() {
     return this.state.hasStartedAnimation;
   }
-  setHasStartedAnimation () {
+  setHasStartedAnimation() {
     console.log('started');
-    this.setState({
-      hasStartedAnimation: true
-    })
+    this.setState({hasStartedAnimation: true})
   }
-  setHasEndedAnimation () {
+  setHasEndedAnimation() {
     console.log('ended');
-    this.setState({
-      hasStartedAnimation: false
-    })
+    this.setState({hasStartedAnimation: false})
   }
-  setTargetElementRef (element) {
+  setTargetElementRef(element) {
     this.targetElement = element;
   }
-  setTriggerElementRef (element) {
+  setTriggerElementRef(element) {
     this.triggerElement = element;
   }
-  render () {
+  render() {
     return (
-      <div ref={this.setTriggerElementRef.bind(this)}>
-        <div className="panel-container" ref={this.setTargetElementRef.bind(this)}>
+      <div ref={this
+        .setTriggerElementRef
+      .bind(this)}>
+        <div className="panel-container" ref={this
+          .setTargetElementRef
+        .bind(this)}>
           <div className="panel-visibility-container">
             <div className="panel-item panel-left">
               <h2>
                 <span className="panel-number">
-                  <NumberAnimation
-                    value={0}
-                    shouldAnimate={this.getHasStartedAnimation.bind(this)}
-                  />
+                  <NumberAnimation value={0} shouldAnimate={this
+                    .getHasStartedAnimation
+                  .bind(this)}/>
                   %
                 </span>
                 WRITE-OFF
@@ -78,10 +81,9 @@ class HalfPanels extends React.Component {
             <div className="panel-item panel-right">
               <h2>
                 <span className="panel-number">
-                  <NumberAnimation
-                    value={0}
-                    shouldAnimate={this.getHasStartedAnimation.bind(this)}
-                  />
+                  <NumberAnimation value={0} shouldAnimate={this
+                    .getHasStartedAnimation
+                    .bind(this)}/>
                   %
                 </span>
                 GET SHIT DONE

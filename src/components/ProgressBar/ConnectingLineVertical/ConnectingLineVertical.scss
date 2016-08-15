@@ -1,0 +1,19 @@
+@import '../../../stylesheets/variables';
+
+.connecting-line-progress {
+  content: '';
+  width: 100%;
+  position: absolute;
+  background-color: $accent-primary;
+  height: 0%;
+  top: 0;
+  left: 0;
+}
+
+.connecting-line {
+  flex-grow: 2;
+  width: 2px;
+  margin: 0 auto;
+  background-color: $background-primary;
+  position: relative;
+}

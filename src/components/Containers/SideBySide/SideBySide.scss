@@ -1,0 +1,10 @@
+@import '../../../stylesheets/variables';
+
+.side-by-side {
+  display: flex;
+  align-items: center;
+  background: $background-primary;
+  padding: 0 60px;
+  position: relative;
+  z-index: 500;
+}

@@ -1,10 +1,8 @@
 import './StepContent.scss';
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { Link } from 'react-router';
-import FirstStepImage from '../../coding-camp.png';
 import StepOneVerticalImage from './step-one-vertical.png';
 import StepOneHorizontalImage from './step-one-horizontal.png';
-import Parallax from '../../../../components/Effects/Parallax';
 
 const SecondStepContent = (props) => {
   return (
@@ -21,20 +19,8 @@ const SecondStepContent = (props) => {
           LEARN MORE
         </Link>
       </div>
-      <Parallax
-        from={0}
-        to={0}
-        className="second-step-image-one"
-      >
-        <img src={StepOneHorizontalImage} />
-      </Parallax>
-      <Parallax
-        from={0}
-        to={-0}
-        className="second-step-image-two"
-      >
-        <img src={StepOneVerticalImage} />
-      </Parallax>
+      <img src={StepOneHorizontalImage} role="presentation" className="step-two-horizontal-image" />
+      <img src={StepOneVerticalImage} alt="Student working with Resilient Lab" className="step-two-vertical-image" />
     </div>
   );
 };

@@ -10,7 +10,7 @@
     display: flex;
   }
 
-  input {
+  input[type="text"] {
     border: solid 1px #444;
     border-right: none;
     background: #333;
@@ -36,5 +36,11 @@
     &:hover {
       background-color: $accent-primary;
     }
+  }
+}
+
+.email-form-inline {
+  .control {
+    display: flex;
   }
 }
