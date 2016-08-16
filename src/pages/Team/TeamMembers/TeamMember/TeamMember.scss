@@ -33,6 +33,7 @@
   color: #FFF;
   top: 25px;
   outline: none;
+  @include transition;
 
   @include breakpoint($small-breakpoint) {
     display: none;

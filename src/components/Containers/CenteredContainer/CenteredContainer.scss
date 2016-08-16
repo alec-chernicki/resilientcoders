@@ -1,0 +1,32 @@
+@import '../../../stylesheets/variables';
+
+.centered-container-outer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.centered-container-outer--grey {
+  background-color: $background-primary;
+}
+
+.centered-container-outer--white {
+  background-color: #FFF;
+}
+
+.centered-container-inner {
+  max-width: 1150px;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.centered-container-inner--grey {
+  background-color: $background-primary;
+}
+
+.centered-container-inner--white {
+  background-color: #FFF;
+}

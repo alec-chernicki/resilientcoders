@@ -7,7 +7,10 @@ import individualImage from './step-one-vertical.png';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 
 import Hero from '../../components/Containers/Hero/Hero';
+import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
+
 import GetInvolvedHero from './get-involved-hero.jpg';
+import GetInvolvedRow from './GetInvolvedRow/GetInvolvedRow';
 
 const GetInvolvedPage = (props) => {
   return (
@@ -16,8 +19,26 @@ const GetInvolvedPage = (props) => {
         <Hero
           image={GetInvolvedHero}
           titleLineOne="Get involved"
+          className="get-involved-hero"
         />
-        <div className="centered-container-outer centered-container-outer__grey">
+        <CenteredContainerOuter color="grey">
+          <GetInvolvedRow>
+            <h1>
+              As an individual
+            </h1>
+            <div className="divider divider__red"/>
+            <p>
+              Come mentor with us or tech a workshop. Our coders meet daily to learn HTML,
+              CSS, jQuery, JavaScript, Bootstrap, and git, from professionals. They develop
+              professional and leadership skills. And they begin honing a direction for the
+              ambition that they've always had.
+            </p>
+            <p className="form-helper">
+              I'm interested in mentorship opportunities:
+            </p>
+            <EmailFormInline/>
+            <input type="checkbox"/>
+          </GetInvolvedRow>
           <div
             className="centered-container-inner centered-container-inner__white get-involved-info">
             <img src={individualImage} alt="individual working with student" className="get-involved-image"/>
@@ -78,7 +99,7 @@ const GetInvolvedPage = (props) => {
               <a className="button" href="#">Donate any amount</a>
             </div>
           </div>
-        </div>
+        </CenteredContainerOuter>
       </div>
     </RouteTransition>
   )
