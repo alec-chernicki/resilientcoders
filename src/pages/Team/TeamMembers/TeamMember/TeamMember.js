@@ -1,23 +1,46 @@
 import './TeamMember.scss';
-import React from 'react'
+import React from 'react';
+import classNames from 'classnames';
 
-const TeamMember = ({image, title, description}) => {
-  return (
-    <div className="team-item">
-      <img src={image} alt="Team member"/>
-      <div className="team-item-container">
-        <p className="team-item__name">
-          {title}
-        </p>
-        <p className="team-item__title">
-          {description}
-        </p>
-        <button className="team-item__button">
-          +
-        </button>
+class TeamMember extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isOpen: false,
+    };
+  }
+  handleClick() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    const {image, name, title, bio} = this.props;
+    const teamItemClass = classNames('team-item', {
+      'team-item--active': this.state.isOpen
+    });
+
+    return (
+      <div className={teamItemClass}>
+        <img src={image} alt="Team member"/>
+        <div className="team-item__overlay">
+          <p>
+            {bio}
+          </p>
+        </div>
+        <div className="team-item-container">
+          <p className="team-item__name">
+            {name}
+          </p>
+          <p className="team-item__title">
+            {title}
+          </p>
+          <button className="team-item__button" onClick={this.handleClick.bind(this)} />
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
-export default TeamMember
+export default TeamMember;

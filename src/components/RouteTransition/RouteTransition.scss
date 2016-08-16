@@ -3,29 +3,29 @@
 @keyframes content-enter {
   from {
     height: 0;
-    width: 0;
-    margin-bottom: 100vh
+    width: 100%;
+    margin-bottom: 100vh;
   }
   to {
     height: auto;
-    width: auto;
-    margin-bottom: 100vh
+    width: 100%;
+    margin-bottom: 100vh;
+    overflow: auto;
   }
 }
 
-.route-changing-enter-active + .route-changing-leave {
-  margin-bottom: 100vh;
-}
-
 .route-changing-enter {
+  overflow: hidden;
+
   .route-content {
     opacity: 0.01;
     height: 0;
-    width: 0;
+    width: 100%;
   }
 }
 
 .route-changing-enter.route-changing-enter-active {
+
   .route-content {
     opacity: 1;
 

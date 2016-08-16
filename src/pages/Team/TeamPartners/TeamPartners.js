@@ -5,7 +5,7 @@ import teamPartnersConfig from './teamPartnersConfig';
 class TeamPartners extends React.Component {
   renderTeamPartners() {
     return teamPartnersConfig.map((item, i) => (
-      <div>
+      <div key={i}>
         <a href={item.link} target="blank">
           <img src={item.image} alt="resilient partner company" />
         </a>

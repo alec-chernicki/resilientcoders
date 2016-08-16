@@ -7,6 +7,7 @@
   background: #FFF;
   flex: 2 2 40%;
   margin-bottom: 60px;
+  padding-bottom: 150px;
 
   &:nth-child(odd) {
     margin-right: 60px;
@@ -15,17 +16,28 @@
 
 .team-item__button {
   text-align: center;
-  line-height: 70px;
   height: 70px;
   border: 0;
   width: 70px;
-  font-size: 50px;
   background-color: $accent-primary;
   position: absolute;
   right: 25px;
   color: #FFF;
   top: 25px;
-  @include transition;
+  outline: none;
+
+
+  &:after {
+    content: '+';
+    font-size: 50px;
+    display: inline-block;
+    @include transition;
+    transform: none;
+  }
+
+  .team-item--active &:after {
+    transform: rotate(135deg);
+  }
 
   &:hover {
     background-color: darken($accent-primary, 10%);
@@ -45,10 +57,34 @@
   margin: 0;
 }
 
+.team-item__overlay {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 150px;
+  background-color: rgba($background-secondary, 0.8);
+  color: #FFF;
+  padding: 25px;
+  opacity: 0;
+  @include transition;
+
+  .team-item--active & {
+    opacity: 1;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
 .team-item-container {
   background-color: $background-secondary;
   border-top: solid 5px $accent-primary;
   padding: 25px;
-  position: relative;
+  height: 125px;
+  left: 25px;
+  right: 25px;
+  position: absolute;
   text-align: left;
 }

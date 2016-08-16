@@ -11,8 +11,9 @@ class Work extends React.Component {
       <TeamMember
         key={i}
         image={item.image}
+        name={item.name}
         title={item.title}
-        description={item.description}
+        bio={item.bio}
       />
     ));
   }
