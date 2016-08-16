@@ -32,7 +32,7 @@
 
 // Uses fancy @content to allow inline breakpoints
 @mixin breakpoint($device-width) {
-  @media screen and (min-width: $device-width) {
+  @media screen and (max-width: $device-width) {
     @content;
   }
 }

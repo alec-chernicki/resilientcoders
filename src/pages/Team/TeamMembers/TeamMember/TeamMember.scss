@@ -9,8 +9,16 @@
   margin-bottom: 60px;
   padding-bottom: 150px;
 
+  @include breakpoint($small-breakpoint) {
+    flex: 1 1 100%;
+  }
+
   &:nth-child(odd) {
     margin-right: 60px;
+
+    @include breakpoint($small-breakpoint) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -26,6 +34,9 @@
   top: 25px;
   outline: none;
 
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
 
   &:after {
     content: '+';
