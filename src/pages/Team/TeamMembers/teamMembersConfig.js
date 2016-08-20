@@ -35,7 +35,8 @@ export default [
   {
     name: 'Alec Ortega',
     image: 'https://pbs.twimg.com/profile_images/764889240043974657/eNax_wFQ.jpg',
-    title: 'TBD',
+    title: 'Mentorship Lead',
+    bio: ''
   },
   {
     name: 'Chris Swenor',

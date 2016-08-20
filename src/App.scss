@@ -28,6 +28,14 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  color: $text-secondary;
+}
+
 .accent-link-underline {
   position: relative;
   z-index: 1;

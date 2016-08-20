@@ -1,21 +1,159 @@
 @import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
 
-.get-involved-hero {
-  max-height: 500px;
-}
-
-.get-involved-info {
-  margin-bottom: 80px;
+.get-involved {
+  height: 90vh;
   display: flex;
-  flex-direction: row !important;
+  flex-direction: column;
 }
 
-.get-involved-info-description {
+.get-involved-types {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.get-involved-types__item {
   flex-grow: 2;
-  padding: 60px;
+  flex-shrink: 2;
+  flex-basis: 33.3333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  @include transition;
+  width: auto;
+  will-change: flex-basis;
+  overflow: hidden;
+
+  &:hover {
+    flex-basis: 45%;
+
+    .divider {
+      transform: none;
+      opacity: 1;
+    }
+
+    .get-involed-types--content-helper {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  + .get-involved-types__item {
+    border-left: solid 2px $border-primary;
+  }
+
+  p {
+    color: $text-tertiary;
+    max-width: 300px;
+  }
+
+  .divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 15px auto 0;
+    @include transition;
+    transform: translateY(30px);
+    opacity: 0;
+  }
 }
 
-.get-involved-image {
-  width: 350px;
-  margin-top: -160px;
+.get-involed-types--content-helper {
+  line-height: 1;
+  font-family: $league-gothic;
+  color: $text-secondary;
+  text-transform: uppercase;
+  font-size: 30px;
+  opacity: 0;
+  @include transition;
+  transform: translateY(-30px);
+}
+
+.get-involved-types--underlay {
+  content: '';
+  position: absolute; // instead of background-attachment
+  width: 100%;
+  height: 100%;
+  top: 0;
+  width: 1000px;
+  background-size: 6px, auto, cover;
+  z-index: 5;
+  will-change: left;
+}
+
+.get-involved-types--content {
+  z-index: 10;
+  position: relative;
+}
+
+.get-involved-types--underlay  {
+  background-image: url('./dot.svg'),
+                    linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
+                    url('./get-involved-hero.jpg');
+}
+.get-involved-types__item--mentor:after {
+  background-image: url('./dot.svg'),
+                    linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
+                    url('./get-involved-hero.jpg');
+}
+.get-involved-types__item--student:after {
+  background-image: url('./dot.svg'),
+                    linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
+                    url('./get-involved-hero.jpg');
+}
+
+.get-involved-footer {
+  background-color: #FFF;
+  display: flex;
+  padding: 20px;
+
+  h1 {
+    color: $text-primary;
+  }
+
+  .divider {
+    margin: 15px 0 0 0;
+  }
+}
+
+.get-involved-information {
+  display: flex;
+
+  > div {
+    flex-basis: 50%;
+  }
+}
+
+.get-involved-information__text {
+  padding: 80px 80px 80px ;
+}
+
+.get-involved-additinal-content {
+  margin-top: 60px;
+}
+
+.get-involved-donate {
+  text-align: center;
+
+  h1 {
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+}
+
+.get-involved-donate-buttons {
+  float: left;
+  margin: 30px auto 15px;
+
+  .button-container + .button-container {
+    margin-left: 15px;
+  }
+}
+
+.get-involved-donate-legal {
+  color: $text-primary;
 }

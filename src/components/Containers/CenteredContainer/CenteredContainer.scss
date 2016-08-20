@@ -1,7 +1,6 @@
 @import '../../../stylesheets/variables';
 
 .centered-container-outer {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -16,11 +15,17 @@
 .centered-container-inner {
   max-width: 1150px;
   width: 100%;
+  padding: 80px;
   display: flex;
   flex-flow: column nowrap;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+.centered-container-inner--nonstandard {
+  padding: 0 !important;
+  flex: row !important;
 }
 
 .centered-container-inner--grey {

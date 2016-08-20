@@ -32,9 +32,7 @@ class ConnectingDot extends React.Component {
   }
   render() {
     return (
-      <div ref={this
-        .setTriggerElementRef
-      .bind(this)}>
+      <div ref={this.setTriggerElementRef.bind(this)}>
         <div className="dot-with-circle" ref={this
           .setTargetElementRef
           .bind(this)}>

@@ -1,0 +1,25 @@
+.get-involved-base {
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .button-container {
+    margin-top: 30px;
+  }
+}
+
+.get-involved-base-hero {
+  position: relative;
+  z-index: 100;
+}
+
+.get-involved-base-content {
+  margin-top: -100px;
+  z-index: 200;
+  padding-bottom: 80px;
+}
+
+.get-involved-base-hero {
+  height: 50vh;
+  background-color: #333;
+}

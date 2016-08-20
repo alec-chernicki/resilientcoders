@@ -18,11 +18,12 @@ const Timeline = () => {
           <div className="timeline-text">
             <div>
               <h2>
-                HTML
+                Hackathons
               </h2>
               <p>
-                We have a program that funnels students from learning HTML after school, through
-                our downtown "Coworking" sessions, and ultimately, hourly employment.
+                We run two hackathons before each Bootcamp, from which we recruit our students.
+                They’re each about six hours long, and are meant as a way for staff, alumni, and
+                prospective students to get to know each other.
               </p>
             </div>
           </div>
@@ -30,7 +31,7 @@ const Timeline = () => {
             <div className="timeline-image one">
               <div className="timeline-image-description-container">
                 <div className="timeline-image-description">
-                  Week 1
+                  Recruitment
                 </div>
               </div>
             </div>
@@ -41,7 +42,7 @@ const Timeline = () => {
             <div className="timeline-image two">
               <div className="timeline-image-description-container">
                 <div className="timeline-image-description">
-                  Week 3
+                  Week 1
                 </div>
               </div>
             </div>
@@ -49,11 +50,15 @@ const Timeline = () => {
           <div className="timeline-text">
             <div>
               <h2>
-                CSS
+                Core Skills
               </h2>
               <p>
-                We have a program that funnels students from learning HTML after school, through
-                our downtown "Coworking" sessions, and ultimately, hourly employment.
+                Once in Bootcamp, our coders meet daily, for seven weeks, to learn HTML, CSS,
+                JavaScript, jQuery, and git, from professionals. Before graduating, they will have
+                demonstrated proficiency in semantically structured markup, inheritance and
+                specificity, accessibility, progressive enhancement, responsive design, and
+                effective use of functions, methods, and variables. They will have built, and
+                pushed to GitHub, work that showcases these aptitudes.
               </p>
             </div>
           </div>
@@ -62,14 +67,26 @@ const Timeline = () => {
           <div className="timeline-text">
             <div>
               <h2>
-                JAVASCRIPT
+                Soft Skills
               </h2>
               <p>
-                We have a program that funnels students from learning HTML after school, through
-                our downtown "Coworking" sessions, and ultimately, hourly employment.
+                Our coders also work on the skills that make the “whole engineer,” during Bootcamp.
+                They learn communication techniques, speaking tips, as well as best practices
+                around accountability and time management.
               </p>
             </div>
           </div>
+          <div>
+            <div className="timeline-image two">
+              <div className="timeline-image-description-container">
+                <div className="timeline-image-description">
+                  Week 3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="timeline-row">
           <div>
             <div className="timeline-image three">
               <div className="timeline-image-description-container">
@@ -77,6 +94,19 @@ const Timeline = () => {
                   WEEK 5
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="timeline-text">
+            <div>
+              <h2>
+                Client work
+              </h2>
+              <p>
+                At least once per Bootcamp, we have a “client kickoff meeting,” during which a
+                client is invited to present design work for a website they need built. Our coders
+                work in teams to build it before the client returns for a presentation and
+                hand-off. Students are paid for their time on this, and throughout the Bootcamp.
+              </p>
             </div>
           </div>
         </div>
@@ -91,13 +121,16 @@ const Timeline = () => {
           </h1>
           <div className="divider divider__red"/>
           <p>
-            After our students are finished with their training they can either be hired
-            directly into an internship or transfer over to Resilient Lab, our digital
-            agency to take on real work for real clients.
+            We hire some of our own Bootcamp students into an apprenticeship with
+            <Link to="/lab">
+              &nbsp;Resilient Lab
+            </Link>
+            , and others go right into an internship leveraging their
+            new skills.
           </p>
         </div>
         <Link to="/lab">
-          <img className="timeline-end-image-right" src={careerRight} role="presentation" />
+          <img className="timeline-end-image-right" src="http://placehold.it/350x300" role="presentation" />
         </Link>
       </div>
     </div>

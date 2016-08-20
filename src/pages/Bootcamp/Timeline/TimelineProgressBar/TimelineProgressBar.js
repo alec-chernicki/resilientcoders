@@ -13,6 +13,8 @@ const TimelineProgressBar = () => {
       <ConnectingDot/>
       <ConnectingLineVertical/>
       <ConnectingDot/>
+      <ConnectingLineVertical/>
+      <ConnectingDot/>
       <ConnectingLineVertical className="last-line"/>
       <ConnectingDot/>
     </div>

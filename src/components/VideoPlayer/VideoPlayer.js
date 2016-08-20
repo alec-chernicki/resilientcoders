@@ -1,5 +1,6 @@
 import './VideoPlayer.scss';
 import videoJS from 'video.js';
+import 'videojs-vimeo';
 import React, {PropTypes} from 'react';
 
 class VideoPlayer extends React.Component {
@@ -9,7 +10,17 @@ class VideoPlayer extends React.Component {
     this.videoPlayer = null;
   }
   componentDidMount() {
-    this.videoPlayer = videoJS(this.getVideoId());
+    this.videoPlayer = videoJS(this.getVideoId(), {
+      techOrder: ['vimeo'],
+      controls: 'false',
+      autoplay: 'true',
+      muted: 'true',
+      loop: 'true',
+      sources: [{
+        type: 'video/vimeo',
+        src: 'https://youtu.be/JU1UunsFgpU'
+      }]
+    });
   }
   componentWillUnmount() {
     this.videoPlayer.dispose();
@@ -33,8 +44,6 @@ class VideoPlayer extends React.Component {
           className="video-js vjs-default-skin"
           controls
           autoPlay>
-          <source src={this.props.mp4} type="video/mp4"/>
-          <source src={this.props.webm} type="video/webm"/>
         </video>
         <p className=".vjs-no-js">
           To view this video please enable JavaScript, and consider upgrading to a web

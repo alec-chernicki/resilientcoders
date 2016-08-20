@@ -38,7 +38,7 @@ class Hero extends React.Component {
         <div
           className="hero__image"
           style={{
-            backgroundImage: `url(${image})`
+            backgroundImage: `url(${image})`,
           }}
         />
       )

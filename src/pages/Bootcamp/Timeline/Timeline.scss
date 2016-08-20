@@ -21,7 +21,7 @@
   position: relative;
 
   &.one {
-    background-image: url('./timeline-one.jpg');
+    background-image: url('https://pbs.twimg.com/media/CknuiH8UoAAC1FU.jpg');
     background-size: cover;
   }
 
@@ -104,7 +104,7 @@
 
   .timeline-end-image-left {
     top: 0;
-    height: 350px;
+    height: 300px;
     width: 350px;
     left: 0;
     position: absolute;
@@ -113,7 +113,7 @@
   .timeline-end-image-right {
     position: absolute;
     top: 0;
-    height: 350px;
+    height: 300px;
     width: 350px;
     right: 0px;
   }
