@@ -1,6 +1,6 @@
 import './VideoPlayer.scss';
 import videoJS from 'video.js';
-import 'videojs-vimeo';
+import 'videojs-youtube';
 import React, {PropTypes} from 'react';
 
 class VideoPlayer extends React.Component {
@@ -10,15 +10,15 @@ class VideoPlayer extends React.Component {
     this.videoPlayer = null;
   }
   componentDidMount() {
-    this.videoPlayer = videoJS(this.getVideoId(), {
-      techOrder: ['vimeo'],
+    this.videoPlayer = videoJS(this.videoElement, {
+      techOrder: ['youtube'],
       controls: 'false',
       autoplay: 'true',
       muted: 'true',
       loop: 'true',
       sources: [{
-        type: 'video/vimeo',
-        src: 'https://youtu.be/JU1UunsFgpU'
+        type: 'video/youtube',
+        src: this.props.url
       }]
     });
   }
@@ -29,9 +29,8 @@ class VideoPlayer extends React.Component {
   onVideoClose() {
     this.props.onClose();
   }
-  getVideoId() {
-    const videoFileName = this.props.mp4 || this.props.webm;
-    return videoFileName.substring(0, videoFileName.indexOf('.'));
+  setVideoElementRef(element) {
+    this.videoElement = element;
   }
   render() {
     return (
@@ -40,7 +39,7 @@ class VideoPlayer extends React.Component {
           className="video-close js-video-close"
           onClick={this.onVideoClose.bind(this)}/>
         <video
-          id={this.getVideoId()}
+          ref={this.setVideoElementRef.bind(this)}
           className="video-js vjs-default-skin"
           controls
           autoPlay>

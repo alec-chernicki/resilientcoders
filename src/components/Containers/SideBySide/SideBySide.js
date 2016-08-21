@@ -6,7 +6,9 @@ const SideBySide = ({children, className}) => {
   const SideBySideClass = classNames('side-by-side', className)
   return (
     <div className={SideBySideClass}>
-      {children}
+      <div className="side-by-side-container">
+        {children}
+      </div>
     </div>
   )
 }

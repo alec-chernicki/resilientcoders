@@ -1,8 +1,9 @@
 import React from 'react';
 import BinaryText from '../../../components/BinaryText/BinaryText';
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
-import MicahMp4 from './home-video.mp4';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
+const micahVideoUrl = 'https://youtu.be/JU1UunsFgpU';
 
 class MicahVideo extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class MicahVideo extends React.Component {
   renderVideoPlayer() {
     if (this.state.isPlayerShown) {
       return (<VideoPlayer
-        mp4={MicahMp4}
+        url={micahVideoUrl}
         onClose={this
           .handleVideoClose
         .bind(this)}/>);

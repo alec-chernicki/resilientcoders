@@ -5,10 +5,16 @@ import GetInvolvedBase from '../GetInvolvedBase/GetInvolvedBase';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner'
 
+import mentorImage from './get-involved-mentor.jpg';
+
 const GetInvolvedMentor = (props) => {
+  console.log(mentorImage);
   return (
     <RouteTransition>
-      <GetInvolvedBase>
+      <GetInvolvedBase
+        title="For mentors"
+        image={mentorImage}
+      >
         <CenteredContainerInner
           color="white"
           className="get-involved-base-content"
@@ -16,9 +22,6 @@ const GetInvolvedMentor = (props) => {
         >
           <div className="get-involved-information">
             <div className="get-involved-information__text">
-              <h1>
-                For Mentors
-              </h1>
               <p>
                 We're looking for hacktivists who share our vision of technology as an opportunity for
                 real meritocracy, to join us. Share your passion.

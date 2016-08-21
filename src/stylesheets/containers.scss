@@ -37,10 +37,18 @@
 
   &.section-tertiary__alert {
     background-image: url('./images/dot-dark.svg'), linear-gradient($accent-primary, $accent-primary);
+
+    p {
+      color: #FFF;
+    }
   }
 
   &.section-tertiary__subtle {
     background-image: url('./images/dot-dark.svg'), linear-gradient($background-secondary, $background-secondary);
+  }
+
+  p {
+    color: #FFF;
   }
 }
 

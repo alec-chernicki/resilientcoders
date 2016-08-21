@@ -75,7 +75,7 @@
   left: 25px;
   right: 25px;
   bottom: 150px;
-  background-color: rgba($background-secondary, 0.8);
+  background-color: rgba($background-secondary, 0.85);
   color: #FFF;
   padding: 25px;
   opacity: 0;
@@ -87,6 +87,7 @@
 
   p {
     font-size: 15px;
+    color: #FFF;
   }
 }
 

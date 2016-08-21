@@ -2,7 +2,7 @@
 @import '../../stylesheets/mixins';
 
 .get-involved {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -76,13 +76,11 @@
 .get-involved-types--underlay {
   content: '';
   position: absolute; // instead of background-attachment
-  width: 100%;
+  width: 45vw;
   height: 100%;
   top: 0;
-  width: 1000px;
   background-size: 6px, auto, cover;
   z-index: 5;
-  will-change: left;
 }
 
 .get-involved-types--content {
@@ -90,20 +88,27 @@
   position: relative;
 }
 
-.get-involved-types--underlay  {
+.get-involved-types__item--mentor .get-involved-types--underlay  {
   background-image: url('./dot.svg'),
                     linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
-                    url('./get-involved-hero.jpg');
+                    url('./get-involved-mentor.jpg');
+  background-position: right;
+  right: 0;
 }
-.get-involved-types__item--mentor:after {
+
+.get-involved-types__item--company .get-involved-types--underlay {
   background-image: url('./dot.svg'),
                     linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
-                    url('./get-involved-hero.jpg');
+                    url('./get-involved-company.jpg');
+  background-position: left;
+  left: 0;
 }
-.get-involved-types__item--student:after {
+
+.get-involved-types__item--student .get-involved-types--underlay {
   background-image: url('./dot.svg'),
                     linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
-                    url('./get-involved-hero.jpg');
+                    url('./get-involved-student.jpg');
+  background-position: center;
 }
 
 .get-involved-footer {
@@ -129,7 +134,7 @@
 }
 
 .get-involved-information__text {
-  padding: 80px 80px 80px ;
+  padding: 80px 60px 80px ;
 }
 
 .get-involved-additinal-content {
@@ -138,6 +143,7 @@
 
 .get-involved-donate {
   text-align: center;
+  margin-top: -60px;
 
   h1 {
     line-height: 1;

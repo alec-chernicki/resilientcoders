@@ -13,8 +13,9 @@ const App = ({children, location}) => (
       transitionEnterTimeout={500}
       transitionLeaveTimeout={250}>
       {React.cloneElement(children, {key: location.pathname})}
+      <Footer/>
     </ReactCSSTransitionGroup>
-    <Footer/>
+
   </div>
 );
 
