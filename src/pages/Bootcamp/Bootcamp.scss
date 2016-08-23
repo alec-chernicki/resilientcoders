@@ -1,8 +1,5 @@
 @import '../../stylesheets/variables';
-
-.bootcamp-details {
-  padding-bottom: 60px;
-}
+@import '../../stylesheets/mixins';
 
 .bootcamp-details__text {
   padding-top: 110px;
@@ -33,7 +30,6 @@
   padding-bottom: 60px;
 }
 
-
 .bootcamp-timeline {
   display: flex;
   height: 2000px;
@@ -42,6 +38,10 @@
 
 .bootcamp-timeline-section-outer {
   padding-top: 40px;
+
+  @include breakpoint($small-breakpoint) {
+    padding: 0;
+  }
 }
 
 .bootcamp-timeline-section-inner {
@@ -50,6 +50,10 @@
   padding-right: 0 !important;
   padding-top: 0 !important;
   text-align: center;
+
+  @include breakpoint($small-breakpoint) {
+    margin: 0;
+  }
 }
 
 .bootcamp-title {
@@ -75,4 +79,8 @@
   margin: 0 auto;
   text-align: center;
   padding: 180px 0;
+
+  p {
+    color: $text-tertiary;
+  }
 }

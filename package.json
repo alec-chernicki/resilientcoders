@@ -55,6 +55,8 @@
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "gsap": "^1.19.0",
+    "modernizr": "^3.3.1",
+    "modernizr-loader": "0.0.5",
     "odometer": "^0.4.7",
     "react": "^15.3.0",
     "react-addons-css-transition-group": "^15.3.0",

@@ -10,6 +10,8 @@ import GetInvolvedHero from './get-involved-hero.jpg';
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 
+import donateImage from './donate.jpg';
+
 const GetInvolvedPage = (props) => {
   return (
     <RouteTransition>
@@ -57,26 +59,35 @@ const GetInvolvedPage = (props) => {
         </div>
       </div>
       <CenteredContainerOuter color="grey">
-        <CenteredContainerInner color="white" className="get-involved-donate">
-          <h1>
-            Donate
-          </h1>
-          <p>
-            There's a lot going on, and many opportunities for you to get involved. For any
-            donation of $75 or more, we'll send you a Resilient Coders hoodie. They're printed
-            here in Massachusetts by court-involved youth.
-          </p>
-          <div className="get-involved-donate-buttons">
-            <ButtonPrimary>
-              Donate $75
-            </ButtonPrimary>
-            <ButtonPrimary>
-              Donate Any Amount
-            </ButtonPrimary>
+        <CenteredContainerInner
+          color="white"
+          className="get-involved-donate"
+        >
+          <img className="get-involved-donate-image" src={donateImage} />
+          <div className="get-involved-text-container">
+            <h1>
+              Donate
+            </h1>
+            <p>
+              There's a lot going on, and many opportunities for you to get involved. For any
+              donation of $75 or more, we'll send you a Resilient Coders hoodie. They're printed
+              right here in Massachusetts by
+              <a href="#" className="accent-link-underline accent-link-underline-trigger">
+                &nbsp;court-involved youth.
+              </a>
+            </p>
+            <div className="get-involved-donate-buttons">
+              <ButtonPrimary>
+                Donate $75
+              </ButtonPrimary>
+              <ButtonPrimary>
+                Donate Any Amount
+              </ButtonPrimary>
+            </div>
+            <p className="get-involved-donate-legal">
+              Resilient Coders is a 501(c)(3) organization.
+            </p>
           </div>
-          <p className="get-involved-donate-legal">
-            Resilient Coders is a 501(c)(3) organization.
-          </p>
         </CenteredContainerInner>
       </CenteredContainerOuter>
     </RouteTransition>

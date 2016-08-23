@@ -39,8 +39,8 @@ class News extends React.Component {
   render() {
     return (
       <RouteTransition>
-        <div className="section-main">
-          <div className="section-container-secondary news">
+        <div className="news">
+          <div className="news-container">
             <div className="news-lists">
               <div className="news-list-container">
                 <div className="news-page-header">

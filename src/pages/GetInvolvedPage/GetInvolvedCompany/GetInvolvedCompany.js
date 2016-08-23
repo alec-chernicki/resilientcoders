@@ -47,7 +47,7 @@ class GetInvolvedCompany extends React.Component {
             <div className="get-involved-information-mentor-image" />
           </CenteredContainerInner>
           <CenteredContainerInner
-            className="get-involved-additinal-content"
+            className="get-involved-additional-content"
             standard={false}
           >
             <div className="get-involved-information">

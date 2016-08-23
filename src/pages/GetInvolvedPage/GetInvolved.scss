@@ -5,12 +5,21 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+
+  @include breakpoint($small-breakpoint) {
+    padding-top: 70px;
+    height: auto;
+  }
 }
 
 .get-involved-types {
   display: flex;
   flex-direction: row;
   height: 100%;
+
+  @include breakpoint($small-breakpoint) {
+    flex-direction: column;
+  }
 }
 
 .get-involved-types__item {
@@ -28,8 +37,16 @@
   will-change: flex-basis;
   overflow: hidden;
 
+  @include breakpoint($small-breakpoint) {
+    height: 250px;
+  }
+
   &:hover {
     flex-basis: 45%;
+
+    @include breakpoint($small-breakpoint) {
+      flex-basis: 33.3333%;
+    }
 
     .divider {
       transform: none;
@@ -44,6 +61,11 @@
 
   + .get-involved-types__item {
     border-left: solid 2px $border-primary;
+
+    @include breakpoint($small-breakpoint) {
+      border-left: 0;
+      border-top: solid 2px $border-primary;
+    }
   }
 
   p {
@@ -71,6 +93,11 @@
   opacity: 0;
   @include transition;
   transform: translateY(-30px);
+
+  @include breakpoint($small-breakpoint) {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .get-involved-types--underlay {
@@ -108,7 +135,7 @@
   background-image: url('./dot.svg'),
                     linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
                     url('./get-involved-student.jpg');
-  background-position: center;
+  background-position: right;
 }
 
 .get-involved-footer {
@@ -130,20 +157,36 @@
 
   > div {
     flex-basis: 50%;
+
+    @include breakpoint($small-breakpoint) {
+      flex-basis: 100%;
+    }
   }
 }
 
 .get-involved-information__text {
-  padding: 80px 60px 80px ;
+  padding: 80px 60px 80px;
+
+  @include breakpoint($small-breakpoint) {
+    padding: 25px 20px;
+  }
 }
 
-.get-involved-additinal-content {
+.get-involved-additional-content {
   margin-top: 60px;
 }
 
 .get-involved-donate {
-  text-align: center;
   margin-top: -60px;
+  padding: 60px;
+  flex-direction: row !important;
+  align-items: center;
+
+  @include breakpoint($small-breakpoint) {
+    flex-direction: column !important;
+    padding-top: 30px !important;
+    margin-top: 0;
+  }
 
   h1 {
     line-height: 1;
@@ -151,12 +194,37 @@
   }
 }
 
+.get-involved-donate-image {
+  width: 400px;
+  height: 100%;
+}
+
+.get-involved-text-container {
+  padding-left: 60px;
+
+  @include breakpoint($small-breakpoint) {
+    padding: 25px 0;
+  }
+}
+
 .get-involved-donate-buttons {
   float: left;
   margin: 30px auto 15px;
+  width: 100%;
+
+  .button-container {
+    @include breakpoint($small-breakpoint) {
+      width: 100%;
+    }
+  }
 
   .button-container + .button-container {
     margin-left: 15px;
+
+    @include breakpoint($small-breakpoint) {
+      margin-left: 0;
+      margin-top: 15px;
+    }
   }
 }
 

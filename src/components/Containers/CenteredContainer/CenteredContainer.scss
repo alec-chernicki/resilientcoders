@@ -1,7 +1,12 @@
 @import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
 
 .centered-container-outer {
   padding-bottom: 60px;
+
+  @include breakpoint($small-breakpoint) {
+    padding-bottom: 15px;
+  }
 }
 
 .centered-container-outer--grey {
@@ -22,11 +27,15 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+
+  @include breakpoint($small-breakpoint) {
+    padding: 20px;
+  }
 }
 
 .centered-container-inner--nonstandard {
   padding: 0 !important;
-  flex: row !important;
+  flex-direction: row !important;
 }
 
 .centered-container-inner--grey {

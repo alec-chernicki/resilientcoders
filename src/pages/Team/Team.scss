@@ -15,7 +15,7 @@
   margin: 0 auto;
 
   @include breakpoint($small-breakpoint) {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

@@ -18,6 +18,12 @@ h1, .letter {
   line-height: 1.1;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @include breakpoint($small-breakpoint) {
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 50px;
+  }
 }
 
 h2 {
@@ -63,6 +69,11 @@ p {
   font-family: $roboto-slab;
   font-size: $font-size-secondary;
   line-height: $secondary-line-height;
+
+
+  @include breakpoint($small-breakpoint) {
+    font-size: 18px;
+  }
 
   a,
   span {

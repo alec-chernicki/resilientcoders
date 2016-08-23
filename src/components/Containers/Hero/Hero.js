@@ -1,12 +1,26 @@
 import './Hero.scss';
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
+import Modernizr from 'modernizr';
 
 import DotLight from '../Dots/dot-light.svg';
 import BinaryText from '../../BinaryText/BinaryText';
 import HeroVideo from './HeroVideo';
+import HeroImage from './hero-image.png';
 
 class Hero extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      supportsAutoplay: false
+    }
+  }
+  componentDidMount() {
+    Modernizr.on('videoautoplay', (result) => {
+      this.setState({supportsAutoplay: result})
+    })
+  }
   renderTitleLineOne() {
     const {titleLineOne} = this.props;
     if (!titleLineOne) return
@@ -33,6 +47,7 @@ class Hero extends React.Component {
   }
   renderImageContent() {
     const {image} = this.props;
+    const {supportsAutoplay} = this.state;
     if (image) {
       return (
         <div
@@ -43,8 +58,20 @@ class Hero extends React.Component {
         />
       )
     }
-    else {
+
+    else if (supportsAutoplay) {
+      // Mobile browsers don't support this
       return <HeroVideo />;
+    }
+    else {
+      return (
+        <div
+          className="hero__image"
+          style={{
+            backgroundImage: `url(${HeroImage})`,
+          }}
+        />
+      )
     }
   }
   render () {

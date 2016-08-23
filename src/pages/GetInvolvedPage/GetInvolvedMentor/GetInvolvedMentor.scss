@@ -1,12 +1,17 @@
 @import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
 
-.get-involved-emphasis {
+p + .get-involved-emphasis {
   margin-top: 40px;
 }
 
 .get-involved-information-mentor-image {
   background-image: url('https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/willdandevin1200.jpg');
   background-size: cover;
+
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
 }
 
 .get-involved-mentor-content {

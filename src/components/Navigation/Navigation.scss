@@ -1,4 +1,5 @@
 @import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
 
 .headroom {
   position: fixed;
@@ -30,6 +31,7 @@
   background-color: #FFF;
   cursor: pointer;
   display: flex;
+  position: relative;
   margin-left: 70px;
   height: 70px;
 
@@ -100,6 +102,96 @@
       z-index: 20;
       bottom: 0;
       transition: all 0.5s cubic-bezier(0, 1, 0.58, 1);
+    }
+  }
+}
+
+.nav-links--desktop {
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
+}
+
+.nav-links-mobile-container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 70px;
+  left: 0;
+  background-color: $background-primary;
+}
+
+.mobile-navigation-enter {
+  opacity: 0.01;
+}
+
+.mobile-navigation-enter.mobile-navigation-enter-active {
+  opacity: 1;
+  @include transition;
+}
+
+.mobile-navigation-leave {
+  opacity: 1;
+}
+
+.mobile-navigation-leave.mobile-navigation-leave-active {
+  opacity: 0.01;
+  @include transition;
+}
+
+.nav-links--mobile {
+  display: none;
+
+  @include breakpoint($small-breakpoint) {
+    display: block;
+  }
+}
+
+.nav-icon {
+  height: 18px !important;
+  margin: auto;
+  width: 30px !important;
+  position: absolute !important;
+  top: 0;
+  right: 25px;
+  bottom: 0;
+
+
+  &.active {
+    .line-1 {
+      transform: translateY(-0.5px) translateX(0) rotate(45deg);
+    }
+    .line-2 {
+      opacity:0;
+    }
+    .line-3 {
+      transform: translateY(0.5px) translateX(0) rotate(-45deg);
+    }
+  }
+
+  .nav-line {
+    background-color: $background-tertiary;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    margin: 0;
+    position: absolute;
+    @include transition;
+    width: 30px;
+
+    &.line-1 {
+      top: 0;
+      transform-origin: top left;
+    }
+
+    &.line-2 {
+      margin-top: -1px;
+      top: 50%;
+    }
+
+    &.line-3 {
+      bottom: 0;
+      transform-origin: bottom left;
     }
   }
 }

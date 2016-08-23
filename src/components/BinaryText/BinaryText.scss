@@ -1,8 +1,14 @@
 @import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
 
 
 .binary-text {
   height: 77px;
+
+  @include breakpoint($small-breakpoint) {
+    height: auto;
+    margin-bottom: 0;
+  }
 }
 
 .binary-text__letter {
@@ -11,4 +17,10 @@
   line-height: 1.1;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @include breakpoint($small-breakpoint) {
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 45px;
+  }
 }

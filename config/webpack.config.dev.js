@@ -22,6 +22,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.json'],
     alias: {
+      "modernizr$": path.resolve(__dirname, ".modernizrrc"),
       "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
       "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
       "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
@@ -83,6 +84,10 @@ module.exports = {
         test: /\.(mp4|webm)$/,
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'url?limit=10000'
+      },
+      {
+        test: /\.modernizrrc$/,
+        loader: "modernizr"
       }
     ]
   },
