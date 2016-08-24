@@ -52,11 +52,14 @@
     color: $text-primary;
     cursor: pointer;
     line-height: 1.2;
-    animation: slide-fade-in 1500ms cubic-bezier(0, 1, 0.58, 1) 0.5s backwards;
   }
 
   li {
     padding: 0 20px;
+
+    a {
+      animation: slide-fade-in 1500ms cubic-bezier(0, 1, 0.58, 1) 0.5s backwards;
+    }
 
     &:nth-of-type(1) a {
       animation-delay: 275ms;
@@ -76,6 +79,10 @@
     &:nth-of-type(6) a {
       animation-delay: 765ms;
     }
+  }
+
+  .nav-links-mobile-container li {
+
   }
 }
 

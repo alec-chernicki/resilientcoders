@@ -28,6 +28,10 @@ const fetchTweets = () => {
   });
 }
 
+app.get('/api/socialimage', (req,res,next) => {
+  res.sendFile(path.resolve(__dirname + '/serverAssets/meta-image.jpg'));
+})
+
 app.get('/api/tweets', (req, res, next) => {
   fetchTweets()
     .then(tweets => res.json(tweets))
