@@ -1,5 +1,6 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
+@import '../../stylesheets/animations';
 
 .headroom {
   position: fixed;
@@ -29,11 +30,70 @@
 
 .nav-links {
   background-color: #FFF;
-  cursor: pointer;
   display: flex;
-  position: relative;
-  margin-left: 70px;
   height: 70px;
+  margin-left: 70px;
+  position: relative;
+}
+
+.nav-links--mobile {
+  display: none;
+  border-bottom: 1px solid $border-primary;
+
+  @include breakpoint($small-breakpoint) {
+    display: block;
+  }
+
+  a {
+    display: inline-block;
+    font-family: $league-gothic;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: $text-primary;
+    cursor: pointer;
+    line-height: 1.2;
+    animation: slide-fade-in 1500ms cubic-bezier(0, 1, 0.58, 1) 0.5s backwards;
+  }
+
+  li {
+    padding: 0 20px;
+
+    &:nth-of-type(1) a {
+      animation-delay: 275ms;
+    }
+    &:nth-of-type(2) a {
+      animation-delay: 375ms;
+    }
+    &:nth-of-type(3) a {
+      animation-delay: 475ms;
+    }
+    &:nth-of-type(4) a {
+      animation-delay: 575ms;
+    }
+    &:nth-of-type(5) a {
+      animation-delay: 675ms;
+    }
+    &:nth-of-type(6) a {
+      animation-delay: 765ms;
+    }
+  }
+}
+
+.nav-links-mobile-container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 70px;
+  left: 0;
+  padding-top: 15px;
+  background-color: #FFF;
+}
+
+
+.nav-links--desktop {
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
 
   a {
     font-family: $roboto-slab;
@@ -106,21 +166,6 @@
   }
 }
 
-.nav-links--desktop {
-  @include breakpoint($small-breakpoint) {
-    display: none;
-  }
-}
-
-.nav-links-mobile-container {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 70px;
-  left: 0;
-  background-color: $background-primary;
-}
-
 .mobile-navigation-enter {
   opacity: 0.01;
 }
@@ -139,15 +184,6 @@
   @include transition;
 }
 
-.nav-links--mobile {
-  display: none;
-  border-bottom: 1px solid $border-primary;
-
-  @include breakpoint($small-breakpoint) {
-    display: block;
-  }
-}
-
 .nav-icon {
   height: 18px !important;
   margin: auto;
@@ -160,13 +196,13 @@
 
   &.active {
     .line-1 {
-      transform: translateY(-0.5px) translateX(0) rotate(45deg);
+      transform: translateY(-2px) translateX(4px) rotate(45deg);
     }
     .line-2 {
       opacity:0;
     }
     .line-3 {
-      transform: translateY(0.5px) translateX(0) rotate(-45deg);
+      transform: translateY(2px) translateX(4px) rotate(-45deg);
     }
   }
 
