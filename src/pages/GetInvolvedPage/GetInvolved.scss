@@ -183,6 +183,11 @@
   align-items: center;
 
   @include breakpoint($small-breakpoint) {
+    padding: 25px 20px;
+    height: auto;
+  }
+
+  @include breakpoint($small-breakpoint) {
     flex-direction: column !important;
     padding-top: 30px !important;
     margin-top: 0;
@@ -196,7 +201,10 @@
 
 .get-involved-donate-image {
   width: 400px;
-  height: 100%;
+
+  @include breakpoint($small-breakpoint) {
+    height: 100%;
+  }
 }
 
 .get-involved-text-container {

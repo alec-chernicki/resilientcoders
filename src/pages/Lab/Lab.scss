@@ -1,15 +1,26 @@
 @import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
 
 .lab-abilities {
   border-bottom: solid 5px $accent-primary;
   padding-top: 80px;
   padding-bottom: 80px;
+
+  @include breakpoint($small-breakpoint) {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .lab-description {
   margin: -90px 0 -60px;
   padding-top: 80px;
   padding-bottom: 50px;
+
+  @include breakpoint($small-breakpoint) {
+    margin-top: 0;
+  }
 }
 
 .faq {

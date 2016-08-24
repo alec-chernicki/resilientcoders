@@ -86,7 +86,7 @@ class Bootcamp extends React.Component {
               Though our bootcamp isn't until for a while there's more ways to join the code
               literacy movement.
             </p>
-            <ButtonPrimary to="/get-involved">
+            <ButtonPrimary to="/get-involved/mentor">
               Get Involved
             </ButtonPrimary>
           </SideItem>
