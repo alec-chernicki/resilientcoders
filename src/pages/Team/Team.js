@@ -6,7 +6,7 @@ import TeamPartners from './TeamPartners/TeamPartners';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 
 import Hero from '../../components/Containers/Hero/Hero';
-import TeamHeroImage from './lab-hero.png';
+import TeamHeroImage from './team-hero.jpg';
 
 const Team = (props) => {
   return (

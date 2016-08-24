@@ -77,7 +77,7 @@ const Timeline = () => {
             </div>
           </div>
           <div>
-            <div className="timeline-image two">
+            <div className="timeline-image three">
               <div className="timeline-image-description-container">
                 <div className="timeline-image-description">
                   Week 3
@@ -88,7 +88,7 @@ const Timeline = () => {
         </div>
         <div className="timeline-row">
           <div>
-            <div className="timeline-image three">
+            <div className="timeline-image four">
               <div className="timeline-image-description-container">
                 <div className="timeline-image-description">
                   WEEK 5
@@ -128,7 +128,7 @@ const Timeline = () => {
             new skills.
           </p>
         </div>
-        <img className="timeline-end-image-right" src={careerLeft} role="presentation" />
+        <img className="timeline-end-image-right" src={careerRight} role="presentation" />
       </div>
     </div>
   )

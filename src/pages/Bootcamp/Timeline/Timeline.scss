@@ -43,12 +43,17 @@
   }
 
   &.two {
-    background-image: url('./timeline-two.jpg');
+    background-image: url('./timeline-core-skills.jpg');
     background-size: cover;
   }
 
   &.three {
-    background-image: url('./timeline-one.jpg');
+    background-image: url('./timeline-soft-skills.jpg');
+    background-size: cover;
+  }
+
+  &.four {
+    background-image: url('./timeline-real-work.jpg');
     background-size: cover;
   }
 

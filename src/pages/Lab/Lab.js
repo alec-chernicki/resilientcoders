@@ -52,8 +52,8 @@ class Lab extends React.Component {
               </a>
               , and recruited into the Lab for their aptitude and their grit. Our clients get
               an exceptional product, while also helping to launch our coders' careers.
-              Something about how a company has half of their project as a write off to relate
-              back to the heading of the page.
+              Half of what we bill is a tax-deductable write off as an investment
+              in our students' careers.
             </p>
           </SideItem>
         </SideBySide>
