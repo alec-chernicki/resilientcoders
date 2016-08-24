@@ -3,6 +3,7 @@ import React from 'react';
 import {Link} from 'react-router';
 import StepOneVerticalImage from './step-one-vertical.png';
 import StepOneHorizontalImage from './step-one-horizontal.png';
+import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
 
 const FirstStepContent = () => {
 
@@ -22,9 +23,9 @@ const FirstStepContent = () => {
           accessibility, and usability. At the end, we recruit out of our Bootcamp into
           Resilient Lab.
         </p>
-        <Link to="/bootcamp" className="button">
+        <ButtonPrimary to="/bootcamp">
           LEARN MORE
-        </Link>
+        </ButtonPrimary>
       </div>
       <img src={StepOneHorizontalImage} role="presentation" className="step-one-horizontal-image" />
       <img src={StepOneVerticalImage} alt="Student working at Resilient Bootcamp" className="step-one-vertical-image" />

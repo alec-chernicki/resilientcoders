@@ -22,8 +22,8 @@ class Bootcamp extends React.Component {
           titleLineOne="Turning dedication"
           titleLineTwo="into opportunity"
         >
-          <ButtonPrimary target="blank">
-            Learn More
+          <ButtonPrimary to="/get-involved">
+            Get Involved
           </ButtonPrimary>
         </Hero>
         <SideBySide className="bootcamp-details">
@@ -87,10 +87,8 @@ class Bootcamp extends React.Component {
               Though our bootcamp isn't until for a while there's more ways to join the code
               literacy movement.
             </p>
-            <ButtonPrimary>
-              <Link to="/get-involved">
-                Get Involved
-              </Link>
+            <ButtonPrimary to="/get-involved">
+              Get Involved
             </ButtonPrimary>
           </SideItem>
         </SideBySide>

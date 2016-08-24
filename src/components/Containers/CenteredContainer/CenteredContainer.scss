@@ -17,6 +17,7 @@
   background-color: #FFF;
 }
 
+
 .centered-container-inner {
   max-width: 1150px;
   width: 100%;
@@ -35,7 +36,7 @@
 
 .centered-container-inner--nonstandard {
   padding: 0 !important;
-  flex-direction: row !important;
+  flex-direction: row;
 }
 
 .centered-container-inner--grey {

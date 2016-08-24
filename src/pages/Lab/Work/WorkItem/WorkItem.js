@@ -40,9 +40,7 @@ class WorkItem extends React.Component {
         .bind(this)}>
         <div
           className="work-item accent-link-underline-trigger"
-          ref={this
-            .setTargetElementRef
-          .bind(this)}>
+          ref={this.setTargetElementRef.bind(this)}>
           <div className="work-item-image">
             <img src={image} alt="Case study by Resilient Lab"/>
           </div>

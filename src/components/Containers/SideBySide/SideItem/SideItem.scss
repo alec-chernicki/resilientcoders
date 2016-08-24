@@ -1,9 +1,15 @@
 @import '../../../../stylesheets/variables';
+@import '../../../../stylesheets/mixins';
 
 .side-item {
   padding-left: 50px;
   padding-right: 50px;
   height: 100%;
+
+  @include breakpoint($small-breakpoint) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   h1, h2, h3, p {
     // margin-bottom: 0;

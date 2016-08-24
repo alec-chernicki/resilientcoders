@@ -141,6 +141,7 @@
 
 .nav-links--mobile {
   display: none;
+  border-bottom: 1px solid $border-primary;
 
   @include breakpoint($small-breakpoint) {
     display: block;

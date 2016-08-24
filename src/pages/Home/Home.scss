@@ -1,7 +1,55 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
 
-.program {
+.home-text {
+  width: 50%;
+  padding: 110px 60px 60px;
+  margin-top: -27px;
+
+  @include breakpoint($small-breakpoint) {
+    width: 100%;
+  }
+}
+
+.home-photo {
+  width: 50% !important;
+  margin-top: -140px;
+  height: 500px !important;
+
+  @include breakpoint($small-breakpoint) {
+    width: 100% !important;
+    margin-top: 0;
+    height: 250px !important;
+  }
+
+  div {
+    height: 100%;
+  }
+
+  .one {
+    background-image: url("./coding-camp.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .two {
+    background-image: url('https://resilientcoders.s3.amazonaws.com/i/julio.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .three {
+    background-image: url('https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/willdandevin1200.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .four {
+    background-image: url('https://pbs.twimg.com/media/CknuiH8UoAAC1FU.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
   .slick-dots {
     text-align: left;
     background-color: $background-secondary;
@@ -10,92 +58,13 @@
     padding: 20px;
     width: auto;
     float: left;
-  }
-}
 
-.section-overview {
-  height: 670px;
-  position: relative;
-  background-color: $background-primary;
-  z-index: 1000;
-
-  h1 {
-    color: $text-primary;
-    margin-bottom: 40px;
-  }
-
-  p {
-    margin-bottom: 35px;
-  }
-
-  .section-overview-container {
-    max-width: 1150px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .program-text {
-    background: #FFF;
-    float: left;
-    width: 50%;
-    padding: 110px 60px 60px;
-    margin-top: -27px;
-    height: 625px;
-  }
-
-  .program-photo {
-    width: 50%;
-    margin-top: -81px;
-    float: right;
-    height: 610px;
-    background-color: $background-secondary;
-
-    div {
-      height: 100%;
+    @include breakpoint($small-breakpoint) {
+      float: none;
       width: 100%;
+      display: flex !important;
+      bottom: -65px;
     }
-
-    .one {
-      background-image: url("./coding-camp.png");
-      background-size: cover;
-      background-position: center;
-    }
-
-    .two {
-      background-image: url('https://resilientcoders.s3.amazonaws.com/i/julio.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .three {
-      background-image: url('https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/willdandevin1200.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .four {
-      background-image: url('https://pbs.twimg.com/media/CknuiH8UoAAC1FU.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  }
-}
-
-.section-micah {
-  background-image: radial-gradient(circle closest-corner at 80% 50%, rgba($background-secondary, 0.4) 30%, rgba($background-secondary, 0.9)),
-                    url('./micah_bw.jpg');
-  background-position: center;
-  background-repeat: no-repeat, no-repeat;;
-  background-size: cover, cover;
-  padding: 225px 0 300px !important;
-  overflow: hidden;
-
-  h1 {
-    animation: home-fade-in 1s cubic-bezier(0, 1, 0.58, 1) 0.5s backwards;
-  }
-
-  p {
-    color: $text-tertiary;
   }
 }
 
@@ -106,55 +75,6 @@
 
 .call-to-action {
   margin-top: -110px;
-}
-
-.video-play {
-  height: 100px;
-  background-color: rgba($background-tertiary, 0.4);
-  cursor: pointer;
-  width: 100px;
-  border-radius: 50%;
-  position: absolute;
-  border: 2px solid #FFF;
-  bottom: 10px;
-  right: 0;
-  @include transition;
-
-  &:hover {
-    border: 2px solid $accent-primary;
-    transform: scale(1.075, 1.075);
-
-    &:before {
-      border: 2px solid $accent-primary;
-    }
-  }
-
-  &:active {
-    transform: scale(0.925, 0.925);
-  }
-
-  &:after {
-    content: '';
-    @include absolute-all-center;
-    left: 5px;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 25px solid $accent-primary;
-  }
-
-  &:before {
-    animation: pulse 2s infinite;
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border: 2px solid #FFF;
-    border-radius: 50%;
-  }
 }
 
 .program {
@@ -169,15 +89,9 @@
 
 .tiered-program {
   text-align: center;
-  padding: 80px 0px 80px 0px;
-  background: #FFF;
-  max-width: 1150px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   overflow: hidden;
   position: relative;
+  padding: 60px 20px;
 
   .divider {
     margin: 30px auto;
@@ -192,7 +106,6 @@
 
   p {
     color: $text-secondary;
-    max-width: 850px;
     margin: 0 auto;
     width: 100%;
   }
