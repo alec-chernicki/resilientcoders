@@ -65,9 +65,11 @@ class Home extends Component {
               </div>
             </div>
             <div className="tiered-program">
-              <h1>AN END TO END SOLUTION</h1>
-              <p>In order to effectively educate and employ our students we’ve developed a funnel with overlapping means of engagement.</p>
-              <span className="divider divider__red"/>
+              <div className="tiered-program-title">
+                <h1>AN END TO END SOLUTION</h1>
+                <p>In order to effectively educate and employ our students we’ve developed a funnel with overlapping means of engagement.</p>
+                <div className="divider divider__red" />
+              </div>
               <Steps/>
             </div>
             <div

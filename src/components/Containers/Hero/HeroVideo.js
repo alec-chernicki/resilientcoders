@@ -9,7 +9,9 @@ class HeroVideo extends Component {
     this.videoPlayer = null;
   }
   componentDidMount() {
-    this.videoPlayer = videoJS(this.getVideoId());
+    this.videoPlayer = videoJS(this.getVideoId(), {
+      muted: true
+    });
   }
   componentWillUnmount() {
     this.videoPlayer.dispose();
@@ -25,7 +27,8 @@ class HeroVideo extends Component {
           id={this.getVideoId()}
           preload="preload"
           poster="data:image/gif,AAAA"
-          autoPlay muted="muted"
+          autoPlay
+          muted="muted"
           loop="loop"
         >
           <source type="video/mp4" src={HeroVideoItem}/>

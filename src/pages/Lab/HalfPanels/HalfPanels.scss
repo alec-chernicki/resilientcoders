@@ -1,4 +1,5 @@
 @import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
 
 .panel-right {
   background-image: radial-gradient(circle closest-corner at 80% 50%, rgba($background-secondary, 0.8) 30%, rgba($background-secondary, 0.8)),
@@ -16,9 +17,12 @@
 
 .panel-visibility-container {
   height: 100%;
-  width: 50%;
+  flex: 0 0 50%;
   position: relative;
-  float: left;
+
+  + .panel-visibility-container {
+    border-top: solid 2px $background-primary;
+  }
 }
 
 .panel-container {
@@ -28,7 +32,12 @@
   position: relative;
   overflow: hidden;
   z-index: 50;
+  display: flex;
   background-color: $background-secondary;
+
+  @include breakpoint($small-breakpoint) {
+    flex-direction: column;
+  }
 
   &:after {
     content: '';
@@ -42,6 +51,10 @@
     right: 0;
     margin: 0 auto;
     top: 0;
+
+    @include breakpoint($small-breakpoint) {
+      display: none;
+    }
   }
 }
 
@@ -51,10 +64,18 @@
   clear: both;
   text-align: center;
   width: 100%;
+
+  @include breakpoint($small-breakpoint) {
+    font-size: 40px;
+  }
 }
 
 .odometer {
   line-height: 150px;
+
+  @include breakpoint($small-breakpoint) {
+    line-height: 40px;
+  }
 }
 
 .odometer-value {
@@ -64,6 +85,10 @@
 
 .odometer-inside * {
   width: 80px !important;
+
+  @include breakpoint($small-breakpoint) {
+    width: 35px !important;
+  }
 }
 
 .odometer-digit {
@@ -71,6 +96,10 @@
   font-size: 150px;
   overflow: hidden;
   text-align: center;
+
+  @include breakpoint($small-breakpoint) {
+    font-size: 40px;
+  }
 }
 
 .panel-item {

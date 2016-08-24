@@ -1,12 +1,23 @@
 @import '../../../../stylesheets/variables';
 @import '../../../../stylesheets/mixins';
 
+.alumni-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($background-secondary, 0.55);
+  position: absolute;
+  z-index: 400;
+}
+
 .alumni-item {
   background-size: cover;
   background-position: center;
   position: relative;
   height: 100%;
   color: #FFF;
+  padding: 0 20px;
   width: 100%;
   display: flex;
   align-items: center;

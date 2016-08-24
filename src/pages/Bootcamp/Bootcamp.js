@@ -49,9 +49,8 @@ class Bootcamp extends React.Component {
               <div className="section-container-primary bootcamp-title">
                 <h1>The Program</h1>
                 <p>
-                  Our young people are most comfortable with relatively simple websites, and
-                  custom Wordpress theming. But our partnership with East Coast Product allows us
-                  to do pretty much anything.
+                  Our 8 week program teaches students the fundamentals of front end web development.
+                  We start with the basics and end with real world client work.
                 </p>
               </div>
             </div>

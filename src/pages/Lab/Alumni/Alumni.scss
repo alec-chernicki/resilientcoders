@@ -4,6 +4,11 @@
 .alumni {
   height: 125vh;
   min-height: 800px;
+  position: relative;
+
+  p {
+    color: $text-tertiary;
+  }
 
   .alumni-photos,
   .slick-list,
@@ -26,6 +31,10 @@
     width: 110px;
     color: #FFF;
     @include transition;
+
+    @include breakpoint($small-breakpoint) {
+      display: none !important;
+    }
 
     &:hover {
       width: 140px;

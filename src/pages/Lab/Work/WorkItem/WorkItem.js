@@ -11,24 +11,12 @@ class WorkItem extends React.Component {
     if (!this.triggerElement || !this.targetElement) {
       return
     }
-
-    this.scene = new ScrollMagic
-      .Scene({offset: 0, triggerHook: 0.5})
-      .setClassToggle(this.targetElement, 'active')
-      .addTo(this.controller)
-      .triggerElement(this.triggerElement)
   }
   setTargetElementRef(element) {
     this.targetElement = element;
   }
   setTriggerElementRef(element) {
     this.triggerElement = element;
-  }
-  componentWillUnmount() {
-    this
-      .scene
-      .destroy(true)
-    this.scene = null;
   }
   render() {
     const {image, title, description, note} = this.props;
@@ -39,7 +27,7 @@ class WorkItem extends React.Component {
           .setTriggerElementRef
         .bind(this)}>
         <div
-          className="work-item accent-link-underline-trigger"
+          className="work-item accent-link-underline-trigger active"
           ref={this.setTargetElementRef.bind(this)}>
           <div className="work-item-image">
             <img src={image} alt="Case study by Resilient Lab"/>
@@ -54,9 +42,6 @@ class WorkItem extends React.Component {
             <p className="work-text">
               {description}
             </p>
-            <a className="button" href="#">
-              View Case
-            </a>
           </div>
         </div>
       </div>

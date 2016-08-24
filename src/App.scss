@@ -9,6 +9,12 @@
 body {
   font-family: $league-gothic;
   -webkit-font-smoothing: antialiased;
+
+  min-width: 1150px;
+  
+  @include breakpoint($small-breakpoint) {
+    min-width: 0;
+  }
 }
 
 h1, .letter {

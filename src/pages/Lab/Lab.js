@@ -12,6 +12,9 @@ import LabHeroImage from './lab-hero.png';
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 
+import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter'
+import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
+
 class Lab extends React.Component {
   render() {
     return (
@@ -57,7 +60,7 @@ class Lab extends React.Component {
         <HalfPanels/>
         <Work/>
         <Alumni/>
-        <div className="centered-container-outer">
+        <CenteredContainerOuter color="grey">
           <div className="call-to-action-container clearfix">
             <div
               className="section-main section-tertiary section-tertiary__alert call-to-action lab-cta">
@@ -75,9 +78,11 @@ class Lab extends React.Component {
               </div>
             </div>
 
-            <div className="centered-container-inner lab-faq">
-              <h1>How It All Works</h1>
-              <span className="divider divider__red"/>
+            <CenteredContainerInner>
+              <div className="faq-title">
+                <h1>How It All Works</h1>
+                <span className="divider divider__red"/>
+              </div>
               <div className="faq">
                 <h2>
                   What sort of stuff can you do?
@@ -118,19 +123,19 @@ class Lab extends React.Component {
                   we start.
                 </p>
               </div>
-            </div>
+            </CenteredContainerInner>
             <div className="section-main section-tertiary section-tertiary__subtle">
               <div className="section-container-primary">
                 <p>
                   Ready to get started?
                 </p>
-                <a className="button" target="blank" href="http://resilientcoders.org/quote">
-                  <span>Start your project</span>
-                </a>
+                <ButtonPrimary target="blank" href="http://resilientcoders.org/quote" className="lab-end-button">
+                  Start your project
+                </ButtonPrimary>
               </div>
             </div>
           </div>
-        </div>
+        </CenteredContainerOuter>
       </RouteTransition>
     )
   }

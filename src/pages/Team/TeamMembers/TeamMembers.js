@@ -31,10 +31,8 @@ class Work extends React.Component {
                 There's more than one way to join the code literacy movement. Check out our
                 opportunities for both companies and individuals.
               </p>
-              <ButtonPrimary>
-                <Link to="/get-involved">
-                  Get Involved
-                </Link>
+              <ButtonPrimary to="/get-involved">
+                Get Involved
               </ButtonPrimary>
             </div>
           </div>

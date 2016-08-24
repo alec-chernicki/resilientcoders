@@ -6,6 +6,7 @@ const AlumniItem = ({image, name, biography}) => {
     <div className="alumni-item" style={{
       backgroundImage: `url(${image})`
     }}>
+      <div className="alumni-overlay" />
       <div className="alumni-information">
         <h1>
           {name}

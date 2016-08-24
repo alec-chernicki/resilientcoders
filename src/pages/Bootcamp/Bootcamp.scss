@@ -63,9 +63,13 @@
 
   p {
     color: #CCC !important;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 .bootcamp-join {
+  padding: 0 20px;
   color: #FFF;
   background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
                     url('./want-in.jpg');

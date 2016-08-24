@@ -24,16 +24,13 @@
   }
 }
 
-.lab-faq {
-  z-index: 1000;
+.faq-title {
   text-align: center;
+}
 
-  h1 {
-    color: $text-primary;
-  }
-
-  .divider {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.lab-end-button {
+  margin: 0 auto;
+  float: none;
+  max-width: 250px;
+  width: 100%;
 }

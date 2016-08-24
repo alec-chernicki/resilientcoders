@@ -112,9 +112,8 @@ const Timeline = () => {
         </div>
       </div>
       <div className="timeline-end">
-        <Link to="/get-involved">
-          <img className="timeline-end-image-left" src={careerLeft} role="presentation" />
-        </Link>
+
+        <img className="timeline-end-image-left" src={careerLeft} role="presentation" />
         <div className="timeline-end-text">
           <h1>
             A Career
@@ -129,9 +128,7 @@ const Timeline = () => {
             new skills.
           </p>
         </div>
-        <Link to="/lab">
-          <img className="timeline-end-image-right" src="http://placehold.it/350x300" role="presentation" />
-        </Link>
+        <img className="timeline-end-image-right" src={careerLeft} role="presentation" />
       </div>
     </div>
   )
