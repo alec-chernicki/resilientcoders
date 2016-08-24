@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ERL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Express Resilient Lab</title>
+    <link rel="shortcut icon" href="http://resilientcoders.s3.amazonaws.com/i/favicon.gif" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-controller="AppCtrl as ctrl" ng-cloak>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<!-- SECTION THAT CONTAINS THE CODE FOR TEMPLATE IMAGE ENLARGING-->
+<!--<div ng-class="isEnlarged ? 'imageContainer' : 'hide'" ng-init="isEnlarged = false">
+    <div ng-bind-html="viewedImage"></div>
+    <button ng-click="viewThumbnail()" ng-class="isEnlarged ? '' : 'hide'" class="closeBtn">X</button>
+</div>-->
+
+<div class="animate-slide shadowbox" ng-show="isEnlarged">
+    <!--<div ng-bind-html="viewedImage"></div>-->
+    <div>
+    <img ng-src="{{viewedImg}}" />
+    <button ng-click="viewThumbnail()" ng-class="isEnlarged ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<!-- SECTION THAT EXPLAINS WHY YOU WOULD CHOOSE WORDPRESS -->
+<div class="animate-slide" ng-show="useWP">
+    <div ng-show="useWP">
+        <h2>You have a blog or need to edit your site often.</h2>
+        <button ng-click="useWP=!useWP" ng-class="useWP ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<!-- SECTION THAT EXPLAINS WHY YOU WOULD CHOOSE WORDPRESS -->
+<div class="animate-slide" ng-show="notWP">
+    <div ng-show="notWP">
+        <h2>You're not planning on updating your content often. It's a little more expensive than a static site, and more hackable.</h2>
+        <button ng-click="notWP=!notWP" ng-class="notWP ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<!-- WILD CARD -->
+<div class="animate-slide" ng-show="pageNotShown">
+    <div ng-show="pageNotShown">
+        <h2>We know you have unique content. Select a Wild Card for each page that's neither Home, About, Contact nor Blog</h2>
+        <button ng-click="pageNotShown=!pageNotShown" ng-class="pageNotShown ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+<!-- NOT ENOUGH PAGES -->
+<div class="animate-slide" ng-show="notEnoughPages">
+    <div ng-show="notEnoughPages">
+        <h2>Let us know how many pages you've got <a href="#second" ng-click="notEnoughPages=!notEnoughPages">here</a></h2>
+        <button ng-click="notEnoughPages=!notEnoughPages" ng-class="notEnoughPages ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="animate-slide" ng-show="howItWorks">
+    <div ng-show="howItWorks">
+        <h2>Student developers are paired up with a more advanced developer, who acts as an instructor, mentor, and quality assurance inspector.
+            Our rate takes into consideration not just the student's time spent coding, but also her time spent learning, and the instructor's
+            time spent teaching and vetting the work. This gives us the best of both worlds: The rate we pass on to you is competitive,
+            and the work is guided and vetted by a more seasoned pro.</h2>
+        <button ng-click="howItWorks=!howItWorks" ng-class="howItWorks ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<!-- IS THIS CUSTOMIZABLE? -->
+<div class="animate-slide" ng-show="isCustomizable">
+    <div ng-show="isCustomizable">
+        <h2>Everything can be customized. What you're buying here is a top quality cheese pizza. Our toppings are
+            endless, they are delicious, and they are totally up to you to curate. We're happy to have a conversation about
+            what your particular pizza could cost to create.</h2>
+        <button ng-click="isCustomizable=!isCustomizable" ng-class="isCustomizable ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<!-- ERROR MESSAGE -->
+<div class="animate-slide" id="email-invalid" ng-show="invalidEmail"><!--id="thankyou_message"-->
+    <div ng-show="invalidEmail">
+        <h2>Something does not look quite right. Be sure to fill in all the information
+            <a href="#first" ng-click="invalidEmail=!invalidEmail">here.</a></h2>
+        <button ng-click="invalidEmail=!invalidEmail" ng-class="invalidEmail ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<!-- THANK YOU MESSAGE SECTION -->
+<div class="animate-slide" ng-show="formComplete"><!--id="thankyou_message"-->
+    <div ng-show="formComplete">
+        <h2>Thanks for reaching out! We’ll get back to you soon. If you’re curious who you’re employing, you should meet some of our
+            <a href="http://www.resilientcoders.org/alumni">alumni.</a></h2>
+        <button ng-click="formComplete=!formComplete" ng-class="formComplete ? '' : 'hide'" class="closeBtn">X</button>
+    </div>
+</div>
+
+<a href="http://www.resilientcoders.org" target="_blank"><img id="logo" src="logo.png" /></a>
+
+<!-- Express Resilient Lab Form version 1.10  developed by Resilient Lab, tested by East Coast Product-->
+<form name="form" novalidate ng-submit='formCompleted()' id="gform" method="POST"
+      action="https://script.google.com/macros/s/AKfycbyAQkJ4lG2Ub7MQQjeJH4SqAqeryI7m-rsV0ObGKGrMcdDhB8wl/exec">
+
+    <!-- FORM ENTRY #1 -->
+    <section id="first">
+        <h2>Thanks for your interest in Resilient Lab</h2>
+        <h4>We have a few questions for you before we can give you a quote. The first one is easy, tell us about
+            yourself: </h4>
+        <input id="name" ng-model="client.name" type="text" name="name" placeholder="Name" required>
+
+        <input id="email" ng-model="client.email" type="email" name="email" placeholder="Email" required>
+
+        <ng-messages for="form.email.$error" ng-if="form.email.$invalid&&form.email.$dirty">
+            <ng-message when="email">Please put in a valid email!</ng-message>
+        </ng-messages>
+
+        <input id="company" ng-model="client.company" type="text" name="company" placeholder="Company name">
+
+        <a class="Btn" ng-href="{{form.name.$valid && form.email.$valid ? '#second' : ''}}"
+        ng-class="form.name.$invalid ? 'disabledBtn' : 'hvr-sweep-to-right'">Continue</a>
+        <!--<h1>Quote: {{quoted ? quoteRange : 500}}</h1>-->
+    </section>
+
+    <!-- FORM ENTRY #2 -->
+    <section id="second">
+        <h2>Tell us about your site</h2>
+        <h4>What's important for us to know before we even get started?</h4>
+
+        <textarea id="moreinfo" ng-model="moreInfo" name="moreInfo" placeholder=""></textarea>
+
+        <a class="Btn" ng-href="{{moreInfo.length > 1 ? '#third' : ''}}"
+           ng-class="form.moreInfo.$pristine ? 'disabledBtn' : 'hvr-sweep-to-right'">Continue</a>
+    </section>
+
+    <!-- FORM ENTRY #3 -->
+    <section id="third">
+        <h2>How big is this project?</h2>
+        <h4>How many pages will the site have, and what are they?</h4>
+        <div>
+            <li ng-repeat="page in selectPages" >
+                <input id="selectPages{{page.id}}" type="checkbox" class="hide" value="{{page.val}}" name="selectPages"/>
+                <label for="selectPages{{page.id}}">{{page.val}}</label>
+            </li>
+        </div>
+        <p ng-click="pageNotShown=!pageNotShown" >I don't see the page I want on here</p>
+        <p ng-click="notEnoughPages=!notEnoughPages" >What if our site has more than 8 pages?</p>
+
+        <a class="Btn hvr-sweep-to-right" href="#page1" ng-click="setPages()">Continue</a>
+    </section>
+
+    <!-- FORM ENTRY TEMPLATES -->
+    <section class="selectedPages" id="page{{pg.idx}}" ng-repeat="pg in selectedPages">
+        <h2>Let's talk design</h2>
+        <h4>Let's pick a template for - {{pg.name}}</h4>
+        <h4>This is just a template. We can customize from here.</h4>
+
+        <div class="templates">
+            <div class="template" ng-repeat="temps in templateSet1" ng-show="showTemplates">
+                <div>
+                    <img ng-click="viewThumbnail()" ng-src="{{temps}}">
+                </div>
+                <input id="template{{templateSet1.indexOf(temps)+1}}idx{{pg.idx}}" type="radio" class="hide"
+                       value="template{{templateSet1.indexOf(temps)+1}}" name="{{pg.name}}"/>
+                <label for="template{{templateSet1.indexOf(temps)+1}}idx{{pg.idx}}" class="selectBtn">Select</label>
+            </div>
+            <div class="template" ng-hide="showTemplates" ng-repeat="temps in templateSet2">
+                <div>
+                    <img ng-click="viewThumbnail()" ng-src="{{temps}}">
+                </div>
+                <input id="template{{templateSet2.indexOf(temps)+5}}idx{{pg.idx}}" type="radio" class="hide"
+                       value="template{{templateSet2.indexOf(temps)+5}}" name="{{pg.name}}"/>
+                <label for="template{{templateSet2.indexOf(temps)+5}}idx{{pg.idx}}" class="selectBtn">Select</label>
+            </div>
+        </div>
+        <br>
+
+        <li class="dots">
+            <a ng-click="showTemplates=!showTemplates" ng-class="showTemplates ? 'filled' : ''" ></a>
+            <a ng-click="showTemplates=!showTemplates" ng-class="showTemplates ? '' : 'filled'" ></a>
+        </li>
+
+        <a class="Btn hvr-sweep-to-right" href="#page{{pg.idx+1}}" ng-if="!$last">Select Next</a>
+        <a class="Btn hvr-sweep-to-right" href="#fourth" ng-if="$last">Continue</a>
+    </section>
+
+    <!-- FORM ENTRY #4 -->
+    <section id="fourth">
+        <h2>Last question, do you need Wordpress?</h2>
+        <div>
+            <input id="yeswp" type="radio" class="hide" value="yeswp" name="isWordpress"/>
+            <label for="yeswp">Yes, Wordpress</label>
+            <input id="nowp" type="radio" class="hide" value="nowp" name="isWordpress"/>
+            <label for="nowp">No, Thank You</label>
+            <input id="notsure" type="radio" class="hide" value="notsure" name="isWordpress"/>
+            <label for="notsure">Not Sure</label>
+        </div>
+
+        <div>
+            <p ng-click="useWP=!useWP">Let's use Wordpress if ... </p>
+            <p ng-click="notWP=!notWP">Let's not use Wordpress if ...</p>
+        </div>
+        <a class="Btn hvr-sweep-to-right" href="#fifth" ng-click="calculateQuote()">See Quote</a>
+    </section>
+
+    <!-- FORM ENTRY #5 -->
+    <section id="fifth">
+        <h2>{{quoted ? "Here's how much we think the site will cost:" : "You did not fill in all necessary information for a quote!"}}</h2>
+        <h1 ng-show="quoted">{{quoteRange}}</h1>
+        <h4>{{quoted ? "Thank you for helping us launch a young coder's career." : "Click the 'Revisit Details' button to fix that"}} </h4>
+        <div>
+            <input type="hidden" value="" name="quote" id="quote" />
+            <button style="background-color: transparent"class="Btn hvr-sweep-to-right" type="submit" ng-click="formCompleted()">Hire Us</button>
+            <a class="Btn hvr-sweep-to-right" href="#first" >Revisit Details</a>
+        </div>
+        <p ng-click="howItWorks=!howItWorks">How does the model work? And how do I know the work will be good? </p>
+        <p ng-click="isCustomizable=!isCustomizable">How much can be customized? And what's with the range? </p>
+
+    </section>
+</form>
+
+<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
+</body>
+</html>
