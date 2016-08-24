@@ -1,7 +1,7 @@
 import './StepContent.scss';
 import React from 'react'
 import { Link } from 'react-router';
-import StepOneVerticalImage from './step-one-vertical.png';
+import StepOneVerticalImage from 'https://resilientcoders.s3.amazonaws.com/i/resilientlab.jpg';
 import StepOneHorizontalImage from './step-one-horizontal.png';
 import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
 
