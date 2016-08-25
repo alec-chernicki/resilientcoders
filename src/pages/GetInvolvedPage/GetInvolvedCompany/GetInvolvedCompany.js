@@ -10,7 +10,7 @@ class GetInvolvedCompany extends React.Component {
   renderHeroContent() {
     return (
       <p>
-        Looking for talent? There's two ways to hire our coders.
+        Looking for talent? There are two ways to hire our coders.
       </p>
     )
   }
