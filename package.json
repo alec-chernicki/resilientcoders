@@ -1,5 +1,5 @@
 {
-  "name": "sample-app",
+  "name": "resilient-coders",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
@@ -71,7 +71,8 @@
   },
   "scripts": {
     "start": "node ./scripts/start.js",
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",
+    "deploy": "node ./scripts/build.js && git add . && git commit && git push heroku master"
   },
   "eslintConfig": {
     "extends": "./config/eslint.js"
