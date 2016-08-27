@@ -1,4 +1,5 @@
 @import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
 
 .connecting-line-progress {
   content: '';
@@ -12,8 +13,12 @@
 
 .connecting-line {
   flex-grow: 2;
-  width: 2px;
+  width: 4px;
   margin: 0 auto;
   background-color: $background-primary;
   position: relative;
+
+  @include breakpoint($small-breakpoint) {
+    width: 6px;
+  }
 }

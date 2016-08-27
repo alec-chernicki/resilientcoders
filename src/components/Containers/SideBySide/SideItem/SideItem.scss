@@ -33,12 +33,12 @@
   background-color: $background-secondary;
 
   h1, h2, h3 {
-    color: $accent-primary;
+    color: #FFF;
     text-transform: uppercase;
   }
 
   p {
-    color: #FFF;
+    color: $text-tertiary;
   }
 }
 

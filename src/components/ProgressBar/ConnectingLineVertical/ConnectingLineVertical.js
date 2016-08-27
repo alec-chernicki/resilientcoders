@@ -3,12 +3,40 @@ import './ConnectingLineVertical.scss';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import React from 'react'
+import _ from 'underscore';
+
+const {debounce} = _;
 
 class ConnectingLineVertical extends React.Component {
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }
   componentDidMount() {
+    this.initializeScene();
+    window.onresize = this.setDuration.bind(this);
+    this.getTriggerElementHeight.bind(this);
+  }
+  componentWillUnmount() {
+    this.scene.destroy(true)
+    this.scene = null;
+  }
+  getWindowHeight() {
+    return window.innerWidth
+  }
+  getTriggerElementHeight() {
+    return this.triggerElement.clientHeight
+  }
+  setDuration() {
+    if (!this.scene) return
+    this.scene.duration(this.getTriggerElementHeight());
+  }
+  setTriggerElementRef(element) {
+    this.triggerElement = element;
+  }
+  setTargetElementRef(element) {
+    this.targetElement = element;
+  }
+  initializeScene() {
     if (!this.triggerElement || !this.targetElement) {
       return
     }
@@ -21,25 +49,14 @@ class ConnectingLineVertical extends React.Component {
       })]);
 
     this.scene = new ScrollMagic
-      .Scene({duration: this.triggerElement.clientHeight, offset: 0, triggerHook: 0.5})
+      .Scene({
+        duration: this.getTriggerElementHeight(),
+        offset: 0,
+        triggerHook: 0.5
+      })
       .setTween(tween)
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
-  }
-  componentWillUnmount() {
-    this
-      .scene
-      .destroy(true)
-    this.scene = null;
-  }
-  getWindowHeight() {
-    return window.innerWidth
-  }
-  setTriggerElementRef(element) {
-    this.triggerElement = element;
-  }
-  setTargetElementRef(element) {
-    this.targetElement = element;
   }
   render() {
     const className = "connecting-line " + this.props.className

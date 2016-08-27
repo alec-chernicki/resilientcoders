@@ -7,15 +7,15 @@ const TimelineProgressBar = () => {
   return (
     <div className="timeline-progress-bar">
       <ConnectingDot/>
-      <ConnectingLineVertical className="first-line"/>
+      <ConnectingLineVertical className="first"/>
       <ConnectingDot/>
-      <ConnectingLineVertical/>
+      <ConnectingLineVertical className="second"/>
       <ConnectingDot/>
-      <ConnectingLineVertical/>
+      <ConnectingLineVertical className="third"/>
       <ConnectingDot/>
-      <ConnectingLineVertical/>
+      <ConnectingLineVertical className="fourth"/>
       <ConnectingDot/>
-      <ConnectingLineVertical className="last-line"/>
+      <ConnectingLineVertical className="fifth"/>
       <ConnectingDot/>
     </div>
   )

@@ -16,11 +16,6 @@ class Hero extends React.Component {
       supportsAutoplay: false
     }
   }
-  componentDidMount() {
-    Modernizr.on('videoautoplay', (result) => {
-      this.setState({supportsAutoplay: result})
-    })
-  }
   renderTitleLineOne() {
     const {titleLineOne} = this.props;
     if (!titleLineOne) return
@@ -47,7 +42,6 @@ class Hero extends React.Component {
   }
   renderImageContent() {
     const {image} = this.props;
-    const {supportsAutoplay} = this.state;
     if (image) {
       return (
         <div
@@ -58,26 +52,18 @@ class Hero extends React.Component {
         />
       )
     }
-
-    else if (supportsAutoplay) {
-      // Mobile browsers don't support this
-      return <HeroVideo />;
-    }
     else {
       return (
-        <div
-          className="hero__image"
-          style={{
-            backgroundImage: `url(${HeroImage})`,
-          }}
-        />
+        <HeroVideo />
       )
     }
   }
   render () {
-    const {image, children, className, centered} = this.props;
+    const {image, children, className, centered, short} = this.props;
 
-    const heroClass = classNames('hero', className);
+    const heroClass = classNames('hero', className, {
+      'hero--short': short === true
+    });
 
     const heroContentClass = classNames('hero__content', {
       'hero__content--centered': centered,
@@ -88,7 +74,7 @@ class Hero extends React.Component {
         <div
           className="hero__overlay"
           style={{
-            backgroundImage: `url(${DotLight}), linear-gradient(rgba(51, 51, 51, 0.7) 30%, rgba(51, 51, 51, 0.35))`
+            backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(51, 51, 51, 0.7) 30%, rgba(51, 51, 51, 0.35))`
           }}
         />
         {this.renderImageContent()}

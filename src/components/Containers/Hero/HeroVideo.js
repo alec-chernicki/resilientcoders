@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import HeroVideoItem from './hero-video.mp4';
 import videoJS from 'video.js';
 
 class HeroVideo extends Component {
@@ -9,29 +8,30 @@ class HeroVideo extends Component {
     this.videoPlayer = null;
   }
   componentDidMount() {
-    this.videoPlayer = videoJS(this.getVideoId(), {
-      muted: true
+    this.videoPlayer = videoJS(this.videoElement, {
+      controls: 'false',
+      autoplay: 'true',
+      muted: 'true',
+      loop: 'true',
     });
   }
   componentWillUnmount() {
     this.videoPlayer.dispose();
     this.videoPlayer = null;
   }
-  getVideoId() {
-    return HeroVideoItem.substring(0, HeroVideoItem.indexOf('.'));
+  setVideoElementRef(element) {
+    this.videoElement = element;
   }
   render () {
     return (
       <div className="video-container hero__image">
         <video
-          id={this.getVideoId()}
+          ref={this.setVideoElementRef.bind(this)}
           preload="preload"
           poster="data:image/gif,AAAA"
           autoPlay
-          muted="muted"
-          loop="loop"
         >
-          <source type="video/mp4" src={HeroVideoItem}/>
+          <source type="video/mp4" src='https://s3.amazonaws.com/resilient-coders/hero-video.mp4'/>
         </video>
       </div>
     )

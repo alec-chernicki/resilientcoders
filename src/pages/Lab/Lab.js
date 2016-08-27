@@ -21,12 +21,13 @@ class Lab extends React.Component {
       <RouteTransition>
         <Hero
           image={LabHeroImage}
-          titleLineOne="A new kind of"
-          titleLineTwo="digital agency"
+          short={true}
+          titleLineOne="Resilient Lab"
         >
-          <ButtonPrimary href="http://resilientcoders.org/quote/" target="blank">
-            Get a quote
-          </ButtonPrimary>
+          <div className="divider divider__red" />
+          <p>
+            A new kind of digital agency.
+          </p>
         </Hero>
         <SideBySide>
           <SideItem

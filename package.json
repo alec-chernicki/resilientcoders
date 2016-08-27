@@ -34,6 +34,7 @@
     "html-webpack-plugin": "2.22.0",
     "json-loader": "0.5.4",
     "node-sass": "^3.8.0",
+    "nodemon": "^1.10.2",
     "opn": "4.0.2",
     "postcss-loader": "0.9.1",
     "promise": "7.1.1",
@@ -71,6 +72,7 @@
   },
   "scripts": {
     "start": "node ./scripts/start.js",
+    "start production": "nodemon ./server.js",
     "build": "node ./scripts/build.js",
     "push": "git add . && git commit && git push heroku master",
     "deploy": "npm run build && npm run push"

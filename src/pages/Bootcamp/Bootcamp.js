@@ -19,17 +19,18 @@ class Bootcamp extends React.Component {
       <RouteTransition>
         <Hero
           image={BootcampHeroImage}
-          titleLineOne="Turning dedication"
-          titleLineTwo="into opportunity"
+          short={true}
+          titleLineOne="Resilient Bootcamp"
         >
-          <ButtonPrimary to="/get-involved">
-            Get Involved
-          </ButtonPrimary>
+          <div className="divider divider__red" />
+          <p>
+            Transforming dedication into opportunity, the starting point for our coders' careers.
+          </p>
         </Hero>
         <SideBySide className="bootcamp-details">
           <SideItem className="bootcamp-details__text">
-            <h1>BOOTCAMP</h1>
-            <div className="divider divider__red"/>
+            <h2>The Goal</h2>
+            <div className="divider divider__red" />
             <p>
               The idea behind our Bootcamp is an audacious one: Take a small cohort of young
               people, who face more challenges than most, who have been hand-picked by our
@@ -37,8 +38,15 @@ class Bootcamp extends React.Component {
               they may have access to a real career.
             </p>
           </SideItem>
-          <SideItem type="image">
-            <div className="bootcamp-details__image" />
+          <SideItem type="grey" className="bootcamp-details__apply-text">
+            <h2>Apply</h2>
+            <p>
+              This year's Resilient Bootcamp has ended but don't worry there's more ways to join
+              whether you're a student or a mentor.
+            </p>
+            <ButtonPrimary to="/get-involved" className="bootcamp-details__button">
+              Get Involved
+            </ButtonPrimary>
           </SideItem>
         </SideBySide>
         <div
@@ -47,7 +55,7 @@ class Bootcamp extends React.Component {
             className="centered-container-inner centered-container-inner__grey bootcamp-timeline-section-inner">
             <div className="section-main section-tertiary section-tertiary__subtle">
               <div className="section-container-primary bootcamp-title">
-                <h1>The Program</h1>
+              <h1>The Program</h1>
                 <p>
                   Our 8 week program teaches students the fundamentals of front end web development.
                   We start with the basics and end with real world client work.

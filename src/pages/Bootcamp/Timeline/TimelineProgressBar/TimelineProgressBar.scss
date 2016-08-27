@@ -8,7 +8,7 @@
   right: 0;
   width: 20px;
   margin: 0 auto;
-  top: 0;
+  top: -65px;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -24,11 +24,27 @@
     background-color: #FFF;
   }
 
-  .first-line {
-    flex: 0 0 250px;
+  & .first {
+    flex: 0 0 9%;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 14.5%;
+    }
   }
 
-  .last-line {
-    flex: 0 0 390px;
+  & .second {
+    flex: 0 0 500px;
+  }
+
+  & .third {
+    flex: 0 0 660px;
+  }
+
+  & .fourth {
+    flex: 0 0 550px;
+  }
+
+  & .fifth {
+    flex: 0 0 575px;
   }
 }
