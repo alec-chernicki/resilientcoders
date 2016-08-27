@@ -1,12 +1,11 @@
 import './Hero.scss';
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
-import Modernizr from 'modernizr';
 
 import DotLight from '../Dots/dot-light.svg';
 import BinaryText from '../../BinaryText/BinaryText';
 import HeroVideo from './HeroVideo';
-import HeroImage from './hero-image.png';
+import HeroImage from './hero-image.jpg';
 
 class Hero extends React.Component {
   constructor(props) {

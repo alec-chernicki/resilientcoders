@@ -57,7 +57,7 @@
   background-position: center;
 
   @include breakpoint($small-breakpoint) {
-    background-image: url('./hero-image.png');
+    background-image: url('./hero-image.jpg');
     background-position: 35%;
   }
 }
@@ -73,11 +73,17 @@
   video {
     width: 125%;
     max-height: 125%;
+    background-image: url('./hero-image.jpg');
+    background-size: contain;
 
     @include breakpoint($small-breakpoint) {
       display: none;
     }
   }
+}
+
+.vjs-loading-spinner {
+  display: none !important;
 }
 
 .hero__content {

@@ -1,0 +1,67 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+.home-progress-bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  top: 100px;
+  flex-direction: column;
+  z-index: -1;
+
+  @include breakpoint($small-breakpoint) {
+    left: -13px;
+    padding-bottom: 60px;
+  }
+
+  .first {
+    flex: 0 0 27%;
+    left: 30px;
+    top: 0;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 29.5%;
+    }
+  }
+
+  .second {
+    flex: 0 0 31.25%;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 31.7%;
+    }
+  }
+
+  .third {
+    flex: 0 0 31.25%;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 31.7%;
+    }
+  }
+
+  .fourth {
+    flex: 0 0 31.25%;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 31.7%;
+    }
+  }
+
+  .fifth {
+    flex: 0 0 31.25%;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 31.7%;
+    }
+  }
+
+  .dot-with-circle {
+    margin: 0 auto;
+  }
+
+  .connecting-line {
+    margin: 0;
+  }
+}

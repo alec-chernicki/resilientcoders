@@ -13,6 +13,7 @@ class HomeCarousel extends React.Component {
       autoplay: true,
       fade: true,
       arrows: false,
+      swipe: false,
       slidesToScroll: 1,
       cssEase: 'cubic-bezier(0.260, 0.530, 0.385, 0.970)'
     };

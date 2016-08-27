@@ -6,11 +6,6 @@
   display: flex;
   margin-left: 20px;
 
-
-  + .step-section {
-    margin-top: 60px;
-  }
-
   @include breakpoint($small-breakpoint) {
     flex-direction: column;
     margin-left: 0;

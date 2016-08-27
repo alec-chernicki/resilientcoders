@@ -24,38 +24,69 @@
   width: 100%;
 }
 
-
-.home-progress-bar {
-  width: 28px;
-  position: absolute;
-  left: 30px;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
+.connecting-line-horizontal {
+  width: calc(100% + 54px) !important;
+  margin: 50px -27px;
+  position: relative;
 
   @include breakpoint($small-breakpoint) {
-    left: -13px;
-    padding-bottom: 60px;
+    display: none;
   }
+}
 
-  .first-line {
-    flex: 0 0 27%;
+.step-tracker {
+  width: 20px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  z-index: -1;
+
+  &.left {
+    left: 40px;
+    top: 0px;
 
     @include breakpoint($small-breakpoint) {
-      flex: 0 0 29.5%;
+      left: -8px;
     }
   }
 
-  .second-line {
-    flex: 0 0 31.25%;
+  &.right {
+    right: 40px;
+    bottom: 0px;
 
     @include breakpoint($small-breakpoint) {
-      flex: 0 0 31.7%;
+      right: auto;
+      left: -8px;
+    }
+  }
+}
+
+.connecting-line {
+  flex-grow: 2;
+  margin: 0 auto;
+  background-color: $background-primary;
+
+  &.first {
+    flex: 0 0 570px;
+  }
+
+  &.second {
+    flex: 0 0 550px;
+  }
+
+  &.third {
+    flex: 0 0 100px;
+
+    @include breakpoint($small-breakpoint) {
+      display: none;
     }
   }
 
-  .dot-with-circle {
-    margin: 0 auto;
+  &.fourth {
+    flex: 0 0 780px;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 1 1 880px;
+    }
   }
 }

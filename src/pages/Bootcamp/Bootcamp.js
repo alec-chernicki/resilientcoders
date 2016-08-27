@@ -55,9 +55,9 @@ class Bootcamp extends React.Component {
             className="centered-container-inner centered-container-inner__grey bootcamp-timeline-section-inner">
             <div className="section-main section-tertiary section-tertiary__subtle">
               <div className="section-container-primary bootcamp-title">
-              <h1>The Program</h1>
+                <h1>The Program</h1>
                 <p>
-                  Our 8 week program teaches students the fundamentals of front end web development.
+                  Our 7 week program teaches students the fundamentals of front end web development.
                   We start with the basics and end with real world client work.
                 </p>
               </div>

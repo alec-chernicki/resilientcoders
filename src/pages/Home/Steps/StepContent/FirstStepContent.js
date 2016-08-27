@@ -10,7 +10,7 @@ const FirstStepContent = () => {
   return (
     <div className="step-section first-step-section">
       <div className="step-text">
-        <h2>Bootcamp</h2>
+        <h2>Resilient Bootcamp</h2>
         <p>
           For seven weeks, daily, a select cohort of early-career individuals meet to
           receive direct instruction from tech professionals on front-end development
