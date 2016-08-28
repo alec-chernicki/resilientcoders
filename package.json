@@ -74,7 +74,7 @@
     "start": "node ./scripts/start.js",
     "start production": "nodemon ./server.js",
     "build": "node ./scripts/build.js",
-    "push": "git add . && git commit && git push heroku master",
+    "push": "git add . && git commit && git push origin master && git push heroku master",
     "deploy": "npm run build && npm run push"
   },
   "eslintConfig": {
