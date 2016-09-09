@@ -41,7 +41,7 @@ class Bootcamp extends React.Component {
           <SideItem type="grey" className="bootcamp-details__apply-text">
             <h2>Apply</h2>
             <p>
-              This year's Resilient Bootcamp has ended but don't worry there's more ways to join
+              The 2016 Resilient Bootcamp has ended but don't worry there's more ways to join
               whether you're a student or a mentor.
             </p>
             <ButtonPrimary to="/get-involved" className="bootcamp-details__button">
@@ -82,9 +82,8 @@ class Bootcamp extends React.Component {
           <SideItem className="bootcamp-apply__student" type="red">
             <h1>As a student</h1>
             <p>
-              Unfortunately applications for the Summer 2016 Resilient Bootcamp have closed.
-              Don’t worry though, there are still more ways to get involved. Sign up for
-              updates.
+              The 2016 Resilient Bootcamp has ended but don't worry there's always more
+              opportunities to learn with us.
             </p>
           </SideItem>
           <SideItem className="bootcamp-apply__mentor">

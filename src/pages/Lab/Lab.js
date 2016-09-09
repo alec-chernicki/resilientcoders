@@ -1,7 +1,6 @@
 import './Lab.scss';
 import React from 'react';
 import Work from './Work/Work';
-import HalfPanels from './HalfPanels/HalfPanels';
 import Alumni from './Alumni/Alumni';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
@@ -26,22 +25,12 @@ class Lab extends React.Component {
         >
           <div className="divider divider__red" />
           <p>
-            A new kind of digital agency.
+            A digital agency that empowers young people through real world experience.
           </p>
         </Hero>
-        <SideBySide>
-          <SideItem
-            className="lab-abilities"
-            size={10}
-            type="grey"
-          >
-            <h3>What we do:</h3>
-            <p>Front End Development</p>
-            <p>UI Design and & Prototyping</p>
-            <p>UX Research</p>
-          </SideItem>
+        <SideBySide className="lab-details">
           <SideItem className="lab-description">
-            <h1>Your next win is a write-off</h1>
+            <h2>Your next project is a write-off</h2>
             <div className="divider divider__red"/>
             <p>
               We're a digital design and development agency with a social mission unlike any
@@ -57,8 +46,24 @@ class Lab extends React.Component {
               in our students' careers.
             </p>
           </SideItem>
+          <SideItem
+            className="lab-abilities"
+            size={10}
+            type="grey"
+          >
+            <h3>What we do:</h3>
+            <p>Front End Development</p>
+            <p>UI Design and & Prototyping</p>
+            <p>UX Research</p>
+            <ButtonPrimary
+              target="blank"
+              href="http://resilientcoders.org/quote"
+              className="lab-abilities__button"
+            >
+              Get a quote
+            </ButtonPrimary>
+          </SideItem>
         </SideBySide>
-        <HalfPanels/>
         <Work/>
         <Alumni/>
         <CenteredContainerOuter color="grey">
@@ -79,11 +84,8 @@ class Lab extends React.Component {
               </div>
             </div>
 
+
             <CenteredContainerInner>
-              <div className="faq-title">
-                <h1>How It All Works</h1>
-                <span className="divider divider__red"/>
-              </div>
               <div className="faq">
                 <h2>
                   What sort of stuff can you do?

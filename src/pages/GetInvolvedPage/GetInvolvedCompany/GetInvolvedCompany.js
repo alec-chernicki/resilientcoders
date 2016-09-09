@@ -38,7 +38,7 @@ class GetInvolvedCompany extends React.Component {
                   professional skills, while working for a client. You can help launch their careers
                   by hiring us to build your website.
                 </p>
-                <ButtonPrimary>
+                <ButtonPrimary href="/quote">
                   Get a quote
                 </ButtonPrimary>
               </div>

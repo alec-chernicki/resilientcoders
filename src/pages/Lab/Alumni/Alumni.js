@@ -1,8 +1,5 @@
 import './Alumni.scss';
 import React from 'react'
-import Slider from 'react-slick';
-import AlumniItem from './AlumniItem/AlumniItem';
-import alumniConfig from './alumniConfig';
 
 class Alumni extends React.Component {
   renderAlumni() {
@@ -14,27 +11,22 @@ class Alumni extends React.Component {
 
   }
   render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      speed: 1000,
-      autoplaySpeed: 10000,
-      draggable: false,
-      slidesToShow: 1,
-      fade: true,
-      arrows: true,
-      slidesToScroll: 1,
-      cssEase: 'cubic-bezier(0.260, 0.530, 0.385, 0.970)'
-    };
-
     return (
-      <div className="alumni">
-        <Slider className="alumni-photos" {...settings}>
-          {this.renderAlumni()}
-        </Slider>
+      <div className="write-off">
+        <div className="write-off-image write-off-image-left">
+          <div>
+            <h1>50%</h1>
+            <h2>write-off</h2>
+          </div>
+        </div>
+        <div className="write-off-image write-off-image-right">
+          <div>
+            <h1>50%</h1>
+            <h2>investment</h2>
+          </div>
+        </div>
       </div>
-    );
+    )
   }
 }
 

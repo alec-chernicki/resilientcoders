@@ -2,6 +2,7 @@ import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import React from 'react'
 import ReactDOM from 'react-dom';
+import classNames from 'classnames';
 
 class Parallax extends React.Component {
   componentWillMount() {
@@ -36,14 +37,11 @@ class Parallax extends React.Component {
   }
   render() {
     return (
-      <div
-        ref={this
-        .setTriggerElementRef
-        .bind(this)}
-        className={this.props.className}>
-        <div ref={this
-          .setTargetElementRef
-          .bind(this)}>
+      <div ref={this.setTriggerElementRef.bind(this)}>
+        <div
+          className={this.props.className}
+          ref={this.setTargetElementRef.bind(this)}
+        >
           {this.props.children}
         </div>
       </div>

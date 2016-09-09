@@ -1,70 +1,34 @@
 @import '../../../stylesheets/variables';
 @import '../../../stylesheets/mixins';
 
-.alumni {
-  height: 125vh;
-  min-height: 800px;
-  position: relative;
+.write-off {
+  background-color: $background-primary;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
 
-  p {
+.write-off-image {
+  height: 700px;
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+
+  h2 {
     color: $text-tertiary;
+    font-size: 30px;
   }
+}
 
-  .alumni-photos,
-  .slick-list,
-  .slick-track {
-    height: 100%;
-  }
+.write-off-image-left {
+  background-image: url('../panel-left.png');
+  margin-right: 60px;
+}
 
-  .slick-dots {
-    bottom: 150px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 268px;
-  }
-
-  .slick-prev,
-  .slick-next {
-    background-color: $background-secondary;
-    height: 70px;
-    width: 110px;
-    color: #FFF;
-    @include transition;
-
-    @include breakpoint($small-breakpoint) {
-      display: none !important;
-    }
-
-    &:hover {
-      width: 140px;
-    }
-  }
-
-  .slick-prev {
-    left: 0;
-
-    &:before {
-      content: '<';
-      right: 20px;
-      top: 0;
-      position: absolute;
-      font-family: none;
-      line-height: 70px;
-    }
-  }
-
-  .slick-next {
-    right: 0;
-
-    &:before {
-      content: '>';
-      text-align: left;
-      left: 20px;
-      top: 0;
-      position: absolute;
-      font-family: none;
-      line-height: 70px;
-    }
-  }
+.write-off-image-right {
+  background-image: url('../panel-right.png');
 }

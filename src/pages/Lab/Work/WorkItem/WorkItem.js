@@ -1,36 +1,23 @@
 import './WorkItem.scss';
 import React, {PropTypes} from 'react'
 import ScrollMagic from 'scrollmagic';
+import Parallax from '../../../../components/Effects/Parallax';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 class WorkItem extends React.Component {
-  componentWillMount() {
-    this.controller = new ScrollMagic.Controller();
-  }
-  componentDidMount() {
-    if (!this.triggerElement || !this.targetElement) {
-      return
-    }
-  }
-  setTargetElementRef(element) {
-    this.targetElement = element;
-  }
-  setTriggerElementRef(element) {
-    this.triggerElement = element;
-  }
   render() {
     const {image, title, description, note} = this.props;
     return (
-      <div
-        className="work-flex-item"
-        ref={this
-          .setTriggerElementRef
-        .bind(this)}>
-        <div
-          className="work-item accent-link-underline-trigger active"
-          ref={this.setTargetElementRef.bind(this)}>
-          <div className="work-item-image">
-            <img src={image} alt="Case study by Resilient Lab"/>
+      <div className="work-flex-item">
+        <Parallax
+          from={160} to={-200}
+          className="work-item-accent"
+        />
+        <div className="work-item accent-link-underline-trigger active">
+          <div className="work-item-image-container">
+            <div className="work-item-image">
+              <img src={image} className="work-item-image-inner" alt="Case study by Resilient Lab"/>
+            </div>
           </div>
           <div className="work-details">
             <p className="work-company">

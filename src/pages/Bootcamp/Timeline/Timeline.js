@@ -3,8 +3,8 @@ import React from 'react'
 import {Link} from 'react-router';
 import TimelineProgressBar from './TimelineProgressBar/TimelineProgressBar';
 import BinaryText from '../../../components/BinaryText/BinaryText';
-import careerRight from './career-right.jpg';
-import careerLeft from './career-left.jpg';
+import careerLeft from './career-right.jpg';
+import careerRight from './career-left.jpg';
 
 import Parallax from '../../../components/Effects/Parallax';
 
@@ -30,15 +30,13 @@ const Timeline = () => {
             </div>
           </div>
           <div>
-            <Parallax from={60} to={-60}>
-              <div className="timeline-image one">
-                <div className="timeline-image-description-container">
-                  <div className="timeline-image-description">
-                    Recruitment
-                  </div>
+            <div className="timeline-image one">
+              <div className="timeline-image-description-container">
+                <div className="timeline-image-description">
+                  Recruitment
                 </div>
               </div>
-            </Parallax>
+            </div>
           </div>
         </div>
         <div className="timeline-row">
@@ -83,28 +81,24 @@ const Timeline = () => {
             </div>
           </div>
           <div>
-            <Parallax from={60} to={-60}>
-              <div className="timeline-image three">
-                <div className="timeline-image-description-container">
-                  <div className="timeline-image-description">
-                    Week 3
-                  </div>
+            <div className="timeline-image three">
+              <div className="timeline-image-description-container">
+                <div className="timeline-image-description">
+                  Week 3
                 </div>
               </div>
-            </Parallax>
+            </div>
           </div>
         </div>
         <div className="timeline-row">
           <div>
-            <Parallax from={60} to={-60}>
-              <div className="timeline-image four">
-                <div className="timeline-image-description-container">
-                  <div className="timeline-image-description">
-                    WEEK 5
-                  </div>
+            <div className="timeline-image four">
+              <div className="timeline-image-description-container">
+                <div className="timeline-image-description">
+                  WEEK 5
                 </div>
               </div>
-            </Parallax>
+            </div>
           </div>
           <div className="timeline-text">
             <div>
@@ -122,7 +116,6 @@ const Timeline = () => {
         </div>
       </div>
       <div className="timeline-end">
-
         <img className="timeline-end-image-left" src={careerLeft} role="presentation" />
         <div className="timeline-end-text">
           <h1>

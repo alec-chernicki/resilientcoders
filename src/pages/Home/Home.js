@@ -8,6 +8,7 @@ import MicahVideo from './MicahVideo/MicahVideo';
 import HomeCarousel from './PhotoCarousel/PhotoCarousel';
 import Steps from './Steps/Steps';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
+import Coworking from './Coworking/Coworking';
 
 import Hero from '../../components/Containers/Hero/Hero';
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
@@ -15,6 +16,7 @@ import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 
+import Parallax from '../../components/Effects/Parallax';
 
 class Home extends Component {
   render() {
@@ -72,6 +74,9 @@ class Home extends Component {
               </div>
               <Steps/>
             </div>
+          </CenteredContainerInner>
+          <CenteredContainerInner color="white" standard={false} className="coworking-contact">
+            <Coworking />
             <div
               className="section-main section-tertiary section-tertiary__subtle">
               <div className="section-container-primary">

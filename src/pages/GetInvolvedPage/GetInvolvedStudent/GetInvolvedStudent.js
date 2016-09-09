@@ -15,6 +15,9 @@ const GetInvolvedStudent = (props) => {
         <CenteredContainerInner
           className="get-involved-base-content"
         >
+          <h2>
+            Coworking
+          </h2>
           <p>
             We're looking for hacktivists who share our vision of technology as an opportunity for
             real meritocracy, to join us. Share your passion.

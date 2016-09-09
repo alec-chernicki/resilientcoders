@@ -3,41 +3,18 @@
 
 .work-item {
   position: relative;
-  padding: 25px;
-  background: #FFF;
-  background-color: #FFF;
   width: 100%;
   display: flex;
-  height: 400px;
   z-index: 500;
+
+  > div {
+    flex: 1 1 50%;
+  }
 
   @include breakpoint($small-breakpoint) {
     flex-direction: column !important;
     height: auto;
     padding: 25px 20px;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    height: 8px;
-    width: 0;
-    background-color: $accent-primary;
-    left: -30px;
-    top: 50px;
-    z-index: 110;
-    @include transition-property (width);
-    transition-delay: 400ms;
-
-    @include breakpoint($small-breakpoint) {
-      display: none;
-    }
-  }
-
-  &.active {
-    &:before {
-      width: 120px;
-    }
   }
 
   .button {
@@ -47,8 +24,23 @@
   }
 }
 
+.work-item-accent {
+  position: absolute;
+  height: 8px;
+  width: 120px;
+  background-color: $accent-primary;
+  left: -30px;
+  top: 50px;
+  z-index: 10000;
+
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
+}
+
 .work-flex-item {
   margin-bottom: 120px;
+  position: relative;
 
   &:last-child {
     margin-bottom: -50px;
@@ -57,6 +49,11 @@
   &:nth-child(even) {
     align-self: flex-end;
 
+    .work-item-accent {
+      right: -30px;
+      left: auto;
+    }
+
     .work-item {
       flex-direction: row-reverse;
 
@@ -64,19 +61,11 @@
         left: 0;
         right: auto;
       }
-
-      &:before {
-        right: -30px;
-        left: auto;
-      }
     }
 
     .work-details {
-      padding-right: 50px;
-      padding-left: 25px;
-
       @include breakpoint($small-breakpoint) {
-        padding: 0;
+        padding: 15px;
       }
     }
 
@@ -87,15 +76,13 @@
 }
 
 .work-item-image {
-  width: 40%;
-  max-width: 550px;
-  margin-top: -60px;
-  background-color: #FFF;
-  margin-left: 1px;
-  margin-right: 1px;
-  flex-grow: 2;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  max-height: 460px;
+
+  .work-item-image-inner {
+    height: 550px;
+  }
 
   @include breakpoint($small-breakpoint) {
     width: 100%;
@@ -106,21 +93,25 @@
 .work-note {
   font-family: $league-gothic;
   text-transform: uppercase;
-  color: $text-secondary;
+  color: $accent-primary;
+  letter-spacing: 0.05em;
 }
 
 .work-details {
-  color: #FFF;
-  padding: 25px 25px 25px 50px;
+  background-color: $background-primary;
+  padding: 60px;
   text-align: left;
   flex-shrink: 2;
   position: relative;
-  width: 50%;
 
   @include breakpoint($small-breakpoint) {
     width: 100%;
     padding: 0;
   }
+}
+
+.work-text {
+  color: $text-secondary;
 }
 
 .work-company {

@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: -50px
 }
 
 .offset-container {
@@ -21,7 +20,7 @@
 }
 
 .work-background-container {
-  background-color: $background-primary;
+  background-color: #FFF;
 }
 
 // This neesd to be refactored into a reusable container class
@@ -29,5 +28,6 @@
   width: 1150px;
   max-width: 100%;
   margin-left: auto;
+  padding: 100px 0;
   margin-right: auto;
 }
