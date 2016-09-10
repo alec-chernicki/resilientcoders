@@ -45,7 +45,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/quote', (req, res) => {
-  console.log('quote')
   res.sendFile(path.resolve(__dirname + '/erl/index.html'));
 })
 
