@@ -1,6 +1,14 @@
 export default {
   press : [
     {
+      title: 'Hacking the opportunity gap: Resilient Coders and true grit',
+      link: 'http://baystatebanner.com/news/2016/sep/07/hacking-opportunity-gap-resilient-coders-and-true-/',
+      note: 'Bay State Banner'
+    }, {
+      title: 'How 20-year-old Jean Exavier Went From Skateboarder to Web Developer',
+      link: 'http://bostinno.streetwise.co/2016/05/31/resilient-coders-grad-takes-development-internship-at-the-grommet/',
+      note: 'BostInno'
+    }, {
       title: 'Enabling Youth Employment: A Conversation with Lawrence Brown',
       link: 'http://blog.microsoftnewengland.com/2016/05/05/enabling-youth-employment-a-conversation-with-lawrence-brown/',
       note: 'Microsoft Blog'
@@ -48,14 +56,6 @@ export default {
   ],
   content : [
     {
-      title: 'Resilient Coders, Year One',
-      link: '/map',
-      note: '10.2015'
-    }, {
-      title: 'Your odds of success as a young black man',
-      link: '/hubweek',
-      note: '10.2015'
-    }, {
       title: 'TEDxSomerville: Education as Investment',
       link: 'https://www.youtube.com/watch?v=-0Q16HklbnI',
       note: '09.2015'

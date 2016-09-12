@@ -26,21 +26,28 @@ const GetInvolvedMentor = (props) => {
                 We're looking for hacktivists who share our vision of technology as an opportunity for
                 real meritocracy, to join us. Share your passion.
               </p>
+
               <p>
-                We're doing things a little different for this next Bootcamp. We're now using Google
-                Appointments for mentorship slots, allowing you to sign up for the sessions you want
-                to join us for. All you have to do is open the calendar, skip ahead to July, pick
-                the session(s) you're interested in, and sign up.
-              </p>
+              This fall, we'll be at 50 Milk St., 5th floor, on Tuesdays and Thursdays from 3:30 to 6. We don&#39;t ask you to make a commitment up front. Come once. Hang out with us. If you think you might stop by, throw us a note at david@resilientcoders.org so that we know to expect you.
+</p>
+<p>
+More information regarding our upcoming Hackathons and winter Bootcamp coming later in the fall. Until then, football, foliage, apple picking, and coding.
+</p>
+
+
+          {/*
               <ButtonPrimary
                 target="blank"
                 href="https://calendar.google.com/calendar/selfsched?sstoken=UUl1RTN1NjMwanR4fGRlZmF1bHR8NjRmMjJiNGYzNTc2MDMyMDVmYzdjMGIyMmNmM2EwMzE">
                 Check out the calendar
               </ButtonPrimary>
+          */}
             </div>
             <div className="get-involved-information-mentor-image" />
           </div>
         </CenteredContainerInner>
+
+        {/*
         <CenteredContainerInner
           color="white"
           className="get-involved-mentor-content"
@@ -92,6 +99,7 @@ const GetInvolvedMentor = (props) => {
             other opportunities to get involved.
           </p>
         </CenteredContainerInner>
+        */}
       </GetInvolvedBase>
     </RouteTransition>
   )

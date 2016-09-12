@@ -1,8 +1,7 @@
 import './StepContent.scss';
 import React from 'react'
 import { Link } from 'react-router';
-import StepOneVerticalImage from './step-one-vertical.png';
-import StepOneHorizontalImage from './step-one-horizontal.png';
+import StepOneVerticalImage from './step-two-vertical.jpg';
 import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
 
 const SecondStepContent = (props) => {
@@ -24,7 +23,6 @@ const SecondStepContent = (props) => {
           LEARN MORE
         </ButtonPrimary>
       </div>
-      <img src={StepOneHorizontalImage} role="presentation" className="step-two-horizontal-image" />
       <img src={StepOneVerticalImage} alt="Student working with Resilient Lab" className="step-two-vertical-image" />
     </div>
   );

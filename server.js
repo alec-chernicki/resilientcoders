@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || 3000);
 // app.set('view engine', 'jade');
 app.use(compress());
 app.use(express.static(`${__dirname}/build`));
-app.use("/quote", express.static(__dirname + "/erl"));
+app.use("/quote", express.static(__dirname + "/erl/"));
 app.listen(app.get('port'));
 
 // Controllers
@@ -43,11 +43,9 @@ app.get('/api/tweets', (req, res, next) => {
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
 });
-
 app.get('/quote', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/erl/index.html'));
-})
-
+});
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
 });

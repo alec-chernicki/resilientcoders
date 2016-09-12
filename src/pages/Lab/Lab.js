@@ -30,20 +30,19 @@ class Lab extends React.Component {
         </Hero>
         <SideBySide className="lab-details">
           <SideItem className="lab-description">
-            <h2>Your next project is a write-off</h2>
+            <h2>Relentlessly Rebuilding</h2>
             <div className="divider divider__red"/>
             <p>
               We're a digital design and development agency with a social mission unlike any
               you've seen. Our coders have been identified and trained through our
-              <a href="#" className="accent-link-underline-trigger">
+              <a href="/bootcamp" className="accent-link-underline-trigger">
                 <span className="accent-link-underline">
                   &nbsp;Bootcamp
                 </span>
               </a>
               , and recruited into the Lab for their aptitude and their grit. Our clients get
               an exceptional product, while also helping to launch our coders' careers.
-              Half of what we bill is a tax-deductable write off as an investment
-              in our students' careers.
+
             </p>
           </SideItem>
           <SideItem
@@ -57,7 +56,7 @@ class Lab extends React.Component {
             <p>UX Research</p>
             <ButtonPrimary
               target="blank"
-              href="http://resilientcoders.org/quote"
+              href="/quote"
               className="lab-abilities__button"
             >
               Get a quote
@@ -77,8 +76,7 @@ class Lab extends React.Component {
                 </p>
                 <a
                   className="button button__slice"
-                  target="blank"
-                  href="http://resilientcoders.org/quote">
+                  href="/quote">
                   <span>GET A QUOTE</span>
                 </a>
               </div>
@@ -97,7 +95,7 @@ class Lab extends React.Component {
                   example. Our friends at ECP delegated out to our students the work that was
                   appropriate to their skills; a set that grew over the course of the project.
                   Whether or not we're working with ECP on a particular project, every line of
-                  code that goes out is vetted by a professional. We hold our youth to
+                  code that goes out is vetted by a professional. We hold our hackers to
                   professional standards.
                 </p>
                 <h2>
@@ -113,18 +111,7 @@ class Lab extends React.Component {
                   every hour spent working. Our quote covers the instructor's time, and the youth
                   coder's time, with the understanding that half of their time was spent learning.
                 </p>
-                <h2>
-                  So, can I write it off my taxes as a donation?
-                </h2>
-                <p>
-                  Some of it, yes. Your invoice will itemize out the straight cost of building
-                  your project, versus the investment you're making in our coders' education.
-                  Within the hourly rate that you're quoted, usually half of that is a donation,
-                  and will be spent on training the coders to be ready to work on your project.
-                  The other half is your payment for a service. This will vary depending on the
-                  specific needs of a project. We'll be transparent about those proportions when
-                  we start.
-                </p>
+
               </div>
             </CenteredContainerInner>
             <div className="section-main section-tertiary section-tertiary__subtle">
@@ -132,7 +119,7 @@ class Lab extends React.Component {
                 <p>
                   Ready to get started?
                 </p>
-                <ButtonPrimary target="blank" href="http://resilientcoders.org/quote" className="lab-end-button">
+                <ButtonPrimary target="blank" href="/quote" className="lab-end-button">
                   Start your project
                 </ButtonPrimary>
               </div>

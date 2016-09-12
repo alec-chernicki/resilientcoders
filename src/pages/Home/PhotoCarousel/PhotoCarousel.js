@@ -21,7 +21,6 @@ class HomeCarousel extends React.Component {
       <Slider className="program-photo" {...settings}>
         <div className="one"/>
         <div className="two"/>
-        <div className="three"/>
         <div className="four"/>
       </Slider>
     );
