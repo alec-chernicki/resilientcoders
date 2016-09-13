@@ -16,7 +16,7 @@ const Coworking = () => {
           hang out in a safe space together, meet other young coders, and interact with tech
           professionals as they further explore web development at their pace.
         </p>
-        <ButtonPrimary to="/bootcamp">
+        <ButtonPrimary to="/get-involved/student">
           LEARN MORE
         </ButtonPrimary>
       </div>
