@@ -1,3 +1,4 @@
+import './GetInvolvedCompany.scss';
 import React, { PropTypes } from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
 import GetInvolvedBase from '../GetInvolvedBase/GetInvolvedBase';
@@ -42,9 +43,9 @@ class GetInvolvedCompany extends React.Component {
                   Get a quote
                 </ButtonPrimary>
               </div>
-              <div className="get-involved-information-mentor-image" />
+              <div className="get-involved-company-lab" />
             </div>
-            <div className="get-involved-information-mentor-image" />
+            <div className="get-involved-company-lab" />
           </CenteredContainerInner>
           <CenteredContainerInner
             className="get-involved-additional-content"
@@ -61,7 +62,7 @@ class GetInvolvedCompany extends React.Component {
                   throughout their internship. In hiring one of us, you hire all of us.
                 </p>
               </div>
-              <div className="get-involved-information-mentor-image" />
+              <div className="get-involved-company-dunia" />
             </div>
           </CenteredContainerInner>
         </GetInvolvedBase>

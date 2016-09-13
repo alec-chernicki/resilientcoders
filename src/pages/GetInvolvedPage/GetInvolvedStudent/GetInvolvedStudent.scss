@@ -1,0 +1,17 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+.get-involved-student {
+  background-image: url(get-involved-student-hoc.jpg);
+  background-size: cover;
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
+}
+.get-involved-student-bootcamp {
+  background-image: url(get-involved-student-bootcamp.jpg);
+  background-size: cover;
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
+}

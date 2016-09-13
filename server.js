@@ -49,6 +49,9 @@ app.get('/quote', (req, res) => {
 app.get('/orientation', (req, res) => {
   res.sendFile(path.resolve('https://docs.google.com/forms/d/e/1FAIpQLSdp2K_4p7gYfFiyCIvouYZXf9eHDwkYDon3AVHGYOQr8Z8uBg/viewform'));
 });
+app.get('/canvas', (req, res) => {
+  res.sendFile(path.resolve('https://canvas.instructure.com/enroll/K96A8P'));
+});
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
 });

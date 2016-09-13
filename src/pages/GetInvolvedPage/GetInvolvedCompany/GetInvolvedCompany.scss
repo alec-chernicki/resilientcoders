@@ -1,0 +1,17 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+.get-involved-company-dunia {
+  background-image: url(get-involved-dunia.jpg);
+  background-size: cover;
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
+}
+.get-involved-company-lab {
+  background-image: url(get-involved-lab.jpg);
+  background-size: cover;
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
+}
