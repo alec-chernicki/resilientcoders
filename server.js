@@ -13,6 +13,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(compress());
 app.use(express.static(`${__dirname}/build`));
 app.use("/quote", express.static(__dirname + "/erl/"));
+app.use("/rebuild", express.static(__dirname + "/rebuild/"));
 app.listen(app.get('port'));
 
 // Controllers
