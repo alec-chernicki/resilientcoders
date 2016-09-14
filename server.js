@@ -46,6 +46,9 @@ app.get('/', (req, res) => {
 app.get('/quote', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/erl/index.html'));
 });
+app.get('/rebuild', (req, res) => {
+  res.sendFile(path.resolve(__dirname + '/rebuild/index.html'));
+});
 app.get('/orientation', (req, res) => {
   res.redirect('https://docs.google.com/forms/d/e/1FAIpQLSdp2K_4p7gYfFiyCIvouYZXf9eHDwkYDon3AVHGYOQr8Z8uBg/viewform');
 });
