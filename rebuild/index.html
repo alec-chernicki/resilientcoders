@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="Application">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Application</title>
+    <link rel="shortcut icon" href="http://resilientcoders.s3.amazonaws.com/i/favicon.gif" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+<body ng-controller="AppCtrl as ctrl" ng-cloak>
+
+<section>
+    <div id="info">
+        <h1 class="align-center">Resilient <span class="red-color">(Re)</span>build!</h1>
+        <p class="align-center">Win a <span class="red-color">(RE)</span>BUILD of your website!</p>
+
+        <span class="divider align-center"></span>
+
+        <p>
+            In partnership with <a href="http://www.freshtilledsoil.com/" target="_blank">Fresh Tilled Soil</a> we will (re)build a website for a non-profit organization for free.
+            Three finalists will be selected by our panel of judges, and then we’ll hand it over to the general public to vote for the winner.
+        </p>
+
+        <p>
+            We're proud to offer a single round of design work and a static website that reflects that design.
+            Extra features may not be supported, per our discretion. The website created may be referenced by
+            Resilient Lab as a case study and sample of our work. Ongoing support after the site is finished
+            is not included. Hosting solutions not provided, though we're happy to advise you on your hosting.
+            Finalists will be asked for all of the final copy and imagery to be used in the new website,
+            during the public voting period. Any organization that hasn’t gotten this material to us
+            before voting ends will not be considered, even if they get the most votes.
+            We’ll ask the winning organization to send us a point of contact to join us for a kickoff meeting.
+        </p>
+
+        <h2>Timeline</h2>
+        <ul>
+                <li>September 16: The competition launches</li>
+                <li>October 5: Application site closes</li>
+                <li>October 12: Three finalists selected</li>
+                <li>October 17: Public voting campaign commences</li>
+                <li>November 1: Winner announced</li>
+                <li>November 2: Project begins</li>
+                <li>November 4: Winner is available for full day planning session</li>
+                <li>December 16: Website ready to launch</li>
+        </ul>
+
+        <a class="accept-link" ng-click="showForm()" ng-href="#application">Yup, I’m cool with this. Take me to the application.</a>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <div id="form" ng-show="triggerForm" >
+        <h2>Application</h2>
+        <form name="gform" id="gform" method="POST" ng-submit="isValidForm()"
+              action="https://script.google.com/macros/s/AKfycbyeBSQcoXWiN4z-rpcnMpDWxpIej-HF1KzzQJ_TPC3LFSG4g9o/exec">
+            <fieldset>
+                <label for="name">Name</label>
+                <input id="name" type="text" ng-model="name" name="name"/>
+
+                <label for="organization">Organization</label>
+                <input id="organization" type="text" ng-model="organization" name="organization"/>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" ng-model="email" name="email"/>
+
+                <label for="telephone">Phone</label>
+                <input id="telephone" type="text" ng-model="telephone" name="telephone"/>
+
+                <h3>We appreciate answers that are precise and to the point. Please, no more than 500 words.</h3>
+                <h4>Why should we pick your organization? How will building a website or microsite advance your mission in a meaningful way?</h4>
+
+                <textarea id="whyYou" ng-model="whyYou" maxlength="3000" name="whyYou"></textarea>
+                <button class="hvr-sweep-to-right" type="submit" ng-click="formSubmit()">Submit Application</button>
+            </fieldset>
+        </form>
+    </div>
+    <div id="thankyou_message" >
+        <h2 ng-show="submitSuccess">Thank you we will get back to you shortly</h2>
+        <a href="www.resilientcoders.org">Return to Resilient Coders</a>
+    </div>
+</section>
+
+<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+</body>
+</html>
