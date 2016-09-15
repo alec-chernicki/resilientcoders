@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Application</title>
+    <title>Resilient Rebuild</title>
+    <meta name="description" content="In partnership with Fresh Tilled Soil</a> we will (re)build a website for a non-profit organization for free.">
+    <meta name="keywords" content="resilient coders, rebuild, web development, redesign, design, web, fresh tilled soil, ui, ux, learn code">
+    <meta name="author" content="Resilient Coders">
     <link rel="shortcut icon" href="http://resilientcoders.s3.amazonaws.com/i/favicon.gif" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -18,17 +21,19 @@
 
 <section>
     <div id="info">
-        <h1 class="align-center">Resilient <span class="red-color">(Re)</span>build!</h1>
+        <h1 class="align-center">Resilient <span class="red-color">(Re)</span>build</h1>
         <p class="align-center">Win a <span class="red-color">(RE)</span>BUILD of your website!</p>
 
         <span class="divider align-center"></span>
 
         <p>
-            In partnership with <a href="http://www.freshtilledsoil.com/" target="_blank">Fresh Tilled Soil</a> we will (re)build a website for a non-profit organization for free.
+            In partnership with
+            <a href="http://www.freshtilledsoil.com/" target="_blank">Fresh Tilled Soil</a>
+            we will (re)build a website for a non-profit organization for free.
             Three finalists will be selected by our panel of judges, and then we’ll hand it over to the general public to vote for the winner.
         </p>
 
-        <p>
+        <h5>
             We're proud to offer a single round of design work and a static website that reflects that design.
             Extra features may not be supported, per our discretion. The website created may be referenced by
             Resilient Lab as a case study and sample of our work. Ongoing support after the site is finished
@@ -37,7 +42,7 @@
             during the public voting period. Any organization that hasn’t gotten this material to us
             before voting ends will not be considered, even if they get the most votes.
             We’ll ask the winning organization to send us a point of contact to join us for a kickoff meeting.
-        </p>
+        </h5>
 
         <h2>Timeline</h2>
         <ul>
@@ -51,7 +56,7 @@
                 <li>December 16: Website ready to launch</li>
         </ul>
 
-        <a class="accept-link" ng-click="showForm()" ng-href="#application">Yup, I’m cool with this. Take me to the application.</a>
+        <a ng-click="showForm()" ng-href="#form">Yup, I’m cool with this. Take me to the application.</a>
         <br>
         <br>
         <br>
@@ -83,7 +88,7 @@
         </form>
     </div>
     <div id="thankyou_message" >
-        <h2 ng-show="submitSuccess">Thank you we will get back to you shortly</h2>
+        <h2 ng-show="submitSuccess">Thanks! We will get back to you shortly.</h2>
         <a href="www.resilientcoders.org">Return to Resilient Coders</a>
     </div>
 </section>
