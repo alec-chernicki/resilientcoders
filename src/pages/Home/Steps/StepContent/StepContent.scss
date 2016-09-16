@@ -58,12 +58,15 @@
 .second-step-section {
   flex-direction: row-reverse;
 
+  @include breakpoint($small-breakpoint) {
+    margin-top: 60px;
+  }
+
   .step-text {
     margin-top: 40px;
 
     @include breakpoint($small-breakpoint) {
       margin-top: 0;
-      margin-bottom: 260px;
     }
   }
 }

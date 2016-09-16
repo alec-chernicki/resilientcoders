@@ -1,4 +1,5 @@
 @import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
 
 .work {
   display: flex;
@@ -30,4 +31,8 @@
   margin-left: auto;
   padding: 100px 0;
   margin-right: auto;
+
+  @include breakpoint($small-breakpoint) {
+    padding: 20px 0;
+  }
 }

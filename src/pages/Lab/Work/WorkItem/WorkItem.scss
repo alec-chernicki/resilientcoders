@@ -42,6 +42,16 @@
   margin-bottom: 120px;
   position: relative;
 
+  @include breakpoint($small-breakpoint) {
+    margin-bottom: 0px;
+  }
+
+  .work-details {
+    @include breakpoint($small-breakpoint) {
+      padding: 15px;
+    }
+  }
+
   &:last-child {
     margin-bottom: -50px;
   }
@@ -63,12 +73,6 @@
       }
     }
 
-    .work-details {
-      @include breakpoint($small-breakpoint) {
-        padding: 15px;
-      }
-    }
-
     .button {
       left: 50px;
     }
@@ -86,7 +90,7 @@
 
   @include breakpoint($small-breakpoint) {
     width: 100%;
-    margin-bottom: 25px
+    max-height: 300px;
   }
 }
 

@@ -11,6 +11,48 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 10;
+}
+
+.button-container {
+  position: relative;
+  float: left;
+
+  &:hover:before {
+    width: 100%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 0;
+    top: 0;
+    z-index: 5;
+    @include transition;
+  }
+}
+
+.button-container--white {
+  background-color: #FFF;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-primary;
+  }
+
+  a {
+    color: $text-primary;
+  }
+
+  &:before {
+    background-color: darken(#FFF, 6%);
+  }
+}
+
+.button-container--red {
+  background-color: $accent-primary;
 
   &:hover,
   &:focus,
@@ -21,27 +63,9 @@
   a {
     color: #FFF;
   }
-}
-
-.button-container {
-  position: relative;
-  float: left;
-  background-color: $accent-primary;
-
-  &:hover:before {
-    width: 100%;
-  }
 
   &:before {
-    content: '';
     background-color: darken($accent-primary, 10%);
-    position: absolute;
-    height: 100%;
-    left: 0;
-    width: 0;
-    top: 0;
-    z-index: 5;
-    @include transition;
   }
 }
 

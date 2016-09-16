@@ -85,6 +85,9 @@ class Bootcamp extends React.Component {
               The 2016 Resilient Bootcamp has ended but don't worry there's always more
               opportunities to learn with us.
             </p>
+            <ButtonPrimary to="/get-involved/student" color="white">
+              Get Involved
+            </ButtonPrimary>
           </SideItem>
           <SideItem className="bootcamp-apply__mentor">
             <h1>As a mentor</h1>

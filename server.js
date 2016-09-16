@@ -2,6 +2,8 @@
 const express = require('express');
 const compress = require('compression');
 const path = require('path');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const axios = require('axios');
 
 // Create Express App
@@ -11,36 +13,24 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 // app.set('view engine', 'jade');
 app.use(compress());
+app.use(cookieParser())
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(`${__dirname}/build`));
 app.use("/quote", express.static(__dirname + "/erl/"));
 app.use("/rebuild", express.static(__dirname + "/rebuild/"));
 app.listen(app.get('port'));
 
-// Controllers
+const subscriptionController = require('./controllers/subscriptionController');
 
-const fetchTweets = () => {
-  const twitterAPIURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+// Assign Routes and Controllers for API, i.e. post data to HubSpot
 
-  axios.get(twitterAPIURL, {
-    screen_name: 'resilientcoders',
-    count: 3,
-  })
-  .then(response => {
-    return response
-  });
-}
+app.post('/api/subscribe/general', subscriptionController.postSubscriptionGeneral)
+app.post('/api/subscribe/mentor', subscriptionController.postSubscriptionMentor)
+app.post('/api/subscribe/company', subscriptionController.postSubscriptionCompany)
 
-app.get('/api/socialimage', (req,res,next) => {
-  res.sendFile(path.resolve(__dirname + '/serverAssets/meta-image.jpg'));
-})
 
-app.get('/api/tweets', (req, res, next) => {
-  fetchTweets()
-    .then(tweets => res.json(tweets))
-    .catch(() => next(new Error('Error fetching tweets')));
-});
-
-// Assign Routes and Controllers
+// Assign Routes and Controllers for main website and ERL
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
 });
