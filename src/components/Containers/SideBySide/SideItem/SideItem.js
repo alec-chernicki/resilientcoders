@@ -14,7 +14,8 @@ const SideItem = ({children, size, type, className}) => {
     <div
       className={sideItemClass}
       style={{
-        flex: `2 2 ${size}%`
+        flex: `2 2 ${size}%`,
+        width: '100%'
       }}
     >
       {children}

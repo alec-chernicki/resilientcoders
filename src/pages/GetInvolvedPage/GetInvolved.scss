@@ -38,7 +38,12 @@
   overflow: hidden;
 
   @include breakpoint($small-breakpoint) {
-    height: 250px;
+    flex: 0 0 300px;
+    height: 300px;
+
+    &:hover {
+      flex-basis: 300px !important;
+    }
   }
 
   &:hover {
@@ -106,6 +111,8 @@
   width: 45vw;
   height: 100%;
   top: 0;
+  left: 0;
+  right: 0;
   background-size: 6px, auto, cover;
   z-index: 5;
 
@@ -209,6 +216,7 @@
 
   @include breakpoint($small-breakpoint) {
     height: 100%;
+    width: 100%;
   }
 }
 

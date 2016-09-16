@@ -9,9 +9,10 @@
 body {
   font-family: $league-gothic;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   min-width: 1150px;
-  
+
   @include breakpoint($small-breakpoint) {
     min-width: 0;
   }

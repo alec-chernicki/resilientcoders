@@ -2,7 +2,7 @@
 @import '../../stylesheets/mixins';
 
 .home-text {
-  width: 50%;
+  min-width: 50% !important;
   padding: 110px 60px 60px;
   margin-top: -27px;
 
@@ -12,8 +12,9 @@
 }
 
 .home-photo {
-  width: 50% !important;
-  margin-top: -140px;
+  background: $background-secondary;
+  min-width: 50% !important;
+  margin-top: -125px;
   height: 500px !important;
 
   @include breakpoint($small-breakpoint) {
@@ -79,10 +80,6 @@
 
 .program {
   position: relative;
-}
-
-.home-photo {
-  background: $background-secondary;
 }
 
 .tiered-program-background {
