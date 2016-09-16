@@ -55,7 +55,12 @@ export default {
     }
   ],
   content : [
+
     {
+      title: 'MassTLC Distuished Leader Award',
+      link: 'https://www.youtube.com/watch?v=L_Ssnhf353M',
+      note: '09.2016'
+    }, {
       title: 'TEDxSomerville: Education as Investment',
       link: 'https://www.youtube.com/watch?v=-0Q16HklbnI',
       note: '09.2015'
