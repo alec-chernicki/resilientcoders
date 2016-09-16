@@ -9,6 +9,7 @@
   @include breakpoint($small-breakpoint) {
     padding-top: 70px;
     height: auto;
+    display: block;
   }
 }
 
