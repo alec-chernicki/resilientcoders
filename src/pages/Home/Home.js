@@ -77,18 +77,7 @@ class Home extends Component {
           </CenteredContainerInner>
           <CenteredContainerInner color="white" standard={false} className="coworking-contact">
             <Coworking />
-            <div
-              className="section-main section-tertiary section-tertiary__subtle">
-              <div className="section-container-primary">
-                <p>Join the movement, drop us a note at:&nbsp;
-                  <a
-                    className="accent-link-underline accent-link-underline-trigger"
-                    href="mailto:david@resilientcoders.org?Subject=Getting involved with Resilient Coders" target="_top">
-                    david@resilientcoders.org
-                  </a>
-                </p>
-              </div>
-            </div>
+            <EmailFormShort />
           </CenteredContainerInner>
         </CenteredContainerOuter>
       </RouteTransition>

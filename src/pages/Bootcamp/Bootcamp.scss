@@ -25,11 +25,23 @@
   padding-top: 100px;
   padding-bottom: 190px;
   margin-top: -100px;
+
+  @include breakpoint($small-breakpoint) {
+    padding: 60px 20px;
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
 }
 
 .bootcamp-apply__mentor {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  .button-container {
+    margin-top: 20px;
+  }
 }
 
 .bootcamp-timeline {

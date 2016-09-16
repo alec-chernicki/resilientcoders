@@ -3,4 +3,33 @@
 
 .coworking {
   padding: 60px;
+  display: flex;
+
+  @include breakpoint($small-breakpoint) {
+    flex-direction: column;
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+
+  @include breakpoint($small-breakpoint) {
+    padding: 60px 20px;
+  }
+}
+
+.coworking-image {
+  width: 400px;
+  height: 400px;
+  margin-right: 60px;
+
+  @include breakpoint($small-breakpoint) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.coworking-text {
+
 }

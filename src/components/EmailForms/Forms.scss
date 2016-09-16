@@ -2,20 +2,39 @@
 @import '../../stylesheets/mixins';
 
 .email-form {
+  h1 {
+    color: #FFF !important;
+    margin-bottom: 20px !important;
+  }
+
+  p {
+    color: $text-tertiary !important;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   form {
     max-width: 600px;
     margin: 0 auto;
     margin-top: 25px;
     width: 100%;
+  }
+
+  .control {
     display: flex;
+    width: 100%;
+  }
+
+  .control-input {
+    width: 100%;
+    position: relative;
   }
 
   input[type="text"] {
     border: solid 1px #444;
-    border-right: none;
     background: #333;
     outline: none;
-    color: $text-tertiary;
+    color: #FFF;
     width: 100%;
     font-size: $font-size-secondary;
     padding: 15px 25px;
@@ -23,24 +42,79 @@
 
     &:focus {
       border: solid 1px $background-tertiary;
-      border-right: none;
     }
   }
 
   button {
     border: none;
     outline: none;
-    background-color: $background-tertiary;
     @include transition;
+    background-color: $accent-primary;
 
     &:hover {
-      background-color: $accent-primary;
+      background-color: darken($accent-primary, 10%);
+    }
+
+    &.disabled {
+      background-color: $background-tertiary;
+      cursor: not-allowed;
     }
   }
 }
 
-.email-form-inline {
+.error-message {
+  text-align: left;
+  opacity: 0;
+  position: absolute;
+  left: 5px;
+  bottom: -5px;
+  @include transition;
+
+  .error & {
+    opacity: 1;
+    padding: 8px 0;
+    bottom: -35px;
+    font-family: $roboto-slab;
+  }
+}
+
+.email-form {
+  .error input[type="text"] {
+    border-color: $accent-primary;
+
+    &:focus {
+      border-color: $accent-primary;
+    }
+  }
+}
+
+.email-form--long {
+  .divider {
+    margin-bottom: 10px;
+  }
+
   .control {
-    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .control-input + .control-input {
+    margin-left: 15px;
+  }
+
+  button {
+    margin-top: 20px;
+    min-width: 200px;
+  }
+}
+
+.email-form--short {
+  padding: 60px 0 !important;
+
+  input[type="text"] {
+    border-right: none;
+
+    &:focus {
+      border-right: none;
+    }
   }
 }

@@ -4,8 +4,11 @@ import RouteTransition from '../../../components/RouteTransition/RouteTransition
 import GetInvolvedBase from '../GetInvolvedBase/GetInvolvedBase';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
+import EmailFormLong from '../../../components/EmailForms/EmailFormLong';
 
 import companyImage from '../get-involved-company.jpg';
+
+const COMPANY_FORM_URL = '/api/subscribe/company';
 
 class GetInvolvedCompany extends React.Component {
   renderHeroContent() {
@@ -64,6 +67,17 @@ class GetInvolvedCompany extends React.Component {
               </div>
               <div className="get-involved-company-dunia" />
             </div>
+          </CenteredContainerInner>
+          <CenteredContainerInner
+            className="get-involved-additional-content"
+            standard={false}
+          >
+            <EmailFormLong
+              title="Stay informed"
+              text="Be the first to know when we have new students to hire or when partnership
+              opportunities become available."
+              formUrl={COMPANY_FORM_URL}
+            />
           </CenteredContainerInner>
         </GetInvolvedBase>
       </RouteTransition>

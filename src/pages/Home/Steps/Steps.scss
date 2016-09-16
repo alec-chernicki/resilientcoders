@@ -68,10 +68,18 @@
 
   &.first {
     flex: 0 0 570px;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 617px;
+    }
   }
 
   &.second {
     flex: 0 0 550px;
+
+    @include breakpoint($small-breakpoint) {
+      flex: 0 0 735px;
+    }
   }
 
   &.third {
@@ -83,10 +91,10 @@
   }
 
   &.fourth {
-    flex: 0 0 780px;
+    flex: 0 0 585px;
 
     @include breakpoint($small-breakpoint) {
-      flex: 1 1 880px;
+      flex: 1 1 620px;
     }
   }
 }

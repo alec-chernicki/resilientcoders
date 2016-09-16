@@ -1,7 +1,7 @@
 import './StepContent.scss';
 import React from 'react'
 import { Link } from 'react-router';
-import StepOneVerticalImage from './step-two-vertical.jpg';
+import StepOneVerticalImage from './step-two-vertical.png';
 import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
 
 const SecondStepContent = (props) => {
