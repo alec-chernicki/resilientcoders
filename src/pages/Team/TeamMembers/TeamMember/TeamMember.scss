@@ -7,7 +7,6 @@
   background: #FFF;
   flex: 2 2 40%;
   margin-bottom: 60px;
-  padding-bottom: 150px;
 
   @include breakpoint($small-breakpoint) {
     flex: 1 1 100%;
@@ -95,8 +94,7 @@
   background-color: $background-secondary;
   border-top: solid 5px $accent-primary;
   padding: 25px;
-  left: 25px;
-  right: 25px;
-  position: absolute;
+  position: relative;
+  margin-top: -5px;
   text-align: left;
 }

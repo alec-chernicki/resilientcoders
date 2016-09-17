@@ -49,6 +49,11 @@ p {
   color: $text-secondary;
 }
 
+button {
+  font-family: $league-gothic;
+  cursor: pointer;
+}
+
 .accent-link-underline {
   position: relative;
   z-index: 1;
