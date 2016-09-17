@@ -41,15 +41,13 @@ const Timeline = () => {
         </div>
         <div className="timeline-row">
           <div>
-            <Parallax from={60} to={-60}>
-              <div className="timeline-image two">
-                <div className="timeline-image-description-container">
-                  <div className="timeline-image-description">
-                    Week 1
-                  </div>
+            <div className="timeline-image two">
+              <div className="timeline-image-description-container">
+                <div className="timeline-image-description">
+                  Week 1
                 </div>
               </div>
-            </Parallax>
+            </div>
           </div>
           <div className="timeline-text">
             <div>

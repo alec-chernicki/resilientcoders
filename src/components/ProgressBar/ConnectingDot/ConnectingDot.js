@@ -13,7 +13,7 @@ class ConnectingDot extends React.Component {
     }
 
     this.scene = new ScrollMagic
-      .Scene({offset: 0, triggerHook: 0.5})
+      .Scene({offset: 0, triggerHook: 0.4})
       .setClassToggle(this.targetElement, 'active')
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
@@ -32,14 +32,11 @@ class ConnectingDot extends React.Component {
   }
   render() {
     return (
-      <div ref={this
-        .setTriggerElementRef
-        .bind(this)}>
+      <div ref={this.setTriggerElementRef.bind(this)}>
         <div
           className="dot-with-circle"
-          ref={this
-          .setTargetElementRef
-          .bind(this)}>
+          ref={this.setTargetElementRef.bind(this)}
+        >
           <div className="dot-pulse"/>
         </div>
       </div>

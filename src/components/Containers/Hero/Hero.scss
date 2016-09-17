@@ -15,6 +15,7 @@
 .hero {
   position: relative;
   height: 100vh;
+  overflow: hidden;
   background-size: 6px, auto, cover;
 
   display: flex;
@@ -45,9 +46,37 @@
   width: 100%;
   background-size: 6px, auto;
 }
+.hero__fade-overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__fade-overlay {
+  position: absolute;
+  z-index: 500;
+  height: 100%;
+  width: 100%;
+  will-change: opacity;
+  background-color: $background-secondary;
+  opacity: 0;
+}
+
+.hero__image-container {
+  z-index: 90;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
 
 .hero__image {
   z-index: 90;
+  will-change: transform;
   position: absolute;
   top: 0;
   left: 0;
@@ -129,4 +158,8 @@
   p {
     margin: 0 auto;
   }
+}
+
+video {
+  will-change: transform;
 }

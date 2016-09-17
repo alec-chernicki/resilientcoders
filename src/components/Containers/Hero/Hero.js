@@ -6,6 +6,7 @@ import DotLight from '../Dots/dot-light.svg';
 import BinaryText from '../../BinaryText/BinaryText';
 import HeroVideo from './HeroVideo';
 import HeroImage from './hero-image.jpg';
+import HeroFadeOverlay from './HeroFadeOverlay';
 
 class Hero extends React.Component {
   constructor(props) {
@@ -76,7 +77,9 @@ class Hero extends React.Component {
             backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(51, 51, 51, 0.7) 30%, rgba(51, 51, 51, 0.35))`
           }}
         />
-        {this.renderImageContent()}
+        <HeroFadeOverlay
+          imageContent={this.renderImageContent()}
+        />
         <div className={heroContentClass}>
           {this.renderTitleLineOne()}
           {this.renderTitleLineTwo()}

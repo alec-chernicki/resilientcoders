@@ -24,10 +24,12 @@ app.listen(app.get('port'));
 const subscriptionController = require('./controllers/subscriptionController');
 
 // Assign Routes and Controllers for API, i.e. post data to HubSpot
-
 app.post('/api/subscribe/general', subscriptionController.postSubscriptionGeneral)
 app.post('/api/subscribe/mentor', subscriptionController.postSubscriptionMentor)
 app.post('/api/subscribe/company', subscriptionController.postSubscriptionCompany)
+app.get('/api/meta-image', (req, res) => {
+  res.sendFile(path.resolve(__dirname + '/serverAssets/meta-image.png'));
+})
 
 
 // Assign Routes and Controllers for main website and ERL

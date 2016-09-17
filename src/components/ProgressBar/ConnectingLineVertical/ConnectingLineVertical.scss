@@ -6,9 +6,11 @@
   width: 100%;
   position: absolute;
   background-color: $accent-primary;
-  height: 0%;
+  height: 100%;
   top: 0;
   left: 0;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .connecting-line {
@@ -17,6 +19,8 @@
   margin: 0 auto;
   background-color: $background-primary;
   position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
 
   @include breakpoint($small-breakpoint) {
     width: 6px;

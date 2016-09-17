@@ -36,6 +36,17 @@
     overflow: hidden;
   }
 
+  &:after {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 40%;
+    bottom: -16px;
+    right: -16px;
+    background-color: $accent-primary;
+    z-index: -1;
+  }
+
   &.one {
     background-image: url('./timeline-recruitment.jpg');
     background-size: cover;
@@ -56,26 +67,17 @@
     background-size: cover;
   }
 
-  &:after {
-    content: '';
-    position: absolute;
-    height: 8px;
-    width: 100px;
-    top: 50px;
-    right: -40px;
-    background-color: $accent-primary;
-    z-index: 100;
-  }
-
   .timeline-image-description {
     background-color: #333;
     color: #FFF;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -16px;
     font-family: $league-gothic;
     text-transform: uppercase;
-    line-height: 50px;
     font-size: 20px;
-    padding: 0 15px;
+    padding: 5px 20px;
+    letter-spacing: 1px;
   }
 }
 

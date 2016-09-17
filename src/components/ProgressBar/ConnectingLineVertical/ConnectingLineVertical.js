@@ -42,17 +42,17 @@ class ConnectingLineVertical extends React.Component {
     }
 
     const tween = new TimelineMax().add([TweenMax.fromTo(this.targetElement, 1, {
-        height: '0%'
+        y: '-100%'
       }, {
-        height: '100%',
-        ease: Power2.easeIn
+        y: '0%',
+        ease: Linear.easeNone
       })]);
 
     this.scene = new ScrollMagic
       .Scene({
         duration: this.getTriggerElementHeight(),
         offset: 0,
-        triggerHook: 0.5
+        triggerHook: 0.4
       })
       .setTween(tween)
       .addTo(this.controller)
@@ -62,14 +62,10 @@ class ConnectingLineVertical extends React.Component {
     const className = "connecting-line " + this.props.className
     return (
       <div
-        ref={this
-        .setTriggerElementRef
-        .bind(this)}
+        ref={this.setTriggerElementRef.bind(this)}
         className={className}>
         <div
-          ref={this
-          .setTargetElementRef
-          .bind(this)}
+          ref={this.setTargetElementRef.bind(this)}
           className="connecting-line-progress"/>
       </div>
     )
