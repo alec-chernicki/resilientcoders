@@ -1,6 +1,10 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
 
+.bootcamp-details .side-by-side-container {
+  align-items: flex-end;
+}
+
 .bootcamp-details__text {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -10,7 +14,6 @@
 .bootcamp-details__apply-text {
   padding-top: 80px;
   padding-bottom: 80px;
-  margin-top: -20px;
 }
 
 .bootcamp-details__button {

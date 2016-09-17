@@ -1,7 +1,8 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
 
-.lab-details {
+.lab-details .side-by-side-container {
+  align-items: flex-end;
 }
 
 .lab-abilities {
@@ -21,7 +22,7 @@
 }
 
 .lab-description {
-  margin: -56px 0 0px;
+  margin: -80px 0 0px;
   padding-top: 80px;
   padding-bottom: 50px;
 

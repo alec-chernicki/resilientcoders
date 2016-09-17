@@ -32,7 +32,7 @@ class Home extends Component {
             Get Involved
           </ButtonPrimary>
         </Hero>
-        <SideBySide>
+        <SideBySide className="home-details">
           <SideItem
             type="white"
             className="home-text"

@@ -39,14 +39,19 @@ h2 {
   margin: 0 0 10px 0;
   font-size: $font-size-tertiary;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 
 h3 {
   text-transform: uppercase;
+  margin: 20px 0 10px 0;
+  font-size: $font-size-4;
+  line-height: 1.1;
 }
 
 p {
   color: $text-secondary;
+  margin-bottom: 10px;
 }
 
 button {
