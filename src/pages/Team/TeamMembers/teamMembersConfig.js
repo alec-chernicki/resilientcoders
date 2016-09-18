@@ -38,10 +38,10 @@ export default [
     title: 'Mentorship Lead',
     bio: `Alec has been a mentor with Resilient for the last two years. He's passionate about
     diversity in tech and social innovation. He believes that diversity means not just acknowledging,
-    but embracing the fact that some of  can get to "Point B" regardless of their "Point A". To
-    this end, he's also an award-winning instructor at for the Web Design track at Startup Institute
-    Boston, helping teach their. During the day, he works as a front end engineer at HubSpot and
-    consumes too much coffee for his own good.`
+    but embracing the fact that some can get to "Point B" regardless of their "Point A". To
+    this end, he's also an award-winning instructor at at Startup Institute teaching the Web Design
+    track. During the day, he works as a front end engineer at HubSpot and consumes too much
+    coffee for his own good.`
   },
   {
     name: 'Chris Swenor',
