@@ -17,10 +17,7 @@
   height: 100vh;
   overflow: hidden;
   background-size: 6px, auto, cover;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 500;
 
   &:after {
     position: absolute;
@@ -48,6 +45,7 @@
 }
 .hero__fade-overlay-container {
   position: absolute;
+  z-index: 80;
   top: 0;
   left: 0;
   height: 100%;
@@ -56,12 +54,10 @@
 
 .hero__fade-overlay {
   position: absolute;
-  z-index: 500;
   height: 100%;
   width: 100%;
   will-change: opacity;
   background-color: $background-secondary;
-  opacity: 0;
 }
 
 .hero__image-container {
@@ -115,6 +111,13 @@
   display: none !important;
 }
 
+.hero__content-container {
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero__content {
   position: relative;
   z-index: 110;
@@ -158,8 +161,4 @@
   p {
     margin: 0 auto;
   }
-}
-
-video {
-  will-change: transform;
 }

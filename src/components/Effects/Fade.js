@@ -50,7 +50,7 @@ class Fade extends React.Component {
     return (
       <div
         ref={this.setTriggerElementRef.bind(this)}
-        className="stretch-to-fit"
+        className={className}
       >
         <div
           className={className}
