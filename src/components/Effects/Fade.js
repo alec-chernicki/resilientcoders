@@ -1,10 +1,15 @@
+ /* eslint-disable */
+import './Effects.scss';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import React from 'react'
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 
-class Parallax extends React.Component {
+// TODO: Code duplication across effects components, this is something that would be cool to open source
+// Would be best to make a base ES6 class or component to extend the scene functionality across components
+
+class Fade extends React.Component {
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }
@@ -14,14 +19,14 @@ class Parallax extends React.Component {
     }
 
     const tween = new TimelineMax().add([TweenMax.fromTo(this.targetElement, 1, {
-        y: this.props.from
+        opacity: this.props.from
       }, {
-        y: this.props.to,
-        ease: Linear.easeNone
+        opacity: this.props.to,
+        ease: Power1.easeOut
       })]);
 
     this.scene = new ScrollMagic
-      .Scene({duration: window.innerWidth, offset: 0.3, triggerHook: 1})
+      .Scene({duration: '100%', offset: 0, triggerHook: 0})
       .setTween(tween)
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
@@ -41,13 +46,14 @@ class Parallax extends React.Component {
   }
   render() {
     const className = classNames('stretch-to-fit', this.props.className);
-    
+
     return (
       <div
         ref={this.setTriggerElementRef.bind(this)}
+        className="stretch-to-fit"
       >
         <div
-          className={this.props.className}
+          className={className}
           ref={this.setTargetElementRef.bind(this)}
         >
           {this.props.children}
@@ -57,4 +63,4 @@ class Parallax extends React.Component {
   }
 }
 
-export default Parallax;
+export default Fade;
