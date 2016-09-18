@@ -35,15 +35,14 @@ class HeroFadeOverlay extends React.Component {
     const tween = new TimelineMax().add([TweenMax.fromTo(this.targetElementOne, 1, {
         opacity: 0
       }, {
-        opacity: 1,
-        ease: Power2.easeOut
+        opacity: 0.85,
+        ease: Power1.easeOut
       })]);
 
     this.sceneOne = new ScrollMagic
       .Scene({
-        duration: window.innerWidth,
-        offset: 0,
-        triggerHook: 0.5
+        duration: '100%',
+        triggerHook: 0,
       })
       .setTween(tween)
       .addTo(this.controller)
@@ -60,14 +59,14 @@ class HeroFadeOverlay extends React.Component {
       }, {
         scaleX: 1.3,
         scaleY: 1.3,
-        ease: Power2.easeOut
+        ease: Power1.easeOut
       })]);
 
     this.sceneTwo = new ScrollMagic
       .Scene({
-        duration: window.innerWidth,
+        duration: '100%',
         offset: 0,
-        triggerHook: 0.5
+        triggerHook: 0,
       })
       .setTween(tween)
       .addTo(this.controller)
