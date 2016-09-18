@@ -37,6 +37,7 @@ exports.postSubscriptionMentor = (req, res) => {
   const postData =  Qs.stringify({
     'firstname': req.body.firstName,
     'lastname': req.body.lastName,
+    'company': req.body.company,
     'email': req.body.email,
     'hs_context': JSON.stringify({
       "hutk": req.cookies.hubspotutk,
@@ -66,7 +67,10 @@ exports.postSubscriptionMentor = (req, res) => {
 
 exports.postSubscriptionCompany = (req, res) => {
   const postData =  Qs.stringify({
+    'firstname': req.body.firstName,
+    'lastname': req.body.lastName,
     'email': req.body.email,
+    'company': req.body.company,
     'hs_context': JSON.stringify({
       "hutk": req.cookies.hubspotutk,
       "ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,

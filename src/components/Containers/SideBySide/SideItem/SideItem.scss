@@ -30,6 +30,7 @@
 }
 
 .side-item--grey {
+  border-top: solid 5px $accent-primary;
   background-color: $background-secondary;
 
   h1, h2, h3 {

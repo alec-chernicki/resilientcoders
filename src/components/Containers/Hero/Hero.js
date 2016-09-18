@@ -78,13 +78,13 @@ class Hero extends React.Component {
             backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(51, 51, 51, 0.7) 30%, rgba(51, 51, 51, 0.35))`
           }}
         />
-        <Fade from={0} to={0.85} className="hero__fade-overlay-container">
+        <Fade from={0} to={1} className="hero__fade-overlay-container">
           <div className="hero__fade-overlay" />
         </Fade>
         <Scale from={1} to={1.3}>
           {this.renderImageContent()}
         </Scale>
-        <Fade from={1} to={0.15} className="hero__content-container">
+        <Fade from={1} to={0} className="hero__content-container">
           <div className={heroContentClass}>
             {this.renderTitleLineOne()}
             {this.renderTitleLineTwo()}

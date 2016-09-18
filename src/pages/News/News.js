@@ -3,6 +3,7 @@ import React from 'react';
 import BinaryText from '../../components/BinaryText/BinaryText';
 import NewsItem from './NewsItem/NewsItem';
 import NewsTweet from './NewsTweet/NewsTweet';
+import Tweet from '../../components/Tweet/Tweet';
 import newsItemConfig from './newsItemConfig';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 
@@ -50,7 +51,9 @@ class News extends React.Component {
                     </BinaryText>
                   </div>
                   <div className="divider"/>
-                  <NewsTweet/>
+                  <div className="news-tweet">
+                    <Tweet/>
+                  </div>
                 </div>
                 <div className="news-list-title">
                   <h2>Interactive Content</h2>

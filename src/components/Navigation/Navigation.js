@@ -16,7 +16,8 @@ class Navigation extends React.Component {
     super(props);
 
     this.state = {
-      isMobileNavActive: false
+      isMobileNavActive: false,
+
     }
 
     this.handleMobileNavigationClick.bind(this);
@@ -28,10 +29,11 @@ class Navigation extends React.Component {
     })
   }
   handleMobileNavigationClick(location) {
-    this.toggleMobileNavigationVisiblity()
+    this.toggleMobileNavigationVisiblity();
     browserHistory.push(location);
   }
   renderMobileNavigation () {
+    
     if (!this.state.isMobileNavActive) {
       return null;
     }

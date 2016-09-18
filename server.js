@@ -22,17 +22,28 @@ app.use("/rebuild", express.static(__dirname + "/rebuild/"));
 app.listen(app.get('port'));
 
 const subscriptionController = require('./controllers/subscriptionController');
+const twitterController = require('./controllers/twitterController');
 
-// Assign Routes and Controllers for API, i.e. post data to HubSpot
+//------------------------------------------------------------
+// Assign Routes and Controllers for API
+//------------------------------------------------------------
+
+// For Hubspot form subscriptions
 app.post('/api/subscribe/general', subscriptionController.postSubscriptionGeneral)
 app.post('/api/subscribe/mentor', subscriptionController.postSubscriptionMentor)
 app.post('/api/subscribe/company', subscriptionController.postSubscriptionCompany)
+
+// To get last tweet from @resilientcoders
+app.get('/api/twitter', twitterController.getTwitter)
+
+// To get meta image for social sharing
 app.get('/api/meta-image', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/serverAssets/meta-image.png'));
 })
 
-
+//------------------------------------------------------------
 // Assign Routes and Controllers for main website and ERL
+//------------------------------------------------------------
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
 });

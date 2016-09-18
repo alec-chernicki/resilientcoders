@@ -13,20 +13,16 @@ class ConnectingLineVertical extends React.Component {
   }
   componentDidMount() {
     this.initializeScene();
-    window.onresize = this.setDuration.bind(this);
-    this.getTriggerElementHeight.bind(this);
+    window.addEventListener('resize', this.handleResize)
   }
   componentWillUnmount() {
     this.scene.destroy(true)
     this.scene = null;
   }
-  getWindowHeight() {
-    return window.innerWidth
-  }
   getTriggerElementHeight() {
     return this.triggerElement.clientHeight
   }
-  setDuration() {
+  handleResize() {
     if (!this.scene) return
     this.scene.duration(this.getTriggerElementHeight());
   }

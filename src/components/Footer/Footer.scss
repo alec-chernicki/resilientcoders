@@ -1,11 +1,33 @@
+@import '../../stylesheets/mixins';
+@import '../../stylesheets/variables';
+
 footer {
-  background: #333;
+  background: $background-secondary;
   padding: 40px;
+  display: flex;
+
+  @include breakpoint($small-breakpoint) {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  > div {
+    flex: 2 2 50%;
+  }
+
+  h3 {
+    margin: 0 0 15px;
+    color: $text-secondary;
+
+    @include breakpoint($small-breakpoint) {
+      margin-top: 20px;
+    }
+  }
 
   p {
     max-width: 600px;
     font-size: 14px;
-    color: #666;
+    color: $text-secondary;
 
     &:last-of-type {
       margin-bottom: 0;

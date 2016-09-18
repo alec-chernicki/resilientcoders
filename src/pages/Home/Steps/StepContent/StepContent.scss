@@ -4,11 +4,13 @@
 .step-section {
   position: relative;
   display: flex;
-  margin-left: 20px;
 
   @include breakpoint($small-breakpoint) {
     flex-direction: column;
-    margin-left: 0;
+  }
+
+  & + .step-section {
+    margin-top: 100px;
   }
 
   img {
@@ -48,7 +50,6 @@
 
 .step-two-vertical-image {
   margin-right: 60px;
-  margin-bottom: 90px;
 
   @include breakpoint($small-breakpoint) {
     display: none;
@@ -63,7 +64,7 @@
   }
 
   .step-text {
-    margin-top: 40px;
+    margin-top: 0;
 
     @include breakpoint($small-breakpoint) {
       margin-top: 0;

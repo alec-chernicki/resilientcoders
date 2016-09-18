@@ -31,6 +31,10 @@
 
   .slick-list {
     height: 500px;
+
+    @include breakpoint($small-breakpoint) {
+      height: 300px;
+    }
   }
 
   .slick-slider {
@@ -113,7 +117,11 @@
   text-align: center;
   overflow: hidden;
   position: relative;
-  padding: 60px 20px;
+  padding: 60px;
+
+  @include breakpoint($small-breakpoint) {
+    padding: 60px 20px;
+  }
 
   .divider {
     margin: 30px auto;
