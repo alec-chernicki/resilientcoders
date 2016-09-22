@@ -10,7 +10,8 @@ class EmailFormShort extends React.Component {
     super(props);
 
     this.state = {
-      canSubmit: false
+      canSubmit: false,
+      buttonText: 'submit',
     }
   }
   enableButton() {
@@ -24,10 +25,32 @@ class EmailFormShort extends React.Component {
     });
   }
   submit(data) {
-    axios.post('/api/subscribe/general', data)
-    .catch((e) => {
-      console.log(e.message);
+    this.setState({
+      buttonText: 'submitting',
     })
+    axios.post('/api/subscribe/general', data)
+      .then(() => {
+        this.setState({
+          buttonText: 'submited',
+        })
+
+        setTimeout(() => {
+          this.setState({
+            buttonText: 'submit',
+          })
+        }, 1200)
+      })
+      .catch((e) => {
+        this.setState({
+          buttonText: 'error',
+        })
+
+        setTimeout(() => {
+          this.setState({
+            buttonText: 'submit',
+          })
+        }, 1200)
+      })
   }
   render () {
     const buttonClass = classNames('button', {
@@ -56,7 +79,7 @@ class EmailFormShort extends React.Component {
                 className={buttonClass}
                 disabled={!this.state.canSubmit}
               >
-                Submit
+                {this.state.buttonText}
               </button>
             </div>
           </Formsy.Form>

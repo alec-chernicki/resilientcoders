@@ -75,7 +75,7 @@ class Hero extends React.Component {
         <div
           className="hero__overlay"
           style={{
-            backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(51, 51, 51, 0.7) 30%, rgba(51, 51, 51, 0.35))`
+            backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(42, 44, 47, 0.7) 30%, rgba(42, 44, 47, 0.35))`
           }}
         />
         <Fade from={0} to={1} className="hero__fade-overlay-container">

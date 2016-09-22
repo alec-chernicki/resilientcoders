@@ -31,17 +31,18 @@
   }
 
   input[type="text"] {
-    border: solid 1px #444;
-    background: #333;
+    border: solid 1px lighten($background-secondary, 5%);
+    background: $background-secondary;
     outline: none;
     color: #FFF;
     width: 100%;
     font-size: $font-size-secondary;
     padding: 15px 25px;
+    height: 100%;
     font-family: $roboto-slab;
 
     &:focus {
-      border: solid 1px $background-tertiary;
+      border: solid 1px lighten($background-secondary, 10%);
     }
   }
 

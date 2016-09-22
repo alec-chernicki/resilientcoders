@@ -85,6 +85,12 @@
     background-image: url('./hero-image.jpg');
     background-position: 35%;
   }
+
+
+  .vjs-playing {
+    height: auto !important;
+    width: auto !important;
+  }
 }
 
 .video-container {

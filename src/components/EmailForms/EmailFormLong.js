@@ -10,7 +10,8 @@ class EmailFormLong extends React.Component {
     super(props);
 
     this.state = {
-      canSubmit: false
+      canSubmit: false,
+      buttonText: 'submit',
     }
   }
   enableButton() {
@@ -24,10 +25,33 @@ class EmailFormLong extends React.Component {
     });
   }
   submit(data) {
-    axios.post(this.props.formUrl, data)
-    .catch((e) => {
-      console.log(e.message);
+    this.setState({
+      buttonText: 'submitting',
     })
+
+    axios.post(this.props.formUrl, data)
+      .then(() => {
+        this.setState({
+          buttonText: 'submited',
+        })
+
+        setTimeout(() => {
+          this.setState({
+            buttonText: 'submit',
+          })
+        }, 1200)
+      })
+      .catch((e) => {
+        this.setState({
+          buttonText: 'error',
+        })
+
+        setTimeout(() => {
+          this.setState({
+            buttonText: 'submit',
+          })
+        }, 1200)
+      })
   }
   render() {
     const buttonClass = classNames('button', {
@@ -51,7 +75,9 @@ class EmailFormLong extends React.Component {
             <div className="control">
               <TextInput name="email" placeholder="your@email.com" validations="isEmail" validationError="This is not a valid email" required/>
             </div>
-            <button type="submit" className={buttonClass} disabled={!this.state.canSubmit}>Submit</button>
+            <button type="submit" className={buttonClass} disabled={!this.state.canSubmit}>
+              {this.state.buttonText}
+            </button>
           </Formsy.Form>
         </div>
       </div>
