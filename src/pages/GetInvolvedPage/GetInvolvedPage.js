@@ -77,10 +77,7 @@ const GetInvolvedPage = (props) => {
               </a>
             </p>
             <div className="get-involved-donate-buttons">
-              <ButtonPrimary>
-                Donate $75
-              </ButtonPrimary>
-              <ButtonPrimary>
+              <ButtonPrimary target="_blank" href="https://www.paypal.me/resilientcoders">
                 Donate Any Amount
               </ButtonPrimary>
             </div>
