@@ -1,6 +1,10 @@
 export default {
   press : [
     {
+      title: 'Throwing down the gauntlet: the diversity crisis & the startup community',
+      link: 'https://medium.com/@delmarsenties/throwing-down-the-gauntlet-the-diversity-crisis-the-startup-community-f7a00ff312d4#.caqa3yq0x',
+      note: 'Medium'
+    }, {
       title: 'Hacking the opportunity gap: Resilient Coders and true grit',
       link: 'http://baystatebanner.com/news/2016/sep/07/hacking-opportunity-gap-resilient-coders-and-true-/',
       note: 'Bay State Banner'
