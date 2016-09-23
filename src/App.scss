@@ -144,6 +144,15 @@ img {
   width: 100%;
 }
 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
 @keyframes slideFadeIn {
   0% {
     opacity: 0;

@@ -12,7 +12,7 @@
   }
 
   @include breakpoint($small-breakpoint) {
-    flex-direction: column !important;
+    display: block;
     height: auto;
     padding: 25px 20px;
   }

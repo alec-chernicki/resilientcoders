@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
 const SideItem = ({children, size, type, className}) => {
-  const sideItemClass = classNames('side-item', className, {
+  const sideItemClass = classNames('side-item clearfix', className, {
     'side-item--grey': type === 'grey',
     'side-item--red': type === 'red',
     'side-item--white': type === 'white',

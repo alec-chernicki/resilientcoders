@@ -6,7 +6,7 @@
   display: flex;
 
   @include breakpoint($small-breakpoint) {
-    flex-direction: column;
+    display: block;
   }
 
   & + .step-section {

@@ -6,6 +6,7 @@
   padding: 0 60px 60px;
   position: relative;
   z-index: 500;
+  display: block;
 
   @include breakpoint($small-breakpoint) {
     padding: 0 15px 15px;
@@ -20,6 +21,6 @@
 
 
   @include breakpoint($small-breakpoint) {
-    flex-direction: column;
+    display: block;
   }
 }
