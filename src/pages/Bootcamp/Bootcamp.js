@@ -41,11 +41,13 @@ class Bootcamp extends React.Component {
           <SideItem type="grey" className="bootcamp-details__apply-text">
             <h2>Apply</h2>
             <p>
-              The 2016 Resilient Bootcamp has ended but don't worry there's more ways to join
-              whether you're a student or a mentor.
+              Our next Bootcamp will begin in January 2016. If you’re interested in joining,
+              come to one of the upcoming Maverick Landing Hackathons. They will be at 31 Liverpool St.
+              in East Boston. The first one is on Saturday November 5th, and the second is Friday
+              December 12th, both from 10 to 4. Registration is done through our partners at Maverick Landing Community Services.
             </p>
-            <ButtonPrimary to="/get-involved" className="bootcamp-details__button">
-              Get Involved
+            <ButtonPrimary to="http://eastiecoders.com" className="bootcamp-details__button">
+              Sign up for a hackathon
             </ButtonPrimary>
           </SideItem>
         </SideBySide>
@@ -82,8 +84,7 @@ class Bootcamp extends React.Component {
           <SideItem className="bootcamp-apply__student" type="red">
             <h1>As a student</h1>
             <p>
-              The 2016 Resilient Bootcamp has ended but don't worry there's always more
-              opportunities to learn with us.
+              Whether or not Bootcamp is right for you, there are a few different ways to join us.
             </p>
             <ButtonPrimary to="/get-involved/student" color="white">
               Get Involved
@@ -93,8 +94,9 @@ class Bootcamp extends React.Component {
             <h1>As a mentor</h1>
             <div className="divider divider__red"/>
             <p>
-              Though our bootcamp isn't until for a while there's more ways to join the code
-              literacy movement.
+              Our next Bootcamp is in January 2016. Later this fall, we'll be posting an appointments calendar,
+              which you can browse and reserve a spot. You can also join our "drop-in" Coworking cohort, Tuesdays and Thursdays
+              from 3:30 to 6. We're all about making it easy for you to join.
             </p>
             <ButtonPrimary to="/get-involved/mentor">
               Get Involved

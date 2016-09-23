@@ -1,5 +1,12 @@
 export default [
   {
+    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/microsoft.jpg',
+    link: 'http://microsoft.com/'
+  },
+  {
+    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/google.jpg',
+    link: 'http://google.com/'
+  }, {
     image: 'https://resilientcoders.s3.amazonaws.com/i/logos/tugg.png',
     link: 'http://tugg.org/'
   },
@@ -8,7 +15,7 @@ export default [
     link: 'http://tbf.org/'
   },
   {
-    image: 'http://resilientcoders.org/i/masschallenge.png',
+    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/masschallenge.png',
     link: 'http://masschallenge.org/'
   },
   {
@@ -16,23 +23,12 @@ export default [
     link: 'http://cic.us/'
   },
   {
+    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/State_Street_logo.png',
+    link: 'http://statestreet.com'
+  },
+  {
     image: 'https://resilientcoders.s3.amazonaws.com/i/logos/bpd.jpg',
     link: ''
   },
-  {
-    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/goulston.jpg',
-    link: 'http://goulstonstorrs.com/'
-  },
-  {
-    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/deepcoredata.png',
-    link: 'http://deepcoredata.com/'
-  },
-  {
-    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/twitter.png',
-    link: 'http://twitter.com/'
-  },
-  {
-    image: 'https://resilientcoders.s3.amazonaws.com/i/logos/MilkStreetCafe.jpg',
-    link: 'http://milkstreetcafe.com/'
-  },
+
 ]

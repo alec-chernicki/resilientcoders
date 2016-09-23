@@ -51,6 +51,7 @@ const GetInvolvedStudent = (props) => {
                 might be a better fit than Coworking. It&#8217;s seven weeks long, daily. We recruit out of
                 our Bootcamp into Resilient Lab, our web development company.
               </p>
+              
               <ButtonPrimary to="/bootcamp">
                 Learn more
               </ButtonPrimary>

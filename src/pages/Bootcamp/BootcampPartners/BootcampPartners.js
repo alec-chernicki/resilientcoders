@@ -16,9 +16,6 @@ const BootcampPartners = () => (
           <img src="https://resilientcoders.s3.amazonaws.com/i/logos/tbf.png" alt="bootcamp partner company"/>
         </div>
         <div>
-          <img src="http://resilientcoders.org/i/masschallenge.png" alt="bootcamp partner company"/>
-        </div>
-        <div>
           <img src="https://resilientcoders.s3.amazonaws.com/i/logos/AscienzoLogo.jpg" alt="bootcamp partner company"/>
         </div>
         <div>

@@ -1,9 +1,9 @@
 export default {
   press : [
     {
-      title: 'Throwing down the gauntlet: the diversity crisis & the startup community',
-      link: 'https://medium.com/@delmarsenties/throwing-down-the-gauntlet-the-diversity-crisis-the-startup-community-f7a00ff312d4#.caqa3yq0x',
-      note: 'Medium'
+      title: 'Your startup\'s diversity policy doesn\'t work',
+      link: 'http://www.bostonglobe.com/opinion/2016/09/23/your-startup-diversity-policy-doesn-work/AlqxkA77e7paeXDI5nlgiP/story.html',
+      note: 'Boston Globe'
     }, {
       title: 'Hacking the opportunity gap: Resilient Coders and true grit',
       link: 'http://baystatebanner.com/news/2016/sep/07/hacking-opportunity-gap-resilient-coders-and-true-/',
@@ -64,6 +64,10 @@ export default {
       title: 'MassTLC Distuished Leader Award',
       link: 'https://www.youtube.com/watch?v=L_Ssnhf353M',
       note: '09.2016'
+    }, {
+      title: 'Hour of Code',
+      link: 'https://www.youtube.com/watch?v=onJC4WqBUmU',
+      note: '12.2015'
     }, {
       title: 'TEDxSomerville: Education as Investment',
       link: 'https://www.youtube.com/watch?v=-0Q16HklbnI',
