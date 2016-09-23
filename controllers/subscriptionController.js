@@ -27,9 +27,11 @@ exports.postSubscriptionGeneral = (req, res) => {
   })
   .then((response) => {
     console.log('Body: ' + response)
+    res.status(200)
   })
   .catch((e) => {
     console.log("Problem with request " + e.message)
+    res.status(500)
   })
 };
 
@@ -59,9 +61,11 @@ exports.postSubscriptionMentor = (req, res) => {
   })
   .then((response) => {
     console.log('Body: ' + response)
+    res.status(200)
   })
   .catch((e) => {
     console.log("Problem with request " + e.message)
+    res.status(500)
   })
 };
 
@@ -91,8 +95,10 @@ exports.postSubscriptionCompany = (req, res) => {
   })
   .then((response) => {
     console.log('Body: ' + response)
+    res.status(200)
   })
   .catch((e) => {
     console.log("Problem with request " + e.message)
+    res.status(200)
   })
 };

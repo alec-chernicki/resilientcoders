@@ -13,7 +13,7 @@ class NewsTweet extends React.Component {
   componentDidMount() {
     axios('/api/twitter')
       .then(({data}) => {
-        console.log(data[0]);
+        console.log(data);
         this.setState({ latestTweet: data[0].text })
       })
       .catch((e) => {

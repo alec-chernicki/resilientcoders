@@ -24,6 +24,7 @@ class EmailFormShort extends React.Component {
       canSubmit: false
     });
   }
+
   submit(data) {
     this.setState({
       buttonText: 'submitting',
@@ -31,14 +32,14 @@ class EmailFormShort extends React.Component {
     axios.post('/api/subscribe/general', data)
       .then(() => {
         this.setState({
-          buttonText: 'submited',
+          buttonText: 'submitted',
         })
 
         setTimeout(() => {
           this.setState({
             buttonText: 'submit',
           })
-        }, 1200)
+        }, 2000)
       })
       .catch((e) => {
         this.setState({
@@ -49,7 +50,7 @@ class EmailFormShort extends React.Component {
           this.setState({
             buttonText: 'submit',
           })
-        }, 1200)
+        }, 2000)
       })
   }
   render () {

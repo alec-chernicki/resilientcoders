@@ -11,7 +11,6 @@ import mentorImage from './get-involved-mentor.jpg';
 const MENTOR_FORM_URL = '/api/subscribe/mentor';
 
 const GetInvolvedMentor = (props) => {
-  console.log(mentorImage);
   return (
     <RouteTransition>
       <GetInvolvedBase

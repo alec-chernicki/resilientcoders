@@ -3,7 +3,6 @@ import React from 'react'
 
 class RouteTransition extends React.Component {
   componentDidMount() {
-    console.log('mounted');
     setTimeout(() => {
       document.body.scrollTop = 0;
     }, 250)

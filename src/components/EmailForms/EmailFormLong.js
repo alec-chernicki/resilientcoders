@@ -39,7 +39,7 @@ class EmailFormLong extends React.Component {
           this.setState({
             buttonText: 'submit',
           })
-        }, 1200)
+        }, 2000)
       })
       .catch((e) => {
         this.setState({
@@ -50,7 +50,7 @@ class EmailFormLong extends React.Component {
           this.setState({
             buttonText: 'submit',
           })
-        }, 1200)
+        }, 2000)
       })
   }
   render() {
