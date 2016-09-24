@@ -46,7 +46,7 @@ class Bootcamp extends React.Component {
               in East Boston. The first one is on Saturday November 5th, and the second is Friday
               December 12th, both from 10 to 4. Registration is done through our partners at Maverick Landing Community Services.
             </p>
-            <ButtonPrimary to="http://eastiecoders.com" className="bootcamp-details__button">
+            <ButtonPrimary href="http://eastiecoders.com" target="_blank" className="bootcamp-details__button">
               Sign up for a hackathon
             </ButtonPrimary>
           </SideItem>
