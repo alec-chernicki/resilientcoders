@@ -28,7 +28,7 @@ const GetInvolvedStudent = (props) => {
                 Every Tuesday and Thursday throughout the school year, high school students
                 from all over the Boston Public Schools system join our mentors and alumni after school, to code.
                 It&#8217;s a self-led exploration, supported by our mentors and our (optional) modular curriculum.
-                It&#8217;s all drop-in. Come by, once, to 50 Milk St. Boston MA. Fifth floor. Build something today.
+                It&#8217;s all drop-in. Come by, once, from 3:30pm to 6pm, to 50 Milk St. Boston MA. Fifth floor. Build something today.
               </p>
 
             </div>
@@ -51,7 +51,7 @@ const GetInvolvedStudent = (props) => {
                 might be a better fit than Coworking. It&#8217;s seven weeks long, daily. We recruit out of
                 our Bootcamp into Resilient Lab, our web development company.
               </p>
-              
+
               <ButtonPrimary to="/bootcamp">
                 Learn more
               </ButtonPrimary>
