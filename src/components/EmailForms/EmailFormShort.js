@@ -24,7 +24,12 @@ class EmailFormShort extends React.Component {
       canSubmit: false
     });
   }
-
+  resetForm () {
+    this.formElement.reset();
+  }
+  setFormElementRef(element) {
+    this.formElement = element;
+  }
   submit(data) {
     this.setState({
       buttonText: 'submitting',
@@ -39,7 +44,8 @@ class EmailFormShort extends React.Component {
           this.setState({
             buttonText: 'submit',
           })
-        }, 2000)
+        }, 2250)
+        this.resetForm();
       })
       .catch((e) => {
         this.setState({
@@ -50,7 +56,7 @@ class EmailFormShort extends React.Component {
           this.setState({
             buttonText: 'submit',
           })
-        }, 2000)
+        }, 2250)
       })
   }
   render () {
@@ -64,12 +70,15 @@ class EmailFormShort extends React.Component {
         <div className="section-container-primary">
           <p>Stay in the loop and hear what we're up to</p>
           <Formsy.Form
+            ref={this.setFormElementRef.bind(this)}
             onValidSubmit={this.submit.bind(this)}
             onValid={this.enableButton.bind(this)}
             onInvalid={this.disableButton.bind(this)}
           >
             <div className="control">
-              <TextInput name="email"
+              <TextInput
+                name="email"
+                label="Your Email"
                 placeholder="your@email.com"
                 validations="isEmail"
                 validationError="This is not a valid email"

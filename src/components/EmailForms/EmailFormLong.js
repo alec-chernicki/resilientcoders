@@ -24,7 +24,14 @@ class EmailFormLong extends React.Component {
       canSubmit: false
     });
   }
-  submit(data) {
+  resetForm () {
+    this.formElement.reset();
+  }
+  setFormElementRef(element) {
+    this.formElement = element;
+  }
+  validSubmit(data) {
+    console.log('submitted 2');
     this.setState({
       buttonText: 'submitting',
     })
@@ -32,14 +39,15 @@ class EmailFormLong extends React.Component {
     axios.post(this.props.formUrl, data)
       .then(() => {
         this.setState({
-          buttonText: 'submited',
+          buttonText: 'submitted',
         })
 
         setTimeout(() => {
           this.setState({
             buttonText: 'submit',
-          })
-        }, 2000)
+          });
+          this.resetForm();
+        }, 2250)
       })
       .catch((e) => {
         this.setState({
@@ -50,12 +58,12 @@ class EmailFormLong extends React.Component {
           this.setState({
             buttonText: 'submit',
           })
-        }, 2000)
+        }, 2250)
       })
   }
   render() {
     const buttonClass = classNames('button', {
-      'disabled': !this.state.canSubmit
+      'disabled': !this.state.canSubmit,
     })
     return (
       <div
@@ -64,18 +72,44 @@ class EmailFormLong extends React.Component {
           <h1>{this.props.title}</h1>
           <p>{this.props.text}</p>
           <div className="divider divider__red" />
-          <Formsy.Form onValidSubmit={this.submit.bind(this)} onValid={this.enableButton.bind(this)} onInvalid={this.disableButton.bind(this)}>
+          <Formsy.Form
+            ref={this.setFormElementRef.bind(this)}
+            onValidSubmit={this.validSubmit.bind(this)}
+            onValid={this.enableButton.bind(this)}
+            onInvalid={this.disableButton.bind(this)}
+          >
             <div className="control">
-              <TextInput name="firstName" placeholder="First Name" required/>
-              <TextInput name="lastName" placeholder="Last Name"required/>
+              <TextInput name="firstName"
+                placeholder="First Name"
+                label="First Name"
+                validations="isExisty"
+              />
+              <TextInput
+                name="lastName"
+                placeholder="Last Name"
+                label="Last Name"
+                validations="isExisty"
+              />
             </div>
             <div className="control">
-              <TextInput name="company" placeholder="Company" />
+              <TextInput
+                name="company"
+                label="Company"
+                placeholder="Company"
+                validations="isExisty"
+              />
             </div>
             <div className="control">
-              <TextInput name="email" placeholder="your@email.com" validations="isEmail" validationError="This is not a valid email" required/>
+              <TextInput
+                name="email"
+                label="Your Email"
+                placeholder="your@email.com"
+                validations="isEmail"
+                validationError="This is not a valid email"
+                required
+              />
             </div>
-            <button type="submit" className={buttonClass} disabled={!this.state.canSubmit}>
+            <button type="submit" className={buttonClass}>
               {this.state.buttonText}
             </button>
           </Formsy.Form>

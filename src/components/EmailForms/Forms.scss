@@ -20,6 +20,27 @@
     width: 100%;
   }
 
+  label {
+    font-family: $roboto-slab;
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    left: 20px;
+    opacity: 0;
+    color: lighten($background-secondary, 40%);
+    @include transition;
+    z-index: 100;
+    visibility: hidden;
+    background-color: $background-secondary;
+    padding: 2px 5px;
+
+    &.visible {
+      top: -8px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   .control {
     display: flex;
     width: 100%;
@@ -39,10 +60,12 @@
     font-size: $font-size-secondary;
     padding: 15px 25px;
     height: 100%;
+    position: relative;
     font-family: $roboto-slab;
+    @include transition;
 
     &:focus {
-      border: solid 1px lighten($background-secondary, 10%);
+      border: solid 1px lighten($background-secondary, 20%);
     }
   }
 
@@ -55,10 +78,17 @@
     &:hover {
       background-color: darken($accent-primary, 10%);
     }
+  }
+}
 
-    &.disabled {
-      background-color: $background-tertiary;
-      cursor: not-allowed;
+.email-form {
+  .error {
+    input[type="text"] {
+      border-color: $accent-primary;
+
+      &:focus {
+        border-color: $accent-primary;
+      }
     }
   }
 }
@@ -76,16 +106,6 @@
     padding: 8px 0;
     bottom: -35px;
     font-family: $roboto-slab;
-  }
-}
-
-.email-form {
-  .error input[type="text"] {
-    border-color: $accent-primary;
-
-    &:focus {
-      border-color: $accent-primary;
-    }
   }
 }
 
