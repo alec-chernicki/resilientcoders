@@ -44,8 +44,8 @@ class EmailFormShort extends React.Component {
           this.setState({
             buttonText: 'submit',
           })
+          this.resetForm();
         }, 2250)
-        this.resetForm();
       })
       .catch((e) => {
         this.setState({

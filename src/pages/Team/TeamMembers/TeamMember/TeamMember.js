@@ -23,7 +23,7 @@ class TeamMember extends React.Component {
 
     return (
       <div className={teamItemClass}>
-        <img src={image} alt="Team member"/>
+        <div className="team-item__image" style={{backgroundImage: `url(${image})`}} />
         <div className="team-item__overlay">
           <p>
             {bio}
