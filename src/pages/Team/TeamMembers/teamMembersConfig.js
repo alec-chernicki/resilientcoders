@@ -1,7 +1,17 @@
+import DelImage from './TeamMemberImages/del.jpg';
+import HelenImage from './TeamMemberImages/helen.jpg';
+import MuigaiImage from './TeamMemberImages/muigai.png';
+import AlecImage from './TeamMemberImages/alec.png';
+import ChrisImage from './TeamMemberImages/chris.jpg';
+import JoshImage from './TeamMemberImages/josh.jpg';
+import PamelaImage from './TeamMemberImages/pamela.jpg';
+import SusanneImage from './TeamMemberImages/susanne.jpg';
+import CaImage from './TeamMemberImages/ca.jpg';
+
 export default [
   {
     name: 'David Delmar',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/del.jpg',
+    image: DelImage,
     title: 'Executive Director, Founder',
     bio: `David is a professional designer and interface developer with experience working with
       award-winning startups, as well as established brands. Before founding Resilient Coders,
@@ -13,7 +23,7 @@ export default [
   },
   {
     name: 'Helen Rosenfeld',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/helen.jpg',
+    image: HelenImage,
     title: 'Head of Strategic Partnerships',
     bio: `Helen is committed to working on behalf of youth. She has led a series of youth
       development organizations, utilizing entrepreneurship as a tool to increase skills of
@@ -25,7 +35,7 @@ export default [
   },
   {
     name: 'Muigai Unaka',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/muigai.png',
+    image: MuigaiImage,
     title: 'Resilient Lab Lead',
     bio: `Muigai is a Senior at Northeastern University, pursuing a dual BFA in graphic design
       and interactive media. He has a passion for user interface design, and hopes to one day be
@@ -34,7 +44,7 @@ export default [
   },
   {
     name: 'Alec Ortega',
-    image: 'https://pbs.twimg.com/profile_images/764889240043974657/eNax_wFQ.jpg',
+    image: AlecImage,
     title: 'Mentorship Lead',
     bio: `Alec has been a mentor with Resilient for the last two years. He's passionate about
     diversity in tech and social innovation. He believes that diversity means not just acknowledging,
@@ -45,7 +55,7 @@ export default [
   },
   {
     name: 'Chris Swenor',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/chris.jpg',
+    image: ChrisImage,
     title: 'Technical Advisor',
     bio: `Taught himself how to code at the age of 12. Discovered he loved it and couldn't get
       enough. Decided to bypass college and dive right into his career as a developer. Worked his
@@ -56,7 +66,7 @@ export default [
   },
   {
     name: 'Joshua Summers',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/josh.jpg',
+    image: JoshImage,
     title: 'Board Chair',
     bio: `Joshua Summers is a serial entrepreneur that believes the best companies are built in
       and around Boston. As the Co-founder and CEO of clypd Joshua is leading the charge in
@@ -68,7 +78,7 @@ export default [
   },
   {
     name: 'Pamela Aldsworth',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/pamela.jpg',
+    image: PamelaImage,
     title: 'Board',
     bio: `Pamela Aldsworth is a managing director with Silicon Valley Bank Capital. In this role,
       she oversees strategic relationships with venture capital firms by leveraging the diverse
@@ -80,7 +90,7 @@ export default [
   },
   {
     name: 'Susanne Beck',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/susanne.jpg',
+    image: SusanneImage,
     title: 'Board',
     bio: `Susanne is a Management Consultant specializing in organizational strategy,
       organizational development, and leadership in the non-profit sector. Prior to consulting,
@@ -93,7 +103,7 @@ export default [
   },
   {
     name: 'C.A. Webb',
-    image: 'https://resilientcoders.s3.amazonaws.com/i/team/ca.jpg',
+    image: CaImage,
     title: 'Board',
     bio: `C.A. runs the Community Foundation at Underscore VC, incorporating the Startup Secrets
     program and works on their broader community outreach from which our _Core groups of
