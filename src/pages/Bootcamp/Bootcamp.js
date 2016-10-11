@@ -94,7 +94,7 @@ class Bootcamp extends React.Component {
             <h1>As a mentor</h1>
             <div className="divider divider__red"/>
             <p>
-              Our next Bootcamp is in January 2016. Later this fall, we'll be posting an appointments calendar,
+              Our next Bootcamp is in January 2017. Later this fall, we'll be posting an appointments calendar,
               which you can browse and reserve a spot. You can also join our "drop-in" Coworking cohort, Tuesdays and Thursdays
               from 3:30 to 6. We're all about making it easy for you to join.
             </p>
