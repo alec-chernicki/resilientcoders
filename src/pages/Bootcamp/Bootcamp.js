@@ -41,7 +41,7 @@ class Bootcamp extends React.Component {
           <SideItem type="grey" className="bootcamp-details__apply-text">
             <h2>Apply</h2>
             <p>
-              Our next Bootcamp will begin in January 2016. If you’re interested in joining,
+              Our next Bootcamp will begin in January 2017. If you’re interested in joining,
               come to one of the upcoming Maverick Landing Hackathons. They will be at 31 Liverpool St.
               in East Boston. The first one is on Saturday November 5th, and the second is Friday
               December 12th, both from 10 to 4. Registration is done through our partners at Maverick Landing Community Services.
