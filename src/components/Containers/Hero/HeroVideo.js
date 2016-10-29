@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import videoJS from 'video.js';
+import heroVideo from '../../../images/hero-video.mp4';
 
 class HeroVideo extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class HeroVideo extends Component {
           poster="data:image/gif,AAAA"
           autoPlay
         >
-          <source type="video/mp4" src='https://s3.amazonaws.com/resilient-coders/hero-video.mp4'/>
+          <source type="video/mp4" src={heroVideo} />
         </video>
       </div>
     )
