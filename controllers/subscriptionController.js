@@ -18,7 +18,7 @@ exports.postSubscriptionGeneral = (req, res) => {
   axios({
     url: "/uploads/form/v2/2253693/1c55b765-1557-4ee8-af8c-fa7c93f7317e",
     method: 'POST',
-    baseURL: 'http://forms.hubspot.com',
+    baseURL: 'https://forms.hubspot.com',
     headers: {
   		'Content-Type': 'application/x-www-form-urlencoded',
   		'Content-Length': postData.length
@@ -52,7 +52,7 @@ exports.postSubscriptionMentor = (req, res) => {
   axios({
     url: "/uploads/form/v2/2253693/22885b9d-aad6-4184-8e73-ecb19d207f28",
     method: 'POST',
-    baseURL: 'http://forms.hubspot.com',
+    baseURL: 'https://forms.hubspot.com',
     headers: {
   		'Content-Type': 'application/x-www-form-urlencoded',
   		'Content-Length': postData.length
@@ -86,7 +86,7 @@ exports.postSubscriptionCompany = (req, res) => {
   axios({
     url: "/uploads/form/v2/2253693/65cdc2ba-8e62-4c9c-9e67-c0d8c8ac82bd",
     method: 'POST',
-    baseURL: 'http://forms.hubspot.com',
+    baseURL: 'https://forms.hubspot.com',
     headers: {
   		'Content-Type': 'application/x-www-form-urlencoded',
   		'Content-Length': postData.length
