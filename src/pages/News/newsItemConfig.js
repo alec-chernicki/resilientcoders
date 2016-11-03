@@ -1,6 +1,16 @@
 export default {
   press : [
     {
+      title: 'Resilient Coders Tackles Tech Diversity Issues, One Person at a Time',
+      link: 'http://www.xconomy.com/boston/2016/11/03/resilient-coders-tackles-tech-diversity-issues-one-person-at-a-time/',
+      note: 'Xconomy'
+    },
+    {
+      title: 'Finding Resiliency​ in a Career in Coding',
+      link: 'https://blog.bevisible.soy/2016/10/13/finding-resiliency%E2%80%8B-and-empowerment-in-coding/',
+      note: 'Be Visible'
+    },
+    {
       title: 'Your startup\'s diversity policy doesn\'t work',
       link: 'http://www.bostonglobe.com/opinion/2016/09/23/your-startup-diversity-policy-doesn-work/AlqxkA77e7paeXDI5nlgiP/story.html',
       note: 'Boston Globe'
