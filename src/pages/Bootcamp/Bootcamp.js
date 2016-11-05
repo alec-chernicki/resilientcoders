@@ -24,7 +24,7 @@ class Bootcamp extends React.Component {
         >
           <div className="divider divider__red" />
           <p>
-            Transforming dedication into opportunity, the starting point for our coders' careers.
+            Transforming dedication into opportunity, the starting point for our coders&#39; careers.
           </p>
         </Hero>
         <SideBySide className="bootcamp-details">
@@ -42,12 +42,12 @@ class Bootcamp extends React.Component {
             <h2>Apply</h2>
             <p>
               Our next Bootcamp will begin in January 2017. If you’re interested in joining,
-              come to one of the upcoming Maverick Landing Hackathons. They will be at 31 Liverpool St.
-              in East Boston. The first one is on Saturday November 5th, and the second is Friday
-              December 12th, both from 10 to 4. Registration is done through our partners at Maverick Landing Community Services.
+              come to our upcoming Hackathon at 31 Liverpool St in East Boston, on Friday, December 9th, from 10 to 5.
+              Attending a Hackathon is the only way to apply to Bootcamp.
+
             </p>
             <ButtonPrimary href="http://eastiecoders.com" target="_blank" className="bootcamp-details__button">
-              Sign up for a hackathon
+              Sign up for the hackathon
             </ButtonPrimary>
           </SideItem>
         </SideBySide>
