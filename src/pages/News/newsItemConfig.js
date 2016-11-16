@@ -1,6 +1,11 @@
 export default {
   press : [
     {
+      title: 'Commit Resilience responds to spike in election related hate crimes',
+      link: 'https://news.fastcompany.com/commit-resilience-responds-to-spike-in-election-related-hate-crimes-4025213',
+      note: 'Fast Company News'
+    },
+    {
       title: 'Resilient Coders Tackles Tech Diversity Issues, One Person at a Time',
       link: 'http://www.xconomy.com/boston/2016/11/03/resilient-coders-tackles-tech-diversity-issues-one-person-at-a-time/',
       note: 'Xconomy'
@@ -69,8 +74,11 @@ export default {
     }
   ],
   content : [
-
     {
+      title: 'Commit Resilience',
+      link: 'http://www.commitresilience.org',
+      note: '11.2016'
+    }, {
       title: 'MassTLC Distuished Leader Award',
       link: 'https://www.youtube.com/watch?v=L_Ssnhf353M',
       note: '09.2016'
