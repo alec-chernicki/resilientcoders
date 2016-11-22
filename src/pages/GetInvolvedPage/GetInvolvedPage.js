@@ -58,6 +58,7 @@ const GetInvolvedPage = (props) => {
           </Link>
         </div>
       </div>
+<section id="donate">
       <CenteredContainerOuter color="grey">
         <CenteredContainerInner
           color="white"
@@ -71,10 +72,7 @@ const GetInvolvedPage = (props) => {
             <p>
               There's a lot going on, and many opportunities for you to get involved. For any
               donation of $75 or more, we'll send you a Resilient Coders hoodie. They're printed
-              right here in Massachusetts by
-              <a href="#" className="accent-link-underline accent-link-underline-trigger">
-                &nbsp;court-involved youth.
-              </a>
+              right here in Massachusetts by court-involved youth.
             </p>
             <div className="get-involved-donate-buttons">
               <ButtonPrimary target="_blank" href="https://www.paypal.me/resilientcoders">
@@ -87,6 +85,7 @@ const GetInvolvedPage = (props) => {
           </div>
         </CenteredContainerInner>
       </CenteredContainerOuter>
+      </section>
     </RouteTransition>
   )
 }
