@@ -25,6 +25,18 @@ class News extends React.Component {
         />
       ));
   }
+  renderAwardsItems() {
+    return newsItemConfig
+      .awards
+      .map((item, i) => (
+        <NewsItem
+          key={i}
+          href={item.link}
+          text={item.title}
+          note={item.note}
+        />
+      ));
+  }
   renderContentItems() {
     return newsItemConfig
       .content
@@ -56,7 +68,7 @@ class News extends React.Component {
                   </div>
                 </div>
                 <div className="news-list-title">
-                  <h2>Interactive Content</h2>
+                  <h2>Video and Interactive Content</h2>
                 </div>
                 <div className="news-featured">
                   <img src="http://blog.microsoftnewengland.com/wp-content/uploads/sites/31/2016/05/20160428_121105-e1462393008132-1024x576.jpg" alt="featured video"/>
@@ -67,6 +79,12 @@ class News extends React.Component {
                 </div>
                 <ul className="news-list">
                   {this.renderContentItems()}
+                </ul>
+                <div className="news-list-title">
+                  <h2>Awards</h2>
+                </div>
+                <ul className="news-list">
+                  {this.renderAwardsItems()}
                 </ul>
               </div>
               <div className="news-list-container">

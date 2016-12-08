@@ -1,6 +1,11 @@
 export default {
   press : [
     {
+      title: 'What\'s Next for TechHire',
+      link: 'https://www.whitehouse.gov/blog/2016/12/02/whats-next-techhire',
+      note: 'The White House'
+    },
+    {
       title: 'Commit Resilience responds to spike in election related hate crimes',
       link: 'https://news.fastcompany.com/commit-resilience-responds-to-spike-in-election-related-hate-crimes-4025213',
       note: 'Fast Company News'
@@ -71,6 +76,29 @@ export default {
       title: 'Hacktivists: Roll up your sleeves',
       link: 'http://blog.microsoftnewengland.com/2015/08/12/hacktivists-roll-up-your-sleeves/',
       note: 'Microsoft'
+    }
+  ],
+  awards : [
+    {
+      title: 'BostInno 50 on Fire Winners',
+      link: 'http://bostinno.streetwise.co/all-series/bostinno-50-on-fire-winners-2016/',
+      note: '12.2016'
+    }, {
+      title: 'MassTLC Distuished Leader Award',
+      link: 'https://www.youtube.com/watch?v=L_Ssnhf353M',
+      note: '09.2016'
+    }, {
+      title: 'Boston Chamber of Commerce: Ten Outstanding Young Leaders',
+      link: 'http://bostonchamber.com/events/2016-ten-outstanding-young-leaders-awards-2/',
+      note: '10.2016'
+    }, {
+      title: 'Boston University College of Fine Arts: Inspiring Young Alumni Award',
+      link: 'http://www.bu.edu/cfa/2015-cfa-inspiring-young-alumni-awards/',
+      note: '09.2015'
+    }, {
+      title: 'MassChallenge Finalists',
+      link: 'http://masschallenge.org/blog/introducing-2015-boston-finalists',
+      note: '09.2015'
     }
   ],
   content : [
