@@ -70,13 +70,7 @@ class News extends React.Component {
                 <div className="news-list-title">
                   <h2>Video and Interactive Content</h2>
                 </div>
-                <div className="news-featured">
-                  <img src="http://blog.microsoftnewengland.com/wp-content/uploads/sites/31/2016/05/20160428_121105-e1462393008132-1024x576.jpg" alt="featured video"/>
-                  <div className="video-play"/>
-                  <div className="news-featured-text">
-                    <p>Hour Of Code 2016</p>
-                  </div>
-                </div>
+  
                 <ul className="news-list">
                   {this.renderContentItems()}
                 </ul>

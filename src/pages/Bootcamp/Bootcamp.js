@@ -39,8 +39,15 @@ class Bootcamp extends React.Component {
             </p>
           </SideItem>
           <SideItem type="grey" className="bootcamp-details__apply-text">
-            <h2>Apply</h2>
+            <h2>Current Bootcamp</h2>
             <p>
+            Our Winter Bootcamp is in full swing, so we are no longer accepting applications. Interested in
+            applying for the next one? Stop by our <a href="/get-involved/student">Community Hours</a>, meet the staff.
+            Coders who want to get involved as mentors should peruse the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a> that features moments
+            during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
+            </p>
+            {/*
+              <p>
               Our next Bootcamp will begin in January 2017. If you’re interested in joining,
               come to our upcoming Hackathon at 31 Liverpool St in East Boston, on Friday, December 9th, from 10 to 5.
               Attending a Hackathon is the only way to apply to Bootcamp.
@@ -49,6 +56,7 @@ class Bootcamp extends React.Component {
             <ButtonPrimary href="http://eastiecoders.com" target="_blank" className="bootcamp-details__button">
               Sign up for the hackathon
             </ButtonPrimary>
+            */}
           </SideItem>
         </SideBySide>
         <div
@@ -59,7 +67,7 @@ class Bootcamp extends React.Component {
               <div className="section-container-primary bootcamp-title">
                 <h1>The Program</h1>
                 <p>
-                  Our 7 week program teaches students the fundamentals of front end web development.
+                  Our 8 week program teaches students the fundamentals of front end web development.
                   We start with the basics and end with real world client work.
                 </p>
               </div>
@@ -74,7 +82,7 @@ class Bootcamp extends React.Component {
             </h1>
             <div className="divider divider__red"/>
             <p>
-              We're looking for young people from the City of Boston, who face more challenges
+              We&#8217;re looking for young people from the City of Boston, who face more challenges
               than most, to join us for seven weeks, to learn the fundamentals of web
               development for free.
             </p>
@@ -86,6 +94,7 @@ class Bootcamp extends React.Component {
             <p>
               Whether or not Bootcamp is right for you, there are a few different ways to join us.
             </p>
+          
             <ButtonPrimary to="/get-involved/student" color="white">
               Get Involved
             </ButtonPrimary>
@@ -94,9 +103,11 @@ class Bootcamp extends React.Component {
             <h1>As a mentor</h1>
             <div className="divider divider__red"/>
             <p>
-              Our next Bootcamp is in January 2017. Later this fall, we'll be posting an appointments calendar,
-              which you can browse and reserve a spot. You can also join our "drop-in" Coworking cohort, Tuesdays and Thursdays
-              from 3:30 to 6. We're all about making it easy for you to join.
+
+            Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
+            and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
+            from 3:30 to 6. We&#8217;re all about making it easy for you to join.
+
             </p>
             <ButtonPrimary to="/get-involved/mentor">
               Get Involved
