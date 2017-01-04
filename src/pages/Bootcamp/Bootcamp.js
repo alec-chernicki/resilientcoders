@@ -41,7 +41,7 @@ class Bootcamp extends React.Component {
           <SideItem type="grey" className="bootcamp-details__apply-text">
             <h2>Current Bootcamp</h2>
             <p>
-            Our Winter Bootcamp is in full swing, so we are no longer accepting applications. Interested in
+            Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> office at 4 Copley Place. We are no longer accepting applications. Interested in
             applying for the next one? Stop by our <a href="/get-involved/student">Community Hours</a>, meet the staff.
             Coders who want to get involved as mentors should peruse the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a> that features moments
             during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
@@ -83,7 +83,7 @@ class Bootcamp extends React.Component {
             <div className="divider divider__red"/>
             <p>
               We&#8217;re looking for young people from the City of Boston, who face more challenges
-              than most, to join us for seven weeks, to learn the fundamentals of web
+              than most, to join us for eight weeks, to learn the fundamentals of web
               development for free.
             </p>
           </div>
@@ -94,7 +94,7 @@ class Bootcamp extends React.Component {
             <p>
               Whether or not Bootcamp is right for you, there are a few different ways to join us.
             </p>
-          
+
             <ButtonPrimary to="/get-involved/student" color="white">
               Get Involved
             </ButtonPrimary>
