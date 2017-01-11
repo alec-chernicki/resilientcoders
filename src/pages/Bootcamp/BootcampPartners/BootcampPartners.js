@@ -9,14 +9,26 @@ const BootcampPartners = () => (
         Thank you to our bootcamp partners
       </h2>
       <div className="bootcamp-partner-companies">
-        <div>
-          <img src="https://resilientcoders.s3.amazonaws.com/i/logos/youboston.png" alt="bootcamp partner company"/>
-        </div>
+      <div>
+        <img src="/build/logo_microsoft.png" alt="bootcamp partner company"/>
+      </div>
+      <div>
+        <img src="/build/logo_google.png" alt="bootcamp partner company"/>
+      </div>
         <div>
           <img src="https://resilientcoders.s3.amazonaws.com/i/logos/tbf.png" alt="bootcamp partner company"/>
         </div>
         <div>
-          <img src="https://resilientcoders.s3.amazonaws.com/i/logos/AscienzoLogo.jpg" alt="bootcamp partner company"/>
+          <img src="/build/logo_ameliapeabody.jpg" alt="bootcamp partner company"/>
+        </div>
+        <div>
+          <img src="/build/logo_johnhancock.png" alt="bootcamp partner company"/>
+        </div>
+        <div>
+          <img src="/build/logo_bnymellon.svg.png" alt="bootcamp partner company"/>
+        </div>
+        <div>
+          <img src="/build/logo_insightsquared.png" alt="bootcamp partner company"/>
         </div>
         <div>
           <img

@@ -27,10 +27,12 @@ class Footer extends React.Component {
           <p>© 2016 Resilient Coders.</p>
         </div>
         <div>
+        {/*
           <h3>Most recent tweet:</h3>
           <p>
             <Tweet />
           </p>
+          */}
         </div>
       </footer>
     )
