@@ -7,19 +7,33 @@ import JoshImage from './TeamMemberImages/josh.jpg';
 import PamelaImage from './TeamMemberImages/pamela.jpg';
 import SusanneImage from './TeamMemberImages/susanne.jpg';
 import CaImage from './TeamMemberImages/ca.jpg';
+import LeonImage from './TeamMemberImages/leon.jpg';
 
 export default [
   {
     name: 'David Delmar',
     image: DelImage,
     title: 'Executive Director, Founder',
-    bio: `David is a professional designer and interface developer with experience working with
-      award-winning startups, as well as established brands. Before founding Resilient Coders,
-      he was at PayPal, leading a cross-disciplinary team of designers and coders. They designed
-      and built first-to-market digital advertising concepts for brands like Starbucks, Coke,
-      FedEx, and Pepsi. He helped set up PayPal's startup incubator, Start Tank, and served as
-      its UX subject matter expert. David believes in technology as an opportunity for real
-      meritocracy. And he believes in the resilience of Boston's youth.`
+    bio: `David Delmar, Executive Director, is an award-winning designer and interface developer
+    with experience working with startups and established brands. He most recently built and led an
+    exceptional creative group at PayPal’s Boston office, uniting design and development efforts into a
+    single team. Together, they were responsible for designing and building first-to-market digital
+    advertising concepts for big brands. He believes in knowledge-sharing, and so helped launch the
+    PayPal Incubator (fka Start Tank), and served as its User Experience subject matter expert, advising
+    startups on product design. He sits on the Boston University College of Fine Arts Dean’s Advisory Board.`
+  },
+  {
+    name: 'Leon Noel',
+    image: LeonImage,
+    title: 'Managing Director of Engineering',
+    bio: `Leon Noel is an internationally recognized software
+    developer and entrepreneur. Before joining the Resilient Coders team, he co-founded SocialSci,
+    a scientific surveying company relied on by over 4000 academic institutions and held an associate
+    position at Harvard University. Besides his lecturing work at Harvard
+    Business School, MIT Sloan School of Business, and General Assembly,
+    Leon has also worked with major brands such as Shawmut Construction, BMW and Capital One to help train
+    their engineering teams and bring new technology to market. His technological pursuits have been
+    featured in numerous publications including Tech Crunch, Black Enterprise, and the Boston Globe.`
   },
   {
     name: 'Helen Rosenfeld',
@@ -33,6 +47,8 @@ export default [
       is an advisor to Friends of Seva Mandir, supporting the non-profit that she first worked with
       in Rajasthan, India where she began her career.`
   },
+
+
   {
     name: 'Muigai Unaka',
     image: MuigaiImage,
@@ -87,19 +103,6 @@ export default [
       consistently achieved top decile returns. She builds strategic roadmanps with firms in her
       coverage universe to ensure that SVB is providing the best possible insights, guidance,
       products and services to the partnership and their portfolio companies.`
-  },
-  {
-    name: 'Susanne Beck',
-    image: SusanneImage,
-    title: 'Board',
-    bio: `Susanne is a Management Consultant specializing in organizational strategy,
-      organizational development, and leadership in the non-profit sector. Prior to consulting,
-      Ms. Beck held a number of executive positions including: Executive Director of NCGS, a
-      national coalition of educators committed to girls' education; Founding Partner and Managing
-      Director of the Trefler Foundation; and Senior Administrator and Director at Harvard's
-      Kennedy School of Government. She holds a BA from Princeton University (English, High Honors)
-      and a graduate degree from Harvard University. Ms. Beck previously worked in the fields of
-      investment banking, management consulting, and marketing.`
   },
   {
     name: 'C.A. Webb',
