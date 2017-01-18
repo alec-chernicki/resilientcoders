@@ -8,6 +8,7 @@ import PamelaImage from './TeamMemberImages/pamela.jpg';
 import SusanneImage from './TeamMemberImages/susanne.jpg';
 import CaImage from './TeamMemberImages/ca.jpg';
 import LeonImage from './TeamMemberImages/leon.jpg';
+import FredImage from './TeamMemberImages/fred.png';
 
 export default [
   {
@@ -115,5 +116,17 @@ export default [
     where she reinvented and reinvigorated the 40-year old association. Recently, C.A. was
     recognized as an Innovation All Star by Boston Business Journal and is passionate about
     creating powerful communities that can have a meaningful and lasting impact on business.`
+  },
+  {
+    name: 'Fred Townes',
+    image: FredImage,
+    title: 'Board',
+    bio: `Fred builds and leads teams that craft web platforms, products, and communities.
+    From software development and architecture, to product marketing strategy, to business leadership and
+    operations, he thrives at the intersection of technology, strategy, and design. He's worked with
+    organizations of all sizes on two continents, from The Coca-Cola Company and Staples to Sony and Microsoft,
+    to develop and drive business models at scale. Now, he's applying his technical experience as both developer
+    and entrepreneur to transforming the real estate industry with Placester, advising early-stage startups,
+    and speaking at digital marketing and technology events around the world.`
   },
 ]
