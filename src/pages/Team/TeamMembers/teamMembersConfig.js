@@ -118,7 +118,7 @@ export default [
     creating powerful communities that can have a meaningful and lasting impact on business.`
   },
   {
-    name: 'Fred Townes',
+    name: 'Frederick Townes',
     image: FredImage,
     title: 'Board',
     bio: `Fred builds and leads teams that craft web platforms, products, and communities.
