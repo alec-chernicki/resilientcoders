@@ -11,6 +11,11 @@ export default {
       note: 'Fast Company News'
     },
     {
+      title: 'Coding Outside the Classroom — Resilient Coders David Delmar on Making Change',
+      link: 'http://blogs.microsoft.com/newengland/2016/12/07/coding-outside-the-classroom-resilient-coders-david-delmar-on-making-change/#HpuAghU2yEzTBAzq.99',
+      note: 'Microsoft Blog'
+    },
+    {
       title: 'Resilient Coders Tackles Tech Diversity Issues, One Person at a Time',
       link: 'http://www.xconomy.com/boston/2016/11/03/resilient-coders-tackles-tech-diversity-issues-one-person-at-a-time/',
       note: 'Xconomy'
