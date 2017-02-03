@@ -10,7 +10,7 @@ import CaImage from './TeamMemberImages/ca.jpg';
 import LeonImage from './TeamMemberImages/leon.jpg';
 import FredImage from './TeamMemberImages/fred.png';
 
-export default [
+export default rosterconfig [
   {
     name: 'David Delmar',
     image: DelImage,
