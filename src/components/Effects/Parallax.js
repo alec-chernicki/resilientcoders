@@ -1,7 +1,9 @@
-import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-import React from 'react'
-import ReactDOM from 'react-dom';
+import ScrollMagic from 'ScrollMagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+import {Linear} from 'gsap';
+import TweenMax from 'TweenMax';
+import TimelineMax from 'TimelineMax';
+import React from 'react';
 import classNames from 'classnames';
 
 class Parallax extends React.Component {
@@ -9,7 +11,7 @@ class Parallax extends React.Component {
     this.controller = new ScrollMagic.Controller();
   }
   componentDidMount() {
-    if (!this.triggerElement || !this.targetElement) {
+    if ((!this.triggerElement || !this.props.triggerRef) && !this.targetElement) {
       return
     }
 
@@ -17,14 +19,15 @@ class Parallax extends React.Component {
         y: this.props.from
       }, {
         y: this.props.to,
-        ease: Linear.easeNone
+        ease: this.props.ease
       })]);
 
     this.scene = new ScrollMagic
-      .Scene({duration: window.innerWidth, offset: 0.3, triggerHook: 1})
+      .Scene({duration: this.props.duration , offset: 0.3, triggerHook: this.props.triggerHook})
       .setTween(tween)
       .addTo(this.controller)
-      .triggerElement(this.triggerElement)
+      .addIndicators()
+      .triggerElement(this.props.triggerRef || this.triggerElement)
   }
   componentWillUnmount() {
     this.scene.destroy(true)
@@ -40,14 +43,26 @@ class Parallax extends React.Component {
     this.targetElement = element;
   }
   render() {
+    const {triggerRef} = this.props;
     const className = classNames('stretch-to-fit', this.props.className);
-    
+
+    if (triggerRef) {
+      return (
+        <div
+          className={className}
+          ref={this.setTargetElementRef.bind(this)}
+        >
+          {this.props.children}
+        </div>
+      )
+    }
+
     return (
       <div
         ref={this.setTriggerElementRef.bind(this)}
       >
         <div
-          className={this.props.className}
+          className={className}
           ref={this.setTargetElementRef.bind(this)}
         >
           {this.props.children}
@@ -55,6 +70,12 @@ class Parallax extends React.Component {
       </div>
     )
   }
+}
+
+Parallax.defaultProps = {
+  triggerHook: 1,
+  duration: '100%',
+  ease: Linear.easeNone,
 }
 
 export default Parallax;

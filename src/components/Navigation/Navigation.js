@@ -3,6 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {browserHistory} from 'react-router';
+import routePaths from '../../constants/routePaths';
 
 import logoRed from './logo_red.png';
 import {Link} from 'react-router';
@@ -17,61 +18,52 @@ class Navigation extends React.Component {
 
     this.state = {
       isMobileNavActive: false,
-
     }
 
-    this.handleMobileNavigationClick.bind(this);
-    this.toggleMobileNavigationVisiblity.bind(this);
+    this.hideMobileNav = this.hideMobileNav.bind(this);
+    this.showMobileNav = this.showMobileNav.bind(this);
   }
-  toggleMobileNavigationVisiblity() {
+  hideMobileNav() {
     this.setState({
-      isMobileNavActive: !this.state.isMobileNavActive
+      isMobileNavActive: false
     })
   }
-  handleMobileNavigationClick(location) {
-    this.toggleMobileNavigationVisiblity();
-    browserHistory.push(location);
+  showMobileNav() {
+    this.setState({
+      isMobileNavActive: true
+    })
+  }
+  renderNavigationLinks(className) {
+    const routeKeys = Object.keys(routePaths);
+
+    const links = routeKeys.map((routeKey, i) => {
+      const routeItem = routePaths[routeKey]
+      return (
+        <li key={i}>
+          <Link
+            to={routeItem.route}
+            onClick={this.hideMobileNav}
+            activeClassName="active"
+            onlyActiveOnIndex={true}
+          >
+            {routeItem.name}
+          </Link>
+        </li>
+      );
+    })
+
+    return (
+      <ul className={className}>
+        {links}
+      </ul>
+    )
   }
   renderMobileNavigation () {
-    
     if (!this.state.isMobileNavActive) {
       return null;
     }
 
-    return (
-      <ul className="nav-links-mobile-container">
-        <li>
-          <a onClick={partial(this.handleMobileNavigationClick.bind(this), "/")}>
-            Home
-          </a>
-        </li>
-        <li>
-          <a onClick={partial(this.handleMobileNavigationClick.bind(this), "/bootcamp")}>
-            Bootcamp
-          </a>
-        </li>
-        <li>
-          <a onClick={partial(this.handleMobileNavigationClick.bind(this), "/lab")}>
-            Lab
-          </a>
-        </li>
-        <li>
-          <a onClick={partial(this.handleMobileNavigationClick.bind(this), "/news")}>
-            News
-          </a>
-        </li>
-        <li>
-          <a onClick={partial(this.handleMobileNavigationClick.bind(this), "/team")}>
-            Team
-          </a>
-        </li>
-        <li>
-          <a onClick={partial(this.handleMobileNavigationClick.bind(this), "/get-involved")}>
-            Get Involved
-          </a>
-        </li>
-      </ul>
-    )
+    return this.renderNavigationLinks('nav-links-mobile-container');
   }
   render () {
     const mobileNavIconClass = classNames('nav-icon', {
@@ -82,25 +74,9 @@ class Navigation extends React.Component {
         <Link to="/" className="nav-logo">
           <img src={logoRed} alt="Resilient Coders logo"/>
         </Link>
-        <ul className="nav-links nav-links--desktop">
-          <li>
-            <Link to="/bootcamp">Bootcamp</Link>
-          </li>
-          <li>
-            <Link to="/lab">Lab</Link>
-          </li>
-          <li>
-            <Link to="/news">News</Link>
-          </li>
-          <li>
-            <Link to="/team">Team</Link>
-          </li>
-          <li>
-            <Link to="/get-involved">Get Involved</Link>
-          </li>
-        </ul>
+        {this.renderNavigationLinks('nav-links nav-links--desktop')}
         <div className="nav-links nav-links--mobile">
-          <a className={mobileNavIconClass} onClick={this.toggleMobileNavigationVisiblity.bind(this)}>
+          <a className={mobileNavIconClass} onClick={this.showMobileNav}>
             <span className="nav-line line-1" />
             <span className="nav-line line-2" />
             <span className="nav-line line-3" />

@@ -1,11 +1,13 @@
 import './ConnectingDot.scss';
 import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';;
 import React from 'react'
+
+const dotController = new ScrollMagic.Controller();
 
 class ConnectingDot extends React.Component {
   componentWillMount() {
-    this.controller = new ScrollMagic.Controller();
+
   }
   componentDidMount() {
     if (!this.triggerElement || !this.targetElement) {
@@ -15,7 +17,7 @@ class ConnectingDot extends React.Component {
     this.scene = new ScrollMagic
       .Scene({offset: 0, triggerHook: 0.4})
       .setClassToggle(this.targetElement, 'active')
-      .addTo(this.controller)
+      .addTo(dotController)
       .triggerElement(this.triggerElement)
   }
   setTargetElementRef(element) {
@@ -25,9 +27,7 @@ class ConnectingDot extends React.Component {
     this.triggerElement = element;
   }
   componentWillUnmount() {
-    this
-      .scene
-      .destroy(true)
+    this.scene.destroy(true)
     this.scene = null;
   }
   render() {

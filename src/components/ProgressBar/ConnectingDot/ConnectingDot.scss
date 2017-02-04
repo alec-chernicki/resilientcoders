@@ -10,9 +10,6 @@
   z-index: 10;
   top: -4px;
   left: -4px;
-  animation: pulse-large 2s infinite;
-  animation-delay: 100ms;
-  animation-fill-mode: backwards;
   z-index: 80;
   border-radius: 50%;
   opacity: 0;
@@ -20,7 +17,12 @@
 
   .active & {
     opacity: 1;
-    display: block;
+  }
+
+  .pulsing & {
+    animation: pulse-large 2s infinite;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
   }
 }
 
@@ -29,6 +31,7 @@
   width: 20px;
   position: relative;
   z-index: 100;
+  will-change: transform;
 
   &:before {
     content: '';
@@ -44,6 +47,7 @@
     z-index: 90;
     margin: auto;
     @include transition;
+    will-change: transform;
   }
 
   &:after {
@@ -57,6 +61,7 @@
     left: 0;
     top: 0;
     background-color: #FFF;
+    will-change: transform;
     @include transition-property(border-color);
   }
 

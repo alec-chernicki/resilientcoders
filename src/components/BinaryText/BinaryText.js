@@ -3,6 +3,10 @@ import React, {PropTypes, Component} from 'react';
 import ScrollMagic from 'scrollmagic';
 import BinaryCharacter from './BinaryCharacter';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import _ from 'underscore'
+import TweenMax from 'TweenMax';
+import TimelineMax from 'TimelineMax';
+import {Power2} from 'gsap';
 
 class BinaryText extends Component {
   constructor(props) {
@@ -12,11 +16,19 @@ class BinaryText extends Component {
       shouldAnimate: false,
       hasAnimated: false
     };
-  }
-  componentWillMount() {
+
     this.controller = new ScrollMagic.Controller();
+    this.tl = new TimelineMax();
   }
   componentDidMount() {
+    this.initializeScene();
+
+  }
+  componentWillUnmount() {
+    this.scene.destroy(true)
+    this.scene = null;
+  }
+  initializeScene() {
     if (!this.triggerElement || !this.targetElement) {
       return
     }
@@ -26,15 +38,7 @@ class BinaryText extends Component {
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
 
-    this
-      .scene
-      .on('start', this.setHasStartedAnimation.bind(this))
-  }
-  componentWillUnmount() {
-    this
-      .scene
-      .destroy(true)
-    this.scene = null;
+    this.scene.on('start', this.setHasStartedAnimation.bind(this))
   }
   setHasStartedAnimation() {
     if (this.state.hasAnimated) {
@@ -53,13 +57,14 @@ class BinaryText extends Component {
     if (!this.state.shouldAnimate && !this.state.hasAnimated) {
       return null;
     }
+
     return this.renderWrappedText();
   }
   renderWrappedText() {
     const originalLetters = this.props.children.split('');
     const wrappedLetters = originalLetters.map((letter, i) => (
       <BinaryCharacter
-        key={i} 
+        key={i}
         text={letter}
         characterIndex={i}
       />
@@ -68,8 +73,11 @@ class BinaryText extends Component {
   }
   render() {
     return (
-      <div ref={this.setTriggerElementRef.bind(this)} className="binary-text">
-        <div ref={this.setTargetElementRef.bind(this)}>
+      <div
+        ref={this.setTriggerElementRef.bind(this)}
+        className="binary-text binary-text-outer"
+      >
+        <div className="binary-text-inner" ref={this.setTargetElementRef.bind(this)}>
           {this.renderIfValid()}
         </div>
       </div>

@@ -1,43 +1,62 @@
 import './TeamMember.scss';
 import React from 'react';
-import classNames from 'classnames';
+import ToggleClass from '../../../../components/Effects/ToggleClass';
+import BinaryText from '../../../../components/BinaryText/BinaryText';
 
 class TeamMember extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      isOpen: false,
-    };
+      isActive: false
+    }
   }
-  handleClick() {
+  handleEnter() {
+    const {memberKey, setShownMember} = this.props;
+
+    this.setIsActive(true)
+    setShownMember(memberKey)
+  }
+  handleLeave() {
+    this.setIsActive(false)
+  }
+  setIsActive(isActive) {
     this.setState({
-      isOpen: !this.state.isOpen
+      isActive
     });
   }
-  render() {
-    const {image, name, title, bio} = this.props;
-    const teamItemClass = classNames('team-item', {
-      'team-item--active': this.state.isOpen
-    });
+  renderTitle() {
+    const {isActive} = this.state;
+    const {title} = this.props;
+
+    if (!isActive) {
+      return null;
+    }
 
     return (
-      <div className={teamItemClass}>
-        <div className="team-item__image" style={{backgroundImage: `url(${image})`}} />
-        <div className="team-item__overlay">
-          <p>
-            {bio}
-          </p>
-        </div>
-        <div className="team-item-container">
-          <p className="team-item__name">
+      <h3 className="team-member__title">
+        <BinaryText>
+          {title}
+        </BinaryText>
+      </h3>
+    )
+  }
+  render() {
+    const {image, name, bio, setShownMember} = this.props;
+
+    return (
+      <div>
+        <ToggleClass
+          onEnter={this.handleEnter.bind(this)}
+          onLeave={this.handleLeave.bind(this)}
+          triggerHook={0.45}
+          className="team-member clearfix"
+        >
+          <h2 className="team-member__name">
             {name}
-          </p>
-          <p className="team-item__title">
-            {title}
-          </p>
-          <button className="team-item__button" onClick={this.handleClick.bind(this)} />
-        </div>
+          </h2>
+          {this.renderTitle()}
+        </ToggleClass>
       </div>
     )
   }

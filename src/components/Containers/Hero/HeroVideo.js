@@ -1,38 +1,25 @@
 import React, { Component } from 'react'
 import videoJS from 'video.js';
 import heroVideo from '../../../images/hero-video.mp4';
+import heroVideoPreload from '../../../images/hero-video-preload.png';
 
 class HeroVideo extends Component {
   constructor(props) {
     super(props);
+  }
 
-    this.videoPlayer = null;
-  }
-  componentDidMount() {
-    this.videoPlayer = videoJS(this.videoElement, {
-      controls: 'false',
-      autoplay: 'true',
-      muted: 'true',
-      loop: 'true',
-    });
-  }
-  componentWillUnmount() {
-    this.videoPlayer.dispose();
-    this.videoPlayer = null;
-  }
-  setVideoElementRef(element) {
-    this.videoElement = element;
-  }
-  render () {
+  render() {
     return (
       <div className="video-container hero__image">
         <video
-          ref={this.setVideoElementRef.bind(this)}
-          preload="preload"
+          preload="auto"
+          muted
+          playsinline
+          onCanPlayThrough={this.props.onLoad}
           poster="data:image/gif,AAAA"
           autoPlay
         >
-          <source type="video/mp4" src={heroVideo} />
+          <source type="video/mp4" src={heroVideo}/>
         </video>
       </div>
     )

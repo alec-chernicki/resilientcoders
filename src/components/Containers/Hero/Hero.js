@@ -7,18 +7,31 @@ import HeroVideo from './HeroVideo';
 import HeroImage from './hero-image.jpg';
 import Fade from '../../Effects/Fade';
 import Scale from '../../Effects/Scale';
+import {defer} from 'underscore';
 
 class Hero extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      supportsAutoplay: false
+      supportsAutoplay: false,
+      isLoaded: false,
     }
+
+    this.setIsLoaded = this.setIsLoaded.bind(this);
+  }
+  setIsLoaded() {
+    defer(() => {
+      this.setState({
+        isLoaded: true
+      })
+    })
   }
   renderTitleLineOne() {
+    const {isLoaded} = this.state;
     const {titleLineOne} = this.props;
-    if (!titleLineOne) return
+
+    if (!titleLineOne || !isLoaded) return null
 
     return (
       <h1 className="hero-title-one">
@@ -29,8 +42,10 @@ class Hero extends React.Component {
     )
   }
   renderTitleLineTwo() {
+    const {isLoaded} = this.state;
     const {titleLineTwo} = this.props;
-    if (!titleLineTwo) return
+
+    if (!titleLineTwo || !isLoaded) return null
 
     return (
       <h1 className="hero-title-two">
@@ -41,20 +56,27 @@ class Hero extends React.Component {
     )
   }
   renderImageContent() {
-    const {image} = this.props;
+    const {image, set} = this.props;
+    const imageClass = classNames('hero__image-wrapper', {
+      'loaded': this.state.isLoaded
+    })
+
     if (image) {
       return (
-        <div
-          className="hero__image"
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-        />
+        <div className={imageClass}>
+          <img
+            className="hero__image"
+            src={image}
+            onLoad={this.setIsLoaded}
+          />
+        </div>
       )
     }
     else {
       return (
-        <HeroVideo />
+        <div className={imageClass}>
+          <HeroVideo onLoad={this.setIsLoaded}/>
+        </div>
       )
     }
   }
@@ -71,29 +93,25 @@ class Hero extends React.Component {
 
     return (
       <div className={heroClass}>
-
         <div
           className="hero__overlay"
           style={{
-            backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(42, 44, 47, 0.7) 30%, rgba(42, 44, 47, 0.35))`
+            backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(33,38,45, 0.8) 30%, rgba(33,38,45, 0.45))`
           }}
         />
-        <Fade from={0} to={1} className="hero__fade-overlay-container">
+        <Fade from={0} to={1} stretch={true} className="hero__fade-overlay-container">
           <div className="hero__fade-overlay" />
         </Fade>
-        <Scale from={1} to={1.3}>
-          {this.renderImageContent()}
-        </Scale>
-        <Fade from={1} to={0} className="hero__content-container">
+        {this.renderImageContent()}
+        <div className="hero__content-container">
           <div className={heroContentClass}>
             {this.renderTitleLineOne()}
             {this.renderTitleLineTwo()}
             {children}
           </div>
-        </Fade>
+        </div>
       </div>
     )
-
   }
 }
 

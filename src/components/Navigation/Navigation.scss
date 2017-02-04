@@ -14,25 +14,26 @@
 }
 
 .headroom-wrapper {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
+  z-index: 10000;
 }
 
 .nav-logo {
   background-color: $accent-primary;
   cursor: pointer;
   display: block;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   float: left;
 }
 
 .nav-links {
   background-color: #FFF;
   display: flex;
-  height: 70px;
-  margin-left: 70px;
+  height: 60px;
+  margin-left: 60px;
   position: relative;
 }
 
@@ -102,18 +103,36 @@
     display: none;
   }
 
+  overflow: hidden;
+
   a {
-    font-family: $roboto-slab;
+    font-family: $league-gothic;
     color: $text-secondary;
     display: block;
     height: 100%;
     text-transform: uppercase;
-    line-height: 70px;
-    font-size: 18px;
+    line-height: 60px;
+    font-size: 24px;
     position: relative;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.05em;
     width: 100%;
     z-index: 30;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: $accent-primary;
+      transform: translateY(100%);
+      @include transition;
+    }
+
+    &.active:after {
+      transform: translateY(0);
+    }
   }
 
   li {
@@ -147,8 +166,7 @@
 
     &:hover {
       &:after {
-        opacity: 1;
-        height: 100%;
+        transform: translateY(0%);
       }
 
       a {
@@ -158,17 +176,21 @@
 
     &:after {
       background-color: $background-secondary;
-      opacity: 0.15;
       position: absolute;
       cursor: pointer;
       content: '';
-      height: 0%;
+      transform: translateY(105%);
+      height: 100%;
       width: 100%;
       bottom: 0;
       left: 0;
       z-index: 20;
       bottom: 0;
-      transition: all 0.5s cubic-bezier(0, 1, 0.58, 1);
+      transition: transform 250ms ease-out;
+    }
+
+    a {
+      transition: color 250ms ease-out;
     }
   }
 }

@@ -2,8 +2,8 @@ import './SideItem.scss';
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-const SideItem = ({children, size, type, className}) => {
-  const sideItemClass = classNames('side-item clearfix', className, {
+const SideItem = ({children, size, shrink, grow, type, className}) => {
+  const sideItemClass = classNames('side-item', className, {
     'side-item--grey': type === 'grey',
     'side-item--red': type === 'red',
     'side-item--white': type === 'white',
@@ -14,8 +14,7 @@ const SideItem = ({children, size, type, className}) => {
     <div
       className={sideItemClass}
       style={{
-        flex: `2 2 ${size}%`,
-        width: '100%'
+        flex: `${shrink} ${grow} ${size}%`
       }}
     >
       {children}
@@ -25,6 +24,8 @@ const SideItem = ({children, size, type, className}) => {
 
 SideItem.defaultProps = {
   size: 50,
+  shrink: 1,
+  grow: 1,
   type: 'white',
 }
 

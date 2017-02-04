@@ -8,7 +8,7 @@
   }
 
   p {
-    color: $text-tertiary !important;
+    color: $text-secondary !important;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -16,7 +16,6 @@
   form {
     max-width: 600px;
     margin: 0 auto;
-    margin-top: 25px;
     width: 100%;
   }
 
@@ -27,15 +26,16 @@
     font-size: 13px;
     left: 20px;
     opacity: 0;
-    color: lighten($background-secondary, 40%);
-    @include transition;
+    color: $text-secondary;
+    border-radius: 3px;
+    transition: all 150ms cubic-bezier(.17,.67,.83,.67);
     z-index: 100;
     visibility: hidden;
     background-color: $background-secondary;
-    padding: 2px 5px;
+    padding: 4px 7px;
 
     &.visible {
-      top: -8px;
+      top: -10px;
       opacity: 1;
       visibility: visible;
     }
@@ -52,8 +52,11 @@
   }
 
   input[type="text"] {
-    border: solid 1px lighten($background-secondary, 5%);
+    border: solid 1px darken($text-secondary, 20%);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     background: $background-secondary;
+    cursor: text;
     outline: none;
     color: #FFF;
     width: 100%;
@@ -64,13 +67,28 @@
     font-family: $roboto-slab;
     @include transition;
 
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $text-secondary;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $text-secondary;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $text-secondary;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $text-secondary;
+    }
+
     &:focus {
-      border: solid 1px lighten($background-secondary, 20%);
+      border: solid 1px $text-secondary;
     }
   }
 
   button {
     border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     outline: none;
     @include transition;
     background-color: $accent-primary;
@@ -110,12 +128,21 @@
 }
 
 .email-form--long {
+  width: 100%;
+
+  .email-form--long__wrapper {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: $background-secondary;
+    padding: 30px 80px 60px;
+  }
+
   .divider {
     margin-bottom: 10px;
   }
 
   .control {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .control-input + .control-input {
@@ -126,10 +153,19 @@
     margin-top: 20px;
     min-width: 200px;
   }
+
+  form {
+    margin-top: 25px;
+  }
 }
 
 .email-form--short {
-  padding: 60px 0 !important;
+  padding: 16px;
+  border-radius: 3px;
+  display: inline-block;
+  max-width: 600px;
+  width: 100%;
+  background-color: $background-secondary;
 
   input[type="text"] {
     border-right: none;

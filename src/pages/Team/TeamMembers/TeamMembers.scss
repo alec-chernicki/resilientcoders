@@ -1,46 +1,113 @@
 @import '../../../stylesheets/variables';
 @import '../../../stylesheets/mixins';
+@import '../../../stylesheets/animations';
 
 .team-members {
-  display: flex;
-  flex-flow: row wrap;
-  margin-top: -100px;
   position: relative;
-  z-index: 1000;
+  background-color: $background-secondary;
+  overflow: hidden;
 }
 
-.team-members__join {
-  flex: 2 2 40%;
-  margin-bottom: 60px;
-  background-color: #FFF;
-  padding: 25px;
+.team-members__progress {
+  margin-right: 30px;
+  position: absolute;
 }
 
-.team-members__join__container {
-  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
-                    url('./team-join.png');
-  background-size: auto, cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.team-members__progress-inner {
+  width: 4px;
+  height: calc(80vh - 60px);
+  background-color: rgba(#FFF, 0.3);
+  overflow: hidden;
+}
+
+.team-members__progress-bar {
+  width: 4px;
   height: 100%;
-  padding: 25px;
+  background-color: #FFF
+}
 
-  h2 {
-    color: #FFF;
-    text-transform: uppercase;
-  }
+.team-members__sidebar {
+  margin-left: 45px;
+  margin-bottom: 240px;
+  flex: 0 0 40%;
+}
 
-  p {
-    color: $text-tertiary;
-    margin-bottom: 30px;
-  }
+.team-members__content {
+  position: absolute;
+  width: 45vw;
+  left: 40vw;
+}
 
-  .button-container {
-    margin: 0 auto;
-    float: none;
-    width: 200px;
-  }
+.team-members__content-inner {
+  height: 100vh;
+}
+
+.team-members__overlay {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.team-members__bio {
+  color: $text-tertiary;
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  animation: 600ms fade-in ease-out;
+  animation-delay: 550ms;
+  animation-fill-mode: both;
+}
+
+.team-pin-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.team-members__image-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.team-members__image {
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.team-members__overlay {
+  background-image: linear-gradient(90deg, rgba($background-secondary, 1) 40%, rgba($background-secondary, 0.55));
+  z-index: 500;
+}
+
+// Transition classes for background image
+.team-members-background-animation-fade-enter {
+  opacity: 0.01;
+}
+
+.team-members-background-animation-fade-enter.team-members-background-animation-fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms ease-in;
+}
+
+.team-members-background-animation-fade-leave {
+  opacity: 1;
+}
+
+.team-members-background-animation-fade-leave.team-members-background-animation-fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 400ms ease-in;
 }

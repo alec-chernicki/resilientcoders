@@ -1,90 +1,190 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
 
-.program-photo {
-  background: $background-secondary;
+
+.subscribe-section {
+  padding-bottom: 130px;
+
+  .general-subscribe-form {
+    margin-top: 130px;
+  }
 }
 
-.home-details .side-by-side-container{
+.get-involved-cta {
+  @include background-color-with-dots($background-secondary);
+
+  p {
+    color: #FFF;
+  }
+}
+
+.skyline {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
   align-items: flex-end;
+  overflow: hidden;
+  user-select: none;
+
+  .foreground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    user-select: none;
+  }
+
+  .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    user-select: none;
+  }
 }
 
-.home-text {
-  min-width: 50% !important;
-  padding: 110px 60px 60px;
-  margin-top: -27px;
+.slick-slider {
+  z-index: 5000;
+}
 
-  @include breakpoint($small-breakpoint) {
+.slick-active {
+  transform: translateZ(0);
+}
+
+.slick-slide{
+  background-color: $background-secondary;
+  position: relative;
+  transition: all 600ms ease-in-out;
+  border-radius: 0px;
+  will-change: transform;
+  backface-visibility: hidden;
+
+  img {
+    opacity: 0.4;
+    transition: all 600ms ease-in-out;
+    height: 400px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 40%;
     width: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 600ms ease-in-out;
+    background-image: linear-gradient(0deg, rgba($background-secondary, 0.6), transparent);
+  }
+
+  &.slick-center:before {
+    opacity: 1;
+  }
+
+  &.slick-center {
+    transform: scale(1.15);
+    z-index: 10000;
+
+    img {
+      opacity: 1;
+    }
   }
 }
 
-.home-photo {
-  min-width: 50% !important;
-  margin-top: -125px;
+.slick-list {
+  overflow: visible;
+  transform: translateZ(0);
+}
 
-  @include breakpoint($small-breakpoint) {
-    width: 100% !important;
-    margin-top: 0;
-    height: 250px !important;
+.slick-arrow {
+  z-index: 100;
+}
+
+.slick-prev {
+  left: 24%;
+  height: 35px;
+  width: 35px;
+  z-index: 100000;
+  border: solid 2px #FFF;
+  border-radius: 100%;
+
+  &:before {
+    background-image: url('../../images/left-arrow.svg');
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    content: '';
   }
+}
+.slick-next {
+  right: 24%;
+  height: 35px;
+  width: 35px;
+  z-index: 100000;
+  border: solid 2px #FFF;
+  border-radius: 100%;
 
-  .slick-list {
-    height: 500px;
+  &:before {
+    background-image: url('../../images/right-arrow.svg');
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    right: -2px;
+    content: '';
+  }
+}
 
-    @include breakpoint($small-breakpoint) {
-      height: 300px;
+.slider-details {
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  z-index: 2;
+
+  .slick-center & {
+    p, h2 {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      transition-delay: 600ms;
+    }
+
+    p {
+      transition-delay: 850ms;
     }
   }
 
-  .slick-slider {
+  p, h2 {
+    opacity: 0;
+    transform: translateY(150%);
+    transition: all 700ms cubic-bezier(0.18, 0.79, 0.37, 0.9);
     margin: 0;
+    color: #FFF;
   }
 
-  .slick-slide,
-  .slick-track {
-    height: 100%;
+  h2 {
+    margin-bottom: 7px;
   }
 
-  .one {
-    background-image: url("./coding-camp.png");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .two {
-    background-image: url('https://resilientcoders.s3.amazonaws.com/i/julio.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .three {
-    background-image: url('https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/willdandevin1200.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .four {
-    background-image: url('https://pbs.twimg.com/media/CknuiH8UoAAC1FU.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .slick-dots {
-    text-align: left;
-    background-color: $background-secondary;
-    border-top: solid 5px #ed1b24;
-    padding: 20px;
-    bottom: auto;
-    width: auto;
-    float: left;
-    position: relative;
-
-    @include breakpoint($small-breakpoint) {
-      float: none;
-      width: 100%;
-      display: flex !important;
-    }
+  p {
+    line-height: $font-size-secondary;
   }
 }
 

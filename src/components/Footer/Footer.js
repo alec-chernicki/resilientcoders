@@ -1,39 +1,86 @@
 import './Footer.scss'
 import React from 'react'
-import axios from 'axios'
-import Tweet from '../../components/Tweet/Tweet';
+import {Link} from 'react-router';
+import CenteredContainerOuter from '../Containers/CenteredContainer/CenteredContainerOuter';
+import CenteredContainerInner from '../Containers/CenteredContainer/CenteredContainerInner';
+
+import twitterIcon from '../../images/twitter.svg';
+import facebookIcon from '../../images/facebook.svg';
 
 class Footer extends React.Component {
   render () {
+    const currentYear = new Date().getFullYear();
+    const yearText = `© ${currentYear} Resilient Coders`
+
+
     return (
       <footer>
-        <div>
-          <p>50 Milk Street, 17th Floor. Boston, MA 02109</p>
-          <p>
-            Questions? Email:&nbsp;
-            <a href="mailto:david@resilientcoders.org">
-              david@resilientcoders.org
-            </a>
-          </p>
-          <p>Photography, video, and music by&nbsp;
-            <a href="http://www.asithappens.tv/">
-              Andy Laub
-            </a>, of As It Happens Films</p>
-          <p>Website designed and developed by&nbsp;
-            <a href="http://www.alecortega.com/">
-              Alec Ortega
-            </a>
-          </p>
-          <p>© 2016 Resilient Coders.</p>
-        </div>
-        <div>
-        {/*
-          <h3>Most recent tweet:</h3>
-          <p>
-            <Tweet />
-          </p>
-          */}
-        </div>
+        <CenteredContainerOuter color="dark-grey">
+
+          <CenteredContainerInner color="dark-grey" standard={false}>
+            <div className="footer-container-upper">
+              <div className="footer-container-links">
+                <h3>Bootcamp</h3>
+                <Link to="/bootcamp">About</Link>
+                <Link to="/get-involved/mentor">Mentors</Link>
+              </div>
+              <div className="footer-container-links">
+                <h3>Lab</h3>
+                <Link to="/lab">About</Link>
+                <Link to="/get-involved/mentor">Get a quote</Link>
+              </div>
+              <div className="footer-container-links">
+                <h3>Get Involved</h3>
+                <Link to="/get-involved/student">Students</Link>
+                <Link to="/get-involved/mentor">Mentors</Link>
+                <Link to="/get-involved/company">Companies</Link>
+              </div>
+              <div className="footer-container-info">
+                <p>
+                  50 Milk Street, 17th Floor. Boston, MA 02109
+                </p>
+                <p>
+                  Questions? Email:&nbsp;
+                  <a
+                    className="accent-link-underline"
+                    href="mailto:david@resilientcoders.org"
+                  >
+                    david@resilientcoders.org
+                  </a>
+                </p>
+                <p>Photography, video, and music by&nbsp;
+                  <a
+                    className="accent-link-underline"
+                    href="http://www.asithappens.tv/"
+                  >
+                    Andy Laub
+                  </a>, of As It Happens Films
+                </p>
+                <p>Website designed and developed by&nbsp;
+                  <a
+                    className="accent-link-underline"
+                    href="http://www.alecortega.com/"
+                  >
+                    Alec Ortega
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="footer-container-lower">
+              <div className="social-container">
+                <a href="https://twitter.com/resilientcoders" target="_blank">
+                  <img src={twitterIcon} />
+                </a>
+                <a href="https://www.facebook.com/resilientcoders/" target="_blank">
+                  <img src={facebookIcon} />
+                </a>
+              </div>
+              <p>
+                {yearText}
+              </p>
+            </div>
+          </CenteredContainerInner>
+        </CenteredContainerOuter>
       </footer>
     )
   }

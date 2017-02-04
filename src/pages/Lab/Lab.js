@@ -64,67 +64,54 @@ class Lab extends React.Component {
           </SideItem>
         </SideBySide>
         <Work/>
-        <Alumni/>
-        <CenteredContainerOuter color="grey">
-          <div className="call-to-action-container clearfix">
-            <div
-              className="section-main section-tertiary section-tertiary__alert call-to-action lab-cta">
-              <div className="section-container-primary">
-                <p>
-                  Need an estimate? Use our quote generator to see how much your project will
-                  cost.
-                </p>
-                <a
-                  className="button button__slice"
-                  href="/quote">
-                  <span>GET A QUOTE</span>
-                </a>
-              </div>
+        <CenteredContainerOuter color="grey" className="p-y">
+          <Alumni/>
+          <CenteredContainerInner
+            color="dark-grey"
+            className="text-center pull-up-2"
+            accent={true}
+          >
+            <p className="text-white">
+              Need an estimate? Use our quote generator to see how much your project will
+              cost.
+            </p>
+            <ButtonPrimary
+              href="/quote"
+              className="center-block"
+            >
+              Get a quote
+            </ButtonPrimary>
+          </CenteredContainerInner>
+          <CenteredContainerInner color="white">
+            <div className="faq">
+              <h2>
+                What sort of stuff can you do?
+              </h2>
+              <p>
+                Our young people are most comfortable with relatively simple websites, and
+                custom Wordpress theming. But our partnership with East Coast Product allows us
+                to do pretty much anything. We've teamed up to build software using React, for
+                example. Our friends at ECP delegated out to our students the work that was
+                appropriate to their skills; a set that grew over the course of the project.
+                Whether or not we're working with ECP on a particular project, every line of
+                code that goes out is vetted by a professional. We hold our hackers to
+                professional standards.
+              </p>
+              <h2>
+                How does the money work?
+              </h2>
+              <p>
+                Basically, half of the money that we make on a Resilient Lab project goes to pay
+                for the wages of those who worked on it. The other half is invested in their
+                education. The idea is that a young person will be hired to build something that
+                lies just outside the realm of his expertise. He will be paired up with a more
+                senior-level person who then delegates skill-appropriate work to the young
+                person, and mentors him throughout the job. They may spend an hour learning, for
+                every hour spent working. Our quote covers the instructor's time, and the youth
+                coder's time, with the understanding that half of their time was spent learning.
+              </p>
             </div>
-
-
-            <CenteredContainerInner>
-              <div className="faq">
-                <h2>
-                  What sort of stuff can you do?
-                </h2>
-                <p>
-                  Our young people are most comfortable with relatively simple websites, and
-                  custom Wordpress theming. But our partnership with East Coast Product allows us
-                  to do pretty much anything. We've teamed up to build software using React, for
-                  example. Our friends at ECP delegated out to our students the work that was
-                  appropriate to their skills; a set that grew over the course of the project.
-                  Whether or not we're working with ECP on a particular project, every line of
-                  code that goes out is vetted by a professional. We hold our hackers to
-                  professional standards.
-                </p>
-                <h2>
-                  How does the money work?
-                </h2>
-                <p>
-                  Basically, half of the money that we make on a Resilient Lab project goes to pay
-                  for the wages of those who worked on it. The other half is invested in their
-                  education. The idea is that a young person will be hired to build something that
-                  lies just outside the realm of his expertise. He will be paired up with a more
-                  senior-level person who then delegates skill-appropriate work to the young
-                  person, and mentors him throughout the job. They may spend an hour learning, for
-                  every hour spent working. Our quote covers the instructor's time, and the youth
-                  coder's time, with the understanding that half of their time was spent learning.
-                </p>
-
-              </div>
-            </CenteredContainerInner>
-            <div className="section-main section-tertiary section-tertiary__subtle">
-              <div className="section-container-primary">
-                <p>
-                  Ready to get started?
-                </p>
-                <ButtonPrimary target="blank" href="/quote" className="lab-end-button">
-                  Start your project
-                </ButtonPrimary>
-              </div>
-            </div>
-          </div>
+          </CenteredContainerInner>
         </CenteredContainerOuter>
       </RouteTransition>
     )

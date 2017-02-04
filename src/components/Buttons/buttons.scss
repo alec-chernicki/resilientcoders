@@ -10,23 +10,28 @@
   position: relative;
   text-transform: uppercase;
   letter-spacing: 1px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .button-container {
   position: relative;
-  float: left;
+  display: inline-block;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 20px;
 
   &:hover:before {
-    width: 100%;
+    transform: translateX(0);
   }
 
   &:before {
     content: '';
+    border-radius: 3px;
     position: absolute;
     height: 100%;
     left: 0;
-    width: 0;
+    width: 100%;
+    transform: translateX(-100%);
     top: 0;
     z-index: 5;
     @include transition;
@@ -69,48 +74,32 @@
   }
 }
 
-.button__slice,
-.button__slice:visited {
-  background-color: #f8f8f8;
-  color: $background-secondary;
-  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-  overflow: hidden;
-  margin-top: 20px;
+.link {
+  color: $text-secondary;
+  position: relative;
+  display: inline-block;
+  font-family: $roboto-slab;
+  z-index: 1;
+  @include transition;
+  padding: 10px 10px;
+
+  &:after {
+    content:'';
+    height: 4px;
+    background-color: $accent-primary;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include transition;
+  }
 
   &:hover {
-    color: #f8f8f8;
+    color: $text-primary;
 
-    &:before,
     &:after {
-      transform: skew(-25deg) translateY(0%);
+      transform: scaleX(1.2);
     }
-  }
-
-  &:before,
-  &:after {
-    cursor: pointer;
-    content: '';
-    background: $background-secondary;
-    position: absolute;
-    height: 100%;
-    width: 75%;
-    top:0;
-    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  &:before {
-    transform: skew(-25deg) translateY(-100%);
-    left: -24%;
-  }
-
-  &:after {
-    transform: skew(-25deg) translateY(100%);
-    right: -24%;
-  }
-
-  span {
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
   }
 }

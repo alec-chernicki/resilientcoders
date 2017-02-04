@@ -58,9 +58,11 @@ class News extends React.Component {
               <div className="news-list-container">
                 <div className="news-page-header">
                   <div className="news-header">
-                    <BinaryText>
-                      In The News
-                    </BinaryText>
+                    <h1 className="text-darkest">
+                      <BinaryText>
+                        In The News
+                      </BinaryText>
+                    </h1>
                   </div>
                   <div className="divider"/>
                   <div className="news-tweet">
@@ -70,7 +72,7 @@ class News extends React.Component {
                 <div className="news-list-title">
                   <h2>Video and Interactive Content</h2>
                 </div>
-  
+
                 <ul className="news-list">
                   {this.renderContentItems()}
                 </ul>

@@ -9,7 +9,7 @@ class RouteTransition extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="route-transition">
         <div className="route-content">
           {this.props.children}
         </div>

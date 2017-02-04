@@ -4,42 +4,161 @@ import TeamMember from './TeamMember/TeamMember';
 import teamMembersConfig from './teamMembersConfig';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import {Link} from 'react-router';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
+import Pin from '../../../components/Effects/Pin';
+import Parallax from '../../../components/Effects/Parallax';
+import _ from 'underscore';
 
-class Work extends React.Component {
-  renderTeamMembers() {
-    return teamMembersConfig.map((item, i) => (
-      <TeamMember
-        key={i}
-        image={item.image}
-        name={item.name}
-        title={item.title}
-        bio={item.bio}
-      />
-    ));
+class TeamMembers extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      shownMember: [teamMembersConfig.DAVID_DELMAR],
+      animationDuration: 0
+    };
+
+    this.setSectionRef = this.setSectionRef.bind(this);
+    window.addEventListener('resize', this.setAnimationDuration);
+  }
+  componentDidMount() {
+    this.setAnimationDuration();
+  }
+  setAnimationDuration() {
+    if (!this.sectionRef) {
+      return
+    }
+
+    this.setState({
+      animationDuration: this.sectionRef.clientHeight - (window.innerHeight)
+    });
+  }
+  setSectionRef(el) {
+    this.sectionRef = el;
+  }
+  setShownMember(memberKey) {
+    this.setState({
+      shownMember: [teamMembersConfig[memberKey]]
+    });
+  }
+  renderSidebarItems() {
+    const debouncedSetMember = _.debounce(this.setShownMember.bind(this), 150);
+
+    return Object.keys(teamMembersConfig).map((key, i) => {
+      const member = teamMembersConfig[key];
+
+      return (
+        <TeamMember
+          key={i}
+          image={member.image}
+          name={member.name}
+          title={member.title}
+          bio={member.bio}
+          memberKey={key}
+          setShownMember={debouncedSetMember}
+        />
+      )
+    });
+  }
+  renderSidebar() {
+    return (
+      <div className="team-members__sidebar">
+        {this.renderSidebarItems()}
+      </div>
+    )
+  }
+  renderProgressBar() {
+    if (!this.sectionRef) {
+      return null
+    }
+
+    return (
+      <Pin
+        outerClassName="team-members__progress"
+        innerClassName="team-members__progress-inner"
+        stretch={false}
+        duration={this.state.animationDuration}
+        offset={(-(window.innerHeight / 10) - 60)}
+      >
+        <Parallax
+          from="-100%"
+          to="0%"
+          duration={this.state.animationDuration}
+          triggerRef={this.sectionRef}
+          triggerHook={0}
+        >
+          <div className="team-members__progress-bar">
+
+          </div>
+        </Parallax>
+      </Pin>
+    )
+  }
+  renderBio() {
+    const {bio} = this.state.shownMember[0];
+    if (!this.sectionRef) {
+      return null
+    }
+
+    return (
+      <Pin
+        key={bio}
+        outerClassName="team-members__content"
+        innerClassName="team-members__content-inner"
+        stretch={false}
+        duration={this.state.animationDuration}
+        offset={-160}
+      >
+        <p className="team-members__bio">
+          {bio}
+        </p>
+      </Pin>
+    )
+  }
+  renderBackgroundImage() {
+    const {image} = this.state.shownMember[0];
+    if (!this.sectionRef) {
+      return null
+    }
+
+    return (
+      <div className="team-pin-wrapper">
+        <Pin
+          outerClassName="team-members__image-outer"
+          stretch={false}
+          duration={this.state.animationDuration}
+        >
+          <ReactCSSTransitionGroup
+            component="div"
+            transitionName="team-members-background-animation-fade"
+            transitionEnterTimeout={400}
+            transitionLeaveTimeout={400}
+          >
+            <div className="team-members__image"
+              key={image}
+              style={{
+                backgroundImage: `url(${image})`
+              }}
+            />
+          </ReactCSSTransitionGroup>
+        </Pin>
+      </div>
+    )
   }
   render() {
     return (
-      <div className="team-members">
-        {this.renderTeamMembers()}
-        <div className="team-members__join">
-          <div className="team-members__join__container">
-            <div>
-              <h2>
-                Interested in joining?
-              </h2>
-              <p>
-                There's more than one way to join the code literacy movement. Check out our
-                opportunities for both companies and individuals.
-              </p>
-              <ButtonPrimary to="/get-involved">
-                Get Involved
-              </ButtonPrimary>
-            </div>
-          </div>
+        <div className="team-members" ref={this.setSectionRef}>
+          {this.renderBackgroundImage()}
+          <div className="team-members__overlay"/>
+          <CenteredContainerInner className="flex-row">
+            {this.renderProgressBar()}
+            {this.renderSidebar()}
+            {this.renderBio()}
+          </CenteredContainerInner>
         </div>
-      </div>
     );
   }
 }
 
-export default Work;
+export default TeamMembers;

@@ -35,8 +35,6 @@ class MicahVideo extends React.Component {
     return (
       <div className="section-micah">
         <div className="section-micah-container">
-
-
           <h1>
             <BinaryText>
               MICAH'S STORY

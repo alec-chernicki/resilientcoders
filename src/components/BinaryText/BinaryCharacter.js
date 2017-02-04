@@ -1,5 +1,11 @@
 import React, {PropTypes, Component} from 'react'
 
+const ANIMATION_TIME = 75
+
+const ANIMATION_CLASSES = [
+  
+]
+
 class BinaryCharacter extends Component {
   constructor(props) {
     super(props);
@@ -19,8 +25,6 @@ class BinaryCharacter extends Component {
     clearTimeout(this.timeout);
   }
   animateCharacter() {
-    const animationTime = 75;
-
     this.timeout = setTimeout(() => {
       this.animationInterval = setInterval(() => {
         const number = this.state.number === 1 ? 0 : 1;
@@ -37,12 +41,14 @@ class BinaryCharacter extends Component {
           timesToAnimate: timesToAnimate - 1
         });
 
-      }, animationTime);
+      }, ANIMATION_TIME);
     }, this.props.characterIndex * 100);
   }
   render() {
     return (
-      <span className="binary-text__letter">{this.state.shownCharacter}</span>
+      <span className="binary-text__letter">
+        {this.state.shownCharacter}
+      </span>
     );
   }
 }

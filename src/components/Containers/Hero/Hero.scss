@@ -1,5 +1,6 @@
 @import '../../../stylesheets/variables';
 @import '../../../stylesheets/mixins';
+@import '../../../stylesheets/animations';
 
 @keyframes hero-title-fade-in {
   0% {
@@ -17,7 +18,8 @@
   height: 100vh;
   overflow: hidden;
   background-size: 6px, auto, cover;
-  z-index: 500;
+  z-index: 50;
+  min-height: 100%;
 
   &:after {
     position: absolute;
@@ -31,11 +33,11 @@
 }
 
 .hero--short {
-  max-height: 575px;
+  height: 575px;
 }
 
 .hero__overlay {
-  z-index: 100;
+  z-index: 10000000000;
   position: absolute;
   top: 0;
   left: 0;
@@ -50,6 +52,8 @@
   left: 0;
   height: 100%;
   width: 100%;
+  backface-visibility: hidden;
+  will-change: opacity;
 }
 
 .hero__fade-overlay {
@@ -72,25 +76,8 @@
 
 .hero__image {
   z-index: 90;
-  will-change: transform;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-
-  @include breakpoint($small-breakpoint) {
-    background-image: url('./hero-image.jpg');
-    background-position: 35%;
-  }
-
-
-  .vjs-playing {
-    height: auto !important;
-    width: auto !important;
-  }
+  max-width: 100%;
+  height: auto;
 }
 
 .video-container {
@@ -106,6 +93,8 @@
     max-height: 125%;
     background-image: url('./hero-image.jpg');
     background-size: contain;
+    object-fit: cover;
+    font-family: 'object-fit: contain;';
 
     @include breakpoint($small-breakpoint) {
       display: none;
@@ -122,6 +111,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero__image-preload {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hero__page-loader {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100000;
+  background-color: $background-secondary;
+  animation: fade-out 600ms ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .hero__content {
@@ -130,18 +142,23 @@
   width: 100%;
   max-width: 1150px;
   padding: 0 60px;
+  z-index: 10000000000;
   text-align: left;
 
   @include breakpoint($small-breakpoint) {
     padding: 0 30px;
   }
 
-  .hero-title-one {
-    animation: hero-title-fade-in 1500ms cubic-bezier(0, 1, 0.58, 1) 0.5s backwards;
+  .hero-title-one,
+  .hero-title-two {
+    z-index: 10000000000;
+    position: relative;
+    overflow: hidden;
+    display: block;
   }
 
-  .hero-title-two {
-    animation: hero-title-fade-in 1500ms cubic-bezier(0, 1, 0.58, 1) 0.75s backwards;
+  .binary-text-outer {
+    overflow: hidden;
   }
 
   .divider {
@@ -166,5 +183,19 @@
 
   p {
     margin: 0 auto;
+  }
+}
+
+.hero__image-wrapper {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &.loaded {
+    animation: fade-in 600ms ease-in-out;
+    animation-fill-mode: forwards;;
   }
 }

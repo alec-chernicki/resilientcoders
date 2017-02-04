@@ -56,7 +56,13 @@ const FormInput = React.createClass({
     return (
       <div className={inputClass}>
         <label className={labelClass}>{this.props.label}</label>
-        <input type="text" onChange={this.changeValue} value={this.getValue() || ''} placeholder={this.props.placeholder}/>
+        <input
+          type="text"
+          spellCheck="false"
+          onChange={this.changeValue}
+          value={this.getValue() || ''}
+          placeholder={this.props.placeholder}
+        />
         <span className="error-message">{errorMessage}</span>
       </div>
     );

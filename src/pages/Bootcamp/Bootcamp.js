@@ -2,15 +2,19 @@ import './Bootcamp.scss';
 import React from 'react';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import {Link} from 'react-router';
-import BootcampPartners from './BootcampPartners/BootcampPartners';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
+
+import Partners from '../../components/Containers/Partners/Partners';
+import bootcampPartnersConfig from './bootcampPartnersConfig';
 
 import Hero from '../../components/Containers/Hero/Hero';
 import BootcampHeroImage from './bootcamp-hero.png';
 
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
+import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
+import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
 
 
 class Bootcamp extends React.Component {
@@ -27,8 +31,8 @@ class Bootcamp extends React.Component {
             Transforming dedication into opportunity, the starting point for our coders&#39; careers.
           </p>
         </Hero>
-        <SideBySide className="bootcamp-details">
-          <SideItem className="bootcamp-details__text">
+        <SideBySide>
+          <SideItem type="grey" className="p-y">
             <h2>The Goal</h2>
             <div className="divider divider__red" />
             <p>
@@ -38,43 +42,32 @@ class Bootcamp extends React.Component {
               they may have access to a real career.
             </p>
           </SideItem>
-          <SideItem type="grey" className="bootcamp-details__apply-text">
+          <SideItem className="p-y pull-up-1">
             <h2>Current Bootcamp</h2>
             <p>
-            Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> office at 4 Copley Place. We are no longer accepting applications. Interested in
-            applying for the next one? Stop by our <a href="/get-involved/student">Community Hours</a>, meet the staff.
-            Coders who want to get involved as mentors should peruse the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a> that features moments
-            during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
+              Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> office at 4 Copley Place. We are no longer accepting applications. Interested in
+              applying for the next one? Stop by our <a href="/get-involved/student">Community Hours</a>, meet the staff.
+              Coders who want to get involved as mentors should peruse the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a> that features moments
+              during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
             </p>
-            {/*
-              <p>
-              Our next Bootcamp will begin in January 2017. If you’re interested in joining,
-              come to our upcoming Hackathon at 31 Liverpool St in East Boston, on Friday, December 9th, from 10 to 5.
-              Attending a Hackathon is the only way to apply to Bootcamp.
-
-            </p>
-            <ButtonPrimary href="http://eastiecoders.com" target="_blank" className="bootcamp-details__button">
-              Sign up for the hackathon
-            </ButtonPrimary>
-            */}
           </SideItem>
         </SideBySide>
-        <div
-          className="centered-container-outer centered-container-outer__white bootcamp-timeline-section-outer">
-          <div
-            className="centered-container-inner centered-container-inner__grey bootcamp-timeline-section-inner">
-            <div className="section-main section-tertiary section-tertiary__subtle">
-              <div className="section-container-primary bootcamp-title">
-                <h1>The Program</h1>
-                <p>
-                  Our 8 week program teaches students the fundamentals of front end web development.
-                  We start with the basics and end with real world client work.
-                </p>
-              </div>
-            </div>
+        <CenteredContainerOuter color="white">
+          <CenteredContainerInner color="white" className="text-center">
+            <h1>The Program</h1>
+            <p className="text-constrained">
+              Our 8 week program teaches students the fundamentals of front end web development.
+              We start with the basics and end with real world client work.
+            </p>
+          </CenteredContainerInner>
+          <CenteredContainerInner
+            color="grey"
+            standard={false}
+            className="text-center p-y"
+          >
             <Timeline/>
-          </div>
-        </div>
+          </CenteredContainerInner>
+        </CenteredContainerOuter>
         <div className="bootcamp-join">
           <div className="bootcamp-join-text">
             <h1>
@@ -89,32 +82,38 @@ class Bootcamp extends React.Component {
           </div>
         </div>
         <SideBySide className="bootcamp-apply">
-          <SideItem className="bootcamp-apply__student" type="red">
-            <h1>As a student</h1>
+          <SideItem type="grey" className="p-y">
+            <h2>As a student</h2>
             <p>
-              Whether or not Bootcamp is right for you, there are a few different ways to join us.
+              Our Winter Bootcamp is in full swing, at the Insight Squared office at
+              4 Copley Place. We are no longer accepting applications. Interested in applying for
+              the next one? Stop by our Community Hours, meet the staff.
             </p>
-
-            <ButtonPrimary to="/get-involved/student" color="white">
+            <ButtonPrimary to="/get-involved/student">
               Get Involved
             </ButtonPrimary>
           </SideItem>
-          <SideItem className="bootcamp-apply__mentor">
-            <h1>As a mentor</h1>
+          <SideItem type="white" className="p-y pull-up-1">
+            <h2>As a mentor</h2>
             <div className="divider divider__red"/>
             <p>
-
-            Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
-            and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
-            from 3:30 to 6. We&#8217;re all about making it easy for you to join.
-
+              Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
+              and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
+              from 3:30 to 6. We&#8217;re all about making it easy for you to join.
             </p>
             <ButtonPrimary to="/get-involved/mentor">
               Get Involved
             </ButtonPrimary>
           </SideItem>
         </SideBySide>
-        <BootcampPartners />
+        <CenteredContainerOuter color="white">
+          <CenteredContainerInner color="white">
+            <Partners
+              title="Thank you to our partners"
+              partnersConfig={bootcampPartnersConfig}
+            />
+          </CenteredContainerInner>
+        </CenteredContainerOuter>
       </RouteTransition>
     )
   }

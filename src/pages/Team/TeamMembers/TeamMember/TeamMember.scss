@@ -1,107 +1,37 @@
 @import '../../../../stylesheets/variables';
 @import '../../../../stylesheets/mixins';
 
-.team-item {
-  position: relative;
-  padding: 25px;
-  background: #FFF;
-  flex: 2 2 40%;
-  margin-bottom: 60px;
-
-  @include breakpoint($small-breakpoint) {
-    flex: 1 1 100%;
-  }
-
-  &:nth-child(odd) {
-    margin-right: 60px;
-
-    @include breakpoint($small-breakpoint) {
-      margin-right: 0;
-    }
-  }
+.team-member {
+  height: 300px;
 }
 
-.team-item__image{
-  height: 450px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.team-item__button {
-  text-align: center;
-  height: 70px;
-  border: 0;
-  width: 70px;
-  background-color: $accent-primary;
-  position: absolute;
-  right: 25px;
-  color: #FFF;
-  top: 25px;
-  outline: none;
+.team-member__name {
+  color: $text-secondary;
+  transform: scale(1,1);
   @include transition;
-
-  @include breakpoint($small-breakpoint) {
-    display: none;
-  }
-
-  &:after {
-    content: '+';
-    font-size: 50px;
-    display: inline-block;
-    @include transition;
-    transform: none;
-  }
-
-  .team-item--active &:after {
-    transform: rotate(135deg);
-  }
-
-  &:hover {
-    background-color: darken($accent-primary, 10%);
-  }
-}
-
-.team-item__name {
-  font-family: $league-gothic;
-  text-transform: uppercase;
-  font-size: $font-size-tertiary;
-  color: #FFF;
-  line-height: 1;
-}
-
-.team-item__title {
-  color: $text-tertiary;
+  float: left;
   margin: 0;
-}
+  transform-origin: left;
 
-.team-item__overlay {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  right: 25px;
-  bottom: 150px;
-  background-color: rgba($background-secondary, 0.85);
-  color: #FFF;
-  padding: 25px;
-  opacity: 0;
-  @include transition;
-
-  .team-item--active & {
-    opacity: 1;
-  }
-
-  p {
-    font-size: 15px;
+  .is-active & {
+    transform: scale(1.3,1.3);
     color: #FFF;
   }
 }
 
-.team-item-container {
-  background-color: $background-secondary;
-  border-top: solid 5px $accent-primary;
-  padding: 25px;
-  position: relative;
-  margin-top: -5px;
-  text-align: left;
+.team-member__title {
+  color: $accent-primary;
+  @include transition;
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 100ms;
+  margin-top: 15px;
+  font-size: $font-size-4;
+  float: left;
+  clear: both;
+
+  .is-active & {
+    opacity: 1;
+    visibility: visible;
+  }
 }

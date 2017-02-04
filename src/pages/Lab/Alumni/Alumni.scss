@@ -3,8 +3,6 @@
 
 .write-off {
   background-color: $background-primary;
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
 
   @include breakpoint($small-breakpoint) {

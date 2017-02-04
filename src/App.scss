@@ -6,10 +6,19 @@
   color: #FFF;
 }
 
+.slider img {
+  width: 100%;
+}
+
+.app {
+  overflow: hidden;
+}
+
 body {
   font-family: $league-gothic;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
 
   min-width: 1150px;
 
@@ -20,10 +29,8 @@ body {
 
 h1, .letter {
   color: #FFF;
-  font-size: $font-size-primary;
   margin: 0 0 10px 0;
-  line-height: 1.1;
-  letter-spacing: 1px;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
 
   @include breakpoint($small-breakpoint) {
@@ -31,6 +38,11 @@ h1, .letter {
     line-height: 1;
     font-size: 50px;
   }
+}
+
+h1 {
+  font-size: $font-size-primary;
+  line-height: 1.1;
 }
 
 h2 {
@@ -96,10 +108,6 @@ p {
   span {
     color: $accent-primary;
     cursor: pointer;
-
-    &:visited {
-      color: $accent-primary;
-    }
   }
 
   a, span {
@@ -142,6 +150,7 @@ a {
 
 img {
   width: 100%;
+  display: block;
 }
 
 .clearfix:after {
@@ -182,6 +191,8 @@ img {
   }
 };
 
+
 @import './stylesheets/containers';
 @import './stylesheets/design-accents';
 @import './stylesheets/animations';
+@import './stylesheets/utils';

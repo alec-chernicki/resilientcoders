@@ -1,21 +1,2 @@
 @import '../../stylesheets/variables';
 @import '../../stylesheets/mixins';
-
-.team {
-  padding-bottom: 30px;
-  background-color: #FFF;
-}
-
-.team-container {
-  background-color: $background-primary;
-  max-width: 1150px;
-  width: 100%;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin: 0 auto;
-
-  @include breakpoint($small-breakpoint) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}

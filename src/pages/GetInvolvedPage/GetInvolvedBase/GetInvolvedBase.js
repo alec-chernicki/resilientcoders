@@ -15,9 +15,7 @@ const GetInvolvedBase = ({image, title, children, heroContent}) => {
         <div className="divider divider__red" />
         {heroContent}
       </Hero>
-      <CenteredContainerOuter color="grey">
-        {children}
-      </CenteredContainerOuter>
+      {children}
     </div>
   )
 }

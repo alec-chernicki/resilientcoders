@@ -2,10 +2,11 @@
 @import '../../../stylesheets/mixins';
 
 .centered-container-outer {
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
+  position: relative;
 
   @include breakpoint($small-breakpoint) {
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
   }
 }
 
@@ -17,17 +18,18 @@
   background-color: #FFF;
 }
 
-
 .centered-container-inner {
   max-width: 1150px;
   width: 100%;
-  padding: 80px;
-  z-index: 100;
-  display: flex;
-  flex-flow: column nowrap;
+  z-index: 1000;
+  // display: flex;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+.centered-container-inner--standard {
+  padding: 80px;
 
   @include breakpoint($small-breakpoint) {
     padding: 20px;
@@ -35,14 +37,47 @@
 }
 
 .centered-container-inner--nonstandard {
-  padding: 0 !important;
+  padding: 0;
+}
+
+.centered-container-inner--horizontal {
   flex-direction: row;
+}
+
+.centered-container-inner--vertical {
+  flex-flow: column nowrap;
+}
+
+.centered-container-inner--transparent {
+  h1, h2, h3 {
+    color: $text-primary;
+  }
 }
 
 .centered-container-inner--grey {
   background-color: $background-primary;
+
+  h1, h2, h3 {
+    color: $text-primary !important;
+  }
+}
+
+.centered-container-inner--dark-grey {
+  background-color: $background-secondary;
+
+  h1, h2, h3 {
+    color: #FFF !important;
+  }
 }
 
 .centered-container-inner--white {
   background-color: #FFF;
+
+  h1, h2, h3 {
+    color: $text-primary !important;
+  }
+}
+
+.centered-container-inner--accent {
+  border-top: solid 4px $accent-primary;
 }

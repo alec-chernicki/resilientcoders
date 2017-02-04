@@ -1,7 +1,9 @@
  /* eslint-disable */
 import './Effects.scss';
 import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import {Power1} from 'gsap';
+import TweenMax from 'TweenMax';
+import TimelineMax from 'TimelineMax';
 import React from 'react'
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
@@ -10,6 +12,9 @@ import classNames from 'classnames';
 // Would be best to make a base ES6 class or component to extend the scene functionality across components
 
 class Fade extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }
@@ -35,9 +40,6 @@ class Fade extends React.Component {
     this.scene.destroy(true)
     this.scene = null;
   }
-  getWindowHeight() {
-    return window.innerWidth
-  }
   setTriggerElementRef(element) {
     this.triggerElement = element;
   }
@@ -50,7 +52,7 @@ class Fade extends React.Component {
     return (
       <div
         ref={this.setTriggerElementRef.bind(this)}
-        className={className}
+        className={this.props.outerClassName}
       >
         <div
           className={className}

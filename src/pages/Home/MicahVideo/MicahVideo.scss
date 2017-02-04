@@ -55,7 +55,7 @@
   border: 2px solid #FFF;
   bottom: 10px;
   right: 0;
-  @include transition;
+  @include transition-short;
 
   @include breakpoint($small-breakpoint) {
     display: none;
@@ -71,7 +71,7 @@
   }
 
   &:active {
-    transform: scale(0.925, 0.925);
+    transform: scale(1.15, 1.15);
   }
 
   &:after {

@@ -1,6 +1,8 @@
 /* eslint-disable */
 import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import {Power1} from 'gsap';
+import TweenMax from 'TweenMax';
+import TimelineMax from 'TimelineMax';
 import React from 'react'
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
@@ -43,15 +45,19 @@ class Scale extends React.Component {
    this.targetElement = element;
  }
  render() {
-   const className = classNames('stretch-to-fit', this.props.className);
+   const stretchToFit = {
+     'stretch-to-fit': !!this.props.stretch
+   }
+   const outerClassName = classNames(stretchToFit)
+   const innerClassName = classNames(this.props.className, stretchToFit);
 
    return (
      <div
        ref={this.setTriggerElementRef.bind(this)}
-       className="stretch-to-fit"
+       className={outerClassName}
      >
        <div
-         className={className}
+         className={innerClassName}
          ref={this.setTargetElementRef.bind(this)}
        >
          {this.props.children}

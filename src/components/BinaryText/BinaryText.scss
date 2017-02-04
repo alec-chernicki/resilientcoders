@@ -3,7 +3,7 @@
 
 
 .binary-text {
-  height: 77px;
+  height: $font-size-primary;
 
   @include breakpoint($small-breakpoint) {
     height: auto;
@@ -12,10 +12,10 @@
 }
 
 .binary-text__letter {
-  font-size: $font-size-primary;
+  font-size: inherit;
   margin: 0 0 10px 0;
-  line-height: 1.1;
-  letter-spacing: 1px;
+  line-height: inherit;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
 
   @include breakpoint($small-breakpoint) {

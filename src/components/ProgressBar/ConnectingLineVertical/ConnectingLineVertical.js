@@ -1,11 +1,11 @@
 /* eslint-disable */
 import './ConnectingLineVertical.scss';
 import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-import React from 'react'
-import _ from 'underscore';
+import {Linear} from 'gsap';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+import React from 'react';
 
-const {debounce} = _;
+const verticalLineController = new ScrollMagic.Controller();
 
 class ConnectingLineVertical extends React.Component {
   componentWillMount() {
@@ -51,7 +51,8 @@ class ConnectingLineVertical extends React.Component {
         triggerHook: 0.4
       })
       .setTween(tween)
-      .addTo(this.controller)
+      .addTo(verticalLineController)
+      .addIndicators()
       .triggerElement(this.triggerElement)
   }
   render() {
