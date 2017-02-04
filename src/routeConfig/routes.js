@@ -10,13 +10,18 @@ import Lab from '../pages/Lab/Lab';
 import Team from '../pages/Team/Team';
 import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
+import Roster from '../pages/Bootcamp/Roster/Roster';
+
 import {Route, IndexRoute} from 'react-router';
 import App from '../App';
 
 export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home} key="home"/>
-    <Route path="bootcamp" component={Bootcamp} key="bootcamp"/>
+    <Route path="bootcamp">
+      <IndexRoute component={Bootcamp} key="bootcamp"/>
+      <Route path="roster" component={Roster}/>
+    </Route>
     <Route path="lab" component={Lab}/>
     <Route path="team" component={Team}/>
     <Route path="news" component={News}/>

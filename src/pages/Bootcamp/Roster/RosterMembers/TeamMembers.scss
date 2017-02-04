@@ -1,0 +1,46 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+.team-members {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -100px;
+  position: relative;
+  z-index: 1000;
+}
+
+.team-members__join {
+  flex: 2 2 40%;
+  margin-bottom: 60px;
+  background-color: #FFF;
+  padding: 25px;
+}
+
+.team-members__join__container {
+  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
+                    url('./team-join.png');
+  background-size: auto, cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 25px;
+
+  h2 {
+    color: #FFF;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $text-tertiary;
+    margin-bottom: 30px;
+  }
+
+  .button-container {
+    margin: 0 auto;
+    float: none;
+    width: 200px;
+  }
+}
