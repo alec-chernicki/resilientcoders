@@ -19,7 +19,7 @@ export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home} key="home"/>
     <Route path="bootcamp">
-      <IndexRoute component={Bootcamp} key="bootcamp"/>
+      <IndexRoute component={Bootcamp}/>
       <Route path="roster" component={Roster}/>
     </Route>
     <Route path="lab" component={Lab}/>

@@ -54,7 +54,8 @@ class GetInvolvedCompany extends React.Component {
             <img src={contractLabImage} />
           </SideItem>
         </SideBySide>
-        <SideBySide>
+
+        <SideBySide className="p-bottom-3">
           <SideItem className="p-y">
             <h2>
               Hire Our Students
@@ -70,8 +71,9 @@ class GetInvolvedCompany extends React.Component {
           </SideItem>
         </SideBySide>
 
-        <CenteredContainerOuter>
+        <CenteredContainerOuter color="white" className="p-bottom highest">
           <EmailFormLong
+            className="pull-up-2"
             title="Stay informed"
             text="Be the first to know when we have new students to hire or when partnership
             opportunities become available."

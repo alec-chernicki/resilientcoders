@@ -25,7 +25,7 @@ const GetInvolvedMentor = (props) => {
       >
         <div className="divider divider__red" />
       </Hero>
-      <SideBySide>
+      <SideBySide className="p-bottom-3">
         <SideItem className="p-y pull-up-2">
           <h2>
             Bootcamp
@@ -49,18 +49,14 @@ const GetInvolvedMentor = (props) => {
           <img src={communityImage} />
         </SideItem>
       </SideBySide>
-      <CenteredContainerOuter color="white">
-        <CenteredContainerInner
-          color="white"
-          standard={false}
-        >
-          <EmailFormLong
-            title="Sign Up"
-            text="Enter in your information and we'll send over some details on how to get involved as
-            a mentor and keep you up to date as new opportunities become available."
-            formUrl={MENTOR_FORM_URL}
-          />
-        </CenteredContainerInner>
+      <CenteredContainerOuter color="white" className="p-bottom highest">
+        <EmailFormLong
+          className="pull-up-2"
+          title="Sign Up"
+          text="Enter in your information and we'll send over some details on how to get involved as
+          a mentor and keep you up to date as new opportunities become available."
+          formUrl={MENTOR_FORM_URL}
+        />
       </CenteredContainerOuter>
     </RouteTransition>
   )

@@ -129,12 +129,22 @@
 
 .email-form--long {
   width: 100%;
+  text-align: center;
 
   .email-form--long__wrapper {
     display: inline-block;
     border-radius: 3px;
     background-color: $background-secondary;
     padding: 30px 80px 60px;
+    text-align: center;
+
+    h2 {
+      color: #FFF;
+    }
+
+    p {
+      max-width: 450px;
+    }
   }
 
   .divider {

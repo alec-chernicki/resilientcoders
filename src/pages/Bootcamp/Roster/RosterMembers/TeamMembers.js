@@ -3,12 +3,10 @@ import React from 'react';
 import TeamMember from './TeamMember/TeamMember';
 import rosterconfig from './rosterMembersConfig';
 import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
-import {Link} from 'react-router';
-
 
 class Work extends React.Component {
-  renderTeamMembers(data) {
-    return data.map((item, i) => (
+  renderTeamMembers() {
+    return rosterconfig.map((item, i) => (
       <TeamMember
         key={i}
         image={item.image}
@@ -21,7 +19,7 @@ class Work extends React.Component {
   render() {
     return (
       <div className="team-members">
-        {this.renderRosterMembers(rosterconfig)}
+        {this.renderRosterMembers()}
         <div className="team-members__join">
           <div className="team-members__join__container">
             <div>

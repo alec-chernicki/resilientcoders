@@ -42,11 +42,9 @@ class Team extends React.Component {
           </CenteredContainerInner>
         </CenteredContainerOuter>
 
-        <div className="team">
-          <div className="team-container">
-            <TeamMembers/>
-          </div>
-        </div>
+
+        <TeamMembers/>
+        
 
         <CenteredContainerOuter color="white">
           <CenteredContainerInner color="white" className="text-center">

@@ -65,60 +65,59 @@ class EmailFormLong extends React.Component {
   render() {
     const buttonClass = classNames('button', {
       'disabled': !this.state.canSubmit,
-    })
+    });
+
     return (
       <div
-        className="email-form email-form--long">
-        <CenteredContainerInner className="text-center">
+        className="email-form email-form--long ">
+        <div className={`email-form--long__wrapper ${this.props.className}`}>
           <div>
-            <h2>{this.props.title}</h2>
+            <h1>{this.props.title}</h1>
             <p>{this.props.text}</p>
             <div className="divider divider__red" />
           </div>
-          <div className="email-form--long__wrapper">
-            <Formsy.Form
-              ref={this.setFormElementRef.bind(this)}
-              onValidSubmit={this.validSubmit.bind(this)}
-              onValid={this.enableButton.bind(this)}
-              onInvalid={this.disableButton.bind(this)}
-            >
-              <div className="control">
-                <TextInput name="firstName"
-                  placeholder="First Name"
-                  label="First Name"
-                  validations="isExisty"
-                />
-                <TextInput
-                  name="lastName"
-                  placeholder="Last Name"
-                  label="Last Name"
-                  validations="isExisty"
-                />
-              </div>
-              <div className="control">
-                <TextInput
-                  name="company"
-                  label="Company"
-                  placeholder="Company"
-                  validations="isExisty"
-                />
-              </div>
-              <div className="control">
-                <TextInput
-                  name="email"
-                  label="Your Email"
-                  placeholder="your@email.com"
-                  validations="isEmail"
-                  validationError="This is not a valid email"
-                  required
-                />
-              </div>
-              <button type="submit" className={buttonClass}>
-                {this.state.buttonText}
-              </button>
-            </Formsy.Form>
-          </div>
-        </CenteredContainerInner>
+          <Formsy.Form
+            ref={this.setFormElementRef.bind(this)}
+            onValidSubmit={this.validSubmit.bind(this)}
+            onValid={this.enableButton.bind(this)}
+            onInvalid={this.disableButton.bind(this)}
+          >
+            <div className="control">
+              <TextInput name="firstName"
+                placeholder="First Name"
+                label="First Name"
+                validations="isExisty"
+              />
+              <TextInput
+                name="lastName"
+                placeholder="Last Name"
+                label="Last Name"
+                validations="isExisty"
+              />
+            </div>
+            <div className="control">
+              <TextInput
+                name="company"
+                label="Company"
+                placeholder="Company"
+                validations="isExisty"
+              />
+            </div>
+            <div className="control">
+              <TextInput
+                name="email"
+                label="Your Email"
+                placeholder="your@email.com"
+                validations="isEmail"
+                validationError="This is not a valid email"
+                required
+              />
+            </div>
+            <button type="submit" className={buttonClass}>
+              {this.state.buttonText}
+            </button>
+          </Formsy.Form>
+        </div>
       </div>
     );
   }
