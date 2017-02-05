@@ -4,6 +4,7 @@ import TeamMember from './TeamMember/TeamMember';
 import teamMembersConfig from './teamMembersConfig';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import {Link} from 'react-router';
+import {Linear} from 'gsap'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Pin from '../../../components/Effects/Pin';
@@ -78,19 +79,18 @@ class TeamMembers extends React.Component {
         outerClassName="team-members__progress"
         innerClassName="team-members__progress-inner"
         stretch={false}
-        duration={this.state.animationDuration}
+        duration={this.state.animationDuration - 160}
         offset={(-(window.innerHeight / 10) - 60)}
       >
         <Parallax
           from="-100%"
           to="0%"
-          duration={this.state.animationDuration}
+          ease={Linear.easeNone}
+          duration={this.state.animationDuration - 60}
           triggerRef={this.sectionRef}
           triggerHook={0}
         >
-          <div className="team-members__progress-bar">
-
-          </div>
+          <div className="team-members__progress-bar" />
         </Parallax>
       </Pin>
     )
@@ -107,8 +107,8 @@ class TeamMembers extends React.Component {
         outerClassName="team-members__content"
         innerClassName="team-members__content-inner"
         stretch={false}
-        duration={this.state.animationDuration}
-        offset={-160}
+        duration={this.state.animationDuration - 160}
+        offset={(-(window.innerHeight / 10) - 60)}
       >
         <p className="team-members__bio">
           {bio}

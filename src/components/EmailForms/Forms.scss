@@ -53,8 +53,6 @@
 
   input[type="text"] {
     border: solid 1px darken($text-secondary, 20%);
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
     background: $background-secondary;
     cursor: text;
     outline: none;
@@ -137,6 +135,12 @@
     background-color: $background-secondary;
     padding: 30px 80px 60px;
     text-align: center;
+    margin: 0 15px;
+
+    @include breakpoint($small-breakpoint) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     h2 {
       color: #FFF;
@@ -167,6 +171,10 @@
   form {
     margin-top: 25px;
   }
+
+  input[type="text"] {
+    border-radius: 2px;
+  }
 }
 
 .email-form--short {
@@ -177,11 +185,35 @@
   width: 100%;
   background-color: $background-secondary;
 
+  .control {
+    @include breakpoint($small-breakpoint) {
+      flex-direction: column;
+    }
+  }
+
+  button {
+    @include breakpoint($small-breakpoint) {
+      margin-top: 20px;
+    }
+  }
+
   input[type="text"] {
     border-right: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+    @include breakpoint($small-breakpoint) {
+      border-right: solid 1px darken($text-secondary, 20%);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
 
     &:focus {
       border-right: none;
+
+      @include breakpoint($small-breakpoint) {
+        border-right: solid 1px $text-secondary;
+      }
     }
   }
 }

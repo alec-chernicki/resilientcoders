@@ -3,10 +3,7 @@ import React, {PropTypes, Component} from 'react';
 import ScrollMagic from 'scrollmagic';
 import BinaryCharacter from './BinaryCharacter';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-import _ from 'underscore'
-import TweenMax from 'TweenMax';
 import TimelineMax from 'TimelineMax';
-import {Power2} from 'gsap';
 
 class BinaryText extends Component {
   constructor(props) {

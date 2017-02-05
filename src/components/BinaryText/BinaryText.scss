@@ -12,15 +12,4 @@
 }
 
 .binary-text__letter {
-  font-size: inherit;
-  margin: 0 0 10px 0;
-  line-height: inherit;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
-
-  @include breakpoint($small-breakpoint) {
-    letter-spacing: 0;
-    line-height: 1;
-    font-size: 45px;
-  }
 }

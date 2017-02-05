@@ -90,7 +90,7 @@ class Bootcamp extends React.Component {
               the next one? Stop by our Community Hours, meet the staff.
             </p>
             <ButtonPrimary to="/get-involved/student">
-              Get Involved
+              Learn more
             </ButtonPrimary>
           </SideItem>
           <SideItem type="white" className="p-y pull-up-1">

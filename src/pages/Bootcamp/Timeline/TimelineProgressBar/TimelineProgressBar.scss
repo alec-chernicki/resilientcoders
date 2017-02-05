@@ -14,10 +14,7 @@
   flex-direction: column;
 
   @include breakpoint($small-breakpoint) {
-    top: -90px;
-    left: -9px;
-    right: auto;
-    height: 104.5%;
+    display: none;
   }
 
   .connecting-line {

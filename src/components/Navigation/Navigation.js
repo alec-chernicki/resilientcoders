@@ -29,8 +29,10 @@ class Navigation extends React.Component {
     })
   }
   showMobileNav() {
+    const {isMobileNavActive} = this.state;
+
     this.setState({
-      isMobileNavActive: true
+      isMobileNavActive: !isMobileNavActive
     })
   }
   renderNavigationLinks(className) {

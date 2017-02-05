@@ -32,17 +32,16 @@ h1, .letter {
   margin: 0 0 10px 0;
   letter-spacing: 0.035em;
   text-transform: uppercase;
-
-  @include breakpoint($small-breakpoint) {
-    letter-spacing: 0;
-    line-height: 1;
-    font-size: 50px;
-  }
 }
 
 h1 {
   font-size: $font-size-primary;
   line-height: 1.1;
+
+  @include breakpoint($small-breakpoint) {
+    line-height: 1;
+    font-size: 55px;
+  }
 }
 
 h2 {
@@ -59,11 +58,6 @@ h3 {
   margin: 20px 0 10px 0;
   font-size: $font-size-4;
   line-height: 1.1;
-}
-
-p {
-  color: $text-secondary;
-  margin-bottom: 10px;
 }
 
 button {
@@ -98,11 +92,8 @@ p {
   font-family: $roboto-slab;
   font-size: $font-size-secondary;
   line-height: $secondary-line-height;
-
-
-  @include breakpoint($small-breakpoint) {
-    font-size: 18px;
-  }
+  color: $text-secondary;
+  margin-bottom: 10px;
 
   a,
   span {

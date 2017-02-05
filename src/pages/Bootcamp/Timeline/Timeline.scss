@@ -166,7 +166,6 @@
 
   @include breakpoint($small-breakpoint) {
     flex-direction: column;
-    padding-left: 30px;
   }
 
   &:nth-of-type(even) {

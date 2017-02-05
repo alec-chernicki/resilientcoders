@@ -7,12 +7,16 @@
   bottom: 0;
   left: 0;
   width: 225px;
-  z-index: 200;
 }
 
 .step-navigation__list {
   position: relative;
+  z-index: 1000;
   padding-top: 100px;
+
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
 }
 
 .step-navigation__item {

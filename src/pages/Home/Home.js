@@ -33,10 +33,20 @@ import alumniThree from '../../images/alumniThree.png';
 import Slider from 'react-slick';
 
 const CAROUSEL_SETTINGS = {
+  responsive: [{
+    breakpoint: 700,
+    settings: {
+      slidesToShow: 1,
+      draggable: true,
+      pauseOnHover: false,
+    }
+  }],
   dots: false,
   infinite: true,
+  pauseOnHover: true,
   speed: 400,
   slidesToShow: 3,
+  draggable: false,
   autoplay: true,
   autoplaySpeed: 4500,
   slidesToScroll: 1,
@@ -152,6 +162,7 @@ class Home extends Component {
             <h3>Our alumni are employed by companies like:</h3>
             <Partners
               partnersConfig={alumniCompaniesConfig}
+              buttonText="Hire our students"
             />
           </CenteredContainerInner>
         </CenteredContainerOuter>
@@ -171,7 +182,7 @@ class Home extends Component {
               <Parallax
                 to={0}
                 from={500}
-                triggerHook={0.9}
+                triggerHook={0.7}
                 duration="70%"
                 ease={Power1.easeOut}
                 className="align-bottom"
@@ -183,7 +194,7 @@ class Home extends Component {
               <Parallax
                 to={0}
                 from={350}
-                triggerHook={0.9}
+                triggerHook={0.7}
                 duration="80%"
                 ease={Power1.easeOut}
                 className="align-bottom"

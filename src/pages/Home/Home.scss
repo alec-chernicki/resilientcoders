@@ -37,6 +37,12 @@
     top: 0;
     z-index: 10;
     user-select: none;
+
+    img {
+      @include breakpoint($small-breakpoint) {
+        width: 400%;
+      }
+    }
   }
 
   .background {
@@ -92,6 +98,10 @@
     transform: scale(1.15);
     z-index: 10000;
 
+    @include breakpoint($small-breakpoint) {
+      transform: none;
+    }
+
     img {
       opacity: 1;
     }
@@ -115,6 +125,10 @@
   border: solid 2px #FFF;
   border-radius: 100%;
 
+  @include breakpoint($small-breakpoint) {
+    left: 5%;
+  }
+
   &:before {
     background-image: url('../../images/left-arrow.svg');
     height: 15px;
@@ -135,6 +149,10 @@
   z-index: 100000;
   border: solid 2px #FFF;
   border-radius: 100%;
+
+  @include breakpoint($small-breakpoint) {
+    right: 5%;
+  }
 
   &:before {
     background-image: url('../../images/right-arrow.svg');

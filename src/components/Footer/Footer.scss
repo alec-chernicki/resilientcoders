@@ -5,9 +5,17 @@
   display: flex;
   padding-bottom: 30px;
   justify-content: space-between;
+
+  @include breakpoint($small-breakpoint) {
+    flex-direction: column;
+  }
 }
 
 .footer-container-info {
+  @include breakpoint($small-breakpoint) {
+    margin-top: 20px;
+  }
+
   a {
     color: #FFF;
   }
@@ -45,11 +53,10 @@
 
 footer {
   padding: 40px 0;
-
+  margin: 0 25px;
 
   @include breakpoint($small-breakpoint) {
-    display: block;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   h3 {

@@ -1,6 +1,6 @@
 import React, {PropTypes, Component} from 'react'
 
-const ANIMATION_TIME = 75
+const ANIMATION_TIME = 85
 
 const ANIMATION_CLASSES = [
   

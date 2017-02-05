@@ -3,6 +3,7 @@
 @import '../../../stylesheets/animations';
 
 .team-members {
+  padding-top: 150px;
   position: relative;
   background-color: $background-secondary;
   overflow: hidden;
@@ -30,6 +31,10 @@
   margin-left: 45px;
   margin-bottom: 240px;
   flex: 0 0 40%;
+
+  @include breakpoint($small-breakpoint) {
+    flex: 0 0 70%;
+  }
 }
 
 .team-members__content {
@@ -59,6 +64,10 @@
   animation: 600ms fade-in ease-out;
   animation-delay: 550ms;
   animation-fill-mode: both;
+
+  @include breakpoint($small-breakpoint) {
+    display: none;
+  }
 }
 
 .team-pin-wrapper {
@@ -82,15 +91,24 @@
   background-repeat: no-repeat;
   background-position: 100% 0;
   height: 100vh;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+
+  @include breakpoint($small-breakpoint) {
+    background-size: auto 100%;
+    background-position: 30% 0;
+  }
 }
 
 .team-members__overlay {
   background-image: linear-gradient(90deg, rgba($background-secondary, 1) 40%, rgba($background-secondary, 0.55));
   z-index: 500;
+
+  @include breakpoint($small-breakpoint) {
+    background-image: linear-gradient(90deg, rgba($background-secondary, 1) 20%, rgba($background-secondary, 0.55));
+  }
 }
 
 // Transition classes for background image

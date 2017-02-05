@@ -28,11 +28,15 @@ class Partners extends React.Component {
           {this.renderPartners()}
         </div>
         <LinkPrimary to="/get-involved/company">
-          Partner with us
+          {this.props.buttonText}
         </LinkPrimary>
       </div>
     )
   }
+}
+
+Partners.defaultProps = {
+  buttonText: "Partner with us"
 }
 
 export default Partners;

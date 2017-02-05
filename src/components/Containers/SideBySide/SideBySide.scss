@@ -10,7 +10,7 @@
   display: block;
 
   @include breakpoint($small-breakpoint) {
-    padding: 0 15px 15px;
+    padding: 0 15px 60px;
   }
 }
 

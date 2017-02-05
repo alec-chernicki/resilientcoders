@@ -7,6 +7,13 @@
   top: 0;
   background: $background-secondary;
   width: 120px;
+  z-index: 400;
+
+  @include breakpoint($small-breakpoint) {
+    left: auto;
+    right: 0;
+    top: 270px;
+  }
 
   .steps-controls__prev,
   .steps-controls__next {
@@ -38,6 +45,12 @@
 
   .steps-controls__next {
     border-left: solid 1px $background-primary;
+  }
+
+  .steps-controls__prev {
+    @include breakpoint($small-breakpoint) {
+      border-left: none;
+    }
   }
 }
 
