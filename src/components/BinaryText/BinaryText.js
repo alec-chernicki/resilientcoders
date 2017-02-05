@@ -16,6 +16,7 @@ class BinaryText extends Component {
 
     this.controller = new ScrollMagic.Controller();
     this.tl = new TimelineMax();
+    this.renderWrappedWord = this.renderWrappedWord.bind(this)
   }
   componentDidMount() {
     this.initializeScene();
@@ -31,7 +32,7 @@ class BinaryText extends Component {
     }
 
     this.scene = new ScrollMagic
-      .Scene({offset: 0, triggerHook: 0.5})
+      .Scene({offset: 0, triggerHook: 0.75})
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
 
@@ -57,24 +58,40 @@ class BinaryText extends Component {
 
     return this.renderWrappedText();
   }
-  renderWrappedText() {
-    const originalLetters = this.props.children.split('');
-    const wrappedLetters = originalLetters.map((letter, i) => (
-      <BinaryCharacter
-        key={i}
-        text={letter}
-        characterIndex={i}
-      />
+  renderWrappedWord(word) {
+    const {isInverted} = this.props;
+
+    const wrappedLetters = word.map((letter, i) => (
+        <BinaryCharacter
+          key={i}
+          text={letter}
+          characterIndex={i}
+          isInverted={isInverted}
+        />
     ));
-    return wrappedLetters;
+
+    return (
+      <div className="binary-word" style={{position: 'relative', display: 'inline-block'}}>
+        {wrappedLetters}
+      </div>
+    );
+  }
+  renderWrappedText() {
+    const words = this.props.children.split(' ');
+    const wordsIntoLetters = words.map(((word) => word.split('')));
+
+    const wrappedWords = wordsIntoLetters.map(this.renderWrappedWord)
+
+    return wrappedWords;
   }
   render() {
     return (
       <div
         ref={this.setTriggerElementRef.bind(this)}
-        className="binary-text binary-text-outer"
+        className="binary-text"
+        style={{position: 'relative', display: 'inline-block'}}
       >
-        <div className="binary-text-inner" ref={this.setTargetElementRef.bind(this)}>
+        <div style={{position: 'relative', display: 'inline-block'}} ref={this.setTargetElementRef.bind(this)}>
           {this.renderIfValid()}
         </div>
       </div>

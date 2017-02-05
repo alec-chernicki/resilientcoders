@@ -12,7 +12,9 @@ const Timeline = () => {
   return (
     <div>
       <h2 className="timeline-start">
-        DETERMINATION
+        <BinaryText isInverted={true}>
+          DETERMINATION
+        </BinaryText>
       </h2>
       <div className="timeline">
         <TimelineProgressBar/>
@@ -117,7 +119,9 @@ const Timeline = () => {
         <img className="timeline-end-image-left" src={careerLeft} role="presentation" />
         <div className="timeline-end-text">
           <h1>
-            A Career
+            <BinaryText isInverted={true}>
+              A Career
+            </BinaryText>
           </h1>
           <div className="divider divider__red"/>
           <p>

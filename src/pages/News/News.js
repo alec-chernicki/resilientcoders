@@ -59,7 +59,7 @@ class News extends React.Component {
                 <div className="news-page-header">
                   <div className="news-header">
                     <h1 className="text-darkest">
-                      <BinaryText>
+                      <BinaryText isInverted={true}>
                         In The News
                       </BinaryText>
                     </h1>

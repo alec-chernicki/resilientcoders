@@ -3,7 +3,6 @@ import React from 'react';
 import CoworkingStep from './StepContent/CoworkingStep';
 import BootcampStep from './StepContent/BootcampStep';
 import LabStep from './StepContent/LabStep';
-import StepContent from './StepContent/StepContent';
 import StepNavigation from './StepNavigation/StepNavigation';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
@@ -142,7 +141,7 @@ class Steps extends React.Component {
               >
                 <div ref={this.setTextContainerElementRef}>
                   <h2>
-                    <BinaryText>
+                    <BinaryText isInverted={true}>
                       {currentStep.title}
                     </BinaryText>
                   </h2>

@@ -1,21 +1,20 @@
-import React, {PropTypes, Component} from 'react'
+import React, {PropTypes, Component} from 'react';
+import classNames from 'classnames';
 
-const ANIMATION_TIME = 85
-
-const ANIMATION_CLASSES = [
-  
-]
+const TIME_BETWEEN_ANIMATIONS = 70
+const MINIMUM_ANIMATION_OFFSET = 1000
+const MAXIMUM_ANIMATION_OFFSET = 100
 
 class BinaryCharacter extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      number: Math.random() > 0.5 ? 0 : 1,
       timesToAnimate: 3,
-      shownCharacter: '',
-      animationCompleted: false
+      currentAnimationState: 0,
     };
+
+    this.animationOffset = Math.floor(Math.random()*(MAXIMUM_ANIMATION_OFFSET-MINIMUM_ANIMATION_OFFSET+1)+MINIMUM_ANIMATION_OFFSET);
   }
   componentDidMount() {
     this.animateCharacter();
@@ -27,27 +26,30 @@ class BinaryCharacter extends Component {
   animateCharacter() {
     this.timeout = setTimeout(() => {
       this.animationInterval = setInterval(() => {
-        const number = this.state.number === 1 ? 0 : 1;
-        const {timesToAnimate} = this.state;
+        const {currentAnimationState} = this.state;
 
-        this.setState({number, shownCharacter: number});
-
-        if (timesToAnimate === 0) {
+        if (currentAnimationState === 2) {
           clearInterval(this.animationInterval);
-          this.setState({shownCharacter: this.props.text, animationCompleted: true});
         }
 
         this.setState({
-          timesToAnimate: timesToAnimate - 1
+          currentAnimationState: currentAnimationState + 1
         });
 
-      }, ANIMATION_TIME);
-    }, this.props.characterIndex * 100);
+      }, TIME_BETWEEN_ANIMATIONS);
+    }, this.animationOffset);
   }
   render() {
+    const letterClass = classNames(
+      "binary-text__letter",
+      `state-${this.state.currentAnimationState}`, {
+        "binary-text__letter--inverted": this.props.isInverted === true
+      }
+    );
+
     return (
-      <span className="binary-text__letter">
-        {this.state.shownCharacter}
+      <span className={letterClass} style={{position: 'relative', display: 'inline-block'}}>
+        {this.props.text}
       </span>
     );
   }
