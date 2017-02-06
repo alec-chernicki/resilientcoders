@@ -1,7 +1,7 @@
 /* eslint-disable */
 import './ConnectingLineVertical.scss';
 import ScrollMagic from 'scrollmagic';
-import {Linear} from 'gsap';
+import 'gsap';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 import React from 'react';
 

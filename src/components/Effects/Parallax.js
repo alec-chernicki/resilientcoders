@@ -1,6 +1,6 @@
 import ScrollMagic from 'ScrollMagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
-import {Linear} from 'gsap';
+import 'gsap';
 import TweenMax from 'TweenMax';
 import TimelineMax from 'TimelineMax';
 import React from 'react';

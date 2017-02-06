@@ -1,27 +1,69 @@
+import './PhotoCarousel.scss';
 import React from 'react'
 import Slider from 'react-slick';
+import alumniOne from '../../../images/dunia.png';
+import alumniTwo from '../../../images/alumniTwo.png';
+import alumniThree from '../../../images/alumniThree.png';
 
 class HomeCarousel extends React.Component {
   render() {
-    var settings = {
-      dots: true,
+    const CAROUSEL_SETTINGS = {
+      className: 'center',
+      centerMode: true,
       infinite: true,
-      speed: 1000,
-      draggable: false,
-      autoplaySpeed: 5000,
-      slidesToShow: 1,
+      slidesToShow: 3,
+      speed: 400,
       autoplay: true,
-      fade: true,
-      arrows: false,
-      swipe: false,
-      slidesToScroll: 1,
-      cssEase: 'cubic-bezier(0.260, 0.530, 0.385, 0.970)'
+      autoplaySpeed: 4500,
+      cssEase: 'ease-in-out',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     };
+
     return (
-      <Slider className="program-photo" {...settings}>
-        <div className="one"/>
-        <div className="two"/>
-        <div className="four"/>
+      <Slider {...CAROUSEL_SETTINGS}>
+        <div>
+          <img src={alumniOne} />
+          <div className="slider-details">
+            <h2>Student Name</h2>
+          </div>
+        </div>
+        <div>
+          <img src={alumniTwo}  />
+          <div className="slider-details">
+            <h2>Student Name</h2>
+          </div>
+        </div>
+        <div>
+          <img src={alumniThree}/>
+          <div className="slider-details">
+            <h2>Student Name</h2>
+          </div>
+        </div>
+        <div>
+          <img src={alumniOne} />
+          <div className="slider-details">
+            <h2>Student Name</h2>
+          </div>
+        </div>
+        <div>
+          <img src={alumniTwo}  />
+          <div className="slider-details">
+            <h2>Student Name</h2>
+          </div>
+        </div>
+        <div>
+          <img src={alumniThree}/>
+          <div className="slider-details">
+            <h2>Student Name</h2>
+          </div>
+        </div>
       </Slider>
     );
   }

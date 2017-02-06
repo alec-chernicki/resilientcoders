@@ -1,7 +1,7 @@
  /* eslint-disable */
 import './Effects.scss';
 import ScrollMagic from 'scrollmagic';
-import {Power1} from 'gsap';
+import 'gsap';
 import TweenMax from 'TweenMax';
 import TimelineMax from 'TimelineMax';
 import React from 'react'

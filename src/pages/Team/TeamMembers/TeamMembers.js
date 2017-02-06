@@ -2,9 +2,7 @@ import './TeamMembers.scss';
 import React from 'react';
 import TeamMember from './TeamMember/TeamMember';
 import teamMembersConfig from './teamMembersConfig';
-import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
-import {Link} from 'react-router';
-import {Linear} from 'gsap'
+import 'gsap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Pin from '../../../components/Effects/Pin';
