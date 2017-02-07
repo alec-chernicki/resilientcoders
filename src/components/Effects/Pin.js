@@ -32,7 +32,6 @@ class Pin extends React.Component {
       .Scene({duration: this.getDuration(), triggerHook: 0, offset: this.props.offset})
       .setPin(this.targetElement)
       .triggerElement(this.props.triggerRef || this.triggerElement)
-      .addIndicators()
       .addTo(this.controller)
   }
   handleResize() {

@@ -52,7 +52,6 @@ class ConnectingLineVertical extends React.Component {
       })
       .setTween(tween)
       .addTo(verticalLineController)
-      .addIndicators()
       .triggerElement(this.triggerElement)
   }
   render() {

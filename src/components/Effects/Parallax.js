@@ -26,7 +26,6 @@ class Parallax extends React.Component {
       .Scene({duration: this.props.duration , offset: 0.3, triggerHook: this.props.triggerHook})
       .setTween(tween)
       .addTo(this.controller)
-      .addIndicators()
       .triggerElement(this.props.triggerRef || this.triggerElement)
   }
   componentWillUnmount() {

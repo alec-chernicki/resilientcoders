@@ -21,10 +21,11 @@ const GetInvolvedPage = (props) => {
       <Hero
         short={true}
         titleLineOne="Get Involved"
+        centered={true}
       >
         <div className="divider divider__red" />
         <p>
-          There's numerous ways to get involved
+          Whether you're a company or an individual, there's numerous ways to join the code literacy movement.
         </p>
       </Hero>
       <SideBySide>
