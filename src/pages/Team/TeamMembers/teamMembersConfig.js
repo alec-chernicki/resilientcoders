@@ -1,13 +1,13 @@
-import DelImage from './TeamMemberImages/del.png';
+import DelImage from './TeamMemberImages/del.jpg';
 import LeonImage from './TeamMemberImages/leon.jpg';
-import HelenImage from './TeamMemberImages/helen.png';
+import HelenImage from './TeamMemberImages/helen.jpg';
 import MuigaiImage from './TeamMemberImages/muigai.png';
 import AlecImage from './TeamMemberImages/alec.png';
-import ChrisImage from './TeamMemberImages/chris.png';
-import JoshImage from './TeamMemberImages/josh.png';
-import PamelaImage from './TeamMemberImages/pamela.png';
+import ChrisImage from './TeamMemberImages/chris.jpg';
+import JoshImage from './TeamMemberImages/josh.jpg';
+import PamelaImage from './TeamMemberImages/pamela.jpg';
 import SusanneImage from './TeamMemberImages/susanne.png';
-import CaImage from './TeamMemberImages/ca.png';
+import CaImage from './TeamMemberImages/ca.jpg';
 import FredImage from './TeamMemberImages/fred.png';
 
 export default {
@@ -103,19 +103,6 @@ export default {
       coverage universe to ensure that SVB is providing the best possible insights, guidance,
       products and services to the partnership and their portfolio companies.`
   },
-  SUSANNE_BECK: {
-    name: 'Susanne Beck',
-    image: SusanneImage,
-    title: 'Board',
-    bio: `Susanne is a Management Consultant specializing in organizational strategy,
-      organizational development, and leadership in the non-profit sector. Prior to consulting,
-      Ms. Beck held a number of executive positions including: Executive Director of NCGS, a
-      national coalition of educators committed to girls' education; Founding Partner and Managing
-      Director of the Trefler Foundation; and Senior Administrator and Director at Harvard's
-      Kennedy School of Government. She holds a BA from Princeton University (English, High Honors)
-      and a graduate degree from Harvard University. Ms. Beck previously worked in the fields of
-      investment banking, management consulting, and marketing.`
-  },
   CA_WEBB: {
     name: 'C.A. Webb',
     image: CaImage,
@@ -133,11 +120,11 @@ export default {
   image: FredImage,
   title: 'Board',
   bio: `Fred builds and leads teams that craft web platforms, products, and communities.
-  From software development and architecture, to product marketing strategy, to business leadership and
-  operations, he thrives at the intersection of technology, strategy, and design. He's worked with
-  organizations of all sizes on two continents, from The Coca-Cola Company and Staples to Sony and Microsoft,
-  to develop and drive business models at scale. Now, he's applying his technical experience as both developer
-  and entrepreneur to transforming the real estate industry with Placester, advising early-stage startups,
-  and speaking at digital marketing and technology events around the world.`
+    From software development and architecture, to product marketing strategy, to business leadership and
+    operations, he thrives at the intersection of technology, strategy, and design. He's worked with
+    organizations of all sizes on two continents, from The Coca-Cola Company and Staples to Sony and Microsoft,
+    to develop and drive business models at scale. Now, he's applying his technical experience as both developer
+    and entrepreneur to transforming the real estate industry with Placester, advising early-stage startups,
+    and speaking at digital marketing and technology events around the world.`
   },
 }
