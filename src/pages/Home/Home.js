@@ -9,6 +9,7 @@ import 'gsap';
 
 import skylineForegroundImage from '../../images/skyline-foreground.svg';
 import skylineBackgroundImage from '../../images/skyline-background.svg';
+import homeImage from './home_photo.png';
 
 
 import Hero from '../../components/Containers/Hero/Hero';
@@ -60,10 +61,12 @@ class Home extends Component {
             </p>
           </SideItem>
           <SideItem type="image" className="pull-up-2">
-            <img src="http://placecorgi.com/260/180" />
+            <img src={homeImage} />
           </SideItem>
         </SideBySide>
+
         <MicahVideo/>
+
         <CenteredContainerOuter color="white">
           <CenteredContainerInner
             color="dark-grey"
@@ -88,7 +91,9 @@ class Home extends Component {
             </p>
           </CenteredContainerInner>
         </CenteredContainerOuter>
+
         <PhotoCarousel />
+
         <CenteredContainerOuter color="white">
           <CenteredContainerInner color="white" className="text-center">
             <h3>Our alumni are employed by companies like:</h3>
@@ -115,7 +120,7 @@ class Home extends Component {
                 to={0}
                 from={500}
                 triggerHook={0.7}
-                duration="70%"
+                duration="80%"
                 ease={Power1.easeOut}
                 className="align-bottom"
               >
@@ -127,7 +132,7 @@ class Home extends Component {
                 to={0}
                 from={350}
                 triggerHook={0.7}
-                duration="80%"
+                duration="90%"
                 ease={Power1.easeOut}
                 className="align-bottom"
               >

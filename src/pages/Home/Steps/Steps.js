@@ -9,6 +9,7 @@ import CenteredContainerInner from '../../../components/Containers/CenteredConta
 import BinaryText from '../../../components/BinaryText/BinaryText';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classNames from 'classnames';
+import _ from 'underscore';
 
 import arrowLeft from '../../../images/left-arrow.svg';
 import arrowRight from '../../../images/right-arrow.svg';
@@ -24,7 +25,7 @@ class Steps extends React.Component {
       textContainerElementHeight: 0,
       changeDirection: 'right'
     };
-    this.setShownStepIndex = this.setShownStepIndex.bind(this);
+    this.setShownStepIndex = _.throttle(this.setShownStepIndex.bind(this), 1000);
     this.handlePrev = this.handlePrev.bind(this);
     this.handleNext = this.handleNext.bind(this);
     this.getTextContainerHeight = this.getTextContainerHeight.bind(this);
@@ -75,10 +76,7 @@ class Steps extends React.Component {
     if (shownStepIndex >= 0) {
       const newStepIndex = shownStepIndex - 1;
 
-      this.setState({
-        shownStepIndex: newStepIndex,
-        changeDirection: this.getChangeDirection(newStepIndex)
-      })
+      this.setShownStepIndex(newStepIndex)
     }
   }
   handleNext() {
@@ -87,10 +85,7 @@ class Steps extends React.Component {
     if (shownStepIndex < stepConfig.length - 1) {
       const newStepIndex = shownStepIndex + 1;
 
-      this.setState({
-        shownStepIndex: newStepIndex,
-        changeDirection: this.getChangeDirection(newStepIndex)
-      })
+      this.setShownStepIndex(newStepIndex)
     }
   }
   renderStep() {

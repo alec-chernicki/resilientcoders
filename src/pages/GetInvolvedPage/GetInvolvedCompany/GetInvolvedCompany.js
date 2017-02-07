@@ -33,6 +33,9 @@ class GetInvolvedCompany extends React.Component {
           short={true}
         >
           <div className="divider divider__red" />
+          <p>
+            Looking for talent? There are two ways to hire our coders.
+          </p>
         </Hero>
         <SideBySide>
           <SideItem className="p-y pull-up-2">
@@ -46,8 +49,8 @@ class GetInvolvedCompany extends React.Component {
               professional skills, while working for a client. You can help launch their careers
               by hiring us to build your website.
             </p>
-            <ButtonPrimary href="/quote">
-              Get a quote
+            <ButtonPrimary to="/lab">
+              Learn more
             </ButtonPrimary>
           </SideItem>
           <SideItem type="image" className="pull-up-2">

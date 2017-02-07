@@ -15,24 +15,23 @@ export default [
   {
     name: "Bootcamp",
     title: 'Resilient Bootcamp',
-    text: `For seven weeks, daily, a select cohort of early-career individuals meet to
-      receive direct instruction from tech professionals on front-end development
-      skills. By the end of their time with us, they have solid proficiency in semantically
-      structured HTML, well-crafted and responsive CSS, JavaScript fundamentals,
-      jQuery, and Git. They have an appreciation for progressive enhancement,
-      accessibility, and usability. At the end, we recruit out of our Bootcamp into
-      Resilient Lab.`,
+    text: `For seven weeks, daily, a select cohort of early-career individuals meet to receive
+      direct instruction from tech professionals on front-end development skills. By the end of
+      their time with us, they have solid proficiency in semantically structured HTML, well-crafted
+      and responsive CSS, JavaScript fundamentals, jQuery, and Git. They have an appreciation for
+      progressive enhancement, accessibility, and usability. At the end, we recruit out of our
+      Bootcamp into Resilient Lab.`,
     image: bootcampImage,
     link: '/bootcamp',
   },
   {
     name: "Lab",
     title: 'Resilient Lab',
-    text: `We run a web development agency that provides meaningful employment opportunities
-    for our highest-performing youth. We've designed and built websites for local startups, non
-    profits, schools, and small businesses. During their apprenticeship with us at Resilient Lab,
-    youth coders continue learning JavaScript, explore additional skills and frameworks as
-    identified by hiring partners, and visit local tech companies.`,
+    text: `We run a web development agency that provides meaningful employment opportunities for
+      our highest-performing youth. We've designed and built websites for local startups, non
+      profits, schools, and small businesses. During their apprenticeship with us at Resilient
+      Lab, youth coders continue learning JavaScript, explore additional skills and frameworks
+      as identified by hiring partners, and visit local tech companies.`,
     image: labImage,
     link: '/lab',
   },

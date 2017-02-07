@@ -32,7 +32,7 @@ class BinaryText extends Component {
     }
 
     this.scene = new ScrollMagic
-      .Scene({offset: 0, triggerHook: 0.75})
+      .Scene({offset: 0, triggerHook: 0.9})
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
 
@@ -61,11 +61,11 @@ class BinaryText extends Component {
   renderWrappedWord(word) {
     const {isInverted} = this.props;
 
-    const wrappedLetters = word.map((letter, i) => (
+    const wrappedLetters = word.map((letter, index) => (
         <BinaryCharacter
-          key={i}
+          key={index}
           text={letter}
-          characterIndex={i}
+          characterIndex={index}
           isInverted={isInverted}
         />
     ));

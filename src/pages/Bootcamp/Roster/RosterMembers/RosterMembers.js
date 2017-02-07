@@ -4,8 +4,8 @@ import TeamMember from './TeamMember/TeamMember';
 import rosterconfig from './rosterMembersConfig';
 import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
 
-class Work extends React.Component {
-  renderTeamMembers() {
+class RosterMembers extends React.Component {
+  renderMembers() {
     return rosterconfig.map((item, i) => (
       <TeamMember
         key={i}
@@ -19,7 +19,7 @@ class Work extends React.Component {
   render() {
     return (
       <div className="team-members">
-        {this.renderRosterMembers()}
+        {this.renderMembers()}
         <div className="team-members__join">
           <div className="team-members__join__container">
             <div>
@@ -41,4 +41,4 @@ class Work extends React.Component {
   }
 }
 
-export default Work;
+export default RosterMembers;

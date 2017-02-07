@@ -5,6 +5,8 @@ import logoAmeliaPeabody from './BootcampPartnersImages/logo_ameliapeabody.jpg';
 import logoJohnHancock from './BootcampPartnersImages/logo_johnhancock.png';
 import logoBnyMellon from './BootcampPartnersImages/logo_bnymellon.png';
 import logoInsightSquared from './BootcampPartnersImages/logo_insightsquared.png';
+import logoZakim from './BootcampPartnersImages/logo_zakim.png';
+import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
 
 export default [
   {
@@ -27,11 +29,19 @@ export default [
     link: 'http://www.johnhancock.com/'
   },
   {
+    image: logoZakim,
+    link: 'http://www.thelennyzakimfund.org/'
+  },
+  {
     image: logoBnyMellon,
     link: 'https://www.bnymellon.com/'
   },
   {
     image: logoInsightSquared,
     link: 'http://www.insightsquared.com/'
+  },
+  {
+    image: logoStateStreet,
+    link: 'http://www.statestreet.com/'
   }
 ]

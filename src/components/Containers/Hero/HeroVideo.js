@@ -14,6 +14,7 @@ class HeroVideo extends Component {
         <video
           preload="auto"
           muted
+          loop
           playsinline
           onCanPlayThrough={this.props.onLoad}
           poster="data:image/gif,AAAA"
