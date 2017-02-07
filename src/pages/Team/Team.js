@@ -36,7 +36,7 @@ class Team extends React.Component {
         <CenteredContainerOuter color="grey" className="p-bottom">
           <CenteredContainerInner className="pull-up-1" color="white">
             <Partners
-              title="Our partners"
+              title="Our partners make it all possible"
               partnersConfig={teamPartnersConfig}
             />
           </CenteredContainerInner>
@@ -44,7 +44,7 @@ class Team extends React.Component {
 
 
         <TeamMembers/>
-        
+
 
         <CenteredContainerOuter color="white">
           <CenteredContainerInner color="white" className="text-center">

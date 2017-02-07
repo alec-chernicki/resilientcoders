@@ -22,12 +22,11 @@ class Footer extends React.Component {
               <div className="footer-container-links">
                 <h3>Bootcamp</h3>
                 <Link to="/bootcamp">About</Link>
-                <Link to="/get-involved/mentor">Mentors</Link>
               </div>
               <div className="footer-container-links">
                 <h3>Lab</h3>
                 <Link to="/lab">About</Link>
-                <Link to="/get-involved/mentor">Get a quote</Link>
+                <Link href="/quote">Get a quote</Link>
               </div>
               <div className="footer-container-links">
                 <h3>Get Involved</h3>
