@@ -6,9 +6,7 @@ import individualImage from './step-one-vertical.png';
 
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 
-import GetInvolvedHero from './get-involved-hero.jpg';
-import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
-import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
+import heroImage from '../../images/hero-image.png';
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import Hero from '../../components/Containers/Hero/Hero';
@@ -21,6 +19,7 @@ const GetInvolvedPage = (props) => {
       <Hero
         short={true}
         titleLineOne="Get Involved"
+        image={heroImage}
         centered={true}
       >
         <div className="divider divider__red" />

@@ -88,10 +88,15 @@
   overflow: hidden;
   z-index: 1;
 
+  @include breakpoint($small-breakpoint) {
+    background-image: url('../../../images/hero-image.png');
+    background-size: cover;
+    background-position: 30%;
+  }
+
   video {
     width: 125%;
     max-height: 125%;
-    background-image: url('./hero-image.jpg');
     background-size: contain;
     object-fit: cover;
     font-family: 'object-fit: contain;';
