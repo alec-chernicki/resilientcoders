@@ -86,8 +86,8 @@ class Home extends Component {
           <CenteredContainerInner className="text-center" color="dark-grey">
             <h1>Our students</h1>
             <p className="text-constrained">
-              Our students come from a variety of backgrounds, they may all have different
-              perspective but one thing they don't lack is grit.
+              Our students come from have a variety of backgrounds and perspectives, but
+              they all share drive and passion.
             </p>
           </CenteredContainerInner>
         </CenteredContainerOuter>
@@ -107,8 +107,8 @@ class Home extends Component {
           <CenteredContainerInner color="transparent" className="text-center">
             <h1>Keep in Touch</h1>
             <p className="text-constrained">
-              We're on a mission to make computer science a meritocracy not an ivory tower.
-              Help us make Boston the most diverse and innovation tech community in the country.
+              We're on a mission to make computer science a meritocracy.
+              Help us make the Boston tech community more diverse and inclusive.
             </p>
             <div className="general-subscribe-form">
               <EmailFormShort />
@@ -120,8 +120,8 @@ class Home extends Component {
                 to={0}
                 from={500}
                 triggerHook={0.7}
-                duration="80%"
-                ease={Power1.easeOut}
+                duration="90%"
+                ease={Power2.easeOut}
                 className="align-bottom"
               >
                 <img src={skylineForegroundImage} role="presentation" />
