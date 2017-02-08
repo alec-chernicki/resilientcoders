@@ -4,9 +4,9 @@ import labImage from './labImage.png';
 
 export default [
   {
-    name: "Coworking",
-    title: 'Coworking',
-    text: `Coworking presents our students with an opportunity to hang out in a safe space
+    name: "Community",
+    title: 'Community',
+    text: `Community presents our students with an opportunity to hang out in a safe space
       together, meet other young coders, and interact with tech professionals as they further
       explore web development at their pace.`,
     image: coworkingImage,
