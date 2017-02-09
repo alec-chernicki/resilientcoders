@@ -58,20 +58,19 @@ class BinaryText extends Component {
 
     return this.renderWrappedText();
   }
-  renderWrappedWord(word, index) {
+  renderWrappedWord(word, indexOuter) {
     const {isInverted} = this.props;
 
-    const wrappedLetters = word.map((letter, index) => (
+    const wrappedLetters = word.map((letter, indexInner) => (
         <BinaryCharacter
-          key={index}
+          key={indexInner}
           text={letter}
-          characterIndex={index}
           isInverted={isInverted}
         />
     ));
 
     return (
-      <div key={index} className="binary-word" style={{position: 'relative', display: 'inline-block'}}>
+      <div key={indexOuter} className="binary-word" style={{position: 'relative', display: 'inline-block'}}>
         {wrappedLetters}
       </div>
     );
@@ -100,7 +99,8 @@ class BinaryText extends Component {
 }
 
 BinaryText.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  
 };
 
 export default BinaryText;

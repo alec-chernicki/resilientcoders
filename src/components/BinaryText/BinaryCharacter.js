@@ -56,7 +56,6 @@ class BinaryCharacter extends Component {
 }
 
 BinaryCharacter.propTypes = {
-  characterIndex: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired
 };
 
