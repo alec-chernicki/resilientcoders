@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import heroVideo from '../../../images/hero-video.mp4';
 
+const setCustomAttributes = (el) => {
+  if (el) {
+    el.setAttribute('playsinline');
+  }
+};
+
 class HeroVideo extends Component {
   render() {
     return (
@@ -13,6 +19,7 @@ class HeroVideo extends Component {
           loop
           onCanPlayThrough={this.props.onLoad}
           poster="data:image/gif,AAAA"
+          ref={setCustomAttributes}
         >
           <source type="video/mp4" src={heroVideo}/>
         </video>
