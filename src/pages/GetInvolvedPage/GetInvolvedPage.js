@@ -23,7 +23,7 @@ const GetInvolvedPage = (props) => {
           Whether you're a company or an individual, there's numerous ways to join the code literacy movement.
         </p>
       </Hero>
-      <SideBySide>
+      <SideBySide className="get-involved-types">
         <SideItem type="image" className="pull-up-2" grow={1} shrink={2} size={33} >
           <Link
             to="/get-involved/company"

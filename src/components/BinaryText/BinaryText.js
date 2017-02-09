@@ -87,10 +87,12 @@ class BinaryText extends Component {
     return (
       <div
         ref={this.setTriggerElementRef.bind(this)}
-        className="binary-text"
-        style={{position: 'relative', display: 'inline-block'}}
       >
-        <div style={{position: 'relative', display: 'inline-block'}} ref={this.setTargetElementRef.bind(this)}>
+        <div
+          className="binary-text"
+          style={{position: 'relative', display: 'inline-block'}}
+          ref={this.setTargetElementRef.bind(this)}
+        >
           {this.renderIfValid()}
         </div>
       </div>
@@ -100,7 +102,7 @@ class BinaryText extends Component {
 
 BinaryText.propTypes = {
   children: PropTypes.string.isRequired,
-  
+
 };
 
 export default BinaryText;

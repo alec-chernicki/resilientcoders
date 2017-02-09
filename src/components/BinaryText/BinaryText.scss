@@ -4,6 +4,8 @@
 
 .binary-text {
   white-space: pre;
+  word-break: break-all;
+  width: 100%;
 }
 
 .binary-word:not(:last-child) {
