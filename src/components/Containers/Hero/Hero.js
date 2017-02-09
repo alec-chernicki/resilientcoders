@@ -27,9 +27,9 @@ class Hero extends React.Component {
   }
   renderTitleLineOne() {
     const {isLoaded} = this.state;
-    const {titleLineOne} = this.props;
+    const {titleLineOne, image} = this.props;
 
-    if (!titleLineOne || !isLoaded) return null
+    if ((!titleLineOne || !isLoaded) && !image) return null
 
     return (
       <h1 className="hero-title-one">
@@ -41,9 +41,9 @@ class Hero extends React.Component {
   }
   renderTitleLineTwo() {
     const {isLoaded} = this.state;
-    const {titleLineTwo} = this.props;
+    const {titleLineTwo, image} = this.props;
 
-    if (!titleLineTwo || !isLoaded) return null
+    if ((!titleLineTwo || !isLoaded) && !image) return null
 
     return (
       <h1 className="hero-title-two">

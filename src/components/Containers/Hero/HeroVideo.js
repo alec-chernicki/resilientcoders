@@ -3,7 +3,8 @@ import heroVideo from '../../../images/hero-video.mp4';
 
 const setCustomAttributes = (el) => {
   if (el) {
-    el.setAttribute('playsinline');
+    el.setAttribute('playsinline', true);
+    el.setAttribute('webkit-playsinline', true);
   }
 };
 
