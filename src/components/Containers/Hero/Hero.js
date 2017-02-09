@@ -19,10 +19,16 @@ class Hero extends React.Component {
     this.setIsLoaded = this.setIsLoaded.bind(this);
   }
   setIsLoaded() {
-    defer(() => {
-      this.setState({
-        isLoaded: true
+    if (!this.props.image) {
+      defer(() => {
+        this.setState({
+          isLoaded: true
+        })
       })
+    }
+
+    this.setState({
+      isLoaded: true
     })
   }
   renderTitleLineOne() {
