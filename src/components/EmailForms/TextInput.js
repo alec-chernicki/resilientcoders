@@ -1,7 +1,6 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import classNames from 'classnames';
 import Formsy from 'formsy-react';
-
 
 //TODO: This component looks diff from every other one because this library ONLY works with mixinsw. :(
 const FormInput = React.createClass({

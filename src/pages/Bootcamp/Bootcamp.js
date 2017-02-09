@@ -1,16 +1,12 @@
 import './Bootcamp.scss';
 import React from 'react';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
-import {Link} from 'react-router';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
-
 import Partners from '../../components/Containers/Partners/Partners';
 import bootcampPartnersConfig from './bootcampPartnersConfig';
-
 import Hero from '../../components/Containers/Hero/Hero';
 import BootcampHeroImage from './bootcamp-hero.png';
-
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';

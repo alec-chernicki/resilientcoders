@@ -1,14 +1,10 @@
 import './GetInvolvedStudent.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import GetInvolvedBase from '../GetInvolvedBase/GetInvolvedBase';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
-
-import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
 import Hero from '../../../components/Containers/Hero/Hero';
-
 import studentImage from '../get-involved-student.jpg';
 import bootcampImage from './get-involved-student-bootcamp.jpg';
 import communityHoursImage from './get-involved-student-hoc.jpg';
@@ -36,7 +32,7 @@ const GetInvolvedStudent = (props) => {
           </p>
         </SideItem>
         <SideItem type="image" className="pull-up-2">
-          <img src={communityHoursImage} />
+          <img src={communityHoursImage} role="presentation" />
         </SideItem>
       </SideBySide>
       <SideBySide>
@@ -55,7 +51,7 @@ const GetInvolvedStudent = (props) => {
           </ButtonPrimary>
         </SideItem>
         <SideItem type="image">
-          <img src={bootcampImage} />
+          <img src={bootcampImage} role="presentation" />
         </SideItem>
       </SideBySide>
     </RouteTransition>

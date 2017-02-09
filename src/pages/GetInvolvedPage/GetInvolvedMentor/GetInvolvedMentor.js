@@ -1,13 +1,11 @@
 import './GetInvolvedMentor.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import GetInvolvedBase from '../GetInvolvedBase/GetInvolvedBase';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import Hero from '../../../components/Containers/Hero/Hero';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
 import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter'
-import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner'
 import EmailFormLong from '../../../components/EmailForms/EmailFormLong';
 
 import mentorImage from './get-involved-mentor.jpg';
@@ -46,7 +44,7 @@ const GetInvolvedMentor = (props) => {
           </ButtonPrimary>
         </SideItem>
         <SideItem type="image" className="pull-up-2">
-          <img src={communityImage} />
+          <img src={communityImage} alt="Resilient community" />
         </SideItem>
       </SideBySide>
       <CenteredContainerOuter color="white" className="p-bottom highest">

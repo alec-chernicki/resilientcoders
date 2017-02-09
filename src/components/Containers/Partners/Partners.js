@@ -1,9 +1,6 @@
 import './Partners.scss';
 import React from 'react';
 import classNames from 'classnames';
-
-import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
-import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import LinkPrimary from '../../../components/Buttons/LinkPrimary';
 
 class Partners extends React.Component {

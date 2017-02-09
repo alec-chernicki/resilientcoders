@@ -42,7 +42,7 @@ class TeamMember extends React.Component {
     )
   }
   render() {
-    const {image, name, bio, setShownMember} = this.props;
+    const {name} = this.props;
 
     return (
       <div>

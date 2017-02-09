@@ -68,10 +68,10 @@ class Footer extends React.Component {
             <div className="footer-container-lower">
               <div className="social-container">
                 <a href="https://twitter.com/resilientcoders" target="_blank">
-                  <img src={twitterIcon} />
+                  <img src={twitterIcon} alt="Twitter logo"/>
                 </a>
                 <a href="https://www.facebook.com/resilientcoders/" target="_blank">
-                  <img src={facebookIcon} />
+                  <img src={facebookIcon} alt="Facebook logo"/>
                 </a>
               </div>
               <p>

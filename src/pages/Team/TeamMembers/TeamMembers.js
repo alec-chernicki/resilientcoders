@@ -2,7 +2,7 @@ import './TeamMembers.scss';
 import React from 'react';
 import TeamMember from './TeamMember/TeamMember';
 import teamMembersConfig from './teamMembersConfig';
-import 'gsap';
+import {Linear} from 'TweenMax';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Pin from '../../../components/Effects/Pin';

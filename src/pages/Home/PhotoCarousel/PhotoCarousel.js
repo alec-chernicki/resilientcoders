@@ -6,7 +6,7 @@ import alumniTwo from './alumniTwo.png';
 import alumniThree from './alumniThree.png';
 import alumniFour from './alumniFour.png';
 
-class HomeCarousel extends React.Component {
+class PhotoCarousel extends React.Component {
   render() {
     const CAROUSEL_SETTINGS = {
       className: 'center',
@@ -30,25 +30,25 @@ class HomeCarousel extends React.Component {
     return (
       <Slider {...CAROUSEL_SETTINGS}>
         <div>
-          <img src={alumniOne} />
+          <img src={alumniOne} role="presentation" />
           <div className="slider-details">
             <h2>Dunia Goncalves</h2>
           </div>
         </div>
         <div>
-          <img src={alumniTwo}  />
+          <img src={alumniTwo}  role="presentation" />
           <div className="slider-details">
             <h2>Jean Exavier</h2>
           </div>
         </div>
         <div>
-          <img src={alumniThree}/>
+          <img src={alumniThree}role="presentation" />
           <div className="slider-details">
             <h2>Ashley Liang</h2>
           </div>
         </div>
         <div>
-          <img src={alumniFour} />
+          <img src={alumniFour} role="presentation" />
           <div className="slider-details">
             <h2>Johan Baez</h2>
           </div>
@@ -58,4 +58,4 @@ class HomeCarousel extends React.Component {
   }
 }
 
-export default HomeCarousel;
+export default PhotoCarousel;

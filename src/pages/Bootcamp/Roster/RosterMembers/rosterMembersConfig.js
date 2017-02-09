@@ -5,7 +5,6 @@ import AlecImage from './TeamMemberImages/alec.png';
 import ChrisImage from './TeamMemberImages/chris.jpg';
 import JoshImage from './TeamMemberImages/josh.jpg';
 import PamelaImage from './TeamMemberImages/pamela.jpg';
-import SusanneImage from './TeamMemberImages/susanne.jpg';
 import CaImage from './TeamMemberImages/ca.jpg';
 import LeonImage from './TeamMemberImages/leon.jpg';
 import FredImage from './TeamMemberImages/fred.png';

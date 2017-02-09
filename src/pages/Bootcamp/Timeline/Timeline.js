@@ -6,8 +6,6 @@ import BinaryText from '../../../components/BinaryText/BinaryText';
 import careerLeft from './career-right.jpg';
 import careerRight from './career-left.jpg';
 
-import Parallax from '../../../components/Effects/Parallax';
-
 const Timeline = () => {
   return (
     <div>

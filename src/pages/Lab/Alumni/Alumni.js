@@ -2,14 +2,6 @@ import './Alumni.scss';
 import React from 'react'
 
 class Alumni extends React.Component {
-  renderAlumni() {
-    return alumniConfig.map((item, index) => (
-      <div key={index}>
-        <AlumniItem image={item.image} name={item.name} biography={item.biography}/>
-      </div>
-    ));
-
-  }
   render() {
     return (
       <div className="write-off">

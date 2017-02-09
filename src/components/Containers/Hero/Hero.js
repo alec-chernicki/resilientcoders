@@ -1,12 +1,10 @@
 import './Hero.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import DotLight from '../Dots/dot-light.svg';
 import BinaryText from '../../BinaryText/BinaryText';
 import HeroVideo from './HeroVideo';
-import HeroImage from './hero-image.jpg';
 import Fade from '../../Effects/Fade';
-import Scale from '../../Effects/Scale';
 import {defer} from 'underscore';
 
 class Hero extends React.Component {
@@ -56,7 +54,7 @@ class Hero extends React.Component {
     )
   }
   renderImageContent() {
-    const {image, set} = this.props;
+    const {image} = this.props;
     const imageClass = classNames('hero__image-wrapper', {
       'loaded': this.state.isLoaded
     })
@@ -68,6 +66,7 @@ class Hero extends React.Component {
             className="hero__image"
             src={image}
             onLoad={this.setIsLoaded}
+            role="presentation"
           />
         </div>
       )
@@ -81,7 +80,7 @@ class Hero extends React.Component {
     }
   }
   render () {
-    const {image, children, className, centered, short} = this.props;
+    const {children, className, centered, short} = this.props;
 
     const heroClass = classNames('hero', className, {
       'hero--short': short === true

@@ -22,7 +22,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.json'],
     alias: {
-      "modernizr$": path.resolve(__dirname, ".modernizrrc"),
+      "gsap": "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
       "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
       "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
       "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),

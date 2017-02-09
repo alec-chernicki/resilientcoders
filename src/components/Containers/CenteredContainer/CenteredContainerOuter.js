@@ -1,5 +1,5 @@
 import './CenteredContainer.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
 const CenteredContainerOuter = ({color, children, className}) => {

@@ -1,9 +1,7 @@
 import './Roster.scss';
 import React from 'react';
-import BinaryText from '../../../components/BinaryText/BinaryText';
 import RosterMembers from './RosterMembers/RosterMembers';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import Work from '../../Lab/Work/Work'
 import Hero from '../../../components/Containers/Hero/Hero';
 import RosterHeroImage from './roster-hero.png';
 

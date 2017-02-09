@@ -1,9 +1,7 @@
 import './GetInvolvedCompany.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import GetInvolvedBase from '../GetInvolvedBase/GetInvolvedBase';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
-import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
@@ -54,7 +52,7 @@ class GetInvolvedCompany extends React.Component {
             </ButtonPrimary>
           </SideItem>
           <SideItem type="image" className="pull-up-2">
-            <img src={contractLabImage} />
+            <img src={contractLabImage} role="presentation" />
           </SideItem>
         </SideBySide>
 
@@ -70,7 +68,7 @@ class GetInvolvedCompany extends React.Component {
             </p>
           </SideItem>
           <SideItem type="image">
-            <img src={hireStudentsImage} />
+            <img src={hireStudentsImage} role="presentation" />
           </SideItem>
         </SideBySide>
 

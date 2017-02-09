@@ -2,15 +2,10 @@ import './Navigation.scss';
 import React from 'react';
 import classNames from 'classnames';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {browserHistory} from 'react-router';
 import routePaths from '../../constants/routePaths';
-
 import logoRed from './logo_red.png';
 import {Link} from 'react-router';
 import Headroom from 'react-headroom';
-import _ from 'underscore';
-
-const {partial} = _
 
 class Navigation extends React.Component {
   constructor(props) {

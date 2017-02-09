@@ -3,9 +3,6 @@ import React from 'react';
 import classNames from 'classnames';
 
 class StepProgressBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   renderLines() {
     const {stepConfig, shownStepIndex} = this.props;
 

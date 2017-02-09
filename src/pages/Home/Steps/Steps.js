@@ -1,8 +1,5 @@
 import './Steps.scss';
 import React from 'react';
-import CoworkingStep from './StepContent/CoworkingStep';
-import BootcampStep from './StepContent/BootcampStep';
-import LabStep from './StepContent/LabStep';
 import StepNavigation from './StepNavigation/StepNavigation';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
@@ -169,20 +166,18 @@ class Steps extends React.Component {
           className={prevClass}
           onClick={this.handlePrev}
         >
-          <img src={arrowLeft} />
+          <img src={arrowLeft} role="presentation" />
         </button>
         <button
           className={nextClass}
           onClick={this.handleNext}
         >
-          <img src={arrowRight} />
+          <img src={arrowRight} role="presentation" />
         </button>
       </div>
     )
   }
   render() {
-    const {shownStepIndex} = this.state;
-
     return (
       <div>
         <CenteredContainerInner color="white">
@@ -190,7 +185,7 @@ class Steps extends React.Component {
             <h1>AN END TO END SOLUTION</h1>
             <div className="divider divider__red" />
             <p className="text-constrained">
-              In order to effectively educate and employ our students we’ve developed a funnel with overlapping means of engagement.
+              In order to effectively educate and employ our students we’ve developed a `funnel with overlapping means of engagement.
             </p>
           </div>
         </CenteredContainerInner>

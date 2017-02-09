@@ -4,7 +4,6 @@ import axios from 'axios';
 import classNames from 'classnames';
 import Formsy from 'formsy-react'
 import TextInput from './TextInput';
-import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 
 class EmailFormLong extends React.Component {
   constructor(props) {

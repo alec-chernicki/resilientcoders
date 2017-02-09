@@ -1,6 +1,5 @@
 import './WorkItem.scss';
-import React, {PropTypes} from 'react'
-import ScrollMagic from 'scrollmagic';
+import React, {PropTypes} from 'react';
 import Parallax from '../../../../components/Effects/Parallax';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 

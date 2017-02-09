@@ -1,6 +1,5 @@
 import './Effects.scss';
 import ScrollMagic from 'scrollmagic';
-import TweenMax from 'TweenMax';
 import React from 'react'
 
 class ToggleClass extends React.Component {

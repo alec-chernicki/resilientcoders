@@ -2,15 +2,11 @@ import './GetInvolved.scss';
 import React from 'react';
 import {Link} from 'react-router';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
-import individualImage from './step-one-vertical.png';
-
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
-
 import heroImage from '../../images/hero-image.png';
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import Hero from '../../components/Containers/Hero/Hero';
-
 import donateImage from './donate.jpg';
 
 const GetInvolvedPage = (props) => {
@@ -76,7 +72,7 @@ const GetInvolvedPage = (props) => {
       </SideBySide>
       <SideBySide>
         <SideItem type="image">
-          <img src={donateImage} />
+          <img src={donateImage} alt="A group of coders"/>
         </SideItem>
         <SideItem className="p-y">
           <h2>

@@ -5,9 +5,6 @@ import classNames from 'classnames';
 import StepProgressBar from './StepProgressBar/StepProgressBar';
 
 class StepNavigation extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   renderSteps() {
     const {setShownStepIndex, shownStepIndex, stepConfig} = this.props;
 
@@ -40,8 +37,6 @@ class StepNavigation extends React.Component {
     )
   }
   render() {
-    const {stepConfig} = this.props;
-
     return (
       <div className="step-navigation">
         {this.renderSteps()}

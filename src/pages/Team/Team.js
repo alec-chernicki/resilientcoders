@@ -1,15 +1,11 @@
 import './Team.scss';
 import React from 'react';
-import BinaryText from '../../components/BinaryText/BinaryText';
 import TeamMembers from './TeamMembers/TeamMembers';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
-
 import Partners from '../../components/Containers/Partners/Partners';
 import teamPartnersConfig from './TeamPartners/teamPartnersConfig';
-
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
-
 import Hero from '../../components/Containers/Hero/Hero';
 import TeamHeroImage from './team-hero.png';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';

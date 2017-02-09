@@ -58,7 +58,7 @@ class BinaryText extends Component {
 
     return this.renderWrappedText();
   }
-  renderWrappedWord(word) {
+  renderWrappedWord(word, index) {
     const {isInverted} = this.props;
 
     const wrappedLetters = word.map((letter, index) => (
@@ -71,7 +71,7 @@ class BinaryText extends Component {
     ));
 
     return (
-      <div className="binary-word" style={{position: 'relative', display: 'inline-block'}}>
+      <div key={index} className="binary-word" style={{position: 'relative', display: 'inline-block'}}>
         {wrappedLetters}
       </div>
     );

@@ -30,7 +30,7 @@ class ButtonPrimary extends React.Component {
     }
   }
   render() {
-    const {children, target, href, className} = this.props;
+    const {className} = this.props;
     const buttonPrimaryClass = classNames('button-container', className, {
       'button-container--red': this.props.color === 'red',
       'button-container--white': this.props.color === 'white'

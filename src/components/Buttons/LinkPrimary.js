@@ -1,6 +1,5 @@
 import './buttons.scss';
-import React, {PropTypes} from 'react';
-import classNames from 'classnames';
+import React from 'react';
 import {Link} from 'react-router';
 
 class LinkPrimary extends React.Component {
@@ -30,7 +29,6 @@ class LinkPrimary extends React.Component {
     }
   }
   render() {
-    const {children, target, href, className} = this.props;
     return (
       <div>
         {this.renderButton()}

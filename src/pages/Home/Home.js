@@ -5,13 +5,10 @@ import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import MicahVideo from './MicahVideo/MicahVideo';
 import PhotoCarousel from './PhotoCarousel/PhotoCarousel';
 import Steps from './Steps/Steps';
-import 'gsap';
-
+import {Power1, Power2} from 'TweenMax';
 import skylineForegroundImage from '../../images/skyline-foreground.svg';
 import skylineBackgroundImage from '../../images/skyline-background.svg';
 import homeImage from './home_photo.png';
-
-
 import Hero from '../../components/Containers/Hero/Hero';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
@@ -21,7 +18,6 @@ import CenteredContainerInner from '../../components/Containers/CenteredContaine
 import Parallax from '../../components/Effects/Parallax';
 import Partners from '../../components/Containers/Partners/Partners';
 import alumniCompaniesConfig from './alumniCompaniesConfig';
-
 
 class Home extends Component {
   render() {
@@ -61,7 +57,7 @@ class Home extends Component {
             </p>
           </SideItem>
           <SideItem type="image" className="pull-up-2">
-            <img src={homeImage} />
+            <img src={homeImage} role="presentation"/>
           </SideItem>
         </SideBySide>
 
