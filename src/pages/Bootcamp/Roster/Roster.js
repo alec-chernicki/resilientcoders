@@ -4,6 +4,8 @@ import RosterMembers from './RosterMembers/RosterMembers';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
 import Hero from '../../../components/Containers/Hero/Hero';
 import RosterHeroImage from './roster-hero.png';
+import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
+import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 
 const Team = (props) => {
   return (
@@ -20,9 +22,19 @@ const Team = (props) => {
           have in common a belief in the social mission, and the muscle to make real change.
         </p>
       </Hero>
+
+      <div id="bootcamproster">
+      <CenteredContainerOuter color="grey" className="p-bottom">
+        <CenteredContainerInner className="pull-up-1" color="white">
+          <RosterMembers/>
+        </CenteredContainerInner>
+      </CenteredContainerOuter>
+      </div>
+
+
       <div className="team">
         <div className="team-container">
-          <RosterMembers/>
+
         </div>
       </div>
     </RouteTransition>

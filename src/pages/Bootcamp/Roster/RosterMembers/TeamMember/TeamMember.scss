@@ -3,23 +3,24 @@
 
 .team-item {
   position: relative;
-  padding: 25px;
+  padding: 25px 25px 0 25px;
   background: #FFF;
   flex: 2 2 40%;
-  margin-bottom: 60px;
 
   @include breakpoint($small-breakpoint) {
     flex: 1 1 100%;
   }
 
   &:nth-child(odd) {
-    margin-right: 60px;
+    margin-right: -20px;
 
     @include breakpoint($small-breakpoint) {
       margin-right: 0;
     }
   }
 }
+
+
 
 .team-item__image{
   height: 450px;
@@ -37,7 +38,7 @@
   position: absolute;
   right: 25px;
   color: #FFF;
-  top: 25px;
+  top: 16px;
   outline: none;
   @include transition;
 
@@ -80,7 +81,7 @@
   top: 25px;
   left: 25px;
   right: 25px;
-  bottom: 150px;
+  bottom: 100px;
   background-color: rgba($background-secondary, 0.85);
   color: #FFF;
   padding: 25px;

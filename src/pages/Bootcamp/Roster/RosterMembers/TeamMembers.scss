@@ -1,16 +1,20 @@
 @import '../../../../stylesheets/variables';
 @import '../../../../stylesheets/mixins';
 
+
+
+
 .team-members {
   display: flex;
   flex-flow: row wrap;
   position: relative;
   z-index: 1000;
+  padding-top:0;
 }
 
 .team-members__join {
   flex: 2 2 40%;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   background-color: #FFF;
   padding: 25px;
 }

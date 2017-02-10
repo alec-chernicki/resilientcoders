@@ -1,6 +1,15 @@
 @import '../../../stylesheets/variables';
 @import '../../../stylesheets/mixins';
 
+
+#bootcamproster .centered-container-inner--standard {
+  padding: 0px;
+}
+
+#bootcamproster .centered-container-inner--white h2 {
+    color: #FFF !important;
+}
+
 .team {
   padding-bottom: 30px;
   background-color: #FFF;

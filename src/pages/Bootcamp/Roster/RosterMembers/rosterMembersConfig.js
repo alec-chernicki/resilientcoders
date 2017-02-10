@@ -48,11 +48,35 @@ export default [
     name: 'Maria Ines Peniche',
     image: MuigaiImage,
     title: '',
-    bio: `Maria is a hard-working, fast learner who is always ready for the next challenge.
-    She's comfortable working in a fast-paced environment with a diverse workforce in a multicultural
-    setting. She has excellent analytical, written and oral communication skills in both English and Spanish.
-    She's fluently bilingual. Learn more about Maria, and about her experiences as a member of the Dream 9, on
-    NPR: http://latinousa.org/episode/the-dream-9-rb/`
+    bio: `As a person who migrated at the age of 10, I’ve learned the meaning of hard work. I’m a fast
+    learner who is always ready for the next challenge and, because of that, I pursue my dreams and
+    re-shape them as I continue to grow as a person and a professional. I’m a sociologist and political
+    science major, who enjoys interacting with people. I feel comfortable working in a fast-paced
+    environment, and thrive in stressful situations. Having been a simultaneous interpreter has made me
+    quick, analytical, communicative, fluently bilingual, and has taught me the value of working in a
+    multicultural environment. Learn more about my experiences as a member of the
+    Dream 9, on NPR: http://latinousa.org/episode/the-dream-9-rb/`
+  },
+  {
+    name: 'Jose Pimentel',
+    image: MuigaiImage,
+    title: '',
+    bio: `I feel most comfortable when covered in a warm blanket of code/data/media. I became interested in
+    programming while studying Industrial Engineering in the Dominican Republic. I practiced algorithms,
+    taught myself HTML, CSS, and JavaScript. I'm hungry for success, love mapping out problems, and enjoy
+    being around interesting people. See some of my work at http://jedpimentel.github.io/`
+  },
+  {
+    name: 'Arnaldo Pires',
+    image: MuigaiImage,
+    title: '',
+    bio: `I’m always asking questions and digging deep into every issue with an analytical growth mindset.
+    My IT support background has enabled me to become a relentless detective, troubleshooting issues until
+    real solutions are found. This attitude has also translated into my approach to web development.
+    Despite previously having very little knowledge of it, Resilient Coders has taught me that learning
+    is really only a matter of time, and persistence; putting in the long hours and having the dedication
+    and passion to learn new things, and then using that knowledge to create products, all excites me.
+    This has empowered me to be a change agent in my community.`
   },
 
 ]
