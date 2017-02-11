@@ -11,15 +11,15 @@ const Team = (props) => {
   return (
     <RouteTransition>
       <Hero
-        titleLineOne="The team"
+        titleLineOne="The Roster"
         image={RosterHeroImage}
         centered={true}
       >
         <div className="divider divider__red" />
         <p>
-          Strong student leadership, dedicated staff, and an impressive board make Resilient Coders
-          what it is. The ranges of experience and background vary across the team. But our people
-          have in common a belief in the social mission, and the muscle to make real change.
+          Bootcampers meet daily, for eight weeks, to learn semantically structured
+          HTML, responsive CSS, JavaScript, jQuery, git, and more. Before graduating,
+          they will have built, and pushed to GitHub, actual client work that showcases these aptitudes.
         </p>
       </Hero>
 
