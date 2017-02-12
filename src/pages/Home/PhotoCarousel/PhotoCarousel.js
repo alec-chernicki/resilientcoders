@@ -44,7 +44,7 @@ class PhotoCarousel extends React.Component {
         <div>
           <img src={alumniThree}role="presentation" />
           <div className="slider-details">
-            <h2>Ashley Liang</h2>
+            <h2>Ashley Laing</h2>
           </div>
         </div>
         <div>

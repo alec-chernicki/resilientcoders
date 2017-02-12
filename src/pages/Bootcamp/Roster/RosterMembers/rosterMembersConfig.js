@@ -8,10 +8,24 @@ import LawrenceImage from './TeamMemberImages/lawrence.png';
 import EmilioImage from './TeamMemberImages/emilio.png';
 import JoseImage from './TeamMemberImages/jose.png';
 import ParissImage from './TeamMemberImages/pariss.png';
+import ShawnImage from './TeamMemberImages/shawn.png';
 
 
 export default [
-
+  {
+    name: 'David Arango',
+    image: DavidImage,
+    title: '',
+    bio: `Being a Latino from Colombia, I have a lot of drive. I’ve been
+told by many I can’t, and it has never stopped me from getting to where I am today.
+I am a leader, an aspiring full-stack developer, an optimist.
+Always keeping a positive mindset and a remarkable work
+ethic to do my everyday tasks. As a leader, I get involved in
+group projects where I can effectively communicate with
+others to get the objective completed. Learning is pleasure
+and as an aspiring full-stack developer I am always reading,
+researching, and practicing new techniques.`
+  },
   {
     name: 'Tristian Barboza-Graham',
     image: TristianImage,
@@ -25,14 +39,37 @@ export default [
     name: 'Pariss Chandler',
     image: ParissImage,
     title: '',
-    bio: `Pariss is a creative and diligent individual who uses her love for front end web development
+    bio: `I am a creative and diligent individual, and use my love for front end web development
     to design vibrant and engaging products. Coming from an artistic background of acting, filmmaking,
-    and writing, she loves grabbing the attention of an audience, and rewarding it with a great experience.
-    Pariss enjoys working with diverse and casual teams, with colleagues who believe in constantly honing
-    their skills. She wants to contribute to an environment in which people are encouraged to learn, teach, and thrive.`
+    and writing, I love grabbing the attention of an audience, and rewarding it with a great experience.
+    I enjoy working with diverse and casual teams, with colleagues who believe in constantly honing
+    their skills. I want to contribute to an environment in which people are encouraged to learn, teach, and thrive.`
   },
-
-
+  /*
+  {
+    name: 'Roger Moraldo',
+    image: MariaImage,
+    title: '',
+    bio: `As far as I am aware I am the first in my family to have any kind of foot in web development, let alone an
+affinity for it. Be it for the sake of learning or to make something pleasing to the eye, or to make
+something that really engages users and makes it easy and intuitive to navigate, I am almost always
+coding. If not coding I enjoy using Photoshop to manipulate and edit images to better fit with said code.
+No matter how, even when idle, I am always observing and learning and thinking of how to improve
+something. This is thanks to my affinity for web development, for drawing, and for writing.`
+  },
+*/
+{
+  name: 'Emilio Murillo',
+  image: EmilioImage,
+  title: '',
+  bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
+spoken to big crowds as guest speaker, and have led many community organizations in Boston. I know how to
+communicate well with others in any environment, and in any situation. This allows me to be progressive
+with no limits. I am also an independent fashion designer. I've drawn from this experience a certain patience, drive,
+and creative perspective, which influence my approach to designing and building digital products. Semantically structured HTML, responsive CSS,
+and javascript are just a new set of tools in my kit, with which I intend to make an
+impact in the tech world.`
+},
   {
     name: 'Maria Ines Peniche',
     image: MariaImage,
@@ -76,8 +113,24 @@ export default [
     education reform, research, and consulting have given me a strong foundation in outreach, data analysis,
      and organizational strategy.  Through building teams and facilitating collaboration, I embrace the
      process of refining products to most efficiently create the greatest value.  My commitment to continuous
-     improvement have brought me to Resilient Coders and Startup Institute.
+     improvement has brought me to Resilient Coders and Startup Institute.
      Through these experiences I have acquired the distinguishing marketing insights, business acumen and
      web development skills to drive innovation and value creation in the private sector.`
+  },
+  {
+    name: 'Dashawn Watkins',
+    image: ShawnImage,
+    title: '',
+    bio: `I am a hard worker with an insatiable thirst for theory and knowledge.
+Problem solving comes naturally to an American soldier, as well as not giving up
+until the job is complete. I have a strong background in community
+organization, customer service, and IT support. After being the spearhead of a
+youth organization, an assistant manager at FedEx and then a soldier, I decided
+to take on the challenge of using my design skills to start a career
+in front end web development, instead of looking for another
+"job". When you hire me, you get someone who is dedicated to work, someone
+who is a team player, someone who can take on the greatest of challenges,
+someone who can solve a multitude of problems, and most importantly, someone you
+know will get the job done.`
   },
 ]
