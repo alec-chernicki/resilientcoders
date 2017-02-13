@@ -56,7 +56,7 @@ class Home extends Component {
               </span>
             </p>
           </SideItem>
-          <SideItem type="image" className="pull-up-2">
+          <SideItem flush={true} className="pull-up-2">
             <img src={homeImage} role="presentation"/>
           </SideItem>
         </SideBySide>

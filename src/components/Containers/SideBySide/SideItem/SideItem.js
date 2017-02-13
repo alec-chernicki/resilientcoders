@@ -2,12 +2,12 @@ import './SideItem.scss';
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-const SideItem = ({children, size, shrink, grow, type, className}) => {
+const SideItem = ({children, size, shrink, grow, type, className, flush}) => {
   const sideItemClass = classNames('side-item', className, {
     'side-item--grey': type === 'grey',
     'side-item--red': type === 'red',
     'side-item--white': type === 'white',
-    'side-item--image': type === 'image',
+    'side-item--image': flush === true,
   })
 
   return (
@@ -27,6 +27,7 @@ SideItem.defaultProps = {
   shrink: 1,
   grow: 1,
   type: 'white',
+  flush: false
 }
 
 SideItem.propTypes = {

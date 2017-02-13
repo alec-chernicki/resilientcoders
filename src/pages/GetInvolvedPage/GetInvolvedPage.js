@@ -24,7 +24,7 @@ const GetInvolvedPage = (props) => {
         </p>
       </Hero>
       <SideBySide className="get-involved-types">
-        <SideItem type="image" className="pull-up-2" grow={1} shrink={2} size={33} >
+        <SideItem flush={true} className="pull-up-2" grow={1} shrink={2} size={33} >
           <Link
             to="/get-involved/company"
             className="get-involved-types__item p-y get-involved-types__item--company"
@@ -39,7 +39,7 @@ const GetInvolvedPage = (props) => {
             </div>
           </Link>
         </SideItem>
-        <SideItem type="image" className="pull-up-2 m-x" grow={2} size={33} >
+        <SideItem flush={true} className="pull-up-2 m-x" grow={2} size={33} >
           <Link
             to="/get-involved/student"
             className="get-involved-types__item p-y get-involved-types__item--company"
@@ -54,7 +54,7 @@ const GetInvolvedPage = (props) => {
             </div>
           </Link>
         </SideItem>
-        <SideItem type="image" className="pull-up-2" grow={1} shrink={2} size={33} >
+        <SideItem flush={true} className="pull-up-2" grow={1} shrink={2} size={33} >
           <Link
             to="/get-involved/mentor"
             className="get-involved-types__item p-y get-involved-types__item--mentor"
@@ -71,7 +71,7 @@ const GetInvolvedPage = (props) => {
         </SideItem>
       </SideBySide>
       <SideBySide>
-        <SideItem type="image">
+        <SideItem flush={true}>
           <img src={donateImage} alt="A group of coders"/>
         </SideItem>
         <SideItem className="p-y">

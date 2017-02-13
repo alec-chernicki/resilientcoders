@@ -31,7 +31,7 @@ const GetInvolvedStudent = (props) => {
             It's all drop-in. Come by, once, from 3:30pm to 6pm, to 50 Milk St. Boston MA. Fifth floor. Build something today.
           </p>
         </SideItem>
-        <SideItem type="image" className="pull-up-2">
+        <SideItem flush={true} className="pull-up-2">
           <img src={communityHoursImage} role="presentation" />
         </SideItem>
       </SideBySide>
@@ -50,7 +50,7 @@ const GetInvolvedStudent = (props) => {
             Learn more
           </ButtonPrimary>
         </SideItem>
-        <SideItem type="image">
+        <SideItem flush={true}>
           <img src={bootcampImage} role="presentation" />
         </SideItem>
       </SideBySide>

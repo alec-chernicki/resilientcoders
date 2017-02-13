@@ -35,8 +35,26 @@ class GetInvolvedCompany extends React.Component {
             Looking for talent? There are two ways to hire our coders.
           </p>
         </Hero>
-        <SideBySide>
-          <SideItem className="p-y pull-up-2">
+
+        <SideBySide color="white">
+          <SideItem className="p-y">
+            <h2>
+              Stay informed
+            </h2>
+            <p>
+              Be the first to know when we have new students to hire or when partnership
+              opportunities become available.
+            </p>
+          </SideItem>
+          <SideItem className="pull-up-3" flush={true}>
+            <EmailFormLong
+              formUrl={COMPANY_FORM_URL}
+            />
+          </SideItem>
+        </SideBySide>
+
+        <SideBySide className="p-top">
+          <SideItem className="p-y">
             <h2>
               Contract Lab
             </h2>
@@ -51,12 +69,12 @@ class GetInvolvedCompany extends React.Component {
               Learn more
             </ButtonPrimary>
           </SideItem>
-          <SideItem type="image" className="pull-up-2">
+          <SideItem flush={true}>
             <img src={contractLabImage} role="presentation" />
           </SideItem>
         </SideBySide>
 
-        <SideBySide className="p-bottom-3">
+        <SideBySide>
           <SideItem className="p-y">
             <h2>
               Hire Our Students
@@ -67,20 +85,10 @@ class GetInvolvedCompany extends React.Component {
               throughout their internship. In hiring one of us, you hire all of us.
             </p>
           </SideItem>
-          <SideItem type="image">
+          <SideItem flush={true}>
             <img src={hireStudentsImage} role="presentation" />
           </SideItem>
         </SideBySide>
-
-        <CenteredContainerOuter color="white" className="p-bottom highest">
-          <EmailFormLong
-            className="pull-up-2"
-            title="Stay informed"
-            text="Be the first to know when we have new students to hire or when partnership
-            opportunities become available."
-            formUrl={COMPANY_FORM_URL}
-          />
-        </CenteredContainerOuter>
       </RouteTransition>
     )
   }

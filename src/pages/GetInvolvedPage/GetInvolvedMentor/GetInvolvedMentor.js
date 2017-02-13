@@ -23,8 +23,26 @@ const GetInvolvedMentor = (props) => {
       >
         <div className="divider divider__red" />
       </Hero>
-      <SideBySide className="p-bottom-3">
-        <SideItem className="p-y pull-up-2">
+
+      <SideBySide color="white">
+        <SideItem className="p-y">
+          <h2>
+            Stay informed
+          </h2>
+          <p>
+            Enter in your information and we'll send over some details on how to get involved as
+            a mentor and keep you up to date as new opportunities become available.
+          </p>
+        </SideItem>
+        <SideItem className="pull-up-3" flush={true}>
+          <EmailFormLong
+            formUrl={MENTOR_FORM_URL}
+          />
+        </SideItem>
+      </SideBySide>
+
+      <SideBySide className="p-top">
+        <SideItem className="p-y">
           <h2>
             Bootcamp
           </h2>
@@ -43,19 +61,10 @@ const GetInvolvedMentor = (props) => {
             Book a time to mentor
           </ButtonPrimary>
         </SideItem>
-        <SideItem type="image" className="pull-up-2">
+        <SideItem flush={true}>
           <img src={communityImage} alt="Resilient community" />
         </SideItem>
       </SideBySide>
-      <CenteredContainerOuter color="white" className="p-bottom highest">
-        <EmailFormLong
-          className="pull-up-2"
-          title="Sign Up"
-          text="Enter in your information and we'll send over some details on how to get involved as
-          a mentor and keep you up to date as new opportunities become available."
-          formUrl={MENTOR_FORM_URL}
-        />
-      </CenteredContainerOuter>
     </RouteTransition>
   )
 }

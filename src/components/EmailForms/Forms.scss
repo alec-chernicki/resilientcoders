@@ -131,11 +131,10 @@
 
   .email-form--long__wrapper {
     display: inline-block;
-    border-radius: 3px;
+    border-left: solid 5px $accent-primary;
     background-color: $background-secondary;
     padding: 30px 80px 60px;
     text-align: center;
-    margin: 0 15px;
 
     @include breakpoint($small-breakpoint) {
       padding-left: 20px;
