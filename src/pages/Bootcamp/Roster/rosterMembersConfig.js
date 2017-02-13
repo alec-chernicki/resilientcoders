@@ -8,6 +8,7 @@ import LawrenceImage from './RosterMemberImages/lawrence.png';
 import EmilioImage from './RosterMemberImages/emilio.png';
 import JoseImage from './RosterMemberImages/jose.png';
 import ParissImage from './RosterMemberImages/pariss.png';
+import RogerImage from './RosterMemberImages/roger.png';
 import ShawnImage from './RosterMemberImages/shawn.png';
 
 
@@ -17,15 +18,19 @@ export default [
     availableForHire: true,
     image: DavidImage,
     title: '',
-    bio: `Being a Latino from Colombia, I have a lot of drive. I’ve been
-told by many I can’t, and it has never stopped me from getting to where I am today.
-I am a leader, an aspiring full-stack developer, an optimist.
-Always keeping a positive mindset and a remarkable work
-ethic to do my everyday tasks. As a leader, I get involved in
-group projects where I can effectively communicate with
-others to get the objective completed. Learning is pleasure
-and as an aspiring full-stack developer I am always reading,
-researching, and practicing new techniques.`
+    bio: `Migrating from Colombia to the United States as a young boy
+has given me a unique drive and ambition. I’ve been told I
+can’t by many, but that has never stopped me from
+persevering and getting to where I am today. I am a leader,
+aspiring full-stack developer, and an optimist. With a positive
+mind and diligent work ethic, I’m detail-oriented and
+meticulous about completing everyday tasks with excellence.
+I’m a natural leader who welcomes group projects where I
+can effectively communicate with others and aggressively
+drive to accomplish our objectives. Learning is pleasure and
+as full-stack developer in training, I am always reading,
+researching and practicing new techniques to better hone my
+craft.`
   },
   {
     name: 'Tristian Barboza-Graham',
@@ -48,11 +53,11 @@ researching, and practicing new techniques.`
     I enjoy working with diverse and casual teams, with colleagues who believe in constantly honing
     their skills. I want to contribute to an environment in which people are encouraged to learn, teach, and thrive.`
   },
-  /*
+
   {
     name: 'Roger Moraldo',
     availableForHire: true,
-    image: MariaImage,
+    image: RogerImage,
     title: '',
     bio: `As far as I am aware I am the first in my family to have any kind of foot in web development, let alone an
 affinity for it. Be it for the sake of learning or to make something pleasing to the eye, or to make
@@ -61,7 +66,6 @@ coding. If not coding I enjoy using Photoshop to manipulate and edit images to b
 No matter how, even when idle, I am always observing and learning and thinking of how to improve
 something. This is thanks to my affinity for web development, for drawing, and for writing.`
   },
-*/
 {
   name: 'Emilio Murillo',
   availableForHire: true,
