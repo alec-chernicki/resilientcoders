@@ -2,7 +2,6 @@ import './GetInvolvedCompany.scss';
 import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
-import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
 import EmailFormLong from '../../../components/EmailForms/EmailFormLong';
@@ -84,6 +83,9 @@ class GetInvolvedCompany extends React.Component {
               developers. There’s no placement fee, and we continue to support our coders
               throughout their internship. In hiring one of us, you hire all of us.
             </p>
+            <ButtonPrimary to="/bootcamp/roster">
+              View students
+            </ButtonPrimary>
           </SideItem>
           <SideItem flush={true}>
             <img src={hireStudentsImage} role="presentation" />
