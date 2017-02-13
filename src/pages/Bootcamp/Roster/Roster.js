@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
 import Hero from '../../../components/Containers/Hero/Hero';
 import RosterHeroImage from './roster-hero.png';
@@ -14,6 +15,8 @@ class Roster extends React.Component {
         name={item.name}
         title={item.title}
         bio={item.bio}
+        availableForHire={item.availableForHire}
+        hash={this.props.location.hash}
       />
     ));
   }

@@ -68,6 +68,7 @@
     "react-headroom": "^2.1.2",
     "react-router": "^2.6.1",
     "react-slick": "^0.14.6",
+    "react-zeroclipboard": "^3.2.2",
     "scrollmagic": "^2.0.5",
     "twitter": "^1.4.0",
     "underscore": "^1.8.3"

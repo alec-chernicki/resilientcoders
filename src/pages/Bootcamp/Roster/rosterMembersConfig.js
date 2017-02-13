@@ -14,6 +14,7 @@ import ShawnImage from './RosterMemberImages/shawn.png';
 export default [
   {
     name: 'David Arango',
+    availableForHire: true,
     image: DavidImage,
     title: '',
     bio: `Being a Latino from Colombia, I have a lot of drive. I’ve been
@@ -28,6 +29,7 @@ researching, and practicing new techniques.`
   },
   {
     name: 'Tristian Barboza-Graham',
+    availableForHire: true,
     image: TristianImage,
     title: '',
     bio: `I am a web developer, designer & artist. I am a strong advocate for balance; in fact, I am ambidextrous.
@@ -37,6 +39,7 @@ researching, and practicing new techniques.`
   },
   {
     name: 'Pariss Chandler',
+    availableForHire: true,
     image: ParissImage,
     title: '',
     bio: `I am a creative and diligent individual, and use my love for front end web development
@@ -48,6 +51,7 @@ researching, and practicing new techniques.`
   /*
   {
     name: 'Roger Moraldo',
+    availableForHire: true,
     image: MariaImage,
     title: '',
     bio: `As far as I am aware I am the first in my family to have any kind of foot in web development, let alone an
@@ -60,6 +64,7 @@ something. This is thanks to my affinity for web development, for drawing, and f
 */
 {
   name: 'Emilio Murillo',
+  availableForHire: true,
   image: EmilioImage,
   title: '',
   bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
@@ -72,6 +77,7 @@ impact in the tech world.`
 },
   {
     name: 'Maria Ines Peniche',
+    availableForHire: true,
     image: MariaImage,
     title: '',
     bio: `As a person who migrated at the age of 10, I’ve learned the meaning of hard work. I’m a fast
@@ -85,6 +91,7 @@ impact in the tech world.`
   },
   {
     name: 'Jose Pimentel',
+    availableForHire: true,
     image: JoseImage,
     title: '',
     bio: `I feel most comfortable when covered in a warm blanket of code/data/media. I became interested in
@@ -94,6 +101,7 @@ impact in the tech world.`
   },
   {
     name: 'Arnaldo Pires',
+    availableForHire: true,
     image: ArnoldImage,
     title: '',
     bio: `I’m always asking questions and digging deep into every issue with an analytical growth mindset.
@@ -106,6 +114,7 @@ impact in the tech world.`
   },
   {
     name: 'Stephen Simpson',
+    availableForHire: true,
     image: StephenImage,
     title: '',
     bio: `I'm immensely proud to be a Howard-bred hustler with
@@ -119,6 +128,7 @@ impact in the tech world.`
   },
   {
     name: 'Dashawn Watkins',
+    availableForHire: true,
     image: ShawnImage,
     title: '',
     bio: `I am a hard worker with an insatiable thirst for theory and knowledge.
