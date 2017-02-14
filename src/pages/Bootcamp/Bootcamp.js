@@ -105,7 +105,7 @@ class Bootcamp extends React.Component {
         <CenteredContainerOuter color="white">
           <CenteredContainerInner color="white">
             <Partners
-              title="Thank you to our bootcam partners"
+              title="Thank you to our bootcamp partners"
               partnersConfig={bootcampPartnersConfig}
             />
           </CenteredContainerInner>
