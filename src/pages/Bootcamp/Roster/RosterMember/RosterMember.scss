@@ -1,0 +1,44 @@
+@import '../../../../stylesheets/variables';
+@import '../../../../stylesheets/mixins';
+
+.roster-member {
+  transform: translateY(-100px);
+}
+
+.roster-member-availability {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: $background-secondary;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.roster-member-copy {
+  border: none;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: $accent-primary;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 1px;
+  @include transition;
+  outline: 0;
+
+  &.zeroclipboard-is-hover {
+    background-color: darken($accent-primary, 10%);
+  }
+
+  img {
+    width: 22px;
+  }
+}
+
+.roster-controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

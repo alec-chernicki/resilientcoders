@@ -5,6 +5,7 @@
   padding-left: 50px;
   padding-right: 50px;
   width: 100%;
+  position: relative;
 
   @include breakpoint($small-breakpoint) {
     padding-left: 20px;
@@ -81,6 +82,8 @@
   }
 
   img {
+    object-fit: cover;
     height: 100%;
+    width: 100%;
   }
 }

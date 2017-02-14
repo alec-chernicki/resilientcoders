@@ -2,7 +2,7 @@ import './CenteredContainer.scss';
 import React from 'react';
 import classNames from 'classnames';
 
-const CenteredContainerOuter = ({color, children, className}) => {
+const CenteredContainerOuter = ({color, children, id, className}) => {
 
   const CenteredContainerOuterClass =  classNames(
     'centered-container-outer', className,
@@ -13,7 +13,7 @@ const CenteredContainerOuter = ({color, children, className}) => {
     }
   );
   return (
-    <div className={CenteredContainerOuterClass}>
+    <div id={id} className={CenteredContainerOuterClass}>
       {children}
     </div>
   )
