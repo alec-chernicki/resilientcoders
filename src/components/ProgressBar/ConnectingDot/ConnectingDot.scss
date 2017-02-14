@@ -13,13 +13,9 @@
   z-index: 80;
   border-radius: 50%;
   opacity: 0;
-  display: none;
-
-  .active & {
-    opacity: 1;
-  }
 
   .pulsing & {
+    opacity: 1;
     animation: pulse-large 2s infinite;
     animation-delay: 100ms;
     animation-fill-mode: backwards;

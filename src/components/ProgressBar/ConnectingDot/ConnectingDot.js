@@ -6,17 +6,20 @@ import React from 'react'
 const dotController = new ScrollMagic.Controller();
 
 class ConnectingDot extends React.Component {
-  componentWillMount() {
-
-  }
   componentDidMount() {
     if (!this.triggerElement || !this.targetElement) {
       return
     }
 
     this.scene = new ScrollMagic
-      .Scene({offset: 0, triggerHook: 0.4})
+      .Scene({ offset: 0, triggerHook: 0.4 })
       .setClassToggle(this.targetElement, 'active')
+      .addTo(dotController)
+      .triggerElement(this.triggerElement)
+
+    this.sceneTwo = new ScrollMagic
+      .Scene({ offset: 0, triggerHook: 0.4 })
+      .setClassToggle(this.targetElement, 'pulsing')
       .addTo(dotController)
       .triggerElement(this.triggerElement)
   }
@@ -27,8 +30,11 @@ class ConnectingDot extends React.Component {
     this.triggerElement = element;
   }
   componentWillUnmount() {
-    this.scene.destroy(true)
+    this.scene.destroy(true);
     this.scene = null;
+
+    this.sceneTwo.destroy(true);
+    this.sceneTwo = null;
   }
   render() {
     return (
