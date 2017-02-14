@@ -93,7 +93,7 @@ class BinaryText extends Component {
           style={{position: 'relative', display: 'inline-block'}}
           ref={this.setTargetElementRef.bind(this)}
         >
-          {this.renderIfValid()}
+          {this.renderWrappedText()}
         </div>
       </div>
     );
