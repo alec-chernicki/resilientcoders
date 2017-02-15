@@ -21,7 +21,7 @@
   margin-top: 20px;
 
   &:hover:before {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   &:before {
@@ -31,10 +31,10 @@
     height: 100%;
     left: 0;
     width: 100%;
-    transform: translateX(-100%);
+    transform: translateY(100%);
     top: 0;
     z-index: 5;
-    @include transition;
+    @include transition-short;
   }
 }
 

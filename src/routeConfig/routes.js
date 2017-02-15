@@ -12,7 +12,7 @@ import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
 import Roster from '../pages/Bootcamp/Roster/Roster';
 
-import {Route, IndexRoute} from 'react-router';
+import {Route, IndexRoute, Redirect} from 'react-router';
 import App from '../App';
 
 export default(
@@ -31,5 +31,6 @@ export default(
       <Route path="mentor" component={GetInvolvedMentor}/>
       <Route path="student" component={GetInvolvedStudent}/>
     </Route>
+    <Redirect from="*" to="/" />
   </Route>
 );
