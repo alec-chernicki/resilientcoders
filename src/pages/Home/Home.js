@@ -96,6 +96,7 @@ class Home extends Component {
             <Partners
               partnersConfig={alumniCompaniesConfig}
               buttonText="Hire our students"
+              to="/bootcamp/roster"
             />
           </CenteredContainerInner>
         </CenteredContainerOuter>

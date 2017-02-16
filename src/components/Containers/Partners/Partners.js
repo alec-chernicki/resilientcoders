@@ -24,7 +24,7 @@ class Partners extends React.Component {
         <div className="partners__items">
           {this.renderPartners()}
         </div>
-        <LinkPrimary to="/get-involved/company">
+        <LinkPrimary to={this.props.to}>
           {this.props.buttonText}
         </LinkPrimary>
       </div>
@@ -33,7 +33,8 @@ class Partners extends React.Component {
 }
 
 Partners.defaultProps = {
-  buttonText: "Partner with us"
+  buttonText: "Partner with us",
+  to: "/get-involved/company"
 }
 
 export default Partners;

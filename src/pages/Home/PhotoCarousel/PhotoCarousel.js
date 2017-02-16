@@ -1,12 +1,26 @@
 import './PhotoCarousel.scss';
 import React from 'react'
 import Slider from 'react-slick';
-import alumniOne from './alumniOne.png';
-import alumniTwo from './alumniTwo.png';
-import alumniThree from './alumniThree.png';
-import alumniFour from './alumniFour.png';
+import rosterMembersConfig from '../../Bootcamp/Roster/rosterMembersConfig';
 
 class PhotoCarousel extends React.Component {
+  renderPhotos() {
+    return rosterMembersConfig.map((member) => {
+      return (
+        <div>
+          <img
+            src={member.image}
+            role="presentation"
+          />
+          <div className="slider-details">
+            <h2>
+              {member.name}
+            </h2>
+          </div>
+        </div>
+      )
+    });
+  }
   render() {
     const CAROUSEL_SETTINGS = {
       className: 'center',
@@ -29,30 +43,7 @@ class PhotoCarousel extends React.Component {
 
     return (
       <Slider {...CAROUSEL_SETTINGS}>
-        <div>
-          <img src={alumniOne} role="presentation" />
-          <div className="slider-details">
-            <h2>Dunia Goncalves</h2>
-          </div>
-        </div>
-        <div>
-          <img src={alumniTwo}  role="presentation" />
-          <div className="slider-details">
-            <h2>Jean Exavier</h2>
-          </div>
-        </div>
-        <div>
-          <img src={alumniThree}role="presentation" />
-          <div className="slider-details">
-            <h2>Ashley Laing</h2>
-          </div>
-        </div>
-        <div>
-          <img src={alumniFour} role="presentation" />
-          <div className="slider-details">
-            <h2>Johan Baez</h2>
-          </div>
-        </div>
+        {this.renderPhotos()}
       </Slider>
     );
   }

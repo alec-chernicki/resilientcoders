@@ -29,7 +29,7 @@ class RosterMember extends React.Component {
   componentDidMount() {
     const {hash} = this.props;
     if (hash && hash.replace(/#/g, '') === this.getId()) {
-      setTimeout(() => ReactDOM.findDOMNode(this).scrollIntoView(), 150)
+      setTimeout(() => ReactDOM.findDOMNode(this).scrollIntoView(), 350)
     }
   }
   getMailToLink() {
