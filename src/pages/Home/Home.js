@@ -92,7 +92,7 @@ class Home extends Component {
 
         <CenteredContainerOuter color="white">
           <CenteredContainerInner color="white" className="text-center">
-            <h3>Our hackers are employed by companies like:</h3>
+            <h3>Our alumni are employed by companies like:</h3>
             <Partners
               partnersConfig={alumniCompaniesConfig}
               buttonText="Hire our students"
