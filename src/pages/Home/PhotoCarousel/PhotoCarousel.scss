@@ -18,13 +18,13 @@
   position: relative;
   transition: all 600ms ease-in-out;
   border-radius: 0px;
-  will-change: transform;
+  will-change: transform, filter;
   backface-visibility: hidden;
-  filter: grayscale(100%);
 
   img {
     opacity: 0.4;
     transition: all 600ms ease-in-out;
+    filter: grayscale(100%);
   }
 
   &:before {
@@ -47,7 +47,6 @@
   &.slick-center {
     transform: scale(1.15);
     z-index: 10000;
-    filter: grayscale(0%);
 
     @include breakpoint($small-breakpoint) {
       transform: none;
@@ -55,6 +54,7 @@
 
     img {
       opacity: 1;
+      filter: grayscale(0%);
     }
   }
 }
