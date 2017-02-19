@@ -124,9 +124,9 @@ class RosterMember extends React.Component {
     )
   }
   renderLinks() {
-    const {linkedIn, github} = this.props;
+    const {linkedin, github} = this.props;
 
-    if (!linkedIn && !github) {
+    if (!linkedin && !github) {
       return null;
     }
 
