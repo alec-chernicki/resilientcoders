@@ -17,26 +17,28 @@ export default [
     name: 'David Arango',
     availableForHire: true,
     image: DavidImage,
-    title: '',
+    linkedin: '',
+    github: 'https://github.com/arangodavid',
     bio: `Migrating from Colombia to the United States as a young boy
-has given me a unique drive and ambition. I’ve been told I
-can’t by many, but that has never stopped me from
-persevering and getting to where I am today. I am a leader,
-aspiring full-stack developer, and an optimist. With a positive
-mind and diligent work ethic, I’m detail-oriented and
-meticulous about completing everyday tasks with excellence.
-I’m a natural leader who welcomes group projects where I
-can effectively communicate with others and aggressively
-drive to accomplish our objectives. Learning is pleasure and
-as full-stack developer in training, I am always reading,
-researching and practicing new techniques to better hone my
-craft.`
+      has given me a unique drive and ambition. I’ve been told I
+      can’t by many, but that has never stopped me from
+      persevering and getting to where I am today. I am a leader,
+      aspiring full-stack developer, and an optimist. With a positive
+      mind and diligent work ethic, I’m detail-oriented and
+      meticulous about completing everyday tasks with excellence.
+      I’m a natural leader who welcomes group projects where I
+      can effectively communicate with others and aggressively
+      drive to accomplish our objectives. Learning is pleasure and
+      as full-stack developer in training, I am always reading,
+      researching and practicing new techniques to better hone my
+      craft.`
   },
   {
     name: 'Tristian Barboza-Graham',
     availableForHire: true,
     image: TristianImage,
-    title: '',
+    linkedin: '',
+    github: '',
     bio: `I am a web developer, designer & artist. I am a strong advocate for balance; in fact, I am ambidextrous.
     That, plus my fine arts background, afford me a unique perspective in my work. I've learned a new set of skills
     at Resilient Coders Bootcamp: HTML, CSS, some JavaScript fundamentals, jQuery, and UX Design. I have a strong interest
@@ -46,7 +48,8 @@ craft.`
     name: 'Pariss Chandler',
     availableForHire: true,
     image: ParissImage,
-    title: '',
+    linkedin: 'https://www.linkedin.com/in/pariss-chandler-1b06aa9a',
+    github: 'https://github.com/ParissChandler',
     bio: `I am a creative and diligent individual, and use my love for front end web development
     to design vibrant and engaging products. Coming from an artistic background of acting, filmmaking,
     and writing, I love grabbing the attention of an audience, and rewarding it with a great experience.
@@ -58,7 +61,8 @@ craft.`
     name: 'Roger Moraldo',
     availableForHire: true,
     image: RogerImage,
-    title: '',
+    linkedin: 'https://www.linkedin.com/in/roger-moraldo-00a646122',
+    github: 'https://github.com/Corriger',
     bio: `As far as I am aware I am the first in my family to have any kind of foot in web development, let alone an
 affinity for it. Be it for the sake of learning or to make something pleasing to the eye, or to make
 something that really engages users and makes it easy and intuitive to navigate, I am almost always
@@ -70,7 +74,8 @@ something. This is thanks to my affinity for web development, for drawing, and f
   name: 'Emilio Murillo',
   availableForHire: true,
   image: EmilioImage,
-  title: '',
+  linkedin: 'https://www.linkedin.com/in/emilio-murillo-983034134',
+  github: 'https://github.com/EmilioMurillo',
   bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
 spoken to big crowds as guest speaker, and have led many community organizations in Boston. I know how to
 communicate well with others in any environment, and in any situation. This allows me to be progressive
@@ -83,7 +88,8 @@ impact in the tech world.`
     name: 'Maria Ines Peniche',
     availableForHire: true,
     image: MariaImage,
-    title: '',
+    linkedin: 'https://www.linkedin.com/in/ma-in%C3%A9s-peniche-a2a039134/',
+    github: 'https://github.com/InPen',
     bio: `As a person who migrated at the age of 10, I’ve learned the meaning of hard work. I’m a fast
     learner who is always ready for the next challenge and, because of that, I pursue my dreams and
     re-shape them as I continue to grow as a person and a professional. I’m a sociologist and political
@@ -97,7 +103,8 @@ impact in the tech world.`
     name: 'Jose Pimentel',
     availableForHire: true,
     image: JoseImage,
-    title: '',
+    linkedin: 'https://www.linkedin.com/in/jedpimentel/',
+    github: 'https://github.com/jedpimentel',
     bio: `I feel most comfortable when covered in a warm blanket of code/data/media. I became interested in
     programming while studying Industrial Engineering in the Dominican Republic. I practiced algorithms,
     taught myself HTML, CSS, and JavaScript. I'm hungry for success, love mapping out problems, and enjoy
@@ -107,7 +114,8 @@ impact in the tech world.`
     name: 'Arnaldo Pires',
     availableForHire: true,
     image: ArnoldImage,
-    title: '',
+    linkedin: '',
+    github: '',
     bio: `I’m always asking questions and digging deep into every issue with an analytical growth mindset.
     My IT support background has enabled me to become a relentless detective, troubleshooting issues until
     real solutions are found. This attitude has also translated into my approach to web development.
@@ -120,7 +128,8 @@ impact in the tech world.`
     name: 'Stephen Simpson',
     availableForHire: true,
     image: StephenImage,
-    title: '',
+    linkedin: 'https://www.linkedin.com/in/stephen-simpson-33021b37',
+    github: '',
     bio: `I'm immensely proud to be a Howard-bred hustler with
     an insatiable desire for driving transformative social impact.  My experiences in political organizing,
     education reform, research, and consulting have given me a strong foundation in outreach, data analysis,
@@ -134,7 +143,8 @@ impact in the tech world.`
     name: 'Dashawn Watkins',
     availableForHire: true,
     image: ShawnImage,
-    title: '',
+    linkedin: '',
+    github: '',
     bio: `I am a hard worker with an insatiable thirst for theory and knowledge.
 Problem solving comes naturally to an American soldier, as well as not giving up
 until the job is complete. I have a strong background in community

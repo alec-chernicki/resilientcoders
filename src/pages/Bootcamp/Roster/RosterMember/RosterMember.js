@@ -6,6 +6,8 @@ import SideItem from '../../../../components/Containers/SideBySide/SideItem/Side
 import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
 import ReactZeroClipboard from 'react-zeroclipboard';
 import linkIcon from './link_icon.svg';
+import githubLogo from '../../../../images/github.svg';
+import linkedinLogo from '../../../../images/linkedin.svg';
 import swfPath from 'react-zeroclipboard/assets/ZeroClipboard.swf';
 
 const COPY_BUTTON_STATE = {
@@ -95,6 +97,46 @@ class RosterMember extends React.Component {
       </div>
     )
   }
+  renderLinkedin() {
+    const {linkedin} = this.props;
+
+    if (!linkedin) {
+      return null;
+    }
+
+    return (
+      <a href={linkedin} className="icon" target="_blank">
+        <img src={linkedinLogo} />
+      </a>
+    )
+  }
+  renderGithub() {
+    const {github} = this.props;
+
+    if (!github) {
+      return null;
+    }
+
+    return (
+      <a href={github} className="icon" target="_blank">
+        <img src={githubLogo} />
+      </a>
+    )
+  }
+  renderLinks() {
+    const {linkedIn, github} = this.props;
+
+    if (!linkedIn && !github) {
+      return null;
+    }
+
+    return (
+      <div className="roster-member-links">
+        {this.renderLinkedin()}
+        {this.renderGithub()}
+      </div>
+    )
+  }
   render() {
     const {image, name, bio} = this.props;
 
@@ -108,6 +150,7 @@ class RosterMember extends React.Component {
           <h2>
             {name}
           </h2>
+          {this.renderLinks()}
           <p>
             {bio}
           </p>
