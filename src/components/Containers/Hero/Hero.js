@@ -128,7 +128,9 @@ class Hero extends React.Component {
           <div className={heroContentClass}>
             {this.renderTitleLineOne()}
             {this.renderTitleLineTwo()}
-            {children}
+            <div className="hero__content_container-inner">
+              {children}
+            </div>
           </div>
         </div>
       </div>
