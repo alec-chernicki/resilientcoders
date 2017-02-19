@@ -1,6 +1,7 @@
 import './Bootcamp.scss';
 import React from 'react';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
+import LinkPrimary from '../../components/Buttons/LinkPrimary';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
 import Partners from '../../components/Containers/Partners/Partners';
@@ -41,11 +42,16 @@ class Bootcamp extends React.Component {
           <SideItem className="p-y pull-up-1">
             <h2>Current Bootcamp</h2>
             <p>
-              Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> office at 4 Copley Place. We are no longer accepting applications. Interested in
-              applying for the next one? Stop by our <a href="/get-involved/student">Community Hours</a>, meet the staff.
-              Coders who want to get involved as mentors should peruse the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a> that features moments
-              during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
+              Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> is just about finished. Interested in
+              applying for the next one? Stop by our <a href="/bootcamp/roster">Community Hours</a>, meet the staff.
             </p>
+            <p>
+              Our coders are now available for hire, interested in learning more? Check out their
+              bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
+            </p>
+            <ButtonPrimary to="/bootcamp/roster">
+              Meet our grads
+            </ButtonPrimary>
           </SideItem>
         </SideBySide>
         <CenteredContainerOuter color="white">

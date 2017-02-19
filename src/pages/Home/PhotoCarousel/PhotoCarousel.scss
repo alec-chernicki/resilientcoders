@@ -18,10 +18,10 @@
   position: relative;
   transition: all 600ms ease-in-out;
   border-radius: 0px;
-  will-change: transform, filter;
   backface-visibility: hidden;
 
   img {
+    backface-visibility: hidden;
     opacity: 0.4;
     transition: all 600ms ease-in-out;
     filter: grayscale(100%);
