@@ -14,13 +14,6 @@ import hireStudentsImage from './get-involved-dunia.jpg';
 const COMPANY_FORM_URL = '/api/subscribe/company';
 
 class GetInvolvedCompany extends React.Component {
-  renderHeroContent() {
-    return (
-      <p>
-        Looking for talent? There are two ways to hire our coders.
-      </p>
-    )
-  }
   render () {
     return (
       <RouteTransition>
@@ -31,7 +24,9 @@ class GetInvolvedCompany extends React.Component {
         >
           <div className="divider divider__red" />
           <p>
-            Looking for talent? There are two ways to hire our coders.
+            Committing to diversity and inclusion at your company requires more
+            than words, it requires action. From recuitment to hiring, we're here to help
+            at every step of the process.
           </p>
         </Hero>
 
@@ -55,7 +50,7 @@ class GetInvolvedCompany extends React.Component {
         <SideBySide className="p-top">
           <SideItem className="p-y">
             <h2>
-              Contract Lab
+              Contract Our Students
             </h2>
             <p>
               Some of our Bootcamp
@@ -80,11 +75,13 @@ class GetInvolvedCompany extends React.Component {
             </h2>
             <p>
               You can also hire our coders directly into your company, as interns or entry-level
-              developers. There’s no placement fee, and we continue to support our coders
-              throughout their internship. In hiring one of us, you hire all of us.
+              developers. Our students are guaranteed to have a junior level degree of experience
+              in front end development. There’s no placement fee, and we continue to support the
+              learning of our coders throughout their internship or career. In hiring one of us,
+              you hire all of us.
             </p>
             <ButtonPrimary to="/bootcamp/roster">
-              View students
+              Meet our students
             </ButtonPrimary>
           </SideItem>
           <SideItem flush={true}>
