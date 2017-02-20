@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
 import Hero from '../../../components/Containers/Hero/Hero';
 import RosterHeroImage from './roster-hero.png';
 import rosterconfig from './rosterMembersConfig';
 import RosterMember from './RosterMember/RosterMember';
+import Helmet from 'react-helmet';
 
 class Roster extends React.Component {
   renderMembers() {
@@ -25,6 +25,7 @@ class Roster extends React.Component {
   render () {
     return (
       <RouteTransition>
+        <Helmet title="Roster" />
         <Hero
           titleLineOne="The Roster"
           image={RosterHeroImage}
