@@ -8,8 +8,13 @@ import GoogleAnalytics from 'react-ga';
 GoogleAnalytics.initialize('UA-66576358-3');
 
 const logPageView = () => {
+  // Manually push new page event to Google analytics
   GoogleAnalytics.set({ page: window.location.pathname });
   GoogleAnalytics.pageview(window.location.pathname);
+
+  // Manually push new page event to HubSpot analytics
+  const _hsq = window._hsq = window._hsq || [];
+  _hsq.push(['trackPageView']);
 };
 
 render((
