@@ -5,9 +5,8 @@ import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import Hero from '../../../components/Containers/Hero/Hero';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
-import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter'
 import EmailFormLong from '../../../components/EmailForms/EmailFormLong';
-
+import Helmet from 'react-helmet';
 import mentorImage from './get-involved-mentor.jpg';
 import communityImage from './community.jpg';
 
@@ -16,6 +15,7 @@ const MENTOR_FORM_URL = '/api/subscribe/mentor';
 const GetInvolvedMentor = (props) => {
   return (
     <RouteTransition>
+      <Helmet title="For Mentors" />
       <Hero
         titleLineOne="For mentors"
         image={mentorImage}

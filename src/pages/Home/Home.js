@@ -18,11 +18,13 @@ import CenteredContainerInner from '../../components/Containers/CenteredContaine
 import Parallax from '../../components/Effects/Parallax';
 import Partners from '../../components/Containers/Partners/Partners';
 import alumniCompaniesConfig from './alumniCompaniesConfig';
+import Helmet from "react-helmet";
 
 class Home extends Component {
   render() {
     return (
       <RouteTransition>
+        <Helmet title="Home" />
         <Hero
           titleLineOne="Hacking the"
           titleLineTwo="opportunity gap"

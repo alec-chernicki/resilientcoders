@@ -4,20 +4,19 @@ import Work from './Work/Work';
 import Alumni from './Alumni/Alumni';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
-
 import Hero from '../../components/Containers/Hero/Hero';
 import LabHeroImage from './lab-hero.png';
-
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
-
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter'
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
+import Helmet from 'react-helmet';
 
 class Lab extends React.Component {
   render() {
     return (
       <RouteTransition>
+        <Helmet title="Lab" />
         <Hero
           image={LabHeroImage}
           short={true}

@@ -8,10 +8,12 @@ import Hero from '../../../components/Containers/Hero/Hero';
 import studentImage from '../get-involved-student.jpg';
 import bootcampImage from './get-involved-student-bootcamp.jpg';
 import communityHoursImage from './get-involved-student-hoc.jpg';
+import Helmet from 'react-helmet';
 
 const GetInvolvedStudent = (props) => {
   return (
     <RouteTransition>
+      <Helmet title="For Students" />
       <Hero
         titleLineOne="For students"
         image={studentImage}

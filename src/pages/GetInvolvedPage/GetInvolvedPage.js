@@ -8,10 +8,12 @@ import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import Hero from '../../components/Containers/Hero/Hero';
 import donateImage from './donate.jpg';
+import Helmet from 'react-helmet';
 
 const GetInvolvedPage = (props) => {
   return (
     <RouteTransition>
+      <Helmet title="Get Involved" />
       <Hero
         short={true}
         titleLineOne="Get Involved"

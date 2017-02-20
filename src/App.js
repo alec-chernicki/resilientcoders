@@ -3,9 +3,11 @@ import React, {PropTypes} from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import Helmet from "react-helmet";
 
 const App = ({children, location}) => (
   <div className="app">
+    <Helmet titleTemplate="Resilient Coders - %s" />
     <Navigation/>
     <ReactCSSTransitionGroup
       component="div"

@@ -5,11 +5,11 @@ import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
 import EmailFormLong from '../../../components/EmailForms/EmailFormLong';
-
 import companyImage from '../get-involved-company.jpg';
 import Hero from '../../../components/Containers/Hero/Hero';
 import contractLabImage from './get-involved-lab.jpg';
 import hireStudentsImage from './get-involved-dunia.jpg';
+import Helmet from 'react-helmet';
 
 const COMPANY_FORM_URL = '/api/subscribe/company';
 
@@ -17,6 +17,7 @@ class GetInvolvedCompany extends React.Component {
   render () {
     return (
       <RouteTransition>
+        <Helmet title="For Companies" />
         <Hero
           image={companyImage}
           titleLineOne="For companies"

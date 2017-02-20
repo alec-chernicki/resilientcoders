@@ -9,11 +9,13 @@ import CenteredContainerInner from '../../components/Containers/CenteredContaine
 import Hero from '../../components/Containers/Hero/Hero';
 import TeamHeroImage from './team-hero.png';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
+import Helmet from 'react-helmet';
 
 class Team extends React.Component {
   render() {
     return (
       <RouteTransition>
+        <Helmet title="Team" />
         <Hero
           titleLineOne="The team"
           short={true}

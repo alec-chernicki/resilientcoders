@@ -5,6 +5,7 @@ import NewsItem from './NewsItem/NewsItem';
 import Tweet from '../../components/Tweet/Tweet';
 import newsItemConfig from './newsItemConfig';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
+import Helmet from 'react-helmet';
 
 class News extends React.Component {
   componentDidMount() {
@@ -51,6 +52,7 @@ class News extends React.Component {
   render() {
     return (
       <RouteTransition>
+        <Helmet title="News" />
         <div className="news">
           <div className="news-container">
             <div className="news-lists">

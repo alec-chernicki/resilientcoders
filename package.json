@@ -70,6 +70,7 @@
     "react-dom": "^15.2.1",
     "react-ga": "^2.1.2",
     "react-headroom": "^2.1.2",
+    "react-helmet": "^4.0.0",
     "react-router": "^2.6.1",
     "react-slick": "^0.14.6",
     "react-zeroclipboard": "^3.2.2",

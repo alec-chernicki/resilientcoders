@@ -1,7 +1,6 @@
 import './Bootcamp.scss';
 import React from 'react';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
-import LinkPrimary from '../../components/Buttons/LinkPrimary';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
 import Partners from '../../components/Containers/Partners/Partners';
@@ -12,12 +11,13 @@ import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
-
+import Helmet from 'react-helmet';
 
 class Bootcamp extends React.Component {
   render() {
     return (
       <RouteTransition>
+        <Helmet title="Bootcamp" />
         <Hero
           image={BootcampHeroImage}
           short={true}
