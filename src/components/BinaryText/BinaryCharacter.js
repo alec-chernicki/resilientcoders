@@ -1,7 +1,7 @@
 import React, {PropTypes, PureComponent} from 'react';
 import classNames from 'classnames';
 
-const TIME_BETWEEN_ANIMATIONS = 70
+const TIME_BETWEEN_ANIMATIONS = 80
 const MINIMUM_ANIMATION_OFFSET = 1000
 const MAXIMUM_ANIMATION_OFFSET = 100
 
