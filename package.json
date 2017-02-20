@@ -68,6 +68,7 @@
     "react": "^15.3.0",
     "react-addons-css-transition-group": "^15.3.0",
     "react-dom": "^15.2.1",
+    "react-ga": "^2.1.2",
     "react-headroom": "^2.1.2",
     "react-router": "^2.6.1",
     "react-slick": "^0.14.6",
