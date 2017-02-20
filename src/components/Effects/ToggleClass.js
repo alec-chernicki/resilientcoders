@@ -2,7 +2,7 @@ import './Effects.scss';
 import ScrollMagic from 'scrollmagic';
 import React from 'react'
 
-class ToggleClass extends React.Component {
+class ToggleClass extends React.PureComponent {
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }

@@ -1,11 +1,11 @@
 import './BinaryText.scss';
-import React, {PropTypes, Component} from 'react';
+import React, {PropTypes, PureComponent} from 'react';
 import ScrollMagic from 'scrollmagic';
 import BinaryCharacter from './BinaryCharacter';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import TimelineMax from 'TimelineMax';
 
-class BinaryText extends Component {
+class BinaryText extends PureComponent {
   constructor(props) {
     super(props);
 

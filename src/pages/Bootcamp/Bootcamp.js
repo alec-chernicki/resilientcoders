@@ -1,5 +1,5 @@
 import './Bootcamp.scss';
-import React from 'react';
+import React, {PureComponent} from 'react';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
@@ -13,7 +13,7 @@ import CenteredContainerInner from '../../components/Containers/CenteredContaine
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import Helmet from 'react-helmet';
 
-class Bootcamp extends React.Component {
+class Bootcamp extends PureComponent {
   render() {
     return (
       <RouteTransition>

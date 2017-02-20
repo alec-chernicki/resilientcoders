@@ -13,7 +13,7 @@ import Helmet from 'react-helmet';
 
 const COMPANY_FORM_URL = '/api/subscribe/company';
 
-class GetInvolvedCompany extends React.Component {
+class GetInvolvedCompany extends React.PureComponent {
   render () {
     return (
       <RouteTransition>

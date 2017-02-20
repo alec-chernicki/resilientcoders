@@ -5,7 +5,7 @@ import TimelineMax from 'TimelineMax';
 import React from 'react';
 import classNames from 'classnames';
 
-class Parallax extends React.Component {
+class Parallax extends React.PureComponent {
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }

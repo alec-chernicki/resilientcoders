@@ -7,7 +7,7 @@ import HeroVideo from './HeroVideo';
 import Fade from '../../Effects/Fade';
 import {defer} from 'underscore';
 
-class Hero extends React.Component {
+class Hero extends React.PureComponent {
   constructor(props) {
     super(props)
 

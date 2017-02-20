@@ -7,7 +7,7 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 
-class Scale extends React.Component {
+class Scale extends React.PureComponent {
  componentWillMount() {
    this.controller = new ScrollMagic.Controller();
  }

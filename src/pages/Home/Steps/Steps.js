@@ -3,7 +3,6 @@ import React from 'react';
 import StepNavigation from './StepNavigation/StepNavigation';
 import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
-import BinaryText from '../../../components/BinaryText/BinaryText';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classNames from 'classnames';
 import _ from 'underscore';
@@ -70,6 +69,7 @@ class Steps extends React.Component {
   }
   handlePrev() {
     const {shownStepIndex} = this.state;
+
     if (shownStepIndex >= 0) {
       const newStepIndex = shownStepIndex - 1;
 

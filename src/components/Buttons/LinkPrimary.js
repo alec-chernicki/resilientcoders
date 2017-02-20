@@ -2,7 +2,7 @@ import './buttons.scss';
 import React from 'react';
 import {Link} from 'react-router';
 
-class LinkPrimary extends React.Component {
+class LinkPrimary extends React.PureComponent {
   renderButton() {
     const {href, children, to, target} = this.props;
 

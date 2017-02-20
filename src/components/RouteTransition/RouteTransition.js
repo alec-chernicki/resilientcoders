@@ -1,7 +1,7 @@
 import './RouteTransition.scss';
 import React from 'react'
 
-class RouteTransition extends React.Component {
+class RouteTransition extends React.PureComponent {
   componentDidMount() {
     setTimeout(() => {
       document.body.scrollTop = 0;

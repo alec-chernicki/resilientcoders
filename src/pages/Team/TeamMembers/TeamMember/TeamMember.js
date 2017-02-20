@@ -3,7 +3,7 @@ import React from 'react';
 import ToggleClass from '../../../../components/Effects/ToggleClass';
 import BinaryText from '../../../../components/BinaryText/BinaryText';
 
-class TeamMember extends React.Component {
+class TeamMember extends React.PureComponent {
   constructor(props) {
     super(props)
 

@@ -4,7 +4,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';;
 import React from 'react'
 import ReactDOM from 'react-dom';
 
-class ConnectingLineHorizontal extends React.Component {
+class ConnectingLineHorizontal extends React.PureComponent {
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }

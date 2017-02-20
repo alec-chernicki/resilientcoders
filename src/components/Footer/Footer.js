@@ -7,7 +7,7 @@ import CenteredContainerInner from '../Containers/CenteredContainer/CenteredCont
 import twitterIcon from '../../images/twitter.svg';
 import facebookIcon from '../../images/facebook.svg';
 
-class Footer extends React.Component {
+class Footer extends React.PureComponent {
   render () {
     const currentYear = new Date().getFullYear();
     const yearText = `© ${currentYear} Resilient Coders`

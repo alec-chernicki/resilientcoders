@@ -7,7 +7,7 @@ import newsItemConfig from './newsItemConfig';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Helmet from 'react-helmet';
 
-class News extends React.Component {
+class News extends React.PureComponent {
   componentDidMount() {
     setTimeout(() => {
       document.body.scrollTop = 0;

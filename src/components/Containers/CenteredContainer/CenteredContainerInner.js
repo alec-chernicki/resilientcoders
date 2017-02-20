@@ -2,7 +2,7 @@ import './CenteredContainer.scss';
 import React from 'react';
 import classNames from 'classnames';
 
-class CenteredContainerInner extends React.Component {
+class CenteredContainerInner extends React.PureComponent {
   render () {
     const {color, children, className, standard, accent} = this.props;
     const CenteredContainerInnerClass =  classNames(

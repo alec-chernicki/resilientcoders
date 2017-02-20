@@ -2,7 +2,7 @@ import './Forms.scss';
 import React from 'react';
 import EmailInputInline from './EmailInputs/EmailInputInline';
 
-class EmailFormShort extends React.Component {
+class EmailFormShort extends React.PureComponent {
   constructor(props) {
     super(props);
 

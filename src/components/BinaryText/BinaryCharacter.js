@@ -1,11 +1,11 @@
-import React, {PropTypes, Component} from 'react';
+import React, {PropTypes, PureComponent} from 'react';
 import classNames from 'classnames';
 
 const TIME_BETWEEN_ANIMATIONS = 70
 const MINIMUM_ANIMATION_OFFSET = 1000
 const MAXIMUM_ANIMATION_OFFSET = 100
 
-class BinaryCharacter extends Component {
+class BinaryCharacter extends PureComponent {
   constructor(props) {
     super(props);
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import heroVideo from '../../../images/hero-video.mp4';
 
 const setCustomAttributes = (el) => {
@@ -8,7 +8,7 @@ const setCustomAttributes = (el) => {
   }
 };
 
-class HeroVideo extends Component {
+class HeroVideo extends PureComponent {
   render() {
     return (
       <div className="video-container hero__image">

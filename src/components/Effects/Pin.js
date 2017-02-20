@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 
-class Pin extends React.Component {
+class Pin extends React.PureComponent {
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }

@@ -12,7 +12,7 @@ import CenteredContainerOuter from '../../components/Containers/CenteredContaine
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Helmet from 'react-helmet';
 
-class Lab extends React.Component {
+class Lab extends React.PureComponent {
   render() {
     return (
       <RouteTransition>

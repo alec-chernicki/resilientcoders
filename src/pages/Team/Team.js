@@ -11,7 +11,7 @@ import TeamHeroImage from './team-hero.png';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import Helmet from 'react-helmet';
 
-class Team extends React.Component {
+class Team extends React.PureComponent {
   render() {
     return (
       <RouteTransition>

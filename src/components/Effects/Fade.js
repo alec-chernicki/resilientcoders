@@ -11,7 +11,7 @@ import classNames from 'classnames';
 // TODO: Code duplication across effects components, this is something that would be cool to open source
 // Would be best to make a base ES6 class or component to extend the scene functionality across components
 
-class Fade extends React.Component {
+class Fade extends React.PureComponent {
   constructor(props) {
     super(props);
   }

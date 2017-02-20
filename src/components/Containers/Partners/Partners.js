@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 import LinkPrimary from '../../../components/Buttons/LinkPrimary';
 
-class Partners extends React.Component {
+class Partners extends React.PureComponent {
   renderPartners() {
     const {partnersConfig} = this.props;
     return partnersConfig.map((item, i) => (

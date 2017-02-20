@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Formsy from 'formsy-react'
 import TextInput from './TextInput';
 
-class EmailFormLong extends React.Component {
+class EmailFormLong extends React.PureComponent {
   constructor(props) {
     super(props);
 

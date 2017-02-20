@@ -3,7 +3,7 @@ import React from 'react';
 import WorkItem from './WorkItem/WorkItem';
 import workConfig from './workConfig';
 
-class Work extends React.Component {
+class Work extends React.PureComponent {
   renderWorkItems() {
     return workConfig.map((item, index) => (<WorkItem
       key={index}

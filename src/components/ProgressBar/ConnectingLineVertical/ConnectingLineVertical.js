@@ -7,7 +7,7 @@ import React from 'react';
 
 const verticalLineController = new ScrollMagic.Controller();
 
-class ConnectingLineVertical extends React.Component {
+class ConnectingLineVertical extends React.PureComponent {
   componentWillMount() {
     this.controller = new ScrollMagic.Controller();
   }

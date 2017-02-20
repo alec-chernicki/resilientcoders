@@ -30,6 +30,7 @@ class Roster extends React.Component {
           titleLineOne="The Roster"
           image={RosterHeroImage}
           centered={true}
+          short={true}
         >
           <div className="divider divider__red" />
           <p>

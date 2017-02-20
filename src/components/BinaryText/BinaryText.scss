@@ -46,7 +46,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    // background: #FFF;
+    will-change: content, color;
     width: 0.3em;
     height: 1em;
     transform: translate(-50%,-55%);

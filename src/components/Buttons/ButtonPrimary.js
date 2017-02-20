@@ -3,7 +3,7 @@ import React, {PropTypes} from 'react';
 import classNames from 'classnames';
 import {Link} from 'react-router';
 
-class ButtonPrimary extends React.Component {
+class ButtonPrimary extends React.PureComponent {
   renderButton() {
     const {href, children, to, target} = this.props;
 

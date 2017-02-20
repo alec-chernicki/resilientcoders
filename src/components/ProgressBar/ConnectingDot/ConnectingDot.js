@@ -5,7 +5,7 @@ import React from 'react'
 
 const dotController = new ScrollMagic.Controller();
 
-class ConnectingDot extends React.Component {
+class ConnectingDot extends React.PureComponent {
   componentDidMount() {
     if (!this.triggerElement || !this.targetElement) {
       return

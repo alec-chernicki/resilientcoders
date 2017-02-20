@@ -7,7 +7,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const micahVideoUrl = 'https://youtu.be/JU1UunsFgpU';
 
-class MicahVideo extends React.Component {
+class MicahVideo extends React.PureComponent {
   constructor(props) {
     super(props);
 

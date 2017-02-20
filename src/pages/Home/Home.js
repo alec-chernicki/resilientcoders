@@ -1,5 +1,5 @@
 import './Home.scss';
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import EmailFormShort from '../../components/EmailForms/EmailFormShort';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import MicahVideo from './MicahVideo/MicahVideo';
@@ -20,7 +20,7 @@ import Partners from '../../components/Containers/Partners/Partners';
 import alumniCompaniesConfig from './alumniCompaniesConfig';
 import Helmet from "react-helmet";
 
-class Home extends Component {
+class Home extends PureComponent {
   render() {
     return (
       <RouteTransition>

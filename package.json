@@ -41,6 +41,7 @@
     "postcss-loader": "0.9.1",
     "promise": "7.1.1",
     "react-addons-css-transition-group": "^15.3.0",
+    "react-addons-perf": "^15.4.2",
     "react-router-sitemap": "^1.0.8",
     "rimraf": "2.5.4",
     "sass-loader": "^4.0.0",

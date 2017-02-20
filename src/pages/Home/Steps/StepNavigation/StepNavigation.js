@@ -4,7 +4,7 @@ import {partial} from 'underscore';
 import classNames from 'classnames';
 import StepProgressBar from './StepProgressBar/StepProgressBar';
 
-class StepNavigation extends React.Component {
+class StepNavigation extends React.PureComponent {
   renderSteps() {
     const {setShownStepIndex, shownStepIndex, stepConfig} = this.props;
 

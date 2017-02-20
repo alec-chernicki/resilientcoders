@@ -3,7 +3,7 @@ import React from 'react'
 import Slider from 'react-slick';
 import rosterMembersConfig from '../../Bootcamp/Roster/rosterMembersConfig';
 
-class PhotoCarousel extends React.Component {
+class PhotoCarousel extends React.PureComponent {
   renderPhotos() {
     return rosterMembersConfig.map((member, index) => {
       return (

@@ -3,7 +3,7 @@ import videoJS from 'video.js';
 import 'videojs-youtube';
 import React, {PropTypes} from 'react';
 
-class VideoPlayer extends React.Component {
+class VideoPlayer extends React.PureComponent {
   constructor(props) {
     super(props);
 
