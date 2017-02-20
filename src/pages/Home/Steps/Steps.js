@@ -124,7 +124,7 @@ class Steps extends React.Component {
           >
             <ReactCSSTransitionGroup
               transitionName={`step-content__text-${changeDirection}-animation`}
-              transitionEnterTimeout={1200}
+              transitionEnterTimeout={1000}
               transitionLeaveTimeout={1000}
             >
               <div
@@ -133,11 +133,11 @@ class Steps extends React.Component {
               >
                 <div ref={this.setTextContainerElementRef}>
                   <h2>
-                    <BinaryText isInverted={true}>
-                      {currentStep.title}
-                    </BinaryText>
+                    {currentStep.title}
                   </h2>
-                  <p>{currentStep.text}</p>
+                  <p>
+                    {currentStep.text}
+                  </p>
                   <ButtonPrimary to={currentStep.link}>
                     Learn more
                   </ButtonPrimary>
