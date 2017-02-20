@@ -15,7 +15,7 @@ app.use(compress());
 app.use(cookieParser())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(robots({UserAgent: '*', Disallow: '/'}))
+app.use(robots({UserAgent: '*', Disallow: '/api'}))
 
 // Point the main directory to /build (main website), if someone requests /quote or /rebuild
 // serve those folders instead.
