@@ -5,9 +5,9 @@ import rosterMembersConfig from '../../Bootcamp/Roster/rosterMembersConfig';
 
 class PhotoCarousel extends React.Component {
   renderPhotos() {
-    return rosterMembersConfig.map((member) => {
+    return rosterMembersConfig.map((member, index) => {
       return (
-        <div>
+        <div key={index}>
           <img
             src={member.image}
             role="presentation"
