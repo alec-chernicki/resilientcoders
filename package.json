@@ -2,6 +2,7 @@
   "name": "resilient-coders",
   "version": "0.0.1",
   "private": true,
+  "proxy": "http://localhost:4000",
   "devDependencies": {
     "autoprefixer": "6.3.7",
     "babel-core": "6.11.4",
@@ -58,6 +59,7 @@
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "express-robots": "^0.1.6",
     "gsap": "^1.19.1",
     "modernizr": "^3.3.1",
     "modernizr-loader": "0.0.5",
@@ -71,6 +73,7 @@
     "react-slick": "^0.14.6",
     "react-zeroclipboard": "^3.2.2",
     "scrollmagic": "^2.0.5",
+    "sitemap": "^1.9.0",
     "twitter": "^1.4.0",
     "underscore": "^1.8.3"
   },

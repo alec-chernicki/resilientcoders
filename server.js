@@ -4,25 +4,31 @@ const compress = require('compression');
 const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const axios = require('axios');
+const robots = require('express-robots');
 
 // Create Express App
 const app = express();
 
-// Initialize Middleware
-app.set('port', process.env.PORT || 3000);
-// app.set('view engine', 'jade');
+// Initialize Express Middleware
+app.set('port', process.env.PORT || 4000);
 app.use(compress());
 app.use(cookieParser())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(robots({UserAgent: '*', Disallow: '/'}))
+
+// Point the main directory to /build (main website), if someone requests /quote or /rebuild
+// serve those folders instead.
 app.use(express.static(`${__dirname}/build`));
 app.use("/quote", express.static(__dirname + "/erl/"));
 app.use("/rebuild", express.static(__dirname + "/rebuild/"));
+
+// This actually starts the Express application
 app.listen(app.get('port'));
 
 const subscriptionController = require('./controllers/subscriptionController');
 const twitterController = require('./controllers/twitterController');
+const sitemapController = require('./controllers/sitemapController');
 
 //------------------------------------------------------------
 // Assign Routes and Controllers for API
@@ -34,7 +40,10 @@ app.post('/api/subscribe/mentor', subscriptionController.postSubscriptionMentor)
 app.post('/api/subscribe/company', subscriptionController.postSubscriptionCompany)
 
 // To get last tweet from @resilientcoders
-app.get('/api/twitter', twitterController.getTwitter)
+app.get('/api/twitter', twitterController.getTwitter);
+
+// This is for SEO purposes
+app.get('/sitemap.xml', sitemapController.getSitemap);
 
 // To get meta image for social sharing
 app.get('/api/meta-image', (req, res) => {
