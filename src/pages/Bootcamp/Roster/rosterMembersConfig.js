@@ -17,7 +17,7 @@ export default [
     name: 'David Arango',
     availableForHire: true,
     image: DavidImage,
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/david-arango-435037134/',
     github: 'https://github.com/arangodavid',
     bio: `Migrating from Colombia to the United States as a young boy
       has given me a unique drive and ambition. I’ve been told I
@@ -114,8 +114,8 @@ impact in the tech world.`
     name: 'Arnaldo Pires',
     availableForHire: true,
     image: ArnoldImage,
-    linkedin: '',
-    github: '',
+    linkedin: 'https://www.linkedin.com/in/arnaldo-pires-66721b4b/',
+    github: 'https://github.com/ArnoldPires',
     bio: `I’m always asking questions and digging deep into every issue with an analytical growth mindset.
     My IT support background has enabled me to become a relentless detective, troubleshooting issues until
     real solutions are found. This attitude has also translated into my approach to web development.
@@ -129,7 +129,7 @@ impact in the tech world.`
     availableForHire: true,
     image: StephenImage,
     linkedin: 'https://www.linkedin.com/in/stephen-simpson-33021b37',
-    github: '',
+    github: 'https://github.com/stephentsimpson',
     bio: `I'm immensely proud to be a Howard-bred hustler with
     an insatiable desire for driving transformative social impact.  My experiences in political organizing,
     education reform, research, and consulting have given me a strong foundation in outreach, data analysis,
@@ -143,8 +143,8 @@ impact in the tech world.`
     name: 'Dashawn Watkins',
     availableForHire: true,
     image: ShawnImage,
-    linkedin: '',
-    github: '',
+    linkedin: 'https://www.linkedin.com/in/dashawn-watkins-b27122134',
+    github: 'https://github.com/dashawnwatkins',
     bio: `I am a hard worker with an insatiable thirst for theory and knowledge.
 Problem solving comes naturally to an American soldier, as well as not giving up
 until the job is complete. I have a strong background in community

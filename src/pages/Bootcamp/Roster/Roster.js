@@ -37,6 +37,9 @@ class Roster extends React.Component {
             Bootcampers meet daily, for eight weeks, to learn semantically structured
             HTML, responsive CSS, JavaScript, jQuery, git, and more. Before graduating,
             they will have built, and pushed to GitHub, actual client work that showcases these aptitudes.
+            From <a href="/bootcamp">Bootcamp</a>, mentorship, and Resilient Lab,
+            through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at
+            at their first technical job.
           </p>
         </Hero>
         {this.renderMembers()}

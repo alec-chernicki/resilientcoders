@@ -39,8 +39,11 @@ class Bootcamp extends PureComponent {
               The idea behind our Bootcamp is an audacious one: Take a small cohort of young
               people, who face more challenges than most, who have been hand-picked by our
               partners for their grit, and teach them fundamentals of web development so that
-              they may have access to a real career.
+              they may have access to a real career. From Bootcamp, mentorship, and Resilient Lab,
+              through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at 
+              at that first gig.
             </p>
+
           </SideItem>
           <SideItem className="p-y pull-up-1">
             <h2>Current Bootcamp</h2>
