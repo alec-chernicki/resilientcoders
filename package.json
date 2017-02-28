@@ -78,7 +78,8 @@
     "scrollmagic": "^2.0.5",
     "sitemap": "^1.9.0",
     "twitter": "^1.4.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "video.js": "^5.16.0"
   },
   "scripts": {
     "start": "node ./scripts/start.js",
