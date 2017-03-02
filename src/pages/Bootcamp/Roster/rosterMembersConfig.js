@@ -31,7 +31,7 @@ export default [
       drive to accomplish our objectives. Learning is pleasure and
       as full-stack developer in training, I am always reading,
       researching and practicing new techniques to better hone my
-      craft.`
+      craft. You can see my portfolio at https://arangodavid.github.io/Portfolio/`
   },
   {
     name: 'Tristian Barboza-Graham',
@@ -68,7 +68,7 @@ affinity for it. Be it for the sake of learning or to make something pleasing to
 something that really engages users and makes it easy and intuitive to navigate, I am almost always
 coding. If not coding I enjoy using Photoshop to manipulate and edit images to better fit with said code.
 No matter how, even when idle, I am always observing and learning and thinking of how to improve
-something. This is thanks to my affinity for web development, for drawing, and for writing.`
+something. This is thanks to my affinity for web development, for drawing, and for writing. You can see some of my work at https://corriger.github.io/pro-play`
   },
 {
   name: 'Emilio Murillo',
@@ -82,7 +82,7 @@ communicate well with others in any environment, and in any situation. This allo
 with no limits. I am also an independent fashion designer. I've drawn from this experience a certain patience, drive,
 and creative perspective, which influence my approach to designing and building digital products. Semantically structured HTML, responsive CSS,
 and javascript are just a new set of tools in my kit, with which I intend to make an
-impact in the tech world.`
+impact in the tech world. You can see some of my work at https://emiliomurillo.github.io/portfoliov4`
 },
   {
     name: 'Maria Ines Peniche',
@@ -97,7 +97,7 @@ impact in the tech world.`
     environment, and thrive in stressful situations. Having been a simultaneous interpreter has made me
     quick, analytical, communicative, fluently bilingual, and has taught me the value of working in a
     multicultural environment. Learn more about my experiences as a member of the
-    Dream 9, on NPR: http://latinousa.org/episode/the-dream-9-rb/`
+    Dream 9, on NPR: http://latinousa.org/episode/the-dream-9-rb/ and see some of my work at https://inpen.github.io/inPen/`
   },
   {
     name: 'Jose Pimentel',
@@ -122,7 +122,8 @@ impact in the tech world.`
     Despite previously having very little knowledge of it, Resilient Coders has taught me that learning
     is really only a matter of time, and persistence; putting in the long hours and having the dedication
     and passion to learn new things, and then using that knowledge to create products, all excites me.
-    This has empowered me to be a change agent in my community.`
+    This has empowered me to be a change agent in my community. My portfolio site is at https://arnoldpires.github.io/Arnold-portfolio/
+     and I'm also working on a virtual reality project, which you can experience, using Google cardboard, at https://arnoldpires.github.io/A-Frame-Galaxy`
   },
   {
     name: 'Stephen Simpson',
