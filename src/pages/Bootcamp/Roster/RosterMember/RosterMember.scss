@@ -2,7 +2,11 @@
 @import '../../../../stylesheets/mixins';
 
 .roster-member {
-  transform: translateY(-100px);
+  transform: translateY(-40px);
+
+  @include breakpoint($small-breakpoint) {
+    transform: translateY(0);
+  }
 }
 
 .roster-member-availability {
