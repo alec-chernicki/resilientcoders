@@ -165,21 +165,27 @@ img.hero__image {
     overflow: hidden;
   }
 
-  .divider {
-    margin: 0px 0 30px;
-    animation: divider-width-grow 600ms cubic-bezier(0.52, 0.01, 0.16, 1);
-    animation-fill-mode: backwards;
-    animation-delay: 1300ms;
-  }
-
   h1:last-of-type {
     margin-bottom: 30px;
+  }
+
+  h1 {
+    animation: slide-up-fade-in 800ms cubic-bezier(0.52, 0.01, 0.16, 1);
+    animation-fill-mode: backwards;
+    animation-delay: 600ms;
+  }
+
+  .divider {
+    margin: 0px 0 30px;
+    animation: divider-width-grow 800ms cubic-bezier(0.52, 0.01, 0.16, 1);
+    animation-fill-mode: backwards;
+    animation-delay: 900ms;
   }
 
   p {
     animation: slide-up-fade-in 800ms cubic-bezier(0.52, 0.01, 0.16, 1);
     animation-fill-mode: backwards;
-    animation-delay: 1700ms;
+    animation-delay: 1200ms;
     color: $text-tertiary;
     max-width: 500px;
     width: 100%;
@@ -189,7 +195,7 @@ img.hero__image {
   .button-container {
     animation: slide-up-fade-in 800ms cubic-bezier(0.52, 0.01, 0.16, 1);
     animation-fill-mode: backwards;
-    animation-delay: 1700ms;
+    animation-delay: 1200ms;
   }
 }
 

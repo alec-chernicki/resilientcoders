@@ -47,9 +47,7 @@ class Hero extends React.PureComponent {
 
     return (
       <h1 className="hero-title-one">
-        <BinaryText>
-          {titleLineOne}
-        </BinaryText>
+        {titleLineOne}
       </h1>
     )
   }
@@ -69,9 +67,7 @@ class Hero extends React.PureComponent {
 
     return (
       <h1 className="hero-title-two">
-        <BinaryText>
-          {titleLineTwo}
-        </BinaryText>
+        {titleLineTwo}
       </h1>
     )
   }
