@@ -44,7 +44,7 @@ const GetInvolvedPage = (props) => {
         <SideItem flush={true} className="pull-up-2 m-x" grow={2} size={33} >
           <Link
             to="/get-involved/student"
-            className="get-involved-types__item p-y get-involved-types__item--company"
+            className="get-involved-types__item p-y get-involved-types__item--student"
           >
             <div className="get-involved-types--underlay" />
             <div className="get-involved-types--content">
@@ -81,9 +81,7 @@ const GetInvolvedPage = (props) => {
             Donate
           </h2>
           <p>
-            There's a lot going on, and many opportunities for you to get involved. For any
-            donation of $75 or more, we'll send you a Resilient Coders hoodie. They're printed
-            right here in Massachusetts by court-involved youth.
+            Your support allows us to spread code literacy to communities traditionally underrepresented in technology.
           </p>
           <div className="get-involved-donate-buttons">
             <ButtonPrimary target="_blank" href="https://www.paypal.me/resilientcoders">

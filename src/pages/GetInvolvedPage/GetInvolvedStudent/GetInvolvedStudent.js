@@ -30,7 +30,7 @@ const GetInvolvedStudent = (props) => {
             Every Tuesday and Thursday throughout the school year, high school students
             from all over the Boston Public Schools system join our mentors and alumni after school, to code.
             It's a self-led exploration, supported by our mentors and our (optional) modular curriculum.
-            It's all drop-in. Come by, once, from 3:30pm to 6pm, to 50 Milk St. Boston MA. Fifth floor. Build something today.
+            It's all drop-in. Come by, once, from 3:30pm to 6pm, to 50 Milk St. Boston MA. 5th floor. Build something today.
           </p>
         </SideItem>
         <SideItem flush={true} className="pull-up-2">
@@ -47,6 +47,11 @@ const GetInvolvedStudent = (props) => {
             interest in exploring web development as a career, Bootcamp
             might be a better fit than Community. It&#8217;s eight weeks long, daily. We recruit out of
             our Bootcamp into Resilient Lab, our web development company.
+          </p>
+          <p>
+            The first step is to come meet the team. Feel free to stop by our Community Hours.
+            That's Tuesdays and Thursdays, at 50 Milk St. Boston MA, 5th floor, between 3:30 and 6. <a href="mailto:leon@resilientcoders.org?subject=Mentor%20stopping%20by">Email Leon</a> if you're planning on stopping by,
+          so we know to expect you.
           </p>
           <ButtonPrimary to="/bootcamp">
             Learn more

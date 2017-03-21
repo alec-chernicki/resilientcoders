@@ -1,6 +1,11 @@
 export default {
   press : [
     {
+      title: 'Making the Grade: Resilient Coders',
+      link: 'http://www.nbcboston.com/news/local/Making-the-Grade-Resilient-Coders-415613683.html',
+      note: 'NBC'
+    },
+    {
       title: 'What\'s Next for TechHire',
       link: 'https://www.whitehouse.gov/blog/2016/12/02/whats-next-techhire',
       note: 'The White House'
