@@ -15,7 +15,9 @@
 .get-involved-types {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  min-height: 100vh;
+  padding: 120px 60px;
+  background-color: $background-secondary;
 
   @include breakpoint($small-breakpoint) {
     flex-direction: column;
@@ -27,118 +29,28 @@
   flex-shrink: 2;
   flex-basis: 33.3333%;
   display: flex;
-  align-items: center;
-  border: solid 20px #FFF;
   justify-content: center;
-  text-align: center;
-  cursor: pointer;
   position: relative;
   @include transition;
-  width: auto;
-  will-change: flex-basis;
   overflow: hidden;
-
-  @include breakpoint($small-breakpoint) {
-    flex: 0 0 300px;
-    height: 300px;
-  }
-
-  &:hover {
-    .divider {
-      transform: none;
-      opacity: 1;
-    }
-
-    .get-involed-types--content-helper {
-      transform: none;
-      opacity: 1;
-    }
-  }
-
-  + .get-involved-types__item {
-    border-left: solid 2px $border-primary;
-
-    @include breakpoint($small-breakpoint) {
-      border-left: 0;
-      border-top: solid 2px $border-primary;
-    }
-  }
-
-  p {
-    color: $text-tertiary;
-    max-width: 300px;
-  }
-
-  .divider {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 15px auto 0;
-    @include transition;
-    transform: translateY(30px);
-    opacity: 0;
-  }
 }
 
-.get-involed-types--content-helper {
-  line-height: 1;
-  font-family: $league-gothic;
-  color: $text-secondary;
-  text-transform: uppercase;
-  font-size: 30px;
-  opacity: 0;
-  @include transition;
-  transform: translateY(-30px);
-
-  @include breakpoint($small-breakpoint) {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.get-involved-types--underlay {
-  content: '';
-  position: absolute; // instead of background-attachment
-  width: 45vw;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-size: 6px, auto, cover;
-  z-index: 5;
-
-  @include breakpoint($small-breakpoint) {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.get-involved-types--content {
-  z-index: 10;
-  position: relative;
-}
-
-.get-involved-types__item--mentor .get-involved-types--underlay  {
-  background-image: url('./dot.svg'),
-                    linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
+.get-involved-types__item--mentor  {
+  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
                     url('./get-involved-mentor.jpg');
-  background-position: right;
-  right: 0;
+  background-position: center;
 }
 
-.get-involved-types__item--company .get-involved-types--underlay {
-  background-image: url('./dot.svg'),
-                    linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
+.get-involved-types__item--company {
+  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
                     url('./get-involved-company.jpg');
-  background-position: left;
-  left: 0;
+  background-position: center;
 }
 
-.get-involved-types__item--student .get-involved-types--underlay {
-  background-image: url('./dot.svg'),
-                    linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
+.get-involved-types__item--student {
+  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
                     url('./get-involved-student.jpg');
-  background-position: right;
+  background-position: center;
 }
 
 .get-involved-footer {
@@ -225,13 +137,13 @@
   margin: 30px auto 15px;
   width: 100%;
 
-  .button-container {
+  .button {
     @include breakpoint($small-breakpoint) {
       width: 100%;
     }
   }
 
-  .button-container + .button-container {
+  .button + .button {
     margin-left: 15px;
 
     @include breakpoint($small-breakpoint) {

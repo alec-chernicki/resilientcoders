@@ -160,14 +160,14 @@
 // RIGHT
 
 .step-content__text-right-animation-enter {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(-550px);
     opacity: 0.01;
   }
 }
 
 .step-content__text-right-animation-enter.step-content__text-right-animation-enter-active {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(0);
     opacity: 1;
     transition: all 1000ms cubic-bezier(0.7, 0, 0.3, 1);
@@ -175,14 +175,14 @@
 }
 
 .step-content__text-right-animation-leave {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
 .step-content__text-right-animation-leave.step-content__text-right-animation-leave-active {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(550px);
     opacity: 0.01;
     transition: all 1000ms cubic-bezier(0.7, 0, 0.3, 1);
@@ -193,14 +193,14 @@
 // LEFT
 
 .step-content__text-left-animation-enter {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(550px);
     opacity: 0.01;
   }
 }
 
 .step-content__text-left-animation-enter.step-content__text-left-animation-enter-active {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(0);
     opacity: 1;
     transition: all 1000ms cubic-bezier(0.7, 0, 0.3, 1);
@@ -208,14 +208,14 @@
 }
 
 .step-content__text-left-animation-leave {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
 .step-content__text-left-animation-leave.step-content__text-left-animation-leave-active {
-  h2, p, .button-container {
+  h2, p, .button {
     transform: translateX(-550px);
     opacity: 0.01;
     transition: all 1000ms cubic-bezier(0.7, 0, 0.3, 1);

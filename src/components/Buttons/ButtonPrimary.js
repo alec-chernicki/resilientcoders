@@ -2,6 +2,7 @@ import './buttons.scss';
 import React, {PropTypes} from 'react';
 import classNames from 'classnames';
 import {Link} from 'react-router';
+import rightArrowImage from '../../images/right-arrow.svg';
 
 class ButtonPrimary extends React.PureComponent {
   renderButton() {
@@ -9,31 +10,46 @@ class ButtonPrimary extends React.PureComponent {
 
     if (href) {
       return (
-        <a className="button" href={href} target={target}>
-          {children}
+        <a href={href} target={target}>
+          <span className="button__content">
+            {children}
+          </span>
+          <span className="button__icon-wrapper">
+            <img src={rightArrowImage} />
+          </span>
         </a>
       )
     }
     else if (to) {
       return (
-        <Link to={to} className="button">
-          {children}
+        <Link to={to}>
+          <span className="button__content">
+            {children}
+          </span>
+          <span className="button__icon-wrapper">
+            <img src={rightArrowImage} />
+          </span>
         </Link>
       )
     }
     else {
       return (
-        <a className="button" href="#">
-          {children}
+        <a href="#">
+          <span className="button__content">
+            {children}
+          </span>
+          <span className="button__icon-wrapper">
+            <img src={rightArrowImage} />
+          </span>
         </a>
       );
     }
   }
   render() {
     const {className} = this.props;
-    const buttonPrimaryClass = classNames('button-container', className, {
-      'button-container--red': this.props.color === 'red',
-      'button-container--white': this.props.color === 'white'
+    const buttonPrimaryClass = classNames('button', className, {
+      'button--red': this.props.color === 'red',
+      'button--white': this.props.color === 'white'
     })
 
     return (
