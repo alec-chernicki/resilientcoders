@@ -110,6 +110,8 @@
   }
 
   @include breakpoint($small-breakpoint) {
+    flex: 0 1 auto;
+
     &:hover {
       transform: none;
     }
