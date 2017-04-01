@@ -85,11 +85,12 @@
 
   button {
     border: none;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
     outline: none;
     @include transition;
     background-color: $accent-primary;
+    overflow: inherit;
+    padding: 0 20px;
+    margin-top: 0;
 
     &:hover {
       background-color: darken($accent-primary, 10%);
@@ -191,6 +192,8 @@
   }
 
   button {
+    border-radius: 0 2px 2px 0;
+    
     @include breakpoint($small-breakpoint) {
       margin-top: 20px;
     }
