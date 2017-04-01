@@ -4,53 +4,13 @@
 .get-involved {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @include breakpoint($small-breakpoint) {
     padding-top: 70px;
     height: auto;
     display: block;
   }
-}
-
-.get-involved-types {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-  padding: 120px 60px;
-  background-color: $background-secondary;
-
-  @include breakpoint($small-breakpoint) {
-    flex-direction: column;
-  }
-}
-
-.get-involved-types__item {
-  flex-grow: 2;
-  flex-shrink: 2;
-  flex-basis: 33.3333%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  @include transition;
-  overflow: hidden;
-}
-
-.get-involved-types__item--mentor  {
-  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
-                    url('./get-involved-mentor.jpg');
-  background-position: center;
-}
-
-.get-involved-types__item--company {
-  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
-                    url('./get-involved-company.jpg');
-  background-position: center;
-}
-
-.get-involved-types__item--student {
-  background-image: linear-gradient(rgba($background-secondary, 0.75), rgba($background-secondary, 0.75)),
-                    url('./get-involved-student.jpg');
-  background-position: center;
 }
 
 .get-involved-footer {

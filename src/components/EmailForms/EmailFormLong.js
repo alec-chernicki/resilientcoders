@@ -69,7 +69,7 @@ class EmailFormLong extends React.PureComponent {
     return (
       <div className="email-form email-form--long ">
         <div className={`email-form--long__wrapper ${this.props.className}`}>
-          <h2>Subscribe</h2>
+          <h2>Get more information</h2>
           <Formsy.Form
             ref={this.setFormElementRef.bind(this)}
             onValidSubmit={this.validSubmit.bind(this)}
