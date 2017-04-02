@@ -32,17 +32,10 @@ class Hero extends React.PureComponent {
     })
   }
   renderTitleLineOne() {
-    const {isLoaded} = this.state;
     const {titleLineOne} = this.props;
 
     if (!titleLineOne) {
       return null;
-    }
-
-    if(!isLoaded) {
-      return (
-        <h1 className="hero-title-placeholder">|</h1>
-      )
     }
 
     return (
@@ -52,17 +45,10 @@ class Hero extends React.PureComponent {
     )
   }
   renderTitleLineTwo() {
-    const {isLoaded} = this.state;
     const {titleLineTwo} = this.props;
 
     if (!titleLineTwo) {
       return null
-    }
-
-    if(!isLoaded) {
-      return (
-        <h1 className="hero-title-placeholder">|</h1>
-      )
     }
 
     return (
