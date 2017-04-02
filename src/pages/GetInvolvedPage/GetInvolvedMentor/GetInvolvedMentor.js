@@ -1,7 +1,6 @@
 import './GetInvolvedMentor.scss';
 import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import Hero from '../../../components/Containers/Hero/Hero';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';

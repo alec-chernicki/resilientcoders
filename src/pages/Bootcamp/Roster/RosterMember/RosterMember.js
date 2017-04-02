@@ -106,7 +106,7 @@ class RosterMember extends React.Component {
 
     return (
       <a href={linkedin} className="icon" target="_blank">
-        <img src={linkedinLogo} />
+        <img alt="linkedin" src={linkedinLogo} />
       </a>
     )
   }
@@ -119,7 +119,7 @@ class RosterMember extends React.Component {
 
     return (
       <a href={github} className="icon" target="_blank">
-        <img src={githubLogo} />
+        <img alt="github" src={githubLogo} />
       </a>
     )
   }
@@ -143,7 +143,7 @@ class RosterMember extends React.Component {
     return (
       <SideBySide id={this.getId} className="roster-member">
         <SideItem flush={true}>
-          <img src={image} />
+          <img src={image} alt="Student" />
           {this.renderControls()}
         </SideItem>
         <SideItem className="p-y">

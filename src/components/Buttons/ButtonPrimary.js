@@ -15,7 +15,7 @@ class ButtonPrimary extends React.PureComponent {
             {children}
           </span>
           <span className="button__icon-wrapper">
-            <img src={rightArrowImage} />
+            <img role="presentation" src={rightArrowImage} />
           </span>
         </a>
       )
@@ -27,7 +27,7 @@ class ButtonPrimary extends React.PureComponent {
             {children}
           </span>
           <span className="button__icon-wrapper">
-            <img src={rightArrowImage} />
+            <img role="presentation" src={rightArrowImage} />
           </span>
         </Link>
       )
@@ -39,7 +39,7 @@ class ButtonPrimary extends React.PureComponent {
             {children}
           </span>
           <span className="button__icon-wrapper">
-            <img src={rightArrowImage} />
+            <img role="presentation" src={rightArrowImage} />
           </span>
         </a>
       );

@@ -28,6 +28,7 @@ class GetInvolvedTypes extends React.Component {
 
       return (
         <Link
+          key={key}
           to={item.url}
           className="get-involved-types__item"
         >
@@ -40,7 +41,7 @@ class GetInvolvedTypes extends React.Component {
             </div>
             <div className="get-involved-types__content__info">
               <p>{item.text}</p>
-              <ButtonPrimary to={item.url}>
+              <ButtonPrimary>
                 Learn More
               </ButtonPrimary>
             </div>

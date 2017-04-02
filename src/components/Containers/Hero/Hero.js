@@ -2,7 +2,6 @@ import './Hero.scss';
 import React from 'react';
 import classNames from 'classnames';
 import DotLight from '../Dots/dot-light.svg';
-import BinaryText from '../../BinaryText/BinaryText';
 import HeroVideo from './HeroVideo';
 import Fade from '../../Effects/Fade';
 import {defer} from 'underscore';
