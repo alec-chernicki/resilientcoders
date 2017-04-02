@@ -96,21 +96,6 @@
   float: left;
   margin: 30px auto 15px;
   width: 100%;
-
-  .button {
-    @include breakpoint($small-breakpoint) {
-      width: 100%;
-    }
-  }
-
-  .button + .button {
-    margin-left: 15px;
-
-    @include breakpoint($small-breakpoint) {
-      margin-left: 0;
-      margin-top: 15px;
-    }
-  }
 }
 
 .get-involved-donate-legal {
