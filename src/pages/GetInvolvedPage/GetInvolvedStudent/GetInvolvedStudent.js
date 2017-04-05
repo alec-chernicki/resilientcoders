@@ -53,6 +53,9 @@ const GetInvolvedStudent = (props) => {
             That's Tuesdays and Thursdays, at 50 Milk St. Boston MA, 5th floor, between 3:30 and 6. <a href="mailto:leon@resilientcoders.org?subject=Mentor%20stopping%20by">Email Leon</a> if you're planning on stopping by,
           so we know to expect you.
           </p>
+          <p>We recruit into Bootcamp from our Hackathons. The next one is on April 29th from 10 to 5 at
+          31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up.</a>
+          </p>
           <ButtonPrimary to="/bootcamp">
             Learn more
           </ButtonPrimary>

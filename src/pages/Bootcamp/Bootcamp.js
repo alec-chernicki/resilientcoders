@@ -40,13 +40,20 @@ class Bootcamp extends PureComponent {
               people, who face more challenges than most, who have been hand-picked by our
               partners for their grit, and teach them fundamentals of web development so that
               they may have access to a real career. From Bootcamp, mentorship, and Resilient Lab,
-              through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at 
+              through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at
               at that first gig.
             </p>
 
           </SideItem>
           <SideItem className="p-y pull-up-1">
             <h2>Current Bootcamp</h2>
+            <p>
+              Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
+              Interested in applying for
+              the next one? Come to our next Hackathon,
+              from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+            </p>
+            {/*
             <p>
               Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> is just about finished. Interested in
               applying for the next one? Stop by our <a href="/bootcamp/roster">Community Hours</a>, meet the staff.
@@ -55,8 +62,9 @@ class Bootcamp extends PureComponent {
                 Google Appointment calendar
               </a> that features moments during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
             </p>
+            */}
             <p>
-              Our coders are now available for hire, interested in learning more? Check out their
+              Our coders are now available for hire. Interested in learning more? Check out their
               bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
             </p>
             <ButtonPrimary to="/bootcamp/roster">
@@ -97,9 +105,10 @@ class Bootcamp extends PureComponent {
           <SideItem type="grey" className="p-y">
             <h2>As a student</h2>
             <p>
-              Our Winter Bootcamp is in full swing, at the Insight Squared office at
-              4 Copley Place. We are no longer accepting applications. Interested in applying for
-              the next one? Stop by our Community Hours, meet the staff.
+              Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
+              Interested in applying for
+              the next one? Come to our next Hackathon,
+              from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
             </p>
             <ButtonPrimary to="/get-involved/student">
               Learn more
@@ -109,10 +118,16 @@ class Bootcamp extends PureComponent {
             <h2>As a mentor</h2>
             <div className="divider divider__red"/>
             <p>
+            Want to get involved in Bootcamp? <a href="/get-involved/mentor">Sign up for the mailing list,</a> and we will keep you posted
+            as the summer approaches.
+            </p>
+            {/*
+            <p>
               Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
               and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
               from 3:30 to 6. We&#8217;re all about making it easy for you to join.
             </p>
+            */}
             <ButtonPrimary to="/get-involved/mentor">
               Get Involved
             </ButtonPrimary>
