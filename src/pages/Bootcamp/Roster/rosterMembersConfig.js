@@ -17,6 +17,7 @@ export default [
     image: DavidImage,
     linkedin: 'https://www.linkedin.com/in/david-arango-435037134/',
     github: 'https://github.com/arangodavid',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_DavidArango.pdf',
     bio: `Migrating from Colombia to the United States as a young boy
       has given me a unique drive and ambition. I’ve been told I
       can’t by many, but that has never stopped me from
@@ -48,6 +49,7 @@ export default [
     image: ParissImage,
     linkedin: 'https://www.linkedin.com/in/pariss-chandler-1b06aa9a',
     github: 'https://github.com/ParissChandler',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_ParissChandler.pdf',
     bio: `I am a creative and diligent individual, and use my love for front end web development
     to design vibrant and engaging products. Coming from an artistic background of acting, filmmaking,
     and writing, I love grabbing the attention of an audience, and rewarding it with a great experience.
@@ -61,6 +63,7 @@ export default [
     image: RogerImage,
     linkedin: 'https://www.linkedin.com/in/roger-moraldo-00a646122',
     github: 'https://github.com/Corriger',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_RogerMoraldo.pdf',
     bio: `As far as I am aware I am the first in my family to have any kind of foot in web development, let alone an
 affinity for it. Be it for the sake of learning or to make something pleasing to the eye, or to make
 something that really engages users and makes it easy and intuitive to navigate, I am almost always
@@ -74,6 +77,7 @@ something. This is thanks to my affinity for web development, for drawing, and f
   image: EmilioImage,
   linkedin: 'https://www.linkedin.com/in/emilio-murillo-983034134',
   github: 'https://github.com/EmilioMurillo',
+  resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_emiliomurillo.pdf',
   bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
 spoken to big crowds as guest speaker, and have led many community organizations in Boston. I know how to
 communicate well with others in any environment, and in any situation. This allows me to be progressive
@@ -88,6 +92,7 @@ impact in the tech world. You can see some of my work at https://emiliomurillo.g
     image: MariaImage,
     linkedin: 'https://www.linkedin.com/in/ma-in%C3%A9s-peniche-a2a039134/',
     github: 'https://github.com/InPen',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_mariapeniche.pdf',
     bio: `As a person who migrated at the age of 10, I’ve learned the meaning of hard work. I’m a fast
     learner who is always ready for the next challenge and, because of that, I pursue my dreams and
     re-shape them as I continue to grow as a person and a professional. I’m a sociologist and political
@@ -114,6 +119,7 @@ impact in the tech world. You can see some of my work at https://emiliomurillo.g
     image: ArnoldImage,
     linkedin: 'https://www.linkedin.com/in/arnaldo-pires-66721b4b/',
     github: 'https://github.com/ArnoldPires',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_arnaldopires.pdf',
     bio: `I’m always asking questions and digging deep into every issue with an analytical growth mindset.
     My IT support background has enabled me to become a relentless detective, troubleshooting issues until
     real solutions are found. This attitude has also translated into my approach to web development.
@@ -129,6 +135,7 @@ impact in the tech world. You can see some of my work at https://emiliomurillo.g
     image: StephenImage,
     linkedin: 'https://www.linkedin.com/in/stephen-simpson-33021b37',
     github: 'https://github.com/stephentsimpson',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_stephensimpson.pdf',
     bio: `I'm immensely proud to be a Howard-bred hustler with
     an insatiable desire for driving transformative social impact.  My experiences in political organizing,
     education reform, research, and consulting have given me a strong foundation in outreach, data analysis,
@@ -144,6 +151,7 @@ impact in the tech world. You can see some of my work at https://emiliomurillo.g
     image: ShawnImage,
     linkedin: 'https://www.linkedin.com/in/dashawn-watkins-b27122134',
     github: 'https://github.com/dashawnwatkins',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_dashawnwatkins.pdf',
     bio: `I am a hard worker with an insatiable thirst for theory and knowledge.
 Problem solving comes naturally to an American soldier, as well as not giving up
 until the job is complete. I have a strong background in community

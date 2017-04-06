@@ -42,6 +42,18 @@ class RosterMember extends React.Component {
 
     return `mailto:${sendTo}?subject=${subject}&body=${body}`;
   }
+
+  getResume() {
+    const {resume} = this.props;
+    const {name} = this.props;
+
+    if (!resume) {
+      return null;
+    }
+
+    return <a href={resume} target="_blank">See my resume</a>
+  }
+
   getId() {
     return this.props.name.replace(/ /g,'');
   }
@@ -138,7 +150,7 @@ class RosterMember extends React.Component {
     )
   }
   render() {
-    const {image, name, bio} = this.props;
+    const {image, name, bio, resume} = this.props;
 
     return (
       <SideBySide id={this.getId} className="roster-member">
@@ -154,9 +166,14 @@ class RosterMember extends React.Component {
           <p>
             {bio}
           </p>
+        <p>
+          {this.getResume()}
+        </p>
+
           <ButtonPrimary href={this.getMailToLink()}>
             Request more info
           </ButtonPrimary>
+
         </SideItem>
       </SideBySide>
     )

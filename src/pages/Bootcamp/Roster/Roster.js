@@ -17,6 +17,7 @@ class Roster extends React.Component {
         bio={item.bio}
         linkedin={item.linkedin}
         github={item.github}
+        resume={item.resume}
         availableForHire={item.availableForHire}
         hash={this.props.location.hash}
       />
