@@ -27,6 +27,9 @@ module.exports = {
     publicPath: publicPath
   },
   resolve: {
+    root: [
+      path.resolve('./src')
+    ],
     extensions: ['', '.js', '.json'],
     alias: {
       "modernizr$": path.resolve(__dirname, ".modernizrrc"),
@@ -69,8 +72,10 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: [paths.appSrc, paths.appNodeModules],
-        loader: 'style!css!postcss'
+        loaders: [
+          'style?sourceMap',
+          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+        ]
       },
       {
         test: /\.scss$/,
