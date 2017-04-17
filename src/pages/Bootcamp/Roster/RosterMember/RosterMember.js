@@ -1,183 +1,189 @@
-import './RosterMember.scss'
+import styles from './RosterMember.css'
 import React from 'react';
-import ReactDOM from 'react-dom';
-import SideBySide from '../../../../components/Containers/SideBySide/SideBySide';
-import SideItem from '../../../../components/Containers/SideBySide/SideItem/SideItem';
-import ButtonPrimary from '../../../../components/Buttons/ButtonPrimary';
-import ReactZeroClipboard from 'react-zeroclipboard';
-import linkIcon from './link_icon.svg';
+import CSSModules from 'react-css-modules';
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UICard from 'UILibrary/layout/UICard';
+import UIButton from 'UILibrary/button/UIButton';
+import UILink from 'UILibrary/button/UILink';
+import UIIcon from 'UILibrary/icon/UIIcon';
+import UIOverlay from 'UILibrary/overlay/UIOverlay';
+import UIImage from 'UILibrary/image/UIImage';
+import UILayer from 'UILibrary/layer/UILayer';
+import CenteredContainerOuter from '../../../../components/Containers/CenteredContainer/CenteredContainerOuter';
+import CenteredContainerInner from '../../../../components/Containers/CenteredContainer/CenteredContainerInner';
+import RouteTransition from '../../../../components/RouteTransition/RouteTransition';
 import githubLogo from '../../../../images/github.svg';
 import linkedinLogo from '../../../../images/linkedin.svg';
-import swfPath from 'react-zeroclipboard/assets/ZeroClipboard.swf';
-
-const COPY_BUTTON_STATE = {
-  copy: <img src={linkIcon} alt="copy link to roster member"/>,
-  copied: <span>Copied</span>
-}
+import rosterMembersConfig from '../rosterMembersConfig';
+import leftArrowImage from 'images/left-arrow.svg';
 
 class RosterMember extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      copyButtonText: COPY_BUTTON_STATE.copy
+      member: this.getMemberFromUrl()
     }
 
     this.getMailToLink = this.getMailToLink.bind(this);
-    this.renderAvailability = this.renderAvailability.bind(this);
-    this.getId = this.getId.bind(this);
-    this.handleCopyClick = this.handleCopyClick.bind(this);
+    this.getMemberFromUrl = this.getMemberFromUrl.bind(this);
+    this.renderResumeLink = this.renderResumeLink.bind(this);
   }
-  componentDidMount() {
-    const {hash} = this.props;
-    if (hash && hash.replace(/#/g, '') === this.getId()) {
-      setTimeout(() => ReactDOM.findDOMNode(this).scrollIntoView(), 350)
-    }
+  getMemberFromUrl() {
+    const {memberName} = this.props.params;
+    const member = rosterMembersConfig.filter((item) => {
+      return item.url.replace('/bootcamp/roster/', '') === memberName;
+    });
+
+    return member[0];
   }
   getMailToLink() {
-    const {name} = this.props;
+    const {name} = this.state.member;
     const sendTo = "david@resilientcoders.org"
     const subject = `Requesting more information about ${name}`;
     const body = `I'd like to request more information about hiring ${name}.`
 
     return `mailto:${sendTo}?subject=${subject}&body=${body}`;
   }
-
-  getResume() {
-    const {resume} = this.props;
-    const {name} = this.props;
-
-    if (!resume) {
-      return null;
-    }
-
-    return <a href={resume} target="_blank">See my resume</a>
-  }
-
-  getId() {
-    return this.props.name.replace(/ /g,'');
-  }
-  renderAvailability() {
-    if (this.props.availableForHire) {
-      return (
-        <div className="roster-member-availability">
-          <h3>
-            Available for hire
-          </h3>
-        </div>
-      )
-    }
-
-    return (
-      <div className="roster-member-availability">
-        <h3>
-          Hired
-        </h3>
-      </div>
-    );
-  }
-  handleCopyClick() {
-    this.setState({
-      copyButtonText: COPY_BUTTON_STATE.copied
-    });
-
-    setTimeout(() => {
-      this.setState({
-        copyButtonText: COPY_BUTTON_STATE.copy
-      });
-    }, 1500);
-  }
-  renderCopyButton() {
-    const url = window.location.origin + window.location.pathname + `#${this.getId()}`;
-
-    return(
-      <ReactZeroClipboard
-        text={url}
-        swfPath={swfPath}
-      >
-        <button className="roster-member-copy" onClick={this.handleCopyClick}>
-          {this.state.copyButtonText}
-        </button>
-      </ReactZeroClipboard>
-    );
-  }
-  renderControls() {
-    return (
-      <div className="roster-controls">
-        {this.renderAvailability()}
-        {this.renderCopyButton()}
-      </div>
-    )
-  }
   renderLinkedin() {
-    const {linkedin} = this.props;
+    const {linkedin} = this.state.member;
 
     if (!linkedin) {
       return null;
     }
 
     return (
-      <a href={linkedin} className="icon" target="_blank">
-        <img alt="linkedin" src={linkedinLogo} />
+      <a href={linkedin} target="_blank" className="m-right-1">
+        <UIIcon alt="linkedin" image={linkedinLogo} />
       </a>
-    )
+    );
   }
   renderGithub() {
-    const {github} = this.props;
+    const {github} = this.state.member;
 
     if (!github) {
       return null;
     }
 
     return (
-      <a href={github} className="icon" target="_blank">
-        <img alt="github" src={githubLogo} />
+      <a href={github} target="_blank">
+        <UIIcon alt="github" image={githubLogo} />
       </a>
-    )
+    );
   }
   renderLinks() {
-    const {linkedin, github} = this.props;
+    const {linkedin, github} = this.state.member;
 
     if (!linkedin && !github) {
       return null;
     }
 
     return (
-      <div className="roster-member-links">
+      <div className="m-bottom-3">
         {this.renderLinkedin()}
         {this.renderGithub()}
       </div>
     )
   }
-  render() {
-    const {image, name, bio, resume} = this.props;
+  renderResumeLink() {
+    const {resume} = this.state.member;
+    if (!resume) {
+      return null;
+    }
 
     return (
-      <SideBySide id={this.getId} className="roster-member">
-        <SideItem flush={true}>
-          <img src={image} alt="Student" />
-          {this.renderControls()}
-        </SideItem>
-        <SideItem className="p-y">
-          <h2>
-            {name}
-          </h2>
-          {this.renderLinks()}
-          <p>
-            {bio}
-          </p>
-        <p>
-          {this.getResume()}
-        </p>
+      <UILink href={resume} external={true}>
+        View Resume
+      </UILink>
+    );
+  }
+  renderPortfolio() {
+    const {portfolioUrl} = this.state.member;
 
-          <ButtonPrimary href={this.getMailToLink()}>
-            Request more info
-          </ButtonPrimary>
+    if (!portfolioUrl) {
+      return null;
+    }
 
-        </SideItem>
-      </SideBySide>
+    return (
+      <CenteredContainerOuter color="white" className="p-y-6">
+        <CenteredContainerInner
+          color="white"
+          flush={false}
+          className="text-center"
+        >
+          <h1 className="m-bottom-0">
+            Portfolio Website
+          </h1>
+          <div className="divider divider__red " />
+          <a
+            styleName="website"
+            target="_blank"
+            href={portfolioUrl}
+          >
+            <UIOverlay text="Visit Website">
+              <div styleName="iframe-wrapper">
+                <iframe
+                  scrolling="no"
+                  src={portfolioUrl}
+                  seamless="seamless"
+                  styleName="iframe"
+                />
+              </div>
+            </UIOverlay>
+          </a>
+        </CenteredContainerInner>
+      </CenteredContainerOuter>
+    )
+  }
+  render() {
+    const {image, name, bio} = this.state.member;
+
+    return (
+      <RouteTransition>
+        <CenteredContainerOuter>
+          <UILayer image={image} greyscale={false}/>
+          <CenteredContainerInner className="p-top-11 p-bottom-6" flush={false}>
+            <UIButton
+              to="/bootcamp/roster"
+              type="link"
+              use="tertiary"
+              className="m-bottom-1"
+            >
+              <UIIcon
+                image={leftArrowImage}
+                align="text-bottom"
+              />
+              <span>
+                Back to all students
+              </span>
+            </UIButton>
+            <UIFlexRow>
+              <UIFlex>
+                <UIImage src={image} type="cover" />
+              </UIFlex>
+              <UIFlex>
+                <UICard className="p-all-5">
+                  <h2>
+                    {name}
+                  </h2>
+                  {this.renderLinks()}
+                  <p className="m-bottom-3">
+                    {bio}
+                  </p>
+                  {this.renderResumeLink()}
+                  <UIButton href={this.getMailToLink()}>
+                    Request more information
+                  </UIButton>
+                </UICard>
+              </UIFlex>
+            </UIFlexRow>
+          </CenteredContainerInner>
+        </CenteredContainerOuter>
+        {this.renderPortfolio()}
+      </RouteTransition>
     )
   }
 }
 
-export default RosterMember;
+export default CSSModules(RosterMember, styles);

@@ -1,0 +1,37 @@
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dots {
+  composes: layer;
+  background-image: url('images/dot-light.svg');
+  background-size: 6px;
+  user-select: none;
+  z-index: 3;
+}
+
+.overlay {
+  composes: layer;
+  background-image: linear-gradient(rgba(33, 38, 45, 0.7), rgba(33, 38, 45, 0.7));
+  user-select: none;
+  z-index: 2;
+}
+
+.image {
+  user-select: none;
+  z-index: 2;
+}
+
+.image-greyscale {
+  composes: image;
+  filter: grayscale(1);
+}
+
+.image-unstyled {
+  composes: image;
+}

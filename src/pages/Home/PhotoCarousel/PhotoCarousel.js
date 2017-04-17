@@ -1,6 +1,7 @@
 import './PhotoCarousel.scss';
 import React from 'react'
 import Slider from 'react-slick';
+import {Link} from 'react-router';
 import rosterMembersConfig from '../../Bootcamp/Roster/rosterMembersConfig';
 
 class PhotoCarousel extends React.PureComponent {
@@ -8,15 +9,17 @@ class PhotoCarousel extends React.PureComponent {
     return rosterMembersConfig.map((member, index) => {
       return (
         <div key={index}>
-          <img
-            src={member.image}
-            role="presentation"
-          />
-          <div className="slider-details">
-            <h2>
-              {member.name}
-            </h2>
-          </div>
+          <Link to={member.url}>
+            <img
+              src={member.image}
+              role="presentation"
+            />
+            <div className="slider-details">
+              <h2>
+                {member.name}
+              </h2>
+            </div>
+          </Link>
         </div>
       )
     });
