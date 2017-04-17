@@ -1,6 +1,6 @@
 import './Bootcamp.scss';
 import React, {PureComponent} from 'react';
-import UIButton from 'UILibrary/button/UIButton';
+import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
 import Partners from '../../components/Containers/Partners/Partners';
@@ -27,12 +27,12 @@ class Bootcamp extends PureComponent {
           <p>
             Transforming dedication into opportunity, the starting point for our coders&#39; careers.
           </p>
-          <UIButton to="/bootcamp/roster">
+          <ButtonPrimary to="/bootcamp/roster">
             Meet our new grads
-          </UIButton>
+          </ButtonPrimary>
         </Hero>
         <SideBySide>
-          <SideItem type="grey" className="p-y-6">
+          <SideItem type="grey" className="p-y">
             <h2>The Goal</h2>
             <div className="divider divider__red" />
             <p>
@@ -45,7 +45,7 @@ class Bootcamp extends PureComponent {
             </p>
 
           </SideItem>
-          <SideItem className="p-y-6 pull-up-1">
+          <SideItem className="p-y pull-up-1">
             <h2>Current Bootcamp</h2>
             <p>
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -67,9 +67,9 @@ class Bootcamp extends PureComponent {
               Our coders are now available for hire. Interested in learning more? Check out their
               bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
             </p>
-            <UIButton to="/bootcamp/roster">
+            <ButtonPrimary to="/bootcamp/roster">
               Meet our new grads
-            </UIButton>
+            </ButtonPrimary>
           </SideItem>
         </SideBySide>
         <CenteredContainerOuter color="white">
@@ -82,8 +82,8 @@ class Bootcamp extends PureComponent {
           </CenteredContainerInner>
           <CenteredContainerInner
             color="grey"
-            flush={false}
-            className="text-center p-y-6"
+            standard={false}
+            className="text-center p-y"
           >
             <Timeline/>
           </CenteredContainerInner>
@@ -102,7 +102,7 @@ class Bootcamp extends PureComponent {
           </div>
         </div>
         <SideBySide className="bootcamp-apply">
-          <SideItem type="grey" className="p-y-6">
+          <SideItem type="grey" className="p-y">
             <h2>As a student</h2>
             <p>
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -110,11 +110,11 @@ class Bootcamp extends PureComponent {
               the next one? Come to our next Hackathon,
               from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
             </p>
-            <UIButton to="/get-involved/student">
+            <ButtonPrimary to="/get-involved/student">
               Learn more
-            </UIButton>
+            </ButtonPrimary>
           </SideItem>
-          <SideItem type="white" className="p-y-6 pull-up-1">
+          <SideItem type="white" className="p-y pull-up-1">
             <h2>As a mentor</h2>
             <div className="divider divider__red"/>
             <p>
@@ -127,11 +127,10 @@ class Bootcamp extends PureComponent {
               and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
               from 3:30 to 6. We&#8217;re all about making it easy for you to join.
               </p>
-              <<<<<<< a7175b3522fc9d1c175548a2e264490bec1763e3
             */}
-            <UIButton to="/get-involved/mentor">
+            <ButtonPrimary to="/get-involved/mentor">
               Get Involved
-            </UIButton>
+            </ButtonPrimary>
           </SideItem>
         </SideBySide>
         <CenteredContainerOuter color="white">

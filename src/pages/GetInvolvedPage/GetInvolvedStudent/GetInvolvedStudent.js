@@ -1,7 +1,7 @@
 import './GetInvolvedStudent.scss';
 import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import UIButton from 'UILibrary/button/UIButton'
+import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
 import Hero from '../../../components/Containers/Hero/Hero';
@@ -22,7 +22,7 @@ const GetInvolvedStudent = (props) => {
         <div className="divider divider__red" />
       </Hero>
       <SideBySide>
-        <SideItem className="p-y-6 pull-up-2">
+        <SideItem className="p-y pull-up-2">
           <h2>
             Community Hours
           </h2>
@@ -38,7 +38,7 @@ const GetInvolvedStudent = (props) => {
         </SideItem>
       </SideBySide>
       <SideBySide>
-        <SideItem className="p-y-6">
+        <SideItem className="p-y">
           <h2>
             Bootcamp
           </h2>
@@ -56,9 +56,9 @@ const GetInvolvedStudent = (props) => {
           <p>We recruit into Bootcamp from our Hackathons. The next one is on April 29th from 10 to 5 at
             31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up.</a>
           </p>
-          <UIButton to="/bootcamp">
+          <ButtonPrimary to="/bootcamp">
             Learn more
-          </UIButton>
+          </ButtonPrimary>
         </SideItem>
         <SideItem flush={true}>
           <img src={bootcampImage} role="presentation" />
