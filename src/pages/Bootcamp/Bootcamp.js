@@ -1,6 +1,6 @@
 import './Bootcamp.scss';
 import React, {PureComponent} from 'react';
-import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
+import UIButton from 'UILibrary/button/UIButton'
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
 import Partners from '../../components/Containers/Partners/Partners';
@@ -27,9 +27,9 @@ class Bootcamp extends PureComponent {
           <p>
             Transforming dedication into opportunity, the starting point for our coders&#39; careers.
           </p>
-          <ButtonPrimary to="/bootcamp/roster">
+          <UIButton to="/bootcamp/roster">
             Meet our new grads
-          </ButtonPrimary>
+          </UIButton>
         </Hero>
         <SideBySide>
           <SideItem type="grey" className="p-y-6">
@@ -67,9 +67,9 @@ class Bootcamp extends PureComponent {
               Our coders are now available for hire. Interested in learning more? Check out their
               bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
             </p>
-            <ButtonPrimary to="/bootcamp/roster">
+            <UIButton to="/bootcamp/roster">
               Meet our new grads
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
         </SideBySide>
         <CenteredContainerOuter color="white">
@@ -110,9 +110,9 @@ class Bootcamp extends PureComponent {
               the next one? Come to our next Hackathon,
               from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
             </p>
-            <ButtonPrimary to="/get-involved/student">
+            <UIButton to="/get-involved/student">
               Learn more
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
           <SideItem type="white" className="p-y-6 pull-up-1">
             <h2>As a mentor</h2>
@@ -128,9 +128,9 @@ class Bootcamp extends PureComponent {
               from 3:30 to 6. We&#8217;re all about making it easy for you to join.
               </p>
             */}
-            <ButtonPrimary to="/get-involved/mentor">
+            <UIButton to="/get-involved/mentor">
               Get Involved
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
         </SideBySide>
         <CenteredContainerOuter color="white">
