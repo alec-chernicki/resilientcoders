@@ -81,22 +81,6 @@ export default [
     github: 'https://github.com/EmilioMurillo',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_emiliomurillo.pdf',
     bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
-    spoken to big crowds as guest speaker, and have led many community organizations in Boston. I know how to
-    communicate well with others in any environment, and in any situation. This allows me to be progressive
-    with no limits. I am also an independent fashion designer. I've drawn from this experience a certain patience, drive,
-    and creative perspective, which influence my approach to designing and building digital products. Semantically structured HTML, responsive CSS,
-    and javascript are just a new set of tools in my kit, with which I intend to make an
-    impact in the tech world.`
-  },
-  {
-    url:'/bootcamp/roster/emilio-murillo',
-    portfolioUrl: 'https://emiliomurillo.github.io/portfoliov4`',
-    name: 'Emilio Murillo',
-    image: EmilioImage,
-    linkedin: 'https://www.linkedin.com/in/emilio-murillo-983034134',
-    github: 'https://github.com/EmilioMurillo',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_emiliomurillo.pdf',
-    bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
       spoken to big crowds as guest speaker, and have led many community organizations in Boston. I know how to
       communicate well with others in any environment, and in any situation. This allows me to be progressive
       with no limits. I am also an independent fashion designer. I've drawn from this experience a certain patience, drive,

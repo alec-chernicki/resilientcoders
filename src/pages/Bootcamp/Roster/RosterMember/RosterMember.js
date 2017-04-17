@@ -10,6 +10,7 @@ import UIIcon from 'UILibrary/icon/UIIcon';
 import UIOverlay from 'UILibrary/overlay/UIOverlay';
 import UIImage from 'UILibrary/image/UIImage';
 import UILayer from 'UILibrary/layer/UILayer';
+import UISection from 'UILibrary/layout/UISection';
 import CenteredContainerOuter from '../../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import RouteTransition from '../../../../components/RouteTransition/RouteTransition';
@@ -173,7 +174,7 @@ class RosterMember extends React.Component {
                   </p>
                   {this.renderResumeLink()}
                   <UIButton href={this.getMailToLink()}>
-                    Request more information
+                    Request more info
                   </UIButton>
                 </UICard>
               </UIFlex>

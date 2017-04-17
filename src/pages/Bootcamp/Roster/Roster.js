@@ -3,6 +3,7 @@ import styles from './Roster.css';
 import CSSModules from 'react-css-modules';
 import Helmet from 'react-helmet';
 import {Link} from 'react-router';
+import UISection from 'UILibrary/layout/UISection'
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
 import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
@@ -47,7 +48,7 @@ class Roster extends React.Component {
         <Helmet title="Student Roster" />
         <CenteredContainerOuter color="dark-grey">
           <UILayer image={rosterImage} />
-          <CenteredContainerInner className="p-bottom-6 p-top-11 text-center" flush={false}>
+          <CenteredContainerInner className="p-bottom-6 p-top-11 text-center p-x-2" flush={false}>
             <h1>The Roster</h1>
             <div className="divider divider__red" />
             <p className="text-constrained text-on-dark">
@@ -64,11 +65,11 @@ class Roster extends React.Component {
           </CenteredContainerInner>
         </CenteredContainerOuter>
         <CenteredContainerOuter color="white">
-          <CenteredContainerInner color="white" className="p-y-6" flush={false}>
+          <UISection className="p-y-6">
             <UIFlexRow justify="space-between">
               {this.renderMembers()}
             </UIFlexRow>
-          </CenteredContainerInner>
+          </UISection>
         </CenteredContainerOuter>
       </RouteTransition>
     );
