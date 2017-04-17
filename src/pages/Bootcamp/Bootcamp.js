@@ -32,7 +32,7 @@ class Bootcamp extends PureComponent {
           </ButtonPrimary>
         </Hero>
         <SideBySide>
-          <SideItem type="grey" className="p-y">
+          <SideItem type="grey" className="p-y-6">
             <h2>The Goal</h2>
             <div className="divider divider__red" />
             <p>
@@ -45,7 +45,7 @@ class Bootcamp extends PureComponent {
             </p>
 
           </SideItem>
-          <SideItem className="p-y pull-up-1">
+          <SideItem className="p-y-6 pull-up-1">
             <h2>Current Bootcamp</h2>
             <p>
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -102,7 +102,7 @@ class Bootcamp extends PureComponent {
           </div>
         </div>
         <SideBySide className="bootcamp-apply">
-          <SideItem type="grey" className="p-y">
+          <SideItem type="grey" className="p-y-6">
             <h2>As a student</h2>
             <p>
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -114,7 +114,7 @@ class Bootcamp extends PureComponent {
               Learn more
             </ButtonPrimary>
           </SideItem>
-          <SideItem type="white" className="p-y pull-up-1">
+          <SideItem type="white" className="p-y-6 pull-up-1">
             <h2>As a mentor</h2>
             <div className="divider divider__red"/>
             <p>
