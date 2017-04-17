@@ -1,7 +1,7 @@
 import './Steps.scss';
 import React from 'react';
 import StepNavigation from './StepNavigation/StepNavigation';
-import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
+import UIButton from 'UILibrary/button/UIButton'
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classNames from 'classnames';
@@ -92,7 +92,7 @@ class Steps extends React.Component {
 
     return (
       <div className="step-content__background">
-        <CenteredContainerInner standard={false}>
+        <CenteredContainerInner flush={false}>
           {this.renderControls()}
           <StepNavigation
             shownStepIndex={shownStepIndex}
@@ -138,9 +138,9 @@ class Steps extends React.Component {
                   <p>
                     {currentStep.text}
                   </p>
-                  <ButtonPrimary to={currentStep.link}>
+                  <UIButton to={currentStep.link}>
                     Learn more
-                  </ButtonPrimary>
+                  </UIButton>
                 </div>
               </div>
             </ReactCSSTransitionGroup>

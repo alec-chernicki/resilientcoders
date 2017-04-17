@@ -1,0 +1,62 @@
+.roster-student {
+  position: relative;
+  flex: 2 0 30%;
+  margin-bottom: 30px;
+  max-width: calc((100% / 3) - 30px);
+
+  &:hover {
+    img {
+      filter: grayscale(100%);
+    }
+
+    .roster__student__button {
+      opacity: 1;
+    }
+  }
+
+  &:not(:nth-of-type(3n)){
+    margin-right: 30px;
+  }
+
+  img {
+    @include transition;
+  }
+}
+
+.roster__student__button {
+  opacity: 0;
+  @include transition;
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  color: #FFF;
+  background-color: rgba($background-secondary, 0.5);
+
+  span {
+    font-family: $roboto-slab;
+    height: 25px;
+  }
+
+  span:after {
+    transition-delay: 150ms;
+    background-color: $accent-primary;
+  }
+}
+
+.student-name {
+  background-color: #21262D;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.student-name h3 {
+  color: #FFF !important;
+  margin: 0;
+}

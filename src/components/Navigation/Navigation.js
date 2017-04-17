@@ -67,7 +67,14 @@ class Navigation extends React.Component {
       active: this.state.isMobileNavActive
     });
     return (
-      <Headroom>
+      <Headroom
+        style={{
+          WebkitTransition: 'all 450ms cubic-bezier(0.52, 0.01, 0.16, 1)',
+          MozTransition: 'all 450ms cubic-bezier(0.52, 0.01, 0.16, 1)',
+          OTransition: 'all 450ms cubic-bezier(0.52, 0.01, 0.16, 1)',
+          transition: 'all 450ms cubic-bezier(0.52, 0.01, 0.16, 1)',
+        }}
+      >
         <Link to="/" className="nav-logo">
           <img src={logoRed} alt="Resilient Coders logo"/>
         </Link>

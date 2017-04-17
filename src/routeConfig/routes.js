@@ -10,17 +10,31 @@ import Lab from '../pages/Lab/Lab';
 import Team from '../pages/Team/Team';
 import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
+
 import Roster from '../pages/Bootcamp/Roster/Roster';
+import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
+import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
 
 import {Route, IndexRoute, Redirect} from 'react-router';
 import App from '../App';
+
+const rosterMemberRoutes = rosterMembersConfig.map((item, key) => {
+  return (
+    <Route
+      key={key}
+      path="roster/:memberName"
+      component={RosterMember}
+    />
+  )
+});
 
 export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home} key="home"/>
     <Route path="bootcamp">
+      <Route path="roster" component={Roster} />
+      {rosterMemberRoutes}
       <IndexRoute component={Bootcamp}/>
-      <Route path="roster" component={Roster}/>
     </Route>
     <Route path="lab" component={Lab}/>
     <Route path="team" component={Team}/>
@@ -31,6 +45,6 @@ export default(
       <Route path="mentor" component={GetInvolvedMentor}/>
       <Route path="student" component={GetInvolvedStudent}/>
     </Route>
-    <Redirect from="*" to="/" />
+    
   </Route>
 );

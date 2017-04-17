@@ -1,11 +1,12 @@
-.icon {
-  width: 22px;
-  margin-right: 16px;
-  height: 22px;
+.align-bottom {
+  display: flex !important;
+  align-items: flex-end !important;
 }
 
-.text-center {
-  text-align: center !important;
+// HACK: This needs to be standardized within UICard, currently the text is
+// super unreadable on dark backgrounds.
+.text-on-dark {
+  color: #B3C7D1;
 }
 
 .text-constrained {
@@ -22,15 +23,16 @@
   color: $text-primary !important;
 }
 
-// Utility classes
-.flex-row {
-  display: flex !important;
-  flex-direction: row !important;
-}
-
 .strong {
   font-weight: bold;
   color: $text-primary;
+}
+
+// Note: Any utility class above this line is being deprecated in favor
+// or components within /UILibrary in the future.
+// ---------------------------------------------------------------------------
+.text-center {
+  text-align: center !important;
 }
 
 .center-block {
@@ -63,102 +65,68 @@
   margin-bottom: 50px;
 }
 
-.m-top {
-  margin-top: 60px;
+
+// Generates consistent z-index utility classes
+@for $i from 0 through 10 {
+  $value: $i * 10;
+
+  .index-#{$i} {
+    position: relative;
+    z-index: $value;
+  }
 }
 
-.m-bottom {
-  margin-bottom: 60px;
-}
+// Generates consistent utility classes for declaritively
+// adding margin and padding to existing component styles
+@for $i from 0 through 20 {
+  $value-interval: 10;
+  $value: $i * $value-interval + px;
 
-.m-y {
-  margin-right: 60px;
-  margin-left: 60px;
-}
+  .m-top-#{$i} {
+    margin-top: $value !important;
+  }
+  .m-right-#{$i} {
+    margin-right: $value !important;
+  }
+  .m-bottom-#{$i} {
+    margin-bottom: $value !important;
+  }
+  .m-left-#{$i} {
+    margin-left: $value !important;
+  }
+  .m-x-#{$i} {
+    margin-right: $value !important;
+    margin-left: $value !important;
+  }
+  .m-y-#{$i} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+  .m-all-#{$i} {
+    margin: $value !important;
+  }
 
-.m-x {
-  margin-right: 60px;
-  margin-left: 60px;
-}
-
-.m-all {
-  margin: 60px;
-}
-
-.p-top {
-  padding-top: 80px;
-}
-
-.p-top-2 {
-  padding-top: 120px;
-}
-
-.p-top-3 {
-  padding-top: 160px;
-}
-
-.p-bottom-0 {
-  padding-bottom: 0px !important;
-}
-
-.p-bottom {
-  padding-bottom: 80px;
-}
-
-.p-bottom-2 {
-  padding-bottom: 120px;
-}
-
-.p-bottom-3 {
-  padding-bottom: 160px;
-}
-
-.p-bottom-4 {
-  padding-bottom: 200px;
-}
-
-.highest {
-  z-index: 1000;
-}
-
-.higher {
-  z-index: 100;
-}
-
-.high {
-  z-index: 10;
-}
-
-.p-y {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.p-y-2 {
-  padding-top: 120px;
-  padding-bottom: 100px;
-}
-
-.p-y-3 {
-  padding-top: 160px;
-  padding-bottom: 160px;
-}
-
-.p-x-0 {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-.p-x {
-  padding-right: 60px;
-  padding-left: 60px;
-}
-
-.p-all {
-  padding: 60px;
-}
-
-.align-bottom {
-  display: flex !important;
-  align-items: flex-end !important;
+  .p-top-#{$i} {
+    padding-top: $value !important;
+  }
+  .p-right-#{$i} {
+    padding-right: $value !important;
+  }
+  .p-bottom-#{$i} {
+    padding-bottom: $value !important;
+  }
+  .p-left-#{$i} {
+    padding-left: $value !important;
+  }
+  .p-x-#{$i} {
+    padding-right: $value !important;
+    padding-left: $value !important;
+  }
+  .p-y-#{$i} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+  .p-all-#{$i} {
+    padding: $value !important;
+  }
 }

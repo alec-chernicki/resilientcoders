@@ -1,7 +1,7 @@
 import './Home.scss';
 import React, {PureComponent} from 'react';
 import EmailFormShort from '../../components/EmailForms/EmailFormShort';
-import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
+import UIButton from 'UILibrary/button/UIButton';
 import MicahVideo from './MicahVideo/MicahVideo';
 import PhotoCarousel from './PhotoCarousel/PhotoCarousel';
 import Steps from './Steps/Steps';
@@ -35,14 +35,14 @@ class Home extends PureComponent {
           <p>
             Spreading code literacy to young people from traditionally underserved communities.
           </p>
-          <ButtonPrimary to="/get-involved">
+          <UIButton to="/get-involved">
             Get Involved
-          </ButtonPrimary>
+          </UIButton>
         </Hero>
         <SideBySide className="home-details" animatable={true}>
           <SideItem
             type="white"
-            className="p-y pull-up-1"
+            className="p-y-6 pull-up-1"
           >
             <h1>OUR MISSION</h1>
             <p>
@@ -63,35 +63,16 @@ class Home extends PureComponent {
           </SideItem>
         </SideBySide>
 
-        <MicahVideo/>
-
-        <CenteredContainerOuter color="white">
-          <CenteredContainerInner
-            color="dark-grey"
-            className="text-center pull-up"
-            accent={true}
-          >
-            <p className="text-white">
-              There's more than one way to join the code literacy movement.
-            </p>
-            <ButtonPrimary to="/get-involved" className="center-block">
-              GET INVOLVED
-            </ButtonPrimary>
-          </CenteredContainerInner>
-          <Steps />
-        </CenteredContainerOuter>
         <CenteredContainerOuter color="dark-grey">
           <CenteredContainerInner className="text-center" color="dark-grey">
-            <h1>Our students</h1>
-            <p className="text-constrained">
+            <h1>Meet our students</h1>
+            <p className="text-constrained text-on-dark">
               Our students come from have a variety of backgrounds and perspectives, but
               they all share drive and passion.
             </p>
           </CenteredContainerInner>
         </CenteredContainerOuter>
-
         <PhotoCarousel />
-
         <CenteredContainerOuter color="white">
           <CenteredContainerInner color="white" className="text-center">
             <h3>Our alumni are employed by companies like:</h3>
@@ -102,6 +83,25 @@ class Home extends PureComponent {
             />
           </CenteredContainerInner>
         </CenteredContainerOuter>
+
+        <MicahVideo/>
+
+        <CenteredContainerOuter color="white">
+          <CenteredContainerInner
+            color="dark-grey"
+            className="text-center pull-up"
+            accent={true}
+          >
+            <p className="text-on-dark">
+              There's more than one way to join the code literacy movement.
+            </p>
+            <UIButton to="/get-involved" className="center-block">
+              GET INVOLVED
+            </UIButton>
+          </CenteredContainerInner>
+          <Steps />
+        </CenteredContainerOuter>
+
         <CenteredContainerOuter color="grey" className="subscribe-section">
           <CenteredContainerInner color="transparent" className="text-center">
             <h1>Keep in Touch</h1>

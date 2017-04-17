@@ -8,7 +8,7 @@ import CenteredContainerOuter from '../../components/Containers/CenteredContaine
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Hero from '../../components/Containers/Hero/Hero';
 import TeamHeroImage from './team-hero.png';
-import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
+import UIButton from 'UILibrary/button/UIButton';
 import Helmet from 'react-helmet';
 
 class Team extends React.PureComponent {
@@ -50,9 +50,9 @@ class Team extends React.PureComponent {
             <p className="text-constrained">
               There's numerous ways to get involved whether you're a company or individual
             </p>
-            <ButtonPrimary to="/get-involved">
+            <UIButton to="/get-involved">
               Get Involved
-            </ButtonPrimary>
+            </UIButton>
           </CenteredContainerInner>
         </CenteredContainerOuter>
       </RouteTransition>

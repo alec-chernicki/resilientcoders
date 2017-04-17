@@ -60,9 +60,7 @@ class News extends React.PureComponent {
                 <div className="news-page-header">
                   <div className="news-header">
                     <h1 className="text-darkest">
-                      <BinaryText isInverted={true}>
-                        In The News
-                      </BinaryText>
+                      In The News
                     </h1>
                   </div>
                   <div className="divider"/>

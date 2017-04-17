@@ -2,7 +2,7 @@ import './MicahVideo.scss'
 import React from 'react';
 import BinaryText from '../../../components/BinaryText/BinaryText';
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
-import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
+import UIButton from 'UILibrary/button/UIButton'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const micahVideoUrl = 'https://youtu.be/JU1UunsFgpU';
@@ -51,12 +51,12 @@ class MicahVideo extends React.PureComponent {
             className="video-play-icon"
             onClick={this.handleVideoOpen.bind(this)}
           />
-          <ButtonPrimary
+          <UIButton
             className="video-play-button"
             onClick={this.handleVideoOpen.bind(this)}
           >
             Watch video
-          </ButtonPrimary>
+          </UIButton>
         </div>
         <ReactCSSTransitionGroup
           transitionName="video"

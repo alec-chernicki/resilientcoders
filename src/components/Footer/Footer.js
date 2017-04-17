@@ -17,11 +17,12 @@ class Footer extends React.PureComponent {
       <footer>
         <CenteredContainerOuter color="dark-grey">
 
-          <CenteredContainerInner color="dark-grey" standard={false}>
+          <CenteredContainerInner color="dark-grey" flush={false}>
             <div className="footer-container-upper">
               <div className="footer-container-links">
                 <h3>Bootcamp</h3>
                 <Link to="/bootcamp">About</Link>
+                <Link to="/bootcamp/roster">Roster</Link>
               </div>
               <div className="footer-container-links">
                 <h3>Lab</h3>

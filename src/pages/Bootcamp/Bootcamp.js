@@ -1,6 +1,6 @@
 import './Bootcamp.scss';
 import React, {PureComponent} from 'react';
-import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
+import UIButton from 'UILibrary/button/UIButton';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
 import Partners from '../../components/Containers/Partners/Partners';
@@ -27,12 +27,12 @@ class Bootcamp extends PureComponent {
           <p>
             Transforming dedication into opportunity, the starting point for our coders&#39; careers.
           </p>
-          <ButtonPrimary to="/bootcamp/roster">
+          <UIButton to="/bootcamp/roster">
             Meet our new grads
-          </ButtonPrimary>
+          </UIButton>
         </Hero>
         <SideBySide>
-          <SideItem type="grey" className="p-y">
+          <SideItem type="grey" className="p-y-6">
             <h2>The Goal</h2>
             <div className="divider divider__red" />
             <p>
@@ -45,7 +45,7 @@ class Bootcamp extends PureComponent {
             </p>
 
           </SideItem>
-          <SideItem className="p-y pull-up-1">
+          <SideItem className="p-y-6 pull-up-1">
             <h2>Current Bootcamp</h2>
             <p>
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -54,22 +54,22 @@ class Bootcamp extends PureComponent {
               from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
             </p>
             {/*
-            <p>
+              <p>
               Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> is just about finished. Interested in
               applying for the next one? Stop by our <a href="/bootcamp/roster">Community Hours</a>, meet the staff.
               Coders who want to get involved as mentors should peruse the&nbsp;
               <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">
                 Google Appointment calendar
               </a> that features moments during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
-            </p>
+              </p>
             */}
             <p>
               Our coders are now available for hire. Interested in learning more? Check out their
               bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
             </p>
-            <ButtonPrimary to="/bootcamp/roster">
+            <UIButton to="/bootcamp/roster">
               Meet our new grads
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
         </SideBySide>
         <CenteredContainerOuter color="white">
@@ -82,8 +82,8 @@ class Bootcamp extends PureComponent {
           </CenteredContainerInner>
           <CenteredContainerInner
             color="grey"
-            standard={false}
-            className="text-center p-y"
+            flush={false}
+            className="text-center p-y-6"
           >
             <Timeline/>
           </CenteredContainerInner>
@@ -102,7 +102,7 @@ class Bootcamp extends PureComponent {
           </div>
         </div>
         <SideBySide className="bootcamp-apply">
-          <SideItem type="grey" className="p-y">
+          <SideItem type="grey" className="p-y-6">
             <h2>As a student</h2>
             <p>
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -110,27 +110,28 @@ class Bootcamp extends PureComponent {
               the next one? Come to our next Hackathon,
               from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
             </p>
-            <ButtonPrimary to="/get-involved/student">
+            <UIButton to="/get-involved/student">
               Learn more
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
-          <SideItem type="white" className="p-y pull-up-1">
+          <SideItem type="white" className="p-y-6 pull-up-1">
             <h2>As a mentor</h2>
             <div className="divider divider__red"/>
             <p>
-            Want to get involved in Bootcamp? <a href="/get-involved/mentor">Sign up for the mailing list,</a> and we will keep you posted
-            as the summer approaches.
+              Want to get involved in Bootcamp? <a href="/get-involved/mentor">Sign up for the mailing list,</a> and we will keep you posted
+              as the summer approaches.
             </p>
             {/*
-            <p>
+              <p>
               Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
               and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
               from 3:30 to 6. We&#8217;re all about making it easy for you to join.
-            </p>
+              </p>
+              <<<<<<< a7175b3522fc9d1c175548a2e264490bec1763e3
             */}
-            <ButtonPrimary to="/get-involved/mentor">
+            <UIButton to="/get-involved/mentor">
               Get Involved
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
         </SideBySide>
         <CenteredContainerOuter color="white">

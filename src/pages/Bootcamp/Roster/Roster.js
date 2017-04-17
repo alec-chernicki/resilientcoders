@@ -1,52 +1,79 @@
 import React from 'react';
-import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import Hero from '../../../components/Containers/Hero/Hero';
-import RosterHeroImage from './roster-hero.png';
-import rosterconfig from './rosterMembersConfig';
-import RosterMember from './RosterMember/RosterMember';
+import styles from './Roster.css';
+import CSSModules from 'react-css-modules';
 import Helmet from 'react-helmet';
+import {Link} from 'react-router';
+import UISection from 'UILibrary/layout/UISection'
+import RouteTransition from '../../../components/RouteTransition/RouteTransition';
+import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
+import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
+import rosterconfig from './rosterMembersConfig';
+import UIOverlay from 'UILibrary/overlay/UIOverlay';
+import UIButton from 'UILibrary/button/UIButton';
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UILayer from 'UILibrary/layer/UILayer';
+import rosterImage from './roster-hero.png';
 
 class Roster extends React.Component {
   renderMembers() {
-    return rosterconfig.map((item, i) => (
-      <RosterMember
-        key={i}
-        image={item.image}
-        name={item.name}
-        title={item.title}
-        bio={item.bio}
-        linkedin={item.linkedin}
-        github={item.github}
-        resume={item.resume}
-        availableForHire={item.availableForHire}
-        hash={this.props.location.hash}
-      />
-    ));
+    return rosterconfig.map((item, key) => {
+      return (
+        <UIFlex
+          basis="31%"
+          grow={0}
+          shrink={0}
+          className="m-bottom-4"
+        >
+          <Link
+            key={key}
+            to={item.url}
+          >
+            <UIOverlay text="Learn more">
+              <img src={item.image} />
+            </UIOverlay>
+          </Link>
+          <div styleName="student-name">
+            <h3>
+              {item.name}
+            </h3>
+          </div>
+        </UIFlex>
+      );
+    });
   }
   render () {
     return (
       <RouteTransition>
-        <Helmet title="Roster" />
-        <Hero
-          titleLineOne="The Roster"
-          image={RosterHeroImage}
-          centered={true}
-          short={true}
-        >
-          <div className="divider divider__red" />
-          <p>
-            Bootcampers meet daily, for eight weeks, to learn semantically structured
-            HTML, responsive CSS, JavaScript, jQuery, git, and more. Before graduating,
-            they will have built, and pushed to GitHub, actual client work that showcases these aptitudes.
-            From <a href="/bootcamp">Bootcamp</a>, mentorship, and Resilient Lab,
-            through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at
-            at their first technical job.
-          </p>
-        </Hero>
-        {this.renderMembers()}
+        <Helmet title="Student Roster" />
+        <CenteredContainerOuter color="dark-grey">
+          <UILayer image={rosterImage} />
+          <CenteredContainerInner className="p-bottom-6 p-top-11 text-center p-x-2" flush={false}>
+            <h1>The Roster</h1>
+            <div className="divider divider__red" />
+            <p className="text-constrained text-on-dark">
+              Bootcampers meet daily, for eight weeks, to learn semantically structured
+              HTML, responsive CSS, JavaScript, jQuery, git, and more. Before graduating,
+              they will have built, and pushed to GitHub, actual client work that showcases these aptitudes.
+              From <a href="/bootcamp">Bootcamp</a>, mentorship, and Resilient Lab,
+              through additional on-the-job support, we ensure that our coders are successful at
+              at their first technical job.
+            </p>
+            <UIButton href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">
+              View our hiring guide
+            </UIButton>
+          </CenteredContainerInner>
+        </CenteredContainerOuter>
+        <CenteredContainerOuter color="white">
+          <UISection className="p-y-6">
+            <UIFlexRow justify="space-between">
+              {this.renderMembers()}
+            </UIFlexRow>
+          </UISection>
+        </CenteredContainerOuter>
       </RouteTransition>
     );
   }
 }
 
-export default Roster;
+export default CSSModules(Roster, styles);
