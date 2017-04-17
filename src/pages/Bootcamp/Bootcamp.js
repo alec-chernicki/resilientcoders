@@ -1,6 +1,5 @@
 import './Bootcamp.scss';
 import React, {PureComponent} from 'react';
-import UIButton from 'UILibrary/button/UIButton';
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Timeline from './Timeline/Timeline';
@@ -28,9 +27,9 @@ class Bootcamp extends PureComponent {
           <p>
             Transforming dedication into opportunity, the starting point for our coders&#39; careers.
           </p>
-          <UIButton to="/bootcamp/roster">
+          <ButtonPrimary to="/bootcamp/roster">
             Meet our new grads
-          </UIButton>
+          </ButtonPrimary>
         </Hero>
         <SideBySide>
           <SideItem type="grey" className="p-y-6">
