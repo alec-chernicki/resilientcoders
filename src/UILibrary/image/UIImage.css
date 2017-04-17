@@ -1,14 +1,30 @@
+.image {
+  opacity: 0;
+  transition: all 250ms cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
 .default {
+  composes: image;
   width: auto;
 }
 
 .responsive {
+  composes: image;
   height: auto;
   width: 100%;
 }
 
 .cover {
+  composes: image;
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+
+.wrapper {
+  background-color: #21262D;
+}
+
+.loaded {
+  opacity: 1;
 }
