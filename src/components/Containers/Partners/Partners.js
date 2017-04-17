@@ -1,7 +1,7 @@
 import './Partners.scss';
 import React from 'react';
 import classNames from 'classnames';
-import LinkPrimary from '../../../components/Buttons/LinkPrimary';
+import UIButton from 'UILibrary/button/UIButton';
 
 class Partners extends React.PureComponent {
   renderPartners() {
@@ -24,9 +24,9 @@ class Partners extends React.PureComponent {
         <div className="partners__items">
           {this.renderPartners()}
         </div>
-        <LinkPrimary to={this.props.to}>
+        <UIButton type="link" to={this.props.to}>
           {this.props.buttonText}
-        </LinkPrimary>
+        </UIButton>
       </div>
     )
   }
