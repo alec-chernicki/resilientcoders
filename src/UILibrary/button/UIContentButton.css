@@ -34,7 +34,7 @@
   transform: translateY(0%);
 }
 
-@media screen and (max-width: $device-width) {
+@media screen and (max-width: 768px) {
   .content {
     transform: translateY(0%);
   }
@@ -49,7 +49,7 @@
   transform: scale(1.15) translateY(-5%);
 }
 
-@media screen and (max-width: $device-width) {
+@media screen and (max-width: 768px) {
   .image {
     transform: scale(1.15) translateY(-5%);
   }
