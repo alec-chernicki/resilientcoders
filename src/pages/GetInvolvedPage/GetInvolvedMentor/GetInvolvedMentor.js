@@ -26,12 +26,13 @@ const GetInvolvedMentor = (props) => {
       <SideBySide color="white">
         <SideItem className="p-y">
           <h2>
-            Stay informed
+            Volunteer Corps
           </h2>
           <p>
-            Enter in your information and we'll send over some details on how to get involved as
-            a mentor and keep you up to date as new opportunities become available. For now, just stop by our Community Hours.
-            That's Tuesdays and Thursdays, at 50 Milk St. Boston MA, 5th floor, between 3:30 and 6. <a href="mailto:leon@resilientcoders.org?subject=Mentor%20stopping%20by">Email Leon</a> if you're planning on stopping by,
+            There's more than one way to contribute at Resilient Coders. Our Volunteer Corps is comprised of
+            three Task Forces: Mentorship, Content Production, and Talent Placement. You can <a href="https://cdn2.hubspot.net/hubfs/2253693/Docs/VolunteerCorps.pdf" alt="Resilient Coders Volunteer Corps">read about Volunteer Corps</a>, or just fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgFPrBw28g3vlDL0XMUzQ3kmwHLWVFk2YAKa7M8ChbEeyoCA/viewform">this survey</a>.
+            Once you've done that, come by.
+            We want to meet you. Our Community Hours are Tuesdays and Thursdays, at 50 Milk St. Boston MA, 5th floor, between 3:30 and 6. <a href="mailto:leon@resilientcoders.org?subject=Mentor%20stopping%20by">Email Leon</a> if you're planning on stopping by,
             so we know to expect you.
           </p>
         </SideItem>
