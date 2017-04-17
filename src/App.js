@@ -4,22 +4,31 @@ import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Helmet from "react-helmet";
+import objectFitImages from 'object-fit-images';
 
-const App = ({children, location}) => (
-  <div className="app">
-    <Helmet titleTemplate="Resilient Coders - %s" />
-    <Navigation/>
-    <ReactCSSTransitionGroup
-      component="div"
-      transitionName="route-changing"
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={250}>
-      {React.cloneElement(children, {key: location.pathname})}
-      <Footer/>
-    </ReactCSSTransitionGroup>
+class App extends React.Component {
+  componentDidMount() {
+    objectFitImages();
+  }
+  render () {
+    const {children, location} = this.props;
+    return (
+      <div className="app">
+        <Helmet titleTemplate="Resilient Coders - %s" />
+        <Navigation/>
+        <ReactCSSTransitionGroup
+          component="div"
+          transitionName="route-changing"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={250}>
+          {React.cloneElement(children, {key: location.pathname})}
+          <Footer/>
+        </ReactCSSTransitionGroup>
 
-  </div>
-);
+      </div>
+    );
+  }
+}
 
 App.propTypes = {
   children: PropTypes.node.isRequired

@@ -1,7 +1,7 @@
 import './GetInvolvedCompany.scss';
 import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import ButtonPrimary from '../../../components/Buttons/ButtonPrimary';
+import UIButton from 'UILibrary/button/UIButton'
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
 import EmailFormLong from '../../../components/EmailForms/EmailFormLong';
@@ -32,7 +32,7 @@ class GetInvolvedCompany extends React.PureComponent {
         </Hero>
 
         <SideBySide color="white">
-          <SideItem className="p-y">
+          <SideItem className="p-y-6">
             <h2>
               Stay informed
             </h2>
@@ -48,8 +48,8 @@ class GetInvolvedCompany extends React.PureComponent {
           </SideItem>
         </SideBySide>
 
-        <SideBySide className="p-top">
-          <SideItem className="p-y">
+        <SideBySide className="p-top-6">
+          <SideItem className="p-y-6">
             <h2>
               Contract Our Students
             </h2>
@@ -60,17 +60,17 @@ class GetInvolvedCompany extends React.PureComponent {
               professional skills, while working for a client. You can help launch their careers
               by hiring us to build your website.
             </p>
-            <ButtonPrimary to="/lab">
+            <UIButton to="/lab">
               Learn more
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
           <SideItem flush={true}>
             <img src={contractLabImage} role="presentation" />
           </SideItem>
         </SideBySide>
 
-        <SideBySide>
-          <SideItem className="p-y">
+        <SideBySide className="p-bottom-6">
+          <SideItem className="p-y-6">
             <h2>
               Hire Our Students
             </h2>
@@ -81,9 +81,9 @@ class GetInvolvedCompany extends React.PureComponent {
               learning of our coders throughout their internship or career. In hiring one of us,
               you hire all of us.
             </p>
-            <ButtonPrimary to="/bootcamp/roster">
+            <UIButton to="/bootcamp/roster">
               Meet our students
-            </ButtonPrimary>
+            </UIButton>
           </SideItem>
           <SideItem flush={true}>
             <img src={hireStudentsImage} role="presentation" />

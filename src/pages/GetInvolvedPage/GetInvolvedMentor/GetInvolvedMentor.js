@@ -1,6 +1,7 @@
 import './GetInvolvedMentor.scss';
 import React from 'react';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
+import UIButton from 'UILibrary/button/UIButton'
 import Hero from '../../../components/Containers/Hero/Hero';
 import SideBySide from '../../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../../components/Containers/SideBySide/SideItem/SideItem';
@@ -24,7 +25,7 @@ const GetInvolvedMentor = (props) => {
       </Hero>
 
       <SideBySide color="white">
-        <SideItem className="p-y">
+        <SideItem className="p-y-6">
           <h2>
             Volunteer Corps
           </h2>
@@ -43,8 +44,8 @@ const GetInvolvedMentor = (props) => {
         </SideItem>
       </SideBySide>
 
-      <SideBySide className="p-top">
-        <SideItem className="p-y">
+      <SideBySide className="p-y-6">
+        <SideItem className="p-y-6">
           <h2>
             Bootcamp
           </h2>
@@ -62,9 +63,9 @@ const GetInvolvedMentor = (props) => {
             help as a TA. Find a slot that works for your schedule and your skill set and book it.
             And send an email to Leon (@resilientcoders.org) so that we know to expect you.
           </p>
-          <ButtonPrimary href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">
+          <UIButton href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">
             Book a time to mentor
-          </ButtonPrimary>
+          </UIButton>
           */}
         </SideItem>
         <SideItem flush={true}>

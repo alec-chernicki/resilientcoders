@@ -1,0 +1,14 @@
+.default {
+  width: auto;
+}
+
+.responsive {
+  height: auto;
+  width: 100%;
+}
+
+.cover {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

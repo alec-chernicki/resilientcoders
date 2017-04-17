@@ -1,0 +1,45 @@
+.card {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.card-primary {
+  composes: card;
+  background-color: #FFF;
+}
+
+.card-primary h1,
+.card-primary h2,
+.card-primary h3 {
+  color: #21262D !important;
+}
+
+.card-primary p {
+  color: #75868e !important;
+}
+
+.card-secondary {
+  composes: card;
+  border-top: solid 3px #ED1B24;
+  background-color: #21262D;
+}
+
+.card-secondary h1,
+.card-secondary h2,
+.card-secondary h3 {
+  color: #FFF !important;
+}
+
+.card-secondary p {
+  color: #B3C7D1 !important;
+}
+
+.card-image {
+  composes: card;
+}
+
+.card-image img {
+  height: 100%;
+  object-fit: cover;
+}
