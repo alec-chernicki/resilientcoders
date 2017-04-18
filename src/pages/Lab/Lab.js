@@ -87,9 +87,11 @@ class Lab extends React.PureComponent {
                   <p>Front End Development</p>
                   <p>UI Design and & Prototyping</p>
                   <p>UX Research</p>
+                  {/*
                   <UIButton target="_blank" href="/quote">
                     Get a quote
                   </UIButton>
+                  */}
                 </UICard>
               </UIFlex>
             </UIFlexRow>
