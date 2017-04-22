@@ -17,7 +17,7 @@ class Bootcamp extends PureComponent {
   render() {
     return (
       <RouteTransition>
-        <Helmet title="Bootcamp" />
+        <Helmet title="Resilient Bootcamp" />
         <Hero
           image={BootcampHeroImage}
           short={true}

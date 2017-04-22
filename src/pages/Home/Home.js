@@ -24,7 +24,7 @@ class Home extends PureComponent {
   render() {
     return (
       <RouteTransition>
-        <Helmet title="Home" />
+        <Helmet title="Resilient Coders" />
         <Hero
           titleLineOne="Hacking the"
           titleLineTwo="opportunity gap"

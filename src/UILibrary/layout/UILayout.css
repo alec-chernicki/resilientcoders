@@ -1,0 +1,28 @@
+.layout {
+  position: relative;
+}
+
+.primary {
+  composes: layout;
+  background-color: #EDEEF0;
+}
+
+.secondary {
+  composes: layout;
+  background-color: #FFF;
+}
+
+.tertiary {
+  composes: layout;
+  background-color: #21262D;
+}
+
+.transparent {
+  composes: layout;
+  background-color: transparent;
+}
+
+.with-padding {
+  composes: layout;
+  padding: 0 10px;
+}

@@ -4,12 +4,10 @@ import UIButton from 'UILibrary/button/UIButton';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Hero from '../../components/Containers/Hero/Hero';
 import LabHeroImage from './lab-hero.png';
-import SideBySide from '../../components/Containers/SideBySide/SideBySide';
-import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter'
-import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Helmet from 'react-helmet';
 
+import UILayout from 'UILibrary/layout/UILayout';
 import UIImage from 'UILibrary/image/UIImage';
 import UISection from 'UILibrary/layout/UISection';
 import UICard from 'UILibrary/layout/UICard';
@@ -49,7 +47,7 @@ class Lab extends React.PureComponent {
   render() {
     return (
       <RouteTransition>
-        <Helmet title="Lab" />
+        <Helmet title="Resilient Lab" />
         <Hero
           image={LabHeroImage}
           short={true}
@@ -61,10 +59,10 @@ class Lab extends React.PureComponent {
           </p>
         </Hero>
 
-        <CenteredContainerOuter>
+        <UILayout>
           <UISection>
             <UIFlexRow className="p-bottom-6">
-              <UIFlex basis="70%" className="pull-up-1 index-10">
+              <UIFlex basis="60%" className="pull-up-1 index-10">
                 <UICard className="p-all-6">
                   <h2>Relentlessly Rebuilding</h2>
                   <div className="divider"/>
@@ -81,8 +79,8 @@ class Lab extends React.PureComponent {
                   </p>
                 </UICard>
               </UIFlex>
-              <UIFlex basis="30%">
-                <UICard use="secondary" className="p-all-4">
+              <UIFlex basis="40%">
+                <UICard use="secondary" className="p-all-6">
                   <h3 className="m-top-0">What we do:</h3>
                   <p>Front End Development</p>
                   <p>UI Design and & Prototyping</p>
@@ -94,16 +92,16 @@ class Lab extends React.PureComponent {
               </UIFlex>
             </UIFlexRow>
           </UISection>
-        </CenteredContainerOuter>
+        </UILayout>
 
 
-        <CenteredContainerOuter>
+        <UILayout>
           <UISection>
             {this.renderWork()}
           </UISection>
-        </CenteredContainerOuter>
+        </UILayout>
 
-        <CenteredContainerOuter color="white" className="p-top-6">
+        <UILayout flush={true} use="secondary" className="p-top-6">
           <UIFlexRow>
             <UIFlex className="p-y-20 m-right-6">
               <UILayer image={panelLeftImage} dots={false} />
@@ -120,11 +118,11 @@ class Lab extends React.PureComponent {
               </div>
             </UIFlex>
           </UIFlexRow>
-        </CenteredContainerOuter>
+        </UILayout>
 
-        <CenteredContainerOuter className="p-bottom-6">
+        <UILayout className="p-bottom-6">
           <UISection>
-            <UICard use="secondary" className="text-center pull-up-2 p-y-6 index-2">
+            <UICard use="secondary" className="text-center pull-up-2 p-all-6 index-2">
               <p className="text-white">
                 Need an estimate? Use our quote generator to see how much your
                 project will cost.
@@ -165,7 +163,7 @@ class Lab extends React.PureComponent {
               </p>
             </UICard>
           </UISection>
-        </CenteredContainerOuter>
+        </UILayout>
       </RouteTransition>
     )
   }
