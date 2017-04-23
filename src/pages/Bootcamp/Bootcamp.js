@@ -118,7 +118,7 @@ class Bootcamp extends PureComponent {
             <h2>As a mentor</h2>
             <div className="divider divider__red"/>
             <p>
-              Want to get involved in Bootcamp? <a href="/get-involved/mentor">Sign up for the mailing list,</a> and we will keep you posted
+              Want to get involved in Bootcamp? <a href="/get-involved/volunteer">Sign up for the mailing list,</a> and we will keep you posted
               as the summer approaches.
             </p>
             {/*
@@ -128,7 +128,7 @@ class Bootcamp extends PureComponent {
               from 3:30 to 6. We&#8217;re all about making it easy for you to join.
               </p>
             */}
-            <UIButton to="/get-involved/mentor">
+            <UIButton to="/get-involved/volunteer">
               Get Involved
             </UIButton>
           </SideItem>

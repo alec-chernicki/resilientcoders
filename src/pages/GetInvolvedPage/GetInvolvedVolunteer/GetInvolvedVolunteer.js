@@ -16,7 +16,7 @@ import mentorImage from '../mentor.png';
 
 const MENTOR_FORM_URL = '/api/subscribe/mentor';
 
-const GetInvolvedMentor = (props) => {
+const GetInvolvedVolunteer = (props) => {
   return (
     <RouteTransition>
       <Helmet title="Join as a Volunteer" />
@@ -85,4 +85,4 @@ const GetInvolvedMentor = (props) => {
   )
 }
 
-export default GetInvolvedMentor
+export default GetInvolvedVolunteer

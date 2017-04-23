@@ -32,7 +32,7 @@ class Footer extends React.PureComponent {
               <div className="footer-container-links">
                 <h3>Get Involved</h3>
                 <Link to="/get-involved/student">Students</Link>
-                <Link to="/get-involved/mentor">Mentors</Link>
+                <Link to="/get-involved/volunteer">Mentors</Link>
                 <Link to="/get-involved/company">Companies</Link>
               </div>
               <div className="footer-container-info">

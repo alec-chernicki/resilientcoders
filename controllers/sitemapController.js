@@ -8,7 +8,7 @@ const sitemap = sm.createSitemap({
 
     { url: '/get-involved/', changefreq: 'daily',  priority: 0.7 },
     { url: '/get-involved/company', changefreq: 'daily',  priority: 0.2 },
-    { url: '/get-involved/mentor', changefreq: 'daily',  priority: 0.2 },
+    { url: '/get-involved/volunteer', changefreq: 'daily',  priority: 0.2 },
     { url: '/get-involved/student', changefreq: 'daily',  priority: 0.2 },
 
     { url: '/bootcamp/', changefreq: 'daily',  priority: 0.5 },

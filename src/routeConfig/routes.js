@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '../pages/Home/Home';
 
 import GetInvolvedPage from '../pages/GetInvolvedPage/GetInvolvedPage';
-import GetInvolvedMentor from '../pages/GetInvolvedPage/GetInvolvedMentor/GetInvolvedMentor';
+import GetInvolvedVolunteer from '../pages/GetInvolvedPage/GetInvolvedVolunteer/GetInvolvedVolunteer';
 import GetInvolvedCompany from '../pages/GetInvolvedPage/GetInvolvedCompany/GetInvolvedCompany';
 import GetInvolvedStudent from '../pages/GetInvolvedPage/GetInvolvedStudent/GetInvolvedStudent';
 
@@ -42,9 +42,12 @@ export default(
     <Route path="get-involved">
       <IndexRoute component={GetInvolvedPage} />
       <Route path="company" component={GetInvolvedCompany}/>
-      <Route path="mentor" component={GetInvolvedMentor}/>
+      <Route path="volunteer" component={GetInvolvedVolunteer}/>
       <Route path="student" component={GetInvolvedStudent}/>
+      <Redirect from="mentor" to='volunteer' />
     </Route>
-    
+
+    {/* This is a catch all instead of 404-ing, DO NOT REMOVE */}
+    <Redirect from="*" to='/' />
   </Route>
 );

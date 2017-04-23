@@ -37,7 +37,7 @@ const INVOLVEMENT_TYPES = [
     title: 'Volunteers',
     text: 'Give back to your community and become a diversity advocate.',
     image: mentorImage,
-    url: '/get-involved/mentor'
+    url: '/get-involved/volunteer'
   }
 ];
 
