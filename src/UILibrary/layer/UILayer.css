@@ -17,7 +17,7 @@
 
 .overlay {
   composes: layer;
-  background-image: linear-gradient(rgba(33, 38, 45, 0.7), rgba(33, 38, 45, 0.7));
+  background-image: linear-gradient(rgba(33, 38, 45, 0.9), rgba(33, 38, 45, 0.9));
   user-select: none;
   z-index: 2;
 }

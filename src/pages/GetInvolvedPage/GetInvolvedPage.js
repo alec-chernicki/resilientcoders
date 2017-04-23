@@ -12,6 +12,7 @@ import UICard from 'UILibrary/layout/UICard';
 import UISection from 'UILibrary/layout/UISection';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UILayer from 'UILibrary/layer/UILayer';
+import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import donateImage from './donate.jpg';
 import heroImage from './hero.jpg';
@@ -33,7 +34,7 @@ const INVOLVEMENT_TYPES = [
     url: '/get-involved/student'
   },
   {
-    title: 'Mentors',
+    title: 'Volunteers',
     text: 'Give back to your community and become a diversity advocate.',
     image: mentorImage,
     url: '/get-involved/mentor'
@@ -48,6 +49,7 @@ class GetInvolved extends React.Component {
           basis="31%"
           grow={0}
           shrink={0}
+          className="pull-down-3 index-10"
         >
           <Link to={item.url}>
             <UIContentButton
@@ -67,7 +69,7 @@ class GetInvolved extends React.Component {
       <RouteTransition>
         <Helmet title="Get Involved" />
 
-        <UILayout use="transparent">
+        <UILayout use="tertiary">
           <UILayer image={heroImage} />
           <UISection className="p-top-11 p-bottom-6">
             <UIFlexRow wrap="no-wrap" justify="space-between">
@@ -76,12 +78,12 @@ class GetInvolved extends React.Component {
           </UISection>
         </UILayout>
 
-        <UILayout className="p-y-6">
+        <UILayout className="p-top-12 p-bottom-6">
           <UISection>
-            <UIFlexRow>
+            <UIFlexRow className="with-shadow">
               <UIFlex>
                 <UIImage
-                  type="responsive"
+                  type="cover"
                   src={donateImage}
                   alt="A group of coders"
                 />

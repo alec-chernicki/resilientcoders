@@ -19,7 +19,9 @@
 }
 
 .button {
+  -webkit-appearance: none;
   border-radius: 3px;
+  border: none;
   color: #FFF;
   cursor: pointer;
   display: inline-block;
@@ -27,6 +29,7 @@
   height: 60px;
   letter-spacing: 0.075em;
   margin-top: 20px;
+  outline: none;
   overflow: hidden;
   position: relative;
   text-transform: uppercase;

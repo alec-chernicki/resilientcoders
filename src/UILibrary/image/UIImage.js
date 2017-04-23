@@ -10,22 +10,33 @@ const typeProps = {
 };
 
 class UIImage extends React.Component {
-  render () {
-    const { src, type, className } = this.props;
-    const imageClass = classNames({
-      default: type === typeProps.default,
-      responsive: type === typeProps.responsive,
-      cover: type === typeProps.cover,
-    });
+  renderImage() {
+
+  }
+  renderImageCover () {
+    const { src, className, height, width } = this.props;
 
     return (
-      <img
-        className={className}
-        styleName={imageClass}
-        role="presentation"
-        src={src}
-      />
+      <div styleName="image-container">
+        <img
+          height={height}
+          width={width}
+          className={className}
+          styleName="cover"
+          role="presentation"
+          src={src}
+        />
+      </div>
     );
+  }
+  render () {
+    const { type } = this.props;
+
+    if (type === typeProps.cover) {
+      return this.renderImageCover()
+    }
+
+    return this.renderImage();
   }
 }
 

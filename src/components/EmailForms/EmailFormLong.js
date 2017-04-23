@@ -1,9 +1,13 @@
-import './Forms.scss';
 import React from 'react';
-import axios from 'axios';
+import styles from './EmailFormLong.css';
+import CSSModules from 'react-css-modules';
 import classNames from 'classnames';
-import Formsy from 'formsy-react'
-import TextInput from './TextInput';
+import axios from 'axios';
+import {Form} from 'formsy-react'
+
+import UITextInput from 'UILibrary/form/UITextInput';
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
 
 class EmailFormLong extends React.PureComponent {
   constructor(props) {
@@ -13,6 +17,11 @@ class EmailFormLong extends React.PureComponent {
       canSubmit: false,
       buttonText: 'submit',
     }
+
+    this.setFormElementRef = this.setFormElementRef.bind(this);
+    this.validSubmit = this.validSubmit.bind(this);
+    this.enableButton = this.enableButton.bind(this);
+    this.disableButton = this.disableButton.bind(this);
   }
   enableButton() {
     this.setState({
@@ -31,7 +40,6 @@ class EmailFormLong extends React.PureComponent {
     this.formElement = element;
   }
   validSubmit(data) {
-    console.log('submitted 2');
     this.setState({
       buttonText: 'submitting',
     })
@@ -62,43 +70,50 @@ class EmailFormLong extends React.PureComponent {
       })
   }
   render() {
-    const buttonClass = classNames('button', {
+    const buttonClass = classNames({
       'disabled': !this.state.canSubmit,
     });
 
     return (
-      <div className="email-form email-form--long ">
-        <div className={`email-form--long__wrapper ${this.props.className}`}>
-          <h2>Get more information</h2>
-          <Formsy.Form
-            ref={this.setFormElementRef.bind(this)}
-            onValidSubmit={this.validSubmit.bind(this)}
-            onValid={this.enableButton.bind(this)}
-            onInvalid={this.disableButton.bind(this)}
-          >
-            <div className="control">
-              <TextInput name="firstName"
-                placeholder="First Name"
-                label="First Name"
-                validations="isExisty"
-              />
-              <TextInput
-                name="lastName"
-                placeholder="Last Name"
-                label="Last Name"
-                validations="isExisty"
-              />
-            </div>
-            <div className="control">
-              <TextInput
+      <div styleName="form" className="with-shadow">
+        <h2 className="p-y-3 p-x-6" styleName="header">
+          Get our hiring guide
+        </h2>
+        <Form
+          ref={this.setFormElementRef}
+          onValidSubmit={this.validSubmit}
+          onValid={this.enableButton}
+          onInvalid={this.disableButton}
+        >
+          <div className="p-x-6 p-top-3 p-bottom-4">
+            <UIFlexRow className="m-bottom-2">
+              <UIFlex className="m-right-2">
+                <UITextInput
+                  name="firstName"
+                  placeholder="First Name"
+                  label="First Name"
+                  validations="isExisty"
+                />
+              </UIFlex>
+              <UIFlex>
+                <UITextInput
+                  name="lastName"
+                  placeholder="Last Name"
+                  label="Last Name"
+                  validations="isExisty"
+                />
+              </UIFlex>
+            </UIFlexRow>
+            <div className="m-bottom-2">
+              <UITextInput
                 name="company"
                 label="Company"
                 placeholder="Company"
                 validations="isExisty"
               />
             </div>
-            <div className="control">
-              <TextInput
+            <div className="m-bottom-2">
+              <UITextInput
                 name="email"
                 label="Your Email"
                 placeholder="your@email.com"
@@ -107,14 +122,14 @@ class EmailFormLong extends React.PureComponent {
                 required
               />
             </div>
-            <button type="submit" className={buttonClass}>
+            <button styleName="submit-button" type="submit" className={buttonClass}>
               {this.state.buttonText}
             </button>
-          </Formsy.Form>
-        </div>
+          </div>
+        </Form>
       </div>
     );
   }
 }
 
-export default EmailFormLong;
+export default CSSModules(EmailFormLong, styles);

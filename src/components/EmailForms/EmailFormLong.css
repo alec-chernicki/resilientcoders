@@ -1,0 +1,27 @@
+.form {
+  border-radius: 3px;
+  background-color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+
+.form h1,
+.form h2,
+.form h3 {
+  color: #21262d;
+}
+
+.submit-button {
+  composes: button-primary from '../../UILibrary/button/_core/ButtonBase.css';
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  /*padding: 30px 60px;*/
+  /*height: auto;*/
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.header {
+  border-bottom: solid 1px #EBF1F4;
+}

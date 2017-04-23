@@ -30,7 +30,7 @@ class UILayer extends React.Component {
   }
 
   renderImage() {
-    const { image, greyscale, imageClass, styles } = this.props;
+    const { image, greyscale, imageClass } = this.props;
 
     if (!image) {
       return null;
@@ -41,12 +41,11 @@ class UILayer extends React.Component {
       'image-unstyled': greyscale === false,
     });
 
-    const imageClasses = classNames(imagePrimaryClass, imageClass);
-
     return (
       <UIImage
         type="cover"
-        className={imageClasses}
+        className={imageClass}
+        styleName={imagePrimaryClass}
         src={image}
       />
     );

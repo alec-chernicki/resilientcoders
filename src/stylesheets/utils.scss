@@ -6,7 +6,7 @@
 // HACK: This needs to be standardized within UICard, currently the text is
 // super unreadable on dark backgrounds.
 .text-on-dark {
-  color: #B3C7D1;
+  color: #C5D3DB;
 }
 
 .text-constrained {
@@ -26,6 +26,10 @@
 .strong {
   font-weight: bold;
   color: $text-primary;
+}
+
+.with-shadow {
+  box-shadow: 0 15px 35px rgba(33, 38, 45, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 // Note: Any utility class above this line is being deprecated in favor
@@ -60,11 +64,20 @@
   margin-bottom: -100px;
 }
 
-.pull-down {
-  transform: translateY(75px);
-  margin-bottom: 50px;
+.pull-down-1 {
+  transform: translateY(40px);
+  margin-bottom: -40px;
 }
 
+.pull-down-2 {
+  transform: translateY(75px);
+  margin-top: -75px;
+}
+
+.pull-down-3 {
+  transform: translateY(125px);
+  margin-top: -125px;
+}
 
 // Generates consistent z-index utility classes
 @for $i from 0 through 10 {

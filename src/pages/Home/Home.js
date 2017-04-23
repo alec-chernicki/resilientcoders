@@ -20,6 +20,14 @@ import Partners from '../../components/Containers/Partners/Partners';
 import alumniCompaniesConfig from './alumniCompaniesConfig';
 import Helmet from "react-helmet";
 
+
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UICard from 'UILibrary/layout/UICard';
+import UIImage from 'UILibrary/image/UIImage';
+import UISection from 'UILibrary/layout/UISection';
+import UILayout from 'UILibrary/layout/UILayout';
+
 class Home extends PureComponent {
   render() {
     return (
@@ -39,29 +47,33 @@ class Home extends PureComponent {
             Get Involved
           </UIButton>
         </Hero>
-        <SideBySide className="home-details" animatable={true}>
-          <SideItem
-            type="white"
-            className="p-y-6 pull-up-1"
-          >
-            <h1>OUR MISSION</h1>
-            <p>
-              We believe in social justice through economic empowerment, and in the opportunity
-              for meritocracy in tech. We think holistically about the school-to-workforce
-              pipeline, offering a chaining series of programs that guide our hackers through
-              the extensive journey of learning web development.
-            </p>
-            <p>
-              This isn't about one-off camps or hackathons. This is about
-              <span className="strong">
-                &nbsp;meaningful change.
-              </span>
-            </p>
-          </SideItem>
-          <SideItem flush={true} className="pull-up-2">
-            <img src={homeImage} role="presentation"/>
-          </SideItem>
-        </SideBySide>
+
+        <UILayout>
+          <UISection className="p-bottom-6">
+            <UIFlexRow>
+              <UIFlex className="pull-up-1 index-10">
+                <UICard className="p-all-6">
+                  <h1>OUR MISSION</h1>
+                  <p>
+                    We believe in social justice through economic empowerment, and in the opportunity
+                    for meritocracy in tech. We think holistically about the school-to-workforce
+                    pipeline, offering a chaining series of programs that guide our hackers through
+                    the extensive journey of learning web development.
+                  </p>
+                  <p>
+                    This isn't about one-off camps or hackathons. This is about
+                    <span className="strong">
+                      &nbsp;meaningful change.
+                    </span>
+                  </p>
+                </UICard>
+              </UIFlex>
+              <UIFlex className="pull-up-2 index-10">
+                <UIImage type="cover" src={homeImage} />
+              </UIFlex>
+            </UIFlexRow>
+          </UISection>
+        </UILayout>
 
         <CenteredContainerOuter color="dark-grey">
           <CenteredContainerInner className="text-center" color="dark-grey">

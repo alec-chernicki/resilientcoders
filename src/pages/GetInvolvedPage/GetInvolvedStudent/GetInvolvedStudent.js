@@ -1,4 +1,3 @@
-import './GetInvolvedStudent.scss';
 import React from 'react';
 import Helmet from 'react-helmet';
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
@@ -10,17 +9,20 @@ import UICard from 'UILibrary/layout/UICard';
 import UIImage from 'UILibrary/image/UIImage';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
+import UILayer from 'UILibrary/layer/UILayer';
 
 import bootcampImage from './get-involved-student-bootcamp.jpg';
 import communityHoursImage from './get-involved-student-hoc.jpg';
+import studentImage from '../student.png';
 
 const GetInvolvedStudent = (props) => {
   return (
     <RouteTransition>
       <Helmet title="Join as a Student" />
-      <UILayout use="secondary" className="p-top-10 p-bottom-6">
-        <UISection>
-          <UICard className="text-center">
+      <UILayout use="tertiary" className="p-top-10 p-bottom-6">
+        <UILayer image={studentImage} />
+        <UISection className="index-2">
+          <UICard use="transparent" className="text-center">
             <h1>
               For students
             </h1>
@@ -31,7 +33,7 @@ const GetInvolvedStudent = (props) => {
 
       <UILayout>
         <UISection className="p-y-6">
-          <UIFlexRow className="p-bottom-6">
+          <UIFlexRow className="m-bottom-6 with-shadow">
             <UIFlex>
               <UICard className="p-all-6">
                 <h2>
@@ -49,7 +51,8 @@ const GetInvolvedStudent = (props) => {
               <UIImage type="cover" src={communityHoursImage} alt="community hours"/>
             </UIFlex>
           </UIFlexRow>
-          <UIFlexRow>
+
+          <UIFlexRow className="with-shadow">
             <UIFlex>
               <UICard className="p-all-6">
                 <h2>

@@ -126,57 +126,6 @@
   }
 }
 
-.email-form--long {
-  width: 100%;
-  text-align: center;
-
-  .email-form--long__wrapper {
-    display: inline-block;
-    border-left: solid 5px $accent-primary;
-    background-color: $background-secondary;
-    padding: 30px 80px 60px;
-    text-align: center;
-
-    @include breakpoint($small-breakpoint) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    h2 {
-      color: #FFF;
-    }
-
-    p {
-      max-width: 450px;
-    }
-  }
-
-  .divider {
-    margin-bottom: 10px;
-  }
-
-  .control {
-    margin-bottom: 25px;
-  }
-
-  .control-input + .control-input {
-    margin-left: 15px;
-  }
-
-  button {
-    margin-top: 20px;
-    min-width: 200px;
-  }
-
-  form {
-    margin-top: 25px;
-  }
-
-  input[type="text"] {
-    border-radius: 2px;
-  }
-}
-
 .email-form--short {
   padding: 16px;
   border-radius: 3px;
@@ -193,7 +142,7 @@
 
   button {
     border-radius: 0 2px 2px 0;
-    
+
     @include breakpoint($small-breakpoint) {
       margin-top: 20px;
     }

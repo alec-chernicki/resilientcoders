@@ -23,7 +23,7 @@ class Lab extends React.PureComponent {
   renderWork() {
     return workConfig.map((item, key) => {
       return (
-        <UIFlexRow key={key} className="p-bottom-6">
+        <UIFlexRow key={key} className="m-bottom-6 with-shadow">
           <UIFlex>
             <UIImage type="cover" src={item.image} />
           </UIFlex>
@@ -96,7 +96,7 @@ class Lab extends React.PureComponent {
 
 
         <UILayout>
-          <UISection>
+          <UISection className="p-bottom-3">
             {this.renderWork()}
           </UISection>
         </UILayout>

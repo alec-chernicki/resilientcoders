@@ -143,7 +143,7 @@ class RosterMember extends React.Component {
     return (
       <RouteTransition>
         <CenteredContainerOuter>
-          <UILayer image={image} greyscale={false}/>
+          <UILayer image={image} />
           <CenteredContainerInner className="p-top-11 p-bottom-6" flush={false}>
             <UIButton
               to="/bootcamp/roster"
