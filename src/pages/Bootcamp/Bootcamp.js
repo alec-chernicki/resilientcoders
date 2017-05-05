@@ -212,7 +212,7 @@ class Bootcamp extends PureComponent {
                     Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
                     Interested in applying for
                     the next one? Come to our next Hackathon,
-                    from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+                    from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
                   </p>
                   <p>
                     Our coders are now available for hire. Interested in learning more? Check out their
@@ -300,7 +300,7 @@ class Bootcamp extends PureComponent {
                     Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
                     Interested in applying for
                     the next one? Come to our next Hackathon,
-                    from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+                    from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
                   </p>
                   <UIButton to="/get-involved/student">
                     Learn more
@@ -315,13 +315,6 @@ class Bootcamp extends PureComponent {
                     Want to get involved in Bootcamp? <a href="/get-involved/volunteer">Sign up for the mailing list,</a> and we will keep you posted
                     as the summer approaches.
                   </p>
-                  {/*
-                    <p>
-                    Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
-                    and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
-                    from 3:30 to 6. We&#8217;re all about making it easy for you to join.
-                    </p>
-                  */}
                   <UIButton to="/get-involved/volunteer">
                     Get Involved
                   </UIButton>
@@ -330,8 +323,6 @@ class Bootcamp extends PureComponent {
             </UIFlexRow>
           </UISection>
         </UILayout>
-
-
 
         <UILayout use="secondary">
           <UISection>
@@ -343,7 +334,6 @@ class Bootcamp extends PureComponent {
             </UICard>
           </UISection>
         </UILayout>
-
       </RouteTransition>
     )
   }
