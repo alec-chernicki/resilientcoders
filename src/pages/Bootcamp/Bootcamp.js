@@ -51,7 +51,7 @@ class Bootcamp extends PureComponent {
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
               Interested in applying for
               the next one? Come to our next Hackathon,
-              from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+              from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
             </p>
             {/*
               <p>
@@ -108,7 +108,7 @@ class Bootcamp extends PureComponent {
               Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
               Interested in applying for
               the next one? Come to our next Hackathon,
-              from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+              from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
             </p>
             <UIButton to="/get-involved/student">
               Learn more

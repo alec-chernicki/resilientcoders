@@ -50,7 +50,7 @@ export default [
     image: ParissImage,
     linkedin: 'https://www.linkedin.com/in/pariss-chandler-1b06aa9a',
     github: 'https://github.com/ParissChandler',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_ParissChandler.pdf',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_PChandler.pdf',
     bio: `I am a creative and diligent individual, and use my love for front end web development
     to design vibrant and engaging products. Coming from an artistic background of acting, filmmaking,
     and writing, I love grabbing the attention of an audience, and rewarding it with a great experience.
