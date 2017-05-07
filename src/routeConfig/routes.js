@@ -45,6 +45,8 @@ export default(
       <Route path="mentor" component={GetInvolvedMentor}/>
       <Route path="student" component={GetInvolvedStudent}/>
     </Route>
-    
+
+    {/* This is a catch-all instead of a 404. DO NOT REMOVE */}
+    <Redirect from="*" to="/" />
   </Route>
 );
