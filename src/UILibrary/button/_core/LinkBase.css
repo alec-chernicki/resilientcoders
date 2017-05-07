@@ -19,12 +19,12 @@
 
 .primary {
   composes: link;
-  color: #75868e;
+  color: #4f5a60;
   transition: color 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
 }
 
 .primary:hover {
-  color: #21262D;
+  color: #4f5a60;
 }
 
 .primary:after {

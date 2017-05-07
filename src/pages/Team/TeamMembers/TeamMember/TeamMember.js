@@ -1,65 +1,87 @@
-import './TeamMember.scss';
 import React from 'react';
-import ToggleClass from '../../../../components/Effects/ToggleClass';
-import BinaryText from '../../../../components/BinaryText/BinaryText';
+import styles from './TeamMember.css';
+import CSSModules from 'react-css-modules';
+import MemberTitle from './MemberTitle';
+
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UIIconButton from 'UILibrary/button/UIIconButton';
+
+import teamMembersConfig from '../teamMembersConfig';
+import icons from 'constants/icons';
 
 class TeamMember extends React.PureComponent {
   constructor(props) {
     super(props)
 
-    this.state = {
-      isActive: false
-    }
+    this.handlePrevious = this.handlePrevious.bind(this);
+    this.handleNext = this.handleNext.bind(this);
   }
-  handleEnter() {
-    const {memberKey, setShownMember} = this.props;
+  handlePrevious() {
+    const { shownMemberIndex } = this.props;
 
-    this.setIsActive(true)
-    setShownMember(memberKey)
+    if (shownMemberIndex === 0 ){
+      return;
+    }
+
+    this.props.onChange(shownMemberIndex - 1);
   }
-  handleLeave() {
-    this.setIsActive(false)
+  handleNext() {
+    const { shownMemberIndex } = this.props;
+
+    if (shownMemberIndex === teamMembersConfig.length - 1) {
+      return;
+    }
+
+    this.props.onChange(shownMemberIndex + 1);
   }
-  setIsActive(isActive) {
-    this.setState({
-      isActive
+  renderNames() {
+
+    const { shownMemberIndex } = this.props;
+
+    return teamMembersConfig.map((member, key) => {
+      const isActive = shownMemberIndex === key;
+      return (
+        <MemberTitle member={member} isActive={isActive} />
+      );
     });
   }
-  renderTitle() {
-    const {isActive} = this.state;
-    const {title} = this.props;
-
-    if (!isActive) {
-      return null;
-    }
-
-    return (
-      <h3 className="team-member__title">
-        <BinaryText>
-          {title}
-        </BinaryText>
-      </h3>
-    )
-  }
-  render() {
-    const {name} = this.props;
-
+  renderControls() {
     return (
       <div>
-        <ToggleClass
-          onEnter={this.handleEnter.bind(this)}
-          onLeave={this.handleLeave.bind(this)}
-          triggerHook={0.45}
-          className="team-member clearfix"
+        <UIIconButton
+          image={icons.upArrow}
+          onClick={this.handlePrevious}
+          direction="up"
+          className="m-bottom-2"
         >
-          <h2 className="team-member__name">
-            {name}
-          </h2>
-          {this.renderTitle()}
-        </ToggleClass>
+          Previous
+        </UIIconButton>
+        <UIIconButton
+          image={icons.downArrow}
+          onClick={this.handleNext}
+          direction="down"
+        >
+          Next
+        </UIIconButton>
       </div>
     )
   }
+  render() {
+    const { shownMemberIndex } = this.props;
+    const namesStyle = {transform: `translateY(${-(shownMemberIndex * 180)}px)`};
+
+    return (
+      <UIFlexRow>
+        <UIFlex basis="50px" grow={0} shrink={0}>
+          {this.renderControls()}
+        </UIFlex>
+        <UIFlex style={namesStyle} styleName="names" className="p-x-3">
+          {this.renderNames()}
+        </UIFlex>
+      </UIFlexRow>
+    );
+  }
 }
 
-export default TeamMember;
+export default CSSModules(TeamMember, styles);

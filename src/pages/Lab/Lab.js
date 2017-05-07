@@ -63,7 +63,7 @@ class Lab extends React.PureComponent {
           <UISection>
             <UIFlexRow className="p-bottom-6">
               <UIFlex basis="60%" className="pull-up-1 index-10">
-                <UICard className="p-all-6">
+                <UICard className="p-all-6 full-height">
                   <h2>Relentlessly Rebuilding</h2>
                   <div className="divider"/>
                   <p>
@@ -105,35 +105,25 @@ class Lab extends React.PureComponent {
           <UIFlexRow>
             <UIFlex className="p-y-20 m-right-6">
               <UILayer image={panelLeftImage} dots={false} />
-              <div className="index-1 text-center">
+              <div className="position-relative index-1 text-center">
                 <h1>50%</h1>
                 <h2 className="text-on-dark">Learning</h2>
+                <div className="divider" />
               </div>
             </UIFlex>
             <UIFlex className="p-y-20">
               <UILayer image={panelRightImage} dots={false} />
-              <div className="index-1 text-center">
+              <div className="position-relative index-1 text-center">
                 <h1>50%</h1>
                 <h2 className="text-on-dark">Building</h2>
+                <div className="divider" />
               </div>
             </UIFlex>
           </UIFlexRow>
         </UILayout>
 
         <UILayout className="p-bottom-6">
-          <UISection>
-            <UICard use="secondary" className="text-center pull-up-2 p-all-6 index-2">
-              <p className="text-white">
-                Need an estimate? Use our quote generator to see how much your
-                project will cost.
-              </p>
-              <UIButton href="/quote">
-                Get a quote
-              </UIButton>
-            </UICard>
-          </UISection>
-
-          <UISection>
+          <UISection className="with-shadow pull-up-2">
             <UICard className="p-all-6">
               <h2>
                 What sort of stuff can you do?

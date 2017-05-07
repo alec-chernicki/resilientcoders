@@ -1,38 +1,26 @@
 import React, { PropTypes } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './UISkewedLayer.css';
-import UILayer from 'UILibrary/layer/UILayer';
 import classNames from 'classnames';
 
 const useProps = {
   'primary': 'primary',
   'secondary': 'secondary',
+  'tertiary': 'tertiary',
 };
 
 class UISkewedLayer extends React.Component {
-  renderContent () {
-    const { image } = this.props;
-
-    if (image) {
-      return (
-        <div styleName="content">
-          <UILayer {...this.props} />
-        </div>
-      );
-    }
-  }
   render () {
-    const { use } = this.props;
+    const { use, className } = this.props;
     const skewedLayerClass  = classNames({
       'primary': use === useProps.primary,
       'secondary': use === useProps.secondary,
+      'tertiary': use === useProps.tertiary,
     });
 
     return (
-      <div styleName="container">
-        <div styleName={skewedLayerClass}>
-          {this.renderContent()}
-        </div>
+      <div styleName="container" className={className}>
+        <div styleName={skewedLayerClass} />
       </div>
     );
   }

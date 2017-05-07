@@ -6,6 +6,7 @@ import classNames from 'classnames';
 const useProps = {
   'primary': 'primary',
   'secondary': 'secondary',
+  'tertiary': 'tertiary',
 };
 
 class UICard extends React.Component {
@@ -14,6 +15,7 @@ class UICard extends React.Component {
     const cardClass = classNames({
       'card-primary': use === useProps.primary,
       'card-secondary': use === useProps.secondary,
+      'card-tertiary': use === useProps.tertiary,
     });
 
     return (

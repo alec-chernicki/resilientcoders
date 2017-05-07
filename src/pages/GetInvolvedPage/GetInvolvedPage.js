@@ -1,10 +1,11 @@
 import './GetInvolved.scss';
 import React from 'react';
 import { Link } from 'react-router';
-import UIButton from 'UILibrary/button/UIButton';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
-import UILayout from 'UILibrary/layout/UILayout';
 import Helmet from 'react-helmet';
+
+import UIButton from 'UILibrary/button/UIButton';
+import UILayout from 'UILibrary/layout/UILayout';
 import UIImage from 'UILibrary/image/UIImage';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
@@ -12,7 +13,6 @@ import UICard from 'UILibrary/layout/UICard';
 import UISection from 'UILibrary/layout/UISection';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UILayer from 'UILibrary/layer/UILayer';
-import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import donateImage from './donate.jpg';
 import heroImage from './hero.jpg';
@@ -57,7 +57,6 @@ class GetInvolved extends React.Component {
               title={item.title}
               text={item.text}
               buttonText="Learn more"
-              className="p-top-17"
             />
           </Link>
         </UIFlex>

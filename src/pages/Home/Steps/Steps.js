@@ -119,7 +119,7 @@ class Steps extends React.Component {
             </ReactCSSTransitionGroup>
           </div>
           <div
-            className="step-content__text"
+            className="step-content__text with-shadow"
             style={{height: `${this.state.textContainerElementHeight}px`}}
           >
             <ReactCSSTransitionGroup

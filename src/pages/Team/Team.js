@@ -3,13 +3,16 @@ import React from 'react';
 import TeamMembers from './TeamMembers/TeamMembers';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Partners from '../../components/Containers/Partners/Partners';
-import teamPartnersConfig from './TeamPartners/teamPartnersConfig';
-import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
-import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Hero from '../../components/Containers/Hero/Hero';
 import TeamHeroImage from './team-hero.png';
-import UIButton from 'UILibrary/button/UIButton';
 import Helmet from 'react-helmet';
+
+import UIButton from 'UILibrary/button/UIButton';
+import UILayout from 'UILibrary/layout/UILayout';
+import UICard from 'UILibrary/layout/UICard';
+import UISection from 'UILibrary/layout/UISection';
+
+import teamPartnersConfig from './teamPartnersConfig';
 
 class Team extends React.PureComponent {
   render() {
@@ -31,30 +34,32 @@ class Team extends React.PureComponent {
           </p>
         </Hero>
 
-        <CenteredContainerOuter color="grey" className="p-bottom">
-          <CenteredContainerInner className="pull-up-1" color="white">
-            <Partners
-              title="Our partners make it all possible"
-              partnersConfig={teamPartnersConfig}
-            />
-          </CenteredContainerInner>
-        </CenteredContainerOuter>
-
+        <UILayout className="p-bottom-6">
+          <UISection>
+            <UICard className="pull-up-1 p-all-6 text-center with-shadow">
+              <Partners
+                title="Our partners make it all possible"
+                partnersConfig={teamPartnersConfig}
+              />
+            </UICard>
+          </UISection>
+        </UILayout>
 
         <TeamMembers/>
 
-
-        <CenteredContainerOuter color="white">
-          <CenteredContainerInner color="white" className="text-center">
-            <h2>Interested in Joining?</h2>
-            <p className="text-constrained">
-              There's numerous ways to get involved whether you're a company or individual
-            </p>
-            <UIButton to="/get-involved">
-              Get Involved
-            </UIButton>
-          </CenteredContainerInner>
-        </CenteredContainerOuter>
+        <UILayout use="secondary">
+          <UISection>
+            <UICard className="text-center p-all-6">
+              <h2>Interested in Joining?</h2>
+              <p className="text-constrained">
+                There's numerous ways to get involved whether you're a company or individual
+              </p>
+              <UIButton to="/get-involved">
+                Get Involved
+              </UIButton>
+            </UICard>
+          </UISection>
+        </UILayout>
       </RouteTransition>
     )
   }

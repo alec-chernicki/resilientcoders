@@ -9,6 +9,7 @@ import RouteTransition from '../../../components/RouteTransition/RouteTransition
 import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import rosterconfig from './rosterMembersConfig';
+import UIContentButton from 'UILibrary/button/UIContentButton';
 import UIOverlay from 'UILibrary/overlay/UIOverlay';
 import UIButton from 'UILibrary/button/UIButton';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
@@ -30,15 +31,11 @@ class Roster extends React.Component {
             key={key}
             to={item.url}
           >
-            <UIOverlay text="Learn more">
-              <img src={item.image} />
-            </UIOverlay>
+            <UIContentButton
+              image={item.image}
+              title={item.name}
+            />
           </Link>
-          <div styleName="student-name">
-            <h3>
-              {item.name}
-            </h3>
-          </div>
         </UIFlex>
       );
     });
@@ -66,7 +63,7 @@ class Roster extends React.Component {
             </UIButton>
           </CenteredContainerInner>
         </UILayout>
-        
+
         <UILayout use="secondary">
           <UISection className="p-y-6">
             <UIFlexRow justify="space-between">

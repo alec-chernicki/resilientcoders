@@ -1,0 +1,108 @@
+@keyframes icon-button-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50.1% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes icon-button-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50.1% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes icon-button-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  50.1% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes icon-button-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  50.1% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-down:hover img {
+  animation: icon-button-down 200ms;
+}
+
+.animate-up:hover img {
+  animation: icon-button-up 200ms;
+}
+
+.animate-right:hover img {
+  animation: icon-button-right 200ms;
+}
+
+.animate-left:hover img {
+  animation: icon-button-left 200ms;
+}
+
+.icon-button {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px rgba(255,255, 255, 0.7);
+  border-radius: 30px;
+  transition: transform 200ms;
+  user-select: none;
+}
+
+.icon-button:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,13 @@
+.table-header {
+  background-color: #21262D;
+  width: 100%;
+}
+
+.table-header h3 {
+  color: #FFF;
+  text-align: left;
+}
+
+.table-header th {
+  padding: 15px 20px;
+}

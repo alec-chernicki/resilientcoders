@@ -11,6 +11,7 @@ import UIOverlay from 'UILibrary/overlay/UIOverlay';
 import UIImage from 'UILibrary/image/UIImage';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISection from 'UILibrary/layout/UISection';
+import UILayout from 'UILibrary/layout/UILayout';
 import CenteredContainerOuter from '../../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import RouteTransition from '../../../../components/RouteTransition/RouteTransition';
@@ -94,7 +95,12 @@ class RosterMember extends React.Component {
     }
 
     return (
-      <UILink href={resume} external={true}>
+      <UILink
+        href={resume}
+        external={true}
+        use="tertiary"
+        className="m-bottom-2"
+      >
         View Resume
       </UILink>
     );
@@ -107,34 +113,32 @@ class RosterMember extends React.Component {
     }
 
     return (
-      <CenteredContainerOuter color="white" className="p-y-6">
-        <CenteredContainerInner
-          color="white"
-          flush={false}
-          className="text-center"
-        >
-          <h1 className="m-bottom-0">
-            Portfolio Website
-          </h1>
-          <div className="divider divider__red " />
-          <a
-            styleName="website"
-            target="_blank"
-            href={portfolioUrl}
-          >
-            <UIOverlay text="Visit Website">
-              <div styleName="iframe-wrapper">
-                <iframe
-                  scrolling="no"
-                  src={portfolioUrl}
-                  seamless="seamless"
-                  styleName="iframe"
-                />
-              </div>
-            </UIOverlay>
-          </a>
-        </CenteredContainerInner>
-      </CenteredContainerOuter>
+      <UILayout use="secondary" className="p-top-16 p-bottom-6">
+        <UISection className="text-center">
+          <UICard>
+            <h1 className="m-bottom-0">
+              Portfolio Website
+            </h1>
+            <div className="divider divider__red " />
+            <a
+              styleName="website"
+              target="_blank"
+              href={portfolioUrl}
+            >
+              <UIOverlay text="Visit Website">
+                <div styleName="iframe-wrapper">
+                  <iframe
+                    scrolling="no"
+                    src={portfolioUrl}
+                    seamless="seamless"
+                    styleName="iframe"
+                  />
+                </div>
+              </UIOverlay>
+            </a>
+          </UICard>
+        </UISection>
+      </UILayout>
     )
   }
   render() {
@@ -142,13 +146,12 @@ class RosterMember extends React.Component {
 
     return (
       <RouteTransition>
-        <CenteredContainerOuter>
-          <UILayer image={image} />
-          <CenteredContainerInner className="p-top-11 p-bottom-6" flush={false}>
+        <UILayout>
+          <UISection className="p-top-11 p-bottom-6 index-2">
             <UIButton
               to="/bootcamp/roster"
               type="link"
-              use="tertiary"
+              use="secondary"
               className="m-bottom-1"
             >
               <UIIcon
@@ -159,12 +162,12 @@ class RosterMember extends React.Component {
                 Back to all students
               </span>
             </UIButton>
-            <UIFlexRow>
+            <UIFlexRow className="with-shadow pull-down-3">
               <UIFlex>
                 <UIImage src={image} type="cover" />
               </UIFlex>
               <UIFlex>
-                <UICard className="p-all-5">
+                <UICard use="secondary" className="p-all-5">
                   <h2>
                     {name}
                   </h2>
@@ -179,8 +182,8 @@ class RosterMember extends React.Component {
                 </UICard>
               </UIFlex>
             </UIFlexRow>
-          </CenteredContainerInner>
-        </CenteredContainerOuter>
+          </UISection>
+        </UILayout>
         {this.renderPortfolio()}
       </RouteTransition>
     )

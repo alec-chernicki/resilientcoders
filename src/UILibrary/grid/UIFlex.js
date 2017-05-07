@@ -4,12 +4,13 @@ import CSSModules from 'react-css-modules';
 
 class UIFlex extends React.Component {
   render () {
-    const { basis, grow, shrink, alignSelf, children, className } = this.props;
+    const { basis, grow, shrink, alignSelf, children, className, style } = this.props;
     const styles = {
       flexBasis: basis,
       flexGrow: grow,
       flexShrink: shrink,
       alignSelf,
+      ...style
     };
 
     return (

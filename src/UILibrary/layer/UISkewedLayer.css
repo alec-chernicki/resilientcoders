@@ -9,12 +9,12 @@
 
 .skewed-layer {
   position: absolute;
-  top: 0%;
+  top: 100%;
   left: 0;
   height: 100%;
   width: 100%;
   transform: skewY(-12deg);
-  transform-origin: bottom left;
+  transform-origin: top left;
   overflow: hidden;
 }
 
@@ -30,10 +30,15 @@
 
 .primary {
   composes: skewed-layer;
-  background-color: #FFF;
+  background-color: #EDEEF0;
 }
 
 .secondary {
   composes: skewed-layer;
-  background-color: #21262D;
+  background-color: #FFF;
+}
+
+.tertiary {
+  composes: skewed-layer;
+  background-color: #21262D;  
 }

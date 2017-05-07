@@ -4,6 +4,7 @@
 
 .headroom {
   position: fixed;
+  padding-top: 12px;
   top: 0px;
   max-width: 1150px;
   width: 100%;
@@ -39,7 +40,6 @@
 
 .nav-links--mobile {
   display: none;
-  border-bottom: 1px solid $border-primary;
 
   @include breakpoint($small-breakpoint) {
     display: block;
@@ -138,10 +138,10 @@
 
     &:not(:last-child) {
       border-right: 1px solid $border-primary;
-      border-bottom: 1px solid $border-primary;
+      // border-bottom: 1px solid $border-primary;
 
       &:hover {
-        border-bottom: 1px solid $background-secondary;
+        // border-bottom: 1px solid $background-secondary;
       }
     }
 
@@ -152,7 +152,7 @@
 
       &:hover {
         border-bottom: 1px solid $background-secondary;
-        border-right: 1px solid $background-secondary;
+        // border-right: 1px solid $background-secondary;
       }
 
       a {

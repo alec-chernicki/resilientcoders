@@ -1,11 +1,18 @@
 import './News.scss';
 import React from 'react';
-import BinaryText from '../../components/BinaryText/BinaryText';
 import NewsItem from './NewsItem/NewsItem';
 import Tweet from '../../components/Tweet/Tweet';
 import newsItemConfig from './newsItemConfig';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Helmet from 'react-helmet';
+
+import UITable from 'UILibrary/table/UITable';
+import UITableHeader from 'UILibrary/table/UITableHeader';
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UICard from 'UILibrary/layout/UICard';
+import UILayout from 'UILibrary/layout/UILayout';
+import UISection from 'UILibrary/layout/UISection';
 
 class News extends React.PureComponent {
   componentDidMount() {
@@ -14,85 +21,76 @@ class News extends React.PureComponent {
     }, 500)
   }
   renderPressItems() {
-    return newsItemConfig
-      .press
-      .map((item, i) => (
-        <NewsItem
-          key={i}
-          href={item.link}
-          text={item.title}
-          note={item.note}
-        />
-      ));
+    return newsItemConfig.press.map((item, i) => (
+      <NewsItem
+        key={i}
+        href={item.link}
+        text={item.title}
+        note={item.note}
+      />
+    ));
   }
   renderAwardsItems() {
-    return newsItemConfig
-      .awards
-      .map((item, i) => (
-        <NewsItem
-          key={i}
-          href={item.link}
-          text={item.title}
-          note={item.note}
-        />
-      ));
+    return newsItemConfig.awards.map((item, i) => (
+      <NewsItem
+        key={i}
+        href={item.link}
+        text={item.title}
+        note={item.note}
+      />
+    ));
   }
   renderContentItems() {
-    return newsItemConfig
-      .content
-      .map((item, i) => (
-        <NewsItem
-          key={i}
-          href={item.link}
-          text={item.title}
-          note={item.note}
-        />
-      ));
+    return newsItemConfig.content.map((item, i) => (
+      <NewsItem
+        key={i}
+        href={item.link}
+        text={item.title}
+        note={item.note}
+      />
+    ));
   }
   render() {
     return (
       <RouteTransition>
         <Helmet title="News" />
-        <div className="news">
-          <div className="news-container">
-            <div className="news-lists">
-              <div className="news-list-container">
-                <div className="news-page-header">
-                  <div className="news-header">
-                    <h1 className="text-darkest">
-                      In The News
-                    </h1>
-                  </div>
+        <UILayout className="p-top-11 p-bottom-6">
+          <UISection>
+
+            <UIFlexRow>
+              <UIFlex className="m-right-3">
+                <UICard className="p-all-3 m-bottom-3 with-shadow">
+                  <h1 className="text-darkest">
+                    News
+                  </h1>
                   <div className="divider"/>
                   <div className="news-tweet">
                     <Tweet/>
                   </div>
-                </div>
-                <div className="news-list-title">
-                  <h2>Video and Interactive Content</h2>
-                </div>
+                </UICard>
 
-                <ul className="news-list">
+                <UITable className="m-bottom-3 with-shadow">
+                  <UITableHeader title="Video and interactive content" colSpan={2} />
                   {this.renderContentItems()}
-                </ul>
-                <div className="news-list-title">
-                  <h2>Awards</h2>
-                </div>
-                <ul className="news-list">
+                </UITable>
+
+                <UITable className="with-shadow">
+                  <UITableHeader title="Awards" colSpan={2}/>
                   {this.renderAwardsItems()}
-                </ul>
-              </div>
-              <div className="news-list-container">
-                <div className="news-list-title">
-                  <h2>Press</h2>
-                </div>
-                <ul className="news-list">
+                </UITable>
+              </UIFlex>
+
+              <UIFlex>
+
+
+                <UITable className="with-shadow">
+                  <UITableHeader title="Press" colSpan={2}/>
                   {this.renderPressItems()}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+                </UITable>
+              </UIFlex>
+            </UIFlexRow>
+          </UISection>
+        </UILayout>
       </RouteTransition>
     )
   }

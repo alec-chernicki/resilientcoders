@@ -9,6 +9,7 @@ import UICard from 'UILibrary/layout/UICard';
 import UIImage from 'UILibrary/image/UIImage';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
+import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import communityImage from './community.jpg';
@@ -21,22 +22,20 @@ const GetInvolvedVolunteer = (props) => {
     <RouteTransition>
       <Helmet title="Join as a Volunteer" />
       <UILayout className="p-top-10 p-bottom-6">
-        <UISkewedLayer image={mentorImage} />
-        <UISection>
+        <UILayer  image={mentorImage} />
+        <UISkewedLayer className="index-1" />
+        <UISection className="index-2">
           <UIFlexRow>
             <UIFlex className="p-x-6 p-top-6">
               <h1>Join as a Volunteer</h1>
               <div className="divider" />
               <p className="text-on-dark">
                 There's more than one way to contribute at Resilient Coders. Our Volunteer Corps is comprised of
-                three Task Forces: Mentorship, Content Production, and Talent Placement. You can <a href="https://cdn2.hubspot.net/hubfs/2253693/Docs/VolunteerCorps.pdf" alt="Resilient Coders Volunteer Corps">read about Volunteer Corps</a>, or just fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgFPrBw28g3vlDL0XMUzQ3kmwHLWVFk2YAKa7M8ChbEeyoCA/viewform">this survey</a>.
-                Once you've done that, come by.
-                We want to meet you. Our Community Hours are Tuesdays and Thursdays, at 50 Milk St. Boston MA, 5th floor, between 3:30 and 6. <a href="mailto:leon@resilientcoders.org?subject=Mentor%20stopping%20by">Email Leon</a> if you're planning on stopping by,
-                so we know to expect you.
+                three Task Forces: Mentorship, Content Production, and Talent Placement.
               </p>
             </UIFlex>
             <UIFlex>
-              <EmailFormLong formUrl={MENTOR_FORM_URL} />
+              <EmailFormLong title="Get more information" formUrl={MENTOR_FORM_URL} />
             </UIFlex>
           </UIFlexRow>
         </UISection>
@@ -44,30 +43,107 @@ const GetInvolvedVolunteer = (props) => {
 
       <UILayout>
         <UISection className="p-y-6">
+
+
+          <UIFlexRow className="with-shadow m-bottom-6">
+            <UIFlex>
+              <UICard className="p-all-6">
+                <h2>
+                  Mentorship
+                </h2>
+                <ul>
+                  <li>
+                    <p>
+                      Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      1-on-1 mentorship of an alumni who is working, or looking for work.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      One-off lightning talks, at Community Hours.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Curriculum support
+                    </p>
+                  </li>
+                </ul>
+              </UICard>
+            </UIFlex>
+            <UIFlex>
+              <UIImage
+                type="cover"
+                src={communityImage}
+                alt="Resilient community"
+              />
+            </UIFlex>
+          </UIFlexRow>
+
+
+
+
+          <UIFlexRow className="with-shadow m-bottom-6">
+            <UIFlex>
+              <UICard className="p-all-6">
+                <h2>
+                  Content Production
+                </h2>
+                <ul>
+                  <li>
+                    <p>
+                      Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
+                    </p>
+                  </li>
+                </ul>
+              </UICard>
+            </UIFlex>
+            <UIFlex>
+              <UIImage
+                type="cover"
+                src={communityImage}
+                alt="Resilient community"
+              />
+            </UIFlex>
+          </UIFlexRow>
+
           <UIFlexRow className="with-shadow">
             <UIFlex>
               <UICard className="p-all-6">
                 <h2>
-                  Bootcamp
+                  Talent Placement
                 </h2>
-                <p>
-                  We're always looking for hacktivists who share our vision of technology as an
-                  opportunity for real meritocracy, to join us. Share your passion.
-
-                </p>
-                <p>Next Bootcamp will be at the Roxbury Innovation Center, from July 10th through September 1st. More details coming soon.
-                </p>
-                {/*
-                  <p>
-                  Coders who want to get involved as mentors should peruse our mentorhsip calendar
-                  that features moments during our Bootcamp, during which we could benefit from your
-                  help as a TA. Find a slot that works for your schedule and your skill set and book it.
-                  And send an email to Leon (@resilientcoders.org) so that we know to expect you.
-                  </p>
-                  <UIButton href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">
-                  Book a time to mentor
-                  </UIButton>
-                */}
+                <ul>
+                  <li>
+                    <p>
+                      Help students develop, hone resumes and cover letters.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Join us in identifying and/or brokering relationships with potential employers.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Become an active advocate for diversity in hiring.
+                    </p>
+                  </li>
+                </ul>
               </UICard>
             </UIFlex>
             <UIFlex>

@@ -1,19 +1,20 @@
 import './NewsItem.scss';
 import React from 'react';
+import UITableRow from 'UILibrary/table/UITableRow';
 
 const NewsItem = ({href, text, note}) => (
-  <li className="news-item accent-link-underline-trigger">
-    <a className="news-link" target="_blank" href={href}>
-      <div className="news-note">
-        <p className="news-note-text accent-link-underline">
+    <UITableRow>
+      <a target="_blank" href={href}>
+        <h4>
           {note}
+        </h4>
+      </a>
+      <a target="_blank" href={href}>
+        <p className="m-bottom-0">
+          {text}
         </p>
-      </div>
-      <p className="news-text">
-        {text}
-      </p>
-    </a>
-  </li>
+      </a>
+    </UITableRow>
 );
 
 export default NewsItem;

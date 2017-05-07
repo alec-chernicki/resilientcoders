@@ -1,0 +1,33 @@
+.member-title {
+  height: 180px;
+}
+
+.name {
+  color: #FFF;
+  transition: opacity 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
+.title {
+  color: #ED1B24;
+  transition: opacity 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
+.name-active {
+  composes: name;
+  opacity: 1;
+}
+
+.name-inactive {
+  composes: name;
+  opacity: 0.3;
+}
+
+.title-active {
+  composes: title;
+  opacity: 1;
+}
+
+.title-inactive {
+  composes: title;
+  opacity: 0;
+}

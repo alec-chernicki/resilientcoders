@@ -11,8 +11,6 @@ import skylineBackgroundImage from '../../images/skyline-background.svg';
 import homeImage from './home_photo.png';
 import Hero from '../../components/Containers/Hero/Hero';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
-import SideBySide from '../../components/Containers/SideBySide/SideBySide';
-import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
 import Parallax from '../../components/Effects/Parallax';

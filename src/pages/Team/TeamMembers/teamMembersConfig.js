@@ -9,8 +9,8 @@ import PamelaImage from './TeamMemberImages/pamela.jpg';
 import CaImage from './TeamMemberImages/ca.jpg';
 import FredImage from './TeamMemberImages/fred.png';
 
-export default {
-  DAVID_DELMAR: {
+export default [
+  {
     name: 'David Delmar',
     image: DelImage,
     title: 'Executive Director, Founder',
@@ -22,7 +22,7 @@ export default {
       its UX subject matter expert. David believes in technology as an opportunity for real
       meritocracy. And he believes in the resilience of Boston's youth.`
   },
-  LEON_NOEL: {
+  {
     name: 'Leon Noel',
     image: LeonImage,
     title: 'Managing Director of Engineering',
@@ -35,7 +35,7 @@ export default {
     their engineering teams and bring new technology to market. His technological pursuits have been
     featured in numerous publications including Tech Crunch, Black Enterprise, and the Boston Globe.`
   },
-  HELEN_ROSENFELD: {
+  {
     name: 'Helen Rosenfeld',
     image: HelenImage,
     title: 'Head of Strategic Partnerships',
@@ -47,7 +47,7 @@ export default {
       is an advisor to Friends of Seva Mandir, supporting the non-profit that she first worked with
       in Rajasthan, India where she began her career.`
   },
-  MUIGAI_UNAKA: {
+  {
     name: 'Muigai Unaka',
     image: MuigaiImage,
     title: 'Resilient Lab Lead',
@@ -56,7 +56,7 @@ export default {
       part of a special projects team, designing and building products that redefine how we interact
       with each other. Also, his great-grandfather is Jomo Kenyatta.`
   },
-  ALEC_ORTEGA: {
+  {
     name: 'Alec Ortega',
     image: AlecImage,
     title: 'Technical advisor',
@@ -67,7 +67,7 @@ export default {
     track. During the day, he works as a front end engineer at HubSpot and consumes too much
     coffee for his own good.`
   },
-  CHRIS_SWENOR: {
+  {
     name: 'Chris Swenor',
     image: ChrisImage,
     title: 'Technical Advisor',
@@ -78,7 +78,7 @@ export default {
       and development agency that works to be the fastest, most efficient way to build digital
       product and get companies to their next milestone.`
   },
-  JOSHUA_SUMMERS: {
+  {
     name: 'Joshua Summers',
     image: JoshImage,
     title: 'Board Chair',
@@ -90,7 +90,7 @@ export default {
       University. Joshua lives with his forgiving wife Rachel and awesome kids Zachary and
       Alisha in Lexington, MA.`
   },
-  PAMELA_ALDSWORTH: {
+  {
     name: 'Pamela Aldsworth',
     image: PamelaImage,
     title: 'Board',
@@ -102,7 +102,7 @@ export default {
       coverage universe to ensure that SVB is providing the best possible insights, guidance,
       products and services to the partnership and their portfolio companies.`
   },
-  CA_WEBB: {
+  {
     name: 'C.A. Webb',
     image: CaImage,
     title: 'Board',
@@ -114,16 +114,16 @@ export default {
     recognized as an Innovation All Star by Boston Business Journal and is passionate about
     creating powerful communities that can have a meaningful and lasting impact on business.`
   },
-  FREDRICK_TOWNES: {
-  name: 'Frederick Townes',
-  image: FredImage,
-  title: 'Board',
-  bio: `Fred builds and leads teams that craft web platforms, products, and communities.
-    From software development and architecture, to product marketing strategy, to business leadership and
-    operations, he thrives at the intersection of technology, strategy, and design. He's worked with
-    organizations of all sizes on two continents, from The Coca-Cola Company and Staples to Sony and Microsoft,
-    to develop and drive business models at scale. Now, he's applying his technical experience as both developer
-    and entrepreneur to transforming the real estate industry with Placester, advising early-stage startups,
-    and speaking at digital marketing and technology events around the world.`
+  {
+    name: 'Frederick Townes',
+    image: FredImage,
+    title: 'Board',
+    bio: `Fred builds and leads teams that craft web platforms, products, and communities.
+      From software development and architecture, to product marketing strategy, to business leadership and
+      operations, he thrives at the intersection of technology, strategy, and design. He's worked with
+      organizations of all sizes on two continents, from The Coca-Cola Company and Staples to Sony and Microsoft,
+      to develop and drive business models at scale. Now, he's applying his technical experience as both developer
+      and entrepreneur to transforming the real estate industry with Placester, advising early-stage startups,
+      and speaking at digital marketing and technology events around the world.`
   },
-}
+];

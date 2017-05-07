@@ -1,7 +1,6 @@
 .card {
   width: 100%;
   position: relative;
-  height: 100%;
 }
 
 .card-primary {
@@ -33,6 +32,21 @@
 
 .card-secondary p {
   color: #B3C7D1 !important;
+}
+
+.card-tertiary {
+  composes: card;
+  background-color: #EDEEF0;
+}
+
+.card-tertiary h1,
+.card-tertiary h2,
+.card-tertiary h3 {
+  color: #21262D !important;
+}
+
+.card-tertiary p {
+  color: #4f5a60 !important;
 }
 
 .card-image {

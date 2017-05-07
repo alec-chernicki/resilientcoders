@@ -1,25 +1,123 @@
-import './Bootcamp.scss';
 import React, {PureComponent} from 'react';
-import UIButton from 'UILibrary/button/UIButton'
-import RouteTransition from '../../components/RouteTransition/RouteTransition';
-import Timeline from './Timeline/Timeline';
-import Partners from '../../components/Containers/Partners/Partners';
+import RouteTransition from 'components/RouteTransition/RouteTransition';
+import {Link} from 'react-router';
+import Partners from 'components/Containers/Partners/Partners';
 import bootcampPartnersConfig from './bootcampPartnersConfig';
-import Hero from '../../components/Containers/Hero/Hero';
-import BootcampHeroImage from './bootcamp-hero.png';
-import SideBySide from '../../components/Containers/SideBySide/SideBySide';
-import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
-import CenteredContainerInner from '../../components/Containers/CenteredContainer/CenteredContainerInner';
-import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter';
+import Hero from 'components/Containers/Hero/Hero';
 import Helmet from 'react-helmet';
 
+
+import UIButton from 'UILibrary/button/UIButton'
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UICard from 'UILibrary/layout/UICard';
+import UIImage from 'UILibrary/image/UIImage';
+import UISection from 'UILibrary/layout/UISection';
+import UILayout from 'UILibrary/layout/UILayout';
+import UILayer from 'UILibrary/layer/UILayer';
+import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
+
+import images from 'constants/images';
+
 class Bootcamp extends PureComponent {
+  renderTimelineSections() {
+    return (
+      <UILayout use="tertiary">
+        <UISection className="p-y-6 index-2">
+          <UIFlexRow justify="space-between">
+            <UIFlex basis="40%" grow={0} shrink={0}>
+              <UIFlexRow align="center" className="full-height">
+                <UIFlex>
+                  <h2 className="text-white">
+                    Hackathons
+                  </h2>
+                  <p className="text-on-dark">
+                    We run two hackathons before each Bootcamp, from which we recruit our students.
+                    They’re each about six hours long, and are meant as a way for staff, alumni, and
+                    prospective students to get to know each other.
+                  </p>
+                </UIFlex>
+              </UIFlexRow>
+            </UIFlex>
+            <UIFlex basis="35%" grow={0} shrink={0}>
+              <UIImage className="with-shadow index-1 position-relative" src={images.recruitment} type="responsive"/>
+            </UIFlex>
+          </UIFlexRow>
+
+          <UIFlexRow justify="space-between">
+            <UIFlex basis="40%" grow={0} shrink={0}>
+              <UIImage height={500} src={images.coreSkills} type="responsive"/>
+            </UIFlex>
+            <UIFlex basis="40%" grow={0} shrink={0}>
+              <UIFlexRow align="center" className="full-height">
+                <UIFlex>
+                  <h2 className="text-white">
+                    Core Skills
+                  </h2>
+                  <p className="text-on-dark">
+                    Once in Bootcamp, our coders meet daily, for seven weeks, to learn HTML, CSS,
+                    JavaScript, jQuery, and git, from professionals. Before graduating, they will have
+                    demonstrated proficiency in semantically structured markup, inheritance and
+                    specificity, accessibility, progressive enhancement, responsive design, and
+                    effective use of functions, methods, and variables. They will have built, and
+                    pushed to GitHub, work that showcases these aptitudes.
+                  </p>
+                </UIFlex>
+              </UIFlexRow>
+            </UIFlex>
+          </UIFlexRow>
+
+          <UIFlexRow justify="space-between">
+            <UIFlex basis="40%" grow={0} shrink={0}>
+              <UIFlexRow align="center" className="full-height">
+                <UIFlex>
+                  <h2 className="text-white">
+                    Soft Skills
+                  </h2>
+                  <p className="text-on-dark">
+                    Our coders also work on the skills that make the “whole engineer,” during Bootcamp.
+                    They learn communication techniques, speaking tips, as well as best practices
+                    around accountability and time management.
+                  </p>
+                </UIFlex>
+              </UIFlexRow>
+            </UIFlex>
+            <UIFlex basis="40%" grow={0} shrink={0}>
+              <UIImage height={500} src={images.softSkills} type="responsive"/>
+            </UIFlex>
+          </UIFlexRow>
+
+          <UIFlexRow justify="space-between">
+            <UIFlex basis="40%" grow={0} shrink={0}>
+              <UIImage height={500} src={images.clientWork} type="responsive"/>
+            </UIFlex>
+            <UIFlex basis="40%" grow={0} shrink={0}>
+              <UIFlexRow align="center" className="full-height">
+                <UIFlex>
+                  <h2 className="text-white">
+                    Client work
+                  </h2>
+                  <p className="text-on-dark">
+                    At least once per Bootcamp, we have a “client kickoff meeting,” during which a
+                    client is invited to present design work for a website they need built. Our coders
+                    work in teams to build it before the client returns for a presentation and
+                    hand-off. Students are paid for their time on this, and throughout the Bootcamp.
+                  </p>
+                </UIFlex>
+              </UIFlexRow>
+            </UIFlex>
+          </UIFlexRow>
+        </UISection>
+        <UISkewedLayer use="secondary" className="index-1"/>
+      </UILayout>
+    );
+  }
   render() {
     return (
       <RouteTransition>
         <Helmet title="Resilient Bootcamp" />
         <Hero
-          image={BootcampHeroImage}
+          image={images.heroBootcamp}
           short={true}
           titleLineOne="Resilient Bootcamp"
         >
@@ -31,116 +129,166 @@ class Bootcamp extends PureComponent {
             Meet our new grads
           </UIButton>
         </Hero>
-        <SideBySide>
-          <SideItem type="grey" className="p-y-6">
-            <h2>The Goal</h2>
-            <div className="divider divider__red" />
-            <p>
-              The idea behind our Bootcamp is an audacious one: Take a small cohort of young
-              people, who face more challenges than most, who have been hand-picked by our
-              partners for their grit, and teach them fundamentals of web development so that
-              they may have access to a real career. From Bootcamp, mentorship, and Resilient Lab,
-              through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at
-              at that first gig.
-            </p>
 
-          </SideItem>
-          <SideItem className="p-y-6 pull-up-1">
-            <h2>Current Bootcamp</h2>
-            <p>
-              Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
-              Interested in applying for
-              the next one? Come to our next Hackathon,
-              from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
-            </p>
-            {/*
-              <p>
-              Our Winter Bootcamp is in full swing, at the <a href="http://www.insightsquared.com/">Insight Squared</a> is just about finished. Interested in
-              applying for the next one? Stop by our <a href="/bootcamp/roster">Community Hours</a>, meet the staff.
-              Coders who want to get involved as mentors should peruse the&nbsp;
-              <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">
-                Google Appointment calendar
-              </a> that features moments during our Bootcamp, during which we could benefit from your help as a TA. Find a slot that works for your schedule and your skill set. Book it. And send an email to Leon (@resilientcoders.org) so that we know to expect you.
-              </p>
-            */}
-            <p>
-              Our coders are now available for hire. Interested in learning more? Check out their
-              bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
-            </p>
-            <UIButton to="/bootcamp/roster">
-              Meet our new grads
-            </UIButton>
-          </SideItem>
-        </SideBySide>
-        <CenteredContainerOuter color="white">
-          <CenteredContainerInner color="white" className="text-center">
+        <UILayout>
+          <UISection className="p-bottom-6">
+            <UIFlexRow>
+              <UIFlex>
+                <UICard className="p-all-6 full-height">
+                  <h2>The Goal</h2>
+                  <div className="divider divider__red" />
+                  <p>
+                    The idea behind our Bootcamp is an audacious one: Take a small cohort of young
+                    people, who face more challenges than most, who have been hand-picked by our
+                    partners for their grit, and teach them fundamentals of web development so that
+                    they may have access to a real career. From Bootcamp, mentorship, and Resilient Lab,
+                    through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at
+                    at that first gig.
+                  </p>
+
+                </UICard>
+              </UIFlex>
+              <UIFlex>
+                <UICard use="secondary" className="p-all-6 full-height">
+                  <h2>Current Bootcamp</h2>
+                  <p>
+                    Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
+                    Interested in applying for
+                    the next one? Come to our next Hackathon,
+                    from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+                  </p>
+                  <p>
+                    Our coders are now available for hire. Interested in learning more? Check out their
+                    bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
+                  </p>
+                  <UIButton to="/bootcamp/roster">
+                    Meet our new grads
+                  </UIButton>
+                </UICard>
+              </UIFlex>
+            </UIFlexRow>
+          </UISection>
+        </UILayout>
+
+
+
+        <UILayout use="secondary">
+          <UISkewedLayer use="tertiary" className="index-1"/>
+          <UISection className="text-center p-y-6 index-2">
             <h1>The Program</h1>
-            <p className="text-constrained">
+            <p className="text-constrained m-bottom-6">
               Our 8 week program teaches students the fundamentals of front end web development.
               We start with the basics and end with real world client work.
             </p>
-          </CenteredContainerInner>
-          <CenteredContainerInner
-            color="grey"
-            standard={false}
-            className="text-center p-y"
-          >
-            <Timeline/>
-          </CenteredContainerInner>
-        </CenteredContainerOuter>
-        <div className="bootcamp-join">
-          <div className="bootcamp-join-text">
+            <h4 className="text-center">
+              Starts with
+            </h4>
+            <h2 className="text-center">
+              Determination
+            </h2>
+          </UISection>
+        </UILayout>
+
+        {this.renderTimelineSections()}
+
+
+        <UILayout className="p-y-6" use="secondary">
+          <UIFlexRow>
+            <UIFlex>
+              <UIImage type="responsive" src={images.studentOne}/>
+            </UIFlex>
+            <UIFlex>
+              <UICard className="text-center p-x-6">
+                <h4>
+                  Ends with
+                </h4>
+                <h1>
+                  A Career
+                </h1>
+                <p>
+                  We hire some of our own Bootcamp students into an apprenticeship with
+                  <Link to="/lab">
+                    &nbsp;Resilient Lab
+                  </Link>
+                  , and others go right into an internship leveraging their
+                  new skills.
+                </p>
+              </UICard>
+            </UIFlex>
+            <UIFlex>
+              <UIImage type="responsive" src={images.studentTwo}/>
+
+            </UIFlex>
+          </UIFlexRow>
+        </UILayout>
+
+
+
+        <UILayout>
+          <UILayer dots={false} image={images.joinBootcamp} />
+          <UISection className="index-1 text-center p-y-18">
             <h1>
               Want in?
             </h1>
             <div className="divider divider__red"/>
-            <p>
+            <p className="text-on-dark text-constrained">
               We&#8217;re looking for young people from the City of Boston, who face more challenges
               than most, to join us for eight weeks, to learn the fundamentals of web
               development for free.
             </p>
-          </div>
-        </div>
-        <SideBySide className="bootcamp-apply">
-          <SideItem type="grey" className="p-y-6">
-            <h2>As a student</h2>
-            <p>
-              Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
-              Interested in applying for
-              the next one? Come to our next Hackathon,
-              from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
-            </p>
-            <UIButton to="/get-involved/student">
-              Learn more
-            </UIButton>
-          </SideItem>
-          <SideItem type="white" className="p-y-6 pull-up-1">
-            <h2>As a mentor</h2>
-            <div className="divider divider__red"/>
-            <p>
-              Want to get involved in Bootcamp? <a href="/get-involved/volunteer">Sign up for the mailing list,</a> and we will keep you posted
-              as the summer approaches.
-            </p>
-            {/*
-              <p>
-              Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
-              and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
-              from 3:30 to 6. We&#8217;re all about making it easy for you to join.
-              </p>
-            */}
-            <UIButton to="/get-involved/volunteer">
-              Get Involved
-            </UIButton>
-          </SideItem>
-        </SideBySide>
-        <CenteredContainerOuter color="white">
-          <CenteredContainerInner color="white">
-            <Partners
-              title="Thank you to our bootcamp partners"
-              partnersConfig={bootcampPartnersConfig}
-            />
-          </CenteredContainerInner>
-        </CenteredContainerOuter>
+          </UISection>
+        </UILayout>
+
+
+        <UILayout className="p-bottom-6">
+          <UISection>
+            <UIFlexRow>
+              <UIFlex type="grey">
+                <UICard use="secondary" className="p-all-6 full-height">
+                  <h2>As a student</h2>
+                  <p>
+                    Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
+                    Interested in applying for
+                    the next one? Come to our next Hackathon,
+                    from from which we recruit, on 4/29 from 10 to 5, at 31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+                  </p>
+                  <UIButton to="/get-involved/student">
+                    Learn more
+                  </UIButton>
+                </UICard>
+              </UIFlex>
+              <UIFlex type="white">
+                <UICard className="p-all-6 pull-up-1 full-height">
+                  <h2>As a mentor</h2>
+                  <div className="divider divider__red"/>
+                  <p>
+                    Want to get involved in Bootcamp? <a href="/get-involved/volunteer">Sign up for the mailing list,</a> and we will keep you posted
+                    as the summer approaches.
+                  </p>
+                  {/*
+                    <p>
+                    Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
+                    and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
+                    from 3:30 to 6. We&#8217;re all about making it easy for you to join.
+                    </p>
+                  */}
+                  <UIButton to="/get-involved/volunteer">
+                    Get Involved
+                  </UIButton>
+                </UICard>
+              </UIFlex>
+            </UIFlexRow>
+          </UISection>
+        </UILayout>
+
+
+
+
+        <Partners
+          title="Thank you to our bootcamp partners"
+          partnersConfig={bootcampPartnersConfig}
+        />
+
       </RouteTransition>
     )
   }

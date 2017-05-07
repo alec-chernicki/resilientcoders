@@ -1,19 +1,23 @@
 @keyframes icon-swipe {
   0% {
+    opacity: 1;
     transform: translateX(0);
-     animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   50% {
-    transform: translateX(50px);
+    opacity: 0;
+    transform: translateX(23px);
     animation-timing-function: step-start;
   }
 
   51% {
-    transform: translateX(-50px);
+    opacity: 0;
+    transform: translateX(-23px);
     animation-timing-function: ease-out;
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0px);
   }
 }
@@ -37,7 +41,7 @@
 }
 
 .button:hover .animation-wrapper {
-  animation: icon-swipe 350ms;
+  animation: icon-swipe 200ms;
 }
 
 .content {

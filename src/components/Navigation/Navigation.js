@@ -75,24 +75,26 @@ class Navigation extends React.Component {
           transition: 'all 450ms cubic-bezier(0.52, 0.01, 0.16, 1)',
         }}
       >
-        <Link to="/" className="nav-logo">
-          <img src={logoRed} alt="Resilient Coders logo"/>
-        </Link>
-        {this.renderNavigationLinks('nav-links nav-links--desktop')}
-        <div className="nav-links nav-links--mobile">
-          <a className={mobileNavIconClass} onClick={this.showMobileNav}>
-            <span className="nav-line line-1" />
-            <span className="nav-line line-2" />
-            <span className="nav-line line-3" />
-          </a>
-          <ReactCSSTransitionGroup
-            component="div"
-            transitionName="mobile-navigation"
-            transitionEnterTimeout={200}
-            transitionLeaveTimeout={200}
-          >
-            {this.renderMobileNavigation()}
-          </ReactCSSTransitionGroup>
+        <div className="with-shadow">
+          <Link to="/" className="nav-logo">
+            <img src={logoRed} alt="Resilient Coders logo"/>
+          </Link>
+          {this.renderNavigationLinks('nav-links nav-links--desktop')}
+          <div className="nav-links nav-links--mobile">
+            <a className={mobileNavIconClass} onClick={this.showMobileNav}>
+              <span className="nav-line line-1" />
+              <span className="nav-line line-2" />
+              <span className="nav-line line-3" />
+            </a>
+            <ReactCSSTransitionGroup
+              component="div"
+              transitionName="mobile-navigation"
+              transitionEnterTimeout={200}
+              transitionLeaveTimeout={200}
+            >
+              {this.renderMobileNavigation()}
+            </ReactCSSTransitionGroup>
+          </div>
         </div>
       </Headroom>
     )

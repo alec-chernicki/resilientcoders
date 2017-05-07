@@ -76,6 +76,7 @@
     "react-helmet": "^4.0.0",
     "react-router": "^2.6.1",
     "react-slick": "^0.14.6",
+    "react-transition-group": "^1.1.2",
     "react-zeroclipboard": "^3.2.2",
     "scrollmagic": "^2.0.5",
     "sitemap": "^1.9.0",

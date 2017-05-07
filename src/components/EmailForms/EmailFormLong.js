@@ -70,6 +70,7 @@ class EmailFormLong extends React.PureComponent {
       })
   }
   render() {
+    const { title } = this.props;
     const buttonClass = classNames({
       'disabled': !this.state.canSubmit,
     });
@@ -77,7 +78,7 @@ class EmailFormLong extends React.PureComponent {
     return (
       <div styleName="form" className="with-shadow">
         <h2 className="p-y-3 p-x-6" styleName="header">
-          Get our hiring guide
+          {title}
         </h2>
         <Form
           ref={this.setFormElementRef}

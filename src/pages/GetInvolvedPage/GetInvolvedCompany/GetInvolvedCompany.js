@@ -10,6 +10,7 @@ import UICard from 'UILibrary/layout/UICard';
 import UIImage from 'UILibrary/image/UIImage';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
+import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import contractLabImage from './get-involved-lab.jpg';
@@ -25,8 +26,9 @@ class GetInvolvedCompany extends React.PureComponent {
         <Helmet title="Join as a Company" />
 
         <UILayout className="p-top-10 p-bottom-6">
-          <UISkewedLayer use="primary" image={companyImage}  />
-          <UISection>
+          <UILayer image={companyImage} />
+          <UISkewedLayer use="primary" className="index-1" />
+          <UISection className="index-2">
             <UIFlexRow>
               <UIFlex className="p-x-6 p-top-3">
                 <h1>Join as a Company</h1>
@@ -36,13 +38,9 @@ class GetInvolvedCompany extends React.PureComponent {
                   than words, it requires action. From recuitment to hiring, we're here to help
                   at every step of the process.
                 </p>
-                <p className="text-on-dark">
-                  Be the first to know when we have new students to hire or when partnership
-                  opportunities become available.
-                </p>
               </UIFlex>
               <UIFlex>
-                <EmailFormLong formUrl={COMPANY_FORM_URL} />
+                <EmailFormLong title="Get our hiring guide" formUrl={COMPANY_FORM_URL} />
               </UIFlex>
             </UIFlexRow>
           </UISection>

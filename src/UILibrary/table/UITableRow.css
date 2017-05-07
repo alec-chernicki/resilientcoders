@@ -1,0 +1,9 @@
+.table-row {
+  background-color: #FFF;
+  position: relative;
+  border-bottom: solid 1px #DDD;
+}
+
+.table-row td {
+  padding: 20px 15px;
+}
