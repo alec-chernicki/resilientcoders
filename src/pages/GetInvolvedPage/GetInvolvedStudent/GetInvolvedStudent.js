@@ -48,14 +48,7 @@ const GetInvolvedStudent = (props) => {
             might be a better fit than Community. It&#8217;s eight weeks long, daily. We recruit out of
             our Bootcamp into Resilient Lab, our web development company.
           </p>
-          <p>
-            The first step is to come meet the team. Feel free to stop by our Community Hours.
-            That's Tuesdays and Thursdays, at 50 Milk St. Boston MA, 5th floor, between 3:30 and 6. <a href="mailto:leon@resilientcoders.org?subject=Mentor%20stopping%20by">Email Leon</a> if you're planning on stopping by,
-            so we know to expect you.
-          </p>
-          <p>We recruit into Bootcamp from our Hackathons. The next one is on April 29th from 10 to 5 at
-            31 Liverpool St in East Boston. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up.</a>
-          </p>
+        
           <UIButton to="/bootcamp">
             Learn more
           </UIButton>
