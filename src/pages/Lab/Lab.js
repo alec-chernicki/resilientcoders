@@ -70,7 +70,8 @@ class Lab extends React.PureComponent {
                       </span>
                     </a>
                     , and recruited into the Lab for their aptitude and their grit. Our clients get
-                    an exceptional product, while also helping to launch our coders' careers.
+                    an exceptional product, while also helping to launch our coders' careers. Email David Delmar
+                    at <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a> to learn more.
                   </p>
                 </UICard>
               </UIFlex>
@@ -80,11 +81,6 @@ class Lab extends React.PureComponent {
                   <p>Front End Development</p>
                   <p>UI Design and & Prototyping</p>
                   <p>UX Research</p>
-                  {/*
-                  <UIButton target="_blank" href="/quote">
-                    Get a quote
-                  </UIButton>
-                  */}
                 </UICard>
               </UIFlex>
             </UIFlexRow>
