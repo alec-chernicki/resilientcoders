@@ -77,7 +77,8 @@ class Lab extends React.PureComponent {
                       </span>
                     </a>
                     , and recruited into the Lab for their aptitude and their grit. Our clients get
-                    an exceptional product, while also helping to launch our coders' careers.
+                    an exceptional product, while also helping to launch our coders' careers. Email David Delmar
+                    at <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a> to learn more.
                   </p>
                 </UICard>
               </UIFlex>
@@ -125,6 +126,7 @@ class Lab extends React.PureComponent {
         </CenteredContainerOuter>
 
         <CenteredContainerOuter className="p-bottom-6">
+        {/*
           <UISection>
             <UICard use="secondary" className="text-center pull-up-2 p-y-6 index-2">
               <p className="text-white">
@@ -136,7 +138,7 @@ class Lab extends React.PureComponent {
               </UIButton>
             </UICard>
           </UISection>
-
+          */}
           <UISection>
             <UICard className="p-all-6">
               <h2>
