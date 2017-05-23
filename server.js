@@ -20,7 +20,7 @@ app.use(robots({UserAgent: '*', Disallow: '/api'}))
 // Point the main directory to /build (main website), if someone requests /quote or /rebuild
 // serve those folders instead.
 app.use(express.static(`${__dirname}/build`));
-app.use("/quote", express.static(__dirname + "/erl/"));
+// app.use("/quote", express.static(__dirname + "/erl/"));
 app.use("/rebuild", express.static(__dirname + "/rebuild/"));
 
 // This actually starts the Express application
@@ -56,9 +56,11 @@ app.get('/api/meta-image', (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
 });
+/*
 app.get('/quote', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/erl/index.html'));
 });
+*/
 app.get('/rebuild', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/rebuild/index.html'));
 });
