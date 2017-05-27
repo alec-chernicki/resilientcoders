@@ -103,3 +103,38 @@ exports.postSubscriptionCompany = (req, res) => {
     return res.sendStatus(200)
   })
 };
+
+exports.postSubscriptionDiversityPlaybook = (req, res) => {
+  const postData =  Qs.stringify({
+    'firstname': req.body.firstName,
+    'lastname': req.body.lastName,
+    'email': req.body.email,
+    'company': req.body.company,
+    'hs_context': JSON.stringify({
+      "hutk": req.cookies.hubspotutk,
+      "ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+      "pageUrl": "http://www.example.com/form-page",
+      "pageName": "Resilient Coders",
+    })
+  });
+
+  axios({
+    url: "/uploads/form/v2/2253693/2c5d597a-05d9-44ba-b602-dc608b1cb8ef",
+    method: 'POST',
+    baseURL: 'https://forms.hubspot.com',
+    headers: {
+  		'Content-Type': 'application/x-www-form-urlencoded',
+  		'Content-Length': postData.length
+  	},
+    data: postData
+  })
+  .then((response) => {
+    console.log('Body: ' + response)
+    return res.sendStatus(200)
+
+  })
+  .catch((e) => {
+    console.log("Problem with request " + e.message)
+    return res.sendStatus(200)
+  })
+};

@@ -4,14 +4,14 @@ import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import UIButton from 'UILibrary/button/UIButton'
 import SideBySide from '../../components/Containers/SideBySide/SideBySide';
 import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
-import EmailFormLong from '../../components/EmailForms/EmailFormLong';
-import companyImage from './get-involved-company.jpg';
+import EmailFormLong from '../../components/EmailForms/EmailFormDiversity';
+import diversityImage from './get-involved-company.jpg';
 import Hero from '../../components/Containers/Hero/Hero';
 import contractLabImage from './get-involved-lab.jpg';
 import hireStudentsImage from './get-involved-dunia.jpg';
 import Helmet from 'react-helmet';
 
-const COMPANY_FORM_URL = '/api/subscribe/company';
+const DIVERSITYPLAYBOOK_FORM_URL = '/api/subscribe/diversityplaybook';
 
 class Playbook extends React.PureComponent {
   render () {
@@ -19,7 +19,7 @@ class Playbook extends React.PureComponent {
       <RouteTransition>
         <Helmet title="The Diversity Playbook" />
         <Hero
-          image={companyImage}
+          image={diversityImage}
           titleLineOne="The Diversity Playbook"
           short={true}
         >
@@ -32,7 +32,7 @@ class Playbook extends React.PureComponent {
         <SideBySide color="white">
           <SideItem className="p-y-6">
             <h2>
-              Get the Playbook
+              Build your framework
             </h2>
             <p>
               The diversity crisis is too important for us to keep guessing at what works and what doesn’t work. You wouldn’t do that with your product. Let’s do this the right way.
@@ -41,7 +41,7 @@ class Playbook extends React.PureComponent {
           </SideItem>
           <SideItem className="pull-up-3" flush={true}>
             <EmailFormLong
-              formUrl={COMPANY_FORM_URL}
+              formUrl={DIVERSITYPLAYBOOK_FORM_URL}
             />
           </SideItem>
         </SideBySide>
