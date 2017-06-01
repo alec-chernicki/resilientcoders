@@ -98,7 +98,7 @@ class Hero extends React.PureComponent {
         <div
           className="hero__overlay"
           style={{
-            backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(33,38,45, 0.8) 30%, rgba(33,38,45, 0.45))`
+            backgroundImage: `url(${DotLight}), linear-gradient(90deg, rgba(33, 38, 45, 0.85) 25%, rgba(33, 38, 45, 0.35))`
           }}
         />
         <Fade from={0} to={1} stretch={true} className="hero__fade-overlay-container">

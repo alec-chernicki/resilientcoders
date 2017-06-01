@@ -1,48 +1,48 @@
-import './StepNavigation.scss';
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './StepNavigation.css';
 import {partial} from 'underscore';
 import classNames from 'classnames';
-import StepProgressBar from './StepProgressBar/StepProgressBar';
+
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UITextShadow from 'UILibrary/text/UITextShadow';
 
 class StepNavigation extends React.PureComponent {
   renderSteps() {
     const {setShownStepIndex, shownStepIndex, stepConfig} = this.props;
 
-    const steps = stepConfig.map((item, i) => {
-      const itemClass = classNames('step-navigation__item', {
-        'active': shownStepIndex === i
-      })
+    return stepConfig.map((item, i) => {
+      const shadowText = `0${i + 1}.`;
+      const isActive =shownStepIndex === i;
 
       return (
-        <div
+        <UIFlex
           key={i}
-          className={itemClass}
-          onClick={partial(setShownStepIndex, i)}
+          basis="auto"
+          grow={0}
+          shrink={0}
+          className="cursor-pointer"
         >
-          <h3>
-            {item.name}
+          <h3 onMouseEnter={partial(setShownStepIndex, i)}>
+            <UITextShadow
+              isActive={isActive}
+              text={shadowText}
+            >
+              {item.name}
+            </UITextShadow>
           </h3>
-        </div>
+        </UIFlex>
       )
     })
-
-    return (
-      <div className="step-navigation__list">
-        <StepProgressBar
-          stepConfig={stepConfig}
-          shownStepIndex={shownStepIndex}
-        />
-        {steps}
-      </div>
-    )
   }
   render() {
     return (
-      <div className="step-navigation">
+      <UIFlexRow justify="space-between" className="p-x-15 flex-sm-row p-sm-x-0">
         {this.renderSteps()}
-      </div>
+      </UIFlexRow>
     );
   }
 }
 
-export default StepNavigation;
+export default CSSModules(StepNavigation, styles);

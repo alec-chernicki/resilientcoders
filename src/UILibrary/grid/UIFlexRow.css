@@ -5,6 +5,10 @@
 
 @media screen and (max-width: 768px) {
   .flex-row {
-    flex-direction: column !important;
+    flex-direction: column;
+  }
+
+  :global(.flex-sm-row) {
+    flex-direction: row !important;
   }
 }

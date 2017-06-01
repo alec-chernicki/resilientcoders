@@ -10,10 +10,9 @@ import UIIcon from 'UILibrary/icon/UIIcon';
 import UIOverlay from 'UILibrary/overlay/UIOverlay';
 import UIImage from 'UILibrary/image/UIImage';
 import UILayer from 'UILibrary/layer/UILayer';
+import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
-import CenteredContainerOuter from '../../../../components/Containers/CenteredContainer/CenteredContainerOuter';
-import CenteredContainerInner from '../../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import RouteTransition from '../../../../components/RouteTransition/RouteTransition';
 import githubLogo from '../../../../images/github.svg';
 import linkedinLogo from '../../../../images/linkedin.svg';
@@ -98,7 +97,6 @@ class RosterMember extends React.Component {
       <UILink
         href={resume}
         external={true}
-        use="tertiary"
         className="m-bottom-2"
       >
         View Resume
@@ -113,30 +111,27 @@ class RosterMember extends React.Component {
     }
 
     return (
-      <UILayout use="secondary" className="p-top-16 p-bottom-6">
+      <UILayout className="p-top-6 p-bottom-6">
         <UISection className="text-center">
-          <UICard>
-            <h1 className="m-bottom-0">
-              Portfolio Website
-            </h1>
-            <div className="divider divider__red " />
-            <a
-              styleName="website"
-              target="_blank"
-              href={portfolioUrl}
-            >
-              <UIOverlay text="Visit Website">
-                <div styleName="iframe-wrapper">
-                  <iframe
-                    scrolling="no"
-                    src={portfolioUrl}
-                    seamless="seamless"
-                    styleName="iframe"
-                  />
-                </div>
-              </UIOverlay>
-            </a>
-          </UICard>
+          <h1 className="m-bottom-0 text-darkest">
+            Portfolio Website
+          </h1>
+          <div className="divider divider__red " />
+          <a
+            styleName="website"
+            target="_blank"
+            href={portfolioUrl}
+          >
+            <UIOverlay text="Visit Website" />
+            <div styleName="iframe-wrapper" className="with-shadow">
+              <iframe
+                scrolling="no"
+                src={portfolioUrl}
+                seamless="seamless"
+                styleName="iframe"
+              />
+            </div>
+          </a>
         </UISection>
       </UILayout>
     )
@@ -147,11 +142,13 @@ class RosterMember extends React.Component {
     return (
       <RouteTransition>
         <UILayout>
+          <UISkewedLayer className="index-2" />
+          <UILayer image={image} dots={false} className="index-1" />
           <UISection className="p-top-11 p-bottom-6 index-2">
             <UIButton
               to="/bootcamp/roster"
               type="link"
-              use="secondary"
+              use="tertiary"
               className="m-bottom-1"
             >
               <UIIcon
@@ -167,7 +164,7 @@ class RosterMember extends React.Component {
                 <UIImage src={image} type="cover" />
               </UIFlex>
               <UIFlex>
-                <UICard use="secondary" className="p-all-5">
+                <UICard className="p-all-6">
                   <h2>
                     {name}
                   </h2>

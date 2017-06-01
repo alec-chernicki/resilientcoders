@@ -1,58 +1,105 @@
 import React, { PropTypes } from 'react';
 import styles from './UIHero.css';
 import CSSModules from 'react-css-modules';
-import classNames from 'classnames';
 import UILayer from 'UILibrary/layer/UILayer';
+import UISection from 'UILibrary/layout/UISection';
+import UIButton from 'UILibrary/button/UIButton';
+import UIVideoLayer from 'UILibrary/layer/UIVideoLayer';
 
 class UIHero extends React.Component {
-  renderTitleOne() {
-    const {titleLineOne} = this.props;
+  renderBackground() {
+    const {video, image} = this.props;
 
-    if (!titleLineOne) {
+    if (video) {
+      return (
+        <UIVideoLayer src={video} className="index-1" />
+      );
+    }
+
+    if (image) {
+      return (
+        <UILayer image={image} className="index-1" />
+      );
+    }
+  }
+  renderTitleOne() {
+    const {titleOne} = this.props;
+
+    if (!titleOne) {
       return null;
     }
 
     return (
       <h1>
-        {titleLineOne}
+        {titleOne}
       </h1>
     )
   }
   renderTitleTwo() {
-    const {titleLineTwo} = this.props;
+    const {titleTwo} = this.props;
 
-    if (!titleLineTwo) {
+    if (!titleTwo) {
       return null
     }
 
     return (
       <h1>
-        {titleLineTwo}
+        {titleTwo}
       </h1>
-    )
+    );
   }
-  render () {
-    const { image, children, titleOne, titleTwo } = this.props;
+  renderText() {
+    const {text} = this.props;
+
+    if (!text) {
+      return null
+    }
 
     return (
+      <div>
+        <div className="divider" />
+        <p className="text-on-dark text-constrained">
+          {text}
+        </p>
+      </div>
+    );
+  }
+  renderButton() {
+    const { to, href, buttonText } = this.props;
+
+    if (!to && !href)  {
+      return null;
+    }
+
+    return (
+      <UIButton to={to} href={href}>
+        {buttonText}
+      </UIButton>
+    );
+  }
+  render () {
+    return (
       <div styleName="hero">
-        <UILayer image={image} />
-        <div styleName="content">
-          {this.renderTitleLineOne()}
-          {this.renderTitleLineTwo()}
-          {this.renderText()}
+        {this.renderBackground()}
+        <div styleName="content" className="index-2">
+          <UISection className="p-x-6">
+            {this.renderTitleOne()}
+            {this.renderTitleTwo()}
+            {this.renderText()}
+            {this.renderButton()}
+          </UISection>
         </div>
       </div>
     )
   }
 }
 
-UIHero.defaultProps = {
-  use: useProps.primary
-};
-
 UIHero.propTypes = {
-  use: PropTypes.oneOf(Object.keys(useProps)),
-};
+  image: PropTypes.string,
+  titleOne: PropTypes.string.isRequired,
+  titleTwo: PropTypes.string,
+  text: PropTypes.string,
+  buttonText: PropTypes.string,
+}
 
 export default CSSModules(UIHero, styles);

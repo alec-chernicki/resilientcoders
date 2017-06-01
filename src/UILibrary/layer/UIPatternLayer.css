@@ -1,0 +1,18 @@
+.pattern-layer,
+.pattern-layer-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.pattern-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.greyscale {
+  filter: grayscale(1);
+}

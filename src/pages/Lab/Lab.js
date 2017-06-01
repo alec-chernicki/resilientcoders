@@ -1,10 +1,9 @@
-import './Lab.scss';
 import React from 'react';
+import styles from './Lab.css';
+import CSSModules from 'react-css-modules';
 import UIButton from 'UILibrary/button/UIButton';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
-import Hero from '../../components/Containers/Hero/Hero';
 import LabHeroImage from './lab-hero.png';
-import CenteredContainerOuter from '../../components/Containers/CenteredContainer/CenteredContainerOuter'
 import Helmet from 'react-helmet';
 
 import UILayout from 'UILibrary/layout/UILayout';
@@ -14,6 +13,7 @@ import UICard from 'UILibrary/layout/UICard';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
 import UILayer from 'UILibrary/layer/UILayer';
+import UIHero from 'UILibrary/layout/UIHero';
 
 import workConfig from './workConfig';
 import panelLeftImage from './panel-left.png';
@@ -48,22 +48,17 @@ class Lab extends React.PureComponent {
     return (
       <RouteTransition>
         <Helmet title="Resilient Lab" />
-        <Hero
+        <UIHero
           image={LabHeroImage}
           short={true}
-          titleLineOne="Resilient Lab"
-        >
-          <div className="divider divider__red" />
-          <p>
-            A digital agency that empowers young people through real world experience.
-          </p>
-        </Hero>
-
+          titleOne="Resilient Lab"
+          text="A digital agency that empowers young people through real world experience."
+        />
         <UILayout>
           <UISection>
             <UIFlexRow className="p-bottom-6">
-              <UIFlex basis="60%" className="pull-up-1 index-10">
-                <UICard className="p-all-6 full-height">
+              <UIFlex basis="60%" className="pull-up-offset-3 index-10">
+                <UICard className="p-all-6 full-height pull-up-3 with-shadow">
                   <h2>Relentlessly Rebuilding</h2>
                   <div className="divider"/>
                   <p>
@@ -80,7 +75,7 @@ class Lab extends React.PureComponent {
                 </UICard>
               </UIFlex>
               <UIFlex basis="40%">
-                <UICard use="secondary" className="p-all-6">
+                <UICard use="secondary" className="p-all-6 with-shadow">
                   <h3 className="m-top-0">What we do:</h3>
                   <p>Front End Development</p>
                   <p>UI Design and & Prototyping</p>
@@ -96,14 +91,14 @@ class Lab extends React.PureComponent {
 
 
         <UILayout>
-          <UISection className="p-bottom-3">
+          <UISection className="p-bottom-1">
             {this.renderWork()}
           </UISection>
         </UILayout>
 
-        <UILayout flush={true} use="secondary" className="p-top-6">
+        <UILayout flush={true} use="secondary" className="p-top-6 p-sm-top-0">
           <UIFlexRow>
-            <UIFlex className="p-y-20 m-right-6">
+            <UIFlex className="p-y-20 m-right-6 m-sm-right-0 m-sm-bottom-1">
               <UILayer image={panelLeftImage} dots={false} />
               <div className="position-relative index-1 text-center">
                 <h1>50%</h1>
@@ -112,7 +107,7 @@ class Lab extends React.PureComponent {
               </div>
             </UIFlex>
             <UIFlex className="p-y-20">
-              <UILayer image={panelRightImage} dots={false} />
+              <UILayer image={panelRightImage} dots={false}/>
               <div className="position-relative index-1 text-center">
                 <h1>50%</h1>
                 <h2 className="text-on-dark">Building</h2>
@@ -122,11 +117,11 @@ class Lab extends React.PureComponent {
           </UIFlexRow>
         </UILayout>
 
-        <UILayout className="p-bottom-6">
-          <UISection className="with-shadow pull-up-2">
+        <UILayout className="p-bottom-3">
+          <UISection className="with-shadow pull-up-6">
             <UICard className="p-all-6">
               <h2>
-                What sort of stuff can you do?
+                What kind of work can you do?
               </h2>
               <p className="m-bottom-6">
                 Our young people are most comfortable with relatively simple websites, and
@@ -159,4 +154,4 @@ class Lab extends React.PureComponent {
   }
 }
 
-export default Lab
+export default CSSModules(Lab, styles);

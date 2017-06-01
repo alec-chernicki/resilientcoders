@@ -11,7 +11,7 @@ const typeProps = {
 
 class UIImage extends React.Component {
   renderImage() {
-    const { src, className, height, width, type } = this.props;
+    const { src, className, height, width, type, style } = this.props;
     const imageClass = classNames({
       [typeProps.default]: type === typeProps.default,
       [typeProps.responsive]: type === typeProps.responsive,
@@ -20,6 +20,7 @@ class UIImage extends React.Component {
 
     return (
       <img
+        style={style}
         src={src}
         height={height}
         width={width}

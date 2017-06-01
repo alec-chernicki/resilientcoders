@@ -9,14 +9,17 @@
   color: #C5D3DB;
 }
 
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
 .full-height {
   height: 100%;
 }
 
 .text-constrained {
-  max-width: 650px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 500px;
+  display: block;
 }
 
 .text-white {
@@ -52,46 +55,61 @@
   margin-left: auto !important;
 }
 
-.pull-up {
-  transform: translateY(-75px);
-  margin-bottom: -75px;
+@for $i from 0 through 10 {
+  $value: $i * 10;
+
+  .pull-up-#{$i} {
+    z-index: 100;
+    transform: translateY(-$value + px);
+  }
+
+  .pull-down-#{$i} {
+    z-index: 100;
+    transform: translateY($value + px);
+  }
+
+  .pull-up-offset-#{$i} {
+    margin-bottom: -$value + px;
+  }
+
+  .pull-down-offset-#{$i} {
+    margin-up: -$value + px;
+  }
 }
 
-.pull-up-1 {
-  z-index: 100;
-  transform: translateY(-40px);
-  margin-bottom: -40px;
+@for $i from 0 through 10 {
+  $value: $i * 5;
+
+  @media screen and (max-width: 768px) {
+    .pull-up-#{$i} {
+      z-index: 100;
+      transform: translateY(-$value + px);
+    }
+
+    .pull-down-#{$i} {
+      z-index: 100;
+      transform: translateY($value + px);
+    }
+
+    .pull-up-offset-#{$i} {
+      margin-bottom: -$value + px;
+    }
+
+    .pull-down-offset-#{$i} {
+      margin-up: -$value + px;
+    }
+
+    .pull-up-sm-#{$i} {
+      transform: translateY(-$value + px) !important;
+    }
+
+    .pull-down-sm-#{$i} {
+      transform: translateY(-$value + px) !important;
+    }
+  }
 }
 
-.pull-up-2 {
-  z-index: 100;
-  transform: translateY(-75px);
-  margin-bottom: -75px;
-}
 
-.pull-up-3 {
-  z-index: 100;
-  transform: translateY(-100px);
-  margin-bottom: -100px;
-}
-
-.pull-down-1 {
-  z-index: 100;
-  transform: translateY(40px);
-  margin-bottom: -40px;
-}
-
-.pull-down-2 {
-  z-index: 100;
-  transform: translateY(75px);
-  margin-top: -75px;
-}
-
-.pull-down-3 {
-  z-index: 100;
-  transform: translateY(125px);
-  margin-top: -125px;
-}
 
 // Generates consistent z-index utility classes
 @for $i from 0 through 10 {
@@ -108,110 +126,174 @@
 
 // Generates consistent utility classes for declaritively
 // adding margin and padding to existing component styles
-@for $i from 0 through 20 {
+@for $i from 0 through 35 {
   $value-interval: 10;
   $value: $i * $value-interval + px;
 
-  .m-top-#{$i} {
-    margin-top: $value !important;
-  }
-  .m-right-#{$i} {
-    margin-right: $value !important;
-  }
-  .m-bottom-#{$i} {
-    margin-bottom: $value !important;
-  }
-  .m-left-#{$i} {
-    margin-left: $value !important;
-  }
-  .m-x-#{$i} {
-    margin-right: $value !important;
-    margin-left: $value !important;
-  }
-  .m-y-#{$i} {
-    margin-top: $value !important;
-    margin-bottom: $value !important;
-  }
-  .m-all-#{$i} {
-    margin: $value !important;
-  }
+  @media screen and (min-width: 769px) {
+    .m-top-#{$i} {
+      margin-top: $value;
+    }
+    .m-right-#{$i} {
+      margin-right: $value;
+    }
+    .m-bottom-#{$i} {
+      margin-bottom: $value;
+    }
+    .m-left-#{$i} {
+      margin-left: $value;
+    }
+    .m-x-#{$i} {
+      margin-right: $value;
+      margin-left: $value;
+    }
+    .m-y-#{$i} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+    .m-all-#{$i} {
+      margin: $value;
+    }
 
-  .p-top-#{$i} {
-    padding-top: $value !important;
-  }
-  .p-right-#{$i} {
-    padding-right: $value !important;
-  }
-  .p-bottom-#{$i} {
-    padding-bottom: $value !important;
-  }
-  .p-left-#{$i} {
-    padding-left: $value !important;
-  }
-  .p-x-#{$i} {
-    padding-right: $value !important;
-    padding-left: $value !important;
-  }
-  .p-y-#{$i} {
-    padding-top: $value !important;
-    padding-bottom: $value !important;
-  }
-  .p-all-#{$i} {
-    padding: $value !important;
+    .p-top-#{$i} {
+      padding-top: $value;
+    }
+    .p-right-#{$i} {
+      padding-right: $value;
+    }
+    .p-bottom-#{$i} {
+      padding-bottom: $value;
+    }
+    .p-left-#{$i} {
+      padding-left: $value;
+    }
+    .p-x-#{$i} {
+      padding-right: $value;
+      padding-left: $value;
+    }
+    .p-y-#{$i} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+    .p-all-#{$i} {
+      padding: $value;
+    }
   }
 }
 
-@for $i from 0 through 20 {
+.m-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@for $i from 0 through 35 {
   $value-interval: 5;
   $value: $i * $value-interval + px;
 
   @media screen and (max-width: 768px) {
+    // HACK: The "sm" classes allow me to override margin and padding on
+    // smaller screens. While existing margins shrink to accomodate a smaller
+    // screen size.
+
     .m-top-#{$i} {
-      margin-top: $value !important;
+      margin-top: $value;
     }
     .m-right-#{$i} {
-      margin-right: $value !important;
+      margin-right: $value;
     }
     .m-bottom-#{$i} {
-      margin-bottom: $value !important;
+      margin-bottom: $value;
     }
     .m-left-#{$i} {
-      margin-left: $value !important;
+      margin-left: $value;
     }
     .m-x-#{$i} {
+      margin-right: $value;
+      margin-left: $value;
+    }
+    .m-y-#{$i} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+    .m-all-#{$i} {
+      margin: $value;
+    }
+
+    .m-sm-top-#{$i} {
+      margin-top: $value !important;
+    }
+    .m-sm-right-#{$i} {
+      margin-right: $value !important;
+    }
+    .m-sm-bottom-#{$i} {
+      margin-bottom: $value !important;
+    }
+    .m-sm-left-#{$i} {
+      margin-left: $value !important;
+    }
+    .m-sm-x-#{$i} {
       margin-right: $value !important;
       margin-left: $value !important;
     }
-    .m-y-#{$i} {
+    .m-sm-y-#{$i} {
       margin-top: $value !important;
       margin-bottom: $value !important;
     }
-    .m-all-#{$i} {
+    .m-sm-all-#{$i} {
       margin: $value !important;
     }
 
     .p-top-#{$i} {
-      padding-top: $value !important;
+      padding-top: $value;
     }
     .p-right-#{$i} {
-      padding-right: $value !important;
+      padding-right: $value;
     }
     .p-bottom-#{$i} {
-      padding-bottom: $value !important;
+      padding-bottom: $value;
     }
     .p-left-#{$i} {
-      padding-left: $value !important;
+      padding-left: $value;
     }
     .p-x-#{$i} {
+      padding-right: $value;
+      padding-left: $value;
+    }
+    .p-y-#{$i} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+    .p-all-#{$i} {
+      padding: $value;
+    }
+
+    .p-sm-top-#{$i} {
+      padding-top: $value !important;
+    }
+    .p-sm-right-#{$i} {
+      padding-right: $value !important;
+    }
+    .p-sm-bottom-#{$i} {
+      padding-bottom: $value !important;
+    }
+    .p-sm-left-#{$i} {
+      padding-left: $value !important;
+    }
+    .p-sm-x-#{$i} {
       padding-right: $value !important;
       padding-left: $value !important;
     }
-    .p-y-#{$i} {
+    .p-sm-y-#{$i} {
       padding-top: $value !important;
       padding-bottom: $value !important;
     }
-    .p-all-#{$i} {
+    .p-sm-all-#{$i} {
       padding: $value !important;
     }
   }
+}
+
+.p-top-of-page {
+  padding-top: 100px;
 }

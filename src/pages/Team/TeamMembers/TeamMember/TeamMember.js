@@ -42,7 +42,7 @@ class TeamMember extends React.PureComponent {
     return teamMembersConfig.map((member, key) => {
       const isActive = shownMemberIndex === key;
       return (
-        <MemberTitle member={member} isActive={isActive} />
+        <MemberTitle key={key} member={member} isActive={isActive} />
       );
     });
   }
@@ -72,7 +72,7 @@ class TeamMember extends React.PureComponent {
     const namesStyle = {transform: `translateY(${-(shownMemberIndex * 180)}px)`};
 
     return (
-      <UIFlexRow>
+      <UIFlexRow className="flex-sm-row">
         <UIFlex basis="50px" grow={0} shrink={0}>
           {this.renderControls()}
         </UIFlex>

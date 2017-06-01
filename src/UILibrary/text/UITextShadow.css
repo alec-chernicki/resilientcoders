@@ -1,0 +1,48 @@
+.inactive:after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  left: 0;
+  width: 0%;
+  background-color: #ED1B24;
+  bottom: 0;
+  transition: width 0.6s cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
+.active:after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #ED1B24;
+  transition: width 0.6s cubic-bezier(0.52, 0.01, 0.16, 1);
+  bottom: 0;
+}
+
+.active:before {
+  content: attr(title);
+  position: absolute;
+  transform: scale(4.5) translateX(0%);
+  transition: opacity 400ms cubic-bezier(0.52, 0.01, 0.16, 1);
+  color: inherit;
+  opacity: 0.09;
+  z-index: -1;
+}
+
+.inactive:before {
+  content: attr(title);
+  position: absolute;
+  transform: scale(4.5) translateX(0%);
+  transition: opacity 400ms cubic-bezier(0.52, 0.01, 0.16, 1);
+  color: inherit;
+  opacity: 0.04;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .active:before,
+  .inactive:before {
+    transform: scale(2.5) translateX(-10%);
+  }
+}

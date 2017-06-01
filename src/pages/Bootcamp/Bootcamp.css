@@ -1,0 +1,13 @@
+.timeline-photo {
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .progress-bar {
+      display: none;
+  }
+
+  .timeline-photo {
+    display: none;
+  }
+}

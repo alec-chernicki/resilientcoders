@@ -1,4 +1,3 @@
-import './TeamMembers.scss';
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './TeamMembers.css';
@@ -6,13 +5,12 @@ import TeamMember from './TeamMember/TeamMember';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 
 import UILayout from 'UILibrary/layout/UILayout';
-import UIImage from 'UILibrary/image/UIImage';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
-import UICard from 'UILibrary/layout/UICard';
 import UISection from 'UILibrary/layout/UISection';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
+import UIInformationCarousel from 'UILibrary/layout/UIInformationCarousel';
 
 import {throttle} from 'underscore';
 
@@ -52,25 +50,14 @@ class TeamMembers extends React.Component {
   }
   renderContent() {
     const { shownMemberIndex } = this.state;
-    const { bio, image } = teamMembersConfig[shownMemberIndex];
 
     return (
-      <div styleName="animation-wrapper" className="index-3 position-relative">
-        <UIFlexRow direction="row" className="with-shadow">
-          <UIFlex>
-            <div styleName="image-wrapper">
-              <UIImage type="cover" src={image} />
-            </div>
-          </UIFlex>
-          <UIFlex>
-            <UICard className="p-all-4">
-              <p>
-                {bio}
-              </p>
-            </UICard>
-          </UIFlex>
-        </UIFlexRow>
-      </div>
+      <UIInformationCarousel
+        className="index-3 position-relative with-shadow"
+        config={teamMembersConfig}
+        currentIndex={shownMemberIndex}
+        animationAxis="vertical"
+      />
     )
   }
   render() {
@@ -104,7 +91,7 @@ class TeamMembers extends React.Component {
               <UIFlex basis="30%">
                 {this.renderSidebar()}
               </UIFlex>
-              <UIFlex basis="70%">
+              <UIFlex basis="70%" className="m-sm-top-28">
                 {this.renderContent()}
               </UIFlex>
             </UIFlexRow>

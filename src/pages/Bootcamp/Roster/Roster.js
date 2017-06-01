@@ -6,11 +6,8 @@ import {Link} from 'react-router';
 import UILayout from 'UILibrary/layout/UILayout';
 import UISection from 'UILibrary/layout/UISection'
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
-import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
-import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';
 import rosterconfig from './rosterMembersConfig';
 import UIContentButton from 'UILibrary/button/UIContentButton';
-import UIOverlay from 'UILibrary/overlay/UIOverlay';
 import UIButton from 'UILibrary/button/UIButton';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
@@ -22,6 +19,7 @@ class Roster extends React.Component {
     return rosterconfig.map((item, key) => {
       return (
         <UIFlex
+          key={key}
           basis="31%"
           grow={0}
           shrink={0}
@@ -32,6 +30,7 @@ class Roster extends React.Component {
             to={item.url}
           >
             <UIContentButton
+              use="secondary"
               image={item.image}
               title={item.name}
             />
@@ -46,11 +45,11 @@ class Roster extends React.Component {
         <Helmet title="Student Roster" />
 
         <UILayout use="tertiary">
-          <UILayer image={rosterImage} />
-          <CenteredContainerInner className="p-bottom-6 p-top-11 text-center p-x-2" flush={false}>
+          <UILayer image={rosterImage} className="index-1" />
+          <UISection className="p-bottom-6 p-top-of-page text-center p-x-2 index-2" flush={false}>
             <h1>The Roster</h1>
             <div className="divider divider__red" />
-            <p className="text-constrained text-on-dark">
+            <p className="text-constrained text-on-dark m-x-auto">
               Bootcampers meet daily, for eight weeks, to learn semantically structured
               HTML, responsive CSS, JavaScript, jQuery, git, and more. Before graduating,
               they will have built, and pushed to GitHub, actual client work that showcases these aptitudes.
@@ -61,7 +60,7 @@ class Roster extends React.Component {
             <UIButton href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">
               View our hiring guide
             </UIButton>
-          </CenteredContainerInner>
+          </UISection>
         </UILayout>
 
         <UILayout use="secondary">

@@ -88,7 +88,7 @@ class EmailFormLong extends React.PureComponent {
         >
           <div className="p-x-6 p-top-3 p-bottom-4">
             <UIFlexRow className="m-bottom-2">
-              <UIFlex className="m-right-2">
+              <UIFlex className="m-right-2 m-sm-right-0 m-sm-bottom-2">
                 <UITextInput
                   name="firstName"
                   placeholder="First Name"

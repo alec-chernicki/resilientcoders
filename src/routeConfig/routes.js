@@ -46,7 +46,7 @@ export default(
       <Route path="student" component={GetInvolvedStudent}/>
       <Redirect from="mentor" to='volunteer' />
     </Route>
-
+    
     {/* This is a catch all instead of 404-ing, DO NOT REMOVE */}
     <Redirect from="*" to='/' />
   </Route>

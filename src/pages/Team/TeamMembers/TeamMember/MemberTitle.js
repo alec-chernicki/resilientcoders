@@ -19,7 +19,7 @@ const MemberTitle = ({ member, isActive }) => {
         {member.name}
       </h2>
       <h3 styleName={memberTitleClass} className="m-top-0 m-bottom-6">
-        {member.title}
+        {member.role}
       </h3>
     </div>
   );

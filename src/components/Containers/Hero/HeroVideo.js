@@ -19,7 +19,6 @@ class HeroVideo extends PureComponent {
           playsInline
           loop
           onCanPlayThrough={this.props.onLoad}
-          poster="data:image/gif,AAAA"
           ref={setCustomAttributes}
         >
           <source type="video/mp4" src={heroVideo}/>

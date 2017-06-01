@@ -1,4 +1,5 @@
-import './Partners.scss';
+import styles from './Partners.css';
+import CSSModules from 'react-css-modules';
 import React from 'react';
 import classNames from 'classnames';
 import UIButton from 'UILibrary/button/UIButton';
@@ -6,16 +7,21 @@ import UIButton from 'UILibrary/button/UIButton';
 import UIImage from 'UILibrary/image/UIImage';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
-import UISection from 'UILibrary/layout/UISection';
-import UILayout from 'UILibrary/layout/UILayout';
 
 class Partners extends React.PureComponent {
   renderPartners() {
-    const {partnersConfig} = this.props;
+    const {partnersConfig, styles} = this.props;
     return partnersConfig.map((item, i) => (
-      <UIFlex basis="13%" grow={0} shrink={0} key={i} className="m-x-3 m-bottom-2">
+      <UIFlex
+        basis="13%"
+        grow={0}
+        shrink={0}
+        key={i}
+        className="m-x-3 m-bottom-3 m-sm-bottom-6"
+      >
         <a href={item.link} target="blank">
           <UIImage
+            className={styles['partner-image']}
             type="responsive"
             src={item.image}
             alt="resilient partner company"
@@ -27,21 +33,17 @@ class Partners extends React.PureComponent {
   render() {
     const partnersClass = classNames('partners', this.props.className)
     return (
-      <UILayout use="secondary">
-        <UISection className="text-center p-all-6">
-          <div className={partnersClass}>
-            <h2>
-              {this.props.title}
-            </h2>
-            <UIFlexRow justify="center" align="center">
-              {this.renderPartners()}
-            </UIFlexRow>
-            <UIButton type="link" to={this.props.to}>
-              {this.props.buttonText}
-            </UIButton>
-          </div>
-        </UISection>
-      </UILayout>
+      <div className={partnersClass}>
+        <h2 className="m-bottom-3 m-sm-bottom-6">
+          {this.props.title}
+        </h2>
+        <UIFlexRow justify="center" align="center">
+          {this.renderPartners()}
+        </UIFlexRow>
+        <UIButton type="link" to={this.props.to}>
+          {this.props.buttonText}
+        </UIButton>
+      </div>
     )
   }
 }
@@ -51,4 +53,4 @@ Partners.defaultProps = {
   to: "/get-involved/company"
 }
 
-export default Partners;
+export default CSSModules(Partners, styles);

@@ -1,0 +1,43 @@
+.player video {
+  outline: none;
+}
+
+/*
+This is really ugly but the library uses private classes that I need to
+override here.
+*/
+
+.player *,
+.player *:before,
+.player *:after, {
+  font-family: 'Roboto Slab';
+  outline: 0;
+}
+
+.player :global(.video-react-big-play-button) {
+  display: none;
+}
+
+.player :global(.video-react-load-progress) {
+  background: #666;
+}
+
+.player :global(.video-react-control-bar) {
+  background: #333;
+}
+
+.player :global(.video-react-play-progress) {
+  background: $accent-primary;
+}
+
+.player :global(.video-react-play-progress:after) {
+  font-family: 'Roboto Slab';
+}
+
+.player :global(.video-react-slider) {
+  background: #444;
+}
+
+.player :global(.video-react-poster) {
+  background-size: cover;
+}

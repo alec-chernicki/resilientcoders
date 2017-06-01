@@ -13,6 +13,7 @@ import UICard from 'UILibrary/layout/UICard';
 import UISection from 'UILibrary/layout/UISection';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UILayer from 'UILibrary/layer/UILayer';
+import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import donateImage from './donate.jpg';
 import heroImage from './hero.jpg';
@@ -46,10 +47,11 @@ class GetInvolved extends React.Component {
     return INVOLVEMENT_TYPES.map((item, key) => {
       return (
         <UIFlex
+          key={key}
           basis="31%"
           grow={0}
           shrink={0}
-          className="pull-down-3 index-10"
+          className="index-10 m-sm-bottom-4"
         >
           <Link to={item.url}>
             <UIContentButton
@@ -68,16 +70,16 @@ class GetInvolved extends React.Component {
       <RouteTransition>
         <Helmet title="Get Involved" />
 
-        <UILayout use="tertiary">
-          <UILayer image={heroImage} />
-          <UISection className="p-top-11 p-bottom-6">
+        <UILayout use="tertiary" className="p-top-of-page p-bottom-6">
+          <UILayer image={heroImage} className="index-1" />
+          <UISection className="p-top-2 index-3">
             <UIFlexRow wrap="no-wrap" justify="space-between">
               {this.renderCards()}
             </UIFlexRow>
           </UISection>
         </UILayout>
 
-        <UILayout className="p-top-12 p-bottom-6">
+        <UILayout className="p-y-6">
           <UISection>
             <UIFlexRow className="with-shadow">
               <UIFlex>

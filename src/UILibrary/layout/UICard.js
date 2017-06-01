@@ -11,7 +11,7 @@ const useProps = {
 
 class UICard extends React.Component {
   render () {
-    const { use, children, className } = this.props;
+    const { use, children, className, style } = this.props;
     const cardClass = classNames({
       'card-primary': use === useProps.primary,
       'card-secondary': use === useProps.secondary,
@@ -19,7 +19,11 @@ class UICard extends React.Component {
     });
 
     return (
-      <div className={className} styleName={cardClass}>
+      <div
+        className={className}
+        styleName={cardClass}
+        style={style}
+      >
         {children}
       </div>
     )

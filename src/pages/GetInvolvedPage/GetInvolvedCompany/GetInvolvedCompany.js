@@ -30,7 +30,7 @@ class GetInvolvedCompany extends React.PureComponent {
           <UISkewedLayer use="primary" className="index-1" />
           <UISection className="index-2">
             <UIFlexRow>
-              <UIFlex className="p-x-6 p-top-3">
+              <UIFlex className="p-x-6 p-top-3 m-bottom-6">
                 <h1>Join as a Company</h1>
                 <div className="divider" />
                 <p className="text-on-dark">

@@ -13,8 +13,8 @@ export default [
   {
     name: 'David Delmar',
     image: DelImage,
-    title: 'Executive Director, Founder',
-    bio: `David is a professional designer and interface developer with experience working with
+    role: 'Executive Director, Founder',
+    text: `David is a professional designer and interface developer with experience working with
       award-winning startups, as well as established brands. Before founding Resilient Coders,
       he was at PayPal, leading a cross-disciplinary team of designers and coders. They designed
       and built first-to-market digital advertising concepts for brands like Starbucks, Coke,
@@ -25,8 +25,8 @@ export default [
   {
     name: 'Leon Noel',
     image: LeonImage,
-    title: 'Managing Director of Engineering',
-    bio: `Leon Noel is an internationally recognized software
+    role: 'Managing Director of Engineering',
+    text: `Leon Noel is an internationally recognized software
     developer and entrepreneur. Before joining the Resilient Coders team, he co-founded SocialSci,
     a scientific surveying company relied on by over 4000 academic institutions and held an associate
     position at Harvard University. Besides his lecturing work at Harvard
@@ -38,8 +38,8 @@ export default [
   {
     name: 'Helen Rosenfeld',
     image: HelenImage,
-    title: 'Head of Strategic Partnerships',
-    bio: `Helen is committed to working on behalf of youth. She has led a series of youth
+    role: 'Head of Strategic Partnerships',
+    text: `Helen is committed to working on behalf of youth. She has led a series of youth
       development organizations, utilizing entrepreneurship as a tool to increase skills of
       underserved youth for success in school and life. She loves the startup phase of
       organizational development, raising funds, and building strategic partnerships. A grad of
@@ -50,8 +50,8 @@ export default [
   {
     name: 'Muigai Unaka',
     image: MuigaiImage,
-    title: 'Resilient Lab Lead',
-    bio: `Muigai is a Senior at Northeastern University, pursuing a dual BFA in graphic design
+    role: 'Resilient Lab Lead',
+    text: `Muigai is a Senior at Northeastern University, pursuing a dual BFA in graphic design
       and interactive media. He has a passion for user interface design, and hopes to one day be
       part of a special projects team, designing and building products that redefine how we interact
       with each other. Also, his great-grandfather is Jomo Kenyatta.`
@@ -59,8 +59,8 @@ export default [
   {
     name: 'Alec Ortega',
     image: AlecImage,
-    title: 'Technical advisor',
-    bio: `Alec has been a mentor with Resilient for the last two years. He's passionate about
+    role: 'Technical advisor',
+    text: `Alec has been a mentor with Resilient for the last two years. He's passionate about
     diversity in tech and social innovation. He believes that diversity means not just acknowledging,
     but embracing the fact that some can get to "Point B" regardless of their "Point A". To
     this end, he's also an award-winning instructor at at Startup Institute teaching the Web Design
@@ -70,8 +70,8 @@ export default [
   {
     name: 'Chris Swenor',
     image: ChrisImage,
-    title: 'Technical Advisor',
-    bio: `Taught himself how to code at the age of 12. Discovered he loved it and couldn't get
+    role: 'Technical Advisor',
+    text: `Taught himself how to code at the age of 12. Discovered he loved it and couldn't get
       enough. Decided to bypass college and dive right into his career as a developer. Worked his
       way up through the developer ranks until it was time inspire other developers to make
       amazing things. Currently the CEO and Co-Founder of East Coast Product (ECP) -- a design
@@ -81,8 +81,8 @@ export default [
   {
     name: 'Joshua Summers',
     image: JoshImage,
-    title: 'Board Chair',
-    bio: `Joshua Summers is a serial entrepreneur that believes the best companies are built in
+    role: 'Board Chair',
+    text: `Joshua Summers is a serial entrepreneur that believes the best companies are built in
       and around Boston. As the Co-founder and CEO of Clypd, Joshua is leading the charge in
       building the next evolution in tv advertising sales models by bridging the gap between
       traditional linear TV ads and programmatic solutions. Joshua holds a bachelors degree
@@ -93,8 +93,8 @@ export default [
   {
     name: 'Pamela Aldsworth',
     image: PamelaImage,
-    title: 'Board',
-    bio: `Pamela Aldsworth is a managing director with Silicon Valley Bank Capital. In this role,
+    role: 'Board',
+    text: `Pamela Aldsworth is a managing director with Silicon Valley Bank Capital. In this role,
       she oversees strategic relationships with venture capital firms by leveraging the diverse
       financial services of SVB Financial Group (SVB) platform. She is primarily focused on managing
       relationships with a key subset of venture capital firms that have historically and
@@ -105,8 +105,8 @@ export default [
   {
     name: 'C.A. Webb',
     image: CaImage,
-    title: 'Board',
-    bio: `C.A. runs the Community Foundation at Underscore VC, incorporating the Startup Secrets
+    role: 'Board',
+    text: `C.A. runs the Community Foundation at Underscore VC, incorporating the Startup Secrets
     program and works on their broader community outreach from which our _Core groups of
     experienced entrepreneurs are formed. As a proven community builder and marketer, C.A. comes
     from her previous post as Executive Director of the New England Venture Capital Association,
@@ -117,8 +117,8 @@ export default [
   {
     name: 'Frederick Townes',
     image: FredImage,
-    title: 'Board',
-    bio: `Fred builds and leads teams that craft web platforms, products, and communities.
+    role: 'Board',
+    text: `Fred builds and leads teams that craft web platforms, products, and communities.
       From software development and architecture, to product marketing strategy, to business leadership and
       operations, he thrives at the intersection of technology, strategy, and design. He's worked with
       organizations of all sizes on two continents, from The Coca-Cola Company and Staples to Sony and Microsoft,

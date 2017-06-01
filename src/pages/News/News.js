@@ -1,4 +1,3 @@
-import './News.scss';
 import React from 'react';
 import NewsItem from './NewsItem/NewsItem';
 import Tweet from '../../components/Tweet/Tweet';
@@ -58,7 +57,7 @@ class News extends React.PureComponent {
           <UISection>
 
             <UIFlexRow>
-              <UIFlex className="m-right-3">
+              <UIFlex className="m-right-3 m-sm-right-0">
                 <UICard className="p-all-3 m-bottom-3 with-shadow">
                   <h1 className="text-darkest">
                     News
@@ -74,7 +73,7 @@ class News extends React.PureComponent {
                   {this.renderContentItems()}
                 </UITable>
 
-                <UITable className="with-shadow">
+                <UITable className="with-shadow m-sm-bottom-3">
                   <UITableHeader title="Awards" colSpan={2}/>
                   {this.renderAwardsItems()}
                 </UITable>

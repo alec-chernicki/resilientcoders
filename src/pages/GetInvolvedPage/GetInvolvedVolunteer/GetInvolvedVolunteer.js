@@ -26,7 +26,7 @@ const GetInvolvedVolunteer = (props) => {
         <UISkewedLayer className="index-1" />
         <UISection className="index-2">
           <UIFlexRow>
-            <UIFlex className="p-x-6 p-top-6">
+            <UIFlex className="p-x-6 p-top-6 m-bottom-6">
               <h1>Join as a Volunteer</h1>
               <div className="divider" />
               <p className="text-on-dark">
@@ -54,27 +54,27 @@ const GetInvolvedVolunteer = (props) => {
                 <ul>
                   <li>
                     <p>
-                      Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
+                      - Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
                     </p>
                   </li>
                   <li>
                     <p>
-                      Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
+                      - Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
                     </p>
                   </li>
                   <li>
                     <p>
-                      1-on-1 mentorship of an alumni who is working, or looking for work.
+                      - 1-on-1 mentorship of an alumni who is working, or looking for work.
                     </p>
                   </li>
                   <li>
                     <p>
-                      One-off lightning talks, at Community Hours.
+                      - One-off lightning talks, at Community Hours.
                     </p>
                   </li>
                   <li>
                     <p>
-                      Curriculum support
+                      - Curriculum support
                     </p>
                   </li>
                 </ul>
@@ -101,12 +101,12 @@ const GetInvolvedVolunteer = (props) => {
                 <ul>
                   <li>
                     <p>
-                      Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
+                      - Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
                     </p>
                   </li>
                   <li>
                     <p>
-                      Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
+                      - Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
                     </p>
                   </li>
                 </ul>
@@ -130,17 +130,17 @@ const GetInvolvedVolunteer = (props) => {
                 <ul>
                   <li>
                     <p>
-                      Help students develop, hone resumes and cover letters.
+                      - Help students develop, hone resumes and cover letters.
                     </p>
                   </li>
                   <li>
                     <p>
-                      Join us in identifying and/or brokering relationships with potential employers.
+                      - Join us in identifying and/or brokering relationships with potential employers.
                     </p>
                   </li>
                   <li>
                     <p>
-                      Become an active advocate for diversity in hiring.
+                      - Become an active advocate for diversity in hiring.
                     </p>
                   </li>
                 </ul>

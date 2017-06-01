@@ -1,11 +1,11 @@
+import styles from './Bootcamp.css';
+import CSSModules from 'react-css-modules';
 import React, {PureComponent} from 'react';
 import RouteTransition from 'components/RouteTransition/RouteTransition';
 import {Link} from 'react-router';
 import Partners from 'components/Containers/Partners/Partners';
 import bootcampPartnersConfig from './bootcampPartnersConfig';
-import Hero from 'components/Containers/Hero/Hero';
 import Helmet from 'react-helmet';
-
 
 import UIButton from 'UILibrary/button/UIButton'
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
@@ -16,21 +16,50 @@ import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
+import UITextShadow from 'UILibrary/text/UITextShadow';
+import UIHero from 'UILibrary/layout/UIHero';
+
+import ProgressBarContainer from 'components/ProgressBar/ProgressBarContainer';
+import ConnectingLineVertical from 'components/ProgressBar/ConnectingLineVertical/ConnectingLineVertical';
+import ConnectingDot from 'components/ProgressBar/ConnectingDot/ConnectingDot';
 
 import images from 'constants/images';
 
 class Bootcamp extends PureComponent {
+  renderProgressBar() {
+    return (
+      <div styleName="progress-bar">
+        <ProgressBarContainer className="index-2">
+          <ConnectingDot />
+          <ConnectingLineVertical />
+          <ConnectingDot />
+          <ConnectingLineVertical />
+          <ConnectingDot />
+          <ConnectingLineVertical />
+          <ConnectingDot />
+          <ConnectingLineVertical />
+          <ConnectingDot />
+          <ConnectingLineVertical />
+          <ConnectingDot />
+        </ProgressBarContainer>
+        </div>
+    );
+  }
   renderTimelineSections() {
     return (
       <UILayout use="tertiary">
-        <UISection className="p-y-6 index-2">
-          <UIFlexRow justify="space-between">
-            <UIFlex basis="40%" grow={0} shrink={0}>
+        {this.renderProgressBar()}
+        <UISection className="p-top-6 p-bottom-35 p-sm-top-15 p-sm-bottom-20 index-2">
+          <UIFlexRow justify="space-between" className="m-bottom-6 m-sm-bottom-12">
+            <UIFlex basis="45%" grow={0} shrink={0}>
               <UIFlexRow align="center" className="full-height">
-                <UIFlex>
-                  <h2 className="text-white">
-                    Hackathons
+                <UIFlex className="p-left-6">
+                  <h2 title="Hackathons" className="text-white">
+                    <UITextShadow text="01.">
+                      Hackathons
+                    </UITextShadow>
                   </h2>
+                  <div className="divider" />
                   <p className="text-on-dark">
                     We run two hackathons before each Bootcamp, from which we recruit our students.
                     They’re each about six hours long, and are meant as a way for staff, alumni, and
@@ -39,21 +68,39 @@ class Bootcamp extends PureComponent {
                 </UIFlex>
               </UIFlexRow>
             </UIFlex>
-            <UIFlex basis="35%" grow={0} shrink={0}>
-              <UIImage className="with-shadow index-1 position-relative" src={images.recruitment} type="responsive"/>
+            <UIFlex
+              className={this.props.styles['timeline-photo']}
+              basis="45%"
+              grow={0}
+              shrink={0}
+            >
+              <UIImage
+                className="with-shadow index-1 position-relative"
+                src={images.recruitment}
+                type="cover"
+              />
             </UIFlex>
           </UIFlexRow>
 
-          <UIFlexRow justify="space-between">
-            <UIFlex basis="40%" grow={0} shrink={0}>
-              <UIImage height={500} src={images.coreSkills} type="responsive"/>
+          <UIFlexRow justify="space-between" className="m-bottom-6 m-sm-bottom-12">
+            <UIFlex
+              className={this.props.styles['timeline-photo']}
+              basis="45%"
+              grow={0}
+              shrink={0}
+              style={{height: '500px'}}
+            >
+              <UIImage src={images.coreSkills} type="cover"/>
             </UIFlex>
-            <UIFlex basis="40%" grow={0} shrink={0}>
+            <UIFlex basis="45%" grow={0} shrink={0}>
               <UIFlexRow align="center" className="full-height">
-                <UIFlex>
+                <UIFlex className="p-left-6">
                   <h2 className="text-white">
-                    Core Skills
+                    <UITextShadow text="02.">
+                      Core Skills
+                    </UITextShadow>
                   </h2>
+                  <div className="divider" />
                   <p className="text-on-dark">
                     Once in Bootcamp, our coders meet daily, for seven weeks, to learn HTML, CSS,
                     JavaScript, jQuery, and git, from professionals. Before graduating, they will have
@@ -67,13 +114,16 @@ class Bootcamp extends PureComponent {
             </UIFlex>
           </UIFlexRow>
 
-          <UIFlexRow justify="space-between">
-            <UIFlex basis="40%" grow={0} shrink={0}>
+          <UIFlexRow justify="space-between" className="m-bottom-6 m-sm-bottom-12">
+            <UIFlex basis="45%" grow={0} shrink={0}>
               <UIFlexRow align="center" className="full-height">
-                <UIFlex>
+                <UIFlex className="p-left-6">
                   <h2 className="text-white">
-                    Soft Skills
+                    <UITextShadow text="03.">
+                      Soft Skills
+                    </UITextShadow>
                   </h2>
+                  <div className="divider" />
                   <p className="text-on-dark">
                     Our coders also work on the skills that make the “whole engineer,” during Bootcamp.
                     They learn communication techniques, speaking tips, as well as best practices
@@ -82,21 +132,34 @@ class Bootcamp extends PureComponent {
                 </UIFlex>
               </UIFlexRow>
             </UIFlex>
-            <UIFlex basis="40%" grow={0} shrink={0}>
-              <UIImage height={500} src={images.softSkills} type="responsive"/>
+            <UIFlex
+              className={this.props.styles['timeline-photo']}
+              basis="45%"
+              grow={0}
+              shrink={0}
+            >
+              <UIImage src={images.softSkills} type="cover"/>
             </UIFlex>
           </UIFlexRow>
 
           <UIFlexRow justify="space-between">
-            <UIFlex basis="40%" grow={0} shrink={0}>
-              <UIImage height={500} src={images.clientWork} type="responsive"/>
+            <UIFlex
+              className={this.props.styles['timeline-photo']}
+              basis="45%"
+              grow={0}
+              shrink={0}
+            >
+              <UIImage src={images.clientWork} type="cover"/>
             </UIFlex>
-            <UIFlex basis="40%" grow={0} shrink={0}>
+            <UIFlex basis="45%" grow={0} shrink={0}>
               <UIFlexRow align="center" className="full-height">
-                <UIFlex>
+                <UIFlex className="p-left-6">
                   <h2 className="text-white">
-                    Client work
+                    <UITextShadow text="04.">
+                      Client work
+                    </UITextShadow>
                   </h2>
+                  <div className="divider" />
                   <p className="text-on-dark">
                     At least once per Bootcamp, we have a “client kickoff meeting,” during which a
                     client is invited to present design work for a website they need built. Our coders
@@ -116,25 +179,19 @@ class Bootcamp extends PureComponent {
     return (
       <RouteTransition>
         <Helmet title="Resilient Bootcamp" />
-        <Hero
+        <UIHero
           image={images.heroBootcamp}
-          short={true}
-          titleLineOne="Resilient Bootcamp"
-        >
-          <div className="divider divider__red" />
-          <p>
-            Transforming dedication into opportunity, the starting point for our coders&#39; careers.
-          </p>
-          <UIButton to="/bootcamp/roster">
-            Meet our new grads
-          </UIButton>
-        </Hero>
+          titleOne="Resilient Bootcamp"
+          text="Transforming dedication into opportunity, the starting point for our coders&#39; careers."
+          to="/bootcamp/roster"
+          buttonText="Meet our new grads"
+        />
 
         <UILayout>
           <UISection className="p-bottom-6">
             <UIFlexRow>
-              <UIFlex>
-                <UICard className="p-all-6 full-height">
+              <UIFlex className="pull-up-offset-4">
+                <UICard className="p-all-6 full-height with-shadow pull-up-4">
                   <h2>The Goal</h2>
                   <div className="divider divider__red" />
                   <p>
@@ -149,7 +206,7 @@ class Bootcamp extends PureComponent {
                 </UICard>
               </UIFlex>
               <UIFlex>
-                <UICard use="secondary" className="p-all-6 full-height">
+                <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>Current Bootcamp</h2>
                   <p>
                     Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -174,16 +231,16 @@ class Bootcamp extends PureComponent {
 
         <UILayout use="secondary">
           <UISkewedLayer use="tertiary" className="index-1"/>
-          <UISection className="text-center p-y-6 index-2">
-            <h1>The Program</h1>
-            <p className="text-constrained m-bottom-6">
+          <UISection className="text-center p-top-6 p-bottom-28 index-2">
+            <h1 className="text-darkest">The Program</h1>
+            <p className="text-constrained m-x-auto m-bottom-6">
               Our 8 week program teaches students the fundamentals of front end web development.
               We start with the basics and end with real world client work.
             </p>
             <h4 className="text-center">
               Starts with
             </h4>
-            <h2 className="text-center">
+            <h2 className="text-center text-darkest">
               Determination
             </h2>
           </UISection>
@@ -192,11 +249,8 @@ class Bootcamp extends PureComponent {
         {this.renderTimelineSections()}
 
 
-        <UILayout className="p-y-6" use="secondary">
+        <UILayout className="p-bottom-6" use="secondary">
           <UIFlexRow>
-            <UIFlex>
-              <UIImage type="responsive" src={images.studentOne}/>
-            </UIFlex>
             <UIFlex>
               <UICard className="text-center p-x-6">
                 <h4>
@@ -205,7 +259,7 @@ class Bootcamp extends PureComponent {
                 <h1>
                   A Career
                 </h1>
-                <p>
+                <p className="text-constrained m-x-auto">
                   We hire some of our own Bootcamp students into an apprenticeship with
                   <Link to="/lab">
                     &nbsp;Resilient Lab
@@ -214,10 +268,6 @@ class Bootcamp extends PureComponent {
                   new skills.
                 </p>
               </UICard>
-            </UIFlex>
-            <UIFlex>
-              <UIImage type="responsive" src={images.studentTwo}/>
-
             </UIFlex>
           </UIFlexRow>
         </UILayout>
@@ -231,7 +281,7 @@ class Bootcamp extends PureComponent {
               Want in?
             </h1>
             <div className="divider divider__red"/>
-            <p className="text-on-dark text-constrained">
+            <p className="text-on-dark text-constrained m-x-auto">
               We&#8217;re looking for young people from the City of Boston, who face more challenges
               than most, to join us for eight weeks, to learn the fundamentals of web
               development for free.
@@ -244,7 +294,7 @@ class Bootcamp extends PureComponent {
           <UISection>
             <UIFlexRow>
               <UIFlex type="grey">
-                <UICard use="secondary" className="p-all-6 full-height">
+                <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>As a student</h2>
                   <p>
                     Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
@@ -257,8 +307,8 @@ class Bootcamp extends PureComponent {
                   </UIButton>
                 </UICard>
               </UIFlex>
-              <UIFlex type="white">
-                <UICard className="p-all-6 pull-up-1 full-height">
+              <UIFlex type="white" className="pull-up-offset-2">
+                <UICard className="p-all-6 pull-up-2 full-height with-shadow">
                   <h2>As a mentor</h2>
                   <div className="divider divider__red"/>
                   <p>
@@ -283,15 +333,20 @@ class Bootcamp extends PureComponent {
 
 
 
-
-        <Partners
-          title="Thank you to our bootcamp partners"
-          partnersConfig={bootcampPartnersConfig}
-        />
+        <UILayout use="secondary">
+          <UISection>
+            <UICard className="p-all-6 text-center">
+              <Partners
+                title="Thank you to our bootcamp partners"
+                partnersConfig={bootcampPartnersConfig}
+              />
+            </UICard>
+          </UISection>
+        </UILayout>
 
       </RouteTransition>
     )
   }
 }
 
-export default Bootcamp
+export default CSSModules(Bootcamp, styles);
