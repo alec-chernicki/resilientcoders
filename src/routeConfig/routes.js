@@ -41,7 +41,7 @@ export default(
     <Route path="lab" component={Lab}/>
     <Route path="team" component={Team}/>
     <Route path="news" component={News}/>
-    <Route path="diversity-playbook" component={Playbook}/>
+    <Route path="diversityplaybook" component={Playbook}/>
     <Route path="get-involved">
       <IndexRoute component={GetInvolvedPage} />
       <Route path="company" component={GetInvolvedCompany}/>
