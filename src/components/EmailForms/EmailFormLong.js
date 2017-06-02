@@ -49,7 +49,7 @@ class EmailFormLong extends React.PureComponent {
     axios.post(this.props.formUrl, data)
       .then(() => {
         onSubmit();
-        
+
         this.setState({
           buttonText: 'submitted',
         })
@@ -135,6 +135,10 @@ class EmailFormLong extends React.PureComponent {
       </div>
     );
   }
+}
+
+EmailFormLong.defaultProps = {
+  onSubmit: () => {},
 }
 
 export default CSSModules(EmailFormLong, styles);
