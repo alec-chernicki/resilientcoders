@@ -78,93 +78,67 @@ const GetInvolvedVolunteer = (props) => {
                 <h2>
                   Mentorship
                 </h2>
-                <ul>
+                <ul className="m-bottom-6">
                   <li>
                     <p>
-                      - Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
+                      &#183; Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
                     </p>
                   </li>
                   <li>
                     <p>
-                      - Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
+                      &#183; Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
                     </p>
                   </li>
                   <li>
                     <p>
-                      - 1-on-1 mentorship of an alumni who is working, or looking for work.
+                      &#183; 1-on-1 mentorship of an alumni who is working, or looking for work.
                     </p>
                   </li>
                   <li>
                     <p>
-                      - One-off lightning talks, at Community Hours.
+                      &#183; One-off lightning talks, at Community Hours.
                     </p>
                   </li>
                   <li>
                     <p>
-                      - Curriculum support
+                      &#183; Curriculum support
                     </p>
                   </li>
                 </ul>
-              </UICard>
-            </UIFlex>
-            <UIFlex>
-              <UIImage
-                type="cover"
-                src={communityImage}
-                alt="Resilient community"
-              />
-            </UIFlex>
-          </UIFlexRow>
 
-          <UIFlexRow className="with-shadow m-bottom-6">
-            <UIFlex>
-              <UICard className="p-all-6">
                 <h2>
                   Content Production
                 </h2>
-                <ul>
+                <ul className="m-bottom-6">
                   <li>
                     <p>
-                      - Technical guest blogging
+                      &#183; Technical guest blogging
                     </p>
                   </li>
                   <li>
                     <p>
-                      - PR, helping us attract press
+                      &#183; PR, helping us attract press
                     </p>
                   </li>
                 </ul>
-              </UICard>
-            </UIFlex>
-            <UIFlex>
-              <UIImage
-                type="cover"
-                src={communityImage}
-                alt="Resilient community"
-              />
-            </UIFlex>
-          </UIFlexRow>
 
-          <UIFlexRow className="with-shadow">
-            <UIFlex>
-              <UICard className="p-all-6">
                 <h2>
                   Talent Placement
                 </h2>
-                <ul>
+                <ul className="m-bottom-6">
                   <li>
                     <p>
-                      - Help students develop, hone resumes and cover letters.
+                      &#183; Help students develop, hone resumes and cover letters.
                     </p>
                   </li>
                   <li>
                     <p>
-                      - Join us in identifying and/or brokering relationships with potential employers.
+                      &#183; Join us in identifying and/or brokering relationships with potential employers.
                     </p>
                   </li>
                   <li>
                     <p>
-                      - Become an active advocate for diversity in hiring.
+                      &#183; Become an active advocate for diversity in hiring.
                     </p>
                   </li>
                 </ul>
