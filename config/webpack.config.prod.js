@@ -68,7 +68,12 @@ module.exports = {
         test: /\.js$/,
         include: paths.appSrc,
         loader: 'babel',
-        query: require('./babel.prod')
+        query: require('./babel.dev')
+      },
+      {
+        test: /\.scss$/,
+        include: [paths.appSrc, paths.appNodeModules],
+        loader: 'style!css!sass!postcss'
       },
       {
         test: /\.css$/,
@@ -76,14 +81,6 @@ module.exports = {
           'style?sourceMap',
           'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
         ]
-      },
-      {
-        test: /\.scss$/,
-        include: [paths.appSrc, paths.appNodeModules],
-        // Disable autoprefixer in css-loader itself:
-        // https://github.com/webpack/css-loader/issues/281
-        // We already have it thanks to postcss.
-        loader: ExtractTextPlugin.extract('style', 'css?-autoprefixer!sass!postcss')
       },
       {
         test: /\.json$/,
@@ -94,14 +91,11 @@ module.exports = {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2|swf)$/,
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'file',
-        query: {
-          name: '[name].[hash:8].[ext]'
-        }
       },
       {
         test: /\.(mp4|webm)$/,
         include: [paths.appSrc, paths.appNodeModules],
-        loader: 'url?limit=10000'
+        loader: 'url?limit=100000'
       },
       {
         test: /\.modernizrrc$/,
