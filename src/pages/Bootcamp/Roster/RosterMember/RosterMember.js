@@ -144,7 +144,7 @@ class RosterMember extends React.Component {
         <UILayout>
           <UISkewedLayer className="index-2" />
           <UILayer image={image} dots={false} className="index-1" />
-          <UISection className="p-top-11 p-bottom-6 index-2">
+          <UISection className="p-top-of-page p-bottom-6 index-2">
             <UIButton
               to="/bootcamp/roster"
               type="link"
@@ -159,7 +159,7 @@ class RosterMember extends React.Component {
                 Back to all students
               </span>
             </UIButton>
-            <UIFlexRow className="with-shadow pull-down-3">
+            <UIFlexRow className="with-shadow">
               <UIFlex>
                 <UIImage src={image} type="cover" />
               </UIFlex>
@@ -182,6 +182,21 @@ class RosterMember extends React.Component {
           </UISection>
         </UILayout>
         {this.renderPortfolio()}
+
+        <UILayout>
+          <UISection className="text-center p-all-6">
+            <h2>
+              Want to see more students?
+            </h2>
+            <p className="text-constrained m-x-auto">
+              Our students come from have a variety of backgrounds and
+              perspectives, but they all share drive and passion.
+            </p>
+            <UIButton to="/bootcamp/roster">
+              View all students
+            </UIButton>
+          </UISection>
+        </UILayout>
       </RouteTransition>
     )
   }

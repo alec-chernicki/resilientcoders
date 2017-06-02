@@ -11,6 +11,13 @@ import contractLabImage from './get-involved-lab.jpg';
 import hireStudentsImage from './get-involved-dunia.jpg';
 import Helmet from 'react-helmet';
 
+import UIFlexRow from 'UILibrary/grid/UIFlexRow';
+import UIFlex from 'UILibrary/grid/UIFlex';
+import UISection from 'UILibrary/layout/UISection';
+import UILayout from 'UILibrary/layout/UILayout';
+import UILayer from 'UILibrary/layer/UILayer';
+import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
+
 const COMPANY_FORM_URL = '/api/subscribe/company';
 
 class Playbook extends React.PureComponent {
@@ -18,33 +25,53 @@ class Playbook extends React.PureComponent {
     return (
       <RouteTransition>
         <Helmet title="The Diversity Playbook" />
-        <Hero
-          image={companyImage}
-          titleLineOne="The Diversity Playbook"
-          short={true}
-        >
-          <div className="divider divider__red" />
-          <p>
-            A short guide that demonstrates how diversity is better for business, and offers a framework with which to develop a diversity campaign that works for your company.
-          </p>
-        </Hero>
 
-        <SideBySide color="white">
-          <SideItem className="p-y-6">
+        <UILayout className="p-top-of-page p-bottom-6">
+          <UILayer image={companyImage} />
+          <UISkewedLayer className="index-1" />
+          <UISection className="index-2">
+            <UIFlexRow>
+              <UIFlex className="p-x-6 p-top-3 m-bottom-6">
+                <h1>The Diversity Playbook</h1>
+                <div className="divider" />
+                <p className="text-on-dark">
+                  A short guide that demonstrates how diversity is better for
+                  business, and offers a framework with which to develop a
+                  diversity campaign that works for your company.
+                </p>
+                <p className="text-on-dark">
+                  The diversity crisis is too important for us to keep guessing
+                  at what works and what doesn’t work. You wouldn’t do that
+                  with your product. Let’s do this the right way.
+                  Get the data. Adapt the framework. Have the conversations.
+                  Set KPI’s. Build. Measure. Pivot. Repeat.
+                </p>
+              </UIFlex>
+              <UIFlex>
+                <EmailFormLong
+                  title="Get the Playbook"
+                  formUrl={COMPANY_FORM_URL}
+                />
+              </UIFlex>
+            </UIFlexRow>
+          </UISection>
+        </UILayout>
+
+        <UILayout>
+          <UISection className="text-center p-all-6">
             <h2>
-              Get the Playbook
+              Interested in other opportunities?
             </h2>
             <p>
-              The diversity crisis is too important for us to keep guessing at what works and what doesn’t work. You wouldn’t do that with your product. Let’s do this the right way.
-              Get the data. Adapt the framework. Have the conversations. Set KPI’s. Build. Measure. Pivot. Repeat.
+              There are multiple ways to promote diversity in your company.
             </p>
-          </SideItem>
-          <SideItem className="pull-up-3" flush={true}>
-            <EmailFormLong
-              formUrl={COMPANY_FORM_URL}
-            />
-          </SideItem>
-        </SideBySide>
+
+            <UIButton to="/get-involved/company">
+              Get Involved
+            </UIButton>
+          </UISection>
+        </UILayout>
+
 
 
       </RouteTransition>

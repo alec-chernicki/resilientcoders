@@ -84,7 +84,6 @@ class TeamMembers extends React.Component {
           </CSSTransitionGroup>
           <UISkewedLayer
             className="index-1"
-            use="secondary"
           />
           <UISection className="p-y-6">
             <UIFlexRow>

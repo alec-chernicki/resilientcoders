@@ -4,7 +4,8 @@ import styles from './UIContentButton.css';
 import CSSModules from 'react-css-modules';
 import classNames from 'classnames';
 import UIImage from 'UILibrary/image/UIImage';
-import UIOverlay from 'UILibrary/overlay/UIOverlay';
+import UIIcon from 'UILibrary/icon/UIIcon';
+import icons from 'constants/icons';
 
 const useProps = {
   'primary': 'primary',
@@ -12,17 +13,10 @@ const useProps = {
 }
 
 class UIContentButton extends React.Component {
-  constructor(props) {
-    super(props);
+  getIcon() {
+    const { use } = this.props;
 
-    this.state = {
-      isHovered: false,
-    };
-
-    this.setIsHovered = this.setIsHovered.bind(this);
-  }
-  setIsHovered(isHovered) {
-    this.setState({ isHovered });
+    return use === useProps.primary ? icons.rightArrowDark : icons.rightArrow;
   }
   renderText() {
     const { text } = this.props;
@@ -51,7 +45,6 @@ class UIContentButton extends React.Component {
   }
   render () {
     const { image, className, use } = this.props;
-    const { isHovered } = this.state;
     const contentButtonClass = classNames(className, 'with-shadow');
 
     const contentClass = classNames(className, {
@@ -59,18 +52,17 @@ class UIContentButton extends React.Component {
       'secondary': use === useProps.secondary,
     });
 
+    const infoClass = classNames(className, {
+      'primary-info': use === useProps.primary,
+      'secondary-info': use === useProps.secondary,
+    });
+
     return (
       <div
-        onMouseEnter={partial(this.setIsHovered, true)}
-        onMouseLeave={partial(this.setIsHovered, false)}
         styleName="content-button"
         className={contentButtonClass}
       >
         <div styleName="image">
-          <UIOverlay
-            isActive={isHovered}
-            text="Learn more"
-          />
           <UIImage
             type="cover"
             src={image}
@@ -79,6 +71,19 @@ class UIContentButton extends React.Component {
         <div styleName={contentClass} className="p-all-3">
           {this.renderTitle()}
           {this.renderText()}
+        </div>
+        <div styleName={infoClass} className="p-x-3">
+          <p className="bold" styleName="info-text">
+            <span>
+              Learn more
+            </span>
+            <UIIcon
+              align="middle"
+              height={15}
+              image={this.getIcon()}
+            />
+          </p>
+
         </div>
       </div>
     );

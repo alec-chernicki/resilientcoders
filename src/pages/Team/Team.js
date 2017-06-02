@@ -40,17 +40,15 @@ class Team extends React.PureComponent {
 
         <TeamMembers/>
 
-        <UILayout use="secondary">
-          <UISection>
-            <UICard className="text-center p-all-6">
-              <h2>Interested in Joining?</h2>
-              <p className="text-constrained m-x-auto">
-                There's numerous ways to get involved whether you're a company or individual
-              </p>
-              <UIButton to="/get-involved">
-                Get Involved
-              </UIButton>
-            </UICard>
+        <UILayout>
+          <UISection className="text-center p-all-6">
+            <h2>Interested in Joining?</h2>
+            <p className="text-constrained m-x-auto">
+              There's numerous ways to get involved whether you're a company or individual
+            </p>
+            <UIButton to="/get-involved">
+              Get Involved
+            </UIButton>
           </UISection>
         </UILayout>
       </RouteTransition>

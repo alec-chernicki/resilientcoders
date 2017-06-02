@@ -21,12 +21,12 @@ const GetInvolvedVolunteer = (props) => {
   return (
     <RouteTransition>
       <Helmet title="Join as a Volunteer" />
-      <UILayout className="p-top-10 p-bottom-6">
+      <UILayout className="p-top-of-page p-bottom-6">
         <UILayer  image={mentorImage} />
         <UISkewedLayer className="index-1" />
         <UISection className="index-2">
           <UIFlexRow>
-            <UIFlex className="p-x-6 p-top-6 m-bottom-6">
+            <UIFlex className="p-x-6 p-top-3 m-bottom-6">
               <h1>Join as a Volunteer</h1>
               <div className="divider" />
               <p className="text-on-dark">

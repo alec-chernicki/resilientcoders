@@ -4,7 +4,7 @@ import styles from './UIIcon.css';
 
 class UIIcon extends React.Component {
   render () {
-    const { image, align, className } = this.props;
+    const { image, align, className, height, width } = this.props;
     const iconStyles = {
       verticalAlign: align
     };
@@ -19,6 +19,8 @@ class UIIcon extends React.Component {
           styleName="image"
           role="presentation"
           src={image}
+          height={height}
+          width={width}
         />
       </div>
     );
@@ -28,6 +30,8 @@ class UIIcon extends React.Component {
 UIIcon.propTypes = {
   image: PropTypes.string.isRequired,
   align: PropTypes.string,
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
 };
 
 export default CSSModules(UIIcon, styles);
