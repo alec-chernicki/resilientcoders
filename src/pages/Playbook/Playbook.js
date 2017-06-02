@@ -18,7 +18,7 @@ const PLAYBOOK_URL = 'https://cdn2.hubspot.net/hubfs/2253693/Docs/DiversityPlayb
 
 class Playbook extends React.PureComponent {
   handleSubmit() {
-    window.open(PLAYBOOK_URL, '_blank');
+    window.open(PLAYBOOK_URL);
   }
   render () {
     return (
