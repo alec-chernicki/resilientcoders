@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import styles from './UIHero.css';
+import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISection from 'UILibrary/layout/UISection';
@@ -78,8 +79,15 @@ class UIHero extends React.Component {
     );
   }
   render () {
+    const { isFullHeight } = this.props;
+
+    const heroClass = classNames({
+      'default': !isFullHeight,
+      'full-height': isFullHeight,
+    });
+
     return (
-      <div styleName="hero">
+      <div styleName={heroClass}>
         {this.renderBackground()}
         <div styleName="content" className="index-2">
           <UISection className="p-x-6">
@@ -95,6 +103,7 @@ class UIHero extends React.Component {
 }
 
 UIHero.propTypes = {
+  isFullHeight: PropTypes.bool.isRequired,
   image: PropTypes.string,
   titleOne: PropTypes.string.isRequired,
   titleTwo: PropTypes.string,

@@ -19,7 +19,7 @@ const GetInvolvedStudent = (props) => {
   return (
     <RouteTransition>
       <Helmet title="Join as a Student" />
-      <UILayout use="tertiary" className="p-top-10 p-bottom-6">
+      <UILayout use="tertiary" className="p-top-of-page p-bottom-6">
         <UILayer image={studentImage} />
         <UISection className="index-2">
           <UICard use="transparent" className="text-center">

@@ -1,4 +1,3 @@
-import { partial } from 'underscore';
 import React, { PropTypes } from 'react';
 import styles from './UIContentButton.css';
 import CSSModules from 'react-css-modules';

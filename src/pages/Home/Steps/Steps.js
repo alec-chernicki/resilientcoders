@@ -44,15 +44,13 @@ class Steps extends React.Component {
   render() {
     return (
       <div>
-        <UISection>
-          <UICard className="text-center p-bottom-6">
-            <h1>AN END TO END SOLUTION</h1>
-            <div className="divider divider__red" />
-            <p className="text-constrained m-x-auto">
-              In order to effectively educate and employ our students we’ve
-              developed a funnel with overlapping means of engagement.
-            </p>
-          </UICard>
+        <UISection className="text-center p-bottom-6">
+          <h1 className="text-darkest">AN END TO END SOLUTION</h1>
+          <div className="divider divider__red" />
+          <p className="text-constrained m-x-auto">
+            In order to effectively educate and employ our students we’ve
+            developed a funnel with overlapping means of engagement.
+          </p>
         </UISection>
         {this.renderStep()}
       </div>

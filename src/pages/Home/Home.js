@@ -108,6 +108,7 @@ class Home extends PureComponent {
       <RouteTransition>
         <Helmet title="Resilient Coders" />
         <UIHero
+          isFullHeight={true}
           titleOne="Hacking the"
           titleTwo="opportunity gap"
           text="Spreading code literacy to young people from traditionally underserved communities."
@@ -180,7 +181,7 @@ class Home extends PureComponent {
 
         {this.renderMicahSection()}
 
-        <UILayout use="secondary">
+        <UILayout>
           <UISection>
             <UICard use="secondary" className="text-center p-all-6 pull-up-6 with-shadow">
               <p className="text-on-dark">

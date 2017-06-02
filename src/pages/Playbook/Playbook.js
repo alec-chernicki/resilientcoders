@@ -26,7 +26,7 @@ class Playbook extends React.PureComponent {
       <RouteTransition>
         <Helmet title="The Diversity Playbook" />
 
-        <UILayout className="p-top-of-page p-bottom-6">
+        <UILayout className="p-top-of-page p-bottom-10">
           <UILayer image={companyImage} />
           <UISkewedLayer className="index-1" />
           <UISection className="index-2">
@@ -65,7 +65,6 @@ class Playbook extends React.PureComponent {
             <p>
               There are multiple ways to promote diversity in your company.
             </p>
-
             <UIButton to="/get-involved/company">
               Get Involved
             </UIButton>

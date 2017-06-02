@@ -11,6 +11,7 @@ import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
+import UIButton from 'UILibrary/button/UIButton';
 
 import communityImage from './community.jpg';
 import mentorImage from '../mentor.png';
@@ -30,8 +31,8 @@ const GetInvolvedVolunteer = (props) => {
               <h1>Join as a Volunteer</h1>
               <div className="divider" />
               <p className="text-on-dark">
-                There's more than one way to contribute at Resilient Coders. Our Volunteer Corps is comprised of
-                three Task Forces: Mentorship, Content Production, and Talent Placement.
+                There's more than one way to contribute at Resilient Coders,
+                become a member of our Volunteer Corps program.
               </p>
             </UIFlex>
             <UIFlex>
@@ -43,7 +44,33 @@ const GetInvolvedVolunteer = (props) => {
 
       <UILayout>
         <UISection className="p-y-6">
-
+          <UICard className="p-all-6 text-center m-bottom-6 with-shadow">
+            <h2>Volunteer Corps</h2>
+            <p className="text-constrained m-x-auto">
+              Our Volunteer Corps is comprised of three Task Forces: Mentorship,
+              Content Production, and Talent Placement. You can &nbsp;
+              <a
+                href="https://cdn2.hubspot.net/hubfs/2253693/Docs/VolunteerCorps.pdf"
+                alt="Resilient Coders Volunteer Corps"
+              >
+                read about Volunteer Corps.
+              </a>
+              &nbsp;Once you've signed up, drop by, we want to meet you. Our Community
+              Hours are Tuesdays and Thursdays, at
+              50 Milk St. Boston MA, 5th floor, between 3:30 and 6 &nbsp;
+              <a href="mailto:leon@resilientcoders.org?subject=Mentor%20stopping%20by">
+                Email Leon
+              </a>
+              &nbsp; if you're planning on stopping by, so we know to expect you.
+            </p>
+            <UIButton
+              target="_blank"
+              external={true}
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdgFPrBw28g3vlDL0XMUzQ3kmwHLWVFk2YAKa7M8ChbEeyoCA/viewform"
+            >
+              Sign up to become a volunteer
+            </UIButton>
+          </UICard>
 
           <UIFlexRow className="with-shadow m-bottom-6">
             <UIFlex>
@@ -89,9 +116,6 @@ const GetInvolvedVolunteer = (props) => {
             </UIFlex>
           </UIFlexRow>
 
-
-
-
           <UIFlexRow className="with-shadow m-bottom-6">
             <UIFlex>
               <UICard className="p-all-6">
@@ -101,12 +125,12 @@ const GetInvolvedVolunteer = (props) => {
                 <ul>
                   <li>
                     <p>
-                      - Drop-in mentorship at Community Hours on Tuesdays and Thursdays.
+                      - Technical guest blogging
                     </p>
                   </li>
                   <li>
                     <p>
-                      - Bootcamp mentorship at Community Hours on Tuesdays and Thursdays.
+                      - PR, helping us attract press
                     </p>
                   </li>
                 </ul>

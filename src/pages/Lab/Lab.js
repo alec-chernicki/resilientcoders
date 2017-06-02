@@ -70,17 +70,19 @@ class Lab extends React.PureComponent {
                       </span>
                     </a>
                     , and recruited into the Lab for their aptitude and their grit. Our clients get
-                    an exceptional product, while also helping to launch our coders' careers. Email David Delmar
-                    at <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a> to learn more.
+                    an exceptional product, while also helping to launch our coders' careers.
                   </p>
                 </UICard>
               </UIFlex>
               <UIFlex basis="40%">
-                <UICard use="secondary" className="p-all-6 with-shadow">
+                <UICard use="secondary" className="p-all-6 with-shadow full-height">
                   <h3 className="m-top-0">What we do:</h3>
                   <p>Front End Development</p>
                   <p>UI Design and & Prototyping</p>
                   <p>UX Research</p>
+                  <UIButton href="mailto:david@resilientcoders.org">
+                    Email us to learn more
+                  </UIButton>
                 </UICard>
               </UIFlex>
             </UIFlexRow>
