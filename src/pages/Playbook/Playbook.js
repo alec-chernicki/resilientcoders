@@ -14,8 +14,12 @@ import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 const DIVERSITY_PLAYBOOK_FORM_URL = '/api/subscribe/diversityplaybook';
+const PLAYBOOK_URL = 'https://cdn2.hubspot.net/hubfs/2253693/Docs/DiversityPlaybook.pdf';
 
 class Playbook extends React.PureComponent {
+  handleSubmit() {
+    window.open(PLAYBOOK_URL, '_blank');
+  }
   render () {
     return (
       <RouteTransition>
@@ -46,6 +50,7 @@ class Playbook extends React.PureComponent {
                 <EmailFormLong
                   title="Get the Playbook"
                   formUrl={DIVERSITY_PLAYBOOK_FORM_URL}
+                  onSubmit={this.handleSubmit}
                 />
               </UIFlex>
             </UIFlexRow>

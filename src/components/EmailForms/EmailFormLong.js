@@ -40,12 +40,16 @@ class EmailFormLong extends React.PureComponent {
     this.formElement = element;
   }
   validSubmit(data) {
+    const { onSubmit } = this.props;
+
     this.setState({
       buttonText: 'submitting',
     })
 
     axios.post(this.props.formUrl, data)
       .then(() => {
+        onSubmit();
+        
         this.setState({
           buttonText: 'submitted',
         })
