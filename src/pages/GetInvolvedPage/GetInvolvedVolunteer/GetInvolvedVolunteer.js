@@ -142,6 +142,14 @@ const GetInvolvedVolunteer = (props) => {
                     </p>
                   </li>
                 </ul>
+
+                <UIButton
+                  target="_blank"
+                  external={true}
+                  href="https://cdn2.hubspot.net/hubfs/2253693/Docs/VolunteerCorps.pdf"
+                >
+                  Read our volunteer guide
+                </UIButton>
               </UICard>
             </UIFlex>
             <UIFlex>
