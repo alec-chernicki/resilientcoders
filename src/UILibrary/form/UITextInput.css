@@ -1,6 +1,7 @@
 .text-input-wrapper {
   position: relative;
   width: 100%;
+  text-align: left;
 }
 
 .text-input {
@@ -16,6 +17,14 @@
   position: relative;
   font-family: 'Roboto Slab';
   transition: all 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
+.text-input-wrapper :global(.error-message) {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #ED1B24;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .text-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
