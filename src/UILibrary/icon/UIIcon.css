@@ -1,7 +1,5 @@
 .icon {
   display: inline-block;
-  height: 20px;
-  width: 20px;
 }
 
 .icon + span {
@@ -9,5 +7,5 @@
 }
 
 .image {
-  width: 100%;
+  width: auto;
 }

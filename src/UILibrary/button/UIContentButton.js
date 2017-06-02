@@ -77,6 +77,7 @@ class UIContentButton extends React.Component {
               Learn more
             </span>
             <UIIcon
+              className="m-left-1"
               align="middle"
               height={15}
               image={this.getIcon()}

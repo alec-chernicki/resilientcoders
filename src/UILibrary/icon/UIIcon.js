@@ -27,11 +27,15 @@ class UIIcon extends React.Component {
   }
 }
 
+UIIcon.defaultProps = {
+  height: 20
+};
+
 UIIcon.propTypes = {
   image: PropTypes.string.isRequired,
   align: PropTypes.string,
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
+  height: PropTypes.number,
+  width: PropTypes.number,
 };
 
 export default CSSModules(UIIcon, styles);

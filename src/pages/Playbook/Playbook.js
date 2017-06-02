@@ -2,13 +2,8 @@ import './Playbook.scss';
 import React from 'react';
 import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import UIButton from 'UILibrary/button/UIButton'
-import SideBySide from '../../components/Containers/SideBySide/SideBySide';
-import SideItem from '../../components/Containers/SideBySide/SideItem/SideItem';
 import EmailFormLong from '../../components/EmailForms/EmailFormLong';
 import companyImage from './get-involved-company.jpg';
-import Hero from '../../components/Containers/Hero/Hero';
-import contractLabImage from './get-involved-lab.jpg';
-import hireStudentsImage from './get-involved-dunia.jpg';
 import Helmet from 'react-helmet';
 
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
