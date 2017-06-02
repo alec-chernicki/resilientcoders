@@ -13,7 +13,7 @@ class Partners extends React.PureComponent {
     const {partnersConfig, styles} = this.props;
     return partnersConfig.map((item, i) => (
       <UIFlex
-        basis="13%"
+        basis="auto"
         grow={0}
         shrink={0}
         key={i}
