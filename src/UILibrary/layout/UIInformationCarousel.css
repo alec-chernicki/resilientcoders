@@ -28,6 +28,13 @@
   box-shadow: inset 0 0 45px 25px #FFF;
 }
 
+@media screen and (max-width: 768px) {
+  .content-container::after {
+    display: none;
+  }
+}
+
+
 .image-enter {
   opacity: 0.01;
 }
