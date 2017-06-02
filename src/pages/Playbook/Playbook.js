@@ -13,7 +13,7 @@ import UILayout from 'UILibrary/layout/UILayout';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
-const COMPANY_FORM_URL = '/api/subscribe/company';
+const DIVERSITY_PLAYBOOK_FORM_URL = '/api/subscribe/diversityplaybook';
 
 class Playbook extends React.PureComponent {
   render () {
@@ -45,7 +45,7 @@ class Playbook extends React.PureComponent {
               <UIFlex>
                 <EmailFormLong
                   title="Get the Playbook"
-                  formUrl={COMPANY_FORM_URL}
+                  formUrl={DIVERSITY_PLAYBOOK_FORM_URL}
                 />
               </UIFlex>
             </UIFlexRow>

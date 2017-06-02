@@ -38,6 +38,7 @@ const sitemapController = require('./controllers/sitemapController');
 app.post('/api/subscribe/general', subscriptionController.postSubscriptionGeneral)
 app.post('/api/subscribe/mentor', subscriptionController.postSubscriptionMentor)
 app.post('/api/subscribe/company', subscriptionController.postSubscriptionCompany)
+app.post('/api/subscribe/diversityplaybook', subscriptionController.postSubscriptionDiversityPlaybook)
 
 // To get last tweet from @resilientcoders
 app.get('/api/twitter', twitterController.getTwitter);
