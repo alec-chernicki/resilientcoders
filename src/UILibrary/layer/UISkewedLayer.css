@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .skewed-layer {
     transform: skewY(-6deg);
   }
