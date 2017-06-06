@@ -18,6 +18,12 @@
   overflow: hidden;
 }
 
+@media screen and (min-width: 1400px) {
+  .skewed-layer {
+    transform: skewY(-6deg);
+  }
+}
+
 .content {
   transform-origin: top left;
   transform: skewY(12deg);
@@ -40,5 +46,5 @@
 
 .tertiary {
   composes: skewed-layer;
-  background-color: #21262D;  
+  background-color: #21262D;
 }

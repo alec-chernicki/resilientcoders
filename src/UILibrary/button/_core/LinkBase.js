@@ -11,7 +11,7 @@ const linkUseProps = {
 
 class Link extends React.Component {
   render () {
-    const { href, children, use, target, className } = this.props;
+    const { children, use, className } = this.props;
     const linkClass = classNames({
       'primary': use === linkUseProps.primary,
       'secondary': use === linkUseProps.secondary,
@@ -19,9 +19,9 @@ class Link extends React.Component {
     });
 
     return (
-      <a className={className} href={href} styleName={linkClass} target={target}>
+      <span className={className} styleName={linkClass}>
         {children}
-      </a>
+      </span>
     );
   }
 }
@@ -31,7 +31,8 @@ Link.defaultProps = {
 };
 
 Link.propTypes = {
-  href: PropTypes.string.isRequired,
+  to: PropTypes.string,
+  href: PropTypes.string,
   children: PropTypes.node.isRequired,
   use: PropTypes.oneOf(Object.keys(linkUseProps)),
   target: PropTypes.string,

@@ -102,8 +102,12 @@ class UIHero extends React.Component {
   }
 }
 
+UIHero.defaultProps = {
+  isFullHeight: false,
+};
+
 UIHero.propTypes = {
-  isFullHeight: PropTypes.bool.isRequired,
+  isFullHeight: PropTypes.bool,
   image: PropTypes.string,
   titleOne: PropTypes.string.isRequired,
   titleTwo: PropTypes.string,

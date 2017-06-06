@@ -13,7 +13,6 @@ import UICard from 'UILibrary/layout/UICard';
 import UISection from 'UILibrary/layout/UISection';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UILayer from 'UILibrary/layer/UILayer';
-import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import donateImage from './donate.jpg';
 import heroImage from './hero.jpg';

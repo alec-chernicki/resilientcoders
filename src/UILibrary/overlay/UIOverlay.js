@@ -40,4 +40,13 @@ class UIOverlay extends React.Component {
   }
 }
 
+UIOverlay.defaultProps = {
+  isActive: false,
+};
+
+UIOverlay.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired
+};
+
 export default CSSModules(UIOverlay, styles);

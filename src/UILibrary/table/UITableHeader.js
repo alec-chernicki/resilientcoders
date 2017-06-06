@@ -4,13 +4,15 @@ import CSSModules from 'react-css-modules';
 
 const UITableHeader = ({title, colSpan}) => {
   return (
-    <tr styleName="table-header">
-      <th colSpan={colSpan}>
-        <h3 className="m-all-0">
-          {title}
-        </h3>
-      </th>
-    </tr>
+    <thead>
+      <tr styleName="table-header">
+        <th colSpan={colSpan}>
+          <h3 className="m-all-0">
+            {title}
+          </h3>
+        </th>
+      </tr>
+    </thead>
   );
 };
 

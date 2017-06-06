@@ -10,7 +10,7 @@ class UIIcon extends React.Component {
     };
 
     return (
-      <div
+      <span
         className={className}
         styleName="icon"
         style={iconStyles}
@@ -22,7 +22,7 @@ class UIIcon extends React.Component {
           height={height}
           width={width}
         />
-      </div>
+      </span>
     );
   }
 }

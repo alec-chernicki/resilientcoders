@@ -83,7 +83,6 @@ class UIContentButton extends React.Component {
               image={this.getIcon()}
             />
           </p>
-
         </div>
       </div>
     );

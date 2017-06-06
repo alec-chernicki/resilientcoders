@@ -1,9 +1,7 @@
 import { throttle } from 'underscore';
 import React from 'react';
 import StepNavigation from './StepNavigation/StepNavigation';
-
 import UISection from 'UILibrary/layout/UISection';
-import UICard from 'UILibrary/layout/UICard';
 import UIInformationCarousel from 'UILibrary/layout/UIInformationCarousel';
 
 import stepConfig from './stepConfig';

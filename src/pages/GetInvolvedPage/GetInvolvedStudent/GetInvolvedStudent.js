@@ -21,13 +21,11 @@ const GetInvolvedStudent = (props) => {
       <Helmet title="Join as a Student" />
       <UILayout use="tertiary" className="p-top-of-page p-bottom-6">
         <UILayer image={studentImage} />
-        <UISection className="index-2">
-          <UICard use="transparent" className="text-center">
-            <h1>
-              For students
-            </h1>
-            <div className="divider m-bottom-0" />
-          </UICard>
+        <UISection className="index-2 text-center">
+          <h1 className="text-white">
+            For students
+          </h1>
+          <div className="divider m-bottom-0" />
         </UISection>
       </UILayout>
 

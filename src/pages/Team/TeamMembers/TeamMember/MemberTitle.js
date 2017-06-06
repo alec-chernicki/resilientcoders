@@ -25,4 +25,9 @@ const MemberTitle = ({ member, isActive }) => {
   );
 }
 
+MemberTitle.propTypes = {
+  member: PropTypes.object.isRequired,
+  isActive: PropTypes.bool.isRequired,
+}
+
 export default CSSModules(MemberTitle, styles);

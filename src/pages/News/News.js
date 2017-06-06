@@ -7,6 +7,7 @@ import Helmet from 'react-helmet';
 
 import UITable from 'UILibrary/table/UITable';
 import UITableHeader from 'UILibrary/table/UITableHeader';
+import UITableBody from 'UILibrary/table/UITableBody';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
 import UICard from 'UILibrary/layout/UICard';
@@ -70,12 +71,16 @@ class News extends React.PureComponent {
 
                 <UITable className="m-bottom-3 with-shadow">
                   <UITableHeader title="Video and interactive content" colSpan={2} />
-                  {this.renderContentItems()}
+                  <UITableBody>
+                    {this.renderContentItems()}
+                  </UITableBody>
                 </UITable>
 
                 <UITable className="with-shadow m-sm-bottom-3">
                   <UITableHeader title="Awards" colSpan={2}/>
-                  {this.renderAwardsItems()}
+                  <UITableBody>
+                    {this.renderAwardsItems()}
+                  </UITableBody>
                 </UITable>
               </UIFlex>
 
@@ -84,7 +89,9 @@ class News extends React.PureComponent {
 
                 <UITable className="with-shadow">
                   <UITableHeader title="Press" colSpan={2}/>
-                  {this.renderPressItems()}
+                  <UITableBody>
+                    {this.renderPressItems()}
+                  </UITableBody>
                 </UITable>
               </UIFlex>
             </UIFlexRow>

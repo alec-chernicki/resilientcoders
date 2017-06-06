@@ -7,7 +7,7 @@ import Formsy from 'formsy-react';
 class UITextInput extends React.Component {
   constructor() {
     super();
-    
+
     this.changeValue = this.changeValue.bind(this);
   }
   changeValue(event) {
@@ -40,19 +40,11 @@ class UITextInput extends React.Component {
 
   render() {
     const {
-      showRequired,
-      showError,
       getValue,
-      setValue,
       getErrorMessage,
       label,
       placeholder
     } = this.props;
-
-    const inputClass = classNames('control-input', {
-      'required': showRequired(),
-      'error': showError(),
-    })
 
     const labelClass = classNames({
       "label-hidden": !getValue(),
