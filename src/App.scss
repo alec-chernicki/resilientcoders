@@ -37,6 +37,7 @@ h1, .letter {
 h1 {
   font-size: $font-size-primary;
   line-height: 1.1;
+  white-space: pre-wrap;
 
   @include breakpoint($small-breakpoint) {
     line-height: 1;
@@ -51,6 +52,7 @@ h2 {
   font-size: $font-size-tertiary;
   text-transform: uppercase;
   line-height: 1.1;
+  white-space: pre-wrap;
 }
 
 h3 {

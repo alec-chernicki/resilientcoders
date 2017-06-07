@@ -25,7 +25,7 @@ class GetInvolvedCompany extends React.PureComponent {
       <RouteTransition>
         <Helmet title="Join as a Company" />
 
-        <UILayout className="p-top-10 p-bottom-6">
+        <UILayout className="p-top-of-page p-bottom-6">
           <UILayer image={companyImage} />
           <UISkewedLayer use="primary" className="index-1" />
           <UISection className="index-2">

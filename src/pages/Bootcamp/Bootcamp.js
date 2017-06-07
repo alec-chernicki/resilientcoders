@@ -231,7 +231,7 @@ class Bootcamp extends PureComponent {
 
         <UILayout use="secondary">
           <UISkewedLayer use="tertiary" className="index-1"/>
-          <UISection className="text-center p-top-6 p-bottom-28 index-2">
+          <UISection className="text-center p-top-6 p-bottom-28 p-sm-bottom-18 index-2">
             <h1 className="text-darkest">The Program</h1>
             <p className="text-constrained m-x-auto m-bottom-6">
               Our 8 week program teaches students the fundamentals of front end web development.

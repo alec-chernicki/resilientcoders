@@ -81,7 +81,7 @@ class Lab extends React.PureComponent {
                   <p>UI Design and & Prototyping</p>
                   <p>UX Research</p>
                   <UIButton href="mailto:david@resilientcoders.org">
-                    Email us to learn more
+                    Email to learn more
                   </UIButton>
                 </UICard>
               </UIFlex>

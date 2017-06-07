@@ -7,13 +7,16 @@ import GoogleAnalytics from 'react-ga';
 
 GoogleAnalytics.initialize('UA-66576358-3');
 
-const logPageView = () => {
+const logPageView = (state) => {
+  const currentPath = window.location.pathname;
   // Manually push new page event to Google analytics
-  GoogleAnalytics.set({ page: window.location.pathname });
-  GoogleAnalytics.pageview(window.location.pathname);
+  GoogleAnalytics.set({ page: currentPath });
+  GoogleAnalytics.pageview(currentPath);
 
   // Manually push new page event to HubSpot analytics
   const _hsq = window._hsq = window._hsq || [];
+
+  _hsq.push(['setPath', currentPath]);
   _hsq.push(['trackPageView']);
 };
 

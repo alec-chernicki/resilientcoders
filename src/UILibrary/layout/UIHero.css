@@ -25,3 +25,9 @@
   display: flex;
   align-items: center;
 }
+
+.title-word {
+  line-height: 1.15;
+  display: inline-block;
+  margin-right: 1rem;
+}

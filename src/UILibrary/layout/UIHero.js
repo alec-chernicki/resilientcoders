@@ -6,8 +6,60 @@ import UILayer from 'UILibrary/layer/UILayer';
 import UISection from 'UILibrary/layout/UISection';
 import UIButton from 'UILibrary/button/UIButton';
 import UIVideoLayer from 'UILibrary/layer/UIVideoLayer';
+import TimelineMax from 'TimelineMax';
+import TweenMax from 'TweenMax';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 class UIHero extends React.Component {
+  componentDidMount() {
+    const textDuration = this.getTotalCharacterLength() * 0.025;
+
+    const tweenOne = TweenMax.staggerFrom('.animated-character', textDuration, {opacity: 0, y: 20, ease: Linear.easeNone}, 0.025);
+    const tweenTwo = TweenMax.from('.hero-divider', 0.25, {width: 0, ease: Linear.easeNone});
+    const tweenThree = TweenMax.from('.hero-text', 0.25, {opacity: 0, y: 20, ease: Linear.easeNone});
+    const tweenFour = TweenMax.from('.hero-button', 0.25, {opacity: 0, y: 20, ease: Linear.easeNone});
+
+    const tl = new TimelineMax({paused: true}).add(tweenOne).add([tweenTwo, tweenThree, tweenFour], textDuration, 'sequence', 0);
+
+    const tlTween = tl.tweenFromTo(0, tl.duration(), {ease: Power1.easeOut, paused: true, delay: 0.65});
+
+    tlTween.play();
+  }
+  getTotalCharacterLength() {
+    const { titleOne, titleTwo } = this.props;
+
+    if (!titleTwo) {
+      return Number(titleOne.length);
+    }
+
+    return Number(titleOne.length) + Number(titleTwo.length)
+  }
+  getWrappedText(text) {
+    return text.split('').map((character, key) => {
+      return (
+        <span
+          key={key}
+          className="animated-character display-inline-block"
+        >
+          {character}
+        </span>
+      );
+    });
+  }
+  getWrappedWords(text) {
+    const words = text.split(' ');
+
+    return words.map((word, key) => {
+      return (
+        <span
+          key={key}
+          styleName="title-word"
+        >
+          {this.getWrappedText(word)}
+        </span>
+      );
+    })
+  }
   renderBackground() {
     const {video, image} = this.props;
 
@@ -31,8 +83,8 @@ class UIHero extends React.Component {
     }
 
     return (
-      <h1>
-        {titleOne}
+      <h1 className="m-all-0">
+        {this.getWrappedWords(titleOne)}
       </h1>
     )
   }
@@ -44,8 +96,8 @@ class UIHero extends React.Component {
     }
 
     return (
-      <h1>
-        {titleTwo}
+      <h1 className="m-all-0">
+        {this.getWrappedWords(titleTwo)}
       </h1>
     );
   }
@@ -58,8 +110,8 @@ class UIHero extends React.Component {
 
     return (
       <div>
-        <div className="divider" />
-        <p className="text-on-dark text-constrained">
+        <div className="divider hero-divider" />
+        <p className="text-on-dark hero-text text-constrained">
           {text}
         </p>
       </div>
@@ -73,7 +125,7 @@ class UIHero extends React.Component {
     }
 
     return (
-      <UIButton to={to} href={href}>
+      <UIButton className="hero-button" to={to} href={href}>
         {buttonText}
       </UIButton>
     );

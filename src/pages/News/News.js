@@ -54,7 +54,7 @@ class News extends React.PureComponent {
     return (
       <RouteTransition>
         <Helmet title="News" />
-        <UILayout className="p-top-11 p-bottom-6">
+        <UILayout className="p-top-of-page p-bottom-6">
           <UISection>
 
             <UIFlexRow>
