@@ -21,44 +21,43 @@ class Footer extends React.PureComponent {
             <div className="footer-container-upper">
               <div className="footer-container-links">
                 <h3 className="text-white">Bootcamp</h3>
-                <Link to="/bootcamp">About</Link>
-                <Link to="/bootcamp/roster">Roster</Link>
+                <Link className="text-on-dark" to="/bootcamp">About</Link>
+                <Link className="text-on-dark" to="/bootcamp/roster">Roster</Link>
               </div>
               <div className="footer-container-links">
                 <h3 className="text-white">Lab</h3>
-                <Link to="/lab">About</Link>
-                <Link href="/quote">Get a quote</Link>
+                <Link className="text-on-dark" to="/lab">About</Link>
               </div>
               <div className="footer-container-links">
                 <h3 className="text-white">Get Involved</h3>
-                <Link to="/get-involved/student">Students</Link>
-                <Link to="/get-involved/volunteer">Mentors</Link>
-                <Link to="/get-involved/company">Companies</Link>
+                <Link className="text-on-dark" to="/get-involved/student">Students</Link>
+                <Link className="text-on-dark" to="/get-involved/volunteer">Volunteers</Link>
+                <Link className="text-on-dark" to="/get-involved/company">Companies</Link>
               </div>
               <div className="footer-container-info">
-                <p>
+                <p className="text-on-dark">
                   50 Milk Street, 17th Floor. Boston, MA 02109
                 </p>
-                <p>
+                <p className="text-on-dark">
                   Questions? Email:&nbsp;
                   <a
-                    className="accent-link-underline"
+                    className="accent-link-underline text-white"
                     href="mailto:david@resilientcoders.org"
                   >
                     david@resilientcoders.org
                   </a>
                 </p>
-                <p>Photography, video, and music by&nbsp;
+                <p className="text-on-dark">Photography, video, and music by&nbsp;
                   <a
-                    className="accent-link-underline"
+                    className="accent-link-underline text-white"
                     href="http://www.asithappens.tv/"
                   >
                     Andy Laub
                   </a>, of As It Happens Films
                 </p>
-                <p>Website designed and developed by&nbsp;
+                <p className="text-on-dark">Website designed and developed by&nbsp;
                   <a
-                    className="accent-link-underline"
+                    className="accent-link-underline text-white"
                     href="http://www.alecortega.com/"
                   >
                     Alec Ortega

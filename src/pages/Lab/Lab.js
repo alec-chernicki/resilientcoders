@@ -49,6 +49,7 @@ class Lab extends React.PureComponent {
       <RouteTransition>
         <Helmet title="Resilient Lab" />
         <UIHero
+          className="hero"
           image={LabHeroImage}
           short={true}
           titleOne="Resilient Lab"
@@ -57,7 +58,7 @@ class Lab extends React.PureComponent {
         <UILayout>
           <UISection>
             <UIFlexRow className="p-bottom-6">
-              <UIFlex basis="60%" className="pull-up-offset-3 index-10">
+              <UIFlex basis="60%" className="pull-up-offset-3 index-10 hero-card-second">
                 <UICard className="p-all-6 full-height pull-up-3 with-shadow">
                   <h2>Relentlessly Rebuilding</h2>
                   <div className="divider"/>
@@ -74,7 +75,7 @@ class Lab extends React.PureComponent {
                   </p>
                 </UICard>
               </UIFlex>
-              <UIFlex basis="40%">
+              <UIFlex basis="40%" className="hero-card-first">
                 <UICard use="secondary" className="p-all-6 with-shadow full-height">
                   <h3 className="m-top-0">What we do:</h3>
                   <p>Front End Development</p>

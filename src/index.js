@@ -14,8 +14,7 @@ const logPageView = (state) => {
   GoogleAnalytics.pageview(currentPath);
 
   // Manually push new page event to HubSpot analytics
-  const _hsq = window._hsq = window._hsq || [];
-
+  const _hsq = window._hsq = window._hsq || []; 
   _hsq.push(['setPath', currentPath]);
   _hsq.push(['trackPageView']);
 };

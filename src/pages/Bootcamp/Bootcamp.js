@@ -190,7 +190,7 @@ class Bootcamp extends PureComponent {
         <UILayout>
           <UISection className="p-bottom-6">
             <UIFlexRow>
-              <UIFlex className="pull-up-offset-4">
+              <UIFlex className="pull-up-offset-4 hero-card-second index-2">
                 <UICard className="p-all-6 full-height with-shadow pull-up-4">
                   <h2>The Goal</h2>
                   <div className="divider divider__red" />
@@ -205,7 +205,7 @@ class Bootcamp extends PureComponent {
 
                 </UICard>
               </UIFlex>
-              <UIFlex>
+              <UIFlex className="hero-card-first">
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>Current Bootcamp</h2>
                   <p>

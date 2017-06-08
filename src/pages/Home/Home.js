@@ -120,7 +120,7 @@ class Home extends PureComponent {
         <UILayout>
           <UISection className="p-bottom-6">
             <UIFlexRow>
-              <UIFlex className="index-10 pull-up-offset-3">
+              <UIFlex className="index-10 pull-up-offset-3 hero-card-first">
                 <UICard className="p-all-6 pull-up-3 with-shadow">
                   <h1>Our Mission</h1>
                   <p>
@@ -137,7 +137,7 @@ class Home extends PureComponent {
                   </p>
                 </UICard>
               </UIFlex>
-              <UIFlex className="pull-up-offset-6 index-10">
+              <UIFlex className="pull-up-offset-6 index-10 hero-card-second">
                 <UIImage type="cover" src={homeImage} className="pull-up-6 with-shadow" />
               </UIFlex>
             </UIFlexRow>

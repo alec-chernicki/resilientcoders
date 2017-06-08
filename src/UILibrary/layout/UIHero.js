@@ -19,11 +19,23 @@ class UIHero extends React.Component {
     const tweenThree = TweenMax.from('.hero-text', 0.25, {opacity: 0, y: 20, ease: Linear.easeNone});
     const tweenFour = TweenMax.from('.hero-button', 0.25, {opacity: 0, y: 20, ease: Linear.easeNone});
 
-    const tl = new TimelineMax({paused: true}).add(tweenOne).add([tweenTwo, tweenThree, tweenFour], textDuration, 'sequence', 0);
+    // const tweenFive = TweenMax.from('.hero-card-first', 0.5, {opacity: 0.5, y: 150, ease: Power1.easeOut});
+    // const tweenSix = TweenMax.from('.hero-card-second', 0.5, {opacity: 0.5, y: 150, ease: Power1.easeOut});
 
-    const tlTween = tl.tweenFromTo(0, tl.duration(), {ease: Power1.easeOut, paused: true, delay: 0.65});
+    const heroContentTimeline = new TimelineMax({paused: true})
+      .add(tweenOne)
+      .add('afterTitle')
+      .add([tweenTwo, tweenThree, tweenFour], textDuration, 'sequence', 0)
+      // .add(tweenFive, 'afterTitle')
+      // .add(tweenSix, '-=0.1')
 
-    tlTween.play();
+    this.tlTween = heroContentTimeline.tweenFromTo(0, heroContentTimeline.duration(), {ease: Power1.easeOut, paused: true, delay: 0.65});
+
+    this.tlTween.play();
+  }
+  componentWillUnmount() {
+    this.tlTween.pause();
+    this.tlTween = null;
   }
   getTotalCharacterLength() {
     const { titleOne, titleTwo } = this.props;
@@ -139,7 +151,7 @@ class UIHero extends React.Component {
     });
 
     return (
-      <div styleName={heroClass}>
+      <div styleName={heroClass} className="hero">
         {this.renderBackground()}
         <div styleName="content" className="index-2">
           <UISection className="p-x-6">
