@@ -1,11 +1,11 @@
 import './Footer.scss'
 import React from 'react'
 import {Link} from 'react-router';
-import CenteredContainerOuter from '../Containers/CenteredContainer/CenteredContainerOuter';
-import CenteredContainerInner from '../Containers/CenteredContainer/CenteredContainerInner';
 
 import twitterIcon from '../../images/twitter.svg';
 import facebookIcon from '../../images/facebook.svg';
+import UISection from 'UILibrary/layout/UISection';
+import UILayout from 'UILibrary/layout/UILayout';
 
 class Footer extends React.PureComponent {
   render () {
@@ -15,22 +15,22 @@ class Footer extends React.PureComponent {
 
     return (
       <footer>
-        <CenteredContainerOuter color="dark-grey">
+        <UILayout use="tertiary">
 
-          <CenteredContainerInner color="dark-grey" flush={false}>
+          <UISection>
             <div className="footer-container-upper">
               <div className="footer-container-links">
-                <h3>Bootcamp</h3>
+                <h3 className="text-white">Bootcamp</h3>
                 <Link to="/bootcamp">About</Link>
                 <Link to="/bootcamp/roster">Roster</Link>
               </div>
               <div className="footer-container-links">
-                <h3>Lab</h3>
+                <h3 className="text-white">Lab</h3>
                 <Link to="/lab">About</Link>
                 <Link href="/quote">Get a quote</Link>
               </div>
               <div className="footer-container-links">
-                <h3>Get Involved</h3>
+                <h3 className="text-white">Get Involved</h3>
                 <Link to="/get-involved/student">Students</Link>
                 <Link to="/get-involved/volunteer">Mentors</Link>
                 <Link to="/get-involved/company">Companies</Link>
@@ -75,12 +75,12 @@ class Footer extends React.PureComponent {
                   <img src={facebookIcon} alt="Facebook logo"/>
                 </a>
               </div>
-              <p>
+              <p className="text-white">
                 {yearText}
               </p>
             </div>
-          </CenteredContainerInner>
-        </CenteredContainerOuter>
+          </UISection>
+        </UILayout>
       </footer>
     )
   }
