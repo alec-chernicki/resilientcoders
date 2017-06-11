@@ -1,5 +1,6 @@
-import './BinaryText.scss';
 import React, {PropTypes, PureComponent} from 'react';
+import styles from './BinaryText.css';
+import CSSModules from 'react-css-modules';
 import ScrollMagic from 'scrollmagic';
 import BinaryCharacter from './BinaryCharacter';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
@@ -69,8 +70,7 @@ class BinaryText extends PureComponent {
     return (
       <div
         key={indexOuter}
-        className="binary-word"
-        style={{position: 'relative', display: 'inline-block'}}
+        styleName="binary-word"
       >
         {wrappedLetters}
       </div>
@@ -87,8 +87,7 @@ class BinaryText extends PureComponent {
     return (
       <div ref={this.setTriggerElementRef.bind(this)}>
         <div
-          className="binary-text"
-          style={{position: 'relative', display: 'inline-block'}}
+          styleName="binary-text"
           ref={this.setTargetElementRef.bind(this)}
         >
           {this.renderIfValid()}
@@ -103,4 +102,4 @@ BinaryText.propTypes = {
 
 };
 
-export default BinaryText;
+export default CSSModules(BinaryText, styles);

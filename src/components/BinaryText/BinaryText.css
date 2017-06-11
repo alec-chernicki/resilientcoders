@@ -1,0 +1,16 @@
+.binary-text {
+  position: relative;
+  display: inline-block;
+  white-space: pre;
+  word-break: break-all;
+  width: 100%;
+}
+
+.binary-word {
+  position: relative;
+  display: inline-block;
+}
+
+.binary-word:not(:last-child) {
+  margin-right: 1rem;
+}
