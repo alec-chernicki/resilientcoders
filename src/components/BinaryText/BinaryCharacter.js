@@ -1,17 +1,29 @@
 import React, {PropTypes, PureComponent} from 'react';
-import classNames from 'classnames';
+import CSSModules from 'react-css-modules';
+import styles from './BinaryCharacter.css';
 
+const TIMES_TO_ANIMATE = 3;
 const TIME_BETWEEN_ANIMATIONS = 80
 const MINIMUM_ANIMATION_OFFSET = 1000
 const MAXIMUM_ANIMATION_OFFSET = 100
+
+const animationStates = {
+  'FIRST': 'binary-first',
+  'SECOND': 'binary-second',
+  'THIRD': 'binary-third',
+  'FOURTH': 'binary-fourth',
+  'FINAL': 'binary-final',
+};
+
+const animationKeys = Object.keys(animationStates);
 
 class BinaryCharacter extends PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {
-      timesToAnimate: 3,
-      currentAnimationState: 0,
+      timesToAnimate: TIMES_TO_ANIMATE,
+      currentAnimationIndex: 0,
     };
 
     this.animationOffset = Math.floor(Math.random()*(MAXIMUM_ANIMATION_OFFSET-MINIMUM_ANIMATION_OFFSET+1)+MINIMUM_ANIMATION_OFFSET);
@@ -26,29 +38,29 @@ class BinaryCharacter extends PureComponent {
   animateCharacter() {
     this.timeout = setTimeout(() => {
       this.animationInterval = setInterval(() => {
-        const {currentAnimationState} = this.state;
+        const {currentAnimationIndex} = this.state;
 
-        if (currentAnimationState === 2) {
+        if (currentAnimationIndex === animationKeys.length - 1) {
           clearInterval(this.animationInterval);
+          return
         }
-
+        debugger
         this.setState({
-          currentAnimationState: currentAnimationState + 1
+          currentAnimationIndex: currentAnimationIndex + 1
         });
 
       }, TIME_BETWEEN_ANIMATIONS);
     }, this.animationOffset);
   }
   render() {
-    const letterClass = classNames(
-      "binary-text__letter",
-      `state-${this.state.currentAnimationState}`, {
-        "binary-text__letter--inverted": this.props.isInverted === true
-      }
-    );
+    const { currentAnimationIndex } = this.state;
+    const currentAnimationKey = animationKeys[currentAnimationIndex];
+    const letterClass = [animationStates[currentAnimationKey]];
 
     return (
-      <span className={letterClass} style={{position: 'relative', display: 'inline-block'}}>
+      <span
+        styleName={letterClass}
+      >
         {this.props.text}
       </span>
     );
@@ -59,4 +71,4 @@ BinaryCharacter.propTypes = {
   text: PropTypes.string.isRequired
 };
 
-export default BinaryCharacter;
+export default CSSModules(BinaryCharacter, styles);

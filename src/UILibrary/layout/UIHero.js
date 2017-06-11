@@ -12,24 +12,23 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 class UIHero extends React.Component {
   componentDidMount() {
-    const textDuration = this.getTotalCharacterLength() * 0.025;
-
-    const tweenOne = TweenMax.staggerFrom('.animated-character', textDuration, {opacity: 0, y: 20, ease: Linear.easeNone}, 0.025);
+    const tweenOne = TweenMax.from('.animated-character', 0.65, {opacity: 0, x: -30, ease: Linear.easeNone});
     const tweenTwo = TweenMax.from('.hero-divider', 0.25, {width: 0, ease: Linear.easeNone});
     const tweenThree = TweenMax.from('.hero-text', 0.25, {opacity: 0, y: 20, ease: Linear.easeNone});
     const tweenFour = TweenMax.from('.hero-button', 0.25, {opacity: 0, y: 20, ease: Linear.easeNone});
 
-    // const tweenFive = TweenMax.from('.hero-card-first', 0.5, {opacity: 0.5, y: 150, ease: Power1.easeOut});
-    // const tweenSix = TweenMax.from('.hero-card-second', 0.5, {opacity: 0.5, y: 150, ease: Power1.easeOut});
-
     const heroContentTimeline = new TimelineMax({paused: true})
-      .add(tweenOne)
-      .add('afterTitle')
-      .add([tweenTwo, tweenThree, tweenFour], textDuration, 'sequence', 0)
-      // .add(tweenFive, 'afterTitle')
-      // .add(tweenSix, '-=0.1')
+      .add([tweenOne, tweenTwo, tweenThree, tweenFour], 0.05, 'sequence', 0);
 
-    this.tlTween = heroContentTimeline.tweenFromTo(0, heroContentTimeline.duration(), {ease: Power1.easeOut, paused: true, delay: 0.65});
+    this.tlTween = heroContentTimeline.tweenFromTo(
+      0,
+      heroContentTimeline.duration(),
+      {
+        ease: Power1.easeOut,
+        paused: true,
+        delay: 0.65
+      }
+    );
 
     this.tlTween.play();
   }
@@ -49,11 +48,10 @@ class UIHero extends React.Component {
   getWrappedText(text) {
     return text.split('').map((character, key) => {
       return (
-        <span
-          key={key}
-          className="animated-character display-inline-block"
-        >
-          {character}
+        <span styleName="animated-character-wrapper" key={key}>
+          <span className="animated-character display-inline-block">
+            {character}
+          </span>
         </span>
       );
     });

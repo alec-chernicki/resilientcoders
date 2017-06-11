@@ -10,17 +10,16 @@ class BinaryText extends PureComponent {
     super(props);
 
     this.state = {
-      shouldAnimate: false,
-      hasAnimated: false
+      shouldAnimate: false
     };
 
     this.controller = new ScrollMagic.Controller();
     this.tl = new TimelineMax();
     this.renderWrappedWord = this.renderWrappedWord.bind(this)
+    this.setHasStartedAnimation = this.setHasStartedAnimation.bind(this)
   }
   componentDidMount() {
     this.initializeScene();
-
   }
   componentWillUnmount() {
     this.scene.destroy(true)
@@ -36,14 +35,12 @@ class BinaryText extends PureComponent {
       .addTo(this.controller)
       .triggerElement(this.triggerElement)
 
-    this.scene.on('start', this.setHasStartedAnimation.bind(this))
+    this.scene.on('start', this.setHasStartedAnimation);
   }
   setHasStartedAnimation() {
-    if (this.state.hasAnimated) {
-      return;
-    }
-
-    this.setState({shouldAnimate: true, hasAnimated: true})
+    this.setState({
+      shouldAnimate: true
+    });
   }
   setTargetElementRef(element) {
     this.targetElement = element;
@@ -52,7 +49,7 @@ class BinaryText extends PureComponent {
     this.triggerElement = element;
   }
   renderIfValid() {
-    if (!this.state.shouldAnimate && !this.state.hasAnimated) {
+    if (!this.state.shouldAnimate) {
       return null;
     }
 
@@ -62,15 +59,19 @@ class BinaryText extends PureComponent {
     const {isInverted} = this.props;
 
     const wrappedLetters = word.map((letter, indexInner) => (
-        <BinaryCharacter
-          key={indexInner}
-          text={letter}
-          isInverted={isInverted}
-        />
+      <BinaryCharacter
+        key={indexInner}
+        text={letter}
+        isInverted={isInverted}
+      />
     ));
 
     return (
-      <div key={indexOuter} className="binary-word" style={{position: 'relative', display: 'inline-block'}}>
+      <div
+        key={indexOuter}
+        className="binary-word"
+        style={{position: 'relative', display: 'inline-block'}}
+      >
         {wrappedLetters}
       </div>
     );
@@ -78,22 +79,19 @@ class BinaryText extends PureComponent {
   renderWrappedText() {
     const words = this.props.children.split(' ');
     const wordsIntoLetters = words.map(((word) => word.split('')));
-
     const wrappedWords = wordsIntoLetters.map(this.renderWrappedWord)
 
     return wrappedWords;
   }
   render() {
     return (
-      <div
-        ref={this.setTriggerElementRef.bind(this)}
-      >
+      <div ref={this.setTriggerElementRef.bind(this)}>
         <div
           className="binary-text"
           style={{position: 'relative', display: 'inline-block'}}
           ref={this.setTargetElementRef.bind(this)}
         >
-          {this.renderWrappedText()}
+          {this.renderIfValid()}
         </div>
       </div>
     );

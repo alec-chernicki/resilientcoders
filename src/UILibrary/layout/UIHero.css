@@ -31,3 +31,8 @@
   display: inline-block;
   margin-right: 1rem;
 }
+
+.animated-character-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}

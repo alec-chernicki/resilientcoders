@@ -1,0 +1,62 @@
+.binary-character {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+}
+
+.binary-first:before,
+.binary-second:before,
+.binary-third:before,
+.binary-fourth:before,
+.binary-final:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  will-change: content;
+  width: 0.3em;
+  height: 1em;
+  transform: translate(-50%,-55%);
+  color: #21262D;
+}
+
+.binary-first {
+  composes: binary-character;
+}
+
+.binary-first:before {
+  /*opacity: 0.3;*/
+  content: '';
+}
+
+
+.binary-second {
+  composes: binary-character;
+}
+
+.binary-second:before {
+  /*opacity: 0.6;*/
+  content: '1';
+}
+
+.binary-third {
+  composes: binary-character;
+}
+
+.binary-third:before {
+  /*opacity: 0;*/
+  content: '0';
+}
+
+.binary-fourth {
+  composes: binary-character;
+}
+
+.binary-fourth:before {
+  /*opacity: 0.5;*/
+  content: '1';
+}
+
+.binary-final {
+  composes: binary-character;
+  color: #21262d;
+}

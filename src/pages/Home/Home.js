@@ -13,7 +13,7 @@ import RouteTransition from '../../components/RouteTransition/RouteTransition';
 import Parallax from '../../components/Effects/Parallax';
 import Partners from '../../components/Containers/Partners/Partners';
 import alumniCompaniesConfig from './alumniCompaniesConfig';
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet';
 import images from 'constants/images';
 
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';

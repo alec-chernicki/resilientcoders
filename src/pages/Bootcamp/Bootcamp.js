@@ -6,6 +6,7 @@ import {Link} from 'react-router';
 import Partners from 'components/Containers/Partners/Partners';
 import bootcampPartnersConfig from './bootcampPartnersConfig';
 import Helmet from 'react-helmet';
+import BinaryText from 'components/BinaryText/BinaryText';
 
 import UIButton from 'UILibrary/button/UIButton'
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
@@ -241,7 +242,9 @@ class Bootcamp extends PureComponent {
               Starts with
             </h4>
             <h2 className="text-center text-darkest">
-              Determination
+              <BinaryText isInverted={true}>
+                Determination
+              </BinaryText>
             </h2>
           </UISection>
         </UILayout>
@@ -257,7 +260,9 @@ class Bootcamp extends PureComponent {
                   Ends with
                 </h4>
                 <h1>
-                  A Career
+                  <BinaryText isInverted={true}>
+                    A Career
+                  </BinaryText>
                 </h1>
                 <p className="text-constrained m-x-auto">
                   We hire some of our own Bootcamp students into an apprenticeship with
