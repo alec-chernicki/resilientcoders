@@ -112,6 +112,12 @@ export default {
     }
   ],
   content : [
+
+    {
+      title: 'Resilient Lab',
+      link: 'https://www.youtube.com/watch?v=0GVU66L6uAg',
+      note: '6.2017'
+    },
     {
       title: 'Commit Resilience',
       link: 'http://www.commitresilience.org',
