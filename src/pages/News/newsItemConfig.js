@@ -1,6 +1,11 @@
 export default {
   press : [
     {
+      title: 'VOICES: David Delmar from Resilient Coders',
+      link: 'http://hot969boston.com/2017/07/08/voices-david-delmar-resilient-coders/',
+      note: 'Hot 96.9'
+    },
+    {
       title: 'Making the Grade: Resilient Coders',
       link: 'http://www.nbcboston.com/news/local/Making-the-Grade-Resilient-Coders-415613683.html',
       note: 'NBC'
