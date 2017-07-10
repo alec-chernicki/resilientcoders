@@ -68,6 +68,9 @@ app.get('/rebuild', (req, res) => {
 app.get('/orientation', (req, res) => {
   res.redirect('https://docs.google.com/forms/d/e/1FAIpQLSdp2K_4p7gYfFiyCIvouYZXf9eHDwkYDon3AVHGYOQr8Z8uBg/viewform');
 });
+app.get('/donate', (req, res) => {
+  res.redirect('https://paypal.me/resilientcoders');
+});
 app.get('/canvas', (req, res) => {
   res.redirect('https://canvas.instructure.com/enroll/K96A8P');
 });
