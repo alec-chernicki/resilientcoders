@@ -63,8 +63,8 @@ class Bootcamp extends PureComponent {
                   <div className="divider" />
                   <p className="text-on-dark">
                     We run two hackathons before each Bootcamp, from which we recruit our students.
-                    They’re each about six hours long, and are meant as a way for staff, alumni, and
-                    prospective students to get to know each other.
+                    They’re each about seven hours long, and are meant as a way for staff, alumni, and
+                    prospective students to get to know each other. This is the only way to "apply." <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the next one.</a>
                   </p>
                 </UIFlex>
               </UIFlexRow>
@@ -103,12 +103,14 @@ class Bootcamp extends PureComponent {
                   </h2>
                   <div className="divider" />
                   <p className="text-on-dark">
-                    Once in Bootcamp, our coders meet daily, for seven weeks, to learn HTML, CSS,
+                    In both Bootcamp(Base) and Bootcamp(MERN), our coders meet daily, for eight weeks, to learn HTML, CSS,
                     JavaScript, jQuery, and git, from professionals. Before graduating, they will have
                     demonstrated proficiency in semantically structured markup, inheritance and
                     specificity, accessibility, progressive enhancement, responsive design, and
                     effective use of functions, methods, and variables. They will have built, and
-                    pushed to GitHub, work that showcases these aptitudes.
+                    pushed to GitHub, work that showcases these aptitudes. Bootcamp(MERN) students go on
+                    to spend another six weeks learning the MERN stack (Mongo, Express, React, Node). Bootcamp(Base) graduates
+                    are eligible to join <a href="/lab">Resilient Lab</a> for a two-month Technical Fellowship.
                   </p>
                 </UIFlex>
               </UIFlexRow>
@@ -210,17 +212,19 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>Current Bootcamp</h2>
                   <p>
-                    Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
-                    Interested in applying for
-                    the next one? Come to our next Hackathon,
-                    from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+                    Our Summer Bootcamp(Base) is well underway, and we are recruiting for the fall Bootcamp(MERN).
+                    Interested in applying? Come to one of our next Hackathons,
+                    from which we recruit, on Monday 8/14 from 10 to 5, at 50 Milk St 5th floor, or Saturday 8/19 from 10 to 5,
+                    at the Roxbury Innovation Center in Dudley Square.
                   </p>
+                  {/*
                   <p>
                     Our coders are now available for hire. Interested in learning more? Check out their
                     bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
                   </p>
-                  <UIButton to="/bootcamp/roster">
-                    Meet our new grads
+                  */}
+                  <UIButton to="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
+                    Sign up
                   </UIButton>
                 </UICard>
               </UIFlex>
@@ -235,7 +239,8 @@ class Bootcamp extends PureComponent {
           <UISection className="text-center p-top-6 p-bottom-28 p-sm-bottom-18 index-2">
             <h1 className="text-darkest">The Program</h1>
             <p className="text-constrained m-x-auto m-bottom-6">
-              Our 8 week program teaches students the fundamentals of front end web development.
+              Our Bootcamp comes in two tracks: Bootcamp(Base) and Bootcamp(MERN).
+              In each, we teach students the fundamentals of front end web development.
               We start with the basics and end with real world client work.
             </p>
             <h4 className="text-center">
@@ -265,7 +270,7 @@ class Bootcamp extends PureComponent {
                   </BinaryText>
                 </h1>
                 <p className="text-constrained m-x-auto">
-                  We hire some of our own Bootcamp students into an apprenticeship with
+                  We hire some of our own Bootcamp(Base) students into an apprenticeship with
                   <Link to="/lab">
                     &nbsp;Resilient Lab
                   </Link>
@@ -288,7 +293,7 @@ class Bootcamp extends PureComponent {
             <div className="divider divider__red"/>
             <p className="text-on-dark text-constrained m-x-auto">
               We&#8217;re looking for young people from the City of Boston, who face more challenges
-              than most, to join us for eight weeks, to learn the fundamentals of web
+              than most, to join us, and learn the fundamentals of web
               development for free.
             </p>
           </UISection>
@@ -302,13 +307,13 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>As a student</h2>
                   <p>
-                    Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
-                    Interested in applying for
-                    the next one? Come to our next Hackathon,
-                    from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
+                  Our Summer Bootcamp(Base) is well underway, and we are recruiting for the fall Bootcamp(MERN).
+                  Interested in applying? Come to one of our next Hackathons,
+                  from which we recruit, on Monday 8/14 from 10 to 5, at 50 Milk St 5th floor, or Saturday 8/19 from 10 to 5,
+                  at the Roxbury Innovation Center in Dudley Square.
                   </p>
-                  <UIButton to="/get-involved/student">
-                    Learn more
+                  <UIButton to="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
+                    Sign up
                   </UIButton>
                 </UICard>
               </UIFlex>
