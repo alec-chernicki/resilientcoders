@@ -1,6 +1,11 @@
 export default {
   press : [
     {
+      title: 'Meet Ashley – Resilient Coder & Microsoft Intern',
+      link: 'https://www.youtube.com/watch?v=eKw-d2VYNNI&feature=youtu.be',
+      note: 'Microsoft'
+    },
+    {
       title: 'VOICES: David Delmar from Resilient Coders',
       link: 'http://hot969boston.com/2017/07/08/voices-david-delmar-resilient-coders/',
       note: 'Hot 96.9'
