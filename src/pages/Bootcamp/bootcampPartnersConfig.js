@@ -1,5 +1,6 @@
 import logoMicrosoft from './BootcampPartnersImages/logo_microsoft.png';
 import logoGoogle from './BootcampPartnersImages/logo_google.png';
+import logoCIC from './BootcampPartnersImages/logo_cic.png';
 import logoTbf from './BootcampPartnersImages/logo_tbf.png';
 import logoAmeliaPeabody from './BootcampPartnersImages/logo_ameliapeabody.jpg';
 import logoJohnHancock from './BootcampPartnersImages/logo_johnhancock.png';
@@ -9,6 +10,10 @@ import logoZakim from './BootcampPartnersImages/logo_zakim.png';
 import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
 
 export default [
+  {
+    image: logoCIC,
+    link: 'https://www.cic.us/'
+  },
   {
     image: logoMicrosoft,
     link: 'https://www.microsoft.com/'

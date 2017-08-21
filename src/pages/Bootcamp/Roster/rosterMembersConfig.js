@@ -1,171 +1,265 @@
-import TristianImage from './RosterMemberImages/tristian.png';
-import ArnoldImage from './RosterMemberImages/arnold.png';
-import DavidImage from './RosterMemberImages/david.png';
-import MariaImage from './RosterMemberImages/maria.png';
-import StephenImage from './RosterMemberImages/stephen.png';
-import EmilioImage from './RosterMemberImages/emilio.png';
-import JoseImage from './RosterMemberImages/jose.png';
-import ParissImage from './RosterMemberImages/pariss.png';
-import RogerImage from './RosterMemberImages/roger.png';
-import ShawnImage from './RosterMemberImages/shawn.png';
+import TimImage from './RosterMemberImages/tim.png';
+import NicolaImage from './RosterMemberImages/nicola.png';
+import JoshImage from './RosterMemberImages/josh.png';
+import GeraldImage from './RosterMemberImages/gerald.png';
+import YairoImage from './RosterMemberImages/yairo.png';
+import JonaImage from './RosterMemberImages/jona.png';
+import MalcolmImage from './RosterMemberImages/malcolm.png';
+import ReneImage from './RosterMemberImages/rene.png';
+import SebastianImage from './RosterMemberImages/sebastian.png';
+import FarrahImage from './RosterMemberImages/farrah.png';
+import KevinImage from './RosterMemberImages/kevin.png';
+import SimaraImage from './RosterMemberImages/simara.png';
+import KareemImage from './RosterMemberImages/kareem.png';
+import MariaImage from './RosterMemberImages/maria_p.png';
+import WilsonImage from './RosterMemberImages/wilson.png';
+import EddieImage from './RosterMemberImages/eddie.png';
+
+
 
 
 export default [
   {
-    url: '/bootcamp/roster/david-arrango',
-    portfolioUrl: 'https://arangodavid.github.io/Portfolio',
-    name: 'David Arango',
-    image: DavidImage,
-    linkedin: 'https://www.linkedin.com/in/david-arango-435037134/',
-    github: 'https://github.com/arangodavid',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_DavidArango.pdf',
-    bio: `Migrating from Colombia to the United States as a young boy
-      has given me a unique drive and ambition. I’ve been told I
-      can’t by many, but that has never stopped me from
-      persevering and getting to where I am today. I am a leader,
-      aspiring full-stack developer, and an optimist. With a positive
-      mind and diligent work ethic, I’m detail-oriented and
-      meticulous about completing everyday tasks with excellence.
-      I’m a natural leader who welcomes group projects where I
-      can effectively communicate with others and aggressively
-      drive to accomplish our objectives. Learning is pleasure and
-      as full-stack developer in training, I am always reading,
-      researching and practicing new techniques to better hone my
-      craft.`
+    url: '/bootcamp/roster/tim-blake',
+    /* portfolioUrl: '', */
+    name: 'Tim Blake',
+    image: TimImage,
+    linkedin: 'https://www.linkedin.com/in/timothy-blake-5a5756147/',
+    github: 'https://github.com/timblake17',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_TimBlake.pdf',
+    bio: `I consider myself a creative problem solver and I love the thrill of a challenge.
+    I started off as a mechanic at a young age, having a natural talent for diagnosing and
+    fixing problems. After 7 years in the field I felt like there were greater opportunities where I could
+    apply my problem solving and diagnostic abilities. After a lot of research and practice
+    I fell in love with web development and programming, where I have honed my skillset. I am a hard
+    worker, a team player, and I get things done.`
   },
   {
-    url: '/bootcamp/roster/tristian-barboza-graham',
-    name: 'Tristian Barboza-Graham',
-    image: TristianImage,
+    url: '/bootcamp/roster/nicola-briggs',
+    /* portfolioUrl: '', */
+    name: 'Nicola Briggs',
+    image: NicolaImage,
     linkedin: '',
-    github: '',
-    bio: `I am a web developer, designer & artist. I am a strong advocate for balance; in fact, I am ambidextrous.
-    That, plus my fine arts background, afford me a unique perspective in my work. I've learned a new set of skills
-    at Resilient Coders Bootcamp: HTML, CSS, some JavaScript fundamentals, jQuery, and UX Design. I have a strong interest
-    in pursuing a career in design.`
+    github: 'https://github.com/Nicolacodes',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_NicolaBriggs.pdf',
+    bio: ``
   },
   {
-    url: '/bootcamp/roster/pariss-chandler',
-    name: 'Pariss Chandler',
-    image: ParissImage,
-    linkedin: 'https://www.linkedin.com/in/pariss-chandler-1b06aa9a',
-    github: 'https://github.com/ParissChandler',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_PChandler.pdf',
-    bio: `I am a creative and diligent individual, and use my love for front end web development
-    to design vibrant and engaging products. Coming from an artistic background of acting, filmmaking,
-    and writing, I love grabbing the attention of an audience, and rewarding it with a great experience.
-    I enjoy working with diverse and casual teams, with colleagues who believe in constantly honing
-    their skills. I want to contribute to an environment in which people are encouraged to learn, teach, and thrive.`
+    url: '/bootcamp/roster/joshua-destine',
+    /* portfolioUrl: '', */
+    name: 'Joshua Destine',
+    image: JoshImage,
+    linkedin: 'https://www.linkedin.com/in/joshua-destine-26883652',
+    github: 'https://github.com/jdestine22',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JoshuaDestine.pdf',
+    bio: `I am a motivated young man who has at the very minimum at least two reasons to succeed daily.
+    I have two children, for whose beautiful faces I strive everyday to make things.
+    There is no manual on how to make things gel best in life but there is a thought
+    process behind success. That thought process stems through change in our thinking.
+    I like to think I have been more than blessed because I have been given a life that
+    is no more unique than another person's may be, but a life filled with blessings,
+    if I just looked around and appreciated the simple things. I am master of my own fate.
+    I am wired to handle problems even if the answer isn’t written in the clouds,
+    because I will find the answer within. I love technology’s influence on children, and on myself.
+    I love to see how everyone lights up when something cool happens. The joy technology
+    gives everyone is insurmountable in a world were you may not always have joy waiting
+    at your front lawn. I am not afraid to take chances. I have made leaps and bounds
+    at Resilient Coders, and I have done the same at my previous pit stops in life.
+    I am not afraid of what lies ahead but I am determined to make all of my trials
+    and tribulations afraid of me because I have mastered the art to think and conquer.
+    When you hire me you will be hiring someone who will figure it out. Resilient coders
+    is just another chapter in my life where I used my mind in a way not previously engaged,
+    and I see my new career as a web developer being not more than the same.
+    I like to close this off and say knowing how to think is a lot more versatile
+    than knowing what to think and I will get there eventually as my career deepens
+    in web development. `
   },
   {
-    url: '/bootcamp/roster/roger-moraldo',
-    portfolioUrl: 'https://corriger.github.io/pro-play',
-    name: 'Roger Moraldo',
-    image: RogerImage,
-    linkedin: 'https://www.linkedin.com/in/roger-moraldo-00a646122',
-    github: 'https://github.com/Corriger',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_RogerMoraldo.pdf',
-    bio: `As far as I am aware I am the first in my family to have any kind of foot in web development, let alone an
-    affinity for it. Be it for the sake of learning or to make something pleasing to the eye, or to make
-    something that really engages users and makes it easy and intuitive to navigate, I am almost always
-    coding. If not coding I enjoy using Photoshop to manipulate and edit images to better fit with said code.
-    No matter how, even when idle, I am always observing and learning and thinking of how to improve
-    something. This is thanks to my affinity for web development, for drawing, and for writing.`
+    url: '/bootcamp/roster/gerald-dortichon',
+    /* portfolioUrl: '', */
+    name: 'Gerald Dortichon',
+    image: GeraldImage,
+    linkedin: 'https://www.linkedin.com/in/gerald-dortichon-04006b85/',
+    github: 'https://github.com/REGGAEDOR',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_GeraldDortichon.pdf',
+    bio: ``
   },
   {
-    url: '/bootcamp/roster/emilio-murillo',
-    portfolioUrl: 'https://emiliomurillo.github.io/portfoliov4',
-    name: 'Emilio Murillo',
-    image: EmilioImage,
-    linkedin: 'https://www.linkedin.com/in/emilio-murillo-983034134',
-    github: 'https://github.com/EmilioMurillo',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_emiliomurillo.pdf',
-    bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
-      spoken to big crowds as guest speaker, and have led many community organizations in Boston. I know how to
-      communicate well with others in any environment, and in any situation. This allows me to be progressive
-      with no limits. I am also an independent fashion designer. I've drawn from this experience a certain patience, drive,
-      and creative perspective, which influence my approach to designing and building digital products. Semantically structured HTML, responsive CSS,
-      and javascript are just a new set of tools in my kit, with which I intend to make an
-      impact in the tech world.`
+    url: '/bootcamp/roster/yairo-fernandez',
+    /* portfolioUrl: '', */
+    name: 'Yairo Fernandez',
+    image: YairoImage,
+    linkedin: 'https://www.linkedin.com/in/yairof/',
+    github: 'https://github.com/yairof',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_YairoFernandez.pdf',
+    bio: `If there’s anything I have gained over the course of my life, it is definitely resiliency.
+    Like many other inner city youth, I haven’t had the easiest life. But when life throws you lemons
+    you have to make lemonade, right? I have been blessed with a great support system of friends that
+    have always pushed me to do better. My proudest of accomplishments that have been borne from my
+    resiliency was a Google internship I managed to acquire. From that internship I learned about
+    the most practical methods for troubleshooting computers of all kinds. It showed me what the
+    technology field truly has to offer through the traveling and connections I made. Developers
+    would be frequent clients of mine during my internship and hearing about their work would always
+    be a highlight of my day. It completely changed my life’s perspective on what is possible when
+    you put your all into your actions. It also opened my eyes on what my career path could become.
+    I had always been interested in coding and Resilient Coders gave me the perfect vehicle to begin
+    that path.`
   },
   {
-    url: '/bootcamp/roster/maria-ines-peniche',
-    portfolioUrl: 'https://inpen.github.io/inPen/',
-    name: 'Maria Ines Peniche',
+    url: '/bootcamp/roster/jona-ferreira',
+    /* portfolioUrl: '', */
+    name: 'Jona Ferreira',
+    image: JonaImage,
+    linkedin: 'https://www.linkedin.com/in/jona-ferreira-2a9739ab/',
+    github: 'https://github.com/devRomo',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JonaFerreira.pdf',
+    bio: `At a young age I found myself falling in love with music. I taught myself audio engineering,
+    music production and also learned different programs that allowed me to not only own my own music
+    studio, but also to be able to work independently without having to depend on others. I am a
+    professional that grew up in Dorchester, MA and graduated with a Bachelor’s degree in Business
+    Management. I pursued a career corresponding to my degree but never really found myself loving what
+    I did. My true loves are creativity, art, and computers. I was fortunate enough to come across
+    Resilient Coders where I learned core skills of HTML5, CSS and javascript. I am able to be
+    creative while using technology. To be a developer you have to be able to constantly learn
+    something new. I LOVE TO LEARN. My dedication, drive, passion to learn, and my business mindset
+    enables me to be an asset in any team.`
+  },
+  {
+    url: '/bootcamp/roster/malcolm-grant',
+    /* portfolioUrl: '', */
+    name: 'Malcolm Grant',
+    image: MalcolmImage,
+    linkedin: 'https://www.linkedin.com/in/malcolm-grant-37b290149/',
+    github: 'https://github.com/malcolmesgrant',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_MalcolmGrant.pdf',
+    bio: `I learned early, that trial and error was part of the creative process and if I wanted to
+    be unique I would have try... And try.... And try... And try again... As a trend-setter I'm
+    always looking for new things to create or make my own, and web-development gives me the tools
+    to the creative freedom I seek.The first time I made a Task List with javaScript I fell in love.
+    So I expanded my skill set, with semantically structured HTML5, CSS, and an understanding of
+    seperation of concerns and progressive enhancement in user interface development. These skills
+    allow me to work effectively with teams and provide me with the power to create at will.`
+  },
+  {
+    url: '/bootcamp/roster/rene-ibanez',
+    /* portfolioUrl: '', */
+    name: 'Rene Ibanez',
+    image: ReneImage,
+    linkedin: 'https://www.linkedin.com/in/rene-ibanez-867a25147/',
+    github: 'https://github.com/ReneIbanez',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_ReneIbanez.pdf',
+    bio: `Hello my name is Rene and I‘m a Front-end Web Developer. I enjoy programming web
+    applications using HTML, CSS, and JavaScript/jQuery. I look forward to expanding my skills
+    into other frameworks, like React. I work well in a team environment where I can brainstorm
+    ideas with fellow co-workers. I code by adhering to progressive enhancement, with semantically 
+    structured HTML elements, Responsive CSS, and following Separations of Concerns. Growing up
+    I had jobs where I was mentoring youth and witnessing them dealing with poverty coming from
+    low income backgrounds. This experience had me wanting to make a change in my community, and
+    to show the youth an alternate path to a career and that it is, in fact, possible to make change.`
+  },
+  {
+    url: '/bootcamp/roster/sebastian-jaramillo',
+    portfolioUrl: 'https://gyride.github.io/Portfolio/',
+    name: 'Sebastian Jaramillo',
+    image: SebastianImage,
+    linkedin: 'https://www.linkedin.com/in/sebastian-jaramillo-353370149/',
+    github: 'https://github.com/Gyride',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_SebastianJaramillo.pdf',
+    bio: `I like to dive into a problem and immerse myself for hours. I actively look for problems to solve and I work them out quickly and decisively. When I took Calculus in high school, I spent time afterschool proving the derivative shortcuts because I wanted something to do after I finished the regular homework. I aim to take this work ethic with me into the development world, and I’ll always be learning javascript tricks on Stackoverflow or Reddit. And as coding methods evolve, I'll evolve along with them.`
+  },
+  {
+    url: '/bootcamp/roster/farrah-jean',
+    /* portfolioUrl: '', */
+    name: 'Farrah Jean',
+    image: FarrahImage,
+    linkedin: 'https://www.linkedin.com/in/farrah-jean/',
+    github: 'https://github.com/farrahj99',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_FarrahJean.pdf',
+    bio: `Before finding my passion in web development, I attended the University of
+    Massachusetts Boston for Psychology and Sociology as well as Communication Studies.
+    I was doing grassroots marketing with Sony Music and Cornerstone Agency and other
+    brand ambassadors positions, but I was more passionate about my personal blog on
+    culture and lifestyle. Add - I always wanted to learn coding since the days of Tumblr.
+    I enjoyed designing my blog, and became interested in learning more about how to code.
+
+    I first attended General Assembly to become a Front-End Web Developer. I became
+    entranced by the possibilities of manipulating the DOM and creating webpages simply with
+    HTML5 and CSS3. Then, Resilient Coders helped me enhance my skills. I have found my niche
+    with designing and creating an alternate universe, in which a website can be customized
+    and built from scratch through wireframes, sheer imagination and knowledge.
+
+    I enjoy bringing my unique mindset to the field, and eventually want to help other women
+    of color enter this industry too. To diversify the field through education and paying
+    it forward would make me feel accomplished in more ways than one. I am elated to accept
+    any challenge thrown at me. I am looking to bring my creativity and efficiency to a
+    progressive company that continually challenges me to become a better developer.`
+  },
+  {
+    url: '/bootcamp/roster/kevin-lopez',
+    /* portfolioUrl: '', */
+    name: 'Kevin Lopez',
+    image: KevinImage,
+    linkedin: 'https://www.linkedin.com/in/kevin-lopez-965540141/',
+    github: 'https://github.com/kevinlo123',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_KevinLopez.pdf',
+    bio: ``
+  },
+  {
+    url: '/bootcamp/roster/simara-martinez',
+    /* portfolioUrl: '', */
+    name: 'Simara Martinez',
+    image: SimaraImage,
+    linkedin: 'https://www.linkedin.com/in/simara-martinez-296a72146/',
+    github: 'https://github.com/SimaraM27',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_SimaraMartinez.pdf',
+    bio: ``
+  },
+  {
+    url: '/bootcamp/roster/kareem-ahmad-napier',
+    /* portfolioUrl: '', */
+    name: 'Kareem-Ahmad Napier',
+    image: KareemImage,
+    linkedin: 'https://www.linkedin.com/in/codeisfreedom/',
+    github: 'https://github.com/KareemAhmad',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_KareemAhmadNapier.pdf',
+    bio: `I employ my financial strengths, my tech savvy, and my “head-tilted” approach to
+    problems to develop, refine, and perfect systems, both physical and non-physical.
+    Even more, the discovery of coding has sent me on a creational power trip. Currently
+    honing the powers of semantically structured HTML, responsive CSS, vanilla JavaScript,
+    jQuery, and Git, among other aspects of front end dev, I have the backing and close
+    support of a network of coding professionals as I take on my own client work. I ultimately
+    want to be a model and mentor for inner city youth who face obstacles and circumstances
+    brought about by the systematic economy.`
+  },
+  {
+    url: '/bootcamp/roster/maria-payano',
+    /* portfolioUrl: '', */
+    name: 'Maria Payano',
     image: MariaImage,
-    linkedin: 'https://www.linkedin.com/in/ma-in%C3%A9s-peniche-a2a039134/',
-    github: 'https://github.com/InPen',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_mariapeniche.pdf',
-    bio: `As a person who migrated at the age of 10, I’ve learned the meaning of hard work. I’m a fast
-    learner who is always ready for the next challenge and, because of that, I pursue my dreams and
-    re-shape them as I continue to grow as a person and a professional. I’m a sociologist and political
-    science major, who enjoys interacting with people. I feel comfortable working in a fast-paced
-    environment, and thrive in stressful situations. Having been a simultaneous interpreter has made me
-    quick, analytical, communicative, fluently bilingual, and has taught me the value of working in a
-    multicultural environment. Learn more about my experiences as a member of the
-    Dream 9, on NPR: http://latinousa.org/episode/the-dream-9-rb/.`
+    linkedin: 'https://www.linkedin.com/in/maria-payano-88b926a7/',
+    github: 'https://github.com/mpayano',
+    resume: '',
+    bio: ``
   },
   {
-    url: '/bootcamp/roster/jose-pimentel',
-    portfolioUrl: 'http://jedpimentel.github.io/',
-    name: 'Jose Pimentel',
-    image: JoseImage,
-    linkedin: 'https://www.linkedin.com/in/jedpimentel/',
-    github: 'https://github.com/jedpimentel',
-    bio: `I feel most comfortable when covered in a warm blanket of code/data/media. I became interested in
-    programming while studying Industrial Engineering in the Dominican Republic. I practiced algorithms,
-    taught myself HTML, CSS, and JavaScript. I'm hungry for success, love mapping out problems, and enjoy
-    being around interesting people.`
+    url: '/bootcamp/roster/wilson-portillo',
+    /* portfolioUrl: '', */
+    name: 'Wilson Portillo',
+    image: WilsonImage,
+    linkedin: 'https://www.linkedin.com/in/wilson-portillo-76a83897/',
+    github: 'https://github.com/wilsonswraps',
+    resume: '',
+    bio: ``
   },
   {
-    url: '/bootcamp/roster/arnaldo-pires',
-    portfolioUrl: 'https://arnoldpires.github.io/Arnold-portfolio/',
-    name: 'Arnaldo Pires',
-    image: ArnoldImage,
-    linkedin: 'https://www.linkedin.com/in/arnaldo-pires-66721b4b/',
-    github: 'https://github.com/ArnoldPires',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_arnaldopires.pdf',
-    bio: `I’m always asking questions and digging deep into every issue with an analytical growth mindset.
-    My IT support background has enabled me to become a relentless detective, troubleshooting issues until
-    real solutions are found. This attitude has also translated into my approach to web development.
-    Despite previously having very little knowledge of it, Resilient Coders has taught me that learning
-    is really only a matter of time, and persistence; putting in the long hours and having the dedication
-    and passion to learn new things, and then using that knowledge to create products, all excites me.
-    This has empowered me to be a change agent in my community. I'm working on a virtual reality project, which you can experience, using Google cardboard, at https://arnoldpires.github.io/A-Frame-Galaxy`
+    url: '/bootcamp/roster/eddie-nkoyoyo',
+    /* portfolioUrl: '', */
+    name: 'Eddie Nkoyoyo',
+    image: EddieImage,
+    linkedin: '',
+    github: 'https://github.com/Eddy0007',
+    resume: '',
+    bio: ``
   },
-  {
-    url: '/bootcamp/roster/stephen-simpson',
-    name: 'Stephen Simpson',
-    image: StephenImage,
-    linkedin: 'https://www.linkedin.com/in/stephen-simpson-33021b37',
-    github: 'https://github.com/stephentsimpson',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_stephensimpson.pdf',
-    bio: `I'm immensely proud to be a Howard-bred hustler with
-    an insatiable desire for driving transformative social impact.  My experiences in political organizing,
-    education reform, research, and consulting have given me a strong foundation in outreach, data analysis,
-     and organizational strategy.  Through building teams and facilitating collaboration, I embrace the
-     process of refining products to most efficiently create the greatest value.  My commitment to continuous
-     improvement has brought me to Resilient Coders and Startup Institute.
-     Through these experiences I have acquired the distinguishing marketing insights, business acumen and
-     web development skills to drive innovation and value creation in the private sector.`
-  },
-  {
-    url: '/bootcamp/roster/dashawn-watkins',
-    name: 'Dashawn Watkins',
-    image: ShawnImage,
-    linkedin: 'https://www.linkedin.com/in/dashawn-watkins-b27122134',
-    github: 'https://github.com/dashawnwatkins',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_dashawnwatkins.pdf',
-    bio: `I am a hard worker with an insatiable thirst for theory and knowledge.
-    Problem solving comes naturally to an American soldier, as well as not giving up
-    until the job is complete. I have a strong background in community
-    organization, customer service, and IT support. After being the spearhead of a
-    youth organization, an assistant manager at FedEx and then a soldier, I decided
-    to take on the challenge of using my design skills to start a career
-    in front end web development, instead of looking for another
-    "job". When you hire me, you get someone who is dedicated to work, someone
-    who is a team player, someone who can take on the greatest of challenges,
-    someone who can solve a multitude of problems, and most importantly, someone you
-    know will get the job done.`
-  },
+
 ]
