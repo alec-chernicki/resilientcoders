@@ -41,7 +41,7 @@ class RosterMember extends React.Component {
   }
   getMailToLink() {
     const {name} = this.state.member;
-    const sendTo = "david@resilientcoders.org"
+    const sendTo = "stephanie@resilientcoders.org"
     const subject = `Requesting more information about ${name}`;
     const body = `I'd like to request more information about hiring ${name}.`
 
@@ -94,6 +94,7 @@ class RosterMember extends React.Component {
     }
 
     return (
+      /*
       <UILink
         href={resume}
         external={true}
@@ -101,6 +102,8 @@ class RosterMember extends React.Component {
       >
         View Resume
       </UILink>
+      */
+      <p><a href={resume} target="_blank">View Resume</a></p>
     );
   }
   renderPortfolio() {

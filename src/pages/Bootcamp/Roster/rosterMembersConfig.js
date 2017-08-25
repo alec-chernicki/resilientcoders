@@ -39,9 +39,9 @@ export default [
     /* portfolioUrl: '', */
     name: 'Nicola Briggs',
     image: NicolaImage,
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/nicola-briggs-511373149/',
     github: 'https://github.com/Nicolacodes',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_NicolaBriggs.pdf',
+    resume: '',
     bio: ``
   },
   {
@@ -52,27 +52,19 @@ export default [
     linkedin: 'https://www.linkedin.com/in/joshua-destine-26883652',
     github: 'https://github.com/jdestine22',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JoshuaDestine.pdf',
-    bio: `I am a motivated young man who has at the very minimum at least two reasons to succeed daily.
-    I have two children, for whose beautiful faces I strive everyday to make things.
-    There is no manual on how to make things gel best in life but there is a thought
-    process behind success. That thought process stems through change in our thinking.
-    I like to think I have been more than blessed because I have been given a life that
-    is no more unique than another person's may be, but a life filled with blessings,
-    if I just looked around and appreciated the simple things. I am master of my own fate.
-    I am wired to handle problems even if the answer isn’t written in the clouds,
-    because I will find the answer within. I love technology’s influence on children, and on myself.
-    I love to see how everyone lights up when something cool happens. The joy technology
-    gives everyone is insurmountable in a world were you may not always have joy waiting
-    at your front lawn. I am not afraid to take chances. I have made leaps and bounds
-    at Resilient Coders, and I have done the same at my previous pit stops in life.
-    I am not afraid of what lies ahead but I am determined to make all of my trials
-    and tribulations afraid of me because I have mastered the art to think and conquer.
-    When you hire me you will be hiring someone who will figure it out. Resilient coders
-    is just another chapter in my life where I used my mind in a way not previously engaged,
-    and I see my new career as a web developer being not more than the same.
-    I like to close this off and say knowing how to think is a lot more versatile
-    than knowing what to think and I will get there eventually as my career deepens
-    in web development. `
+    bio: `I am a motivated young man who has a minimum of two reasons to succeed.
+    I have two children that I strive to make things happen for daily. There is no
+    manual on how to make things gel best in life, but there is an application
+    process behind success. With such positivity at home, I aim to come to work with
+    a free and positive mindset, ready to code rigorously. Freedom through coding
+    gives me the ability to build and produce creative ideas; and I love that sense of calmness.
+    Turning imagination into reality is very much an everyday possibility and I enjoy my
+    transformation into a tech wizard. I am a quick learner. And with the training I'm getting
+    at Resilient Coders, I am developing my talent more and more. I aspire to be a full stack
+    developer, and my dedication will guide me to get there. I am very grateful for the
+    fundamentals Resilient Coders has taught me but most of all I think of my chance to expound
+    on my creative juices and explore every boundary in web development. I seek out challenges
+    daily and will not stop until my goals are exceeded. `
   },
   {
     url: '/bootcamp/roster/gerald-dortichon',
@@ -81,8 +73,16 @@ export default [
     image: GeraldImage,
     linkedin: 'https://www.linkedin.com/in/gerald-dortichon-04006b85/',
     github: 'https://github.com/REGGAEDOR',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_GeraldDortichon.pdf',
-    bio: ``
+    resume: '',
+    bio: `As a first generation immigrant from the beautiful isle of Jamaica, my journey towards
+    success and the ever-elusive American Dream has been quite arduous, mostly due to a lack of access.
+    Thankfully, Resilient Coders has allowed me to remedy that situation with an intensive and rigorous
+    front-end development curriculum that has given me not only the skill set but also the confidence
+    to match my limitless ambition. Now I not only have the power to make the intangible malleable by
+    bringing someone's idea or passion to the forefront of the digital space in the form of a website,
+    I also have the tools to fuel the engine of endless creativity that is my consciousness. I am
+    passionate about bringing every client's vision to full realization and fruition from layout and
+    UI design to content and fluidity.`
   },
   {
     url: '/bootcamp/roster/yairo-fernandez',
@@ -91,7 +91,7 @@ export default [
     image: YairoImage,
     linkedin: 'https://www.linkedin.com/in/yairof/',
     github: 'https://github.com/yairof',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_YairoFernandez.pdf',
+    resume: '',
     bio: `If there’s anything I have gained over the course of my life, it is definitely resiliency.
     Like many other inner city youth, I haven’t had the easiest life. But when life throws you lemons
     you have to make lemonade, right? I have been blessed with a great support system of friends that
@@ -151,7 +151,7 @@ export default [
     bio: `Hello my name is Rene and I‘m a Front-end Web Developer. I enjoy programming web
     applications using HTML, CSS, and JavaScript/jQuery. I look forward to expanding my skills
     into other frameworks, like React. I work well in a team environment where I can brainstorm
-    ideas with fellow co-workers. I code by adhering to progressive enhancement, with semantically 
+    ideas with fellow co-workers. I code by adhering to progressive enhancement, with semantically
     structured HTML elements, Responsive CSS, and following Separations of Concerns. Growing up
     I had jobs where I was mentoring youth and witnessing them dealing with poverty coming from
     low income backgrounds. This experience had me wanting to make a change in my community, and
@@ -164,7 +164,7 @@ export default [
     image: SebastianImage,
     linkedin: 'https://www.linkedin.com/in/sebastian-jaramillo-353370149/',
     github: 'https://github.com/Gyride',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_SebastianJaramillo.pdf',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JaramilloSebastian.pdf',
     bio: `I like to dive into a problem and immerse myself for hours. I actively look for problems to solve and I work them out quickly and decisively. When I took Calculus in high school, I spent time afterschool proving the derivative shortcuts because I wanted something to do after I finished the regular homework. I aim to take this work ethic with me into the development world, and I’ll always be learning javascript tricks on Stackoverflow or Reddit. And as coding methods evolve, I'll evolve along with them.`
   },
   {
@@ -202,7 +202,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/kevin-lopez-965540141/',
     github: 'https://github.com/kevinlo123',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_KevinLopez.pdf',
-    bio: ``
+    bio: `I’ve always had an interest in technology and video games, I would think to myself “How was the original Super Mario Bros made?” Since I have began coding I have found that it’s my passion, and I am a person who perseveres through problems even when things get hard. Coming from a family who emigrated from Colombia I have learned that good things come to those who work hard. Web development has changed my life. The satisfaction of building something from nothing is what drives me to get better every day. I love learning new things, and through my experiences with Resilient Coders I have become proficient in HTML, CSS and Javascript.  I am ready to take on a career in web development and one day become a full stack developer.`
   },
   {
     url: '/bootcamp/roster/simara-martinez',
@@ -211,15 +211,20 @@ export default [
     image: SimaraImage,
     linkedin: 'https://www.linkedin.com/in/simara-martinez-296a72146/',
     github: 'https://github.com/SimaraM27',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_SimaraMartinez.pdf',
-    bio: ``
+    resume: '',
+    bio: `All my life I knew my creative side would earn my million dollar paycheck.
+    I believe the appearance of a website is the most important thing for a business.
+    It can be the factor that can make or set you apart from competitors. My once
+    Entrepreneurship major and my love for the “who wore it better” section of a
+    magazine wouldn’t allow me to settle for a basic theme. I have dreams to one day
+    have a successful blog, without a care for ending up on the “who wore it better list.” `
   },
   {
     url: '/bootcamp/roster/kareem-ahmad-napier',
     /* portfolioUrl: '', */
     name: 'Kareem-Ahmad Napier',
     image: KareemImage,
-    linkedin: 'https://www.linkedin.com/in/codeisfreedom/',
+    linkedin: 'https://linkedin.com/in/KareemAhmad/',
     github: 'https://github.com/KareemAhmad',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_KareemAhmadNapier.pdf',
     bio: `I employ my financial strengths, my tech savvy, and my “head-tilted” approach to
@@ -230,6 +235,21 @@ export default [
     support of a network of coding professionals as I take on my own client work. I ultimately
     want to be a model and mentor for inner city youth who face obstacles and circumstances
     brought about by the systematic economy.`
+  },
+  {
+    url: '/bootcamp/roster/eddie-nkoyoyo',
+    /* portfolioUrl: '', */
+    name: 'Eddie Nkoyoyo',
+    image: EddieImage,
+    linkedin: '',
+    github: 'https://github.com/Eddy0007',
+    resume: '',
+    bio: `I'm a cutting-edge magician. My spell is cast on transforming technical and graphical
+    material into websites, using standard best practices. My portfolio showcases a lineup of my
+    most recent tricks, and I'm always ready for new development opportunities. Plus, I have plenty of
+    room new ideas and platforms. A professional sports background makes me a great team player,
+    with great positive energy, who is fun to work with.
+`
   },
   {
     url: '/bootcamp/roster/maria-payano',
@@ -249,17 +269,18 @@ export default [
     linkedin: 'https://www.linkedin.com/in/wilson-portillo-76a83897/',
     github: 'https://github.com/wilsonswraps',
     resume: '',
-    bio: ``
+    bio: `At Resilient Coders, I have been able to take a grasp on the art of coding.
+    It’s amazing what you can learn with a little ambition, hustle and drive. Before this bootcamp,
+    I saw coding as a career path unattainable without a college degree. The fact that we have crammed
+    4 years of college into 8 weeks of studies keeps me in awe. With a creative background in print,
+    design and installation, I have always understood how to take a client's concept and create a design
+    based on developing more customer traffic and revenue. I will now be able to take the same principles
+    I have learned out in the entrepreneurial world and utilize them in my future on the web. I hope to
+    one day take my knowledge of HTML, CSS and JavaScript and become a full-stack developer.
+    My leadership and communication skills helped me start my own business and have taught me that
+    you will learn more from your downfalls than from your glory.  As one of my favorite quotes puts it,
+    “You miss 100 percent of the shots you don’t take.” This is one shot I will not miss.`
   },
-  {
-    url: '/bootcamp/roster/eddie-nkoyoyo',
-    /* portfolioUrl: '', */
-    name: 'Eddie Nkoyoyo',
-    image: EddieImage,
-    linkedin: '',
-    github: 'https://github.com/Eddy0007',
-    resume: '',
-    bio: ``
-  },
+
 
 ]
