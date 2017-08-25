@@ -41,8 +41,18 @@ export default [
     image: NicolaImage,
     linkedin: 'https://www.linkedin.com/in/nicola-briggs-511373149/',
     github: 'https://github.com/Nicolacodes',
-    resume: '',
-    bio: ``
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_NicolaBriggs.pdf',
+    bio: `I've always been the quiet girl at the sidelines waiting to make an positive impact but
+    not knowing how. Now that I've began coding, I believe I can finally get a chance to do that.
+    With my new skills in html, css and javascript, I want to start building websites for companies
+    that try to make a positive change in this world. I am also looking to create a website myself
+    that I hope can make a change, specifically in low-income communities. One of my goals is to
+    soon build a website for people in low-income communities that suffer from mental illness.
+    Mental Illness is something that usually goes ignored, or untreated in these communities mainly
+    because it is not covered by insurance and treatment can sometimes be expensive. Because of this,
+    I want to create a website that provides these services for free so there soon can be a  decrease
+    in the amount of untreated mental disorders in low income communities. Since I am going back to
+    school soon I will not be able to work full time, but am still open for clients to do freelance work for.`
   },
   {
     url: '/bootcamp/roster/joshua-destine',
