@@ -277,8 +277,8 @@ export default [
     name: 'Wilson Portillo',
     image: WilsonImage,
     linkedin: 'https://www.linkedin.com/in/wilson-portillo-76a83897/',
-    github: 'https://github.com/wilsonswraps',
-    resume: '',
+    github: 'https://github.com/wilson-portillo',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_WilsonPortillo.pdf',
     bio: `At Resilient Coders, I have been able to take a grasp on the art of coding.
     It’s amazing what you can learn with a little ambition, hustle and drive. Before this bootcamp,
     I saw coding as a career path unattainable without a college degree. The fact that we have crammed
