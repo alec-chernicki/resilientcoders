@@ -89,6 +89,7 @@ class RosterMember extends React.Component {
   }
   renderResumeLink() {
     const {resume} = this.state.member;
+    const demoday = "https://www.eventbrite.com/e/resilient-coders-demo-day-at-workbar-tickets-36959812795";
     if (!resume) {
       return null;
     }
@@ -103,7 +104,8 @@ class RosterMember extends React.Component {
         View Resume
       </UILink>
       */
-      <p><a href={resume} target="_blank">View Resume</a></p>
+
+      <p><a href={resume} target="_blank">View My Resume</a> and Meet Me at <a href={demoday} target="_blank">Demo Day</a></p>
     );
   }
   renderPortfolio() {
