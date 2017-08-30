@@ -10,7 +10,7 @@ import SebastianImage from './RosterMemberImages/sebastian.png';
 import FarrahImage from './RosterMemberImages/farrah.png';
 import KevinImage from './RosterMemberImages/kevin.png';
 import SimaraImage from './RosterMemberImages/simara.png';
-import KareemImage from './RosterMemberImages/kareem.png';
+import KareemImage from './RosterMemberImages/kareem.jpg';
 import MariaImage from './RosterMemberImages/maria_p.png';
 import WilsonImage from './RosterMemberImages/wilson.png';
 import EddieImage from './RosterMemberImages/eddie.png';
@@ -253,8 +253,25 @@ export default [
     image: MariaImage,
     linkedin: 'https://www.linkedin.com/in/maria-payano-88b926a7/',
     github: 'https://github.com/mpayano',
-    resume: '',
-    bio: ``
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_MariaPayano.png',
+    bio: `I am Junior Front End Web Developer who is a highly motivated self-starter with an
+    aptitude and passion to continually learn. My focus in this field is in HTML, CSS and Javascript.
+    In the past I worked in the education field as a mentor and teacher and in the hospitality industry.
+    These experiences have helped me hone my communication skills, teamwork and strengthen my planning
+    and organizational skills. By demanding hard work and determination, my time at Resilient Coders
+    has not only given me the opportunity to learn web development, but also serves as a reminder that
+    success comes with sacrifices. As a first generation immigrant from the Dominican Republic I see it
+    as my duty to continue my parents’ dream of becoming self-made, independent, and financially free.
+    My path to becoming “self-made” begins with obtaining a job at a company as a junior web developer
+    where I will bring my technical skills, social skills, determination, and resilience in achieving
+    the mission of the company. Web development has given me the opportunity to apply my artistic and
+    creative lifestyle to a flourishing career, which allows me to build exciting things with amazing
+    people. Coming from the performing arts and pageant world I love putting on a show and rewarding
+    people with a great experience. I plan to do the same with my work in this field, by designing
+    enticing web pages that will keep the user captivated. I am currently in the process of building
+    my “side hustle”, a personal blog where I will share my love for culture, dance, fashion, and my
+    favorite topic, love and relationships. Blogging will be my tool to continue learning and developing
+    my technical skills.`
   },
   {
     url: '/bootcamp/roster/wilson-portillo',
