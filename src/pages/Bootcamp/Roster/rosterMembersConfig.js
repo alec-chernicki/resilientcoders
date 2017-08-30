@@ -189,7 +189,7 @@ export default [
     Massachusetts Boston for Psychology and Sociology as well as Communication Studies.
     I was doing grassroots marketing with Sony Music and Cornerstone Agency and other
     brand ambassadors positions, but I was more passionate about my personal blog on
-    culture and lifestyle. Add - I always wanted to learn coding since the days of Tumblr.
+    culture and lifestyle. I always wanted to learn coding since the days of Tumblr.
     I enjoyed designing my blog, and became interested in learning more about how to code.
 
     I first attended General Assembly to become a Front-End Web Developer. I became
@@ -247,21 +247,6 @@ export default [
     brought about by the systematic economy.`
   },
   {
-    url: '/bootcamp/roster/eddie-nkoyoyo',
-    /* portfolioUrl: '', */
-    name: 'Eddie Nkoyoyo',
-    image: EddieImage,
-    linkedin: '',
-    github: 'https://github.com/Eddy0007',
-    resume: '',
-    bio: `I'm a cutting-edge magician. My spell is cast on transforming technical and graphical
-    material into websites, using standard best practices. My portfolio showcases a lineup of my
-    most recent tricks, and I'm always ready for new development opportunities. Plus, I have plenty of
-    room new ideas and platforms. A professional sports background makes me a great team player,
-    with great positive energy, who is fun to work with.
-`
-  },
-  {
     url: '/bootcamp/roster/maria-payano',
     /* portfolioUrl: '', */
     name: 'Maria Payano',
@@ -291,6 +276,19 @@ export default [
     you will learn more from your downfalls than from your glory.  As one of my favorite quotes puts it,
     “You miss 100 percent of the shots you don’t take.” This is one shot I will not miss.`
   },
-
+  {
+    url: '/bootcamp/roster/edirisa-sentongo',
+    /* portfolioUrl: '', */
+    name: 'Edirisa N. Sentongo',
+    image: EddieImage,
+    linkedin: '',
+    github: 'https://github.com/Eddy0007',
+    resume: '',
+    bio: `I'm a cutting-edge magician. My spell is cast on transforming technical and graphical
+    material into websites, using standard best practices. My portfolio showcases a lineup of my
+    most recent tricks, and I'm always ready for new development opportunities. Plus, I have plenty of
+    room new ideas and platforms. A professional sports background makes me a great team player,
+    with great positive energy, who is fun to work with.`
+  },
 
 ]
