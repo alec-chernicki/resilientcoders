@@ -105,7 +105,7 @@ class RosterMember extends React.Component {
       </UILink>
       */
 
-      <p><a href={resume} target="_blank">View My Resume</a> and Meet Me at <a href={demoday} target="_blank">Demo Day</a></p>
+      <p><a href={resume} target="_blank">View My Resume</a></p>
     );
   }
   renderPortfolio() {
