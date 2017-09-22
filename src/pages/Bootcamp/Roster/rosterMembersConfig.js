@@ -62,6 +62,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/joshua-destine-26883652',
     github: 'https://github.com/jdestine22',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JoshuaDestine.pdf',
+    project: 'https://jdestine22.github.io/memory-game/index.html#',
     bio: `I am a motivated young man who has a minimum of two reasons to succeed.
     I have two children that I strive to make things happen for daily. There is no
     manual on how to make things gel best in life, but there is an application
@@ -74,7 +75,7 @@ export default [
     developer, and my dedication will guide me to get there. I am very grateful for the
     fundamentals Resilient Coders has taught me but most of all I think of my chance to expound
     on my creative juices and explore every boundary in web development. I seek out challenges
-    daily and will not stop until my goals are exceeded. `
+    daily and will not stop until my goals are exceeded.`
   },
   {
     url: '/bootcamp/roster/gerald-dortichon',
@@ -122,6 +123,7 @@ export default [
     image: JonaImage,
     linkedin: 'https://www.linkedin.com/in/jona-ferreira-2a9739ab/',
     github: 'https://github.com/devRomo',
+    project: 'https://rawgit.com/devRomo/jfpiano/master/index.html',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JonaFerreira.pdf',
     bio: `At a young age I found myself falling in love with music. I taught myself audio engineering,
     music production and also learned different programs that allowed me to not only own my own music
@@ -174,6 +176,7 @@ export default [
     image: SebastianImage,
     linkedin: 'https://www.linkedin.com/in/sebastian-jaramillo-353370149/',
     github: 'https://github.com/Gyride',
+    project: 'https://gyride.github.io/SlidingPuzzle/',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JaramilloSebastian.pdf',
     bio: `I like to dive into a problem and immerse myself for hours. I actively look for problems to solve and I work them out quickly and decisively. When I took Calculus in high school, I spent time afterschool proving the derivative shortcuts because I wanted something to do after I finished the regular homework. I aim to take this work ethic with me into the development world, and I’ll always be learning javascript tricks on Stackoverflow or Reddit. And as coding methods evolve, I'll evolve along with them.`
   },
@@ -185,6 +188,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/farrah-jean/',
     github: 'https://github.com/farrahj99',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_FarrahJean.pdf',
+    project: 'https://farrahj99.github.io/Black-Girl-Magic-Interactive-Book/BGM.html',
     bio: `Before finding my passion in web development, I attended the University of
     Massachusetts Boston for Psychology and Sociology as well as Communication Studies.
     I was doing grassroots marketing with Sony Music and Cornerstone Agency and other

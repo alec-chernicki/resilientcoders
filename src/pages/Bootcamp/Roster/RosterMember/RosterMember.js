@@ -108,6 +108,17 @@ class RosterMember extends React.Component {
       <p><a href={resume} target="_blank">View My Resume</a></p>
     );
   }
+  renderProjectLink() {
+    const {project} = this.state.member;
+    if (!project) {
+      return null;
+    }
+
+    return (
+
+      <p><a href={project} target="_blank">See a sample of my work</a></p>
+    );
+  }
   renderPortfolio() {
     const {portfolioUrl} = this.state.member;
 
@@ -178,6 +189,7 @@ class RosterMember extends React.Component {
                     {bio}
                   </p>
                   {this.renderResumeLink()}
+                  {this.renderProjectLink()}
                   <UIButton href={this.getMailToLink()}>
                     Request more info
                   </UIButton>
