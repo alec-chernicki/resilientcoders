@@ -8,6 +8,8 @@ import JoshImage from './TeamMemberImages/josh.jpg';
 import PamelaImage from './TeamMemberImages/pamela.jpg';
 import CaImage from './TeamMemberImages/ca.jpg';
 import FredImage from './TeamMemberImages/fred.png';
+import StephanieImage from './TeamMemberImages/stephanie.png';
+import RouguiImage from './TeamMemberImages/rougui.png';
 
 export default [
   {
@@ -36,18 +38,6 @@ export default [
     featured in numerous publications including Tech Crunch, Black Enterprise, and the Boston Globe.`
   },
   {
-    name: 'Helen Rosenfeld',
-    image: HelenImage,
-    role: 'Head of Strategic Partnerships',
-    text: `Helen is committed to working on behalf of youth. She has led a series of youth
-      development organizations, utilizing entrepreneurship as a tool to increase skills of
-      underserved youth for success in school and life. She loves the startup phase of
-      organizational development, raising funds, and building strategic partnerships. A grad of
-      UPenn (BA) and Cambridge (MPhil), she is an Overseer with the Boston Children's Museum and
-      is an advisor to Friends of Seva Mandir, supporting the non-profit that she first worked with
-      in Rajasthan, India where she began her career.`
-  },
-  {
     name: 'Muigai Unaka',
     image: MuigaiImage,
     role: 'Resilient Lab Lead',
@@ -55,6 +45,26 @@ export default [
       and interactive media. He has a passion for user interface design, and hopes to one day be
       part of a special projects team, designing and building products that redefine how we interact
       with each other. Also, his great-grandfather is Jomo Kenyatta.`
+  },
+  {
+    name: 'Rougui Diallo',
+    image: RouguiImage,
+    role: 'Chief of Staff',
+    text: `Prior to joining Resilient Coders, Rougui worked for 2+ years in management consulting,
+    focusing on the social sector and non-profits. During her time at McKinsey & Company, she built
+    extensive experience in performance management, business strategy and impact assessment. Rougui
+    is an entrepreneurial and creative problem solver who is driven by the idea of unlocking the potential
+    of organisations and helping leaders accomplish and scale their visions.`
+  },
+  {
+    name: 'Stephanie Castaños',
+    image: StephanieImage,
+    role: 'Relationship Manager',
+    text: `Stephanie Castaños is an artist with a background in event marketing and the entertainment
+    industry. Stephanie has worked with spanish-speaking network Telemundo, and TheTruth.com - the
+    nation's largest tobacco prevention campaign. In the past few years, she has immersed herself in the
+    Boston startup world and continues to learn how to use business and technology for social good.
+    When she’s not building relationships, you can find her time traveling at the MFA.`
   },
   {
     name: 'Alec Ortega',
