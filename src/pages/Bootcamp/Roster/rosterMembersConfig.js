@@ -27,6 +27,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/timothy-blake-5a5756147/',
     github: 'https://github.com/timblake17',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_TimBlake.pdf',
+    video: 'https://soapbox.wistia.com/videos/0IFsQ22Ock',
     bio: `I consider myself a creative problem solver and I love the thrill of a challenge.
     I started off as a mechanic at a young age, having a natural talent for diagnosing and
     fixing problems. After 7 years in the field I felt like there were greater opportunities where I could
@@ -63,6 +64,7 @@ export default [
     github: 'https://github.com/jdestine22',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JoshuaDestine.pdf',
     project: 'https://jdestine22.github.io/memory-game/index.html#',
+    video: 'https://soapbox.wistia.com/videos/LDT3nF6sKR',
     bio: `I am a motivated young man who has a minimum of two reasons to succeed.
     I have two children that I strive to make things happen for daily. There is no
     manual on how to make things gel best in life, but there is an application
@@ -85,6 +87,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/gerald-dortichon-04006b85/',
     github: 'https://github.com/REGGAEDOR',
     resume: '',
+    video:'https://soapbox.wistia.com/videos/zIGsI9GZph',
     bio: `As a first generation immigrant from the beautiful isle of Jamaica, my journey towards
     success and the ever-elusive American Dream has been quite arduous, mostly due to a lack of access.
     Thankfully, Resilient Coders has allowed me to remedy that situation with an intensive and rigorous
@@ -125,6 +128,7 @@ export default [
     github: 'https://github.com/devRomo',
     project: 'https://rawgit.com/devRomo/jfpiano/master/index.html',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JonaFerreira.pdf',
+    video: 'https://soapbox.wistia.com/videos/TZ5WpfUmV0',
     bio: `At a young age I found myself falling in love with music. I taught myself audio engineering,
     music production and also learned different programs that allowed me to not only own my own music
     studio, but also to be able to work independently without having to depend on others. I am a
@@ -144,6 +148,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/malcolm-grant-37b290149/',
     github: 'https://github.com/malcolmesgrant',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_MalcolmGrant.pdf',
+    video: 'https://soapbox.wistia.com/videos/AWeyyy1BfT',
     bio: `I learned early, that trial and error was part of the creative process and if I wanted to
     be unique I would have try... And try.... And try... And try again... As a trend-setter I'm
     always looking for new things to create or make my own, and web-development gives me the tools
@@ -160,6 +165,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/rene-ibanez-867a25147/',
     github: 'https://github.com/ReneIbanez',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_ReneIbanez.pdf',
+    video: 'https://soapbox.wistia.com/videos/gDAfbwUinf',
     bio: `Hello my name is Rene and I‘m a Front-end Web Developer. I enjoy programming web
     applications using HTML, CSS, and JavaScript/jQuery. I look forward to expanding my skills
     into other frameworks, like React. I work well in a team environment where I can brainstorm
@@ -178,6 +184,7 @@ export default [
     github: 'https://github.com/Gyride',
     project: 'https://gyride.github.io/SlidingPuzzle/',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_JaramilloSebastian.pdf',
+    video: 'https://soapbox.wistia.com/videos/a86nT3bhJ8',
     bio: `I like to dive into a problem and immerse myself for hours. I actively look for problems to solve and I work them out quickly and decisively. When I took Calculus in high school, I spent time afterschool proving the derivative shortcuts because I wanted something to do after I finished the regular homework. I aim to take this work ethic with me into the development world, and I’ll always be learning javascript tricks on Stackoverflow or Reddit. And as coding methods evolve, I'll evolve along with them.`
   },
   {
@@ -189,6 +196,7 @@ export default [
     github: 'https://github.com/farrahj99',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_FarrahJean.pdf',
     project: 'https://farrahj99.github.io/Black-Girl-Magic-Interactive-Book/BGM.html',
+    video: 'https://soapbox.wistia.com/videos/y8wNHYMUuf',
     bio: `Before finding my passion in web development, I attended the University of
     Massachusetts Boston for Psychology and Sociology as well as Communication Studies.
     I was doing grassroots marketing with Sony Music and Cornerstone Agency and other
@@ -216,6 +224,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/kevin-lopez-965540141/',
     github: 'https://github.com/kevinlo123',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_KevinLopez.pdf',
+    video: 'https://soapbox.wistia.com/videos/hFNPCcUUBh',
     bio: `I’ve always had an interest in technology and video games, I would think to myself “How was the original Super Mario Bros made?” Since I have began coding I have found that it’s my passion, and I am a person who perseveres through problems even when things get hard. Coming from a family who emigrated from Colombia I have learned that good things come to those who work hard. Web development has changed my life. The satisfaction of building something from nothing is what drives me to get better every day. I love learning new things, and through my experiences with Resilient Coders I have become proficient in HTML, CSS and Javascript.  I am ready to take on a career in web development and one day become a full stack developer.`
   },
   {
@@ -257,6 +266,7 @@ export default [
     image: MariaImage,
     linkedin: 'https://www.linkedin.com/in/maria-payano-88b926a7/',
     github: 'https://github.com/mpayano',
+    video: 'https://soapbox.wistia.com/videos/Ddm48WqCwK',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_MariaPayano.png',
     bio: `I am Junior Front End Web Developer who is a highly motivated self-starter with an
     aptitude and passion to continually learn. My focus in this field is in HTML, CSS and Javascript.
@@ -284,6 +294,7 @@ export default [
     image: WilsonImage,
     linkedin: 'https://www.linkedin.com/in/wilson-portillo-76a83897/',
     github: 'https://github.com/wilson-portillo',
+    video: 'https://soapbox.wistia.com/videos/610cqokpbO',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_WilsonPortillo.pdf',
     bio: `At Resilient Coders, I have been able to take a grasp on the art of coding.
     It’s amazing what you can learn with a little ambition, hustle and drive. Before this bootcamp,
@@ -305,6 +316,7 @@ export default [
     linkedin: '',
     github: 'https://github.com/Eddy0007',
     resume: '',
+    video: 'https://soapbox.wistia.com/videos/t1KkPzhL3v',
     bio: `I'm a cutting-edge magician. My spell is cast on transforming technical and graphical
     material into websites, using standard best practices. My portfolio showcases a lineup of my
     most recent tricks, and I'm always ready for new development opportunities. Plus, I have plenty of

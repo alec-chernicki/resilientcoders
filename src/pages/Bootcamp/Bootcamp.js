@@ -212,10 +212,10 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>Current Bootcamp</h2>
                   <p>
-                    Our Summer Bootcamp(Base) is well underway, and we are recruiting for the fall Bootcamp(MERN).
+                    Our fall Bootcamp(MERN) is well underway, and we are recruiting for the winter Bootcamp(BASE), which will begin in January.
                     Interested in applying? Come to one of our next Hackathons,
-                    from which we recruit, on Monday 8/14 from 10 to 5, at 50 Milk St 5th floor, or Saturday 8/19 from 10 to 5,
-                    at the Roxbury Innovation Center in Dudley Square.
+                    from which we recruit, on Saturday 12/2 from 10 to 5, at 50 Milk St 11th floor, or Friday 12/8 from 10 to 5,
+                    also at 50 Milk St, but on the 5th floor.
                   </p>
                   {/*
                   <p>
