@@ -64,7 +64,8 @@ class Bootcamp extends PureComponent {
                   <p className="text-on-dark">
                     We run two hackathons before each Bootcamp, from which we recruit our students.
                     They’re each about seven hours long, and are meant as a way for staff, alumni, and
-                    prospective students to get to know each other. This is the only way to "apply." <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the next one.</a>
+                    prospective students to get to know each other. This is the only way to "apply." 
+                    <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the next one.</a>
                   </p>
                 </UIFlex>
               </UIFlexRow>
@@ -223,7 +224,9 @@ class Bootcamp extends PureComponent {
                     bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
                   </p>
                   */}
-                  <UIButton to="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
+                  <UIButton 
+                    external={true}
+                    href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
                     Sign up
                   </UIButton>
                 </UICard>
