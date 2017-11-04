@@ -64,7 +64,7 @@ class Bootcamp extends PureComponent {
                   <p className="text-on-dark">
                     We run two hackathons before each Bootcamp, from which we recruit our students.
                     They’re each about seven hours long, and are meant as a way for staff, alumni, and
-                    prospective students to get to know each other. This is the only way to "apply." 
+                    prospective students to get to know each other. This is the only way to "apply."
                     <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the next one.</a>
                   </p>
                 </UIFlex>
@@ -201,9 +201,9 @@ class Bootcamp extends PureComponent {
                   <p>
                     The idea behind our Bootcamp is an audacious one: Take a small cohort of young
                     people, who face more challenges than most, who have been hand-picked by our
-                    partners for their grit, and teach them fundamentals of web development so that
+                    partners for their grit, and teach them to be javascript developers, so that
                     they may have access to a real career. From Bootcamp, mentorship, and Resilient Lab,
-                    through additional on-the-job support, we <a href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">ensure that our coders are successful</a> at
+                    through additional on-the-job support, we ensure that our coders are successful at
                     at that first gig.
                   </p>
 
@@ -224,7 +224,7 @@ class Bootcamp extends PureComponent {
                     bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
                   </p>
                   */}
-                  <UIButton 
+                  <UIButton
                     external={true}
                     href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
                     Sign up
@@ -312,8 +312,7 @@ class Bootcamp extends PureComponent {
                   <p>
                   Our Summer Bootcamp(Base) is well underway, and we are recruiting for the fall Bootcamp(MERN).
                   Interested in applying? Come to one of our next Hackathons,
-                  from which we recruit, on Monday 8/14 from 10 to 5, at 50 Milk St 5th floor, or Saturday 8/19 from 10 to 5,
-                  at the Roxbury Innovation Center in Dudley Square.
+                  from which we recruit.
                   </p>
                   <UIButton to="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
                     Sign up

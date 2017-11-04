@@ -53,7 +53,7 @@ class Lab extends React.PureComponent {
           image={LabHeroImage}
           short={true}
           titleOne="Resilient Lab"
-          text="A digital agency that empowers young people through real world experience."
+          text="A digital agency that employs our recent graduates to build websites and applications for clients."
         />
         <UILayout>
           <UISection>
@@ -78,10 +78,10 @@ class Lab extends React.PureComponent {
               <UIFlex basis="40%" className="hero-card-first">
                 <UICard use="secondary" className="p-all-6 with-shadow full-height">
                   <h3 className="m-top-0">What we do:</h3>
-                  <p>Front End Development</p>
-                  <p>UI Design and & Prototyping</p>
-                  <p>UX Research</p>
-                  <UIButton href="mailto:david@resilientcoders.org">
+                  <p>UI Design and Development</p>
+                  <p>JavaScript Applications</p>
+                  <p>Wordpress custom theming</p>
+                  <UIButton href="mailto:stephanie@resilientcoders.org">
                     Email to learn more
                   </UIButton>
                 </UICard>
@@ -125,28 +125,13 @@ class Lab extends React.PureComponent {
                 What kind of work can you do?
               </h2>
               <p className="m-bottom-6">
-                Our young people are most comfortable with relatively simple websites, and
-                custom Wordpress theming. But our partnership with East Coast Product allows us
-                to do pretty much anything. We've teamed up to build software using React, for
-                example. Our friends at ECP delegated out to our students the work that was
-                appropriate to their skills; a set that grew over the course of the project.
-                Whether or not we're working with ECP on a particular project, every line of
-                code that goes out is vetted by a professional. We hold our hackers to
-                professional standards.
+                Just about anything. While it's true that our Technical Fellows are new to the field,
+                they are not admitted into the Lab without first having built an application in JavaScript,
+                from scratch. Every single member of the Lab has a professional level of proficiency in JavaScript.
+                The Lab has built applications in React and Angular, as well as a data visualization app in D3.
+                Additionally, all of their work is vetted and guided by seasoned professionals.
               </p>
-              <h2>
-                How does the money work?
-              </h2>
-              <p>
-                Basically, half of the money that we make on a Resilient Lab project goes to pay
-                for the wages of those who worked on it. The other half is invested in their
-                education. The idea is that a young person will be hired to build something that
-                lies just outside the realm of his expertise. He will be paired up with a more
-                senior-level person who then delegates skill-appropriate work to the young
-                person, and mentors him throughout the job. They may spend an hour learning, for
-                every hour spent working. Our quote covers the instructor's time, and the youth
-                coder's time, with the understanding that half of their time was spent learning.
-              </p>
+
             </UICard>
           </UISection>
         </UILayout>
