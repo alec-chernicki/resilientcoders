@@ -59,7 +59,8 @@ class GetInvolvedCompany extends React.PureComponent {
                     graduates are recruited into a paid apprenticeship at Resilient Lab, our digital
                     agency. There, they further develop their technical skills, as well as core
                     professional skills, while working for a client. You can help launch their careers
-                    by hiring us to build your website.
+                    by hiring us to build your website or web application. We design and build custom Wordpress themes,
+                    as well as more extensive projects involving Angular or React.
                   </p>
                   <UIButton to="/lab">
                     Learn more
@@ -83,14 +84,21 @@ class GetInvolvedCompany extends React.PureComponent {
                     Hire Our Students
                   </h2>
                   <p>
-                    You can also hire our coders directly into your company, as interns or entry-level
-                    developers. Our students are guaranteed to have a junior level degree of experience
-                    in front end development. There’s no placement fee, and we continue to support the
-                    learning of our coders throughout their internship or career. In hiring one of us,
-                    you hire all of us.
+                    You can also hire our coders directly into your company, as Apprentices. It's like
+                    a coop, but without the constraints of the academic calendar, and with the added benefit
+                    of the continued technical and non-technical support of the Resilient Coders family. All of our graduates have
+                    demonstrated proficiency in JavaScript, by building games and applications, from scratch. You
+                    can see some of them in our <a href="https://resilient-labs.github.io/student-profile/" target="_blank">collective portfolio</a>.
                   </p>
+                  {/*
                   <UIButton to="/bootcamp/roster">
                     Meet our students
+                  </UIButton>
+                  */}
+                  <UIButton
+                    external={true}
+                    href="mailto:david@resilientcoders.org?subject=Hiring from RC">
+                    Contact Us
                   </UIButton>
                 </UICard>
               </UIFlex>
