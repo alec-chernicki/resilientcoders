@@ -48,19 +48,56 @@ class GetInvolvedCompany extends React.PureComponent {
 
         <UILayout className="p-y-6">
           <UISection>
-            <UIFlexRow className="m-bottom-6 with-shadow">
+          <UIFlexRow className="m-bottom-6 with-shadow">
+            <UIFlex>
+              <UICard className="p-all-6">
+                <h2>
+                  Hire Our Graduates
+                </h2>
+                <p>
+                  Our Apprenticeships program is like
+                  a coop, but without the constraints of the academic calendar, and with the added benefit
+                  of the continued technical and non-technical support of the Resilient Coders family. All of our graduates have
+                  demonstrated proficiency in JavaScript, by building games and applications, from scratch. You
+                  can see some of them in our <a href="https://resilient-labs.github.io/student-profile/" target="_blank">collective portfolio</a>.
+                </p>
+                {/*
+                <UIButton to="/bootcamp/roster">
+                  Meet our students
+                </UIButton>
+                */}
+                <UIButton
+                  external={true}
+                  href="mailto:david@resilientcoders.org?subject=Hiring from RC">
+                  Contact Us
+                </UIButton>
+              </UICard>
+            </UIFlex>
+            <UIFlex>
+              <UIImage
+                height={300}
+                type="cover"
+                src={hireStudentsImage}
+                alt="Hire a Resilient Coder"
+              />
+            </UIFlex>
+          </UIFlexRow>
+
+
+            <UIFlexRow className="with-shadow">
               <UIFlex>
                 <UICard className="p-all-6">
                   <h2>
-                    Contract Our Students
+                    Hire the Lab
                   </h2>
                   <p>
                     Some of our Bootcamp
-                    graduates are recruited into a paid apprenticeship at Resilient Lab, our digital
+                    graduates are recruited into a paid fellowship at Resilient Lab, our digital
                     agency. There, they further develop their technical skills, as well as core
                     professional skills, while working for a client. You can help launch their careers
                     by hiring us to build your website or web application. We design and build custom Wordpress themes,
-                    as well as more extensive projects involving Angular or React.
+                    as well as more extensive projects involving Angular or React. This is a great option for companies
+                    that want to hire our graduates on a project basis.
                   </p>
                   <UIButton to="/lab">
                     Learn more
@@ -77,40 +114,7 @@ class GetInvolvedCompany extends React.PureComponent {
               </UIFlex>
             </UIFlexRow>
 
-            <UIFlexRow className="with-shadow">
-              <UIFlex>
-                <UICard className="p-all-6">
-                  <h2>
-                    Hire Our Students
-                  </h2>
-                  <p>
-                    You can also hire our coders directly into your company, as Apprentices. It's like
-                    a coop, but without the constraints of the academic calendar, and with the added benefit
-                    of the continued technical and non-technical support of the Resilient Coders family. All of our graduates have
-                    demonstrated proficiency in JavaScript, by building games and applications, from scratch. You
-                    can see some of them in our <a href="https://resilient-labs.github.io/student-profile/" target="_blank">collective portfolio</a>.
-                  </p>
-                  {/*
-                  <UIButton to="/bootcamp/roster">
-                    Meet our students
-                  </UIButton>
-                  */}
-                  <UIButton
-                    external={true}
-                    href="mailto:david@resilientcoders.org?subject=Hiring from RC">
-                    Contact Us
-                  </UIButton>
-                </UICard>
-              </UIFlex>
-              <UIFlex>
-                <UIImage
-                  height={300}
-                  type="cover"
-                  src={hireStudentsImage}
-                  alt="Hire a Resilient Coder"
-                />
-              </UIFlex>
-            </UIFlexRow>
+
           </UISection>
         </UILayout>
       </RouteTransition>
