@@ -65,7 +65,7 @@ class Bootcamp extends PureComponent {
                     We run two hackathons before each Bootcamp, from which we recruit our students.
                     They’re each about seven hours long, and are meant as a way for staff, alumni, and
                     prospective students to get to know each other. This is the only way to "apply."
-                    <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the next one.</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSclR_y9zTwOPy11NU2PtdvIMokzEpbBALFaT_NhXH5__zFieQ/viewform">Sign up for the next one.</a>
                   </p>
                 </UIFlex>
               </UIFlexRow>

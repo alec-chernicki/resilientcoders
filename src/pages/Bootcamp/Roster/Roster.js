@@ -50,15 +50,14 @@ class Roster extends React.Component {
             <h1>The Roster</h1>
             <div className="divider divider__red" />
             <p className="text-constrained text-on-dark m-x-auto">
-              Bootcampers meet daily, for eight weeks, to learn semantically structured
+              Bootcampers meet all day, every day, for 14 weeks, to learn semantically structured
               HTML, responsive CSS, JavaScript, jQuery, git, and more. Before graduating,
               they will have built, and pushed to GitHub, actual client work that showcases these aptitudes.
-              From <a href="/bootcamp">Bootcamp</a>, mentorship, and Resilient Lab,
-              through additional on-the-job support, we ensure that our coders are successful at
-              at their first technical job.
+              They will have also built games and applications in JavaScript, from scratch. These are not your
+              average UI Devs. These are programmers. 
             </p>
-            <UIButton href="http://resilientcoders.s3.amazonaws.com/i/docs/HiringAResilientCoder.pdf" target="_blank">
-              View our hiring guide
+            <UIButton href="/get-involved/company">
+              Learn about Hiring
             </UIButton>
           </UISection>
         </UILayout>
