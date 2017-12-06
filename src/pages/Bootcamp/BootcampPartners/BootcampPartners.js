@@ -38,7 +38,11 @@ const BootcampPartners = () => (
         </div>
         <div>
           <img
-            src="https://resilientcoders.s3.amazonaws.com/i/logos/State_Street_logo.png" alt="bootcamp partner company"/>
+            src="https://resilientcoders.s3.amazonaws.com/i/logos/State_Street_logo.png" alt="State Street"/>
+        </div>
+        <div>
+          <img
+            src="https://resilientcoders.s3.amazonaws.com/i/logos/logo_tpc.jpg" alt="The Philanthropy Connection"/>
         </div>
       </div>
     </div>

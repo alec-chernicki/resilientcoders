@@ -8,6 +8,7 @@ import logoBnyMellon from './BootcampPartnersImages/logo_bnymellon.png';
 import logoInsightSquared from './BootcampPartnersImages/logo_insightsquared.png';
 import logoZakim from './BootcampPartnersImages/logo_zakim.png';
 import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
+import logoTPC from './BootcampPartnersImages/logo_tpc.jpg';
 
 export default [
   {
@@ -48,5 +49,9 @@ export default [
   {
     image: logoStateStreet,
     link: 'http://www.statestreet.com/'
+  },
+  {
+    image: logoTPC,
+    link: 'https://thephilanthropyconnection.org/'
   }
 ]
