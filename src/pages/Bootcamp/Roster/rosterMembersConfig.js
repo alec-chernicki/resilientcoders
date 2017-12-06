@@ -1,3 +1,16 @@
+import SergeImage from './RosterMemberImages/serge.jpg';
+import FranciscoImage from './RosterMemberImages/francisco.jpg';
+import JasmineImage from './RosterMemberImages/jasmine.jpg';
+import JenImage from './RosterMemberImages/jen.jpg';
+import JulieImage from './RosterMemberImages/julie.jpg';
+import KordelImage from './RosterMemberImages/kordel.jpg';
+import MCImage from './RosterMemberImages/mc.jpg';
+import NnennaImage from './RosterMemberImages/nnenna.jpg';
+import RJImage from './RosterMemberImages/rj.jpg';
+import SkipImage from './RosterMemberImages/skip.jpg';
+import ViardinyImage from './RosterMemberImages/viardiny.jpg';
+import YajairaImage from './RosterMemberImages/yajaira.jpg';
+
 import TimImage from './RosterMemberImages/tim.png';
 import NicolaImage from './RosterMemberImages/nicola.png';
 import JoshImage from './RosterMemberImages/josh.png';
@@ -19,6 +32,173 @@ import EddieImage from './RosterMemberImages/eddie.png';
 
 
 export default [
+  {
+    url: '/bootcamp/roster/julie-eustache',
+    portfolioUrl: 'http://julieeustache.bitballoon.com/',
+    name: 'Julie Eustache',
+    image: JulieImage,
+    linkedin: 'https://www.linkedin.com/in/julieeustache/',
+    github: 'https://github.com/jeustache00',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_julieeustache.pdf',
+    bio: `Before attending Resilient Coders, I completed my Associate’s Degree in Communications at Bunker
+    Hill Community College. I’ve always been captivated at how the arts and media can inform and ignite
+    compelling conversations among people. My enthusiasm for web development began with my personal blogs on
+    MySpace, Wordpress, and Tumblr. I spent hours editing HTML, adding widgets, plugins and designing the
+    perfect aesthetically pleasing layouts for my friends and family to interact with. I’ve consistently
+    pursued opportunities that allowed me to let my creativity shine. And this endeavor is no different.
+    The ability to use HTML5, CSS3, and javascript to create impactful and beautiful websites and mobile
+    applications is immensely gratifying. My world views and experiences can only strengthen the accelerated
+    technology transformation. I’m passionate about the arts, social justice, community, as well as tech.
+    To marry all of these passions together to help my community is my goal. Through Resilient Coders I can
+    make my dreams a reality; I am beyond grateful for this opportunity and ready to share my talents with the world.`
+  },
+  {
+    url: '/bootcamp/roster/yajaira-saavedra',
+    /* portfolioUrl: '', */
+    name: 'Yajaira Saavedra',
+    image: YajairaImage,
+    linkedin: 'https://www.linkedin.com/in/yasaav/',
+    github: 'https://github.com/yajairas1',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_yajairasaavedra.pdf',
+    bio: `I was born in a small Mixtec village in Oaxaca, Mexico. I immigrated to the U.S. at the age of four,
+    to reunite with my parents. I majored in Marketing, and applied my skills to promote my family’s restaurant,
+    La Morada, executing digital marketing campaigns. This involved social media, email, and creating their website.
+    La Morada is now an acclaimed Mexican restaurant in New York City and has appeared in the New York Times, Bloomberg
+    Magazine, and the Wall Street Journal. My experience with digital marketing gave me a taste for web development.
+    I wanted to empower myself further so I became involved with Resilient Coders. Resilient has trained me to become
+    a full-stack engineer fluent in Javascript, CSS, Node, and Ruby, which I used to build a delivery app for La Morada.
+    I am looking forward to use my development skills to further empower my community by working in a social enterprise
+    sector of the tech industry.`
+  },
+  {
+    url: '/bootcamp/roster/stephon-skipper',
+    portfolioUrl: 'https://stephonskipper.wordpress.com/',
+    name: 'Stephon Skipper',
+    image: SkipImage,
+    linkedin: 'https://www.linkedin.com/in/sms30/',
+    github: 'https://github.com/ayoskip',
+    resume: '',
+    bio: `I'm an imaginative, strategic thinker, an “architect,” but I am truly only a “pizzaiolo.”
+    I have a talent for fixing and building things, both online and with my hands, and I am passionate
+    about my education. I moved to Boston from Washington D.C. in 2013 pursuing a career in the pizza
+    industry. After not having resources or access to startup capital, I ultimately decided to put my
+    pizza dreams on hold to pursue my inclination to obtain a marketable skill in the tech industry.
+    Learning how to code seemed to be the most intuitive route to take.  At Resilient Coders, I have
+    spent the past three months learning  HTML, CSS, JavaScript/jQuery, Node, React, and Mongo DB,
+    building projects like websites and applications. I am pursuing an opportunity to be a part of a
+    development team that creates amazing products that resolve issues that align with my interests, values, and morals.`
+  },
+  {
+    url: '/bootcamp/roster/mcsergio-estany',
+    /* portfolioUrl: '', */
+    name: 'McSergio Estany',
+    image: SergeImage,
+    linkedin: 'https://www.linkedin.com/in/mcsergio-estany/',
+    github: 'https://github.com/SergeEstany',
+    resume: '',
+    bio: `I have been interacting and exploring the internet since I was first introduced to dial-up service.
+    Now as an adult I have delved into web development in the hopes of creating tech that can better serve the
+    community, raise the quality of living for all, and allow us all to thrive in the ever-changing tech industry.
+    So far I've learned HTML, CSS, JS, Mongo DB, React, and Node. I have built CRUD applications, and explored APIs.
+
+I intend to integrate my web development skills to help better serve the film, media, and music industries. I'm
+working towards establishing a career creating applications and/or websites with unique user interface design,
+and features built to support artists and creatives. Joining Resilient Coders has given me the opportunity to
+learn the skills necessary to build the tech that can shape many lives, including my own.`
+  },
+  {
+    url: '/bootcamp/roster/romare-jenkins',
+    /* portfolioUrl: '', */
+    name: 'Romare Jenkins',
+    image: RJImage,
+    linkedin: '',
+    github: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_romarejenkins.pdf',
+    bio: `Since I was about 5 years old, I have always aspired to be a video game designer. I've had an interest
+    in how video games work beyond the relationship of the player with their controller. I used to spend countless
+    hours playing video games and finding glitches; it was always interesting to see when they happened. As I
+    continued to grow, I worked on broadening my versatility. Using the tools I had at my disposal, I taught
+    myself how to be a visual artist, a musician, and more importantly, a reliable technologist. Around my
+    teenage years I had a plethora of traumatic experiences, including the loss of both of my parents, and
+    becoming a foster child. With that in mind, I had to use the skills I'd obtained to create something out
+    of nothing and continue doing what I do best: acquiring knowledge. I hope to extend my repertoire with the
+    help of Resilient Coders and open more doors for a long-term career, whether it is continuing to become a
+    video game designer, software engineer, or full stack web developer.`
+  },
+  {
+    url: '/bootcamp/roster/kordel-latimer',
+    portfolioUrl: 'https://kordellatimer.github.io/Technical-Portfolio/',
+    name: 'Kordel Latimer',
+    image: KordelImage,
+    linkedin: 'https://www.linkedin.com/in/kordel-latimer-89296a7a/',
+    github: 'https://github.com/Kordellatimer',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_kordellatimer.pdf',
+    bio: `From a young age I have always had knack for technology. Whenever my parents bought a new phone or computer,
+    I was tasked with learning how to use it and teaching everyone in the house. In high school, I took apart a few
+    computers that weren’t working and put them back together for fun. My name is Kordel Latimer and I am a web developer.
+    I graduated from Elms College with a Bachelor's in Computers Information Technology (CIT). I have worked with clients
+    at my internship to create websites, logos or business cards, and maintained and updated the computers in the lab.
+    I've since returned to Boston to help out my family. I am truly grateful for the opportunity with Resilient Coders.
+    Not only because I got to achieve my dream of becoming a full-stack web developer, but because I have learned valuable
+    life skills that overall have made me a better person, and more resilient in the pursuit of any goal I have in front of me.`
+  },
+  {
+    url: '/bootcamp/roster/francisco-rafart',
+    portfolioUrl: 'http://franciscorafart.com/',
+    name: 'Francisco Rafart',
+    image: FranciscoImage,
+    linkedin: 'https://www.linkedin.com/in/francisco-rafart/',
+    github: 'https://github.com/franciscorafart/',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_franciscorafart.pdf',
+    bio: `I am a musician and audio producer. I arrived to the US about two years ago looking to develop a career in Music Technology. Being exposed to this industry motivated me to teach myself how to code to be able to build my own app ideas and empower artists through technology. Resilient Coders provided the education opportunity for me to become a full stack web developer, learning JavaScript, CSS, Node, and React. My name is Francisco Rafart and, if you hire me, I will turn your company’s code into a masterpiece.`
+  },
+  {
+    url: '/bootcamp/roster/maria-cristina-del-valle',
+    portfolioUrl: 'http://mariacristinadelvalle.bitballoon.com/',
+    name: 'Maria Cristina Del Valle',
+    image: MCImage,
+    linkedin: 'https://www.linkedin.com/in/maria-cristina-del-valle/',
+    github: 'https://github.com/mardelvalle',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_mariacristinadelvalle.pdf',
+    bio: `I am a hard-working, inquisitive person who enjoys taking on new challenges and creating excellent products. Embracing new and difficult projects has led me to learn a variety of digital programs, like Illustrator and Axure. My love of technology is driven by the limitless opportunities to gain knowledge and dive into the process of creating impact, such as an app to track current pollution in an area.  I have worked in museums, labs and nonprofits and want to bring my background in art, aesthetics and coding to a team where I can build meaningful products. `
+  },
+
+  /*
+  {
+    url: '/bootcamp/roster/jean-exavier',
+    portfolioUrl: '',
+    name: 'Jean Exavier',
+    image: TimImage,
+    linkedin: 'https://www.linkedin.com/in/jeanex/',
+    github: 'https://github.com/ExavierJean',
+    resume: '',
+    bio: `From amateur skateboarder to a full-fledged, full-stack web developer: Ever since I was a young man skating
+    the streets of Florida, I was crazy about ones and zeros. You can make nothing into something, on anything with a
+    screen. I didn’t start chasing this curiosity until I moved to Boston and got into a bad skateboarding accident.
+    Not being able to skateboard until my body was healed made me depressed so I put my energy towards school. My
+    history teacher realized that I’m a stickler for numbers. After conducting some research, he found a program called
+    Resilient Coders. He made an appointment for us to meet with Del, its Founder and Executive Director.
+    In our early days together, before RC was even running a Bootcamp program, I learned HTML, CSS, JavaScript, and even explored Rails.
+    I was hired as a web development intern at The Grommet. I have since returned to Resilient Coders, to hone my skills,
+    and find the next step.`
+  },
+
+  {
+    url: '/bootcamp/roster/stephane-etienne',
+    portfolioUrl: '',
+    name: 'Stephane Etienne',
+    image: TimImage,
+    linkedin: 'https://www.linkedin.com/in/stephane-etienne-882611150/',
+    github: 'https://github.com/Stephaneetienne',
+    resume: '',
+    bio: `I see myself as someone who is very self-motivated to increase my knowledge and success. I felt applying
+    this in a project or business could benefit myself as well as others, given my dedication, ambition, and resiliency.
+    I’ve always been someone who loves computers, and enjoys experiencing websites and applications. And one day it hit me:
+    Why not build them myself? Then I landed in Resilient Coders, where I'm solving issues and creating projects with HTML,
+    CSS, JavaScript, and other tools and languages.`
+  },
+
+  */
   {
     url: '/bootcamp/roster/tim-blake',
     /* portfolioUrl: '', */
