@@ -162,6 +162,16 @@ learn the skills necessary to build the tech that can shape many lives, includin
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_mariacristinadelvalle.pdf',
     bio: `I am a hard-working, inquisitive person who enjoys taking on new challenges and creating excellent products. Embracing new and difficult projects has led me to learn a variety of digital programs, like Illustrator and Axure. My love of technology is driven by the limitless opportunities to gain knowledge and dive into the process of creating impact, such as an app to track current pollution in an area.  I have worked in museums, labs and nonprofits and want to bring my background in art, aesthetics and coding to a team where I can build meaningful products. `
   },
+  {
+    url: '/bootcamp/roster/nnenna-ndukwe',
+    portfolioUrl: 'https://nnennahacks.io/',
+    name: 'Nnenna Ndukwe',
+    image: NnennaImage,
+    linkedin: 'https://www.linkedin.com/in/nnenna-ndukwe-aba268bb/',
+    github: 'https://www.github.com/nnennandukwe',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_nnennandukwe.pdf',
+    bio: `My recent experience as a Junior Software Developer at a medical device start up company in Cambridge is indicative of my tenacity and intrinsic motivation to solve real-world problems. I worked alongside the Principal Engineer to develop internal software tools to test the firmware of the medical device with Python and prove its accuracy with statistical analyses and Machine Learning implementations. I am involved in the iOS and Android application testing and I pair program alongside the CEO to build the clinical web application data visualization graphs in React and D3.js. My name is Nnenna Ndukwe and I am a Software Developer with an interest in Machine Learning, Full Stack Web Development, and Blockchain engineering.`
+  },
 
   /*
   {
