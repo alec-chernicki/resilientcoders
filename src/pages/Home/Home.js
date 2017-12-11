@@ -34,6 +34,9 @@ import heroVideo from 'images/hero-video.mp4'
 import micahVideo from 'images/micah-video.mp4';
 import micahImage from './micah.jpg';
 
+import video50x30 from 'images/50x30_web.mp4';
+import image50x30 from './rene.jpg';
+
 import rosterMembersConfig from 'pages/Bootcamp/Roster/rosterMembersConfig';
 const rosterImages = rosterMembersConfig.map((member) => pick(member, 'image'));
 
@@ -58,12 +61,48 @@ class Home extends PureComponent {
         <UIModal
           isOpen={this.state.isVideoOpen}
           onClose={partial(this.setIsVideoOpen, false)}
-          contentLabel="Micah Martin"
+          contentLabel="50x30"
         >
-          <UIVideoPlayer src={micahVideo} autoPlay={true} />
+          <UIVideoPlayer src={video50x30} autoPlay={true} />
         </UIModal>
-        <UILayer image={micahImage} dots={false} />
+        <UILayer image={image50x30} dots={false} />
         <UISection className="index-1 p-y-25 p-x-6">
+        <h1>
+          50x30: In Pursuit of Progress
+        </h1>
+        <span className="divider divider__red"></span>
+        <UIFlexRow align="center">
+          <UIFlex basis="30%">
+            <p className="text-on-dark text-constrained">
+              One of the great battles of our generation is slipping by, unnoticed by too many of us:
+              Equitable access to the economy. With the income gap consistently widening, and with roughly
+              half of Americans not seeing a raise in almost four decades, we have hit a crisis point.
+              Learn how you can join us in building the solution.
+            </p>
+            <UIButton
+              className={styles['play-button-mobile']}
+              href="https://youtu.be/GMyv3txXaLc"
+              external={true}
+              target="_blank"
+            >
+              Watch Video
+            </UIButton>
+          </UIFlex>
+          <UIFlex className="m-left-1">
+            <UIFlexRow justify="flex-end">
+              <UIFlex grow={0} shrink={0}>
+                <UIIconButton
+                  className={styles['play-button-desktop']}
+                  size="large"
+                  image={images.play}
+                  onClick={partial(this.setIsVideoOpen, true)}
+                />
+              </UIFlex>
+            </UIFlexRow>
+          </UIFlex>
+        </UIFlexRow>
+
+        {/*
           <h1>
             Micah's story
           </h1>
@@ -99,6 +138,7 @@ class Home extends PureComponent {
               </UIFlexRow>
             </UIFlex>
           </UIFlexRow>
+          */}
         </UISection>
       </UILayout>
     );
