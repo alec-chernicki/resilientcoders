@@ -119,6 +119,11 @@ export default {
   content : [
 
     {
+      title: '50x30: Equitable Access to the Economy',
+      link: 'https://www.youtube.com/watch?v=GMyv3txXaLc',
+      note: '12.2017'
+    },
+    {
       title: 'Resilient Lab',
       link: 'https://www.youtube.com/watch?v=0GVU66L6uAg',
       note: '6.2017'
