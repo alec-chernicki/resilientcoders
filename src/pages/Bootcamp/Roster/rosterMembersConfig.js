@@ -172,6 +172,16 @@ learn the skills necessary to build the tech that can shape many lives, includin
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_nnennandukwe.pdf',
     bio: `My recent experience as a Junior Software Developer at a medical device start up company in Cambridge is indicative of my tenacity and intrinsic motivation to solve real-world problems. I worked alongside the Principal Engineer to develop internal software tools to test the firmware of the medical device with Python and prove its accuracy with statistical analyses and Machine Learning implementations. I am involved in the iOS and Android application testing and I pair program alongside the CEO to build the clinical web application data visualization graphs in React and D3.js. My name is Nnenna Ndukwe and I am a Software Developer with an interest in Machine Learning, Full Stack Web Development, and Blockchain engineering.`
   },
+  {
+    url: '/bootcamp/roster/jasmine-rose',
+    /* portfolioUrl: 'https://nnennahacks.io/',*/
+    name: 'Jasmine Rose',
+    image: JasmineImage,
+    linkedin: 'https://www.linkedin.com/in/jasminerose12/',
+    github: 'https://github.com/JasmineRose1/',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_jasminerose.pdf',
+    bio: `In the summer of 2008, I was employed in a program founded by famed civil rights activist Mel King. I learned about alternative energy technologies, I constructed artwork in their Fabrication Lab, I helped write a program that would prevent a car from having a car accident and I also learned how to program using applications Hyperscore and Scratch. Additionally, I gained experience in Pico robotics programming, game and animation programming, and graphic design and web technology. At Resilient Coders I learned the fundamentals of full-stack web development, and now I’m interested in using technology to engineer products that make the world a more efficient, socially-conscious and equitable place.`
+  },
 
   /*
   {
