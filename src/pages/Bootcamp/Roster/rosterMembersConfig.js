@@ -10,6 +10,9 @@ import RJImage from './RosterMemberImages/rj.jpg';
 import SkipImage from './RosterMemberImages/skip.jpg';
 import ViardinyImage from './RosterMemberImages/viardiny.jpg';
 import YajairaImage from './RosterMemberImages/yajaira.jpg';
+import StephaneImage from './RosterMemberImages/stephane.jpg';
+import ChristianImage from './RosterMemberImages/christian.jpg';
+import LeslieImage from './RosterMemberImages/leslie.jpg';
 
 import TimImage from './RosterMemberImages/tim.png';
 import NicolaImage from './RosterMemberImages/nicola.png';
@@ -202,23 +205,30 @@ learn the skills necessary to build the tech that can shape many lives, includin
     I was hired as a web development intern at The Grommet. I have since returned to Resilient Coders, to hone my skills,
     and find the next step.`
   },
-
+  */
   {
     url: '/bootcamp/roster/stephane-etienne',
     portfolioUrl: '',
     name: 'Stephane Etienne',
-    image: TimImage,
+    image: StephaneImage,
     linkedin: 'https://www.linkedin.com/in/stephane-etienne-882611150/',
     github: 'https://github.com/Stephaneetienne',
     resume: '',
-    bio: `I see myself as someone who is very self-motivated to increase my knowledge and success. I felt applying
-    this in a project or business could benefit myself as well as others, given my dedication, ambition, and resiliency.
-    I’ve always been someone who loves computers, and enjoys experiencing websites and applications. And one day it hit me:
-    Why not build them myself? Then I landed in Resilient Coders, where I'm solving issues and creating projects with HTML,
-    CSS, JavaScript, and other tools and languages.`
+    bio: `At the age of 15 I became a high school dropout, hopelessly seeking stability, and without knowing that education would be a major key. I have always been self-motivated to increase my knowledge and success, so I applied that into getting back into school and defying the odds. I got my G.E.D and at Resilient Coders I have created Full-Stack applications with HTML, CSS, JavaScript, Express, Node, React. One of my projects is a money-saving app to help others with financial struggles. Did you know the median net worth of black Bostonians is $8? Hearing that hit me and inspired me to make an app that will help others overcome their struggle as I have done with mine.`
+  },
+  {
+    url: '/bootcamp/roster/christian-grant',
+    /* portfolioUrl: '', */
+    name: 'Christian Grant',
+    image: ChristianImage,
+    linkedin: 'https://www.linkedin.com/in/christian-grant-9897b314a/',
+    github: 'https://github.com/christiangrant97',
+    resume: '',
+    bio: `Growing up in a well-disciplined household helped me understand what it means to become your own self advocate. Being the youngest of 4, it’s not a promise your voice will be heard or respected, so when I told my parents I was going to transition to web-development I knew I had to prove I was serious.
+Through my journey at Resilient Coders I developed good habits such as “Sacrificing Time,” “Embracing the unknown”, and consistency. It was tough sometimes but help was there. The love and support I received on the daily helped me shape a “no excuse” type of attitude for myself, which I know will translate well in my job search. I am happy to announce, I HAVE TRUSTED THE PROCESS!. Resilient Coders has guided me to be able to create and understand websites and apps using HTML, CSS, Javascript, Node, ES6, and React in only 3 months. And with that being said, It’s a blessing to be apart of an opportunity so rare, and hopefully my own self-advocacy will be an asset to your team.
+`
   },
 
-  */
   {
     url: '/bootcamp/roster/tim-blake',
     /* portfolioUrl: '', */
