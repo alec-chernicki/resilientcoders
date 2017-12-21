@@ -9,6 +9,7 @@ import logoInsightSquared from './BootcampPartnersImages/logo_insightsquared.png
 import logoZakim from './BootcampPartnersImages/logo_zakim.png';
 import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
 import logoTPC from './BootcampPartnersImages/logo_tpc.jpg';
+import logoWellington from './BootcampPartnersImages/logo_wellington.jpg';
 
 export default [
   {
@@ -53,5 +54,9 @@ export default [
   {
     image: logoTPC,
     link: 'https://thephilanthropyconnection.org/'
+  },
+  {
+    image: logoWellington,
+    link: 'https://www.wellington.com/en/community-engagement/'
   }
 ]
