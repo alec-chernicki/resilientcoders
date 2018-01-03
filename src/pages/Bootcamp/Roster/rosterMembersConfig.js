@@ -61,7 +61,7 @@ export default [
     name: 'Yajaira Saavedra',
     image: YajairaImage,
     linkedin: 'https://www.linkedin.com/in/yasaav/',
-    github: 'https://github.com/yajairas1',
+    github: 'https://github.com/yajairaCodes',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_yajairasaavedra.pdf',
     bio: `I was born in a small Mixtec village in Oaxaca, Mexico. I immigrated to the U.S. at the age of four,
     to reunite with my parents. I majored in Marketing, and applied my skills to promote my family’s restaurant,
