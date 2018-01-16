@@ -151,7 +151,7 @@ class Home extends PureComponent {
           isFullHeight={true}
           titleOne="Hacking the"
           titleTwo="opportunity gap"
-          text="Spreading code literacy to young people from traditionally underserved communities."
+          text="Training people of color for high growth careers as software engineers, and connecting them with apprenticeships"
           to="/get-involved"
           buttonText="Get Involved"
           video={heroVideo}
@@ -165,12 +165,7 @@ class Home extends PureComponent {
                   <h1>Our Mission</h1>
                   <p>
                     We believe in social justice through economic empowerment, and in the opportunity
-                    for meritocracy in tech. We think holistically about the school-to-workforce
-                    pipeline, offering a chaining series of programs that guide our hackers through
-                    the extensive journey of learning web development.
-                  </p>
-                  <p>
-                    This isn't about one-off camps or hackathons. This is about
+                    for meritocracy in tech. This isn't about one-off camps or hackathons. This is about
                     <span className="strong">
                       &nbsp;meaningful change.
                     </span>

@@ -104,14 +104,12 @@ class Bootcamp extends PureComponent {
                   </h2>
                   <div className="divider" />
                   <p className="text-on-dark">
-                    In both Bootcamp(Base) and Bootcamp(MERN), our coders meet daily, for eight weeks, to learn HTML, CSS,
-                    JavaScript, jQuery, and git, from professionals. Before graduating, they will have
+                    Our learners meet daily, for fourteen weeks, to learn HTML, CSS,
+                    JavaScript, jQuery, React, Node, and Mongo DB, from professionals. Before graduating, they will have
                     demonstrated proficiency in semantically structured markup, inheritance and
                     specificity, accessibility, progressive enhancement, responsive design, and
                     effective use of functions, methods, and variables. They will have built, and
-                    pushed to GitHub, work that showcases these aptitudes. Bootcamp(MERN) students go on
-                    to spend another six weeks learning the MERN stack (Mongo, Express, React, Node). Bootcamp(Base) graduates
-                    are eligible to join <a href="/lab">Resilient Lab</a> for a two-month Technical Fellowship.
+                    pushed to GitHub, work that showcases these aptitudes, inluding a game or application in vanilla JavaScript.
                   </p>
                 </UIFlex>
               </UIFlexRow>
@@ -165,10 +163,9 @@ class Bootcamp extends PureComponent {
                   </h2>
                   <div className="divider" />
                   <p className="text-on-dark">
-                    At least once per Bootcamp, we have a “client kickoff meeting,” during which a
-                    client is invited to present design work for a website they need built. Our coders
-                    work in teams to build it before the client returns for a presentation and
-                    hand-off. Students are paid for their time on this, and throughout the Bootcamp.
+
+                    Students are also expected to procure, service, and invoice their own freelance client as well, during Bootcamp.
+                    Besides preparing our students for full-time work as engineers, we need them to be able to self-employ as well.
                   </p>
                 </UIFlex>
               </UIFlexRow>
@@ -199,12 +196,12 @@ class Bootcamp extends PureComponent {
                   <h2>The Goal</h2>
                   <div className="divider divider__red" />
                   <p>
+
                     The idea behind our Bootcamp is an audacious one: Take a small cohort of young
-                    people, who face more challenges than most, who have been hand-picked by our
-                    partners for their grit, and teach them to be javascript developers, so that
-                    they may have access to a real career. From Bootcamp, mentorship, and Resilient Lab,
-                    through additional on-the-job support, we ensure that our coders are successful at
-                    at that first gig.
+                    people of color, without college degrees, and teach them to be javascript developers, so that
+                    they may have access to a real high-growth career building software. It's not IT. It's not networking.
+                    It's engineering.
+
                   </p>
 
                 </UICard>
@@ -213,10 +210,8 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>Current Bootcamp</h2>
                   <p>
-                    Our fall Bootcamp(MERN) is well underway, and we are recruiting for the winter Bootcamp(BASE), which will begin in January.
-                    Interested in applying? Come to one of our next Hackathons,
-                    from which we recruit, on Saturday 12/2 from 10 to 5, at 50 Milk St 11th floor, or Friday 12/8 from 10 to 5,
-                    also at 50 Milk St, but on the 5th floor.
+                    Our Winter Bootcamp is well underway, and we are recruiting for the Spring Bootcamp, which will begin in May.
+                    Sign up to get an email when our next recruitment hackathons are taking place.
                   </p>
                   {/*
                   <p>
@@ -241,11 +236,13 @@ class Bootcamp extends PureComponent {
           <UISkewedLayer use="tertiary" className="index-1"/>
           <UISection className="text-center p-top-6 p-bottom-28 p-sm-bottom-18 index-2">
             <h1 className="text-darkest">The Program</h1>
+            {/*
             <p className="text-constrained m-x-auto m-bottom-6">
               Our Bootcamp comes in two tracks: Bootcamp(Base) and Bootcamp(MERN).
               In each, we teach students the fundamentals of front end web development.
               We start with the basics and end with real world client work.
             </p>
+            */}
             <h4 className="text-center">
               Starts with
             </h4>
@@ -273,12 +270,14 @@ class Bootcamp extends PureComponent {
                   </BinaryText>
                 </h1>
                 <p className="text-constrained m-x-auto">
-                  We hire some of our own Bootcamp(Base) students into an apprenticeship with
+                  By the time they finish the program, they are ready to launch their careers in software.
+                  Some of our students join
                   <Link to="/lab">
                     &nbsp;Resilient Lab
                   </Link>
-                  , and others go right into an internship leveraging their
+                  , and others go right into an <Link to="/get-involved/company">Apprenticeship </Link>leveraging their
                   new skills.
+
                 </p>
               </UICard>
             </UIFlex>
@@ -310,9 +309,8 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>As a student</h2>
                   <p>
-                  Our Summer Bootcamp(Base) is well underway, and we are recruiting for the fall Bootcamp(MERN).
-                  Interested in applying? Come to one of our next Hackathons,
-                  from which we recruit.
+                  Our Winter Bootcamp is well underway, and we are recruiting for the Spring Bootcamp, which will begin in May.
+                  Sign up to get an email when our next recruitment hackathons are taking place.
                   </p>
                   <UIButton to="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
                     Sign up

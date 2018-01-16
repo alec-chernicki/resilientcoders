@@ -16,23 +16,21 @@ export default [
   {
     name: "Bootcamp",
     title: 'Resilient Bootcamp',
-    text: `For 16 weeks, daily, a select cohort of early-career individuals meet to receive
-      direct instruction from tech professionals on UI Development skills. By the end of
-      their time with us, they have solid proficiency in semantically structured HTML, well-crafted
-      and responsive CSS, JavaScript fundamentals, jQuery, and Git. To graduate, every student needs
-      to build a game or application, from scratch, in JavaScript.`,
+    text: `For 14 weeks, daily, a select cohort of early-career individuals meet to receive
+      direct instruction, and begin building their own games and applications. By the end of
+      their time with us, they have solid proficiency in HTML, well-crafted
+      and responsive CSS, JavaScript, jQuery, React, Node, and Mongo DB. To graduate, every student needs
+      to build a game or application, from scratch, in JavaScript. And every student needs to have procured, serviced, and invoiced their own freelance client.`,
     image: bootcampImage,
     link: '/bootcamp',
   },
   {
-    name: "Lab",
-    title: 'Resilient Lab',
-    text: `We run a web development agency that provides meaningful employment opportunities for
-      our Technical Fellows. We've designed and built websites and applications for organizations as small as local community groups,
-      and as big as New York University. During their apprenticeship with us at Resilient
-      Lab, Fellows continue learning JavaScript, explore additional skills and frameworks
-      as identified by hiring partners, including Angular and React.`,
+    name: "Apprenticeships",
+    title: 'Apprenticeships',
+    text: `Armed with their knowledge of JavaScript, React, and Node, our students are ready for full-time engineering apprenticeships
+    at partner companies. They also have the full and active support of the Resilient Coders community while they continue learning.
+    When you hire one of us, you're hiring all of us.`,
     image: labImage,
-    link: '/lab',
+    link: '/get-involved/company',
   },
 ]

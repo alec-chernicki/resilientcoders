@@ -23,7 +23,7 @@ class GetInvolvedCompany extends React.PureComponent {
   render () {
     return (
       <RouteTransition>
-        <Helmet title="Join as a Company" />
+        <Helmet title="Hire" />
 
         <UILayout className="p-top-of-page p-bottom-6">
           <UILayer image={companyImage} />
@@ -31,12 +31,13 @@ class GetInvolvedCompany extends React.PureComponent {
           <UISection className="index-2">
             <UIFlexRow>
               <UIFlex className="p-x-6 p-top-3 m-bottom-6">
-                <h1>Join as a Company</h1>
+                <h1>Hire</h1>
                 <div className="divider" />
                 <p className="text-on-dark">
                   Committing to diversity and inclusion at your company requires more
-                  than words, it requires action. From recuitment to hiring, we're here to help
-                  at every step of the process.
+                  than words, it requires action. We're here to make that easy for you.
+                  Whether it's a one-off project that our internal agency can build, or a full-time apprentice,
+                  we can walk you through what it looks like to hire from Resilient Coders.
                 </p>
               </UIFlex>
               <UIFlex>
@@ -58,8 +59,8 @@ class GetInvolvedCompany extends React.PureComponent {
                   Our Apprenticeships program is like
                   a coop, but without the constraints of the academic calendar, and with the added benefit
                   of the continued technical and non-technical support of the Resilient Coders family. All of our graduates have
-                  demonstrated proficiency in JavaScript, by building games and applications, from scratch. You
-                  can see some of them in our <a href="https://resilient-labs.github.io/student-profile/" target="_blank">collective portfolio</a>.
+                  demonstrated proficiency in JavaScript, by building games and applications, from scratch.
+                  They all have experience in Node and React. Learn more from the Hiring Guide (above), or just contact us.
                 </p>
                 {/*
                 <UIButton to="/bootcamp/roster">
