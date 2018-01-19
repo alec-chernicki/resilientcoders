@@ -149,8 +149,8 @@ class Home extends PureComponent {
         <Helmet title="Resilient Coders" />
         <UIHero
           isFullHeight={true}
-          titleOne="Hacking the"
-          titleTwo="opportunity gap"
+          titleOne="Equity in access"
+          titleTwo="to the tech economy"
           text="Training people of color for high growth careers as software engineers, and connecting them with apprenticeships"
           to="/get-involved"
           buttonText="Get Involved"

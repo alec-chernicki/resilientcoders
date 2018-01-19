@@ -41,7 +41,7 @@ const GetInvolvedStudent = (props) => {
                   Every Tuesday and Thursday throughout the school year, high school students
                   from all over the Boston Public Schools system join our mentors and alumni after school, to code.
                   It's a self-led exploration, supported by our mentors and our (optional) modular curriculum.
-                  It's all drop-in. Come by, once, from 3:30pm to 6pm, to 50 Milk St. Boston MA. 5th floor. Build something today.
+                  It's all drop-in. Come by, once, from 3:30pm to 6pm, to 50 Milk St. Boston MA. 11th floor. Build something today.
                 </p>
               </UICard>
             </UIFlex>
