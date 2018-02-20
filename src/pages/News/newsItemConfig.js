@@ -1,6 +1,11 @@
 export default {
   press : [
     {
+      title: 'Resilient Coders: Talent Pipeline for Fintech Startup Bison',
+      link: 'http://www.masstlc.org/resilient-coders-talent-pipeline-for-fintech-startup-bison/',
+      note: 'MassTLC'
+    },
+    {
       title: 'Meet Ashley – Resilient Coder & Microsoft Intern',
       link: 'https://www.youtube.com/watch?v=eKw-d2VYNNI&feature=youtu.be',
       note: 'Microsoft'
