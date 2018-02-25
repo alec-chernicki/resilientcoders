@@ -10,6 +10,7 @@ import logoZakim from './BootcampPartnersImages/logo_zakim.png';
 import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
 import logoTPC from './BootcampPartnersImages/logo_tpc.jpg';
 import logoWellington from './BootcampPartnersImages/logo_wellington.jpg';
+import logoBankofAmerica from './BootcampPartnersImages/logo_bankofamerica.png';
 
 export default [
   {
@@ -44,8 +45,8 @@ export default [
     link: 'https://www.bnymellon.com/'
   },
   {
-    image: logoInsightSquared,
-    link: 'http://www.insightsquared.com/'
+    image: logoBankofAmerica,
+    link: 'http://www.bankofamerica.com/'
   },
   {
     image: logoStateStreet,
