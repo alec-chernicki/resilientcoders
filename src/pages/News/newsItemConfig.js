@@ -1,6 +1,16 @@
 export default {
   press : [
     {
+      title: 'Visualizing the Slave Trade',
+      link: 'https://techcrunch.com/2018/02/22/visualizing-the-slave-insurance-industry/',
+      note: 'TechCrunch'
+    },
+    {
+      title: 'Coding was her calling. Now her mission is to reveal the creative side of computer science',
+      link: 'https://educationblog.microsoft.com/2018/02/resilient-coders-creative-computer-science/',
+      note: 'Microsoft Education'
+    },
+    {
       title: 'Resilient Coders: Talent Pipeline for Fintech Startup Bison',
       link: 'http://www.masstlc.org/resilient-coders-talent-pipeline-for-fintech-startup-bison/',
       note: 'MassTLC'
@@ -122,7 +132,11 @@ export default {
     }
   ],
   content : [
-
+    {
+      title: 'Treasury of Weary Souls',
+      link: 'http://www.treasuryofwearysouls.com/',
+      note: '2.2018'
+    },
     {
       title: '50x30: Equitable Access to the Economy',
       link: 'https://www.youtube.com/watch?v=GMyv3txXaLc',
