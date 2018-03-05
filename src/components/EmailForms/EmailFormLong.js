@@ -41,7 +41,6 @@ class EmailFormLong extends React.PureComponent {
   }
   validSubmit(data) {
     const { onSubmit } = this.props;
-
     this.setState({
       buttonText: 'submitting',
     });
@@ -69,6 +68,7 @@ class EmailFormLong extends React.PureComponent {
           this.setState({
             buttonText: 'submit',
           })
+          location = "https://www.resilientcoders.org/get-involved/thankyou"
         }, 2250)
       })
   }
