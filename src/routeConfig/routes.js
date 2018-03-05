@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home';
 import GetInvolvedPage from '../pages/GetInvolvedPage/GetInvolvedPage';
 import GetInvolvedVolunteer from '../pages/GetInvolvedPage/GetInvolvedVolunteer/GetInvolvedVolunteer';
 import GetInvolvedCompany from '../pages/GetInvolvedPage/GetInvolvedCompany/GetInvolvedCompany';
+import GetInvolvedThankYou from '../pages/GetInvolvedPage/GetInvolvedThankYou/GetInvolvedThankYou';
 import GetInvolvedStudent from '../pages/GetInvolvedPage/GetInvolvedStudent/GetInvolvedStudent';
 
 import Lab from '../pages/Lab/Lab';
@@ -47,6 +48,7 @@ export default(
       <Route path="company" component={GetInvolvedCompany}/>
       <Route path="volunteer" component={GetInvolvedVolunteer}/>
       <Route path="student" component={GetInvolvedStudent}/>
+      <Route path="thankyou" component={GetInvolvedThankYou}/>
       <Redirect from="mentor" to='volunteer' />
     </Route>
 
