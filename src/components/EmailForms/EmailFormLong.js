@@ -57,6 +57,7 @@ class EmailFormLong extends React.PureComponent {
             buttonText: 'submit',
           });
           this.resetForm();
+          location = "https://www.resilientcoders.org/get-involved/thankyou"
         }, 2250)
       })
       .catch((e) => {
