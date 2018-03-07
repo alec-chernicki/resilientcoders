@@ -100,6 +100,7 @@ class GetInvolvedThankYou extends React.PureComponent {
                   <UIButton to="/lab">
                     Learn more
                   </UIButton>
+                  
                 </UICard>
               </UIFlex>
               <UIFlex>
