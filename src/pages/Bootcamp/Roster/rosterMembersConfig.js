@@ -176,7 +176,7 @@ export default [
     image: MannyImage,
     linkedin: 'https://www.linkedin.com/in/manuel-santiago-7bb188159/',
     github: 'https://github.com/Mrsantiago1',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_manuelsantiago.pdf',
     bio: `In my High School's Graphic Design and Visual Communications program, I managed to
     amass many credentials in several fields: I’m Adobe certified in Illustration and Photoshop,
     I’m certified by the state for the practice of Graphic Design, I’m a certified Mediator,
@@ -196,16 +196,7 @@ export default [
     linkedin: 'https://www.linkedin.com/in/lillypercival/',
     github: 'https://github.com/lpercivalDEV',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_lillypercival.pdf',
-    bio: `I am driven to break the cycle of poverty I was born into and leave a legacy of positive
-    impact wherever I go. From my previous work helping Raytheon comply with the Conflict Minerals
-    regulation to tutoring fellow students in Math and English while studying Mechanical Engineering
-    at BHCC, or even simply helping a startup company, WegoWise, run more efficiently with accurate
-    data - my goal has always been to make a positive impact wherever I go. At Resilient, I have
-    gained the necessary skills to start leveling the playing field in Tech - something that has
-    been sorely needed for a long time and has personally affected me in my career aspirations in
-    the STEM field. Resilient has trained me in HTML5, CSS3, JavaScript ES6+, Node.js, React.js,
-    and MongoDB. These are the tools I will use to carve out new opportunities for myself and those
-    who come after me. My name is Lilly and I’m a full-stack engineer, Resilient Coder, and catalyst for change.`
+    bio: `I am driven to break the cycle of poverty I was born into and leave a legacy of positive impact wherever I go. From my previous work helping Raytheon comply with the Conflict Minerals regulation to tutoring fellow students in Math and English while studying Mechanical Engineering at BHCC, or even simply helping a startup company, WegoWise, run more efficiently with accurate data - my goal has always been to make a positive impact wherever I go. At Resilient, I have gained the necessary skills to start leveling the playing field in Tech - something that has been sorely needed for a long time and has personally affected me in my career aspirations in the STEM field. Resilient has taught me how to develop modern websites and applications using best practices and to always bring excellence to my work. These are the skills I will use to carve out new opportunities for myself and those who come after me. My name is Lilly and I’m a full-stack engineer, Resilient Coder, and catalyst for change.`
   },
   {
     url: '/bootcamp/roster/emmanuel-casimir',
