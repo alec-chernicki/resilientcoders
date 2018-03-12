@@ -141,6 +141,7 @@ export default [
     tackling a problem: "What can the user see, do, and expect?"As a developer, I’m readily
     available to channel empathy to create social change and empower users through technology at your company.`
   },
+  /*
   {
     url: '/bootcamp/roster/tariq-naziri',
     portfolioUrl: '',
@@ -167,6 +168,7 @@ export default [
      HTML5, CSS3, JavaScript ES6+, jQuery, Node.js, Express, React, and proficient with MongoDB,
      and I am eager to begin working on my next project!`
   },
+  */
   {
     url: '/bootcamp/roster/manuel-santiago',
     portfolioUrl: '',
