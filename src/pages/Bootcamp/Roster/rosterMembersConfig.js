@@ -141,7 +141,7 @@ export default [
     tackling a problem: "What can the user see, do, and expect?"As a developer, I’m readily
     available to channel empathy to create social change and empower users through technology at your company.`
   },
-  /*
+
   {
     url: '/bootcamp/roster/tariq-naziri',
     portfolioUrl: '',
@@ -149,26 +149,21 @@ export default [
     image: TariqImage,
     linkedin: 'https://www.linkedin.com/in/tariq-naziri-36b1a4151/',
     github: 'https://github.com/tariqnaziri',
-    resume: '',
-    bio: `I would describe myself as an open-minded, cosmopolitan person with a diverse
-    perspective and a rich cultural background of Caribbean ancestry. I am a direct
-    descendants of the Maroons, an ethnic group in Jamaica comprised of prisoners of war
-    from the Akan people who vehemently rejected their slavery and waged war against their
-    captors for 84 years. The Maroons were victorious in their efforts and struggles due to
-    their resourcefulness and ability to quickly adapt to harsh, foreign environments. I
-    keep this story dear to my heart wherever I walk, and in all things that I do in life.
-    My travel experiences as well as my heritage enabled me to develop a perspective on life
-    that is inclusive of all people and their struggles, strengths, and weaknesses, and as I
-    grew older, I became more passionate about contributing to the process of creating a more
-    open-minded and empathetic society. Throughout my research as to how I would accomplish
-    this, I was finally lead to the pursuit in a career in software development. I am passionate
-    and excited to create new universal accessible technologies, improve the relationship between
-    users and machines, and as a whole, aid humanity in transcending our differences and becoming
-     a unified society that respects all of us in all of in what makes us unique. I am fluent in
-     HTML5, CSS3, JavaScript ES6+, jQuery, Node.js, Express, React, and proficient with MongoDB,
-     and I am eager to begin working on my next project!`
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_tariqnaziri.pdf',
+    bio: `During my teenage years, I lived in Germany for two and a half years. I did not
+    speak the language, and more often than not, I was the only person of color on a train
+    or in a store. I used my senses of adaptability, resourcefulness, and ambition along
+    with my relentlessly positive outlook on life as a tool to aid me in navigating my way
+    through a foreign country. After studying Liberal Arts in college, I learned what I
+    truly wanted was to make a difference in the way humans communicate and interact which
+    each other. My research led me to the pursuit of a career in software development,
+     so I dropped everything and moved to Massachusetts to attend Resilient Coders.
+     I am passionate and excited to create new universally accessible technologies, improve
+     the relationship between users and machines, and as a whole, aid humanity in
+     transcending our differences and becoming a unified society. My name is Tariq,
+     I am a full-stack developer eager to begin working on my next project!`
   },
-  */
+
   {
     url: '/bootcamp/roster/manuel-santiago',
     portfolioUrl: '',
@@ -231,6 +226,59 @@ export default [
     who encourages the implementation of solution based thinking. As a Full Stack Web Developer,
     I will be applying the skills and languages I am learning to impact culture in local and
     global communities. I’m looking forward to using technology to inspire civic and social change. `
+  },
+  {
+    url: '/bootcamp/roster/gardy-ferdinand',
+    portfolioUrl: '',
+    name: 'Gardy Ferdinand',
+    image: GardyImage,
+    linkedin: 'https://www.linkedin.com/in/gardy-ferdinand/',
+    github: 'https://github.com/GardyCoder1212',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_gardyferdinand.pdf',
+    bio: `About a year ago I decided to take action to find what truly motivates me. I attended
+    the Cambridge Works Program to focus on building professional skills. During that time I
+    worked at the Cambridge Housing Authority as a Human Resource and Information Tech assistant.
+    I rediscovered my passion for technology and decided to enroll in IT security at Bunker Hill
+    Community College. After a semester there, I gained confidence in myself and realized I could
+    have a real impact. I knew I wanted to go beyond IT and joined Resilient Coders. In the end,
+    it doesn’t matter how I started, what matters is how I finish. I strive to learn something
+    new every day, and it is my motivation and passion that I hope to bring to your team as a full-stack developer.`
+  },
+  {
+    url: '/bootcamp/roster/angel-vidal',
+    portfolioUrl: '',
+    name: 'Angel Vidal',
+    image: AngelImage,
+    linkedin: 'https://www.linkedin.com/in/angel-vidal-a24911158/',
+    github: 'https://github.com/ajvidal91',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_angelvidal.pdf',
+    bio: `When I was 16 I had a teacher tell me the only thing I had to look forward to in my future
+    was prison. Since that moment I’ve dedicated my life to proving him wrong. I’ve worked hard,
+    faced every obstacle with a smile, and have not given up no matter how hard it gets.
+    Resilient Coders has helped me realized my true potential, and how far I can go when I
+    really put my heart into something. I see coding as an escape from the harsh conditions my
+    family and I have dealt with for generations. I’m grateful that I can finally look forward
+    to the future and I’m dedicated to becoming a Full-Stack Developer.`
+  },
+  {
+    url: '/bootcamp/roster/lavell-wesley',
+    portfolioUrl: '',
+    name: 'Lavell Wesley',
+    image: LavellImage,
+    linkedin: 'https://www.linkedin.com/in/lavell-wesley-a0763311b/',
+    github: 'https://github.com/LavellTheDev',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_lavellwesley.pdf',
+    bio: `I am driven. I started my first business at 5 years old, selling stickers to neighborhood
+    kids for a quarter. In college, I won awards for art and scholarships for my academic excellence.
+    I also served as the president of the meditation and wellness club and led the community engagement
+    at Bunker Hill Community College. My current venture is an artist collective known as KHF, which
+    melds the worlds of humanitarianism with art and skateboarding. Throughout all of this, I learned
+    the greatest decision was going into STEM. My ability to blend out of the box problem solving skills
+    from engineering and science with the quirkiness of creating art and having a vision, that’s what
+    makes me stand out. Resilient Coders merges both of those worlds. Participating in (and winning)
+    Hackathons like Inclusion in Boston at MIT or Volunteering for Libra Planet allow me to create
+    unique solutions to problems we face within our community. My name is Lavell Wesley, and I want
+    to improve the life of people on a global level.`
   },
   {
     url: '/bootcamp/roster/julie-eustache',
