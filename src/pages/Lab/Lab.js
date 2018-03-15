@@ -71,19 +71,30 @@ class Lab extends React.PureComponent {
                       </span>
                     </a>
                     , and recruited into the Lab for their aptitude and their grit. Our clients get
-                    an exceptional product, while also helping to launch our coders' careers.
+                    an exceptional product, while also helping to launch our coders' careers. Email David Delmar
+                    at <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a> to learn more.
                   </p>
                 </UICard>
               </UIFlex>
               <UIFlex basis="40%" className="hero-card-first">
                 <UICard use="secondary" className="p-all-6 with-shadow full-height">
                   <h3 className="m-top-0">What we do:</h3>
+<<<<<<< HEAD
                   <p>UI Design and Development</p>
                   <p>JavaScript Applications</p>
                   <p>Wordpress custom theming</p>
                   <UIButton href="mailto:stephanie@resilientcoders.org">
                     Email to learn more
+=======
+                  <p>Front End Development</p>
+                  <p>UI Design and & Prototyping</p>
+                  <p>UX Research</p>
+                  {/*
+                  <UIButton target="_blank" href="/quote">
+                    Get a quote
+>>>>>>> 4d57de0018eab46e34b75e98333dfb54fe5e5ba9
                   </UIButton>
+                  */}
                 </UICard>
               </UIFlex>
             </UIFlexRow>
@@ -116,10 +127,30 @@ class Lab extends React.PureComponent {
               </div>
             </UIFlex>
           </UIFlexRow>
+<<<<<<< HEAD
         </UILayout>
 
         <UILayout className="p-bottom-3">
           <UISection className="with-shadow pull-up-6">
+=======
+        </CenteredContainerOuter>
+
+        <CenteredContainerOuter className="p-bottom-6">
+        {/*
+          <UISection>
+            <UICard use="secondary" className="text-center pull-up-2 p-y-6 index-2">
+              <p className="text-white">
+                Need an estimate? Use our quote generator to see how much your
+                project will cost.
+              </p>
+              <UIButton href="/quote">
+                Get a quote
+              </UIButton>
+            </UICard>
+          </UISection>
+          */}
+          <UISection>
+>>>>>>> 4d57de0018eab46e34b75e98333dfb54fe5e5ba9
             <UICard className="p-all-6">
               <h2>
                 What kind of work can you do?

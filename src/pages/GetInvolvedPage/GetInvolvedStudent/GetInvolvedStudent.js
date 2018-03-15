@@ -18,6 +18,7 @@ import studentImage from '../student.png';
 const GetInvolvedStudent = (props) => {
   return (
     <RouteTransition>
+<<<<<<< HEAD
       <Helmet title="Join as a Student" />
       <UILayout use="tertiary" className="p-top-of-page p-bottom-6">
         <UILayer image={studentImage} />
@@ -73,6 +74,52 @@ const GetInvolvedStudent = (props) => {
           </UIFlexRow>
         </UISection>
       </UILayout>
+=======
+      <Helmet title="For Students" />
+      <Hero
+        titleLineOne="For students"
+        image={studentImage}
+        short={true}
+      >
+        <div className="divider divider__red" />
+      </Hero>
+      <SideBySide>
+        <SideItem className="p-y pull-up-2">
+          <h2>
+            Community Hours
+          </h2>
+          <p>
+            Every Tuesday and Thursday throughout the school year, high school students
+            from all over the Boston Public Schools system join our mentors and alumni after school, to code.
+            It's a self-led exploration, supported by our mentors and our (optional) modular curriculum.
+            It's all drop-in. Come by, once, from 3:30pm to 6pm, to 50 Milk St. Boston MA. 5th floor. Build something today.
+          </p>
+        </SideItem>
+        <SideItem flush={true} className="pull-up-2">
+          <img src={communityHoursImage} role="presentation" />
+        </SideItem>
+      </SideBySide>
+      <SideBySide>
+        <SideItem className="p-y">
+          <h2>
+            Bootcamp
+          </h2>
+          <p>
+            For young people between the ages of 17 and 27 with a high school diploma or GED, and a real
+            interest in exploring web development as a career, Bootcamp
+            might be a better fit than Community. It&#8217;s eight weeks long, daily. We recruit out of
+            our Bootcamp into Resilient Lab, our web development company.
+          </p>
+        
+          <UIButton to="/bootcamp">
+            Learn more
+          </UIButton>
+        </SideItem>
+        <SideItem flush={true}>
+          <img src={bootcampImage} role="presentation" />
+        </SideItem>
+      </SideBySide>
+>>>>>>> 4d57de0018eab46e34b75e98333dfb54fe5e5ba9
     </RouteTransition>
   )
 }

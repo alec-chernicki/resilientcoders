@@ -361,6 +361,7 @@ learn the skills necessary to build the tech that can shape many lives, includin
     image: RJImage,
     linkedin: '',
     github: '',
+<<<<<<< HEAD
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2017C/resume_romarejenkins.pdf',
     bio: `Since I was about 5 years old, I have always aspired to be a video game designer. I've had an interest
     in how video games work beyond the relationship of the player with their controller. I used to spend countless
@@ -718,6 +719,61 @@ Through my journey at Resilient Coders I developed good habits such as “Sacrif
     url: '/bootcamp/roster/maria-payano',
     /* portfolioUrl: '', */
     name: 'Maria Payano',
+=======
+    bio: `I am a web developer, designer & artist. I am a strong advocate for balance; in fact, I am ambidextrous.
+    That, plus my fine arts background, afford me a unique perspective in my work. I've learned a new set of skills
+    at Resilient Coders Bootcamp: HTML, CSS, some JavaScript fundamentals, jQuery, and UX Design. I have a strong interest
+    in pursuing a career in design.`
+  },
+  {
+    url: '/bootcamp/roster/pariss-chandler',
+    name: 'Pariss Chandler',
+    image: ParissImage,
+    linkedin: 'https://www.linkedin.com/in/pariss-chandler-1b06aa9a',
+    github: 'https://github.com/ParissChandler',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_PChandler.pdf',
+    bio: `I am a creative and diligent individual, and use my love for front end web development
+    to design vibrant and engaging products. Coming from an artistic background of acting, filmmaking,
+    and writing, I love grabbing the attention of an audience, and rewarding it with a great experience.
+    I enjoy working with diverse and casual teams, with colleagues who believe in constantly honing
+    their skills. I want to contribute to an environment in which people are encouraged to learn, teach, and thrive.`
+  },
+  {
+    url: '/bootcamp/roster/roger-moraldo',
+    portfolioUrl: 'https://corriger.github.io/pro-play',
+    name: 'Roger Moraldo',
+    image: RogerImage,
+    linkedin: 'https://www.linkedin.com/in/roger-moraldo-00a646122',
+    github: 'https://github.com/Corriger',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_RogerMoraldo.pdf',
+    bio: `As far as I am aware I am the first in my family to have any kind of foot in web development, let alone an
+    affinity for it. Be it for the sake of learning or to make something pleasing to the eye, or to make
+    something that really engages users and makes it easy and intuitive to navigate, I am almost always
+    coding. If not coding I enjoy using Photoshop to manipulate and edit images to better fit with said code.
+    No matter how, even when idle, I am always observing and learning and thinking of how to improve
+    something. This is thanks to my affinity for web development, for drawing, and for writing.`
+  },
+  {
+    url: '/bootcamp/roster/emilio-murillo',
+    portfolioUrl: 'https://emiliomurillo.github.io/portfoliov4',
+    name: 'Emilio Murillo',
+    image: EmilioImage,
+    linkedin: 'https://www.linkedin.com/in/emilio-murillo-983034134',
+    github: 'https://github.com/EmilioMurillo',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/resume_emiliomurillo.pdf',
+    bio: `I am a passionate creative who strives to tackle any problem in an innovative and effective way. I have
+      spoken to big crowds as guest speaker, and have led many community organizations in Boston. I know how to
+      communicate well with others in any environment, and in any situation. This allows me to be progressive
+      with no limits. I am also an independent fashion designer. I've drawn from this experience a certain patience, drive,
+      and creative perspective, which influence my approach to designing and building digital products. Semantically structured HTML, responsive CSS,
+      and javascript are just a new set of tools in my kit, with which I intend to make an
+      impact in the tech world.`
+  },
+  {
+    url: '/bootcamp/roster/maria-ines-peniche',
+    portfolioUrl: 'https://inpen.github.io/inPen/',
+    name: 'Maria Ines Peniche',
+>>>>>>> 4d57de0018eab46e34b75e98333dfb54fe5e5ba9
     image: MariaImage,
     linkedin: 'https://www.linkedin.com/in/maria-payano-88b926a7/',
     github: 'https://github.com/mpayano',
