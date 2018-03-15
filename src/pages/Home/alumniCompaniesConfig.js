@@ -2,6 +2,12 @@ import globeLogo from './AlumniCompaniesImages/globe_logo.png';
 import microsoftLogo from './AlumniCompaniesImages/microsoft_logo.png';
 import grommetLogo from './AlumniCompaniesImages/grommet_logo.png';
 import freshLogo from './AlumniCompaniesImages/fresh_logo.png';
+import bisonLogo from './AlumniCompaniesImages/logo_bison.jpg';
+import gravytyLogo from './AlumniCompaniesImages/logo_gravyty.jpg';
+import hillhollidayLogo from './AlumniCompaniesImages/logo_hillholliday.jpg';
+import simplyLogo from './AlumniCompaniesImages/logo_simplybusiness.jpg';
+import wellingtonLogo from './AlumniCompaniesImages/logo_wellington.jpg';
+
 
 export default [
   {
@@ -13,11 +19,23 @@ export default [
     link: 'https://www.microsoft.com/'
   },
   {
-    image: grommetLogo,
-    link: 'https://www.thegrommet.com/'
+    image: bisonLogo,
+    link: 'https://www.bison.co/'
   },
   {
-    image: freshLogo,
-    link: 'http://www.freshtilledsoil.com/'
+    image: gravytyLogo,
+    link: 'http://www.gravyty.com/'
+  },
+  {
+    image: hillhollidayLogo,
+    link: 'http://www.hillholliday.com/'
+  },
+  {
+    image: wellingtonLogo,
+    link: 'http://www.wellington.com/'
+  },
+  {
+    image: simplyLogo,
+    link: 'http://www.simplybusiness.com/'
   },
 ]
