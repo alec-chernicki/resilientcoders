@@ -188,7 +188,6 @@ class Bootcamp extends PureComponent {
           buttonText="Meet our new grads"
         />
 
-<<<<<<< HEAD
         <UILayout>
           <UISection className="p-bottom-6">
             <UIFlexRow>
@@ -237,17 +236,6 @@ class Bootcamp extends PureComponent {
           <UISkewedLayer use="tertiary" className="index-1"/>
           <UISection className="text-center p-top-6 p-bottom-28 p-sm-bottom-18 index-2">
             <h1 className="text-darkest">The Program</h1>
-=======
-          </SideItem>
-          <SideItem className="p-y-6 pull-up-1">
-            <h2>Current Bootcamp</h2>
-            <p>
-              Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
-              Interested in applying for
-              the next one? Come to our next Hackathon,
-              from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
-            </p>
->>>>>>> 4d57de0018eab46e34b75e98333dfb54fe5e5ba9
             {/*
             <p className="text-constrained m-x-auto m-bottom-6">
               Our Bootcamp comes in two tracks: Bootcamp(Base) and Bootcamp(MERN).
@@ -310,7 +298,6 @@ class Bootcamp extends PureComponent {
               than most, to join us, and learn the fundamentals of web
               development for free.
             </p>
-<<<<<<< HEAD
           </UISection>
         </UILayout>
 
@@ -357,50 +344,6 @@ class Bootcamp extends PureComponent {
             </UICard>
           </UISection>
         </UILayout>
-=======
-          </div>
-        </div>
-        <SideBySide className="bootcamp-apply">
-          <SideItem type="grey" className="p-y-6">
-            <h2>As a student</h2>
-            <p>
-              Our Winter Bootcamp has wrapped up, and we are recruiting for the summer.
-              Interested in applying for
-              the next one? Come to our next Hackathon,
-              from from which we recruit, on 5/24 from 10 to 5, at the Roxbury Innovation Center in Dudley Square. <a href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">Sign up for the hackathon.</a>
-            </p>
-            <UIButton to="/get-involved/student">
-              Learn more
-            </UIButton>
-          </SideItem>
-          <SideItem type="white" className="p-y-6 pull-up-1">
-            <h2>As a mentor</h2>
-            <div className="divider divider__red"/>
-            <p>
-              Want to get involved in Bootcamp? <a href="/get-involved/mentor">Sign up for the mailing list,</a> and we will keep you posted
-              as the summer approaches.
-            </p>
-            {/*
-              <p>
-              Want to get involved in Bootcamp? Check out the <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUYwX0FsN0dKV0pvfGRlZmF1bHR8YjZiMzI2NThiYTAyMGZlN2JkMWJlMjNkZTQ5NzcxYTY">Google Appointment calendar</a>,
-              and book a spot that makes sense for you. Come be a TA. You can also join our "drop-in" Community Hours, Tuesdays and Thursdays
-              from 3:30 to 6. We&#8217;re all about making it easy for you to join.
-              </p>
-            */}
-            <UIButton to="/get-involved/mentor">
-              Get Involved
-            </UIButton>
-          </SideItem>
-        </SideBySide>
-        <CenteredContainerOuter color="white">
-          <CenteredContainerInner color="white">
-            <Partners
-              title="Thank you to our bootcamp partners"
-              partnersConfig={bootcampPartnersConfig}
-            />
-          </CenteredContainerInner>
-        </CenteredContainerOuter>
->>>>>>> 4d57de0018eab46e34b75e98333dfb54fe5e5ba9
       </RouteTransition>
     )
   }
