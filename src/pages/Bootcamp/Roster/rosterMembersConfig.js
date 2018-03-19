@@ -227,6 +227,7 @@ export default [
     I will be applying the skills and languages I am learning to impact culture in local and
     global communities. I’m looking forward to using technology to inspire civic and social change. `
   },
+  /*
   {
     url: '/bootcamp/roster/gardy-ferdinand',
     portfolioUrl: '',
@@ -244,6 +245,7 @@ export default [
     it doesn’t matter how I started, what matters is how I finish. I strive to learn something
     new every day, and it is my motivation and passion that I hope to bring to your team as a full-stack developer.`
   },
+  */
   {
     url: '/bootcamp/roster/angel-vidal',
     portfolioUrl: '',
@@ -632,7 +634,7 @@ Through my journey at Resilient Coders I developed good habits such as “Sacrif
   },
   {
     url: '/bootcamp/roster/sebastian-jaramillo',
-    portfolioUrl: 'https://gyride.github.io/Portfolio/',
+    portfolioUrl: 'http://sebastianjaramillo.me/',
     name: 'Sebastian Jaramillo',
     image: SebastianImage,
     linkedin: 'https://www.linkedin.com/in/sebastian-jaramillo-353370149/',
@@ -723,7 +725,7 @@ Through my journey at Resilient Coders I developed good habits such as “Sacrif
     at Resilient Coders Bootcamp: HTML, CSS, some JavaScript fundamentals, jQuery, and UX Design. I have a strong interest
     in pursuing a career in design.`
   },
-  
+
   {
     url: '/bootcamp/roster/maria-ines-peniche',
     portfolioUrl: 'https://inpen.github.io/inPen/',
