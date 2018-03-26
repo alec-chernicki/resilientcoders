@@ -22,7 +22,7 @@ import companyImage from './company.png';
 
 const INVOLVEMENT_TYPES = [
   {
-    title: 'Companies',
+    title: 'Hire',
     text: 'Hire our students and increase diversity within your workforce.',
     image: companyImage,
     url: '/get-involved/company'
@@ -34,7 +34,7 @@ const INVOLVEMENT_TYPES = [
     url: '/get-involved/student'
   },
   {
-    title: 'Volunteers',
+    title: 'Volunteer',
     text: 'Give back to your community and become a diversity advocate.',
     image: mentorImage,
     url: '/get-involved/volunteer'

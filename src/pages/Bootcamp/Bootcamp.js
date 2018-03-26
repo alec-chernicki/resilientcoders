@@ -199,7 +199,7 @@ class Bootcamp extends PureComponent {
 
                     The idea behind our Bootcamp is an audacious one: Take a small cohort of young
                     people of color, without college degrees, and teach them to be javascript developers, so that
-                    they may have access to a real high-growth career building software. It's not IT. It's not networking.
+                    they may have access to a real high-growth career building software. It's not IT, or networking.
                     It's engineering.
 
                   </p>
@@ -208,17 +208,12 @@ class Bootcamp extends PureComponent {
               </UIFlex>
               <UIFlex className="hero-card-first">
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
-                  <h2>Current Bootcamp</h2>
+                  <h2>Apply</h2>
                   <p>
-                    Our Winter Bootcamp is well underway, and we are recruiting for the Spring Bootcamp, which will begin in May.
-                    Sign up to get an email when our next recruitment hackathons are taking place.
+                    The only way to apply to the Bootcamp, which will run from May 7th through August 10th, is to join one of our hackathons. The next one is on Wednesday April 4th, at 50 Milk St 5th floor.
+
                   </p>
-                  {/*
-                  <p>
-                    Our coders are now available for hire. Interested in learning more? Check out their
-                    bios and portfolios on our <a href="/bootcamp/roster">roster</a> page.
-                  </p>
-                  */}
+
                   <UIButton
                     external={true}
                     href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
@@ -309,10 +304,12 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>As a student</h2>
                   <p>
-                  Our Winter Bootcamp is well underway, and we are recruiting for the Spring Bootcamp, which will begin in May.
-                  Sign up to get an email when our next recruitment hackathons are taking place.
+                  The only way to apply to the Bootcamp, which will run from May 7th through August 10th, is to join one of our hackathons. The next one is on Wednesday April 4th, at 50 Milk St 5th floor.
+
                   </p>
-                  <UIButton to="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
+                  <UIButton
+                    external={true}
+                    href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
                     Sign up
                   </UIButton>
                 </UICard>

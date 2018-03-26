@@ -39,6 +39,13 @@ class GetInvolvedCompany extends React.PureComponent {
                   Whether it's a one-off project that our internal agency can build, or a full-time apprentice,
                   we can walk you through what it looks like to hire from Resilient Coders.
                 </p>
+
+                <UIButton
+                  external={true}
+                  href="https://www.eventbrite.com/e/resilient-coders-demo-day-tickets-43260121187">
+                  Demo Day
+                </UIButton>
+
               </UIFlex>
               <UIFlex>
                 <EmailFormLong title="Get our hiring guide" formUrl={COMPANY_FORM_URL} />

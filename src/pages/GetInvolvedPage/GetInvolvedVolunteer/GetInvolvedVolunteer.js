@@ -31,8 +31,9 @@ const GetInvolvedVolunteer = (props) => {
               <h1>Join as a Volunteer</h1>
               <div className="divider" />
               <p className="text-on-dark">
-                There's more than one way to contribute at Resilient Coders,
-                become a member of our Volunteer Corps program.
+                There are many ways to be involved, but everyone starts by coming to Community Hours. Think of it as a study hall, every
+                Tuesday and Thursday, from 3:30 to 6. If you feel comfortable in full stack javascript, email Leon (@resilientcoders.org) so that we know to
+                expect you, and come by.
               </p>
             </UIFlex>
             <UIFlex>
@@ -41,7 +42,7 @@ const GetInvolvedVolunteer = (props) => {
           </UIFlexRow>
         </UISection>
       </UILayout>
-
+{/*
       <UILayout>
         <UISection className="p-y-6">
           <UICard className="p-all-6 text-center m-bottom-6 with-shadow">
@@ -163,6 +164,8 @@ const GetInvolvedVolunteer = (props) => {
 
         </UISection>
       </UILayout>
+
+      */}
     </RouteTransition>
   )
 }
