@@ -185,7 +185,7 @@ export default [
   },
   {
     url: '/bootcamp/roster/lilly-percival',
-    portfolioUrl: '',
+    portfolioUrl: 'http://www.lillythedev.com/',
     name: 'Lilly Percival',
     image: LillyImage,
     linkedin: 'https://www.linkedin.com/in/lillypercival/',
@@ -281,6 +281,16 @@ export default [
     Hackathons like Inclusion in Boston at MIT or Volunteering for Libra Planet allow me to create
     unique solutions to problems we face within our community. My name is Lavell Wesley, and I want
     to improve the life of people on a global level.`
+  },
+  {
+    url: '/bootcamp/roster/gabriela-cepeda ',
+    portfolioUrl: '',
+    name: 'Gabriela Cepeda',
+    image: GabbyImage,
+    linkedin: 'https://www.linkedin.com/in/gabriela-cepeda-b43208157/',
+    github: 'https://github.com/gabrielacepeda',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_gabrielacepeda.pdf',
+    bio: `My name is Gabriela Cepeda and I am a former dancer turned Full-Stack Developer. Dance was an outlet that taught me how to be patient, determined, and how to craft the perfect routine. My passion for dancing carried into Bridgewater State University, where I was a Sociology Major. There, I volunteered in programs that helped troubled youth and later became a Private Care Assistant and Child Care Counselor.  I am driven to supporting my community, and as a Full Stack Developer, I now have the tools to make a bigger impact in people's lives. I look forward to using my creativity, development skills and commitment to collaborate with an engineering team, bringing the future forward.`
   },
   {
     url: '/bootcamp/roster/julie-eustache',
@@ -716,7 +726,7 @@ Through my journey at Resilient Coders I developed good habits such as “Sacrif
     want to be a model and mentor for inner city youth who face obstacles and circumstances
     brought about by the systematic economy.`
   },
-  
+
   {
     url: '/bootcamp/roster/wilson-portillo',
     /* portfolioUrl: '', */
