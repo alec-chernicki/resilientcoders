@@ -51,10 +51,9 @@ class Roster extends React.Component {
             <div className="divider divider__red" />
             <p className="text-constrained text-on-dark m-x-auto">
               Bootcampers meet all day, every day, for 14 weeks, to learn semantically structured
-              HTML, responsive CSS, JavaScript, jQuery, git, and more. Before graduating,
-              they will have built, and pushed to GitHub, actual client work that showcases these aptitudes.
-              They will have also built games and applications in JavaScript, from scratch. These are not your
-              average UI Devs. These are programmers. 
+              HTML, responsive CSS, JavaScript, jQuery, git, React, Node, and Mongo DB. Before graduating,
+              they will have built, and pushed to GitHub, full stack applications that showcase these aptitudes.
+              These are not your average devs. These are software engineers.
             </p>
             <UIButton href="/get-involved/company">
               Learn about Hiring
