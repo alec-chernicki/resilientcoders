@@ -10,6 +10,8 @@ import CaImage from './TeamMemberImages/ca.jpg';
 import FredImage from './TeamMemberImages/fred.png';
 import StephanieImage from './TeamMemberImages/stephanie.png';
 import RouguiImage from './TeamMemberImages/rougui.png';
+import DavidMendelsImage from './TeamMemberImages/davidmendels.png';
+
 
 export default [
   {
@@ -89,18 +91,6 @@ export default [
       product and get companies to their next milestone.`
   },
   {
-    name: 'Joshua Summers',
-    image: JoshImage,
-    role: 'Board Chair',
-    text: `Joshua Summers is a serial entrepreneur that believes the best companies are built in
-      and around Boston. As the Co-founder and CEO of Clypd, Joshua is leading the charge in
-      building the next evolution in tv advertising sales models by bridging the gap between
-      traditional linear TV ads and programmatic solutions. Joshua holds a bachelors degree
-      in Industrial Management with an additional major in Economics from Carnegie Mellon
-      University. Joshua lives with his forgiving wife Rachel and awesome kids Zachary and
-      Alisha in Lexington, MA.`
-  },
-  {
     name: 'Pamela Aldsworth',
     image: PamelaImage,
     role: 'Board',
@@ -135,5 +125,20 @@ export default [
       to develop and drive business models at scale. Now, he's applying his technical experience as both developer
       and entrepreneur to transforming the real estate industry with Placester, advising early-stage startups,
       and speaking at digital marketing and technology events around the world.`
+  },
+  {
+    name: 'David Mendels',
+    image: DavidMendelsImage,
+    role: 'Board',
+    text: `David Mendels has helped build and lead several of the most innovative software companies of the
+    last 25 years.  Most recently, he was CEO of Brightcove, the leading software-as-a-service online
+    video platform, delivering over 200 years of video every 24 hours for over 2000 customers in 75
+    countries. Brightcove was also named Best Place to Work in Boston by the Boston Globe. Prior to
+    Brightcove, he held multiple leadership roles at Macromedia and Adobe over 16 years, including
+    leading the business units for technologies that had a fundamental impact on our experience of the
+    internet include Adobe Flash and PDF. David also has roles as Board Member at Witness.org,
+    advisor/mentor with Our Generation Speaks and as a member of the steering committee of the Movement
+    Voter Project. David has a Masters Degree in Japanese Studies from the University of California at
+    Berkeley and a B.A. from Wesleyan University.`
   },
 ];

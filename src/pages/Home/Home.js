@@ -151,7 +151,7 @@ class Home extends PureComponent {
           isFullHeight={true}
           titleOne="Equity in access"
           titleTwo="to the tech economy"
-          text="Training people of color for high growth careers as software engineers, and connecting them with apprenticeships"
+          text="Training people of color for high growth careers as software engineers, and connecting them with jobs"
           to="/get-involved"
           buttonText="Get Involved"
           video={heroVideo}

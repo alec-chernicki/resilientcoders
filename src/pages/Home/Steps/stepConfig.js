@@ -27,7 +27,7 @@ export default [
   {
     name: "Apprenticeships",
     title: 'Apprenticeships',
-    text: `Armed with their knowledge of JavaScript, React, and Node, our students are ready for full-time engineering apprenticeships
+    text: `Armed with their knowledge of JavaScript, React, and Node, our students are ready for full-time engineering jobs
     at partner companies. They also have the full and active support of the Resilient Coders community while they continue learning.
     When you hire one of us, you're hiring all of us.`,
     image: labImage,
