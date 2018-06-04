@@ -11,7 +11,7 @@ import FredImage from './TeamMemberImages/fred.png';
 import StephanieImage from './TeamMemberImages/stephanie.png';
 import RouguiImage from './TeamMemberImages/rougui.png';
 import DavidMendelsImage from './TeamMemberImages/davidmendels.png';
-
+import DuniaImage from './TeamMemberImages/dunia.jpg';
 
 export default [
   {
@@ -140,5 +140,20 @@ export default [
     advisor/mentor with Our Generation Speaks and as a member of the steering committee of the Movement
     Voter Project. David has a Masters Degree in Japanese Studies from the University of California at
     Berkeley and a B.A. from Wesleyan University.`
+  },
+  {
+    name: 'Dunia Goncalves',
+    image: DuniaImage,
+    role: 'Board',
+    text: `Dunia wants to live in a world where education is an opportunity available to everyone,
+    books come bundled with extra dark chocolate, and with a glass of wine, and there is a force field
+    around her keyboard that repels cats and sticky baby fingers. With nearly 9 years of ESL teaching
+    behind her, she gracefully took a nose dive into the technology field via Resilient Coders Bootcamp.
+    She landed a job as a Frontend Web Developer at Everquote in Cambridge. With these new-found skills,
+    she devotes time to personal development and mentoring new coders, even if remotely, on a daily basis.
+    Dunia is a born and raised Bostonian, and now that The Tech Hub has migrated here, she would love to
+    see a range of diversity showcased in the field. And as a Resilient Coders alumna, it is now part of
+    her mission to help make that happen. When she’s not writing code, you can find her whipping up a
+    yummy treat, reading a book imprinted with baby drool or taking a much-needed nap.`
   },
 ];
