@@ -210,7 +210,7 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>Apply</h2>
                   <p>
-                    The only way to apply to the Bootcamp, which will run from May 7th through August 10th, is to join one of our hackathons. The next one is on Wednesday April 4th, at 50 Milk St 5th floor.
+                    The only way to apply to the Bootcamp, which will run from September 10th through December 14th, is to join one of our hackathons. The next one is on Saturday July 14th, at 50 Milk St 17th floor.
 
                   </p>
 
@@ -304,7 +304,7 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>As a student</h2>
                   <p>
-                  The only way to apply to the Bootcamp, which will run from May 7th through August 10th, is to join one of our hackathons. The next one is on Wednesday April 4th, at 50 Milk St 5th floor.
+                  The only way to apply to the Bootcamp, which will run from September 10th through December 14th, is to join one of our hackathons. The next one is on Saturday July 14th, at 50 Milk St 17th floor.
 
                   </p>
                   <UIButton
