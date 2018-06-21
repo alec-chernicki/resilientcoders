@@ -42,11 +42,16 @@ export default [
   {
     name: 'Muigai Unaka',
     image: MuigaiImage,
-    role: 'Resilient Lab Lead',
-    text: `Muigai is a Senior at Northeastern University, pursuing a dual BFA in graphic design
-      and interactive media. He has a passion for user interface design, and hopes to one day be
-      part of a special projects team, designing and building products that redefine how we interact
-      with each other. Also, his great-grandfather is Jomo Kenyatta.`
+    role: 'Technical Lead',
+    text: `Muigai Unaka is an award winning software developer and designer. 
+    After studying Interaction Design and Computer Science at Northeastern University, Muigai has worked 
+    to better prepare individuals of the Greater Boston community for new opportunities in the Tech field 
+    in his role as Technical Lead with Resilient Coders. Revered as “sensei” in the Resilient Coders 
+    community, he has interacted with upwards of 60 early career software engineers to develop, destroy, 
+    debug and deploy numerous web applications. When Muigai is not training the future faces of the software 
+    engineering world, he can be found contributing to Bevspot’s web platform as well as instructing students 
+    at Northeastern University on the fundamentals of Interaction Design in web development. 
+    Also, his great-grandfather is Jomo Kenyatta.`
   },
   {
     name: 'Rougui Diallo',
