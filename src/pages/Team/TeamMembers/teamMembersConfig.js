@@ -43,10 +43,7 @@ export default [
     name: 'Muigai Unaka',
     image: MuigaiImage,
     role: 'Technical Lead',
-    text: `Muigai Unaka is an award winning software developer and designer. 
-    After studying Interaction Design and Computer Science at Northeastern University, Muigai has worked 
-    to better prepare individuals of the Greater Boston community for new opportunities in the Tech field 
-    in his role as Technical Lead with Resilient Coders. Revered as “sensei” in the Resilient Coders 
+    text: `Muigai Unaka is an award winning software developer and designer. Revered as “sensei” in the Resilient Coders 
     community, he has interacted with upwards of 60 early career software engineers to develop, destroy, 
     debug and deploy numerous web applications. When Muigai is not training the future faces of the software 
     engineering world, he can be found contributing to Bevspot’s web platform as well as instructing students 
