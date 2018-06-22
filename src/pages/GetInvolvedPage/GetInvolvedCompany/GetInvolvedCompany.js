@@ -14,7 +14,7 @@ import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import contractLabImage from './get-involved-lab.jpg';
-import hireStudentsImage from './get-involved-dunia.jpg';
+import hireStudentsImage from './get-involved-rizel.jpg';
 import companyImage from '../company.png';
 
 const COMPANY_FORM_URL = '/api/subscribe/company';
@@ -36,13 +36,12 @@ class GetInvolvedCompany extends React.PureComponent {
                 <p className="text-on-dark">
                   Committing to diversity and inclusion at your company requires more
                   than words, it requires action. We're here to make that easy for you.
-                  Whether it's a one-off project that our internal agency can build, or a full-time apprentice,
-                  we can walk you through what it looks like to hire from Resilient Coders.
+
                 </p>
 
                 <UIButton
                   external={true}
-                  href="https://www.eventbrite.com/e/resilient-coders-demo-day-tickets-43260121187">
+                  href="https://www.eventbrite.com/e/resilient-coders-demo-day-tickets-47117806628">
                   Demo Day
                 </UIButton>
 
@@ -63,11 +62,13 @@ class GetInvolvedCompany extends React.PureComponent {
                   Hire Our Graduates
                 </h2>
                 <p>
-                  Our Apprenticeships program is like
-                  a coop, but without the constraints of the academic calendar, and with the added benefit
-                  of the continued technical and non-technical support of the Resilient Coders family. All of our graduates have
-                  demonstrated proficiency in JavaScript, by building games and applications, from scratch.
-                  They all have experience in Node and React. Learn more from the Hiring Guide (above), or just contact us.
+                  By the time they graduate from the program, our students will have learned full stack javascript,
+                  including ES6, jQuery, React, and Node. They will have worked with MongoDB and Postgres. They will have built
+                  at least one full stack application, soup to nuts. They will have procured, serviced, and invoiced their own freelance client.
+                  They will have thrown 20+ repositories on GitHub, participated in Agile product sprints, and gained more industry
+                  experience than most college graduates with CS degrees. Our graduates go on to work for companies including Wellington,
+                  Fidelity, DigitasLBI, SapientRazorfish, the City of Boston Department of Innovation and Technology, Boston University, the Boston Globe, and
+                  tech startups such as RStudio, Veson Nautical, Gravyty, Bison, and many others. Reach out to learn how they can contribute to your software engineering team.
                 </p>
                 {/*
                 <UIButton to="/bootcamp/roster">
@@ -91,36 +92,6 @@ class GetInvolvedCompany extends React.PureComponent {
             </UIFlex>
           </UIFlexRow>
 
-
-            <UIFlexRow className="with-shadow">
-              <UIFlex>
-                <UICard className="p-all-6">
-                  <h2>
-                    Hire the Lab
-                  </h2>
-                  <p>
-                    Some of our Bootcamp
-                    graduates are recruited into a paid fellowship at Resilient Lab, our digital
-                    agency. There, they further develop their technical skills, as well as core
-                    professional skills, while working for a client. You can help launch their careers
-                    by hiring us to build your website or web application. We design and build custom Wordpress themes,
-                    as well as more extensive projects involving Angular or React. This is a great option for companies
-                    that want to hire our graduates on a project basis.
-                  </p>
-                  <UIButton to="/lab">
-                    Learn more
-                  </UIButton>
-                </UICard>
-              </UIFlex>
-              <UIFlex>
-                <UIImage
-                  height={300}
-                  type="cover"
-                  src={contractLabImage}
-                  alt="Contract Resilient Lab"
-                />
-              </UIFlex>
-            </UIFlexRow>
 
 
           </UISection>
