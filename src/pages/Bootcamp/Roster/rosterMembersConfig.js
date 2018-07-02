@@ -1,19 +1,4 @@
-import SergeImage from './RosterMemberImages/serge.jpg';
-import FranciscoImage from './RosterMemberImages/francisco.jpg';
-import JasmineImage from './RosterMemberImages/jasmine.jpg';
-import JenImage from './RosterMemberImages/jen.jpg';
-import JulieImage from './RosterMemberImages/julie.jpg';
-import KordelImage from './RosterMemberImages/kordel.jpg';
-import MCImage from './RosterMemberImages/mc.jpg';
-import NnennaImage from './RosterMemberImages/nnenna.jpg';
-import RJImage from './RosterMemberImages/rj.jpg';
-import SkipImage from './RosterMemberImages/skip.jpg';
-import ViardinyImage from './RosterMemberImages/viardiny.jpg';
-import YajairaImage from './RosterMemberImages/yajaira.jpg';
-import StephaneImage from './RosterMemberImages/stephane.jpg';
-import ChristianImage from './RosterMemberImages/christian.jpg';
-import LeslieImage from './RosterMemberImages/leslie.jpg';
-
+// Roster Images Bootcamp 2017b
 import TimImage from './RosterMemberImages/tim.png';
 import NicolaImage from './RosterMemberImages/nicola.png';
 import JoshImage from './RosterMemberImages/josh.png';
@@ -30,7 +15,23 @@ import KareemImage from './RosterMemberImages/kareem.jpg';
 import MariaImage from './RosterMemberImages/maria_p.png';
 import WilsonImage from './RosterMemberImages/wilson.png';
 import EddieImage from './RosterMemberImages/eddie.png';
-
+// Roster Images Bootcamp 2017c
+import SergeImage from './RosterMemberImages/serge.jpg';
+import FranciscoImage from './RosterMemberImages/francisco.jpg';
+import JasmineImage from './RosterMemberImages/jasmine.jpg';
+import JenImage from './RosterMemberImages/jen.jpg';
+import JulieImage from './RosterMemberImages/julie.jpg';
+import KordelImage from './RosterMemberImages/kordel.jpg';
+import MCImage from './RosterMemberImages/mc.jpg';
+import NnennaImage from './RosterMemberImages/nnenna.jpg';
+import RJImage from './RosterMemberImages/rj.jpg';
+import SkipImage from './RosterMemberImages/skip.jpg';
+import ViardinyImage from './RosterMemberImages/viardiny.jpg';
+import YajairaImage from './RosterMemberImages/yajaira.jpg';
+import StephaneImage from './RosterMemberImages/stephane.jpg';
+import ChristianImage from './RosterMemberImages/christian.jpg';
+import LeslieImage from './RosterMemberImages/leslie.jpg';
+// Roster Images Bootcamp 2018a
 import MannyImage from './RosterMemberImages/manny.jpg';
 import SavantImage from './RosterMemberImages/savant.jpg';
 import DerekImage from './RosterMemberImages/derek.jpg';
@@ -46,7 +47,7 @@ import GabbyImage from './RosterMemberImages/gabby.jpg';
 import RaymondImage from './RosterMemberImages/raymond.jpg';
 import AngelImage from './RosterMemberImages/angel.jpg';
 import TariqImage from './RosterMemberImages/tariq.jpg';
-
+// Roster Images Bootcamp 2018b
 import EngridImage from './RosterMemberImages/engrid.jpg';
 import VaughnImage from './RosterMemberImages/vaughn.jpg';
 import MyrahaImage from './RosterMemberImages/myraha.jpg';
