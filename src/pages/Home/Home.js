@@ -31,8 +31,8 @@ import UIPatternLayer from 'UILibrary/layer/UIPatternLayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import heroVideo from 'images/hero-video.mp4'
-import micahVideo from 'images/micah-video.mp4';
-import micahImage from './micah.jpg';
+// import micahVideo from 'images/micah-video.mp4';
+// import micahImage from './micah.jpg';
 
 import video50x30 from 'images/50x30_web.mp4';
 import image50x30 from './rene.jpg';

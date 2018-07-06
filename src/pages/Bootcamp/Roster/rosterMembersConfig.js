@@ -1,3 +1,4 @@
+/*
 // Roster Images Bootcamp 2017b
 import TimImage from './RosterMemberImages/tim.png';
 import NicolaImage from './RosterMemberImages/nicola.png';
@@ -15,6 +16,8 @@ import KareemImage from './RosterMemberImages/kareem.jpg';
 import MariaImage from './RosterMemberImages/maria_p.png';
 import WilsonImage from './RosterMemberImages/wilson.png';
 import EddieImage from './RosterMemberImages/eddie.png';
+*/
+/* 
 // Roster Images Bootcamp 2017c
 import SergeImage from './RosterMemberImages/serge.jpg';
 import FranciscoImage from './RosterMemberImages/francisco.jpg';
@@ -31,6 +34,8 @@ import YajairaImage from './RosterMemberImages/yajaira.jpg';
 import StephaneImage from './RosterMemberImages/stephane.jpg';
 import ChristianImage from './RosterMemberImages/christian.jpg';
 import LeslieImage from './RosterMemberImages/leslie.jpg';
+*/
+/* 
 // Roster Images Bootcamp 2018a
 import MannyImage from './RosterMemberImages/manny.jpg';
 import SavantImage from './RosterMemberImages/savant.jpg';
@@ -47,12 +52,13 @@ import GabbyImage from './RosterMemberImages/gabby.jpg';
 import RaymondImage from './RosterMemberImages/raymond.jpg';
 import AngelImage from './RosterMemberImages/angel.jpg';
 import TariqImage from './RosterMemberImages/tariq.jpg';
+*/
 // Roster Images Bootcamp 2018b
 import EngridImage from './RosterMemberImages/engrid.jpg';
 import VaughnImage from './RosterMemberImages/vaughn.jpg';
 import MyrahaImage from './RosterMemberImages/myraha.jpg';
 import JoshLBImage from './RosterMemberImages/josh_lb.jpg';
-import JasonImage from './RosterMemberImages/jason.jpg';
+// import JasonImage from './RosterMemberImages/jason.jpg';
 import VictorImage from './RosterMemberImages/victor.jpg';
 import DanicaImage from './RosterMemberImages/danica.jpg';
 import ZemamImage from './RosterMemberImages/zemam.jpg';
@@ -61,17 +67,152 @@ import SandraImage from './RosterMemberImages/sandra.jpg';
 import OmarImage from './RosterMemberImages/omar.jpg';
 import FernandoImage from './RosterMemberImages/fernando.jpg';
 import StandyImage from './RosterMemberImages/standy.jpg';
-import TyriekImage from './RosterMemberImages/tyriek.jpg';
+// import TyriekImage from './RosterMemberImages/tyriek.jpg';
 import RakimImage from './RosterMemberImages/rakim.jpg';
 import KeithImage from './RosterMemberImages/keith.jpg';
 import CristianImage from './RosterMemberImages/cristian.jpg';
-import AlainImage from './RosterMemberImages/alain.jpg';
+// import AlainImage from './RosterMemberImages/alain.jpg';
 import AliaImage from './RosterMemberImages/alia.jpg';
 import AllisonImage from './RosterMemberImages/allison.jpg';
 import EdwinImage from './RosterMemberImages/edwin.jpg';
 
 
 export default [
+  {
+    url: '/bootcamp/roster/alia-abdulahi',
+    portfolioUrl: 'http://aliathedeveloper.bitballoon.com/',
+    name: 'Alia Abdulahi',
+    image: AliaImage,
+    linkedin: 'https://www.linkedin.com/in/alia-abdulahi-188364155/',
+    github: 'https://github.com/aliaabdulahi',
+    resume: '',
+    bio: `My first experience with technology was through my father, who taught himself to code and made 
+    a game for me and my siblings to learn his native language. Technology, for me, has always been a tool 
+    for communication, access, imagination, innovation, and belonging. As a professional storyteller with 
+    a background in psychology, I deeply understand human behavior and know how to use my expressiveness 
+    and creativity to connect humans and bring ideas to life. As a full-stack developer, I hope to help 
+    brands create the best possible customer journey and user experience. My interests are e-commerce, 
+    VR/AR, AI, public health, pop culture and the intersection of viral internet culture with technology. 
+    I look forward to meeting you and contributing to a leading software development team.`
+  },
+  {
+    url: '/bootcamp/roster/joshua-lopes-baptista',
+    portfolioUrl: 'https://joshbaptista.netlify.com/',
+    name: 'Joshua Lopes-Baptista',
+    image: JoshLBImage,
+    linkedin: 'https://www.linkedin.com/in/joshlobaptista',
+    github: 'https://github.com/joshlobaptista',
+    resume: '',
+    bio: `Living in household with ten other children meant that competition was the way of life. 
+    From who could finish dinner the fastest to who could hold their breath the longest. 
+    Together we learned to work individually and as a team. During my senior year in high school, 
+    I was captain of the varsity basketball team and led us to our first playoff game in years. 
+    Sports and Resilient Coders have taught me discipline, how to access the thought process of 
+    studying and being able to adapt to various tasks and situations. I have been equipped to 
+    take on any challenge on and off the court. Like my varsity basketball team, I intend on 
+    working with your development team and taking future innovative technologies to the next level. `
+  },
+  {
+    url: '/bootcamp/roster/myraha-harmon-arias',
+    portfolioUrl: '',
+    name: 'Myraha Harmon-Arias',
+    image: MyrahaImage,
+    linkedin: 'https://www.linkedin.com/in/myrahaharmonarias/',
+    github: 'https://github.com/myraha',
+    resume: '',
+    bio: `As an artist, designer, and developer, I have always been driven by curiosity and discovery. 
+    Because of my dedication to learning, problem solving and collaboration have become an innate part 
+    of my process. From working as a program director where I empowered students through art and 
+    education, to life as a designer where I create business solutions that combine strategic thinking 
+    and quality design, I have always sought positions where I could do what I loved and still explore 
+    areas of unfamiliarity. Now, as full stack web developer, I have the privilege to be apart of a 
+    field where creativity knows no limits. Thanks to my past experiences, I am excited to tackle 
+    the complexities of balancing elegance and performance in old and new technologies, using my 
+    coding skills and design eye to strike those compromises both effectively and efficiently. `
+  },
+  {
+    url: '/bootcamp/roster/omar-augustin',
+    portfolioUrl: '',
+    name: 'Omar Augustin',
+    image: OmarImage,
+    linkedin: 'https://www.linkedin.com/in/oeaugustin',
+    github: 'https://github.com/oeaugustin',
+    resume: '',
+    bio: `Creating striking visual experiences has always been a passion of mine. Growing up, 
+    I continually exhausted my school's art curricula. Drawing, painting, photography, sculpture, 
+    furniture and graphic design were a few of the media I utilized to express myself. In college, 
+    I studied architecture and aesthetics to further my ability to render and create compositions 
+    I both observed and imagined. As a Resilient Coder, I plan to leverage my front end skills to 
+    continue to produce high level visuals as well as my back end abilities in order to make my projects 
+    interactive and user friendly. I look forward to contributing my skillset and becoming an integral 
+    part of your development team.`
+  },
+  {
+    url: '/bootcamp/roster/dee-daniels',
+    portfolioUrl: '',
+    name: 'Dee Daniels',
+    image: DanicaImage,
+    linkedin: 'https://www.linkedin.com/in/dee-daniels-29768839/',
+    github: 'https://github.com/DeeDaniels',
+    resume: '',
+    bio: `Dee Daniels is a Boston University Graduate with a B.S. in Journalism and a minor in 
+    French Language. In the past few years, she has honed her leadership and collaboration skills 
+    through coordinating and planning art festivals, music events, and working as the Program Coordinator 
+    at the Posse Foundation in the Greater Boston area. Now as a Fullstack Web Developer at 
+    Resilient Coders, she hopes to find avenues to combine her endless list of creative passion 
+    projects with her newly honed tech skills. Check out her portfolio below and feel free to 
+    reach out to her.`
+  },
+  {
+    url: '/bootcamp/roster/edwin-naranjo',
+    portfolioUrl: '',
+    name: 'Edwin Naranjo',
+    image: EdwinImage,
+    linkedin: 'https://www.linkedin.com/in/edwinnaranjo',
+    github: 'https://github.com/ENaranjo95',
+    resume: '',
+    bio: `I grew up in the states but I am known to be a proud Ecuadorian. My parents brought 
+    culture, heart and vision into my life and I carried those values to pursue a higher degree 
+    in business at the University of Massachusetts Lowell (UML). I was an active leader in the 
+    Latino community on campus, as President for Association of Latino Professionals For America 
+    (ALPFA) and general attendance to Latin American Student Association. In the past few years, 
+    I started cultivating a high interest in blockchain, cryptocurrency, and the fintech industry.
+    Now at Resilient Coders, I'm learning how to integrate my knowledge in business with the 
+    technology field to be competitive in today’s world. `
+  },
+  {
+    url: '/bootcamp/roster/zemam-beyene',
+    portfolioUrl: '',
+    name: 'Zemam Beyene',
+    image: ZemamImage,
+    linkedin: 'https://www.linkedin.com/in/zemam-beyene/',
+    github: 'https://github.com/beyenez',
+    resume: '',
+    bio: `I’m a recent college graduate from the University of Massachusetts Boston, with a major in 
+    business management and a concentration in marketing.  In college, I focused on using data analytics 
+    to develop techniques for business marketing decisions in order to improve businesses. 
+    As a nurse assistant, I gained nurturing instincts that inspired me to make a security safety device 
+    for women. My compassion for helping others gave me the confidence to create a minimal viable product. 
+    This curiosity for technical challenges and protecting others propelled me to become a full stack web 
+    developer. My experience at Resilient Coders has given me confidence to pursue the technical side of 
+    business by merging health to address social problems in security and safety.`
+  },
+  {
+    url: '/bootcamp/roster/cristian-morales',
+    portfolioUrl: 'https://cristianpmorales.github.io/',
+    name: 'Cristian Morales',
+    image: CristianImage,
+    linkedin: 'https://www.linkedin.com/in/cristian-morales-7b9a0590/',
+    github: 'https://github.com/cristianpmorales',
+    resume: '',
+    bio: `As a Business Systems Associate at Harvard University, I learned to identify user issues 
+    and how to test to deliver the best product to a customer. In volunteering with my local organization 
+    NUBE, I have represented neighbors that have been displaced by different legislations. I helped them by 
+    facilitating their conversation and making sure that the language was not an obstacle for anyone. 
+    These opportunities have given me the drive to continue growing my skills and be part of a company 
+    that respects and is aware of the challenges that people are facing. I hope to bring my analyst 
+    background and my programming skills to your company.`
+  },
   {
     url: '/bootcamp/roster/engrid-hernandez',
     portfolioUrl: '',
@@ -108,49 +249,20 @@ export default [
     of others. I hope one day to inspire my fellow mechanics that are looking for a change. `
   },
   {
-    url: '/bootcamp/roster/myraha-harmon-arias',
+    url: '/bootcamp/roster/sandra-attar',
     portfolioUrl: '',
-    name: 'Myraha Harmon-Arias',
-    image: MyrahaImage,
-    linkedin: 'https://www.linkedin.com/in/myrahaharmonarias/',
-    github: 'https://github.com/myraha',
+    name: 'Sandra Attar',
+    image: SandraImage,
+    linkedin: 'https://www.linkedin.com/in/sandraattar',
+    github: 'https://github.com/sandraattar',
     resume: '',
-    bio: `As an artist, designer, and developer, I have always been driven by curiosity and discovery. 
-    Because of my dedication to learning, problem solving and collaboration have become an innate part 
-    of my process. From working as a program director where I empowered students through art and 
-    education, to life as a designer where I create business solutions that combine strategic thinking 
-    and quality design, I have always sought positions where I could do what I loved and still explore 
-    areas of unfamiliarity. Now, as full stack web developer, I have the privilege to be apart of a 
-    field where creativity knows no limits. Thanks to my past experiences, I am excited to tackle 
-    the complexities of balancing elegance and performance in old and new technologies, using my 
-    coding skills and design eye to strike those compromises both effectively and efficiently. `
-  },
-  {
-    url: '/bootcamp/roster/joshua-lopes-baptista',
-    portfolioUrl: '',
-    name: 'Joshua Lopes-Baptista',
-    image: JoshLBImage,
-    linkedin: 'https://www.linkedin.com/in/joshlobaptista',
-    github: 'https://github.com/joshlobaptista',
-    resume: '',
-    bio: `Living in household with ten other children meant that competition was the way of life. 
-    From who could finish dinner the fastest to who could hold their breath the longest. 
-    Together we learned to work individually and as a team. During my senior year in high school, 
-    I was captain of the varsity basketball team and led us to our first playoff game in years. 
-    Sports and Resilient Coders have taught me discipline, how to access the thought process of 
-    studying and being able to adapt to various tasks and situations. I have been equipped to 
-    take on any challenge on and off the court. Like my varsity basketball team, I intend on 
-    working with your development team and taking future innovative technologies to the next level. `
-  },
-  {
-    url: '/bootcamp/roster/jason-martinez',
-    portfolioUrl: '',
-    name: 'Jason Martinez',
-    image: JasonImage,
-    linkedin: 'https://www.linkedin.com/in/jason-martinez-8401aa163/',
-    github: 'https://github.com/JasonJayMar',
-    resume: '',
-    bio: ``
+    bio: `I am fortunate enough to call myself a citizen of the beautiful country of Syria. 
+    Despite my challenges as an immigrant, I have learned to positively transform my journey. 
+    Last fall, I began coaching elementary school students at Hatch Coding. One of my 
+    responsibilities was to facilitate their learning through fun, interactive, Javascript-based projects. 
+    This experience and the lack of female representation in the tech world, fueled my fascination and 
+    inspired me to continue my coding and programming education. I’m Sandra Attar and my dream is to 
+    develop as many tools for a mission driven company with a global reach.`
   },
   {
     url: '/bootcamp/roster/victor-parada',
@@ -166,39 +278,6 @@ export default [
     to create a magical experience for a user or structuring a backend, I want to take my 
     decade of experience working with people and ever-changing situations to help entrepreneurs, 
     thinkers, and inventors create a future my children will call home.`
-  },
-  {
-    url: '/bootcamp/roster/dee-daniels',
-    portfolioUrl: '',
-    name: 'Dee Daniels',
-    image: DanicaImage,
-    linkedin: 'https://www.linkedin.com/in/dee-daniels-29768839/',
-    github: 'https://github.com/DeeDaniels',
-    resume: '',
-    bio: `Dee Daniels is a Boston University Graduate with a B.S. in Journalism and a minor in 
-    French Language. In the past few years, she has honed her leadership and collaboration skills 
-    through coordinating and planning art festivals, music events, and working as the Program Coordinator 
-    at the Posse Foundation in the Greater Boston area. Now as a Fullstack Web Developer at 
-    Resilient Coders, she hopes to find avenues to combine her endless list of creative passion 
-    projects with her newly honed tech skills. Check out her portfolio below and feel free to 
-    reach out to her.`
-  },
-  {
-    url: '/bootcamp/roster/zemam-beyene',
-    portfolioUrl: '',
-    name: 'Zemam Beyene',
-    image: ZemamImage,
-    linkedin: 'https://www.linkedin.com/in/zemam-beyene/',
-    github: 'https://github.com/beyenez',
-    resume: '',
-    bio: `I’m a recent college graduate from the University of Massachusetts Boston, with a major in 
-    business management and a concentration in marketing.  In college, I focused on using data analytics 
-    to develop techniques for business marketing decisions in order to improve businesses. 
-    As a nurse assistant, I gained nurturing instincts that inspired me to make a security safety device 
-    for women. My compassion for helping others gave me the confidence to create a minimal viable product. 
-    This curiosity for technical challenges and protecting others propelled me to become a full stack web 
-    developer. My experience at Resilient Coders has given me confidence to pursue the technical side of 
-    business by merging health to address social problems in security and safety.`
   },
   {
     url: '/bootcamp/roster/ryan-tillman-french',
@@ -217,54 +296,6 @@ export default [
     of poverty.`
   },
   {
-    url: '/bootcamp/roster/sandra-attar',
-    portfolioUrl: '',
-    name: 'Sandra Attar',
-    image: SandraImage,
-    linkedin: 'https://www.linkedin.com/in/sandraattar',
-    github: 'https://github.com/sandraattar',
-    resume: '',
-    bio: `I am fortunate enough to call myself a citizen of the beautiful country of Syria. 
-    Despite my challenges as an immigrant, I have learned to positively transform my journey. 
-    Last fall, I began coaching elementary school students at Hatch Coding. One of my 
-    responsibilities was to facilitate their learning through fun, interactive, Javascript-based projects. 
-    This experience and the lack of female representation in the tech world, fueled my fascination and 
-    inspired me to continue my coding and programming education. I’m Sandra Attar and my dream is to 
-    develop as many tools for a mission driven company with a global reach.`
-  },
-  {
-    url: '/bootcamp/roster/omar-augustin',
-    portfolioUrl: '',
-    name: 'Omar Augustin',
-    image: OmarImage,
-    linkedin: 'https://www.linkedin.com/in/oeaugustin',
-    github: 'https://github.com/oeaugustin',
-    resume: '',
-    bio: `Creating striking visual experiences has always been a passion of mine. Growing up, 
-    I continually exhausted my school's art curricula. Drawing, painting, photography, sculpture, 
-    furniture and graphic design were a few of the media I utilized to express myself. In college, 
-    I studied architecture and aesthetics to further my ability to render and create compositions 
-    I both observed and imagined. As a Resilient Coder, I plan to leverage my front end skills to 
-    continue to produce high level visuals as well as my back end abilities in order to make my projects 
-    interactive and user friendly. I look forward to contributing my skillset and becoming an integral 
-    part of your development team.`
-  },
-  {
-    url: '/bootcamp/roster/fernando-rodriguez',
-    portfolioUrl: '',
-    name: 'Fernando Rodriguez',
-    image: FernandoImage,
-    linkedin: 'https://www.linkedin.com/in/fernando-rodriguez-4777222b/',
-    github: 'https://github.com/Fjrodriguez787',
-    resume: '',
-    bio: `I am a Puerto Rico born, first generation, full-stack web developer. At a young age I realized 
-    I had a passion for community engagement, education and equity. My most recent work experience at 
-    Sociedad Latina was to engage and support 75 Boston Public High School seniors through their journey 
-    into higher education. I hope to combine my passion and skills to create a positive impact in people’s 
-    lives. I want to target issues our communities face and become part of the solution through coding. 
-    I look forward to working and growing with a driven development team.`
-  },
-  {
     url: '/bootcamp/roster/standy-merizier',
     portfolioUrl: '',
     name: 'Standy Merizier',
@@ -279,100 +310,6 @@ export default [
     and high school students. As a creative and technology enthusiast, I read books on coding and have 
     learned the software to help bring my visions to life. Resilient Coders has given me the experience 
     and confidence to build products that will help change people’s lives. `
-  },
-  {
-    url: '/bootcamp/roster/tyriek-brown',
-    portfolioUrl: '',
-    name: 'Tyriek Brown',
-    image: TyriekImage,
-    linkedin: 'https://www.linkedin.com/in/tyriek-brown-ba962b163/',
-    github: '',
-    resume: '',
-    bio: `I was born in Boston, MA but always had a family back in Norfolk, Virginia. Traveling back and 
-    forth gave me a chance to explore both places. I soon developed a passion for capturing moments that 
-    tell a story in one photo. I’ve experimented with different lenses, learned editing tools, done countless 
-    photoshoots and I continue to love what a “still” moment can mean to an audience. I gravitated to 
-    Resilient Coders because of the ability to merge my creative background with software engineering. 
-    As a Full Stack Web Developer, I plan to bring your products to life. `
-  },
-  {
-    url: '/bootcamp/roster/rakim-craig',
-    portfolioUrl: '',
-    name: 'Rakim Craig',
-    image: RakimImage,
-    linkedin: 'https://www.linkedin.com/in/rakim-craig/',
-    github: 'https://github.com/rakimdevcraig',
-    resume: '',
-    bio: `At the age of fourteen I built a computer from scratch as part of a class project. 
-    Since my parents weren’t able to afford one at the time, this became my first computer. 
-    I spent hours using it and discovering the endless features. Technology gave me an outlet 
-    to create, develop, and use my problem-solving skills, and eventually led me to pursue an 
-    Associate’s Degree in Software Development. It was during my time in school that I learned 
-    about Resilient Coders. I decided to embark on the fourteen week journey as a means of 
-    catapulting my academic and professional career and achieve the personal growth necessary 
-    to blossom in the field and life. I look forward to joining a team that shares my passion 
-    for development and my drive to solve problems with code. `
-  },
-  {
-    url: '/bootcamp/roster/keith-goodrich',
-    portfolioUrl: '',
-    name: 'Keith Goodrich',
-    image: KeithImage,
-    linkedin: 'https://www.linkedin.com/in/keithmgoodrich/',
-    github: 'https://github.com/KeithTheDev',
-    resume: '',
-    bio: ``
-  },
-  {
-    url: '/bootcamp/roster/cristian-morales',
-    portfolioUrl: '',
-    name: 'Cristian Morales',
-    image: CristianImage,
-    linkedin: 'https://www.linkedin.com/in/cristian-morales-7b9a0590/',
-    github: 'https://github.com/cristianpmorales',
-    resume: '',
-    bio: `As a Business Systems Associate at Harvard University, I learned to identify user issues 
-    and how to test to deliver the best product to a customer. In volunteering with my local organization 
-    NUBE, I have represented neighbors that have been displaced by different legislations. I helped them by 
-    facilitating their conversation and making sure that the language was not an obstacle for anyone. 
-    These opportunities have given me the drive to continue growing my skills and be part of a company 
-    that respects and is aware of the challenges that people are facing. I hope to bring my analyst 
-    background and my programming skills to your company.`
-  },
-  {
-    url: '/bootcamp/roster/alain-lafume',
-    portfolioUrl: '',
-    name: 'Alain Lafume',
-    image: AlainImage,
-    linkedin: 'https://www.linkedin.com/in/alain-lafume-312aab54/',
-    github: 'https://github.com/Blandaxt',
-    resume: '',
-    bio: `A few years after arriving in America, I received my first video game and fell in love 
-    with the complexity of how users interacted with pre-set stories. This fascination carried 
-    into my adulthood, where I played online games (MMORPG’s or MMOFPS) competitively. My favorite game, 
-    Fantasy Earth, unfortunately closed down due to its lack of proper security measures, thus making 
-    the site vulnerable to hackers. As a former computer science major, I decided it was time to pick up 
-    where I started and learn the best technologies used to protect programs from attacks. 
-    Now at Resilient Coders, I am taking the first step by becoming a full-stack developer. 
-    I would love the opportunity to create interactive products that are built with security in 
-    mind from the ground up.`
-  },
-  {
-    url: '/bootcamp/roster/alia-abdulahi',
-    portfolioUrl: '',
-    name: 'Alia Abdulahi',
-    image: AliaImage,
-    linkedin: 'https://www.linkedin.com/in/alia-abdulahi-188364155/',
-    github: 'https://github.com/aliaabdulahi',
-    resume: '',
-    bio: `My first experience with technology was through my father, who taught himself to code and made 
-    a game for me and my siblings to learn his native language. Technology, for me, has always been a tool 
-    for communication, access, imagination, innovation, and belonging. As a professional storyteller with 
-    a background in psychology, I deeply understand human behavior and know how to use my expressiveness 
-    and creativity to connect humans and bring ideas to life. As a full-stack developer, I hope to help 
-    brands create the best possible customer journey and user experience. My interests are e-commerce, 
-    VR/AR, AI, public health, pop culture and the intersection of viral internet culture with technology. 
-    I look forward to meeting you and contributing to a leading software development team.`
   },
   {
     url: '/bootcamp/roster/allison-abad',
@@ -394,22 +331,98 @@ export default [
     can achieve in a world built on the authority of the predominant class. `
   },
   {
-    url: '/bootcamp/roster/edwin-naranjo',
-    portfolioUrl: '',
-    name: 'Edwin Naranjo',
-    image: EdwinImage,
-    linkedin: 'https://www.linkedin.com/in/edwinnaranjo',
-    github: 'https://github.com/ENaranjo95',
+    url: '/bootcamp/roster/rakim-craig',
+    portfolioUrl: 'http://www.rakimcraig.com/',
+    name: 'Rakim Craig',
+    image: RakimImage,
+    linkedin: 'https://www.linkedin.com/in/rakim-craig/',
+    github: 'https://github.com/rakimdevcraig',
     resume: '',
-    bio: `I grew up in the states but I am known to be a proud Ecuadorian. My parents brought 
-    culture, heart and vision into my life and I carried those values to pursue a higher degree 
-    in business at the University of Massachusetts Lowell (UML). I was an active leader in the 
-    Latino community on campus, as President for Association of Latino Professionals For America 
-    (ALPFA) and general attendance to Latin American Student Association. In the past few years, 
-    I started cultivating a high interest in blockchain, cryptocurrency, and the fintech industry.
-    Now at Resilient Coders, I'm learning how to integrate my knowledge in business with the 
-    technology field to be competitive in today’s world. `
+    bio: `At the age of fourteen I built a computer from scratch as part of a class project. 
+    Since my parents weren’t able to afford one at the time, this became my first computer. 
+    I spent hours using it and discovering the endless features. Technology gave me an outlet 
+    to create, develop, and use my problem-solving skills, and eventually led me to pursue an 
+    Associate’s Degree in Software Development. It was during my time in school that I learned 
+    about Resilient Coders. I decided to embark on the fourteen week journey as a means of 
+    catapulting my academic and professional career and achieve the personal growth necessary 
+    to blossom in the field and life. I look forward to joining a team that shares my passion 
+    for development and my drive to solve problems with code. `
   },
+  {
+    url: '/bootcamp/roster/keith-goodrich',
+    portfolioUrl: 'https://keiththedev.github.io/KeithMGoodrich/',
+    name: 'Keith Goodrich',
+    image: KeithImage,
+    linkedin: 'https://www.linkedin.com/in/keithmgoodrich/',
+    github: 'https://github.com/KeithTheDev',
+    resume: '',
+    bio: `Growing up I never had a grasp on what I wanted to do with my future. I was raised with my 
+    grandparents, and always enjoyed solving their technical needs. There wasn’t much discipline growing 
+    up so I had to work on understanding why learning was so important for my development. After working 
+    at a hospital for many years, I didn’t see any growth in myself and had the urge to change my life. 
+    Resilient Coders opened my eyes to where I wanted to head in the future and I’m thankful for the 
+    opportunity. I can now say I have the rest of the tools I need to build the future I want.`
+  },
+  {
+    url: '/bootcamp/roster/fernando-rodriguez',
+    portfolioUrl: '',
+    name: 'Fernando Rodriguez',
+    image: FernandoImage,
+    linkedin: 'https://www.linkedin.com/in/fernando-rodriguez-4777222b/',
+    github: 'https://github.com/Fjrodriguez787',
+    resume: '',
+    bio: `I am a Puerto Rico born, first generation, full-stack web developer. At a young age I realized 
+    I had a passion for community engagement, education and equity. My most recent work experience at 
+    Sociedad Latina was to engage and support 75 Boston Public High School seniors through their journey 
+    into higher education. I hope to combine my passion and skills to create a positive impact in people’s 
+    lives. I want to target issues our communities face and become part of the solution through coding. 
+    I look forward to working and growing with a driven development team.`
+  },
+    // {
+  //   url: '/bootcamp/roster/tyriek-brown',
+  //   portfolioUrl: '',
+  //   name: 'Tyriek Brown',
+  //   image: TyriekImage,
+  //   linkedin: 'https://www.linkedin.com/in/tyriek-brown-ba962b163/',
+  //   github: '',
+  //   resume: '',
+  //   bio: `I was born in Boston, MA but always had a family back in Norfolk, Virginia. Traveling back and 
+  //   forth gave me a chance to explore both places. I soon developed a passion for capturing moments that 
+  //   tell a story in one photo. I’ve experimented with different lenses, learned editing tools, done countless 
+  //   photoshoots and I continue to love what a “still” moment can mean to an audience. I gravitated to 
+  //   Resilient Coders because of the ability to merge my creative background with software engineering. 
+  //   As a Full Stack Web Developer, I plan to bring your products to life. `
+  // },
+  // {
+  //   url: '/bootcamp/roster/alain-lafume',
+  //   portfolioUrl: 'http://alain-lafume.bitballoon.com/',
+  //   name: 'Alain Lafume',
+  //   image: AlainImage,
+  //   linkedin: 'https://www.linkedin.com/in/alain-lafume-312aab54/',
+  //   github: 'https://github.com/Blandaxt',
+  //   resume: '',
+  //   bio: `A few years after arriving in America, I received my first video game and fell in love 
+  //   with the complexity of how users interacted with pre-set stories. This fascination carried 
+  //   into my adulthood, where I played online games (MMORPG’s or MMOFPS) competitively. My favorite game, 
+  //   Fantasy Earth, unfortunately closed down due to its lack of proper security measures, thus making 
+  //   the site vulnerable to hackers. As a former computer science major, I decided it was time to pick up 
+  //   where I started and learn the best technologies used to protect programs from attacks. 
+  //   Now at Resilient Coders, I am taking the first step by becoming a full-stack developer. 
+  //   I would love the opportunity to create interactive products that are built with security in 
+  //   mind from the ground up.`
+  // },
+    // {
+  //   url: '/bootcamp/roster/jason-martinez',
+  //   portfolioUrl: '',
+  //   name: 'Jason Martinez',
+  //   image: JasonImage,
+  //   linkedin: 'https://www.linkedin.com/in/jason-martinez-8401aa163/',
+  //   github: 'https://github.com/JasonJayMar',
+  //   resume: '',
+  //   bio: ``
+  // },
+
+
   // {
   //   url: '/bootcamp/roster/anthony-moore',
   //   portfolioUrl: '',

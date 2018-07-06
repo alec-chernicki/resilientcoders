@@ -5,7 +5,6 @@ import logoTbf from './BootcampPartnersImages/logo_tbf.png';
 import logoAmeliaPeabody from './BootcampPartnersImages/logo_ameliapeabody.jpg';
 import logoJohnHancock from './BootcampPartnersImages/logo_johnhancock.png';
 import logoBnyMellon from './BootcampPartnersImages/logo_bnymellon.png';
-import logoInsightSquared from './BootcampPartnersImages/logo_insightsquared.png';
 import logoZakim from './BootcampPartnersImages/logo_zakim.png';
 import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
 import logoTPC from './BootcampPartnersImages/logo_tpc.jpg';

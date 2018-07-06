@@ -1,7 +1,5 @@
 import globeLogo from './AlumniCompaniesImages/globe_logo.png';
 import microsoftLogo from './AlumniCompaniesImages/microsoft_logo.png';
-import grommetLogo from './AlumniCompaniesImages/grommet_logo.png';
-import freshLogo from './AlumniCompaniesImages/fresh_logo.png';
 import bisonLogo from './AlumniCompaniesImages/logo_bison.jpg';
 import gravytyLogo from './AlumniCompaniesImages/logo_gravyty.jpg';
 import hillhollidayLogo from './AlumniCompaniesImages/logo_hillholliday.jpg';

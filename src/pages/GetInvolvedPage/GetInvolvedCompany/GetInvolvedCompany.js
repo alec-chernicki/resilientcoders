@@ -13,7 +13,7 @@ import UILayout from 'UILibrary/layout/UILayout';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
-import contractLabImage from './get-involved-lab.jpg';
+// import contractLabImage from './get-involved-lab.jpg';
 import hireStudentsImage from './get-involved-rizel.jpg';
 import companyImage from '../company.png';
 
