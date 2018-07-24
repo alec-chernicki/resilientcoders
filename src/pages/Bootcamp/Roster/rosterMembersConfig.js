@@ -58,7 +58,7 @@ import EngridImage from './RosterMemberImages/engrid.jpg';
 import VaughnImage from './RosterMemberImages/vaughn.jpg';
 import MyrahaImage from './RosterMemberImages/myraha.jpg';
 import JoshLBImage from './RosterMemberImages/josh_lb.jpg';
-// import JasonImage from './RosterMemberImages/jason.jpg';
+import JasonImage from './RosterMemberImages/jason.jpg';
 import VictorImage from './RosterMemberImages/victor.jpg';
 import DanicaImage from './RosterMemberImages/danica.jpg';
 import ZemamImage from './RosterMemberImages/zemam.jpg';
@@ -67,11 +67,11 @@ import SandraImage from './RosterMemberImages/sandra.jpg';
 import OmarImage from './RosterMemberImages/omar.jpg';
 import FernandoImage from './RosterMemberImages/fernando.jpg';
 import StandyImage from './RosterMemberImages/standy.jpg';
-// import TyriekImage from './RosterMemberImages/tyriek.jpg';
+import TyriekImage from './RosterMemberImages/tyriek.jpg';
 import RakimImage from './RosterMemberImages/rakim.jpg';
 import KeithImage from './RosterMemberImages/keith.jpg';
 import CristianImage from './RosterMemberImages/cristian.jpg';
-// import AlainImage from './RosterMemberImages/alain.jpg';
+import AlainImage from './RosterMemberImages/alain.jpg';
 import AliaImage from './RosterMemberImages/alia.jpg';
 import AllisonImage from './RosterMemberImages/allison.jpg';
 import EdwinImage from './RosterMemberImages/edwin.jpg';
@@ -85,7 +85,7 @@ export default [
     image: AliaImage,
     linkedin: 'https://www.linkedin.com/in/alia-abdulahi-188364155/',
     github: 'https://github.com/aliaabdulahi',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_aliaabdulahi.pdf',
     bio: `My first experience with technology was through my father, who taught himself to code and made 
     a game for me and my siblings to learn his native language. Technology, for me, has always been a tool 
     for communication, access, imagination, innovation, and belonging. As a professional storyteller with 
@@ -102,7 +102,7 @@ export default [
     image: JoshLBImage,
     linkedin: 'https://www.linkedin.com/in/joshlobaptista',
     github: 'https://github.com/joshlobaptista',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_joshualopesbaptista.pdf',
     bio: `Living in household with ten other children meant that competition was the way of life. 
     From who could finish dinner the fastest to who could hold their breath the longest. 
     Together we learned to work individually and as a team. During my senior year in high school, 
@@ -137,7 +137,7 @@ export default [
     image: OmarImage,
     linkedin: 'https://www.linkedin.com/in/oeaugustin',
     github: 'https://github.com/oeaugustin',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_omaraugustin.pdf',
     bio: `Creating striking visual experiences has always been a passion of mine. Growing up, 
     I continually exhausted my school's art curricula. Drawing, painting, photography, sculpture, 
     furniture and graphic design were a few of the media I utilized to express myself. In college, 
@@ -149,12 +149,12 @@ export default [
   },
   {
     url: '/bootcamp/roster/dee-daniels',
-    portfolioUrl: '',
+    portfolioUrl: 'deedaniels.co',
     name: 'Dee Daniels',
     image: DanicaImage,
     linkedin: 'https://www.linkedin.com/in/dee-daniels-29768839/',
     github: 'https://github.com/DeeDaniels',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_deedaniels.pdf',
     bio: `Dee Daniels is a Boston University Graduate with a B.S. in Journalism and a minor in 
     French Language. In the past few years, she has honed her leadership and collaboration skills 
     through coordinating and planning art festivals, music events, and working as the Program Coordinator 
@@ -170,7 +170,7 @@ export default [
     image: EdwinImage,
     linkedin: 'https://www.linkedin.com/in/edwinnaranjo',
     github: 'https://github.com/ENaranjo95',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_edwinnaranjo.pdf',
     bio: `I grew up in the states but I am known to be a proud Ecuadorian. My parents brought 
     culture, heart and vision into my life and I carried those values to pursue a higher degree 
     in business at the University of Massachusetts Lowell (UML). I was an active leader in the 
@@ -187,7 +187,7 @@ export default [
     image: ZemamImage,
     linkedin: 'https://www.linkedin.com/in/zemam-beyene/',
     github: 'https://github.com/beyenez',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_zemambeyene.pdf',
     bio: `I’m a recent college graduate from the University of Massachusetts Boston, with a major in 
     business management and a concentration in marketing.  In college, I focused on using data analytics 
     to develop techniques for business marketing decisions in order to improve businesses. 
@@ -204,7 +204,7 @@ export default [
     image: CristianImage,
     linkedin: 'https://www.linkedin.com/in/cristian-morales-7b9a0590/',
     github: 'https://github.com/cristianpmorales',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_cristianmorales.pdf',
     bio: `As a Business Systems Associate at Harvard University, I learned to identify user issues 
     and how to test to deliver the best product to a customer. In volunteering with my local organization 
     NUBE, I have represented neighbors that have been displaced by different legislations. I helped them by 
@@ -220,7 +220,7 @@ export default [
     image: EngridImage,
     linkedin: 'https://www.linkedin.com/in/engridhernandez/',
     github: 'https://github.com/ehcodes',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_engridhernandez.pdf',
     bio: `Growing up, my dad was a tech buff who worked in IT and we had a lot of niche gadgets 
     in the house. I remember him building himself a PC and not giving him a moment of silence 
     through all the questions I had for him. I wanted to know why each piece was needed, what 
@@ -238,7 +238,7 @@ export default [
     image: VaughnImage,
     linkedin: 'https://www.linkedin.com/in/vaughn-scarlett/',
     github: 'https://github.com/Vscarlett',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_vaughnscarlett.pdf',
     bio: `When I was a kid I was into technology and cars. I went to Universal technical Institute 
     to become an Automotive Technician. I graduated with honors and went into the workforce. 
     I spent the past 6 years being a technician in many dealerships, and found out that the 
@@ -255,7 +255,7 @@ export default [
     image: SandraImage,
     linkedin: 'https://www.linkedin.com/in/sandraattar',
     github: 'https://github.com/sandraattar',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_sandraattar.pdf',
     bio: `I am fortunate enough to call myself a citizen of the beautiful country of Syria. 
     Despite my challenges as an immigrant, I have learned to positively transform my journey. 
     Last fall, I began coaching elementary school students at Hatch Coding. One of my 
@@ -281,12 +281,12 @@ export default [
   },
   {
     url: '/bootcamp/roster/ryan-tillman-french',
-    portfolioUrl: '',
+    portfolioUrl: 'http://ryantfrench.bitballoon.com/',
     name: 'Ryan Tillman-French',
     image: RyanImage,
     linkedin: 'https://www.linkedin.com/in/ryantf/',
     github: 'https://github.com/ResilientRyry',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_ryantillmanfrench.pdf',
     bio: `A first generation college student coming from a single parent home, I’ve developed a craving 
     to challenge and prove statistics wrong. In my past roles, I have excelled by making my assignment 
     less complex and done efficiently.This determination to make a better life for myself motivated me 
@@ -302,7 +302,7 @@ export default [
     image: StandyImage,
     linkedin: 'https://www.linkedin.com/in/standymerizier/',
     github: 'https://github.com/StandyMerizier',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_standymerizier.pdf',
     bio: `Motivated and entrepreneur-minded individual with a passion for learning. I have a background in 
     software engineering from attending Fairfield University and Western Governors University. 
     I’m a strong believer in continuous improvement and seek opportunities where I can grow and polish my 
@@ -318,7 +318,7 @@ export default [
     image: AllisonImage,
     linkedin: 'https://www.linkedin.com/in/allison-abad/',
     github: 'https://github.com/allison-abad',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_allisonabad.pdf',
     bio: `Being a first generation child to immigrant parents has exposed me to the doubts of 
     others from both scopes of racial and gender profiling. Growing up with such minimal knowledge 
     of how to practice self love and having no leaders to look up to, I decided to become my own 
@@ -337,7 +337,7 @@ export default [
     image: RakimImage,
     linkedin: 'https://www.linkedin.com/in/rakim-craig/',
     github: 'https://github.com/rakimdevcraig',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_omaraugustin.pdf',
     bio: `At the age of fourteen I built a computer from scratch as part of a class project. 
     Since my parents weren’t able to afford one at the time, this became my first computer. 
     I spent hours using it and discovering the endless features. Technology gave me an outlet 
@@ -355,7 +355,7 @@ export default [
     image: KeithImage,
     linkedin: 'https://www.linkedin.com/in/keithmgoodrich/',
     github: 'https://github.com/KeithTheDev',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_keithmgoodrich.pdf',
     bio: `Growing up I never had a grasp on what I wanted to do with my future. I was raised with my 
     grandparents, and always enjoyed solving their technical needs. There wasn’t much discipline growing 
     up so I had to work on understanding why learning was so important for my development. After working 
@@ -370,7 +370,7 @@ export default [
     image: FernandoImage,
     linkedin: 'https://www.linkedin.com/in/fernando-rodriguez-4777222b/',
     github: 'https://github.com/Fjrodriguez787',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_fernandorodriguez.pdf',
     bio: `I am a Puerto Rico born, first generation, full-stack web developer. At a young age I realized 
     I had a passion for community engagement, education and equity. My most recent work experience at 
     Sociedad Latina was to engage and support 75 Boston Public High School seniors through their journey 
@@ -378,49 +378,54 @@ export default [
     lives. I want to target issues our communities face and become part of the solution through coding. 
     I look forward to working and growing with a driven development team.`
   },
-    // {
-  //   url: '/bootcamp/roster/tyriek-brown',
-  //   portfolioUrl: '',
-  //   name: 'Tyriek Brown',
-  //   image: TyriekImage,
-  //   linkedin: 'https://www.linkedin.com/in/tyriek-brown-ba962b163/',
-  //   github: '',
-  //   resume: '',
-  //   bio: `I was born in Boston, MA but always had a family back in Norfolk, Virginia. Traveling back and 
-  //   forth gave me a chance to explore both places. I soon developed a passion for capturing moments that 
-  //   tell a story in one photo. I’ve experimented with different lenses, learned editing tools, done countless 
-  //   photoshoots and I continue to love what a “still” moment can mean to an audience. I gravitated to 
-  //   Resilient Coders because of the ability to merge my creative background with software engineering. 
-  //   As a Full Stack Web Developer, I plan to bring your products to life. `
-  // },
-  // {
-  //   url: '/bootcamp/roster/alain-lafume',
-  //   portfolioUrl: 'http://alain-lafume.bitballoon.com/',
-  //   name: 'Alain Lafume',
-  //   image: AlainImage,
-  //   linkedin: 'https://www.linkedin.com/in/alain-lafume-312aab54/',
-  //   github: 'https://github.com/Blandaxt',
-  //   resume: '',
-  //   bio: `A few years after arriving in America, I received my first video game and fell in love 
-  //   with the complexity of how users interacted with pre-set stories. This fascination carried 
-  //   into my adulthood, where I played online games (MMORPG’s or MMOFPS) competitively. My favorite game, 
-  //   Fantasy Earth, unfortunately closed down due to its lack of proper security measures, thus making 
-  //   the site vulnerable to hackers. As a former computer science major, I decided it was time to pick up 
-  //   where I started and learn the best technologies used to protect programs from attacks. 
-  //   Now at Resilient Coders, I am taking the first step by becoming a full-stack developer. 
-  //   I would love the opportunity to create interactive products that are built with security in 
-  //   mind from the ground up.`
-  // },
-    // {
-  //   url: '/bootcamp/roster/jason-martinez',
-  //   portfolioUrl: '',
-  //   name: 'Jason Martinez',
-  //   image: JasonImage,
-  //   linkedin: 'https://www.linkedin.com/in/jason-martinez-8401aa163/',
-  //   github: 'https://github.com/JasonJayMar',
-  //   resume: '',
-  //   bio: ``
-  // },
+    {
+    url: '/bootcamp/roster/tyriek-brown',
+    portfolioUrl: '',
+    name: 'Tyriek Brown',
+    image: TyriekImage,
+    linkedin: 'https://www.linkedin.com/in/tyriek-brown-ba962b163/',
+    github: 'https://github.com/tyriekbrown',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_tybrown.pdf',
+    bio: `I was born in Boston, MA but always had a family back in Norfolk, Virginia. Traveling back and 
+    forth gave me a chance to explore both places. I soon developed a passion for capturing moments that 
+    tell a story in one photo. I’ve experimented with different lenses, learned editing tools, done countless 
+    photoshoots and I continue to love what a “still” moment can mean to an audience. I gravitated to 
+    Resilient Coders because of the ability to merge my creative background with software engineering. 
+    As a Full Stack Web Developer, I plan to bring your products to life. `
+  },
+  {
+    url: '/bootcamp/roster/alain-lafume',
+    portfolioUrl: 'http://www.alainlafume.website/',
+    name: 'Alain Lafume',
+    image: AlainImage,
+    linkedin: 'https://www.linkedin.com/in/alain-lafume-312aab54/',
+    github: 'https://github.com/Blandaxt',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_alainlafume%20.pdf',
+    bio: `A few years after arriving in America, I received my first video game and fell in love with the 
+    complexity of how users interacted with pre-set stories. This fascination carried into my adulthood, 
+    where I played online games (MMORPG’s or MMOFPS) competitively. My favorite game, Fantasy Earth, 
+    unfortunately closed down due to its lack of proper security measures, thus making the site vulnerable 
+    to hackers. As a former computer science major, I decided it was time to pick up where I started and 
+    learn the best technologies used to protect programs from attacks. Now at Resilient Coders, I am taking 
+    the first step by becoming a full-stack developer. I would love the opportunity to create interactive 
+    products that are built with security in mind from the ground up.`
+  },
+    {
+    url: '/bootcamp/roster/jason-martinez',
+    portfolioUrl: '',
+    name: 'Jason Martinez',
+    image: JasonImage,
+    linkedin: 'https://www.linkedin.com/in/jason-martinez-8401aa163/',
+    github: 'https://github.com/JasonJayMar',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_jasonmartinez.pdf',
+    bio: `Video games made me into who I am. When I was growing up, all I wanted to learn was how to make 
+    my own game. This led me to enroll in the Computer and Gaming Simulation program at Bunker Hill College. 
+    Sadly after two years, I wasn't getting any closer to becoming a developer. But that wasn't going to 
+    stop me from pursuing my passion, so I built my own computer and joined Resilient Coders. My final 
+    project is a full stack manga website with animation on every box. It's going to be the start of 
+    something big and I know will put smiles on a lot of anime lovers. As a full-stack developer, 
+    I want to build products that make people happy.`
+  },
 
 
   // {
