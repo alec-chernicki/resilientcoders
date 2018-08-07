@@ -114,7 +114,7 @@ export default [
   },
   {
     url: '/bootcamp/roster/myraha-harmon-arias',
-    portfolioUrl: '',
+    portfolioUrl: 'https://myraha.io/',
     name: 'Myraha Harmon-Arias',
     image: MyrahaImage,
     linkedin: 'https://www.linkedin.com/in/myrahaharmonarias/',
