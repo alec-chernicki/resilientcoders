@@ -119,7 +119,7 @@ export default [
     image: MyrahaImage,
     linkedin: 'https://www.linkedin.com/in/myrahaharmonarias/',
     github: 'https://github.com/myraha',
-    resume: '',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_myrahaharmonarias.pdf',
     bio: `As an artist, designer, and developer, I have always been driven by curiosity and discovery. 
     Because of my dedication to learning, problem solving and collaboration have become an innate part 
     of my process. From working as a program director where I empowered students through art and 
