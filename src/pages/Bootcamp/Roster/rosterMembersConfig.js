@@ -337,7 +337,7 @@ export default [
     image: RakimImage,
     linkedin: 'https://www.linkedin.com/in/rakim-craig/',
     github: 'https://github.com/rakimdevcraig',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_omaraugustin.pdf',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_rakimcraig.pdf',
     bio: `At the age of fourteen I built a computer from scratch as part of a class project. 
     Since my parents weren’t able to afford one at the time, this became my first computer. 
     I spent hours using it and discovering the endless features. Technology gave me an outlet 
