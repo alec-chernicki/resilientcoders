@@ -7,7 +7,7 @@ import GetInvolvedCompany from '../pages/GetInvolvedPage/GetInvolvedCompany/GetI
 import GetInvolvedThankYou from '../pages/GetInvolvedPage/GetInvolvedThankYou/GetInvolvedThankYou';
 import GetInvolvedStudent from '../pages/GetInvolvedPage/GetInvolvedStudent/GetInvolvedStudent';
 
-import Lab from '../pages/Lab/Lab';
+import Hire from '../pages/Hire/Hire';
 import Team from '../pages/Team/Team';
 import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
@@ -39,7 +39,7 @@ export default(
       {rosterMemberRoutes}
       <IndexRoute component={Bootcamp}/>
     </Route>
-    <Route path="lab" component={Lab}/>
+    <Route path="hire" component={Hire}/>
     <Route path="team" component={Team}/>
     <Route path="news" component={News}/>
     <Route path="diversityplaybook" component={Playbook}/>
