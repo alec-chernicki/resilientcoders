@@ -177,6 +177,8 @@ class Bootcamp extends PureComponent {
     );
   }
   render() {
+    const upcomingBootcampText = "The only way to apply to the Bootcamp, which will run from January 7th, 2019 through April 12th, 2019 is to join one of our hackathons. The next ones are on Saturday November 17th or Wednesday November 21st from 10 am until 5 pm at our offices: 50 Milk Street, Boston.";
+
     return (
       <RouteTransition>
         <Helmet title="Resilient Bootcamp" />
@@ -210,8 +212,7 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>Apply</h2>
                   <p>
-                    The only way to apply to the Bootcamp, which will run from September 10th through December 14th, is to join one of our hackathons. The next one is on Saturday July 14th, at 50 Milk St 17th floor.
-
+                    { upcomingBootcampText }
                   </p>
 
                   <UIButton
@@ -231,13 +232,6 @@ class Bootcamp extends PureComponent {
           <UISkewedLayer use="tertiary" className="index-1"/>
           <UISection className="text-center p-top-6 p-bottom-28 p-sm-bottom-18 index-2">
             <h1 className="text-darkest">The Program</h1>
-            {/*
-            <p className="text-constrained m-x-auto m-bottom-6">
-              Our Bootcamp comes in two tracks: Bootcamp(Base) and Bootcamp(MERN).
-              In each, we teach students the fundamentals of front end web development.
-              We start with the basics and end with real world client work.
-            </p>
-            */}
             <h4 className="text-center">
               Starts with
             </h4>
@@ -304,8 +298,7 @@ class Bootcamp extends PureComponent {
                 <UICard use="secondary" className="p-all-6 full-height with-shadow">
                   <h2>As a student</h2>
                   <p>
-                  The only way to apply to the Bootcamp, which will run from September 10th through December 14th, is to join one of our hackathons. The next one is on Saturday July 14th, at 50 Milk St 17th floor.
-
+                    { upcomingBootcampText }
                   </p>
                   <UIButton
                     external={true}
@@ -320,7 +313,7 @@ class Bootcamp extends PureComponent {
                   <div className="divider divider__red"/>
                   <p>
                     Want to get involved in Bootcamp? <a href="/get-involved/volunteer">Sign up for the mailing list,</a> and we will keep you posted
-                    as the summer approaches.
+                    as the next cohort approaches.
                   </p>
                   <UIButton to="/get-involved/volunteer">
                     Get Involved
