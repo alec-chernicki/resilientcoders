@@ -281,7 +281,7 @@ export default [
   },
   {
     url: '/bootcamp/roster/ryan-tillman-french',
-    portfolioUrl: 'http://ryantfrench.bitballoon.com/',
+    portfolioUrl: 'https://ryantfrench.netlify.com/',
     name: 'Ryan Tillman-French',
     image: RyanImage,
     linkedin: 'https://www.linkedin.com/in/ryantf/',
