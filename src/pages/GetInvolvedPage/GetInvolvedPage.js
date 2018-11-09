@@ -98,9 +98,9 @@ class GetInvolved extends React.Component {
                   </p>
                   <UIButton
                     target="_blank"
-                    href="https://www.paypal.me/resilientcoders"
+                    href="https://www.paypal.com/donate/?token=D-qrmJTfAwKTJYawtu9I_T_eQWnaxfI0uvdD0iTTIDj6viq3dbxOacNl9aFKyK9TDz1gHG&country.x=US&locale.x=US"
                   >
-                    Donate Any Amount
+                    Donate
                   </UIButton>
                   <p className="m-top-2">
                     Resilient Coders is a 501(c)(3) organization.
