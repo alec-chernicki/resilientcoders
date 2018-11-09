@@ -84,7 +84,7 @@ class GetInvolved extends React.Component {
               <UIFlex>
                 <UIImage
                   type="cover"
-                  src={donateImage}
+                  src={donate2Image}
                   alt="A group of coders"
                 />
               </UIFlex>
