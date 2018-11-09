@@ -91,10 +91,10 @@ class GetInvolved extends React.Component {
               <UIFlex>
                 <UICard className="p-all-6">
                   <h2>
-                    Donate
+                    Invest in local tech talent
                   </h2>
                   <p>
-                    Your support allows us to spread code literacy to communities traditionally underrepresented in technology.
+                    Your support allows us to spread code literacy to communities traditionally underrepresented in technology. Join us in hacking the opportunity gap!
                   </p>
                   <UIButton
                     target="_blank"
@@ -103,7 +103,7 @@ class GetInvolved extends React.Component {
                     Donate
                   </UIButton>
                   <p className="m-top-2">
-                    Resilient Coders is a 501(c)(3) organization.
+                    Resilient Coders is a 501(c)(3) organization. Our Tax ID# is 47-1882343.
                   </p>
                 </UICard>
               </UIFlex>
