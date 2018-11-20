@@ -75,7 +75,7 @@ app.get('/canvas', (req, res) => {
   res.redirect('https://canvas.instructure.com/enroll/K96A8P');
 });
 app.get('/50x30', (req, res) => {
-  res.redirect('https://resilient-labs.github.io/end-of-2017/');
+  res.redirect('https://resilient-labs.github.io/50x30/');
 });
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
