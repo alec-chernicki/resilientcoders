@@ -14,7 +14,7 @@ import UISection from 'UILibrary/layout/UISection';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UILayer from 'UILibrary/layer/UILayer';
 
-import donateImage from './donate.jpg';
+import donate2Image from './donate2.jpg';
 import heroImage from './hero.jpg';
 import mentorImage from './mentor.png';
 import studentImage from './student.png';
@@ -84,29 +84,29 @@ class GetInvolved extends React.Component {
               <UIFlex>
                 <UIImage
                   type="cover"
-                  src={donateImage}
+                  src={donate2Image}
                   alt="A group of coders"
                 />
               </UIFlex>
               <UIFlex>
                 <UICard className="p-all-6">
                   <h2>
-                    Donate
+                    Invest in local tech talent
                   </h2>
                   <p>
-                    Your support allows us to spread code literacy to communities traditionally underrepresented in technology.
+                    Your support allows us to spread code literacy to communities traditionally underrepresented in technology. Join us in hacking the opportunity gap!
                   </p>
                   <UIButton
                     target="_blank"
-                    href="https://www.paypal.me/resilientcoders"
+                    href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44992UYNB8GTY"
                   >
-                    Donate Any Amount
+                    Donate
                   </UIButton>
                   <p className="m-top-2">
-                    Resilient Coders is a 501(c)(3) organization.
+                    Resilient Coders is a 501(c)(3) organization. Our Tax ID# is 47-1882343.
                   </p>
                 </UICard>
-              </UIFlex>
+             </UIFlex>
             </UIFlexRow>
           </UISection>
         </UILayout>
