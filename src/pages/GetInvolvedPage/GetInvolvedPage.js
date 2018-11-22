@@ -14,7 +14,7 @@ import UISection from 'UILibrary/layout/UISection';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UILayer from 'UILibrary/layer/UILayer';
 
-import donate2Image from './donate2.JPG';
+import donateImage from './donate.jpg';
 import heroImage from './hero.jpg';
 import mentorImage from './mentor.png';
 import studentImage from './student.png';
@@ -84,7 +84,7 @@ class GetInvolved extends React.Component {
               <UIFlex>
                 <UIImage
                   type="cover"
-                  src={donate2Image}
+                  src={donateImage}
                   alt="A group of coders"
                 />
               </UIFlex>
