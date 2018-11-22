@@ -14,7 +14,7 @@ import UISection from 'UILibrary/layout/UISection';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UILayer from 'UILibrary/layer/UILayer';
 
-import donate2Image from './donate2.jpg';
+import donate2Image from './donate2.JPG';
 import heroImage from './hero.jpg';
 import mentorImage from './mentor.png';
 import studentImage from './student.png';
