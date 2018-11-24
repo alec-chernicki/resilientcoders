@@ -177,7 +177,7 @@ class Bootcamp extends PureComponent {
     );
   }
   render() {
-    const upcomingBootcampText = "The only way to apply to the Bootcamp, which will run from January 7th, 2019 through April 12th, 2019 is to join one of our hackathons. The next ones are on Saturday November 17th or Wednesday November 21st from 10 am until 5 pm at our offices: 50 Milk Street, Boston.";
+    const upcomingBootcampText = "The only way to apply to the Bootcamp, which will run from January 21st, 2019 through April 26th, 2019 is to join one of our hackathons. The next ones are on Saturday November 17th or Wednesday November 28th from 10 am until 5 pm at the Roxbury Innovation Center: 2300 Washington St, Boston.";
 
     return (
       <RouteTransition>
