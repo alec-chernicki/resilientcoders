@@ -11,6 +11,7 @@ import Lab from '../pages/Lab/Lab';
 import Team from '../pages/Team/Team';
 import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
+import Blog from '../pages/Blog/Blog';
 
 import Roster from '../pages/Bootcamp/Roster/Roster';
 import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
@@ -42,6 +43,7 @@ export default(
     <Route path="lab" component={Lab}/>
     <Route path="team" component={Team}/>
     <Route path="news" component={News}/>
+    <Route path="blog" component={Blog}/>
     <Route path="diversityplaybook" component={Playbook}/>
     <Route path="get-involved">
       <IndexRoute component={GetInvolvedPage} />
