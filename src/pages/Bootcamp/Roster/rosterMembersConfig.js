@@ -111,13 +111,13 @@ export default [
     bio: `My Name is Alejandro Garcia Cojulun. I live in Allston. I started to work with computers by building them and disassembling them. And when I’d learned that, I wanted to kick it up a notch: Rather than tinker with hardcore, why not create with software? Coding has been really interesting to me, because even more exciting than building is the process throwing a wrench in the gears, and then rebuilding. Being challenged is an amazing feeling. I like constantly breaking into new ground.`
   },
   {
-    url: '/bootcamp/roster/brandi-elmalli',
+    url: '/bootcamp/roster/brandi-duarte',
     portfolioUrl: '',
-    name: 'Brandi Elmalli',
+    name: 'Brandi Duarte',
     image: BrandiImage,
     linkedin: 'https://www.linkedin.com/in/brandiduarte/',
     github: 'https://github.com/brandielmalli',
-    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_brandielmalli.pdf',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_brandiduarte.pdf',
     bio: `I was born and raised in New Bedford, MA to Cape Verdean parents. There weren’t many job opportunities, so I moved to Boston three years ago in search of a better life. My father who was also an engineer is my inspiration and whom I would like to thank for my early interests in the field of computer programming. As a young professional I have always had a strong work ethic but my true skill lies in being able to assess my work environment and strengthen any weaknesses I see. While at Resilient Coders I was also working full time as a bartender. As I was learning more and more, I found myself anxious to solve the complaints of my customers. This led me to creating my final project: an app that improves the communication between both guests, hosts, and managers to better serve clientele which can be used for both night clubs and restaurants. What I love most about software development is that creativity knows no limit. I look forward to working with organizations that will allow me to assist for the best possible customer journey and user experience.`
   },
   // {
@@ -193,7 +193,7 @@ export default [
     name: 'Vonds Auguste',
     image: VondsImage,
     linkedin: 'https://www.linkedin.com/in/vonds-auguste-007154161/',
-    github: 'https://vonds.github.io',
+    github: 'https://github.com/vonds',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_vondsauguste.pdf',
     bio: `Describing one's self is a life long project. The pursuit of meaning and purpose never stops until we do. Someone once told me, "If you're not writing your story it'll be written for you".
     
