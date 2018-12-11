@@ -193,7 +193,7 @@ export default [
     name: 'Vonds Auguste',
     image: VondsImage,
     linkedin: 'https://www.linkedin.com/in/vonds-auguste-007154161/',
-    github: 'https://vonds.github.io',
+    github: 'https://github.com/vonds',
     resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_vondsauguste.pdf',
     bio: `Describing one's self is a life long project. The pursuit of meaning and purpose never stops until we do. Someone once told me, "If you're not writing your story it'll be written for you".
     
