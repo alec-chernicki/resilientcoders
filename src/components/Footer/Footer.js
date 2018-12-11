@@ -25,8 +25,8 @@ class Footer extends React.PureComponent {
                 <Link className="text-on-dark" to="/bootcamp/roster">Roster</Link>
               </div>
               <div className="footer-container-links">
-                <h3 className="text-white">Lab</h3>
-                <Link className="text-on-dark" to="/lab">About</Link>
+                <h3 className="text-white">Hire</h3>
+                <Link className="text-on-dark" to="/hire">About</Link>
               </div>
               <div className="footer-container-links">
                 <h3 className="text-white">Get Involved</h3>

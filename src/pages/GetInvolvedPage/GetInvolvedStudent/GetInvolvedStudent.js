@@ -59,7 +59,7 @@ const GetInvolvedStudent = (props) => {
                 <p>
                   For young people between the ages of 17 and 27 with a high school diploma or GED, and a real
                   interest in exploring web development as a career, Bootcamp
-                  might be a better fit than Community. It&#8217;s eight weeks long, daily. We recruit out of
+                  might be a better fit than Community. It&#8217;s fourteen weeks long, daily. We recruit out of
                   our Bootcamp into Resilient Lab, our web development company.
                 </p>
                 <UIButton to="/bootcamp">
