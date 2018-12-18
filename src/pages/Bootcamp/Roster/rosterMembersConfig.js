@@ -204,6 +204,40 @@ export default [
     `
   },
   {
+    url: '/bootcamp/roster/alia-abdulahi',
+    portfolioUrl: 'http://aliathedeveloper.bitballoon.com/',
+    name: 'Alia Abdulahi',
+    image: AliaImage,
+    linkedin: 'https://www.linkedin.com/in/alia-abdulahi-188364155/',
+    github: 'https://github.com/aliaabdulahi',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_aliaabdulahi.pdf',
+    bio: `My first experience with technology was through my father, who taught himself to code and made 
+    a game for me and my siblings to learn his native language. Technology, for me, has always been a tool 
+    for communication, access, imagination, innovation, and belonging. As a professional storyteller with 
+    a background in psychology, I deeply understand human behavior and know how to use my expressiveness 
+    and creativity to connect humans and bring ideas to life. As a full-stack developer, I hope to help 
+    brands create the best possible customer journey and user experience. My interests are e-commerce, 
+    VR/AR, AI, public health, pop culture and the intersection of viral internet culture with technology. 
+    I look forward to meeting you and contributing to a leading software development team.`
+  },
+  {
+    url: '/bootcamp/roster/joshua-lopes-baptista',
+    portfolioUrl: 'https://joshbaptista.netlify.com/',
+    name: 'Joshua Lopes-Baptista',
+    image: JoshLBImage,
+    linkedin: 'https://www.linkedin.com/in/joshlobaptista',
+    github: 'https://github.com/joshlobaptista',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018%20B/resume_joshualopesbaptista.pdf',
+    bio: `Living in household with ten other children meant that competition was the way of life. 
+    From who could finish dinner the fastest to who could hold their breath the longest. 
+    Together we learned to work individually and as a team. During my senior year in high school, 
+    I was captain of the varsity basketball team and led us to our first playoff game in years. 
+    Sports and Resilient Coders have taught me discipline, how to access the thought process of 
+    studying and being able to adapt to various tasks and situations. I have been equipped to 
+    take on any challenge on and off the court. Like my varsity basketball team, I intend on 
+    working with your development team and taking future innovative technologies to the next level. `
+  },
+  {
     url: '/bootcamp/roster/myraha-harmon-arias',
     portfolioUrl: 'https://myraha.io/',
     name: 'Myraha Harmon-Arias',
