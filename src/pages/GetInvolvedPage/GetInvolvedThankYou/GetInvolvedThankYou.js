@@ -1,6 +1,6 @@
 import React from 'react';
 import RouteTransition from 'components/RouteTransition/RouteTransition';
-import EmailFormLong from 'components/EmailForms/EmailFormLong';
+// import EmailFormLong from 'components/EmailForms/EmailFormLong';
 import Helmet from 'react-helmet';
 
 import UIButton from 'UILibrary/button/UIButton'
@@ -11,13 +11,13 @@ import UIImage from 'UILibrary/image/UIImage';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
 import UILayer from 'UILibrary/layer/UILayer';
-import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
+// import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 
 import contractLabImage from './get-involved-lab.jpg';
 import hireStudentsImage from './get-involved-dunia.jpg';
 import companyImage from '../company.png';
 
-const COMPANY_FORM_URL = '/api/subscribe/company';
+// const COMPANY_FORM_URL = '/api/subscribe/company';
 
 class GetInvolvedThankYou extends React.PureComponent {
   render () {

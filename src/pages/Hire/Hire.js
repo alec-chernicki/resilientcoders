@@ -12,7 +12,7 @@ import UISection from 'UILibrary/layout/UISection';
 import UICard from 'UILibrary/layout/UICard';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
-import UILayer from 'UILibrary/layer/UILayer';
+// import UILayer from 'UILibrary/layer/UILayer';
 import UIHero from 'UILibrary/layout/UIHero';
 
 import hireConfig from './hireConfig';
