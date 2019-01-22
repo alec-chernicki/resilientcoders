@@ -5,15 +5,16 @@ import Helmet from 'react-helmet';
 
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
-import UICard from 'UILibrary/layout/UICard';
-import UIImage from 'UILibrary/image/UIImage';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
 import UILayer from 'UILibrary/layer/UILayer';
 import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
-import UIButton from 'UILibrary/button/UIButton';
+// warning: defined but never used
+// import UICard from 'UILibrary/layout/UICard';
+// import UIImage from 'UILibrary/image/UIImage';
+// import UIButton from 'UILibrary/button/UIButton';
 
-import communityImage from './community.jpg';
+// import communityImage from './community.jpg';
 import mentorImage from '../mentor.png';
 
 const MENTOR_FORM_URL = '/api/subscribe/mentor';

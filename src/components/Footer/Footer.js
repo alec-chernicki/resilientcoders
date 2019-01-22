@@ -6,6 +6,7 @@ import twitterIcon from '../../images/twitter.svg';
 import facebookIcon from '../../images/facebook.svg';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
+import butterCMSLogo from '../../images/buttercms_logo.png';
 
 class Footer extends React.PureComponent {
   render () {
@@ -74,11 +75,10 @@ class Footer extends React.PureComponent {
                   <img src={facebookIcon} alt="Facebook logo"/>
                 </a>
               </div>
+              
               <p className="text-white">
                 {yearText}
               </p>
-
-
 
               <div itemscope itemtype="http://schema.org/LocalBusiness">
                 <p className="text-white">
@@ -90,6 +90,11 @@ class Footer extends React.PureComponent {
                     <span itemprop="postalCode"> 02109</span>
                   </div>
                   Phone: <span itemprop="telephone">(617)830-6807</span>
+                  <div className="buttercms-attribution">
+                  <a href="https://buttercms.com" target="_blank">
+                    <img src={butterCMSLogo} alt="ButterCMS logo" />
+                  </a>
+                </div>
                 </p>
               </div>
 
