@@ -2,9 +2,15 @@ import styles from './Blog.scss';
 import CSSModules from 'react-css-modules';
 import React, { PureComponent } from 'react';
 import RouteTransition from 'components/RouteTransition/RouteTransition';
+import UIButton from 'UILibrary/button/UIButton';
+import UILayout from 'UILibrary/layout/UILayout';
+import BlogPost from './BlogPost/BlogPost';
+import BlogPostCardPrimary from './BlogPostCardPrimary/BlogPostCardPrimary';
+import BlogPostCardSecondary from './BlogPostCardSecondary/BlogPostCardSecondary';
+import BlogPostCard from './BlogPostCard/BlogPostCard';
 
 import Butter from 'buttercms';
-const butter = Butter('d01153ac8a1425d273256b6fdac5afa0639aa861');
+const butter = Butter('3b949f80849c37c52f9a9bb1a7c5d5d393e7895b');
 
 class Blog extends PureComponent {
     constructor(props) {
@@ -45,19 +51,22 @@ class Blog extends PureComponent {
 
         return (
             <section>
-                <h1>Blog, check console</h1>
-
-                {/* <p>{this.state.data[0].author}</p> */}
-                <h1>{content.length}</h1>
+                <UILayout className="p-top-of-page p-bottom-6">
                 {
-                    content.map(post =>
-                    <div key={post.title}>
-                        <h1>{post.title}</h1>
-                        <label>{post.author.last_name}, {post.author.first_name}</label>
-                        <p>{post.summary}</p>
-                        <div dangerouslySetInnerHTML={{__html: post.body}} />
-                    </div>
+                    content.map( (post, index) => {
+                        switch (index) {
+                            case 0 :
+                                return <BlogPostCardPrimary post={post} key={index}/>;
+                            case 1 :
+                            case 2 :
+                            case 3 :
+                                return <BlogPostCardSecondary post={post} key={index}/>
+                            default:
+                                return <BlogPostCard post={post} key={index}/>
+                        }
+                    }
                 )}
+                </UILayout>
             </section>
         )
     }

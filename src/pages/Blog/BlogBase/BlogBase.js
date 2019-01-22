@@ -1,5 +1,5 @@
 import Butter from 'buttercms';
-const butter = Butter('878761b95f55636acf5b929c9c9977e842902c01');
+const butter = Butter('3b949f80849c37c52f9a9bb1a7c5d5d393e7895b');
 
 // import './BlogBase.scss';
 import React, { PropTypes } from 'react';
