@@ -260,13 +260,8 @@ class Bootcamp extends PureComponent {
                 </h1>
                 <p className="text-constrained m-x-auto">
                   By the time they finish the program, they are ready to launch their careers in software.
-                  Some of our students join
-                  <Link to="/lab">
-                    &nbsp;Resilient Lab
-                  </Link>
-                  , and others go right into an <Link to="/get-involved/company">Apprenticeship </Link>leveraging their
-                  new skills.
-
+                  Afterwards, they are hired into roles leveraging their new skills.
+                  Reach out to learn how you can <Link to="/hire">hire our students</Link> to contribute to your software engineering team.
                 </p>
               </UICard>
             </UIFlex>

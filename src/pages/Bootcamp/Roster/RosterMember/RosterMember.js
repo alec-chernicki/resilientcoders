@@ -5,7 +5,7 @@ import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
 import UICard from 'UILibrary/layout/UICard';
 import UIButton from 'UILibrary/button/UIButton';
-import UILink from 'UILibrary/button/UILink';
+// import UILink from 'UILibrary/button/UILink';
 import UIIcon from 'UILibrary/icon/UIIcon';
 import UIOverlay from 'UILibrary/overlay/UIOverlay';
 import UIImage from 'UILibrary/image/UIImage';
@@ -89,7 +89,7 @@ class RosterMember extends React.Component {
   }
   renderResumeLink() {
     const {resume} = this.state.member;
-    const demoday = "https://www.eventbrite.com/e/resilient-coders-demo-day-at-workbar-tickets-36959812795";
+    // const demoday = "https://www.eventbrite.com/e/resilient-coders-demo-day-at-workbar-tickets-36959812795";
     if (!resume) {
       return null;
     }
