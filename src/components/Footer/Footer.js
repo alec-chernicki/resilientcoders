@@ -80,16 +80,18 @@ class Footer extends React.PureComponent {
                 {yearText}
               </p>
 
-              <div itemscope itemtype="http://schema.org/LocalBusiness">
+
+              <div itemscope itemType="http://schema.org/LocalBusiness">
                 <p className="text-white">
-                  <span itemprop="name">Resilient Coders</span>
-                  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="streetAddress">50 Milk St, Floor 17 </span>
-                    <span itemprop="addressLocality">Boston</span>,
-                    <span itemprop="addressRegion"> MA</span>
-                    <span itemprop="postalCode"> 02109</span>
+                  <span itemProp="name">Resilient Coders</span>
+                  <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                    <span itemProp="streetAddress">50 Milk St, Floor 17 </span>
+                    <span itemProp="addressLocality">Boston</span>,
+                    <span itemProp="addressRegion"> MA</span>
+                    <span itemProp="postalCode"> 02109</span>
                   </div>
-                  Phone: <span itemprop="telephone">(617)830-6807</span>
+
+                  Phone: <span itemProp="telephone">(617)830-6807</span>
                   <div className="buttercms-attribution">
                   <a href="https://buttercms.com" target="_blank">
                     <img src={butterCMSLogo} alt="ButterCMS logo" />

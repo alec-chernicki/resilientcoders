@@ -1,0 +1,14 @@
+.blog-post {
+
+    &.secondary {
+        background: #21262D;
+        padding: 2rem 4rem;
+        width: 50%;
+        .blog-post-card {
+            color: white;
+        }
+    }
+    &.default {
+        background: green;
+    }
+}

@@ -12,6 +12,9 @@ import Team from '../pages/Team/Team';
 import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
 
+import Blog from '../pages/Blog/Blog';
+import BlogPost from '../pages/Blog/BlogPost/BlogPost';
+
 import Roster from '../pages/Bootcamp/Roster/Roster';
 import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
 import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
@@ -42,6 +45,8 @@ export default(
     <Route path="hire" component={Hire}/>
     <Route path="team" component={Team}/>
     <Route path="news" component={News}/>
+    <Route path="blog" component={Blog}/>
+    <Route path="blog/post/:slug" component={BlogPost}/>
     <Route path="diversityplaybook" component={Playbook}/>
     <Route path="get-involved">
       <IndexRoute component={GetInvolvedPage} />

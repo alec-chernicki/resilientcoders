@@ -1,0 +1,59 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+$cardSpacing: 2rem;
+
+.blog-post-card {
+    &.default {
+        position: relative;
+        background: #21262D;
+        max-height: 16rem;
+        min-height: 16rem;
+        display: flex;
+        align-items: flex-end;
+
+        @include breakpoint($small-breakpoint) {
+            margin: 1% auto;
+        }
+
+        .blog-post-card-content {
+            width: 100%;
+            height: 100%;
+            padding: 1rem $cardSpacing;
+
+
+            &.with-image {
+                position: absolute;
+                z-index: 2;
+                background: rgba(#21262D, 0.8);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            a {
+                margin-left: (-$cardSpacing);
+            }
+            small {
+                color: #EDEEF0;
+                text-transform: uppercase;
+            }
+            p {
+                color: white;
+            }
+        }
+        .blog-post-card-image {
+            max-height: 16rem;
+            min-height: 16rem;
+            overflow: hidden;
+
+            img {
+                min-height: 16rem;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+            }
+        }
+    }
+}

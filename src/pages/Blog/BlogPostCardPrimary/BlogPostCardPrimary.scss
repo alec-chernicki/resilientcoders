@@ -1,0 +1,47 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+$cardSpacing: 2rem;
+
+.blog-post-card {
+    &.primary {
+        position: relative;
+        @include breakpoint($small-breakpoint) {
+            margin-bottom: 1%;
+            max-height: 24rem;
+            min-height: 24rem;
+        }
+
+        .blog-post-card-content {
+            position: absolute;
+            z-index: 2;
+            background: rgba(#21262D, 0.8);
+            width: 100%;
+            height: 100%;
+            padding: $cardSpacing;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            a {
+                margin-left: (-$cardSpacing);
+            }
+            h4 {
+                color: #EDEEF0;
+            }
+        }
+        .blog-post-card-image {
+            @include breakpoint($small-breakpoint) {
+                max-height: 24rem;
+                min-height: 24rem;
+            }
+            overflow: hidden;
+            img {
+                min-height: 24rem;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
