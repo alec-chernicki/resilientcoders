@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import {Link} from 'react-router';
 import UIButton from 'UILibrary/button/UIButton';
 import styles from './BlogPostCardSecondary.scss';
 import MediaQuery from 'react-responsive';
@@ -8,14 +9,22 @@ class BlogPostCardSecondary extends PureComponent {
         super(props);
     }
     render() {
-        const { index, post } = this.props;
+        const { post } = this.props;
+        const { 
+            title, 
+            categories, 
+            slug,
+        } = post;
+        
         return (
-            <div key={post.title} className="blog-post-card secondary">
+            <Link key={title} className="blog-post-card secondary" to={`/blog/post/${slug}`}>
                 <div className="blog-post-card-content">
-                    <h4>{post.categories[0].name}</h4>
-                    <h3>{post.title}</h3>
+                    <small>{categories[0].name ? categories[0].name : "Post"}</small>
+                    <Link className="text-on-dark" to={`/blog/post/${slug}`}>
+                        <p>{title}</p>
+                    </Link>
                 </div>
-            </div>
+            </Link>
         )
     }
 

@@ -1,0 +1,30 @@
+@import '../../../stylesheets/variables';
+@import '../../../stylesheets/mixins';
+
+.blog-post-card {
+    &.secondary {
+        background: #21262D;
+        color: #FFFFFF;
+        padding: 0.8rem 1.6rem;
+        width: 100%;
+        min-height: 30%;
+        display: flex;
+        align-items: flex-end;
+        @include breakpoint($small-breakpoint) {
+            margin: 1% auto;
+            min-height: 90px;
+        }
+        .blog-post-card-content {
+            h4, p {
+                color: #FFFFFF;
+            }
+            small {
+                color: #EDEEF0;
+                text-transform: uppercase;
+            }
+        }
+        .blog-post-card-image {
+            
+        }
+    }
+}
