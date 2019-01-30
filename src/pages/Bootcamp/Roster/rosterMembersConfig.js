@@ -76,8 +76,133 @@ import AliaImage from './RosterMemberImages/alia.jpg';
 import AllisonImage from './RosterMemberImages/allison.jpg';
 import EdwinImage from './RosterMemberImages/edwin.jpg';
 
+// Roster Images Bootcamp 2018c
+import AlexImage from './RosterMemberImages/alex.jpg';
+import AnneImage from './RosterMemberImages/anne.jpg';
+import BrandiImage from './RosterMemberImages/brandi.jpg';
+// import CarmenoImage from './RosterMemberImages/carmeno.jpg';
+import EricaImage from './RosterMemberImages/erica.jpg';
+// import GlenImage from './RosterMemberImages/glen.jpg';
+import KyleImage from './RosterMemberImages/kyle.jpg';
+import LawrenceE_Image from './RosterMemberImages/lawrence_e.jpg';
+import RossioImage from './RosterMemberImages/rossio.jpg';
+import VondsImage from './RosterMemberImages/vonds.jpg';
+
 
 export default [
+  {
+    url: '/bootcamp/roster/anne-demosthene',
+    portfolioUrl: '',
+    name: 'Anne Demosthene',
+    image: AnneImage,
+    linkedin: 'https://www.linkedin.com/in/acdemosthene/',
+    github: 'https://github.com/ademosthene',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_annedemosthene.pdf',
+    bio: `I believe in using technology to unlock the creative potential in others. As a child, I was always interacting with technology and computers. Whether competing with my siblings for the highest Space Cadet Pinball score or completing quests in Pokémon, you could always find me near a computer. I later spent time learning to code and customizing personal websites. At the core, problem solving and creativity fueled my desire to learn as much as I could, and to collaborate with my peers. This passion led me to pursue a Bachelor's degree in Computer Science, and to also look for new ways to share what I had learned with my community. As a software engineer, I enjoy utilizing my creativity and imagination to promote access and empowerment through technology. I hope to bring my engineering skills and passion for problem solving to your team.`
+  },
+  {
+    url: '/bootcamp/roster/alex-garcia',
+    portfolioUrl: '',
+    name: 'Alex Garcia',
+    image: AlexImage,
+    linkedin: 'https://www.linkedin.com/',
+    github: 'https://github.com/NeverL3gend',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_alejandrocojulun.pdf',
+    bio: `My Name is Alejandro Garcia Cojulun. I live in Allston. I started to work with computers by building them and disassembling them. And when I’d learned that, I wanted to kick it up a notch: Rather than tinker with hardcore, why not create with software? Coding has been really interesting to me, because even more exciting than building is the process throwing a wrench in the gears, and then rebuilding. Being challenged is an amazing feeling. I like constantly breaking into new ground.`
+  },
+  {
+    url: '/bootcamp/roster/brandi-duarte',
+    portfolioUrl: '',
+    name: 'Brandi Duarte',
+    image: BrandiImage,
+    linkedin: 'https://www.linkedin.com/in/brandiduarte/',
+    github: 'https://github.com/brandielmalli',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_brandiduarte.pdf',
+    bio: `I was born and raised in New Bedford, MA to Cape Verdean parents. There weren’t many job opportunities, so I moved to Boston three years ago in search of a better life. My father who was also an engineer is my inspiration and whom I would like to thank for my early interests in the field of computer programming. As a young professional I have always had a strong work ethic but my true skill lies in being able to assess my work environment and strengthen any weaknesses I see. While at Resilient Coders I was also working full time as a bartender. As I was learning more and more, I found myself anxious to solve the complaints of my customers. This led me to creating my final project: an app that improves the communication between both guests, hosts, and managers to better serve clientele which can be used for both night clubs and restaurants. What I love most about software development is that creativity knows no limit. I look forward to working with organizations that will allow me to assist for the best possible customer journey and user experience.`
+  },
+  // {
+  //   url: '/bootcamp/roster/carmeno-innocent',
+  //   portfolioUrl: '',
+  //   name: 'Carmeno Innocent',
+  //   image: CarmenoImage,
+  //   linkedin: 'https://www.linkedin.com/in/carmeno-innocent-73b09b171/',
+  //   github: 'https://github.com/CarmenoI',
+  //   resume: '',
+  //   bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
+  // },
+  {
+    url: '/bootcamp/roster/erica-mendez',
+    portfolioUrl: '',
+    name: 'Erica Mendez',
+    image: EricaImage,
+    linkedin: 'https://www.linkedin.com/in/ericacmendez/',
+    github: 'https://github.com/ericamendez',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_ericamendez.pdf',
+    bio: `Growing up, I was always curious about the world around me. This curiosity
+    made me excited to learn about STEM fields, and led me to pursue a
+    Bachelors in Biology. My curiosity extended towards learning about people,
+    cultures, and traditions, which led me towards photography. I developed a
+    passion for software engineering, because it allows me to combine my love
+    for art and science. Becoming a software engineer has granted me the
+    ability to create products people love, to solve problems, and to actively shape
+    the world around me.`
+  },
+  // {
+  //   url: '/bootcamp/roster/glen-gaines',
+  //   portfolioUrl: '',
+  //   name: 'Glen Glaines',
+  //   image: GlenImage,
+  //   linkedin: 'https://www.linkedin.com/in/glen-gaines-7563033b/',
+  //   github: 'https://github.com/ggaines1',
+  //   resume: '',
+  //   bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
+  // },
+  {
+    url: '/bootcamp/roster/kyle-rego',
+    portfolioUrl: '',
+    name: 'Kyle Rego',
+    image: KyleImage,
+    linkedin: 'https://www.linkedin.com/in/kyle-rego-7b7b62171/',
+    github: 'https://github.com/KyleR44',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_kylerego.pdf',
+    bio: `I am a father of three I have two girls and a boy. As I’ve grown I’ve always asked myself what kind of an example do I want to set for them? Of course, I want what we all want as parents, a way to provide a decent life for our children. However I feel much more than that, I want to show not only my kids but youth everywhere that it doesn't matter where you come from. It's never too not late to not only educate yourself but to pursue a new passion. The tech field is ever expanding and thus makes it a great place to start a career. Something about coding reminds me of Merlin when he first discovered magic. He spent days and even nights on perfecting his craft. I liken myself to this because once I found coding, I immersed myself in the community, I want to learn as much as possible to be the Merlin of the tech world!`
+  },
+  {
+    url: '/bootcamp/roster/lawrence-edmondson',
+    portfolioUrl: '',
+    name: 'Lawrence Edmondson',
+    image: LawrenceE_Image,
+    linkedin: 'https://www.linkedin.com/in/lawrenceedmondson/',
+    github: 'https://github.com/Ledmondson17',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_lawrenceedmondson.pdf',
+    bio: `My mom did not buy me my first video game until I was seven years old. She was a teacher and believed video games were a distraction when it came to studies. Naturally, one is going to be drawn to whatever they cannot have and that is exactly what happened to me. My escapes were either going to a friend’s house or playing at the setup consoles in stores like Wal-Mart or Toys'R'Us. When I finally got my first game, it was not long until I had become completely engulfed in the fantasy world that I had aspired to make my reality. I fell in love with all of the endless possibilities of stories, characters, and worlds. I earned my English Degree (Creative Writing concentration) from Springfield College because of my interest in storytelling and the creation of content in general. As a Resilient Coder, I aimed to learn the tools and basic properties of game-making through code, as well as all of the innovative approaches and critical thinking that comes along with it. With all of these newly acquired skills, I hope to be able to use them as a part of your dev team.`
+  },
+  {
+    url: '/bootcamp/roster/rossio-montero',
+    portfolioUrl: '',
+    name: 'Rossio Montero',
+    image: RossioImage,
+    linkedin: 'https://www.linkedin.com/in/rossio-montero-24bbb6171',
+    github: 'https://github.com/Rossio1',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_rossiomontero.pdf',
+    bio: `At the age of nine my mother got my brother and I our first computer. The complexity of the device always intrigued me, however I grew up  in a Hispanic household where we had to conform to gender roles. As a result, I felt like I couldn't explore my interests and eventually became a nurse. For five years I pursued a nursing career then one day my job was integrated with tech. We started using an online documentation system which made my job easier and helped me rediscover my interest in technology. I quickly realized I was skilled when colleagues and administrators started relying on me to help them with the new software. From that day forth, I saw a path towards a career where I envisioned myself building programs and software to facilitate the lives of people around me.`
+  },
+  {
+    url: '/bootcamp/roster/vonds-auguste',
+    portfolioUrl: 'https://vonds.github.io',
+    name: 'Vonds Auguste',
+    image: VondsImage,
+    linkedin: 'https://www.linkedin.com/in/vonds-auguste-007154161/',
+    github: 'https://github.com/vonds',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2018C/resume_vondsauguste.pdf',
+    bio: `Describing one's self is a life long project. The pursuit of meaning and purpose never stops until we do. Someone once told me, "If you're not writing your story it'll be written for you".
+    
+    Who am I?
+
+    My name is Vonds and at this point in my story, I am a Web Developer who is passionate about social justice, a poet who centers community empowerment in his work, a collector and teller of stories, an artist who loves deeply and unapologetically, and a visionary who studies and listens to what was, sees and struggles to understand what is, and labors to build what can be.
+    My life's work is a commitment to an endless process of growth, learning, and sharing because I am only a piece of a larger destiny still being written.
+    `
+  },
   {
     url: '/bootcamp/roster/alia-abdulahi',
     portfolioUrl: 'http://aliathedeveloper.bitballoon.com/',

@@ -6,6 +6,7 @@ import twitterIcon from '../../images/twitter.svg';
 import facebookIcon from '../../images/facebook.svg';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
+import butterCMSLogo from '../../images/buttercms_logo.png';
 
 class Footer extends React.PureComponent {
   render () {
@@ -25,8 +26,8 @@ class Footer extends React.PureComponent {
                 <Link className="text-on-dark" to="/bootcamp/roster">Roster</Link>
               </div>
               <div className="footer-container-links">
-                <h3 className="text-white">Lab</h3>
-                <Link className="text-on-dark" to="/lab">About</Link>
+                <h3 className="text-white">Hire</h3>
+                <Link className="text-on-dark" to="/hire">About</Link>
               </div>
               <div className="footer-container-links">
                 <h3 className="text-white">Get Involved</h3>
@@ -74,13 +75,13 @@ class Footer extends React.PureComponent {
                   <img src={facebookIcon} alt="Facebook logo"/>
                 </a>
               </div>
+              
               <p className="text-white">
                 {yearText}
               </p>
 
 
-
-              <div itemScope itemType="http://schema.org/LocalBusiness">
+              <div itemscope itemType="http://schema.org/LocalBusiness">
                 <p className="text-white">
                   <span itemProp="name">Resilient Coders</span>
                   <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
@@ -89,7 +90,13 @@ class Footer extends React.PureComponent {
                     <span itemProp="addressRegion"> MA</span>
                     <span itemProp="postalCode"> 02109</span>
                   </div>
+
                   Phone: <span itemProp="telephone">(617)830-6807</span>
+                  <div className="buttercms-attribution">
+                  <a href="https://buttercms.com" target="_blank">
+                    <img src={butterCMSLogo} alt="ButterCMS logo" />
+                  </a>
+                </div>
                 </p>
               </div>
 

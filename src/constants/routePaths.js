@@ -7,9 +7,9 @@ export default {
     route: '/bootcamp',
     name: 'Bootcamp',
   },
-  'LAB': {
-    route: '/lab',
-    name: 'Lab',
+  'HIRE': {
+    route: '/hire',
+    name: 'Hire',
   },
   'NEWS': {
     route: '/news',

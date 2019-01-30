@@ -27,6 +27,10 @@
   display: flex;
   justify-content: space-between;
 
+  @include breakpoint($xsmall-breakpoint) {
+    flex-flow: column;
+  }
+
   .social-container {
     display: flex;
 
@@ -35,6 +39,12 @@
       margin-right: 16px;
       height: 18px;
     }
+  }
+}
+
+.buttercms-attribution {
+  img {
+    max-width: 170px;
   }
 }
 
