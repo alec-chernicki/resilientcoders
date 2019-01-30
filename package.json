@@ -88,7 +88,7 @@
     "sitemap": "^1.13.0",
     "twitter": "^1.4.0",
     "underscore": "^1.8.3",
-    "video-react": "^0.8.10",
+    "video-react": "^0.13.2",
     "video.js": "^5.20.5",
     "videojs-youtube": "^2.4.1"
   },
