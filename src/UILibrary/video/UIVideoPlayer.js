@@ -17,7 +17,6 @@ class UIVideoPlayer extends React.Component {
       <Player
         className={styles['player']}
         fluid={false}
-        width={900}
         autoPlay={autoPlay}
         playsInline={true}
         poster={poster}

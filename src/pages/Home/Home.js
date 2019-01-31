@@ -61,7 +61,6 @@ class Home extends PureComponent {
         <UIModal
           isOpen={this.state.isVideoOpen}
           onClose={partial(this.setIsVideoOpen, false)}
-          contentLabel="50x30"
         >
           <UIVideoPlayer src={video50x30} autoPlay={true} />
         </UIModal>
