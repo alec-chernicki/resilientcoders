@@ -3,3 +3,18 @@
   top: 30px;
   right: 30px;
 }
+.customOverlay {
+  background: rgba(33, 38, 45, 0.85);
+  z-index: 10000000;
+}
+.customModal {
+  background: none;
+  padding: 0;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  z-index: 10000001;
+}
