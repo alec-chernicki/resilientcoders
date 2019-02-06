@@ -91,7 +91,7 @@ export default [
   {
     name: 'Katie Stebbins',
     image: KatieImage,
-    role: 'Board President',
+    role: 'Board President ad interim',
     text: `Katie Stebbins is the Massachusetts Assistant Secretary for Technology, Innovation and
     Entrpreneurship and leads the State's efforts in the areas of cyber security, big data, robotis,
     digital health , advanced manufacturing, IOT, marine technology and the start-up ecosystem. She
