@@ -3,13 +3,11 @@ import LeonImage from './TeamMemberImages/leon.jpg';
 import MuigaiImage from './TeamMemberImages/muigai.jpg';
 import AlecImage from './TeamMemberImages/alec.png';
 import ChrisImage from './TeamMemberImages/chris.jpg';
-import PamelaImage from './TeamMemberImages/pamela.jpg';
-import CaImage from './TeamMemberImages/ca.jpg';
-import FredImage from './TeamMemberImages/fred.png';
 import StephanieImage from './TeamMemberImages/stephanie.png';
 import RouguiImage from './TeamMemberImages/rougui.png';
 import DavidMendelsImage from './TeamMemberImages/davidmendels.png';
 import DuniaImage from './TeamMemberImages/dunia.jpg';
+import KatieImage from './TeamMemberImages/katie.jpeg';
 
 export default [
   {
@@ -91,41 +89,17 @@ export default [
       product and get companies to their next milestone.`
   },
   {
-    name: 'Pamela Aldsworth',
-    image: PamelaImage,
-    role: 'Board',
-    text: `Pamela Aldsworth is a managing director with Silicon Valley Bank Capital. In this role,
-      she oversees strategic relationships with venture capital firms by leveraging the diverse
-      financial services of SVB Financial Group (SVB) platform. She is primarily focused on managing
-      relationships with a key subset of venture capital firms that have historically and
-      consistently achieved top decile returns. She builds strategic roadmanps with firms in her
-      coverage universe to ensure that SVB is providing the best possible insights, guidance,
-      products and services to the partnership and their portfolio companies.`
+    name: 'Katie Stebbins',
+    image: KatieImage,
+    role: 'Board President ad interim',
+    text: `Katie Stebbins is the Massachusetts Assistant Secretary for Technology, Innovation and
+    Entrpreneurship and leads the State's efforts in the areas of cyber security, big data, robotis,
+    digital health , advanced manufacturing, IOT, marine technology and the start-up ecosystem. She
+    has served in the public sector for over twenty years, playing a leadership role in community based
+    economic development, specifically in low-income communities. Boston Business Journal named Katie
+    one of the top ten "2016 Women to Watch in Science and Technology".`
   },
-  {
-    name: 'C.A. Webb',
-    image: CaImage,
-    role: 'Board',
-    text: `C.A. runs the Community Foundation at Underscore VC, incorporating the Startup Secrets
-    program and works on their broader community outreach from which our _Core groups of
-    experienced entrepreneurs are formed. As a proven community builder and marketer, C.A. comes
-    from her previous post as Executive Director of the New England Venture Capital Association,
-    where she reinvented and reinvigorated the 40-year old association. Recently, C.A. was
-    recognized as an Innovation All Star by Boston Business Journal and is passionate about
-    creating powerful communities that can have a meaningful and lasting impact on business.`
-  },
-  {
-    name: 'Frederick Townes',
-    image: FredImage,
-    role: 'Board',
-    text: `Fred builds and leads teams that craft web platforms, products, and communities.
-      From software development and architecture, to product marketing strategy, to business leadership and
-      operations, he thrives at the intersection of technology, strategy, and design. He's worked with
-      organizations of all sizes on two continents, from The Coca-Cola Company and Staples to Sony and Microsoft,
-      to develop and drive business models at scale. Now, he's applying his technical experience as both developer
-      and entrepreneur to transforming the real estate industry with Placester, advising early-stage startups,
-      and speaking at digital marketing and technology events around the world.`
-  },
+ 
   {
     name: 'David Mendels',
     image: DavidMendelsImage,
