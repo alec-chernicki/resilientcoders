@@ -11,7 +11,7 @@ const typeProps = {
 
 class UIButton extends React.PureComponent {
   renderButton() {
-    const {href, children, to, target, image, use, type} = this.props;
+    const {href, children, to, target, image, use, type, onClick} = this.props;
     const Component = type === typeProps.link ? LinkBase : ButtonBase;
 
     if (href) {
@@ -30,6 +30,13 @@ class UIButton extends React.PureComponent {
             {children}
           </Component>
         </Link>
+      )
+    }
+    else if (use === "flat") {
+      return (
+        <Component use={use} onClick={onClick}>
+          {children}
+        </Component>
       )
     }
     else {

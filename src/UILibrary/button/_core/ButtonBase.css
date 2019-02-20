@@ -73,3 +73,34 @@
 .button-primary:active {
   background-color: #c51017;
 }
+
+.flat {
+  cursor: pointer;
+  color: #4f5a60;
+  transition: color 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
+  font-size: 1em;
+  line-height: 2em;
+  display: inline-block;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  padding-bottom: 0.1em;
+}
+
+.flat:after {
+  content:'';
+  height: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
+  background-color: #ED1B24;
+}
+
+.flat:hover {
+  color: #4f5a60;
+}
+
+.flat:hover:after {
+  transform: scaleX(1.35);
+}

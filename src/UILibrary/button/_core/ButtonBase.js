@@ -6,14 +6,24 @@ import classNames from 'classnames';
 
 const buttonUseProps = {
   'primary': 'primary',
+  'flat': 'flat'
 };
 
 class Button extends React.Component {
   render () {
-    const { image, children, className, use } = this.props;
+    const { image, children, className, use, onClick } = this.props;
     const buttonClass = classNames({
       'button-primary': use === buttonUseProps.primary,
+      'flat': use === buttonUseProps.flat,
     });
+
+    if (use === buttonUseProps.flat) {
+      return (
+        <span className={className} styleName={buttonClass} onClick={onClick}>
+          {children}
+        </span>
+      );
+    }
 
     return (
       <div className={className} styleName={buttonClass}>
@@ -31,7 +41,6 @@ class Button extends React.Component {
 }
 
 Button.propTypes = {
-  image: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   use: PropTypes.oneOf(Object.keys(buttonUseProps)),
   className: PropTypes.string,
