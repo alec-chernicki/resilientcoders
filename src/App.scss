@@ -162,6 +162,12 @@ img {
 	height: 0;
 }
 
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 @keyframes slideFadeIn {
   0% {
     opacity: 0;
