@@ -1,0 +1,40 @@
+@keyframes loading {
+    0% {
+      transform: scaleX(0);
+    }
+    20% {
+        transform: scaleX(74%);
+    }
+    100% {
+      transform: scaleX(100%);
+    }
+}
+.loader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loader-bar {
+    height: 2px;
+    width: 200px;
+    background: lightgray;
+}
+
+.loader-loaded {
+    height: 100%;
+    width: 100%;
+    background: #4f5a60;
+    animation: loading 3s infinite;
+    transform-origin: 0%;
+}
+
+.loader h3 {
+    color: white;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
