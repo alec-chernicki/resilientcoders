@@ -20,9 +20,9 @@ class BlogPostCardPrimary extends PureComponent {
         return (
             <Link key={title} className="blog-post-card primary" to={`/blog/post/${slug}`}>
                 <div className="blog-post-card-content">
-                    <h4>{categories[0].name ? categories[0].name : "Post"}</h4>
-                    <h1>{title}</h1>
-                    <UIButton to={`/blog/post/${slug}`}>
+                    <h4>{categories.length ? categories[0].name : "Post"}</h4>
+                    <h2>{title}</h2>
+                    <UIButton>
                         Read Post
                     </UIButton>
                 </div>

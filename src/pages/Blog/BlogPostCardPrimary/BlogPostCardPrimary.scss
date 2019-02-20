@@ -26,6 +26,9 @@ $cardSpacing: 2rem;
             a {
                 margin-left: (-$cardSpacing);
             }
+            h2 {
+                color: #FFFFFF;
+            }
             h4 {
                 color: #EDEEF0;
             }
@@ -38,6 +41,7 @@ $cardSpacing: 2rem;
             overflow: hidden;
             img {
                 min-height: 24rem;
+                max-height: 24rem;
                 height: 100%;
                 object-fit: cover;
                 object-position: center;

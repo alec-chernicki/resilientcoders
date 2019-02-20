@@ -5,6 +5,7 @@ import RouteTransition from 'components/RouteTransition/RouteTransition';
 import { Link } from 'react-router';
 import UIButton from 'UILibrary/button/UIButton';
 import UILayout from 'UILibrary/layout/UILayout';
+import UILoading from 'UILibrary/loading/UILoading';
 import UISection from 'UILibrary/layout/UISection';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
@@ -16,7 +17,8 @@ import BlogPostCard from './BlogPostCard/BlogPostCard';
 
 import Helmet from "react-helmet";
 import Butter from 'buttercms';
-const butter = Butter('3b949f80849c37c52f9a9bb1a7c5d5d393e7895b');
+import blogConfig from './config';
+const butter = Butter(blogConfig.buttercms_token);
 
 
 const MEDIA_PRESS_TYPES = [
@@ -46,6 +48,7 @@ class Blog extends PureComponent {
 
         this.state = {
             blogPosts: [],
+            currentIndex: 5,
             isLoading: false,
             error: null
         };
@@ -87,25 +90,41 @@ class Blog extends PureComponent {
             </UIFlex>
           )
       })
-  }
+    }
+
+    loadMorePosts() {
+        let { currentIndex, blogPosts } = this.state;
+        const INCREASE = 1;
+        
+        if (blogPosts.length >= currentIndex + INCREASE) {
+            currentIndex += INCREASE;
+            console.log(blogPosts.length)
+            console.log(currentIndex);
+            this.setState({ currentIndex: currentIndex })
+        }
+    }
 
     render() {
 
-        let { blogPosts, isLoading, error } = this.state;
+        let { blogPosts, currentIndex, isLoading, error } = this.state;
 
-        const primaryBlogPostCard = blogPosts.map((post, index) => {
+        let currentPostsShowing = blogPosts.slice(0, currentIndex);
+
+        const primaryBlogPostCard = currentPostsShowing.map((post, index) => {
             if (index == 0) {
                 return <BlogPostCardPrimary post={post} key={index} />
             }
         });
 
-        const secondaryBlogPostCards = blogPosts.map((post, index) => {
+        const secondaryBlogPostCards = currentPostsShowing.map((post, index) => {
+            console.log("secondary")
             if (index > 0 && index < 4) {
                 return <BlogPostCardSecondary post={post} key={index} />
             }
         });
 
-        const defaultBlogPostCards = blogPosts.map((post, index) => {
+        const defaultBlogPostCards = currentPostsShowing.map((post, index) => {
+            console.log("default")
             if (index > 4) {
                 return (
                     <UIFlex basis="49%" grow={0} shrink={0} key={index}>
@@ -116,10 +135,11 @@ class Blog extends PureComponent {
         })
 
         if (error) {
+            console.log(error);
             // TODO: create error page layout
             return (
                 <RouteTransition>
-                    <p>{error.message}</p>;
+                    <h1>Error mate</h1>
                 </RouteTransition>
             );
         }
@@ -128,7 +148,7 @@ class Blog extends PureComponent {
             // TODO: create loading page layout
             return (
                 <RouteTransition>
-                    <h1>Loading the page right now chief...</h1>;
+                    <UILoading />
                 </RouteTransition>
             );
         }
@@ -139,12 +159,12 @@ class Blog extends PureComponent {
                 <UILayout className="p-top-of-page p-bottom-1">
                     <UISection className="index-2">
                         <UIFlexRow justify="space-between" className="m-bottom-6 m-sm-bottom-12">
-                            <UIFlex basis="57%" grow={0} shrink={0}>
+                            <UIFlex basis="56%" grow={0} shrink={0}>
                                 <UIFlexRow className="full-height">
                                     { primaryBlogPostCard }
                                 </UIFlexRow>
                             </UIFlex>
-                            <UIFlex basis="41%" grow={0} shrink={0}>
+                            <UIFlex basis="42%" grow={0} shrink={0}>
                                 <UIFlexRow justify="space-between" direction="column" className="full-height">
                                     { secondaryBlogPostCards }
                                 </UIFlexRow>
@@ -156,6 +176,11 @@ class Blog extends PureComponent {
                     <UISection className="index-2">
                         <UIFlexRow justify="space-between" className="m-bottom-6 m-sm-bottom-12">
                             { defaultBlogPostCards }
+                        </UIFlexRow>
+                        <UIFlexRow justify="center">
+                            <UIButton type="button" use="flat" onClick={this.loadMorePosts.bind(this)}>
+                                Load More Posts
+                            </UIButton>
                         </UIFlexRow>
                     </UISection>
                 </UILayout>

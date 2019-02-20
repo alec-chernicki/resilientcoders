@@ -7,7 +7,8 @@ import styles from './BlogPost.scss';
 import Helmet from "react-helmet";
 import {Link} from 'react-router';
 import Butter from 'buttercms';
-const butter = Butter('3b949f80849c37c52f9a9bb1a7c5d5d393e7895b');
+import blogConfig from '../config';
+const butter = Butter(blogConfig.buttercms_token);
 
 class BlogPost extends PureComponent {
     constructor(props) {
