@@ -7,15 +7,19 @@ const typeProps = {
   'default': 'default',
   'responsive': 'responsive',
   'cover': 'cover',
+  'header': 'header',
+  'inline': 'inline'
 };
 
 class UIImage extends React.Component {
   renderImage() {
-    const { src, className, height, width, type, style } = this.props;
+    const { src, className, height, width, type, style, alt } = this.props;
     const imageClass = classNames({
       [typeProps.default]: type === typeProps.default,
       [typeProps.responsive]: type === typeProps.responsive,
       [typeProps.cover]: type === typeProps.cover,
+      [typeProps.header]: type === typeProps.header,
+      [typeProps.inline]: type === typeProps.inline,
     });
 
     return (
@@ -27,11 +31,12 @@ class UIImage extends React.Component {
         className={className}
         styleName={imageClass}
         role="presentation"
+        alt={alt}
       />
   );
   }
   renderImageCover () {
-    const { src, className, height, width } = this.props;
+    const { src, className, height, width, alt } = this.props;
 
     return (
       <div styleName="image-container">
@@ -42,15 +47,38 @@ class UIImage extends React.Component {
           styleName="cover"
           role="presentation"
           src={src}
+          alt={alt}
         />
       </div>
     );
+  }
+  renderImageHeader () {
+    const { src, className, alt } = this.props;
+    let bgImage = { backgroundImage: `url(${src})` }
+
+    return (
+      <header styleName="image-header" style={ bgImage } role="presentation"/>
+    )
+  }
+  renderImageInline () {
+    const { src, className, alt, children } = this.props;
+    
+    return (
+      <div styleName="inline-image-container">
+        <img src={src} styleName="inline-image" role="presentation" alt={alt} />
+        { children }
+      </div>
+    )
   }
   render () {
     const { type } = this.props;
 
     if (type === typeProps.cover) {
       return this.renderImageCover()
+    } else if (type === typeProps.header) {
+      return this.renderImageHeader()
+    } else if (type === typeProps.inline) {
+      return this.renderImageInline()
     }
 
     return this.renderImage();
