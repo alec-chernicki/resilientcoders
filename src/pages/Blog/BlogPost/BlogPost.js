@@ -117,7 +117,7 @@ class BlogPost extends PureComponent {
                         <UISection>
                             <UIFlexRow>
                                 <UIFlex basis="35%" />
-                                <UIFlex basis="65%">
+                                <UIFlex basis="65%" className="p-bottom-2">
                                     <UISocialShare type="row" shareUrl={window.location.href} className="p-y-8" />
                                     <UIImage 
                                         src={authorImage}
@@ -126,7 +126,7 @@ class BlogPost extends PureComponent {
                                         type="inline"
                                         className={styles['header-image']}
                                     >
-                                        <section className="p-x-2 p-bottom-6">
+                                        <section className="p-x-2">
                                             <h6>Written By</h6>
                                             <h4>{authorFullName}</h4>
                                             <p>
@@ -158,12 +158,12 @@ class BlogPost extends PureComponent {
                                 { 
                                     nextPost &&
                                     <div className="p-all-2">
-                                        <img src={nextPostImage} />
+                                        <img src={nextPostImage} className="m-bottom-2"/>
                                         <h4>Next To Read</h4>
                                         <h2>{nextPostTitle}</h2>
-                                        <Link to={`/blog/post/${nextPostSlug}`}>
-                                            <UIButton type="link">Read The Next Post</UIButton>
-                                        </Link>
+                                        <UIButton type="link"to={`/blog/post/${nextPostSlug}`}>
+                                            Read The Next Post
+                                        </UIButton>
                                     </div>
                                 }
                                 </UIFlex>
@@ -171,15 +171,24 @@ class BlogPost extends PureComponent {
                                     { 
                                         prevPost &&
                                         <div className="p-all-2">
-                                            <img src={prevPostImage} />
+                                            <img src={prevPostImage} className="m-bottom-2"/>
                                             <h4>Previously Written</h4>
                                             <h2>{prevPostTitle}</h2>
-                                            <Link to={`/blog/post/${prevPostSlug}`}>
-                                                <UIButton type="link">Read The Previous Post</UIButton>
-                                            </Link>
+                                            <UIButton type="link" to={`/blog/post/${prevPostSlug}`}>
+                                                Read The Previous Post
+                                            </UIButton>
                                         </div>
                                     }
                                 </UIFlex>
+                            </UIFlexRow>
+                        </UISection>
+                    </UILayout>
+                    <UILayout use="tertiary">
+                        <UISection>
+                            <UIFlexRow justify="center" className="p-y-4">
+                                <UIButton type="link" to="/blog" className="text-on-dark">
+                                    Back to blog
+                                </UIButton>
                             </UIFlexRow>
                         </UISection>
                     </UILayout>

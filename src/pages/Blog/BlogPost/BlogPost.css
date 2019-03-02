@@ -1,5 +1,5 @@
 .blog-post {
-    font-size: 1.3em;
+    font-size: 1.35em;
     /* color: #21262d; */
     color: #4f5a60;
 }
@@ -17,11 +17,11 @@
     color: inherit;
 }
 .blog-post p {
-    line-height: 1.4;
+    line-height: 1.5;
 }
 .blog-post blockquote {
-    padding: 2rem 0 2rem 3rem;
     font-size: 1.5em;
+    padding: 2rem 0 2rem 3rem;
 }
 .blog-post blockquote:before {
     content: "\201C";
