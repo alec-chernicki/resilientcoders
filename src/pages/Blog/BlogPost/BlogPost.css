@@ -1,0 +1,64 @@
+.blog-post {
+    font-size: 1.3em;
+    /* color: #21262d; */
+    color: #4f5a60;
+}
+.blog-post p,
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6,
+.blog-post blockquote,
+.blog-post li,
+.blog-post ol,
+.blog-post ul {
+    color: inherit;
+}
+.blog-post p {
+    line-height: 1.4;
+}
+.blog-post blockquote {
+    padding: 2rem 0 2rem 3rem;
+    font-size: 1.5em;
+}
+.blog-post blockquote:before {
+    content: "\201C";
+    font-size: 96px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+.blog-post p {
+    font-size: 1em;
+}
+.blog-post a,
+.blog-post a:hover {
+    text-decoration: underline;
+}
+.blog-post a:hover {
+    color: #C51017;
+}
+.blog-post ul,
+.blog-post ul li {
+    font-family: 'Roboto Slab', sans-serif;
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.4;
+    padding-left: 1rem;
+}
+.blog-post ol,
+.blog-post ol li {
+    font-family: 'Roboto Slab', sans-serif;
+    list-style: decimal;
+    list-style-position: inside;
+    line-height: 1.4;
+    padding-left: 1rem;
+}
+.blog-post ol ol, 
+.blog-post ul ol { 
+    list-style-type: lower-latin; 
+    list-style-position: inside; 
+}
