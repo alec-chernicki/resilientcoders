@@ -18,6 +18,8 @@ import BlogPostCard from './BlogPostCard/BlogPostCard';
 import Helmet from "react-helmet";
 import Butter from 'buttercms';
 import blogConfig from './config';
+import EmailFormShort from '../../components/EmailForms/EmailFormShort';
+
 const butter = Butter(blogConfig.buttercms_token);
 
 
@@ -48,14 +50,14 @@ class Blog extends PureComponent {
 
         this.state = {
             blogPosts: [],
-            currentIndex: 5,
+            currentIndex: 6,
             isLoading: false,
             error: null
         };
     }
 
     componentDidMount() {
-        let data = butter.post.list({})
+        butter.post.list({})
             .then(response => {
                 if (response.status == 200) {
                     console.log(response.data);
@@ -93,15 +95,12 @@ class Blog extends PureComponent {
     }
 
     loadMorePosts() {
-        let { currentIndex, blogPosts } = this.state;
-        const INCREASE = 1;
-        
-        if (blogPosts.length >= currentIndex + INCREASE) {
-            currentIndex += INCREASE;
-            console.log(blogPosts.length)
-            console.log(currentIndex);
-            this.setState({ currentIndex: currentIndex })
-        }
+            let { currentIndex, blogPosts } = this.state;
+            let i = currentIndex;
+            let size = blogPosts.length;
+            let INCR = 2;
+            i = ( i+INCR <= size) ? i+INCR : size;
+            this.setState({ currentIndex: i })
     }
 
     render() {
@@ -117,15 +116,13 @@ class Blog extends PureComponent {
         });
 
         const secondaryBlogPostCards = currentPostsShowing.map((post, index) => {
-            console.log("secondary")
             if (index > 0 && index < 4) {
                 return <BlogPostCardSecondary post={post} key={index} />
             }
         });
 
         const defaultBlogPostCards = currentPostsShowing.map((post, index) => {
-            console.log("default")
-            if (index > 4) {
+            if (index >= 4) {
                 return (
                     <UIFlex basis="49%" grow={0} shrink={0} key={index}>
                         <BlogPostCard post={post}  />
@@ -139,7 +136,7 @@ class Blog extends PureComponent {
             // TODO: create error page layout
             return (
                 <RouteTransition>
-                    <h1>Error mate</h1>
+                    <UILoading />
                 </RouteTransition>
             );
         }
@@ -178,14 +175,27 @@ class Blog extends PureComponent {
                             { defaultBlogPostCards }
                         </UIFlexRow>
                         <UIFlexRow justify="center">
+                        {
+                            blogPosts.length !== currentIndex &&
                             <UIButton type="button" use="flat" onClick={this.loadMorePosts.bind(this)}>
                                 Load More Posts
                             </UIButton>
+                        }
                         </UIFlexRow>
                     </UISection>
                 </UILayout>
+                <UILayout use="tertiary" className="p-bottom-5 p-top-5">
+                    <UISection className="text-center index-2">
+                        <h1 className="text-white">Keep in Touch</h1>
+                        <p className="text-constrained text-on-dark m-x-auto">
+                        Stay up to date with the latest events, spotlight posts, tutorials, and hiring tips and news.
+                        </p>
+                        <EmailFormShort className="m-top-3 with-shadow"/>
+                    </UISection>
+                </UILayout>
                 
-                {   // TODO: WIP really flesh out this page and the directions that the links take you
+                {   
+                    // TODO: WIP really flesh out this page & the directions that the links take you
                     /* 
                     <UILayout use="tertiary">
                         <UISection classname="index-3">
