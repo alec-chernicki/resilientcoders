@@ -20,7 +20,7 @@ class BlogPostCard extends PureComponent {
         return (
             <Link key={title} className="blog-post-card default" to={`/blog/post/${slug}`}>
                 <div className={`blog-post-card-content ${featured_image ? 'with-image' : ''}`}>
-                    <small>{categories[0].name ? categories[0].name : "Post"}</small>
+                    <h5>{categories.length ? categories[0].name : "Post"}</h5>
                     <p>{title}</p>
                     <UIButton to={`/blog/post/${slug}`}>
                         Read Post
