@@ -1,0 +1,26 @@
+[class^="social-share-"] {
+    display: flex;
+}
+.social-share-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-share-row > div {
+    cursor: pointer;
+    flex: 1 1 auto;
+    display: inline-flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 150ms ease-in-out;
+}
+.social-share-row > div:hover {
+    border-bottom: 2px solid #ED1B24;
+}
+.social-share-column {
+    display: flex;
+    flex-direction: column;
+}
