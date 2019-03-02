@@ -40,9 +40,17 @@
 
 .inline-image {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   object-fit: cover;
   object-position: center;
   margin-right: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .inline-image-container {
+    flex-direction: column-reverse;
+  }
+  .inline-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 }

@@ -61,11 +61,17 @@ class UIImage extends React.Component {
     )
   }
   renderImageInline () {
-    const { src, className, alt, children } = this.props;
+    const { src, className, height, width, alt, children } = this.props;
     
     return (
       <div styleName="inline-image-container">
-        <img src={src} styleName="inline-image" role="presentation" alt={alt} />
+        <img 
+          src={src}
+          style={ { height: height, width: width } }
+          styleName="inline-image" 
+          role="presentation" 
+          alt={alt} 
+        />
         { children }
       </div>
     )
