@@ -17,7 +17,7 @@ class BlogPostCardSecondary extends PureComponent {
         return (
             <Link key={title} className="blog-post-card secondary" to={`/blog/post/${slug}`}>
                 <div className="blog-post-card-content">
-                    <small>{categories.length ? categories[0].name : "Post"}</small>
+                    <h5>{categories.length ? categories[0].name : "Post"}</h5>
                     <p className="ellipsis">{title}</p>
                 </div>
             </Link>
