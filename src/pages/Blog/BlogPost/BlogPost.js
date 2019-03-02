@@ -1,13 +1,17 @@
 import React, { PureComponent } from 'react';
 import RouteTransition from 'components/RouteTransition/RouteTransition';
+import CSSModules from 'react-css-modules';
+import UIButton from 'UILibrary/button/UIButton';
 import UIImage from 'UILibrary/image/UIImage';
 import UILayout from 'UILibrary/layout/UILayout';
 import UICard from 'UILibrary/layout/UICard';
 import UIFlex from 'UILibrary/grid/UIFlex';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UILoading from 'UILibrary/loading/UILoading';
+import UISocialShare from 'UILibrary/social/UISocialShare';
 import UISection from 'UILibrary/layout/UISection';
-import styles from './BlogPost.scss';
+import styles from './BlogPost.css';
+import readingTime from 'reading-time';
 
 import Helmet from "react-helmet";
 import {Link} from 'react-router';
@@ -27,64 +31,109 @@ class BlogPost extends PureComponent {
     componentDidMount() {
         let slug = this.props.params.slug;
         butter.post.retrieve(slug).then((resp) => {
-            console.log(resp);
+            console.log("RESPONSVE FROM API \n", resp);
+            let { data, meta } = resp.data;
             this.setState({
               loaded: true,
-              post: resp.data.data
-            })
+              post: data,
+              nextPost: meta.next_post,
+              prevPost: meta.previous_post
+            });
         });
-        console.log(window.location.href);
-        console.log(this.props);
-        console.log(this.props.params.slug);
     }
 
     render() {
         if (this.state.loaded) {
-            const post = this.state.post;
-            let timestampOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            let timestamp = new Date(post.created).toLocaleDateString("en-US", timestampOptions);
-            let featured_image = post.featured_image ? post.featured_image : '#';
-            let authorFullName = `${post.author.first_name} ${post.author.last_name}`;
-            let authorImage = post.author.profile_image;
-            let postCategory = post.categories.length > 0 ? post.categories[0].name : "Post";
+            const { post, nextPost, prevPost } = this.state;
+            const postBody = post.body;
+            const postTitle = post.title;
+            const postCreatedDate = post.created;
+            const authorImage = post.author.profile_image;
+            const authorBio = post.author.bio;
+            const timestampOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+            const postImage = post.featured_image ? post.featured_image : '#';
+            const postSeoTitle = post.seo_title;
+            const postMeta = post.meta_description;
+            const timestamp = new Date(postCreatedDate).toLocaleDateString("en-US", timestampOptions);
+            
+            const authorFullName = `${post.author.first_name} ${post.author.last_name}`;
+            const postCategory = post.categories.length > 0 ? post.categories[0].name : "Post";
+            
+            
+            const nextPostTitle = nextPost ? nextPost.title : null;
+            const nextPostImage = nextPost ? nextPost.featured_image : null;
+            const nextPostSlug = nextPost ? nextPost.slug : null;
+            
+            const prevPostTitle = prevPost ? prevPost.title : null;
+            const prevPostImage = prevPost ? prevPost.featured_image : null;
+            const prevPostSlug = prevPost ? prevPost.slug : null;
 
             return (
                 <RouteTransition>
                     <Helmet>
-                        { post.seo_title && <title>{post.seo_title}</title>}
-                        { post.meta_description && <meta name="description" content={post.meta_description} /> }
-                        { post.featured_image && <meta name="og:image" content={post.featured_image} /> }
+                        { postSeoTitle && <title>{postSeoTitle}</title>}
+                        { postMeta && <meta name="description" content={postMeta} /> }
+                        { postImage && <meta name="og:image" content={postImage} /> }
                     </Helmet>
                     <UILayout className="p-top-of-page p-bottom-4">
                         <UIImage
                             className={styles['header-image']}
                             type="header"
-                            src={featured_image}
+                            src={postImage}
                             alt="resilient blog post header"
                         />
                         <UISection className="index-2">
                             <UIFlexRow>
                                 <UIFlex basis="75%">
                                     <UICard className="p-all-6 pull-up-6 with-shadow">
-                                        <h2>{post.title}</h2>
+                                        <h4>
+                                            {postCategory} &#9473; {readingTime(postBody).text}
+                                        </h4>
+                                        <h2>{postTitle}</h2>
                                         <div className="divider" />
                                         <UIImage 
                                             src={authorImage}
+                                            height="40px"
+                                            width="40px"
                                             type="inline"
                                             className={styles['header-image']}
                                         >
                                             <h4>
-                                                {authorFullName} &#9473; {timestamp}
+                                                {authorFullName} &#8226; {timestamp}
                                             </h4>
                                         </UIImage>
                                     </UICard>
                                 </UIFlex>
                                 <UIFlex basis="25%" />
                             </UIFlexRow>
+                            
                             <UIFlexRow>
                                 <UIFlex basis="35%" />
                                 <UIFlex basis="65%">
-                                    <div dangerouslySetInnerHTML={{__html: post.body}} />
+                                    <div dangerouslySetInnerHTML={{__html: postBody}} styleName="blog-post"/>
+                                </UIFlex>
+                            </UIFlexRow>
+                        </UISection>
+                        <UISection>
+                            <UIFlexRow>
+                                <UIFlex basis="35%" />
+                                <UIFlex basis="65%">
+                                    <UISocialShare type="row" shareUrl={window.location.href} className="p-y-8" />
+                                    <UIImage 
+                                        src={authorImage}
+                                        height="100px"
+                                        width="100px"
+                                        type="inline"
+                                        className={styles['header-image']}
+                                    >
+                                        <section className="p-x-2 p-bottom-6">
+                                            <h6>Written By</h6>
+                                            <h4>{authorFullName}</h4>
+                                            <p>
+                                                {authorBio}
+                                            </p>
+                                        </section>
+                                    </UIImage>
                                 </UIFlex>
                             </UIFlexRow>
                         </UISection>
@@ -97,9 +146,42 @@ class BlogPost extends PureComponent {
                                 </Link>
                                 <h3>{post.title}</h3>
                                 <time>{timestamp}</time>
-                                <div dangerouslySetInnerHTML={{__html: post.body}} />
+                                <div dangerouslySetInnerHTML={{__html: postBody}} />
                             </div>
                         </UISection> */}
+                    </UILayout>
+                    <UILayout use="primary" className="p-top-6 p-bottom-8">
+                        <UISection>
+                        <hr />
+                            <UIFlexRow className="m-y-4">
+                                <UIFlex basis="50%">
+                                { 
+                                    nextPost &&
+                                    <div className="p-all-2">
+                                        <img src={nextPostImage} />
+                                        <h4>Next To Read</h4>
+                                        <h2>{nextPostTitle}</h2>
+                                        <Link to={`/blog/post/${nextPostSlug}`}>
+                                            <UIButton type="link">Read The Next Post</UIButton>
+                                        </Link>
+                                    </div>
+                                }
+                                </UIFlex>
+                                <UIFlex basis="50%">
+                                    { 
+                                        prevPost &&
+                                        <div className="p-all-2">
+                                            <img src={prevPostImage} />
+                                            <h4>Previously Written</h4>
+                                            <h2>{prevPostTitle}</h2>
+                                            <Link to={`/blog/post/${prevPostSlug}`}>
+                                                <UIButton type="link">Read The Previous Post</UIButton>
+                                            </Link>
+                                        </div>
+                                    }
+                                </UIFlex>
+                            </UIFlexRow>
+                        </UISection>
                     </UILayout>
                 </RouteTransition>
             )
@@ -113,4 +195,4 @@ class BlogPost extends PureComponent {
     }
 }
 
-export default BlogPost;
+export default CSSModules(BlogPost, styles);
