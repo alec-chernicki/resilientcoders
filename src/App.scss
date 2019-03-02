@@ -16,6 +16,7 @@
 
 body {
   font-family: $league-gothic;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
@@ -67,6 +68,38 @@ h4 {
   color: #4f5a60;
   font-size: 20px;
   line-height: 20px;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.1;
+  margin: 0 0 6px 0;
+}
+
+h6 {
+  color: #4f5a60;
+  font-size: 16px;
+  line-height: 1.1;
+  margin: 0 0 6px 0;
+}
+
+small {
+  color: #4f5a60;
+  font-size: 14px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  
+}
+blockquote {
+  font-family: $roboto-slab;
+  line-height: 1.25;
+  position: relative;
 }
 
 button {
@@ -132,10 +165,19 @@ p {
   }
 }
 
-ul, li {
-  list-style: none;
+ul, ol, li {
   margin: 0;
   padding: 0;
+  list-style: none;
+
+  &.bulleted {
+    list-style: disc;
+    padding-left: 1rem;
+  }
+  &.numbered {
+    list-style: decimal;
+    padding-left: 1rem;
+  }
 }
 
 a {
