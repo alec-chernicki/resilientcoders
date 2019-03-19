@@ -14,9 +14,11 @@ const sitemap = sm.createSitemap({
     { url: '/bootcamp/', changefreq: 'daily',  priority: 0.5 },
     { url: '/bootcamp/roster', changefreq: 'daily',  priority: 0.2 },
 
-    { url: '/lab/', changefreq: 'daily',  priority: 0.5 },
+    { url: '/hire/', changefreq: 'daily',  priority: 0.5 },
     { url: '/news/', changefreq: 'daily',  priority: 0.4 },
     { url: '/team/', changefreq: 'daily',  priority: 0.3 },
+    { url: '/blog/', changefreq: 'daily',  priority: 0.7 },
+
   ]
 });
 
