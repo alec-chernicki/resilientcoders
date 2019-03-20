@@ -297,7 +297,7 @@ class Bootcamp extends PureComponent {
                   </p>
                   <UIButton
                     external={true}
-                    href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
+                    href="https://www.eventbrite.com/e/resilient-coders-summer-bootcamp-hackathon-tickets-59074669928">
                     Sign up
                   </UIButton>
                 </UICard>
