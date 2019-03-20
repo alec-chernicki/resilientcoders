@@ -59,7 +59,7 @@ class Bootcamp extends PureComponent {
                     <UITextShadow text="01.">
                       Hackathons
                     </UITextShadow>
-                  </h2>
+                  </h2>every time you switch branches // start work that is based off of master branch, run `npm install node-sass@latest` as a quick and dirty fix for now. In the future, i'll make the permit fix for your device
                   <div className="divider" />
                   <p className="text-on-dark">
                     We run two hackathons before each Bootcamp, from which we recruit our students.
@@ -217,7 +217,7 @@ class Bootcamp extends PureComponent {
 
                   <UIButton
                     external={true}
-                    href="https://docs.google.com/a/resilientcoders.org/forms/d/1QFBGAe1viFKEl-n7SbAek5XnAGQ22hTLdYoBlAXOiOM/">
+                    href="https://www.eventbrite.com/e/resilient-coders-summer-bootcamp-hackathon-tickets-59074669928">
                     Sign up
                   </UIButton>
                 </UICard>
