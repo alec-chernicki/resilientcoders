@@ -92,7 +92,7 @@ import AnneImage from './RosterMemberImages/anne.jpg';
 export default [
     {
       url: '/bootcamp/roster/wiskinda-lamandier',
-      portfolioUrl: '',
+      portfolioUrl: 'https://www.wiskinda.com/',
       name: 'Wiskinda Lamandier',
       image: AnneImage,//WiskindaImage,
       linkedin: 'https://www.linkedin.com/in/wslama/',
@@ -112,9 +112,9 @@ export default [
     },
     {
       url: '/bootcamp/roster/christopher-womack',
-      portfolioUrl: '',
+      portfolioUrl: 'http://chriswomack.co',
       name: 'Christopher Womack',
-      image: AnneImage,//WiskindaImage,
+      image: AnneImage,//ChrisImage,
       linkedin: 'https://www.linkedin.com/in/chris-womack-6ab04717b/',
       github: 'https://github.com/ChrisLWomack',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_christopherwomack.pdf',
@@ -144,7 +144,7 @@ export default [
       url: '/bootcamp/roster/kevin-leiva',
       portfolioUrl: 'https://www.kevinleiva.com/',
       name: 'Kevin Leiva',
-      image: AnneImage,//MicahEllaImage,
+      image: AnneImage,//KevinLeImage,
       linkedin: 'https://www.linkedin.com/in/kevinrleiva/',
       github: 'https://github.com/KevinRLeiva',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_kevinleiva.pdf',
@@ -152,7 +152,7 @@ export default [
     },
     {
       url: '/bootcamp/roster/raey-abera',
-      portfolioUrl: '',
+      portfolioUrl: 'https://raeyabera.com/',
       name: 'Raey Abera',
       image: AnneImage,//RaeyImage,
       linkedin: 'https://www.linkedin.com/in/raeyabera/',
