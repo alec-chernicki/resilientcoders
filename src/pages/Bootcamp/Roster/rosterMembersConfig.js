@@ -87,6 +87,7 @@ import AnneImage from './RosterMemberImages/anne.jpg';
 // import LawrenceE_Image from './RosterMemberImages/lawrence_e.jpg';
 // import RossioImage from './RosterMemberImages/rossio.jpg';
 // import VondsImage from './RosterMemberImages/vonds.jpg';
+const filler_bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis nunc at nulla porta cursus. Aliquam tristique justo est, eget dapibus elit blandit non. Proin eget metus nunc. Morbi mattis sem velit, non consectetur quam imperdiet vitae. Fusce quis massa vitae eros consectetur tristique. Nam sit amet gravida magna, et rhoncus odio. Sed vestibulum, augue a tincidunt blandit, est lectus congue urna, sed interdum mi dolor a libero."
 
 
 export default [
@@ -104,11 +105,11 @@ export default [
       url: '/bootcamp/roster/tehya-hubbert',
       portfolioUrl: 'https://hubberttaye.com/',
       name: 'Tehya Hubbert',
-      image: AnneImage,//TehyaImage,
+      image: "https://avatars3.githubusercontent.com/u/9100605?s=460&v=4",//TehyaImage,
       linkedin: 'https://www.linkedin.com/in/hubberttaye/',
       github: 'https://github.com/HubbertTaye',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_tehyahubbert.pdf',
-      bio: `TBD`
+      bio: filler_bio + filler_bio
     },
     {
       url: '/bootcamp/roster/christopher-womack',
