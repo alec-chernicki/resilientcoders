@@ -5,12 +5,14 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const robots = require('express-robots');
+const cors = require('cors');
 
 // Create Express App
 const app = express();
 
 // Initialize Express Middleware
 app.set('port', process.env.PORT || 4000);
+app.use(cors());
 app.use(compress());
 app.use(cookieParser())
 app.use(bodyParser.json());
@@ -29,6 +31,7 @@ app.listen(app.get('port'));
 const subscriptionController = require('./controllers/subscriptionController');
 const twitterController = require('./controllers/twitterController');
 const sitemapController = require('./controllers/sitemapController');
+const eventbriteController = require('./controllers/eventbriteController');
 
 //------------------------------------------------------------
 // Assign Routes and Controllers for API
@@ -42,6 +45,10 @@ app.post('/api/subscribe/diversityplaybook', subscriptionController.postSubscrip
 
 // To get last tweet from @resilientcoders
 app.get('/api/twitter', twitterController.getTwitter);
+
+// For accessing eventbrite data
+// app.get('/api/eventbrite', eventbriteController.getAllEvents);
+app.get('/api/eventbrite', cors(), eventbriteController.getEvent);
 
 // This is for SEO purposes
 app.get('/sitemap.xml', sitemapController.getSitemap);
