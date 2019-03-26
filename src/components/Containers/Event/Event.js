@@ -26,7 +26,7 @@ class Event extends React.PureComponent {
     capacity: "",
     status: "",
     summary: "",
-    is_free: ""
+    is_free: false,
   }
   componentDidMount() {
     moment.tz.setDefault("America/New_York");
@@ -60,7 +60,7 @@ class Event extends React.PureComponent {
         baseURL: baseUrl,
       })
       .then((response) => {
-        console.log(response.data);
+        console.log(response.data.is_free);
         let eventState = {
           description: response.data.description.text,
           capacity: response.data.capacity,
@@ -99,7 +99,7 @@ class Event extends React.PureComponent {
               {daysUntil} days until {title}
             </h4>
             <h2>
-              {this.state.is_free} | {this.state.status} | {this.state.summary} | {this.state.capacity}
+              {this.state.is_free ? "Free" : null} | {this.state.status} | {this.state.summary} | {this.state.capacity}
             </h2>
           </UISection>
         </UILayout>
