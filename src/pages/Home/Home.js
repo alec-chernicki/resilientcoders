@@ -147,7 +147,7 @@ class Home extends PureComponent {
       <RouteTransition>
         <Helmet title="Resilient Coders" />
         <UIHero
-          isFullHeight={true}
+          type="primary"
           titleOne="Equity in access"
           titleTwo="to the tech economy"
           text="Training people of color for high growth careers as software engineers, and connecting them with jobs"

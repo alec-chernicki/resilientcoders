@@ -49,6 +49,7 @@ class Lab extends React.PureComponent {
       <RouteTransition>
         <Helmet title="Resilient Lab" />
         <UIHero
+          type="default"
           className="hero"
           image={LabHeroImage}
           short={true}
