@@ -1,9 +1,36 @@
 import './App.scss';
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import objectFitImages from 'object-fit-images';
+
+// import routes from './routeConfig/routes';
+import { Routes } from './routeConfig/routes';
+// import {Router} from 'react-router';
+// import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import GoogleAnalytics from 'react-ga';
+
+import { createBrowserHistory } from 'history';
+const history = createBrowserHistory();
+// export default history;
+
+GoogleAnalytics.initialize('UA-66576358-3');
+
+const logPageView = (state) => {
+  const currentPath = window.location.pathname;
+  // Manually push new page event to Google analytics
+  GoogleAnalytics.set({ page: currentPath });
+  GoogleAnalytics.pageview(currentPath);
+
+  // Manually push new page event to HubSpot analytics
+  const _hsq = window._hsq = window._hsq || [];
+  _hsq.push(['setPath', currentPath]);
+  _hsq.push(['trackPageView']);
+};
 
 class App extends React.Component {
   componentDidMount() {
@@ -12,24 +39,29 @@ class App extends React.Component {
   render () {
     const {children, location} = this.props;
     return (
-      <div className="app">
-        <Navigation/>
-        <ReactCSSTransitionGroup
-          component="div"
-          transitionName="route-changing"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={250}>
-          {React.cloneElement(children, {key: location.pathname})}
-          <Footer/>
-        </ReactCSSTransitionGroup>
-
-      </div>
+        <div className="app">
+      <Router history={history} onUpdate={logPageView}>
+          <Navigation/>
+          {/* <ReactCSSTransitionGroup
+            component="div"
+            transitionName="route-changing"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={250}>
+            {React.cloneElement(routes, {key: location.pathname})}
+            { routes }
+              <Routes />
+            <Footer/>
+          </ReactCSSTransitionGroup> */}
+          {/* <Routes /> */}
+          {/* <Footer/> */}
+      </Router>
+        </div>
     );
   }
 }
 
-App.propTypes = {
-  children: PropTypes.node.isRequired
-};
+// App.propTypes = {
+//   children: PropTypes.node.isRequired
+// };
 
 export default App;

@@ -18,41 +18,62 @@ import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
 
 import Playbook from '../pages/Playbook/Playbook';
 
-import {Route, IndexRoute, Redirect} from 'react-router';
-import App from '../App';
+import {Route, Redirect, Switch} from 'react-router';
+// import App from '../App';
 
 const rosterMemberRoutes = rosterMembersConfig.map((item, key) => {
   return (
     <Route
       key={key}
-      path="roster/:memberName"
+      path="/bootcamp/roster/:memberName"
       component={RosterMember}
     />
   )
 });
+export default class Routes extends React.Component {
+  render() {
+    const {children, location} = this.props;
+    return (
+      <Switch location={location}>
+        <Route path="/" component={Home} />
+        <Route path="/bootcamp" component={Bootcamp} />
+        <Route path="/bootcamp/roster" component={Roster} />
+        {rosterMemberRoutes}
+        <Route path="/hire" component={Hire}/>
+        <Route path="/team" component={Team}/>
+        <Route path="/news" component={News}/>
+        <Route path="/diversityplaybook" component={Playbook}/>
+        <Route path="/get-involved" component={GetInvolvedPage}/>
+        <Route path="/get-involved/company" component={GetInvolvedCompany}/>
+        <Route path="/get-involved/volunteer" component={GetInvolvedVolunteer}/>
+        <Route path="/get-involved/student" component={GetInvolvedStudent}/>
+        <Route path="/get-involved/thankyou" component={GetInvolvedThankYou}/>
 
-export default(
-  <Route path="/" component={App}>
-    <IndexRoute component={Home} key="home"/>
-    <Route path="bootcamp">
-      <Route path="roster" component={Roster} />
-      {rosterMemberRoutes}
-      <IndexRoute component={Bootcamp}/>
-    </Route>
-    <Route path="hire" component={Hire}/>
-    <Route path="team" component={Team}/>
-    <Route path="news" component={News}/>
-    <Route path="diversityplaybook" component={Playbook}/>
-    <Route path="get-involved">
-      <IndexRoute component={GetInvolvedPage} />
-      <Route path="company" component={GetInvolvedCompany}/>
-      <Route path="volunteer" component={GetInvolvedVolunteer}/>
-      <Route path="student" component={GetInvolvedStudent}/>
-      <Route path="thankyou" component={GetInvolvedThankYou}/>
-      <Redirect from="mentor" to='volunteer' />
-    </Route>
+        <Redirect from="mentor" to='volunteer' />
+        <Redirect from="*" to="/" />
+        {/* <Redirect to="/" /> */}
+    </Switch>
+    )
+  }
+}
+// export default(
+//   <Switch>
+//       <Route path="/" component={Home} />
+//       <Route path="/bootcamp" component={Bootcamp} />
+//       <Route path="/bootcamp/roster" component={Roster} />
+//       {rosterMemberRoutes}
+//       <Route path="/hire" component={Hire}/>
+//       <Route path="/team" component={Team}/>
+//       <Route path="/news" component={News}/>
+//       <Route path="/diversityplaybook" component={Playbook}/>
+//       <Route path="/get-involved" component={GetInvolvedPage}/>
+//       <Route path="/get-involved/company" component={GetInvolvedCompany}/>
+//       <Route path="/get-involved/volunteer" component={GetInvolvedVolunteer}/>
+//       <Route path="/get-involved/student" component={GetInvolvedStudent}/>
+//       <Route path="/get-involved/thankyou" component={GetInvolvedThankYou}/>
 
-    {/* This is a catch-all instead of a 404. DO NOT REMOVE */}
-    <Redirect from="*" to="/" />
-  </Route>
-);
+//       <Redirect from="mentor" to='volunteer' />
+//       <Redirect from="*" to="/" />
+//       {/* <Redirect to="/" /> */}
+//   </Switch>
+// );

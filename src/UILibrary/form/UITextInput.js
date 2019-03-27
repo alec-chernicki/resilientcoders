@@ -72,4 +72,4 @@ class UITextInput extends React.Component {
   }
 }
 
-export default Formsy.HOC(CSSModules(UITextInput, styles));
+export default CSSModules(UITextInput, styles);

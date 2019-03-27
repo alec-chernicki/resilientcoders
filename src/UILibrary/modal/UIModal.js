@@ -1,6 +1,7 @@
 import styles from './UIModal.css';
 import CSSModules from 'react-css-modules';
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import UIIconButton from 'UILibrary/button/UIIconButton';
 import images from 'constants/images';
 import Modal from 'react-responsive-modal';

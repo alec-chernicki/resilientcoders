@@ -1,5 +1,6 @@
 import './GetInvolvedBase.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Hero from '../../../components/Containers/Hero/Hero';
 import CenteredContainerOuter from '../../../components/Containers/CenteredContainer/CenteredContainerOuter';
 import CenteredContainerInner from '../../../components/Containers/CenteredContainer/CenteredContainerInner';

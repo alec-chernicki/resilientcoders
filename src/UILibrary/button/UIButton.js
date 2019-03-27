@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router';
 import rightArrowImage from '../../images/right-arrow.svg';
 import ButtonBase from './_core/ButtonBase';

@@ -1,4 +1,5 @@
-import React, {PropTypes, PureComponent} from 'react';
+import React, {PureComponent} from 'react';
+import PropTypes from 'prop-types';
 import styles from './BinaryText.css';
 import CSSModules from 'react-css-modules';
 import ScrollMagic from 'scrollmagic';

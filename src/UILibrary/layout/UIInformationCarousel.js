@@ -1,7 +1,8 @@
 import styles from './UIInformationCarousel.css';
 import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
 import UICard from 'UILibrary/layout/UICard';

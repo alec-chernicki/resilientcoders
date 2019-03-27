@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './UIHero.css';
 import classNames from 'classnames';
 import CSSModules from 'react-css-modules';
