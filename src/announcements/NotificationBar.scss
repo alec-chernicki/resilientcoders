@@ -4,14 +4,13 @@
     justify-content: center;
     background: #21262d;
     border-top: solid 3px #ED1B24;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     left: 0;
     right: 0;
     position: fixed;
     bottom: -200px;
     width: 100vw;
-    transition: all 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
+    transition: bottom 475ms cubic-bezier(0.52, 0.01, 0.16, 1);
     z-index: 99999;
 
     &.open {
