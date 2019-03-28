@@ -10,9 +10,16 @@
   max-height: 700px;
 }
 
-.full-height {
+.primary {
   composes: hero;
   max-height: 1200px;
+}
+
+.secondary {
+  composes: hero;
+  max-height: 700px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #EDEEF0 50%, #21262D 50%);
 }
 
 .content {

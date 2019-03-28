@@ -20,6 +20,7 @@ class Team extends React.PureComponent {
       <RouteTransition>
         <Helmet title="Team" />
         <UIHero
+          type="default"
           titleOne="The team"
           text="Strong student leadership, dedicated staff, and an impressive board make Resilient Coders
           what it is. Our people have in common a belief in the social mission, and the muscle

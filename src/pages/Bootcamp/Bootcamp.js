@@ -183,6 +183,7 @@ class Bootcamp extends PureComponent {
       <RouteTransition>
         <Helmet title="Resilient Bootcamp" />
         <UIHero
+          type="default"
           image={images.heroBootcamp}
           titleOne="Resilient Bootcamp"
           text="Transforming dedication into opportunity, the starting point for our coders&#39; careers."

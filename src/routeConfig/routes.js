@@ -16,6 +16,9 @@ import Roster from '../pages/Bootcamp/Roster/Roster';
 import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
 import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
 
+import Events from '../pages/Events/Events';
+import DemoDay from '../pages/Events/DemoDay/DemoDay';
+
 import Playbook from '../pages/Playbook/Playbook';
 
 import {Route, IndexRoute, Redirect} from 'react-router';
@@ -43,6 +46,10 @@ export default(
     <Route path="team" component={Team}/>
     <Route path="news" component={News}/>
     <Route path="diversityplaybook" component={Playbook}/>
+    <Route path="events">
+      <IndexRoute component={Events} />
+      <Route path="demo-day" component={DemoDay}/>
+    </Route>
     <Route path="get-involved">
       <IndexRoute component={GetInvolvedPage} />
       <Route path="company" component={GetInvolvedCompany}/>

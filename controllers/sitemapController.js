@@ -17,6 +17,9 @@ const sitemap = sm.createSitemap({
     { url: '/lab/', changefreq: 'daily',  priority: 0.5 },
     { url: '/news/', changefreq: 'daily',  priority: 0.4 },
     { url: '/team/', changefreq: 'daily',  priority: 0.3 },
+
+    { url: '/events/', changefreq: 'daily',  priority: 0.8 },
+    { url: '/events/demo-day', changefreq: 'daily',  priority: 0.3 },
   ]
 });
 

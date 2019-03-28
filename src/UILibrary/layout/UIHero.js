@@ -10,6 +10,12 @@ import TimelineMax from 'TimelineMax';
 import TweenMax from 'TweenMax';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
+const typeProps = {
+  'default': 'default',
+  'primary': 'primary',
+  'secondary': 'secondary',
+};
+
 class UIHero extends React.Component {
   componentDidMount() {
     const tweenOne = TweenMax.from('.animated-character', 0.65, {opacity: 0, x: -30, ease: Linear.easeNone});
@@ -71,7 +77,7 @@ class UIHero extends React.Component {
     })
   }
   renderBackground() {
-    const {video, image} = this.props;
+    const {video, image, type} = this.props;
 
     if (video) {
       return (
@@ -81,7 +87,7 @@ class UIHero extends React.Component {
 
     if (image) {
       return (
-        <UILayer image={image} className="index-1" />
+        <UILayer type={type} image={image} className="index-1" />
       );
     }
   }
@@ -141,11 +147,12 @@ class UIHero extends React.Component {
     );
   }
   render () {
-    const { isFullHeight } = this.props;
+    const { type } = this.props;
 
     const heroClass = classNames({
-      'default': !isFullHeight,
-      'full-height': isFullHeight,
+      [typeProps.default]: type === typeProps.default,
+      [typeProps.primary]: type === typeProps.primary,
+      [typeProps.secondary]: type === typeProps.secondary,
     });
 
     return (
@@ -165,11 +172,11 @@ class UIHero extends React.Component {
 }
 
 UIHero.defaultProps = {
-  isFullHeight: false,
+  type: typeProps.default
 };
 
 UIHero.propTypes = {
-  isFullHeight: PropTypes.bool,
+  type: PropTypes.string,
   image: PropTypes.string,
   titleOne: PropTypes.string.isRequired,
   titleTwo: PropTypes.string,

@@ -4,6 +4,12 @@ import CSSModules from 'react-css-modules';
 import UIImage from 'UILibrary/image/UIImage';
 import classNames from 'classnames';
 
+const typeProps = {
+  'default': 'default',
+  'primary': 'primary',
+  'secondary': 'secondary',
+};
+
 class UILayer extends React.Component {
   renderOverlay() {
     const { overlay } = this.props;
@@ -51,11 +57,17 @@ class UILayer extends React.Component {
     );
   }
   render () {
-    const { index, children, className } = this.props;
+    const { index, children, className, type } = this.props;
+
+    const layerClass = classNames({
+      [typeProps.default]: type === typeProps.default,
+      [typeProps.primary]: type === typeProps.primary,
+      [typeProps.secondary]: type === typeProps.secondary,
+    });
 
     return (
       <div
-        styleName="layer"
+        styleName={layerClass}
         className={className}
         style={{ zIndex: index }}
       >
@@ -73,9 +85,11 @@ UILayer.defaultProps = {
   dots: true,
   overlay: true,
   greyscale: true,
+  type: typeProps.default
 };
 
 UILayer.propTypes = {
+  type: PropTypes.string,
   image: PropTypes.string,
   dots: PropTypes.bool,
   overlay: PropTypes.bool,
