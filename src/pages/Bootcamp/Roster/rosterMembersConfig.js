@@ -78,7 +78,7 @@ import TariqImage from './RosterMemberImages/tariq.jpg';
 
 // Roster Images Bootcamp 2018c
 // import AlexImage from './RosterMemberImages/alex.jpg';
-import AnneImage from './RosterMemberImages/anne.jpg';
+// import AnneImage from './RosterMemberImages/anne.jpg';
 // import BrandiImage from './RosterMemberImages/brandi.jpg';
 // import CarmenoImage from './RosterMemberImages/carmeno.jpg';
 // import EricaImage from './RosterMemberImages/erica.jpg';
@@ -87,6 +87,25 @@ import AnneImage from './RosterMemberImages/anne.jpg';
 // import LawrenceE_Image from './RosterMemberImages/lawrence_e.jpg';
 // import RossioImage from './RosterMemberImages/rossio.jpg';
 // import VondsImage from './RosterMemberImages/vonds.jpg';
+
+// Roster Images Bootcamp 2019a
+import WiskindaImage from './RosterMemberImages/wiskinda.jpg';
+import TehyaImage from './RosterMemberImages/tehya.jpg';
+import ChrisImage from './RosterMemberImages/chris.jpg';
+import AnwarImage from './RosterMemberImages/anwar.jpg';
+import MicahEllaImage from './RosterMemberImages/micahella.jpg';
+
+import KevinLeImage from './RosterMemberImages/kevin_le.jpg';
+import RaeyImage from './RosterMemberImages/raey.jpg';
+import SamanthaImage from './RosterMemberImages/samantha.jpg';
+import CharlesImage from './RosterMemberImages/charles.jpg';
+import OrakaImage from './RosterMemberImages/oraka.jpg';
+
+import SullyImage from './RosterMemberImages/sully.jpg';
+import KareemWSImage from './RosterMemberImages/kareem_ws.jpg';
+import PriscillaImage from './RosterMemberImages/priscilla.jpg';
+
+
 const filler_bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis nunc at nulla porta cursus. Aliquam tristique justo est, eget dapibus elit blandit non. Proin eget metus nunc. Morbi mattis sem velit, non consectetur quam imperdiet vitae. Fusce quis massa vitae eros consectetur tristique. Nam sit amet gravida magna, et rhoncus odio. Sed vestibulum, augue a tincidunt blandit, est lectus congue urna, sed interdum mi dolor a libero."
 
 
@@ -95,7 +114,7 @@ export default [
       url: '/bootcamp/roster/wiskinda-lamandier',
       portfolioUrl: 'https://www.wiskinda.com/',
       name: 'Wiskinda Lamandier',
-      image: AnneImage,//WiskindaImage,
+      image: WiskindaImage,
       linkedin: 'https://www.linkedin.com/in/wslama/',
       github: 'https://github.com/kendacodes',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_wiskindalamandier.pdf',
@@ -105,7 +124,7 @@ export default [
       url: '/bootcamp/roster/tehya-hubbert',
       portfolioUrl: 'https://hubberttaye.com/',
       name: 'Tehya Hubbert',
-      image: "https://avatars3.githubusercontent.com/u/9100605?s=460&v=4",//TehyaImage,
+      image: TehyaImage,
       linkedin: 'https://www.linkedin.com/in/hubberttaye/',
       github: 'https://github.com/HubbertTaye',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_tehyahubbert.pdf',
@@ -115,7 +134,7 @@ export default [
       url: '/bootcamp/roster/christopher-womack',
       portfolioUrl: 'http://chriswomack.co',
       name: 'Christopher Womack',
-      image: AnneImage,//ChrisImage,
+      image: ChrisImage,
       linkedin: 'https://www.linkedin.com/in/chris-womack-6ab04717b/',
       github: 'https://github.com/ChrisLWomack',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_christopherwomack.pdf',
@@ -125,7 +144,7 @@ export default [
       url: '/bootcamp/roster/anwar-sabir',
       portfolioUrl: 'https://www.anwarsabir.com/',
       name: 'Anwar Sabir',
-      image: AnneImage,//AnwarImage,
+      image: AnwarImage,
       linkedin: 'https://www.linkedin.com/in/anwar-sabir-140b74102/',
       github: 'https://github.com/SabirLume',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_anwarsabir.pdf',
@@ -135,7 +154,7 @@ export default [
       url: '/bootcamp/roster/micah-ella-estacio',
       portfolioUrl: 'http://micahellaestac.io/',
       name: 'Micah-Ella Estacio',
-      image: AnneImage,//MicahEllaImage,
+      image: MicahEllaImage,
       linkedin: 'https://www.linkedin.com/in/estmicahella/',
       github: 'https://github.com/estmicahella',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_micahellaestacio.pdf',
@@ -145,7 +164,7 @@ export default [
       url: '/bootcamp/roster/kevin-leiva',
       portfolioUrl: 'https://www.kevinleiva.com/',
       name: 'Kevin Leiva',
-      image: AnneImage,//KevinLeImage,
+      image: KevinLeImage,
       linkedin: 'https://www.linkedin.com/in/kevinrleiva/',
       github: 'https://github.com/KevinRLeiva',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_kevinleiva.pdf',
@@ -155,7 +174,7 @@ export default [
       url: '/bootcamp/roster/raey-abera',
       portfolioUrl: 'https://raeyabera.com/',
       name: 'Raey Abera',
-      image: AnneImage,//RaeyImage,
+      image: RaeyImage,
       linkedin: 'https://www.linkedin.com/in/raeyabera/',
       github: 'https://github.com/Raey-Abera',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_raeyabera.pdf',
@@ -165,7 +184,7 @@ export default [
       url: '/bootcamp/roster/samantha-casseus',
       portfolioUrl: 'https://www.samcasseusdev.com/',
       name: 'Samantha Casseus',
-      image: AnneImage,//SamanthaImage,
+      image: SamanthaImage,
       linkedin: 'https://www.linkedin.com/in/samantha-casseus-55150117b/',
       github: 'https://github.com/samcassdev',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_samanthacasseus.pdf',
@@ -175,7 +194,7 @@ export default [
       url: '/bootcamp/roster/charles-de-farias',
       portfolioUrl: 'https://www.charlesdefarias.com/',
       name: 'Charles De Farias',
-      image: AnneImage,//CharlesImage,
+      image: CharlesImage,
       linkedin: 'https://www.linkedin.com/in/defarias/',
       github: 'https://github.com/CharlesDeFarias',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_charlesdefaria.pdf',
@@ -185,7 +204,7 @@ export default [
       url: '/bootcamp/roster/oraka-wellington',
       portfolioUrl: 'https://www.owellthedev.com/',
       name: 'Oraka Wellington',
-      image: AnneImage,//OrakaImage,
+      image: OrakaImage,
       linkedin: 'https://www.linkedin.com/in/oraka-wellington-6886a217b/',
       github: 'https://github.com/Orakaw',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_orakawellington.pdf',
@@ -195,7 +214,7 @@ export default [
       url: '/bootcamp/roster/sully-martinez',
       portfolioUrl: 'https://sullymartinez.netlify.com/',
       name: 'Sully Martinez',
-      image: AnneImage,//SullyImage,
+      image: SullyImage,
       linkedin: 'https://www.linkedin.com/in/sullymartinez/',
       github: 'https://github.com/SullyMA',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_sullymartinez.pdf',
@@ -205,7 +224,7 @@ export default [
       url: '/bootcamp/roster/kareem-walls-sanders',
       portfolioUrl: 'https://kareemwallssanders.com/',
       name: 'Kareem Walls-Sanders',
-      image: AnneImage,//KareemImage,
+      image: KareemWSImage,
       linkedin: 'https://www.linkedin.com/in/kareem-walls-sanders-b3810117b/',
       github: 'https://github.com/kareemjwallssanders',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_kareemwallssanders.pdf',
@@ -215,22 +234,22 @@ export default [
       url: '/bootcamp/roster/priscilla-palacin',
       portfolioUrl: 'https://www.priscillapalacin.com/',
       name: 'Priscilla Palacin',
-      image: AnneImage,//PriscillaImage,
+      image: PriscillaImage,
       linkedin: 'https://www.linkedin.com/in/priscilla-palacin-a23bb6157/',
       github: 'https://github.com/PriscillaPalacin',
       resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_priscillapalacin.pdf',
       bio: `TBD`
     },
-    {
-      url: '/bootcamp/roster/ricardo-soljour',
-      portfolioUrl: '/',
-      name: 'Ricardo Soljour',
-      image: AnneImage,//PriscillaImage,
-      linkedin: 'https://www.linkedin.com/in/ricardo-soljour-ab7508166/',
-      github: 'https://github.com/soljourr',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_ricardosoljour.pdf',
-      bio: `TBD`
-    },
+    // {
+    //   url: '/bootcamp/roster/ricardo-soljour',
+    //   portfolioUrl: '/',
+    //   name: 'Ricardo Soljour',
+    //   image: AnneImage,//PriscillaImage,
+    //   linkedin: 'https://www.linkedin.com/in/ricardo-soljour-ab7508166/',
+    //   github: 'https://github.com/soljourr',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_ricardosoljour.pdf',
+    //   bio: `TBD`
+    // },
   // {
   //   url: '/bootcamp/roster/anne-demosthene',
   //   portfolioUrl: '',
