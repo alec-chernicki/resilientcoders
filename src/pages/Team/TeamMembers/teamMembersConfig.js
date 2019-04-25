@@ -8,6 +8,7 @@ import RouguiImage from './TeamMemberImages/rougui.png';
 import DavidMendelsImage from './TeamMemberImages/davidmendels.png';
 import DuniaImage from './TeamMemberImages/dunia.jpg';
 import KatieImage from './TeamMemberImages/katie.jpeg';
+import SusanImage from './TeamMemberImages/susan.jpg'
 
 export default [
   {
@@ -129,5 +130,18 @@ export default [
     see a range of diversity showcased in the field. And as a Resilient Coders alumna, it is now part of
     her mission to help make that happen. When she’s not writing code, you can find her whipping up a
     yummy treat, reading a book imprinted with baby drool or taking a much-needed nap.`
+  },
+  {
+    name: 'Susan Benford',
+    image: SusanImage,
+    role: 'Board',
+    text: `Susan has been consistently unable to decide what she wants to do. She worked in 
+    Washington, D.C. for a lobbying group representing the pet industry, and for Vice President 
+    Walter Mondale; earned an M.B.A. and worked as a financial analyst at Intel; hired and managed a 
+    sales force in the computer software industry; served on the Boston Board of the Juvenile Diabetes 
+    Research Foundation, on the Foundation Board of the Massachusetts College of Art, and is now President 
+    of The Philanthropy Connection, a women’s collective giving group that has awarded $1.1 million to 
+    Boston area non-profits since 2013 (including $50,000 to Resilient Coders!). She is married, has two 
+    adult sons, and one spoiled golden retriever.`
   },
 ];
