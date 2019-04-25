@@ -133,7 +133,7 @@ export default [
   },
   {
     name: 'Susan Benford',
-    image: DuniaImage,
+    image: SusanImage,
     role: 'Board',
     text: `Susan has been consistently unable to decide what she wants to do. She worked in 
     Washington, D.C. for a lobbying group representing the pet industry, and for Vice President 
