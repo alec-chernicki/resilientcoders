@@ -1,6 +1,6 @@
 import DelImage from './TeamMemberImages/del.jpg';
 import LeonImage from './TeamMemberImages/leon.jpg';
-import MuigaiImage from './TeamMemberImages/muigai.jpg';
+import MuigaiImage from './TeamMemberImages/muigai.png';
 import AlecImage from './TeamMemberImages/alec.png';
 import ChrisImage from './TeamMemberImages/chris.jpg';
 import StephanieImage from './TeamMemberImages/stephanie.png';
@@ -8,7 +8,7 @@ import RouguiImage from './TeamMemberImages/rougui.png';
 import DavidMendelsImage from './TeamMemberImages/davidmendels.png';
 import DuniaImage from './TeamMemberImages/dunia.jpg';
 import KatieImage from './TeamMemberImages/katie.jpeg';
-import SusanImage from './TeamMemberImages/susan.jpg';
+import SusanImage from './TeamMemberImages/susan.png';
 
 export default [
   {
@@ -70,12 +70,9 @@ export default [
   {
     name: 'Alec Ortega',
     image: AlecImage,
-    role: 'Technical advisor',
+    role: 'Technical Advisor',
     text: `Alec has been a mentor with Resilient for the last two years. He's passionate about
-    diversity in tech and social innovation. He believes that diversity means not just acknowledging,
-    but embracing the fact that some can get to "Point B" regardless of their "Point A". To
-    this end, he's also an award-winning instructor at at Startup Institute teaching the Web Design
-    track. During the day, he works as a front end engineer at HubSpot and consumes too much
+    diversity in tech and social innovation. He believes that diversity means not just acknowledging, but embracing the fact that some can get to "Point B" regardless of their "Point A". To this end, he's also an award-winning instructor at at Startup Institute teaching the Web Design track. During the day, he works as a front end engineer at HubSpot and consumes too much
     coffee for his own good.`
   },
   {
@@ -96,40 +93,21 @@ export default [
     text: `Katie Stebbins is the Massachusetts Assistant Secretary for Technology, Innovation and
     Entrpreneurship and leads the State's efforts in the areas of cyber security, big data, robotis,
     digital health , advanced manufacturing, IOT, marine technology and the start-up ecosystem. She
-    has served in the public sector for over twenty years, playing a leadership role in community based
-    economic development, specifically in low-income communities. Boston Business Journal named Katie
-    one of the top ten "2016 Women to Watch in Science and Technology".`
+    has served in the public sector for over twenty years, playing a leadership role in community based economic development, specifically in low-income communities. Boston Business Journal named Katie one of the top ten "2016 Women to Watch in Science and Technology".`
   },
  
   {
     name: 'David Mendels',
     image: DavidMendelsImage,
     role: 'Board',
-    text: `David Mendels has helped build and lead several of the most innovative software companies of the
-    last 25 years.  Most recently, he was CEO of Brightcove, the leading software-as-a-service online
-    video platform, delivering over 200 years of video every 24 hours for over 2000 customers in 75
-    countries. Brightcove was also named Best Place to Work in Boston by the Boston Globe. Prior to
-    Brightcove, he held multiple leadership roles at Macromedia and Adobe over 16 years, including
-    leading the business units for technologies that had a fundamental impact on our experience of the
-    internet include Adobe Flash and PDF. David also has roles as Board Member at Witness.org,
-    advisor/mentor with Our Generation Speaks and as a member of the steering committee of the Movement
-    Voter Project. David has a Masters Degree in Japanese Studies from the University of California at
-    Berkeley and a B.A. from Wesleyan University.`
+    text: `David Mendels has helped build and lead several of the most innovative software companies of the last 25 years.  Most recently, he was CEO of Brightcove, the leading software-as-a-service online video platform, delivering over 200 years of video every 24 hours for over 2000 customers in 75 countries. Brightcove was also named Best Place to Work in Boston by the Boston Globe. Prior to Brightcove, he held multiple leadership roles at Macromedia and Adobe over 16 years, including leading the business units for technologies that had a fundamental impact on our experience of the internet include Adobe Flash and PDF. David also has roles as Board Member at Witness.org, advisor/mentor with Our Generation Speaks and as a member of the steering committee of the Movement Voter Project. David has a Masters Degree in Japanese Studies from the University of California at Berkeley and a B.A. from Wesleyan University.`
   },
   {
     name: 'Dunia Goncalves',
     image: DuniaImage,
     role: 'Board',
     text: `Dunia wants to live in a world where education is an opportunity available to everyone,
-    books come bundled with extra dark chocolate, and with a glass of wine, and there is a force field
-    around her keyboard that repels cats and sticky baby fingers. With nearly 9 years of ESL teaching
-    behind her, she gracefully took a nose dive into the technology field via Resilient Coders Bootcamp.
-    She landed a job as a Frontend Web Developer at Everquote in Cambridge. With these new-found skills,
-    she devotes time to personal development and mentoring new coders, even if remotely, on a daily basis.
-    Dunia is a born and raised Bostonian, and now that The Tech Hub has migrated here, she would love to
-    see a range of diversity showcased in the field. And as a Resilient Coders alumna, it is now part of
-    her mission to help make that happen. When she’s not writing code, you can find her whipping up a
-    yummy treat, reading a book imprinted with baby drool or taking a much-needed nap.`
+    books come bundled with extra dark chocolate, and with a glass of wine, and there is a force field around her keyboard that repels cats and sticky baby fingers. With nearly 9 years of ESL teaching behind her, she gracefully took a nose dive into the technology field via Resilient Coders Bootcamp. She landed a job as a Frontend Web Developer at Everquote in Cambridge. With these new-found skills, she devotes time to personal development and mentoring new coders, even if remotely, on a daily basis. Dunia is a born and raised Bostonian, and now that The Tech Hub has migrated here, she would love to see a range of diversity showcased in the field. And as a Resilient Coders alumna, it is now part of her mission to help make that happen. When she’s not writing code, you can find her whipping up a yummy treat, reading a book imprinted with baby drool or taking a much-needed nap.`
   },
   {
     name: 'Susan Benford',
@@ -137,11 +115,6 @@ export default [
     role: 'Board',
     text: `Susan has been consistently unable to decide what she wants to do. She worked in 
     Washington, D.C. for a lobbying group representing the pet industry, and for Vice President 
-    Walter Mondale; earned an M.B.A. and worked as a financial analyst at Intel; hired and managed a 
-    sales force in the computer software industry; served on the Boston Board of the Juvenile Diabetes 
-    Research Foundation, on the Foundation Board of the Massachusetts College of Art, and is now President 
-    of The Philanthropy Connection, a women’s collective giving group that has awarded $1.1 million to 
-    Boston area non-profits since 2013 (including $50,000 to Resilient Coders!). She is married, has two 
-    adult sons, and one spoiled golden retriever.`
+    Walter Mondale; earned an M.B.A. and worked as a financial analyst at Intel; hired and managed a sales force in the computer software industry; served on the Boston Board of the Juvenile Diabetes Research Foundation, on the Foundation Board of the Massachusetts College of Art, and is now President of The Philanthropy Connection, a women’s collective giving group that has awarded $1.1 million to Boston area non-profits since 2013 (including $50,000 to Resilient Coders!). She is married, has two adult sons, and one spoiled golden retriever.`
   },
 ];
