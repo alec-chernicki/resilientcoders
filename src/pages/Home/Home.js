@@ -186,8 +186,7 @@ class Home extends PureComponent {
                 <div className="p-x-6 p-y-12 text-center">
                   <h1>Meet our students</h1>
                   <p className="text-constrained text-on-dark m-x-auto">
-                    Our students come from have a variety of backgrounds and perspectives, but
-                    they all share drive and passion.
+                    Our students come from a variety of backgrounds and perspectives, but they all share drive and passion.
                   </p>
                   <UIButton to="/bootcamp/roster">
                     See all students
