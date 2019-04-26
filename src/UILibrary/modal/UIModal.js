@@ -7,7 +7,7 @@ import Modal from 'react-responsive-modal';
 
 class UIModal extends React.Component {
   render () {
-    const { children, isOpen, onClose, contentLabel, styles } = this.props;
+    const { children, isOpen, onClose, styles } = this.props;
 
     return (
       <Modal 
@@ -33,7 +33,6 @@ UIModal.defaultProps = {
 UIModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
-  contentLabel: PropTypes.string.isRequired,
 };
 
 export default CSSModules(UIModal, styles);
