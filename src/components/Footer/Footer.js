@@ -4,6 +4,7 @@ import {Link} from 'react-router';
 
 import twitterIcon from '../../images/twitter.svg';
 import facebookIcon from '../../images/facebook.svg';
+import linkedinIcon from '../../images/linkedin_ko.svg';
 import UISection from 'UILibrary/layout/UISection';
 import UILayout from 'UILibrary/layout/UILayout';
 import butterCMSLogo from '../../images/buttercms_logo.png';
@@ -73,6 +74,9 @@ class Footer extends React.PureComponent {
                 </a>
                 <a href="https://www.facebook.com/resilientcoders/" target="_blank">
                   <img src={facebookIcon} alt="Facebook logo"/>
+                </a>
+                <a href="https://www.linkedin.com/company/resilient-coders" target="_blank">
+                  <img src={linkedinIcon} alt="LinkedIn logo" />
                 </a>
               </div>
               

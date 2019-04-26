@@ -109,7 +109,7 @@ class Bootcamp extends PureComponent {
                     demonstrated proficiency in semantically structured markup, inheritance and
                     specificity, accessibility, progressive enhancement, responsive design, and
                     effective use of functions, methods, and variables. They will have built, and
-                    pushed to GitHub, work that showcases these aptitudes, inluding a game or application in vanilla JavaScript.
+                    pushed to GitHub, work that showcases these aptitudes, including a game or application in vanilla JavaScript.
                   </p>
                 </UIFlex>
               </UIFlexRow>
