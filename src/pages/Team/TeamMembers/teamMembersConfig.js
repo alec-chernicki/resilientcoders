@@ -8,7 +8,7 @@ import RouguiImage from './TeamMemberImages/rougui.png';
 import DavidMendelsImage from './TeamMemberImages/davidmendels.png';
 import DuniaImage from './TeamMemberImages/dunia.jpg';
 import KatieImage from './TeamMemberImages/katie.jpeg';
-import SusanImage from './TeamMemberImages/susan.jpg'
+import SusanImage from './TeamMemberImages/susan.jpg';
 
 export default [
   {
