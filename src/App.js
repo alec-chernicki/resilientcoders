@@ -12,7 +12,7 @@ class App extends React.Component {
   }
   render () {
     const {children, location} = this.props;
-    const link = "https://www.eventbrite.com/e/resilient-coders-demo-day-tickets-58142024360";
+    const link = "https://www.eventbrite.com/e/women-queer-and-non-binary-folk-resilient-coders-recruiting-event-tickets-60469898093";
     return (
       <div className="app">
         <Navigation/>
@@ -25,8 +25,7 @@ class App extends React.Component {
           <Footer/>
           <NotificationBar>
             <p className="text-on-dark m-y-0">
-              <span className="text-white">Looking to hire software engineers? Join us at&nbsp;</span>
-              <a href={link} target="_blank">Resilient Coders Demo Day</a>
+              <span className="text-white">Join us at our <a href={link} target="_blank">Women, Queer and Non-Binary folk recruiting event</a> on April 29th, 2019.</span>
             </p>
           </NotificationBar>
         </ReactCSSTransitionGroup>
