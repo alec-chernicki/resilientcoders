@@ -36,13 +36,13 @@ class NotificationBar extends React.Component {
         const { children } = this.props;
         const isOpen = window.sessionStorage.getItem(this.storageKey);
         
-        if (isOpen == null || isOpen == undefined) {
+        if (isOpen == null || isOpen === undefined) {
             return null;
         }
         return (
             <div className={`notification-bar${this.state.open ? ' open' : ' closed'}`}>
                 {children}
-                <img onClick={this.close} src={close} />
+                <img onClick={this.close} src={close} alt="close button" />
             </div>
         );
     }
