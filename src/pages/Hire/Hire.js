@@ -17,7 +17,7 @@ import UIHero from 'UILibrary/layout/UIHero';
 
 import hireConfig from './hireConfig';
 
-class Lab extends React.PureComponent {
+class Hire extends React.PureComponent {
   renderWork() {
     return hireConfig.map((item, key) => {
       return (
@@ -99,4 +99,4 @@ class Lab extends React.PureComponent {
   }
 }
 
-export default CSSModules(Lab, styles);
+export default CSSModules(Hire, styles);
