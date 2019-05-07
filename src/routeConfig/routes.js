@@ -12,6 +12,10 @@ import Team from '../pages/Team/Team';
 import News from '../pages/News/News';
 import Bootcamp from '../pages/Bootcamp/Bootcamp';
 
+import Donate from '../pages/Donate/Donate';
+import Cancel from '../pages/Donate/Cancel';
+import Completed from '../pages/Donate/Completed';
+
 import Roster from '../pages/Bootcamp/Roster/Roster';
 import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
 import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
@@ -50,6 +54,12 @@ export default(
       <Route path="student" component={GetInvolvedStudent}/>
       <Route path="thankyou" component={GetInvolvedThankYou}/>
       <Redirect from="mentor" to='volunteer' />
+    </Route>
+
+    <Route path="donate">
+      <IndexRoute component={Donate} />
+      <Route path="cancel" component={Cancel} />
+      <Route path="completed" component={Completed} />
     </Route>
 
     {/* This is a catch-all instead of a 404. DO NOT REMOVE */}
