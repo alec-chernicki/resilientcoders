@@ -33,10 +33,10 @@ class NotificationBar extends React.Component {
     };
 
     render() {
-        const { children } = this.props;
+        const { children, show } = this.props;
         const isOpen = window.sessionStorage.getItem(this.storageKey);
         
-        if (isOpen == null || isOpen === undefined) {
+        if (!show || isOpen == null || isOpen === undefined) {
             return null;
         }
         return (

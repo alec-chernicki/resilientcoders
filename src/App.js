@@ -23,7 +23,7 @@ class App extends React.Component {
           transitionLeaveTimeout={250}>
           {React.cloneElement(children, {key: location.pathname})}
           <Footer/>
-          <NotificationBar>
+          <NotificationBar show={false}>
             <p className="text-on-dark m-y-0">
               <span className="text-white">Join us at our <a href={link} target="_blank">Women, Queer and Non-Binary folk recruiting event</a> on April 29th, 2019.</span>
             </p>
