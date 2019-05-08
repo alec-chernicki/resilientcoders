@@ -18,10 +18,14 @@ import PaypalDonateButton from './PaypalDonateButton';
 
 import donateImage from './donateHero.jpg';
 
+import Steps from 'UILibrary/Steps/Steps';
+import stepConfig from 'UILibrary/Steps/stepConfigDonate';
+
 
 class Donate extends React.PureComponent {
   
   render() {
+    const buttonComponent = <PaypalDonateButton />;
     return (
       <RouteTransition>
         <Helmet title="Donate" />
@@ -31,6 +35,7 @@ class Donate extends React.PureComponent {
           short={true}
           titleOne="INVEST IN LOCAL TECH TALENT"
           text="Your support allows us to spread code literacy to communities traditionally underrepresented in technology. Join us in hacking the opportunity gap!"
+          buttonComponent={ buttonComponent }
         />
 
         <UILayout>
@@ -40,10 +45,7 @@ class Donate extends React.PureComponent {
                 <UICard className="p-all-6 pull-up-3 with-shadow">
                   <h1>Your Impact</h1>
                   <p>
-                  Resilient Coders is a 501(c)(3) organization. Our Tax ID# is 47-1882343.
-                    <span className="strong">
-                      &nbsp;meaningful change.
-                    </span>
+                  We believe in coalition and our voice in the fight for income equality and access to the tech economy is amplified by the generosity of individual donors who help fund our program. Your donation to Resilient Coders helps <span className="strong">&nbsp;educate and equip</span> our coders to pursue opportunities in tech. Resilient Coders is a 501(c)(3) organization. Our Tax ID# is 47-1882343.                    
                   </p>
                 </UICard>
               </UIFlex>
@@ -55,42 +57,12 @@ class Donate extends React.PureComponent {
         </UILayout>
 
         <UILayout>
-          <UISection>
-            <UIFlexRow>
-              <UIFlex basis="60%" className="pull-up-offset-3 index-10 hero-card-second">
-                <UICard className="p-all-6 full-height pull-up-3 with-shadow">
-                me
-                </UICard>
-              </UIFlex>
-              <UIFlex basis="40%" className="hero-card-first">
-                <UICard use="secondary" className="p-all-6 with-shadow full-height">
-                  me
-                  <UIButton href="mailto:stephanie@resilientcoders.org">
-                    Email to learn more
-                  </UIButton>
-                  <PaypalDonateButton />
-                </UICard>
-              </UIFlex>
-            </UIFlexRow>
-            Your donation to Girls Who Code helps educate and equip girls to pursue opportunities in tech. Your donation will help us:
-            <UIFlexRow className="p-bottom-6">
-              <UIFlex basis="33%">
-              
-              <h3>Donate to Resilient Coders by mailing us a check</h3>
-              <p>Our mailing address is:
-
-              Resilient Coders.
-              50 Milk Street
-              Boston, Massachusetts 02125
-              United States</p>
-              </UIFlex>
-              <UIFlex basis="33%">
-                <h3>Donate Stock to Resilient Coders</h3>
-                <p>If you want to donate stocks to Resilient Coders, please email us at info@resilientcoders.org.</p>
-                </UIFlex>
-              <UIFlex basis="33%">Donate Devices</UIFlex>
-            </UIFlexRow>
-          </UISection>
+          <Steps 
+            config={stepConfig}
+            stepsTitle="MANY WAYS TO GIVE"
+            stepsParagraph="In order to effectively educate and employ our students we’ve
+            developed a funnel with overlapping means of engagement."
+          />
         </UILayout>
       </RouteTransition>
     )

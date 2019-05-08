@@ -4,7 +4,7 @@ import CSSModules from 'react-css-modules';
 import React, {PureComponent} from 'react';
 import EmailFormShort from '../../components/EmailForms/EmailFormShort';
 import UIButton from 'UILibrary/button/UIButton';
-import Steps from './Steps/Steps';
+import Steps from 'UILibrary/Steps/Steps';
 import {Power1, Power2} from 'TweenMax';
 import skylineForegroundImage from '../../images/skyline-foreground.svg';
 import skylineBackgroundImage from '../../images/skyline-background.svg';
@@ -38,6 +38,7 @@ import video50x30 from 'images/50x30_web.mp4';
 import image50x30 from './rene.jpg';
 
 import rosterMembersConfig from 'pages/Bootcamp/Roster/rosterMembersConfig';
+import stepConfig from 'UILibrary/Steps/stepConfigHome';
 const rosterImages = rosterMembersConfig.map((member) => pick(member, 'image'));
 
 class Home extends PureComponent {
@@ -229,7 +230,12 @@ class Home extends PureComponent {
 
 
 
-          <Steps />
+          <Steps 
+            config={stepConfig} 
+            stepsTitle="AN END TO END SOLUTION"
+            stepsParagraph="In order to effectively educate and employ our students we’ve
+            developed a funnel with overlapping means of engagement."
+            />
           <UISkewedLayer use="tertiary" />
         </UILayout>
 
