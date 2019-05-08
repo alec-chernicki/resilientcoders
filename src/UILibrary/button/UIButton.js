@@ -32,6 +32,15 @@ class UIButton extends React.PureComponent {
         </Link>
       )
     }
+    else if (type === "submit") {
+      return (
+        <button type="submit">
+          <Component image={image} use={use}>
+            {children}
+          </Component>
+        </button>
+      )
+    }
     else {
       return (
         <a href="#">

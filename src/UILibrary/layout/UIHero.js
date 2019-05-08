@@ -140,6 +140,17 @@ class UIHero extends React.Component {
       </UIButton>
     );
   }
+  renderButtonComponent() {
+    const { buttonComponent } = this.props;
+
+    if (!buttonComponent) {
+      return null;
+    }
+
+    return (
+      buttonComponent
+    );
+  }
   render () {
     const { isFullHeight } = this.props;
 
@@ -157,6 +168,7 @@ class UIHero extends React.Component {
             {this.renderTitleTwo()}
             {this.renderText()}
             {this.renderButton()}
+            {this.renderButtonComponent()}
           </UISection>
         </div>
       </div>
