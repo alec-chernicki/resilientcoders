@@ -15,6 +15,8 @@ import UIFlex from 'UILibrary/grid/UIFlex';
 import UIHero from 'UILibrary/layout/UIHero';
 
 import PaypalDonateButton from './PaypalDonateButton';
+import DonorsConfig from './Donors/DonorsConfig';
+import Partners from '../../components/Containers/Partners/Partners';
 
 import donateImage from './donateHero.jpg';
 
@@ -54,15 +56,24 @@ class Donate extends React.PureComponent {
               </UIFlex>
             </UIFlexRow>
           </UISection>
-        </UILayout>
 
-        <UILayout>
           <Steps 
             config={stepConfig}
             stepsTitle="MANY WAYS TO GIVE"
             stepsParagraph="In order to effectively educate and employ our students we’ve
             developed a funnel with overlapping means of engagement."
           />
+        </UILayout>
+
+        <UILayout use="secondary">
+          <UISection className="p-all-6 text-center">
+            <Partners
+              title="Thank you to our donors"
+              partnersConfig={DonorsConfig}
+              buttonText="Join Our Coalition"
+              to="/donate"
+            />
+          </UISection>
         </UILayout>
       </RouteTransition>
     )
