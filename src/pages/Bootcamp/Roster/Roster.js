@@ -7,6 +7,7 @@ import UILayout from 'UILibrary/layout/UILayout';
 import UISection from 'UILibrary/layout/UISection'
 import RouteTransition from '../../../components/RouteTransition/RouteTransition';
 import rosterconfig from './rosterMembersConfig';
+import cohortConfig from './cohortConfig';
 import UIContentButton from 'UILibrary/button/UIContentButton';
 import UIButton from 'UILibrary/button/UIButton';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
@@ -16,7 +17,8 @@ import rosterImage from './roster-hero.png';
 
 class Roster extends React.Component {
   renderMembers() {
-    return rosterconfig.map((item, key) => {
+    const currentCohort = rosterconfig.filter(coder => coder.cohort === cohortConfig[2019].a);
+    return currentCohort.map((item, key) => {
       return (
         <UIFlex
           key={key}
