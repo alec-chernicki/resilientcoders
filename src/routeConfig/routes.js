@@ -17,6 +17,7 @@ import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
 import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
 
 import Playbook from '../pages/Playbook/Playbook';
+import Graduates from '../pages/Graduates/Graduates';
 
 import {Route, IndexRoute, Redirect} from 'react-router';
 import App from '../App';
@@ -50,6 +51,10 @@ export default(
       <Route path="student" component={GetInvolvedStudent}/>
       <Route path="thankyou" component={GetInvolvedThankYou}/>
       <Redirect from="mentor" to='volunteer' />
+    </Route>
+    <Route path="graduates">
+      <IndexRoute component={Graduates} />
+      <Redirect from="alumni" to='graduates' />
     </Route>
 
     {/* This is a catch-all instead of a 404. DO NOT REMOVE */}
