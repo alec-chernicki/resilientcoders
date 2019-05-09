@@ -17,7 +17,7 @@ import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
 import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
 
 import Playbook from '../pages/Playbook/Playbook';
-import Graduates from '../pages/Graduates/Graduates';
+import Graduates from '../pages/Bootcamp/Graduates/Graduates';
 
 import {Route, IndexRoute, Redirect} from 'react-router';
 import App from '../App';
