@@ -8,6 +8,7 @@
     min-width: 140px;
     height: 80px;
     color: #FFF;
+    border: 1px solid #21262d;
 }
 .media-color-primary,
 .media-color-secondary,
@@ -44,6 +45,24 @@
 }
 .media-color-gray-5 {
     background-color: #21262d;
+}
+.media-logo {
+    display: inline-flex;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    flex-flow: column;
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 400px;
+}
+@media screen and (min-width: 769px) {
+    .media-logo {
+        flex-basis: 27%;
+        width: 27%;
+    }
+}
+.media-logo:last-of-type() {
+    padding-right: 0;
 }
 
 /* 
