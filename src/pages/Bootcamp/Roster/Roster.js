@@ -29,7 +29,7 @@ class Roster extends React.Component {
         >
           <Link
             key={key}
-            to={item.url}
+            to={`/bootcamp/roster/${item.url}` }
           >
             <UIContentButton
               use="secondary"

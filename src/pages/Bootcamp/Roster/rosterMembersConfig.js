@@ -108,7 +108,7 @@ import cohortConfig from './cohortConfig';
 
 export default [
   {
-    url: '/bootcamp/roster/wiskinda-lamandier',
+    url: 'wiskinda-lamandier',
     portfolioUrl: 'https://www.wiskinda.com/',
     name: 'Wiskinda Lamandier',
     image: WiskindaImage,
@@ -119,7 +119,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/tehya-hubbert',
+    url: 'tehya-hubbert',
     portfolioUrl: 'https://hubberttaye.com/',
     name: 'Tehya Hubbert',
     image: TehyaImage,
@@ -130,7 +130,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/chris-womack',
+    url: 'chris-womack',
     portfolioUrl: 'http://chriswomack.co',
     name: 'Chris Womack',
     image: ChrisImage,
@@ -141,7 +141,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/anwar-sabir',
+    url: 'anwar-sabir',
     portfolioUrl: 'https://www.anwarsabir.com/',
     name: 'Anwar Sabir',
     image: AnwarImage,
@@ -152,7 +152,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/micah-ella-estacio',
+    url: 'micah-ella-estacio',
     portfolioUrl: 'http://micahellaestac.io/',
     name: 'Micah-Ella Estacio',
     image: MicahEllaImage,
@@ -163,7 +163,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/kevin-leiva',
+    url: 'kevin-leiva',
     portfolioUrl: 'https://www.kevinleiva.com/',
     name: 'Kevin Leiva',
     image: KevinLeImage,
@@ -174,7 +174,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/raey-abera',
+    url: 'raey-abera',
     portfolioUrl: 'https://raeyabera.com/',
     name: 'Raey Abera',
     image: RaeyImage,
@@ -185,7 +185,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/samantha-casseus',
+    url: 'samantha-casseus',
     portfolioUrl: 'https://www.samcasseusdev.com/',
     name: 'Samantha Casseus',
     image: SamanthaImage,
@@ -196,7 +196,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/charles-de-farias',
+    url: 'charles-de-farias',
     portfolioUrl: 'https://www.charlesdefarias.com/',
     name: 'Charles De Farias',
     image: CharlesImage,
@@ -207,7 +207,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/oraka-wellington',
+    url: 'oraka-wellington',
     portfolioUrl: 'https://www.owellthedev.com/',
     name: 'Oraka Wellington',
     image: OrakaImage,
@@ -218,7 +218,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   {
-    url: '/bootcamp/roster/sully-martinez',
+    url: 'sully-martinez',
     portfolioUrl: 'https://sullymartinez.netlify.com/',
     name: 'Sully Martinez',
     image: SullyImage,
@@ -229,7 +229,7 @@ export default [
     cohort: cohortConfig[2019].a
   },
   // {
-  //   url: '/bootcamp/roster/kareem-walls-sanders',
+  //   url: 'kareem-walls-sanders',
   //   portfolioUrl: 'https://kareemwallssanders.com/',
   //   name: 'Kareem Walls-Sanders',
   //   image: KareemWSImage,
@@ -239,7 +239,7 @@ export default [
   //   bio: filler_bio + filler_bio
   // },
   // {
-  //   url: '/bootcamp/roster/priscilla-palacin',
+  //   url: 'priscilla-palacin',
   //   portfolioUrl: 'https://www.priscillapalacin.com/',
   //   name: 'Priscilla Palacin',
   //   image: PriscillaImage,
@@ -249,7 +249,7 @@ export default [
   //   bio: filler_bio + filler_bio
   // },
   // {
-  //   url: '/bootcamp/roster/ricardo-soljour',
+  //   url: 'ricardo-soljour',
   //   portfolioUrl: '/',
   //   name: 'Ricardo Soljour',
   //   image: AnneImage,//PriscillaImage,
@@ -259,7 +259,7 @@ export default [
   //   bio: `TBD`
   // },
   {
-    url: '/bootcamp/roster/anne-demosthene',
+    url: 'anne-demosthene',
     portfolioUrl: '',
     name: 'Anne Demosthene',
     image: AnneImage,
@@ -270,7 +270,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   {
-    url: '/bootcamp/roster/vonds-auguste',
+    url: 'vonds-auguste',
     portfolioUrl: 'https://vonds.github.io',
     name: 'Vonds Auguste',
     image: VondsImage,
@@ -286,7 +286,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   {
-    url: '/bootcamp/roster/erica-mendez',
+    url: 'erica-mendez',
     portfolioUrl: '',
     name: 'Erica Mendez',
     image: EricaImage,
@@ -304,7 +304,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   {
-    url: '/bootcamp/roster/kyle-rego',
+    url: 'kyle-rego',
     portfolioUrl: '',
     name: 'Kyle Rego',
     image: KyleImage,
@@ -315,7 +315,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   {
-    url: '/bootcamp/roster/lawrence-edmondson',
+    url: 'lawrence-edmondson',
     portfolioUrl: '',
     name: 'Lawrence Edmondson',
     image: LawrenceE_Image,
@@ -326,7 +326,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   {
-    url: '/bootcamp/roster/alex-garcia',
+    url: 'alex-garcia',
     portfolioUrl: '',
     name: 'Alex Garcia',
     image: AlexImage,
@@ -337,7 +337,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   {
-    url: '/bootcamp/roster/brandi-duarte',
+    url: 'brandi-duarte',
     portfolioUrl: '',
     name: 'Brandi Duarte',
     image: BrandiImage,
@@ -348,7 +348,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   {
-    url: '/bootcamp/roster/rossio-montero',
+    url: 'rossio-montero',
     portfolioUrl: '',
     name: 'Rossio Montero',
     image: RossioImage,
@@ -359,7 +359,7 @@ export default [
     cohort: cohortConfig[2018].c
   },
   // {
-  //   url: '/bootcamp/roster/glen-gaines',
+  //   url: 'glen-gaines',
   //   portfolioUrl: '',
   //   name: 'Glen Glaines',
   //   image: GlenImage,
@@ -369,7 +369,7 @@ export default [
   //   bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
   // },
   // {
-  //   url: '/bootcamp/roster/carmeno-innocent',
+  //   url: 'carmeno-innocent',
   //   portfolioUrl: '',
   //   name: 'Carmeno Innocent',
   //   image: CarmenoImage,
@@ -380,7 +380,7 @@ export default [
   // },
 
   {
-    url: '/bootcamp/roster/edwin-naranjo',
+    url: 'edwin-naranjo',
     portfolioUrl: '',
     name: 'Edwin Naranjo',
     image: EdwinImage,
@@ -398,7 +398,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/joshua-lopes-baptista',
+    url: 'joshua-lopes-baptista',
     portfolioUrl: 'https://joshbaptista.netlify.com/',
     name: 'Joshua Lopes-Baptista',
     image: JoshLBImage,
@@ -416,7 +416,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/myraha-harmon-arias',
+    url: 'myraha-harmon-arias',
     portfolioUrl: 'https://myraha.io/',
     name: 'Myraha Harmon-Arias',
     image: MyrahaImage,
@@ -427,7 +427,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/omar-augustin',
+    url: 'omar-augustin',
     portfolioUrl: '',
     name: 'Omar Augustin',
     image: OmarImage,
@@ -443,7 +443,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/cristian-morales',
+    url: 'cristian-morales',
     portfolioUrl: 'https://cristianpmorales.github.io/',
     name: 'Cristian Morales',
     image: CristianImage,
@@ -456,7 +456,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/alia-abdulahi',
+    url: 'alia-abdulahi',
     portfolioUrl: 'http://aliathedeveloper.bitballoon.com/',
     name: 'Alia Abdulahi',
     image: AliaImage,
@@ -467,7 +467,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/sandra-attar',
+    url: 'sandra-attar',
     portfolioUrl: '',
     name: 'Sandra Attar',
     image: SandraImage,
@@ -480,7 +480,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/victor-parada',
+    url: 'victor-parada',
     portfolioUrl: '',
     name: 'Victor Parada',
     image: VictorImage,
@@ -496,7 +496,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/ryan-tillman-french',
+    url: 'ryan-tillman-french',
     portfolioUrl: 'https://ryantfrench.netlify.com/',
     name: 'Ryan Tillman-French',
     image: RyanImage,
@@ -507,7 +507,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/rakim-craig',
+    url: 'rakim-craig',
     portfolioUrl: 'http://www.rakimcraig.com/',
     name: 'Rakim Craig',
     image: RakimImage,
@@ -526,7 +526,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/alain-lafume',
+    url: 'alain-lafume',
     portfolioUrl: 'http://www.alainlafume.website/',
     name: 'Alain Lafume',
     image: AlainImage,
@@ -537,7 +537,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/keith-goodrich',
+    url: 'keith-goodrich',
     portfolioUrl: 'https://keiththedev.github.io/KeithMGoodrich/',
     name: 'Keith Goodrich',
     image: KeithImage,
@@ -548,7 +548,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/jason-martinez',
+    url: 'jason-martinez',
     portfolioUrl: '',
     name: 'Jason Martinez',
     image: JasonImage,
@@ -559,7 +559,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/dee-daniels',
+    url: 'dee-daniels',
     portfolioUrl: 'deedaniels.co',
     name: 'Dee Daniels',
     image: DanicaImage,
@@ -572,7 +572,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/fernando-rodriguez',
+    url: 'fernando-rodriguez',
     portfolioUrl: '',
     name: 'Fernando Rodriguez',
     image: FernandoImage,
@@ -583,7 +583,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   {
-    url: '/bootcamp/roster/zemam-beyene',
+    url: 'zemam-beyene',
     portfolioUrl: '',
     name: 'Zemam Beyene',
     image: ZemamImage,
@@ -594,7 +594,7 @@ export default [
     cohort: cohortConfig[2018].b
   },
   // {
-  //   url: '/bootcamp/roster/allison-abad',
+  //   url: 'allison-abad',
   //   portfolioUrl: '',
   //   name: 'Allison Abad',
   //   image: AllisonImage,
@@ -613,7 +613,7 @@ export default [
   //   can achieve in a world built on the authority of the predominant class. `
   // },
   // {
-  //   url: '/bootcamp/roster/engrid-hernandez',
+  //   url: 'engrid-hernandez',
   //   portfolioUrl: '',
   //   name: 'Engrid Hernandez',
   //   image: EngridImage,
@@ -631,7 +631,7 @@ export default [
   //   a quirky engineering team.`
   // },
   // {
-  //   url: '/bootcamp/roster/standy-merizier',
+  //   url: 'standy-merizier',
   //   portfolioUrl: '',
   //   name: 'Standy Merizier',
   //   image: StandyImage,
@@ -641,7 +641,7 @@ export default [
   //   bio: `Motivated and entrepreneur-minded individual with a passion for learning. I have a background in software engineering from attending Fairfield University and Western Governors University. I’m a strong believer in continuous improvement and seek opportunities where I can grow and polish my leadership skills. From working as an RA at my college and being a summer camp supervisor to middle and high school students. As a creative and technology enthusiast, I read books on coding and have learned the software to help bring my visions to life. Resilient Coders has given me the experience and confidence to build products that will help change people’s lives. `
   // },
   // {
-  //   url: '/bootcamp/roster/vaughn-scarlett',
+  //   url: 'vaughn-scarlett',
   //   portfolioUrl: '',
   //   name: 'Vaughn Scarlett',
   //   image: VaughnImage,
@@ -658,7 +658,7 @@ export default [
   //   of others. I hope one day to inspire my fellow mechanics that are looking for a change. `
   // },
   //   {
-  //   url: '/bootcamp/roster/tyriek-brown',
+  //   url: 'tyriek-brown',
   //   portfolioUrl: '',
   //   name: 'Tyriek Brown',
   //   image: TyriekImage,
@@ -674,7 +674,7 @@ export default [
   // },
 
   {
-    url: '/bootcamp/roster/rizel-bobb-semple',
+    url: 'rizel-bobb-semple',
     portfolioUrl: '',
     name: 'Rizel Bobb-Semple',
     image: RizelImage,
@@ -692,7 +692,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/karen-medina',
+    url: 'karen-medina',
     portfolioUrl: '',
     name: 'Karen Medina',
     image: KarenImage,
@@ -710,7 +710,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/karina-dorantes',
+    url: 'karina-dorantes',
     portfolioUrl: '',
     name: 'Karina Dorantes',
     image: KarinaImage,
@@ -729,7 +729,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/derek-scarlett',
+    url: 'derek-scarlett',
     portfolioUrl: '',
     name: 'Derek Scarlett',
     image: DerekImage,
@@ -749,7 +749,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/angel-vidal',
+    url: 'angel-vidal',
     portfolioUrl: '',
     name: 'Angel Vidal',
     image: AngelImage,
@@ -766,7 +766,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/john-fleurimond',
+    url: 'john-fleurimond',
     portfolioUrl: '',
     name: 'John Fleurimond',
     image: JohnImage,
@@ -784,7 +784,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/anthony-moore',
+    url: 'anthony-moore',
     portfolioUrl: '',
     name: 'Anthony Savant Moore',
     image: SavantImage,
@@ -805,7 +805,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/gabriela-cepeda',
+    url: 'gabriela-cepeda',
     portfolioUrl: '',
     name: 'Gabriela Cepeda',
     image: GabbyImage,
@@ -817,7 +817,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/lavell-wesley',
+    url: 'lavell-wesley',
     portfolioUrl: '',
     name: 'Lavell Wesley',
     image: LavellImage,
@@ -829,7 +829,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/tariq-naziri',
+    url: 'tariq-naziri',
     portfolioUrl: '',
     name: 'Tariq Naziri',
     image: TariqImage,
@@ -852,7 +852,7 @@ export default [
   },
 
   {
-    url: '/bootcamp/roster/manuel-santiago',
+    url: 'manuel-santiago',
     portfolioUrl: '',
     name: 'Manuel Santiago',
     image: MannyImage,
@@ -872,7 +872,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/lilly-percival',
+    url: 'lilly-percival',
     portfolioUrl: 'http://www.lillythedev.com/',
     name: 'Lilly Percival',
     image: LillyImage,
@@ -883,7 +883,7 @@ export default [
     cohort: cohortConfig[2018].a
   },
   {
-    url: '/bootcamp/roster/emmanuel-casimir',
+    url: 'emmanuel-casimir',
     portfolioUrl: '',
     name: 'Emmanuel Casimir',
     image: EmmanuelImage,
@@ -895,7 +895,7 @@ export default [
   },
 
   {
-    url: '/bootcamp/roster/francisco-rafart',
+    url: 'francisco-rafart',
     portfolioUrl: 'http://franciscorafart.com/',
     name: 'Francisco Rafart',
     image: FranciscoImage,
@@ -906,7 +906,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/maria-cristina-del-valle',
+    url: 'maria-cristina-del-valle',
     portfolioUrl: 'http://mariacristinadelvalle.bitballoon.com/',
     name: 'Maria Cristina Del Valle',
     image: MCImage,
@@ -917,7 +917,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/nnenna-ndukwe',
+    url: 'nnenna-ndukwe',
     portfolioUrl: 'https://nnennahacks.io/',
     name: 'Nnenna Ndukwe',
     image: NnennaImage,
@@ -934,7 +934,7 @@ export default [
     }
   },
   {
-    url: '/bootcamp/roster/julie-eustache',
+    url: 'julie-eustache',
     portfolioUrl: 'http://julieeustache.bitballoon.com/',
     name: 'Julie Eustache',
     image: JulieImage,
@@ -945,7 +945,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/kordel-latimer',
+    url: 'kordel-latimer',
     portfolioUrl: 'https://kordellatimer.github.io/Technical-Portfolio/',
     name: 'Kordel Latimer',
     image: KordelImage,
@@ -957,7 +957,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/yajaira-saavedra',
+    url: 'yajaira-saavedra',
     name: 'Yajaira Saavedra',
     image: YajairaImage,
     linkedin: 'https://www.linkedin.com/in/yasaav/',
@@ -968,7 +968,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/stephon-skipper',
+    url: 'stephon-skipper',
     portfolioUrl: 'https://stephonskipper.wordpress.com/',
     name: 'Stephon Skipper',
     image: SkipImage,
@@ -980,7 +980,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/mcsergio-estany',
+    url: 'mcsergio-estany',
     name: 'McSergio Estany',
     image: SergeImage,
     linkedin: 'https://www.linkedin.com/in/mcsergio-estany/',
@@ -990,7 +990,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/romare-jenkins',
+    url: 'romare-jenkins',
     name: 'Romare Jenkins',
     image: RJImage,
     linkedin: '',
@@ -1001,7 +1001,7 @@ export default [
     cohort: cohortConfig[2017].c
   },
   {
-    url: '/bootcamp/roster/jasmine-rose',
+    url: 'jasmine-rose',
     name: 'Jasmine Rose',
     image: JasmineImage,
     linkedin: 'https://www.linkedin.com/in/jasminerose12/',
@@ -1012,7 +1012,7 @@ export default [
   },
 
   {
-    url: '/bootcamp/roster/stephane-etienne',
+    url: 'stephane-etienne',
     portfolioUrl: '',
     name: 'Stephane Etienne',
     image: StephaneImage,
@@ -1024,7 +1024,7 @@ export default [
   },
 
   {
-    url: '/bootcamp/roster/pariss-chandler',
+    url: 'pariss-chandler',
     portfolioUrl: '',
     name: 'Pariss Chandler',
     availableForHire: true,
@@ -1042,7 +1042,7 @@ export default [
     }
   },
   {
-    url: '/bootcamp/roster/emilio-murillo',
+    url: 'emilio-murillo',
     portfolioUrl: '',
     name: 'Emilio Murillo',
     availableForHire: true,
@@ -1053,7 +1053,7 @@ export default [
     cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/maria-ines-peniche',
+    url: 'maria-ines-peniche',
     portfolioUrl: '',
     name: 'Maria Ines Peniche',
     availableForHire: true,
@@ -1064,7 +1064,7 @@ export default [
     cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/jose-pimentel',
+    url: 'jose-pimentel',
     portfolioUrl: '',
     name: 'Jose Pimentel',
     availableForHire: true,
@@ -1075,7 +1075,7 @@ export default [
     cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/david-arango',
+    url: 'david-arango',
     portfolioUrl: '',
     name: 'David Arango',
     availableForHire: true,
@@ -1098,7 +1098,7 @@ export default [
       cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/roger-moraldo',
+    url: 'roger-moraldo',
     portfolioUrl: '',
     name: 'Roger Moraldo',
     availableForHire: true,
@@ -1109,7 +1109,7 @@ export default [
     cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/tristian-barboza-graham',
+    url: 'tristian-barboza-graham',
     portfolioUrl: '',
     name: 'Tristian Barboza-Graham',
     availableForHire: true,
@@ -1120,7 +1120,7 @@ export default [
     cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/arnaldo-pires',
+    url: 'arnaldo-pires',
     portfolioUrl: '',
     name: 'Arnaldo Pires',
     availableForHire: true,
@@ -1131,7 +1131,7 @@ export default [
     cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/stephen-simpson',
+    url: 'stephen-simpson',
     portfolioUrl: '',
     name: 'Stephen Simpson',
     availableForHire: true,
@@ -1143,7 +1143,7 @@ export default [
     cohort: cohortConfig[2017].a
   },
   {
-    url: '/bootcamp/roster/dashawn-watkins',
+    url: 'dashawn-watkins',
     portfolioUrl: '',
     name: 'Dashawn Watkins',
     availableForHire: true,
