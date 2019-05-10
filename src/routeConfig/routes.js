@@ -31,6 +31,15 @@ const rosterMemberRoutes = rosterMembersConfig.map((item, key) => {
     />
   )
 });
+const graduateRoutes = rosterMembersConfig.map((item, key) => {
+  return (
+    <Route
+      key={key}
+      path="graduates/:memberName"
+      component={RosterMember}
+    />
+  )
+});
 
 export default(
   <Route path="/" component={App}>
@@ -56,6 +65,7 @@ export default(
       <IndexRoute component={Graduates} />
       <Redirect from="alumni" to='graduates' />
     </Route>
+    {graduateRoutes}
 
     {/* This is a catch-all instead of a 404. DO NOT REMOVE */}
     <Redirect from="*" to="/" />
