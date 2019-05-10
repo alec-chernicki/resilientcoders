@@ -30,6 +30,18 @@ class RosterMember extends React.Component {
     this.getMailToLink = this.getMailToLink.bind(this);
     this.getMemberFromUrl = this.getMemberFromUrl.bind(this);
     this.renderResumeLink = this.renderResumeLink.bind(this);
+    this.getBreadcrumbsBackLink = this.getBreadcrumbsBackLink.bind(this);
+  }
+
+  getBreadcrumbsBackLink() {
+    let location = this.props.location.pathname;
+    let link;
+    if (location.includes("graduate")) {
+      link = "/graduates"
+    } else {
+      link = "/bootcamp/roster"
+    }
+    return link;
   }
   getMemberFromUrl() {
     const {memberName} = this.props.params;
@@ -173,7 +185,7 @@ class RosterMember extends React.Component {
           <UILayer image={image} dots={false} className="index-1" />
           <UISection className="p-top-of-page p-bottom-6 index-2">
             <UIButton
-              to="/bootcamp/roster"
+              to={this.getBreadcrumbsBackLink()}
               type="link"
               use="tertiary"
               className="m-bottom-1"
@@ -221,7 +233,7 @@ class RosterMember extends React.Component {
               Our students come from have a variety of backgrounds and
               perspectives, but they all share drive and passion.
             </p>
-            <UIButton to="/bootcamp/roster">
+            <UIButton to={this.getBreadcrumbsBackLink()}>
               View all students
             </UIButton>
           </UISection>

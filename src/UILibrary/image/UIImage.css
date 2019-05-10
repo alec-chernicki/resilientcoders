@@ -13,6 +13,11 @@
   object-position: top;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .cover {
+    object-position: center;
+  }
+}
 
 .image-container {
   position: absolute;
