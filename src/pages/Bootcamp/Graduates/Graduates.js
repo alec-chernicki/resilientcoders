@@ -61,7 +61,7 @@ class Graduates extends React.PureComponent {
                 >
                     <Link
                         key={key}
-                        to={coder.url}
+                        to={`/graduates/${coder.url}` }
                     >
                         <UIContentButton
                             use="secondary"
