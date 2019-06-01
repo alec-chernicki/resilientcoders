@@ -5,11 +5,12 @@ import logoTbf from './BootcampPartnersImages/logo_tbf.png';
 import logoAmeliaPeabody from './BootcampPartnersImages/logo_ameliapeabody.jpg';
 import logoJohnHancock from './BootcampPartnersImages/logo_johnhancock.png';
 import logoBnyMellon from './BootcampPartnersImages/logo_bnymellon.png';
-import logoZakim from './BootcampPartnersImages/logo_zakim.png';
 import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
 import logoTPC from './BootcampPartnersImages/logo_tpc.jpg';
-import logoWellington from './BootcampPartnersImages/logo_wellington.jpg';
 import logoBankofAmerica from './BootcampPartnersImages/logo_bankofamerica.png';
+import logoCummingsFoundation from './BootcampPartnersImages/logo_cummingsfoundation.jpg'
+
+import logoJpMorgan from './BootcampPartnersImages/logo_jp_morganfoundation.png';
 
 export default [
   {
@@ -21,9 +22,10 @@ export default [
     link: 'https://www.microsoft.com/'
   },
   {
-    image: logoGoogle,
-    link: 'https://www.google.com/'
-  }, {
+    image: logoJpMorgan,
+    link: 'https://www.jpmorganchase.com/corporate/Corporate-Responsibility/global-philanthropy.htm'
+  }, 
+  {
     image: logoTbf,
     link: 'http://www.tbf.org/'
   },
@@ -36,8 +38,8 @@ export default [
     link: 'http://www.johnhancock.com/'
   },
   {
-    image: logoZakim,
-    link: 'http://www.thelennyzakimfund.org/'
+    image: logoCummingsFoundation,
+    link: 'https://www.cummingsfoundation.org/index.htm'
   },
   {
     image: logoBnyMellon,
@@ -56,7 +58,7 @@ export default [
     link: 'https://thephilanthropyconnection.org/'
   },
   {
-    image: logoWellington,
-    link: 'https://www.wellington.com/en/community-engagement/'
-  }
+    image: logoGoogle,
+    link: 'https://www.google.com/'
+  }, 
 ]
