@@ -17,6 +17,7 @@ import RosterMember from '../pages/Bootcamp/Roster/RosterMember/RosterMember';
 import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
 
 import Playbook from '../pages/Playbook/Playbook';
+import IsCommunityOnToday from '../pages/Community/IsCommunityOnToday/IsCommunityOnToday';
 
 import {Route, IndexRoute, Redirect} from 'react-router';
 import App from '../App';
@@ -43,6 +44,7 @@ export default(
     <Route path="team" component={Team}/>
     <Route path="news" component={News}/>
     <Route path="diversityplaybook" component={Playbook}/>
+    <Route path="is-community-today" component={IsCommunityOnToday} />
     <Route path="get-involved">
       <IndexRoute component={GetInvolvedPage} />
       <Route path="company" component={GetInvolvedCompany}/>
