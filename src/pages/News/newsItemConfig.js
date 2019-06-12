@@ -1,6 +1,26 @@
 export default {
   press : [
     {
+      title: 'The VentureFizz Podcast: David Delmar Sentíes - Founder of Resilient Coders',
+      link: 'https://venturefizz.com/stories/boston/venturefizz-podcast-david-delmar-sent-es-founder-resilient-coders',
+      note: 'VentureFizz',
+    },
+    {
+      title: 'Wayfair taps Resilient Coders to find qualified women and men of color in Dorchester, Roxbury, and Mattapan',
+      link: 'https://www.bizjournals.com/boston/news/2019/05/17/wayfair-taps-resilient-coders-to-find-qualified.html',
+      note: 'Boston Business Journal',
+    },
+    {
+      title: 'Need a college degree to get a job? These companies say skills matter more',
+      link: 'https://www.nbcnews.com/news/us-news/need-college-degree-get-job-these-companies-say-skills-matter-n1001526',
+      note: 'NBC News',
+    },
+    {
+      title: 'Drop degree requirement for some tech jobs',
+      link: 'https://www.bizjournals.com/boston/news/2019/04/29/drop-degree-requirement-for-some-tech-jobs-coding.html',
+      note: 'Boston Business Journal',
+    },
+    {
       title: 'Visualizing the Slave Trade',
       link: 'https://techcrunch.com/2018/02/22/visualizing-the-slave-insurance-industry/',
       note: 'TechCrunch'
@@ -132,6 +152,11 @@ export default {
     }
   ],
   content : [
+    {
+      title: 'Economic Resilience Among Vulnerable Communities',
+      link: 'https://www.youtube.com/watch?v=4vBqmjjlG3Q',
+      note: '4.2019'
+    },
     {
       title: 'Treasury of Weary Souls',
       link: 'http://www.treasuryofwearysouls.com/',
