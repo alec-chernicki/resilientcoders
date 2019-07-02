@@ -67,7 +67,7 @@ class Home extends PureComponent {
         <UILayer image={image50x30} dots={false} />
         <UISection className="index-1 p-y-25 p-x-6">
         <h1>
-          50x30: In Pursuit of Progress
+          In Pursuit of Progress
         </h1>
         <span className="divider divider__red"></span>
         <UIFlexRow align="center">
