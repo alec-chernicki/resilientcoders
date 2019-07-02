@@ -12,7 +12,7 @@ class App extends React.Component {
   }
   render () {
     const {children, location} = this.props;
-    const link = "https://www.eventbrite.com/e/women-queer-and-non-binary-folk-resilient-coders-recruiting-event-tickets-60469898093";
+    const link = "https://www.eventbrite.com/e/resilient-coders-fall-bootcamp-hackathon-tickets-64001542336";
     return (
       <div className="app">
         <Navigation/>
@@ -23,9 +23,10 @@ class App extends React.Component {
           transitionLeaveTimeout={250}>
           {React.cloneElement(children, {key: location.pathname})}
           <Footer/>
-          <NotificationBar show={false}>
+          <NotificationBar show={true}>
             <p className="text-on-dark m-y-0">
-              <span className="text-white">Join us at our <a href={link} target="_blank">Women, Queer and Non-Binary folk recruiting event</a> on April 29th, 2019.</span>
+              {/* <span className="text-white">Join us at our <a href={link} target="_blank">Women, Queer and Non-Binary folk recruiting event</a> on April 29th, 2019.</span> */}
+              <span className="text-white">Join us at our <a href={link} target="_blank">Fall Bootcamp Hackathon</a> on either July 24th or July 27th, 2019.</span>
             </p>
           </NotificationBar>
         </ReactCSSTransitionGroup>

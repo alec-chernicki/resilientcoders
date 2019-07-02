@@ -177,7 +177,7 @@ class Bootcamp extends PureComponent {
     );
   }
   render() {
-    const upcomingBootcampText = "The only way to apply to the Bootcamp, which will run from May 20th, 2019 through August 30th, 2019 is to join one of our hackathons. The next ones are on Wednesday April 3rd or Saturday April 13th from 10 am until 5 pm, location to be confirmed.";
+    const upcomingBootcampText = "The only way to apply to the Bootcamp, which will run from September 9th, 2019 through December 20th, 2019 is to join one of our hackathons. The next ones are on Wednesday July 24th or Saturday July 27th from 10 am until 5 pm, location to be confirmed.";
 
     return (
       <RouteTransition>
@@ -217,7 +217,7 @@ class Bootcamp extends PureComponent {
 
                   <UIButton
                     external={true}
-                    href="https://www.eventbrite.com/e/resilient-coders-summer-bootcamp-hackathon-tickets-59074669928">
+                    href="https://www.eventbrite.com/e/resilient-coders-fall-bootcamp-hackathon-tickets-64001542336">
                     Sign up
                   </UIButton>
                 </UICard>
