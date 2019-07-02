@@ -28,8 +28,8 @@ class IsCommunityOnToday extends React.PureComponent {
         const { today } = this.state;
         const cancelledCommunityDates = new Set([
             // YYYY-MM-DD
-            "2019-06-11","2019-08-01","2019-08-15","2019-08-22",
-            "2019-11-14","2019-12-12",
+            "2019-06-11","2019-07-04","2019-08-01","2019-08-15","2019-08-22",
+            "2019-11-14","2019-11-28","2019-12-12",
             // reference the dates in RC_bootcamp_calendar_2019
         ]);
         const isTuesOrThurs = () => {
@@ -45,8 +45,8 @@ class IsCommunityOnToday extends React.PureComponent {
                         <UIFlexRow justify="center" className="p-top-24 p-bottom-24 text-center">
                             {
                                 isTuesOrThurs(today) && !cancelledCommunityDates.has(today) ?
-                                    <h1>Yes</h1> :
-                                    <h1>No</h1>
+                                <h1>Yes</h1> :
+                                <h1>No</h1>
                             }
                         </UIFlexRow>
                     </UISection>
