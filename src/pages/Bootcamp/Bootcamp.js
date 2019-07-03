@@ -27,6 +27,10 @@ import ConnectingDot from 'components/ProgressBar/ConnectingDot/ConnectingDot';
 import images from 'constants/images';
 
 class Bootcamp extends PureComponent {
+  getUpcomingBootcampLink() {
+    const upcomingBootcampLink = `https://www.eventbrite.com/e/resilient-coders-fall-bootcamp-hackathon-tickets-64001542336`;
+    return upcomingBootcampLink;
+  }
   renderProgressBar() {
     return (
       <div styleName="progress-bar">
@@ -56,16 +60,14 @@ class Bootcamp extends PureComponent {
               <UIFlexRow align="center" className="full-height">
                 <UIFlex className="p-left-6">
                   <h2 title="Hackathons" className="text-white">
-                    <UITextShadow text="01.">
+                    <UITextShadow text="01." colorHack={true}>
                       Hackathons
                     </UITextShadow>
                   </h2>
                   <div className="divider" />
                   <p className="text-on-dark">
                     We run two hackathons before each Bootcamp, from which we recruit our students.
-                    They’re each about seven hours long, and are meant as a way for staff, alumni, and
-                    prospective students to get to know each other. This is the only way to "apply."
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSclR_y9zTwOPy11NU2PtdvIMokzEpbBALFaT_NhXH5__zFieQ/viewform">Sign up for the next one.</a>
+                    They’re each about seven hours long, and are meant as a way for staff, alumni, and prospective students to get to know each other. This is the only way to "apply." <a href={this.getUpcomingBootcampLink()}>Sign up for the next one.</a>
                   </p>
                 </UIFlex>
               </UIFlexRow>
@@ -98,7 +100,7 @@ class Bootcamp extends PureComponent {
               <UIFlexRow align="center" className="full-height">
                 <UIFlex className="p-left-6">
                   <h2 className="text-white">
-                    <UITextShadow text="02.">
+                    <UITextShadow text="02." colorHack={true}>
                       Core Skills
                     </UITextShadow>
                   </h2>
@@ -121,7 +123,7 @@ class Bootcamp extends PureComponent {
               <UIFlexRow align="center" className="full-height">
                 <UIFlex className="p-left-6">
                   <h2 className="text-white">
-                    <UITextShadow text="03.">
+                    <UITextShadow text="03." colorHack={true}>
                       Soft Skills
                     </UITextShadow>
                   </h2>
@@ -157,7 +159,7 @@ class Bootcamp extends PureComponent {
               <UIFlexRow align="center" className="full-height">
                 <UIFlex className="p-left-6">
                   <h2 className="text-white">
-                    <UITextShadow text="04.">
+                    <UITextShadow text="04." colorHack={true}>
                       Client work
                     </UITextShadow>
                   </h2>
@@ -177,7 +179,7 @@ class Bootcamp extends PureComponent {
     );
   }
   render() {
-    const upcomingBootcampText = "The only way to apply to the Bootcamp, which will run from September 9th, 2019 through December 20th, 2019 is to join one of our hackathons. The next ones are on Wednesday July 24th or Saturday July 27th from 10 am until 5 pm, location to be confirmed.";
+    const upcomingBootcampText = `The only way to apply to the Bootcamp, which will run from September 9th, 2019 through December 20th, 2019 is to join one of our hackathons. The next ones are on Wednesday July 24th or Saturday July 27th from 10 am until 5 pm, location to be confirmed.`;
 
     return (
       <RouteTransition>
@@ -217,7 +219,7 @@ class Bootcamp extends PureComponent {
 
                   <UIButton
                     external={true}
-                    href="https://www.eventbrite.com/e/resilient-coders-fall-bootcamp-hackathon-tickets-64001542336">
+                    href={this.getUpcomingBootcampLink()}>
                     Sign up
                   </UIButton>
                 </UICard>
@@ -297,7 +299,7 @@ class Bootcamp extends PureComponent {
                   </p>
                   <UIButton
                     external={true}
-                    href="https://www.eventbrite.com/e/resilient-coders-summer-bootcamp-hackathon-tickets-59074669928">
+                    href={this.getUpcomingBootcampLink()}>
                     Sign up
                   </UIButton>
                 </UICard>
