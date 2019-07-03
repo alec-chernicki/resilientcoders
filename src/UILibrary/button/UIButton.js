@@ -9,9 +9,14 @@ const typeProps = {
   'link': 'link',
 };
 
+const variantProps = {
+  'submit':'submit',
+  'download':'download',
+}
+
 class UIButton extends React.PureComponent {
   renderButton() {
-    const {href, children, to, target, image, use, type} = this.props;
+    const {href, children, to, target, image, use, type, variant} = this.props;
     const Component = type === typeProps.link ? LinkBase : ButtonBase;
 
     if (href) {
@@ -32,7 +37,7 @@ class UIButton extends React.PureComponent {
         </Link>
       )
     }
-    else if (type === "submit") {
+    else if (variant === "submit") {
       return (
         <button type="submit">
           <Component image={image} use={use}>

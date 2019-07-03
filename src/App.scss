@@ -69,6 +69,13 @@ h4 {
   line-height: 20px;
 }
 
+.text-large-scale {
+  font-size: 98px;
+  @media screen and (max-width: 768px) {
+    font-size: 72px;
+  }
+}
+
 button {
   font-family: $league-gothic;
   cursor: pointer;
