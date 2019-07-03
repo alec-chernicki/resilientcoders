@@ -43,6 +43,7 @@
 
 .colorHack:before {
   color: rgba(255, 255, 255, 0.045);
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
