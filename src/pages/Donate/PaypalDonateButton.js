@@ -11,7 +11,12 @@ class PaypalDonateButton extends React.Component {
         <input type="hidden" name="hosted_button_id" value="2585TLNW5GAVU" />
         {/* <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /> */}
-        <UIButton className="hero-button" type="submit">Donate</UIButton>
+        {
+          this.props.type === "link" ?
+          <UIButton type="link" variant="submit">Donate</UIButton>
+          :
+          <UIButton className="hero-button" type="button" variant="submit">Donate</UIButton>
+        }
       </form>
     );
   }
