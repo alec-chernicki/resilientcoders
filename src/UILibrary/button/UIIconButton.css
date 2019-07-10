@@ -116,6 +116,14 @@
   width: 100px;
 }
 
+.layout-block {
+  
+}
+
+.layout-inline {
+  display: inline-flex;
+}
+
 .icon-button:hover {
   transform: scale(1.2);
 }

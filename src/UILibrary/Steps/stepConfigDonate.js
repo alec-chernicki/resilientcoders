@@ -10,29 +10,28 @@ export default [
     text: `Companies sometime match donations. Lorem ipsum palce malgnau talbot
     abstropf kfnsal llaismre melai basicl oufen besslevon musslebeech valar morgohulis`,
     image: matchImage,
-    link: '#',
+    link: null,
   },
   {
     name: "Mail Donation",
     title: 'Mail a Donation via Check',
-    text: `Send us a donation to Boston. Lorem ipsum palce malgnau talbot
-    abstropf kfnsal llaismre melai basicl oufen besslevon musslebeech valar morgohulis`,
+    text: `Send us a donation to Boston. Resilient Coders. 50 Milk Street, 16th floor. Boston MA, 02109`,
     image: mailImage,
-    link: '#',
+    link: null,
   },
   {
     name: "Gift Laptops",
     title: 'Machines for our Learners',
     text: `Are you or your company considering a hardware upgrade this year? Consider donating your outgoing computers. Play a critical role in launching the careers of talented developers. `,
     image: laptopImage,
-    link: '#',
+    link: null,
   },
-  {
-    name: "Donate Stocks",
-    title: `Consider Donating Equity`,
-    text: `Stocks we accept those. Lorem ipsum palce malgnau talbot
-    abstropf kfnsal llaismre melai basicl oufen besslevon musslebeech valar morgohulis`,
-    image: stockImage,
-    link: '/donate',
-  },
+  // {
+  //   name: "Donate Stocks",
+  //   title: `Consider Donating Equity`,
+  //   text: `Stocks we accept those. Lorem ipsum palce malgnau talbot
+  //   abstropf kfnsal llaismre melai basicl oufen besslevon musslebeech valar morgohulis`,
+  //   image: stockImage,
+  //   link: '/donate',
+  // },
 ]

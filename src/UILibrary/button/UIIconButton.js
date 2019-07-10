@@ -17,9 +17,14 @@ const sizeProps = {
   'large': 'large',
 };
 
+const layoutProps = {
+  'inline': 'inline',
+  'block': 'block'
+}
+
 class UIIconButton extends React.Component {
   render () {
-    const { onClick, image, className, direction, size } = this.props;
+    const { onClick, image, className, direction, size, layout } = this.props;
     const iconButtonClass = classNames('icon-button', {
       'animate-down': direction === directionProps.down,
       'animate-up': direction === directionProps.up,
@@ -28,6 +33,8 @@ class UIIconButton extends React.Component {
       'size-small': size === sizeProps.small,
       'size-medium': size === sizeProps.medium,
       'size-large': size === sizeProps.large,
+      'layout-inline': layout === layoutProps.inline,
+      'layout-block': layout === layoutProps.block
     });
 
     return (
@@ -45,11 +52,13 @@ class UIIconButton extends React.Component {
 UIIconButton.propTypes = {
   direction: PropTypes.oneOf(Object.keys(directionProps)),
   size: PropTypes.oneOf(Object.keys(sizeProps)),
+  layout: PropTypes.oneOf(Object.keys(layoutProps)),
 }
 
 UIIconButton.defaultProps = {
   size: sizeProps.small,
   direction: directionProps.up,
+  layout: layoutProps.block,
 };
 
 export default CSSModules(UIIconButton, styles, { allowMultiple: true });
