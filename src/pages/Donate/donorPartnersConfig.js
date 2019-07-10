@@ -1,16 +1,16 @@
-import logoMicrosoft from './BootcampPartnersImages/logo_microsoft.png';
-import logoGoogle from './BootcampPartnersImages/logo_google.png';
-import logoCIC from './BootcampPartnersImages/logo_cic.png';
-import logoTbf from './BootcampPartnersImages/logo_tbf.png';
-import logoAmeliaPeabody from './BootcampPartnersImages/logo_ameliapeabody.jpg';
-import logoJohnHancock from './BootcampPartnersImages/logo_johnhancock.png';
-import logoBnyMellon from './BootcampPartnersImages/logo_bnymellon.png';
-import logoStateStreet from './BootcampPartnersImages/logo_state_street.png';
-import logoTPC from './BootcampPartnersImages/logo_tpc.jpg';
-import logoBankofAmerica from './BootcampPartnersImages/logo_bankofamerica.png';
-import logoCummingsFoundation from './BootcampPartnersImages/logo_cummingsfoundation.jpg'
+import logoMicrosoft from './DonorPartnersImages/logo_microsoft.png';
+import logoGoogle from './DonorPartnersImages/logo_google.png';
+import logoCIC from './DonorPartnersImages/logo_cic.png';
+import logoTbf from './DonorPartnersImages/logo_tbf.png';
+import logoAmeliaPeabody from './DonorPartnersImages/logo_ameliapeabody.jpg';
+import logoJohnHancock from './DonorPartnersImages/logo_johnhancock.png';
+import logoBnyMellon from './DonorPartnersImages/logo_bnymellon.png';
+import logoStateStreet from './DonorPartnersImages/logo_state_street.png';
+import logoTPC from './DonorPartnersImages/logo_tpc.jpg';
+import logoBankofAmerica from './DonorPartnersImages/logo_bankofamerica.png';
+import logoCummingsFoundation from './DonorPartnersImages/logo_cummingsfoundation.jpg'
 
-import logoJpMorgan from './BootcampPartnersImages/logo_jp_morganfoundation.png';
+import logoJpMorgan from './DonorPartnersImages/logo_jp_morganfoundation.png';
 
 export default [
   {

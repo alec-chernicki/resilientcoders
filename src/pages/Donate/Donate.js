@@ -18,6 +18,7 @@ import UIHero from 'UILibrary/layout/UIHero';
 
 import PaypalDonateButton from './PaypalDonateButton';
 import DonorsConfig from './Donors/DonorsConfig';
+import donorPartnersConfig from './donorPartnersConfig';
 import Partners from '../../components/Containers/Partners/Partners';
 
 import donateImage from './donateHero.jpg';
@@ -25,11 +26,41 @@ import donateImage from './donateHero.jpg';
 import Steps from 'UILibrary/Steps/Steps';
 import stepConfig from 'UILibrary/Steps/stepConfigDonate';
 
-
 class Donate extends React.PureComponent {
   
   render() {
     const buttonComponent = <PaypalDonateButton />;
+    const testimonial = `I went from mopping floors at a tanning salon to becoming a Software Developer. [...] David Delmar, founder of Resilient Coders, and his team, facilitated students with the tools we needed to succeed in an industry that doesn’t always make room for people of color to thrive in. The face of the tech industry is changing because of organizations like Resilient.`;
+    const mediaCarouselConfig = [
+      {
+        image: `https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`,
+        title: `Software Engineer`,
+        company: `Wistia`,
+        testimonial: `${testimonial}`,
+        name: `Erica Mendez`
+      },
+      {
+        image: `https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`,
+        title: `Front End Engineer`,
+        company: `Facebook`,
+        testimonial: `${testimonial}`,
+        name: `Dionne Rodriguez`
+      },
+      {
+        image: `https://images.pexels.com/photos/1181230/pexels-photo-1181230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`,
+        title: `CEO`,
+        company: `Black Tech Pipeline`,
+        testimonial: `${testimonial}`,
+        name: `Pariss Chandler`
+      },
+      {
+        image: `https://images.pexels.com/photos/1991468/pexels-photo-1991468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`,
+        title: `Software Engineer`,
+        company: `Thoughtbot`,
+        testimonial: `${testimonial}`,
+        name: `Tyler Mitchell`
+      },
+    ]
     return (
       <RouteTransition>
         <Helmet title="Donate" />
@@ -42,8 +73,10 @@ class Donate extends React.PureComponent {
           buttonComponent={ buttonComponent }
         />
 
+        {/* <UIMediaCarousel mediaCarouselConfig={mediaCarouselConfig}/> */}
+
         <UILayout use="tertiary">
-          <UISection className="p-all-6 p-bottom-12">
+          <UISection className="p-all-6 p-bottom-6">
             <UIFlexRow>
               <h3 className="text-on-dark">By the Numbers</h3>
             </UIFlexRow>
@@ -57,7 +90,7 @@ class Donate extends React.PureComponent {
             <UIFlex basis="30%" grow={0} shrink={0} className="m-bottom-4">
               <h2 className="text-white text-large-scale">200+</h2>
               <p className="text-white">
-                Women, men and non-binary folks trained in Software Development
+                Women, men and non-binary people of color trained in Software Development
               </p>
             </UIFlex>
             <UIFlex basis="33%" grow={0} shrink={0} className="m-bottom-4">
@@ -70,8 +103,19 @@ class Donate extends React.PureComponent {
           </UISection>
         </UILayout>
 
-        <UILayout className="p-bottom-6">
-          {/* <UISection className="p-bottom-6">
+        <UILayout use="secondary">
+          <UISection className="p-all-6 p-bottom-6">
+          <Steps 
+              config={stepConfig}
+              stepsTitle="MANY WAYS TO GIVE"
+              stepsParagraph="In order to effectively educate and employ our students we’ve
+              developed a funnel with overlapping means of engagement."
+            />
+          </UISection>
+        </UILayout>
+
+        {/* <UILayout use="secondary" className="p-bottom-6">
+          <UISection className="p-bottom-6">
             <UIFlexRow>
               <UIFlex className="index-10 pull-up-offset-3 hero-card-first">
                 <UICard className="p-all-6 pull-up-3 with-shadow">
@@ -85,17 +129,17 @@ class Donate extends React.PureComponent {
                 <UIImage type="cover" src={donateImage} className="pull-up-6 with-shadow" />
               </UIFlex>
             </UIFlexRow>
-          </UISection> */}
+          </UISection>
 
-          {/* <Steps 
+          <Steps 
             config={stepConfig}
             stepsTitle="MANY WAYS TO GIVE"
             stepsParagraph="In order to effectively educate and employ our students we’ve
             developed a funnel with overlapping means of engagement."
-          /> */}
+          />
           <UICard use="secondary" className="text-center p-all-6 with-shadow"> 
             <p className="text-on-dark">
-              There's more than one way to join the code literacy movement.
+            For a detailed insight into our financial performance and business strategy you can view or download our latest annual report right here.
             </p>
             <UIButton className="center-block" download href="src/pages/Donate/AnnualReport2019.pdf">
               View Annual Report
@@ -104,20 +148,26 @@ class Donate extends React.PureComponent {
 
 
           <PaypalDonateButton type="link"/>
-        </UILayout>
+        </UILayout> */}
 
         {/* <UIMediaCarousel /> */}
 
-        {/* <UILayout use="secondary">
+        <UILayout use="secondary">
           <UISection className="p-all-6 text-center">
             <Partners
               title="Thank you to our donors"
-              partnersConfig={DonorsConfig}
-              buttonText="Join Our Coalition"
+              partnersConfig={donorPartnersConfig}
+              buttonText={null}
               to="/donate"
             />
+            <p className="text-constrained m-x-auto">
+            We know that real change happens in coalition. We invite you to join us in making top-tier education accessible to all.
+            </p>
+            <UIButton to="/get-involved">
+              Donate
+            </UIButton>
           </UISection>
-        </UILayout> */}
+        </UILayout>
       </RouteTransition>
     )
   }
