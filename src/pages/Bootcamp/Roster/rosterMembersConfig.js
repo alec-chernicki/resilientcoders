@@ -103,121 +103,289 @@ import SullyImage from './RosterMemberImages/sully.jpg';
 // import KareemWSImage from './RosterMemberImages/kareem_ws.jpg';
 // import PriscillaImage from './RosterMemberImages/priscilla.jpg';
 
+// Roster Images Bootcamp 2019b
+import MelissaImage from './RosterMemberImages/wiskinda.jpg';
+import EllieImage from './RosterMemberImages/ellie.jpg';
+import AmandaImage from './RosterMemberImages/amanda.jpg';
+import VanessaImage from './RosterMemberImages/vanessa.jpg';
+import DionneImage from './RosterMemberImages/dionne.jpg';
+import MikeyImage from './RosterMemberImages/mikey.jpg';
+
 
 // const filler_bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis nunc at nulla porta cursus. Aliquam tristique justo est, eget dapibus elit blandit non. Proin eget metus nunc. Morbi mattis sem velit, non consectetur quam imperdiet vitae. Fusce quis massa vitae eros consectetur tristique. Nam sit amet gravida magna, et rhoncus odio. Sed vestibulum, augue a tincidunt blandit, est lectus congue urna, sed interdum mi dolor a libero."
 
 
 export default [
-    {
-      url: '/bootcamp/roster/wiskinda-lamandier',
-      portfolioUrl: 'https://www.wiskinda.com/',
-      name: 'Wiskinda Lamandier',
-      image: WiskindaImage,
-      linkedin: 'https://www.linkedin.com/in/wslama/',
-      github: 'https://github.com/kendacodes',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_wiskindalamandier.pdf',
-      bio: "Growing up, I have always looked for the most creative approaches to complex situations. I became a consultant to put my ideas and creativity to use. My clients were entrepreneurs across different industries, and I’ve helped them launch their brands and businesses, with guidance on how to execute their strategies. Throughout this process, I’ve noticed that a common solution to their problems was integrating technology. So I delved into the tech world to better accommodate their needs. Little did I know that my love for learning how to code would lead me to Resilient Coders. This journey has allowed me to expand on my skills and provide solutions to everyday problems. I am eager to practice this in my future roles. "
-    },
-    {
-      url: '/bootcamp/roster/tehya-hubbert',
-      portfolioUrl: 'https://hubberttaye.com/',
-      name: 'Tehya Hubbert',
-      image: TehyaImage,
-      linkedin: 'https://www.linkedin.com/in/hubberttaye/',
-      github: 'https://github.com/HubbertTaye',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_tehyahubbert.pdf',
-      bio: 'I love playing MMORPGs, specifically for the multiplayer aspect. MMORPGs require teamwork, dedication and a community that gives back. While playing games like Final Fantasy 14 and MapleStory, I was able to understand the significance of a supportive and strong community in finishing timed quests, contributing loot and even mentoring other players. Through my time at Resilient Coders, I carried the same principles into my work ethic and through project completions. Whenever a teammate had a problem I could solve, I was always ready to help, and if I couldn’t solve it, I had a backup plan. Mentorship has always been a big part of my life, and I look forward to learning and sharing my knowledge at future companies.'
-    },
-    {
-      url: '/bootcamp/roster/chris-womack',
-      portfolioUrl: 'http://chriswomack.co',
-      name: 'Chris Womack',
-      image: ChrisImage,
-      linkedin: 'https://www.linkedin.com/in/chris-womack-6ab04717b/',
-      github: 'https://github.com/ChrisLWomack',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_chriswomack.pdf',
-      bio: `Growing up in inner-city Boston but being in METCO and attending school in Wellesley, MA, gave me intense perspective on the world. I was living amongst the disadvantaged but being educated and networked by some of the country’s most privileged. I realized early on that there was an expanding gap between the two, with little to no bridges to share wealth, resources or knowledge. I believe technology is a viable solution to all of these problems. Upon discovery of software engineering, I’ve been filled with passion and now the skills to find innovative ways to code and use technology to help those who have been left behind. And I will.`
-    },
-    {
-      url: '/bootcamp/roster/anwar-sabir',
-      portfolioUrl: 'https://www.anwarsabir.com/',
-      name: 'Anwar Sabir',
-      image: AnwarImage,
-      linkedin: 'https://www.linkedin.com/in/anwar-sabir-140b74102/',
-      github: 'https://github.com/SabirLume',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_anwarsabir.pdf',
-      bio: 'I’ve had a interest in gaming since I was very young. The Nintendo 64 was one of my first systems. Playing classics like Mario and 007 Golden Eye exposed me to the wonders of technology. The way the games were built was captivating and sparked something in me. This was my gateway to the tech world. In my past internship, I analyzed negative data trends, and that opened my eyes on how crucial good software plays into optimizing workflow. These experiences led me to pursue a career as a full stack web developer. I’m eager to explore the different opportunities that coding will bring me. With code, a little bit of time, practice, patience and a strong will to not give up, you can turn a thought into reality.'
-    },
-    {
-      url: '/bootcamp/roster/micah-ella-estacio',
-      portfolioUrl: 'http://micahellaestac.io/',
-      name: 'Micah-Ella Estacio',
-      image: MicahEllaImage,
-      linkedin: 'https://www.linkedin.com/in/estmicahella/',
-      github: 'https://github.com/micahellastc',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_micahellaestacio.pdf',
-      bio: 'For the first two years of my university career, I was on the road to become a nurse, until I discovered programming. It reminded me of my passion for designing experiences, from producing beats, taking photographs of the cities I explored, to now creating aesthetic experiences for users. I also realized that I am constantly practicing empathy, ensuring quality experience just as nurses empathize with their patients. I use my creativity to craft beautiful and functional products. I’m now proudly contributing to this world with a laptop instead of a stethoscope, from working with my clients on creating their digital presence to an augmented reality application.'
-    },
-    {
-      url: '/bootcamp/roster/kevin-leiva',
-      portfolioUrl: 'https://www.kevinleiva.com/',
-      name: 'Kevin Leiva',
-      image: KevinLeImage,
-      linkedin: 'https://www.linkedin.com/in/kevinrleiva/',
-      github: 'https://github.com/KevinRLeiva',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_kevinleiva.pdf',
-      bio: `I came to the U.S when I was 8 years old, I didn’t know english that well and my mother worked very hard for me to have a comfortable life. She inspired me to be a hard worker and responsible. I’ve always wanted to make her proud and provide a comfortable life for her in the future, just like she did for me. I didn’t know what I wanted to do for a while, Then slowly I started getting interested in coding. I liked the idea of creating something that someone could use and make their day a lot easier, getting the chance to solve problems with coding and seeing if I can improve an existing idea. Whatever the challenge I face, I never give up and always put in a lot of effort and hard work.`
-    },
-    {
-      url: '/bootcamp/roster/raey-abera',
-      portfolioUrl: 'https://raeyabera.com/',
-      name: 'Raey Abera',
-      image: RaeyImage,
-      linkedin: 'https://www.linkedin.com/in/raeyabera/',
-      github: 'https://github.com/Raey-Abera',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_raeyabera.pdf',
-      bio: 'I’ve always had a dedicated mindset of “there has to be a better, easier, and ultimately more efficient way to do this.” As a former account manager, my creativity for problem-solving helped me think of different ways I could streamline processes and workflow.  This experience inspired me to enhance my coding skills and delve into programming which lets me exercise this dedication. I’m a software engineer striving to build immersive web-pages and apps through carefully crafted code and user-centric design. I am passionate about building excellent software that improves the lives of those around me and has a large effect on empowering users. I’m Raey and I’m looking to grow with an innovative and mission-driven team with global reach. '
-    },
-    {
-      url: '/bootcamp/roster/samantha-casseus',
-      portfolioUrl: 'https://www.samcasseusdev.com/',
-      name: 'Samantha Casseus',
-      image: SamanthaImage,
-      linkedin: 'https://www.linkedin.com/in/samantha-casseus-55150117b/',
-      github: 'https://github.com/samcassdev',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_samcasseus.pdf',
-      bio: 'My curiosity for knowing how things work behind the user’s experience led me to hours of doing extensive research on how web applications came together, and how developers and designers are working towards building more accessible applications. My background is in psychology, and I have a passion is for community and wellness. But it turns out that I am truly a problem-solver at heart. My newfound love for web accessibility is accompanied by a drive for troubleshooting and debugging code. I want to use my creativity to style websites and create a user experience. I want to join an engineering team that works to increase access and resources to empower others.'
-    },
-    {
-      url: '/bootcamp/roster/charles-de-farias',
-      portfolioUrl: 'https://www.charlesdefarias.com/',
-      name: 'Charles De Farias',
-      image: CharlesImage,
-      linkedin: 'https://www.linkedin.com/in/defarias/',
-      github: 'https://github.com/CharlesDeFarias',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_charlesdefaria.pdf',
-      bio: 'I LOVE problems. At my first job after college, I worked as a concierge for a year before producing and presenting a 10-page document recommending strategies to implement for greater client satisfaction, employee loyalty and quality of service, creating a new consultant position in the process. When I saw my parents spending more hours and experiencing more stress over their cleaning company’s pen-and-paper administration, I digitized all documents, downloaded quickbooks, and hired administrative freelancers that were able to communicate with my parents and their employees, and do all computer-related accounting for them. I am an ambitious software engineer, and obsessed with finding and solving problems in the most creative way possible.'
-    },
-    {
-      url: '/bootcamp/roster/oraka-wellington',
-      portfolioUrl: 'https://www.owellthedev.com/',
-      name: 'Oraka Wellington',
-      image: OrakaImage,
-      linkedin: 'https://www.linkedin.com/in/oraka-wellington-6886a217b/',
-      github: 'https://github.com/Orakaw',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_orakawellington.pdf',
-      bio: `I consider myself to be upbeat, self starting, and a great team player along with being able to perform well on solo projects. Being able to collaborate with others is a huge skill I pride myself on. My experiences have taught me how to be persistent and consistent which I see as characteristics needed to thrive in any environment. I look forward to the next opportunity to bring my talents to a great organization.  `
-    },
-    {
-      url: '/bootcamp/roster/sully-martinez',
-      portfolioUrl: 'https://sullymartinez.netlify.com/',
-      name: 'Sully Martinez',
-      image: SullyImage,
-      linkedin: 'https://www.linkedin.com/in/sullymartinez/',
-      github: 'https://github.com/SullyMA',
-      resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_sullymartinez.pdf',
-      bio: 'When I was 10 years old, my mom and I relocated to Boston from NYC seeking better educational opportunities. The latino community is associated with high school dropouts and teen pregnancy, and I wanted to prove these stereotypes wrong. Unfortunately, my parents couldn’t afford to pay for college, but I was determined to figure it out. I did. I graduated. The lack of diversity in tech led me to pursue a career in corporate operations and community engagement. After interacting with colleagues in that industry, I became convinced that software engineering is the path for me. With this newfound passion, I’m confident that my breadth of experiences, my tenacity, and my curiosity will be an asset to your engineering team.'
-    },
+  {
+    url: '/bootcamp/roster/melissa-asiamah',
+    portfolioUrl: 'https://friendly-thompson-87c069.netlify.com/',
+    name: 'Melissa Asiamah',
+    image: MelissaImage,
+    linkedin: 'https://www.linkedin.com/in/melissa-asiamah',
+    github: 'https://github.com/melissa-asiamah',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_melissaasiamah.pdf',
+    bio: `I consider myself to be an avid and fast learner, my passion for learning and problem solving in relation to programming began when I started to teach myself the beginnings of HTML, CSS, and Javascript. I was working in customer service and started making a connection. Much to my excitement, I was able to see how my career in retail related to software engineering because you’re building products for people. I will be able to continue my love for connecting people but now by collaborating with my team and creating innovative pathways for people and technology. I’m hoping to apply my knowledge and love for programming to make social impact, since resolving social issues is very important to me being someone that upholds people in my community.`
+  },
+  {
+    url: '/bootcamp/roster/ellie-nguyen',
+    portfolioUrl: 'https://www.ellienguyendev.com/',
+    name: 'Ellie Nguyen',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/ellienguyendev/',
+    github: 'https://github.com/ellienguyendev',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_ellienguyen.pdf',
+    bio: `Before I even came to realize it, I’ve always been a bridge. My parents immigrated to the States from Vietnam and I lived between two cultures, two languages and more identities than I can count. In listening to stories across the spectrum of life, I’ve learned to connect people in meaningful ways and to deeply investigate how things work to come up with innovative solutions. With technology being an integral part of our lives, I believe it should be developed to empower people to have a better quality of life. What I envision for myself and my communities will be a lifetime of hard work but I am committed to being the bridge between what is and what can be.`
+  },
+  {
+    url: '/bootcamp/roster/raymond-ortega',
+    portfolioUrl: 'https://www.raymondortega.com/',
+    name: 'Raymond Ortega',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/raymond-ortega-a5a1a1b0/',
+    github: 'https://github.com/RaymondOrtega',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_raymondortega.pdf',
+    bio: `Growing up in South Boston, I was young latino from a low class family who worked everyday to provide for me. This made me want to join the Marine Corps as an Avionics Technician. Thats where my passion for technology came into fruition, I loved having the opportunity to troubleshoot a multi million dollar Aircraft. While becoming more efficient in my understanding of how technologies work on a fundamental level. That wasn't enough for me, I then questioned how each component communicates on an intricate level. This is where my pursuit of software came into play. Resilient Coders Provided me with a unique opportunity of pursuing my passion. I now look forward to continuing my future in technology.`
+  },
+  {
+    url: '/bootcamp/roster/mike-neely',
+    portfolioUrl: '',
+    name: 'Mike Neely',
+    image: MikeyImage,
+    linkedin: 'https://www.linkedin.com/in/mikey-neely-03a59113/',
+    github: 'https://github.com/mikeyneely',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_raymondortega.pdf',
+    bio: `As a child growing up in Boston, I got a taste of the economic inequality that inner city communities endure  Living in between two historic universities, I would see how college students and working professionals seemed to never have to think about money or housing. Yet, in my community, it was the one thing we could all think about. Being resilient and true to myself, I began learning how to code as a way to ensure my family can adapt to the gentrification and automation that is taking place across inner cities in America. Resilient Coders empowered me to take my future into my own hands, and the expertise needed to be a valuable member of your Software Engineering team.`
+  },
+  {
+    url: '/bootcamp/roster/amanda-marcal',
+    portfolioUrl: 'https://www.amandamarcal.com/',
+    name: 'Amanda Marcal',
+    image: AmandaImage,
+    linkedin: 'https://www.linkedin.com/in/amandabmarcal/',
+    github: 'https://github.com/AmandaBMarcal',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_amandamarcal.pdf',
+    bio: `I’m a Software Engineer with a background in Tech sales. I first discovered programming by working alongside other software engineers and being fascinated with the technical problems and the thought process it took to solve them. With that fascination, I pursued an education at Resilient Coders. I aspire to code brilliant applications and better the lives of those that I love and have worked so hard to pave this future of mine. I want to utilize my skills and my passion for software engineering to change the world around me.`
+  },
+  {
+    url: '/bootcamp/roster/kaia-walters',
+    portfolioUrl: 'https://www.kaiawalters.com',
+    name: 'Kaia Walters',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/kaiawalters/',
+    github: 'https://github.com/KaiaWalters',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_kaiawalters.pdf',
+    bio: `I have lived in Boston my entire life and have seen it grow and change over the years in both positive and negative ways. From BPS school walkouts to the women's March, Boston’s activist and social justice community has played a large part in my development as a Jamaican American woman and has allowed me to not only advocate for the rights and needs of others but for myself as well. I bring that same passion for equity into my work in technology which already has the potential to change the lives of the most marginalized groups in our society. Through tech and specifically code I will change my community and my world.`
+  },
+  {
+    url: '/bootcamp/roster/stacy-lafume',
+    portfolioUrl: 'https://www.stacylafume.com/',
+    name: 'Stacy Lafume',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/stacy-lafume/',
+    github: 'https://github.com/StacyLafume',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_stacylafume.pdf',
+    bio: `At a young age, I was fascinated with art. I wanted to understand how the art piece was made and to finally created it myself. In high school, I was a Visual Artist. Like a sponge, I soaked up all the information I could. I got to understand the concepts that I've never implemented and explored theories that widened how I see the world visually and figuratively. Later, I then found myself in rolling in college to be a graphic designer. There I learned how to appreciate design, but I didn't want that to be the entirety of my career, I wanted more for myself in a slightly different direction. The direction that piqued my interest the most was websites and applications, I want to know what exactly is going on in the development field. How are the animations in the games interacting with me,  by a series of taps on the screen? Who or what is behind that functionality? I joined resilient coders not only to find that out but to make them on my own.`
+  },
+  {
+    url: '/bootcamp/roster/seth-villa',
+    portfolioUrl: 'https://sethvilla.com/',
+    name: 'Seth Villa',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/sethvilla/',
+    github: 'https://github.com/SethVilla',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_sethvilla.pdf',
+    bio: `Growing up, I wanted to be a “space cowboy astronaut”, I’ve always been fascinated by the creativity used in sci-fi and animation to portray the future. After college, I felt like I was missing out on that future. I was fortunate to find Resilient Coders, where I learned how to code. Now as a Software Engineer, I not only feel like an artist or a scientist, but now I have the tools at my disposal to make an impact on the future. I’m Seth and I’m looking forward to growing with a team, and leveraging our knowledge to make a difference.`
+  },
+  {
+    url: '/bootcamp/roster/kevin-gray',
+    portfolioUrl: 'https://www.getkgdevelopment.com/',
+    name: 'Kevin Gray',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/kevin-p-gray/',
+    github: 'https://github.com/kevingrayboston',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_kevingray.pdf',
+    bio: `I am a developer. It is not just what I do or who I am, it is how I’m wired. I have always had a natural instinct to see potential for greatness and know just what piece of the whole needs to be tinkered with to tease out the system’s best work. This ability to break down systems into their parts and rebuild them better is what drew me to study chemistry as an undergraduate student, to spend 10 years as an academic counselor and coach in higher ed, to be drawn to data, and to pursue a career as a software engineer. I see potential, break down the problem, and build a solution that’s just better. As a software engineer on your team, just imagine the potential of what I could develop with you.`
+  },
+  {
+    url: '/bootcamp/roster/saadia-sumrall',
+    portfolioUrl: 'https://saisumralldev.com',
+    name: 'Saadia Sumrall',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/saadia-sumrall-ab3803187/',
+    github: 'https://github.com/sainaadira',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_saadiasumrall.pdf',
+    bio: ``
+  },
+  {
+    url: '/bootcamp/roster/vanessa-clarke',
+    portfolioUrl: 'https://www.vanessaclarke.com/',
+    name: 'Vanessa Clarke',
+    image: VanessaImage,
+    linkedin: 'https://www.linkedin.com/in/vanessahclarke/',
+    github: 'https://github.com/VHClarke',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_vanessaclarke.pdf',
+    bio: `My name is Vanessa Clarke, and as a nontraditional Software Engineer, I first started my career in tech as a Help-Desk Support Technician. For a solid decade, I excelled and grew into that role, which taught me to have a strong sense of technical knowledge and how to communicate effectively in understanding technical problems and explaining its solution. I am very customer-oriented and patient in dealing with demanding situations. Now that I've transitioned into a Software Engineer, I justly carry these core skills with me. I am excited about my journey as a Software Engineer. I’m looking forward to all of the fantastic projects and awesome creations I will be taking part in.`
+  },
+  {
+    url: '/bootcamp/roster/dishon-davis',
+    portfolioUrl: 'https://stoic-jones-b2a9f3.netlify.com/',
+    name: 'Dishon Davis',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/dishon-davis-2b4a39132/',
+    github: 'https://github.com/dishondavis',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_dishondavis.pdf',
+    bio: `Growing up in Chicago, there were little resources to technology, but I still found a way to get my hands on a computer. As time went on, I found my love for first person shooter games. From that I learned the importance of teamwork and working effectively with others. As being a team player I also found ways to properly assess stress situations, adapt to my environment, and communicate to prioritize our agenda on winning. Now, I could implement them same skills in the work space. Where there's a stressful situation I could calmly and proficiently work through it. When in a team assignment, I will properly communicate to all my team members. Also, when having to meet a deadline I know how to prioritize and get the job done. `
+  },
+  {
+    url: '/bootcamp/roster/dionne-rodriguez',
+    portfolioUrl: 'https://www.dionnerodriguez.com/',
+    name: 'Dionne Rodriguez',
+    image: DionneImage,
+    linkedin: 'https://www.linkedin.com/in/dionne-rodriguez-750312187/',
+    github: 'https://github.com/Dionne-Rodriguez',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_dionnerodriguez.pdf',
+    bio: `My curiosity for technology lead me to take a Computer Science class in high school. I immediately noticed how different and intriguing the world of programming is. I learned many lessons such as problem solving skills and dissecting large complicated tasks. Being able to create something from scratch that has the power to impact people’s lives is an art, but also a privilege. I grew up with technology and I want to ensure future generations can benefit from it because it has the power to enrich people’s lives. Now as a software engineer my life has been filled with meaning and passion to create the technologies of the future and help those who have been left behind the most.`
+  },
+  {
+    url: '/bootcamp/roster/johann-folta',
+    portfolioUrl: 'https://johanndev.com/',
+    name: 'Johann Folta',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/johann-folta/',
+    github: 'https://github.com/joFolta',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_johannfolta.pdf',
+    bio: `Growing up in multiple countries (China, South Korea, US) along with unique opportunities to visit places such as Rwanda and North Korea, I bring a unique multicultural perspective to the development community. I strive to make a positive impact in my surrounding communities and previous experience include working hands-on with stroke patients and the elderly, mentoring adults with developmental disabilities, and providing exceptional customer service as an auto damage appraiser. Boston is the place I now call home, where I live with my lovely wife Maria, English bulldog named Snooky, and a baby on the way! Applying fortitude, strong work ethic, and a critical mind as a software engineer, I am excited to tackle with you the local and global problems of today to provide a better future for my family, our Boston family, and our global family.`
+  },
+  {
+    url: '/bootcamp/roster/roger-cruz',
+    portfolioUrl: 'https://www.rogerdcruz.com/',
+    name: 'Roger Cruz',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/roger-david-cruz/',
+    github: 'https://github.com/RogerDavidCruz',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_rogercuz.pdf',
+    bio: `My family immigrated from Ecuador to the United States for a better life. I went to amazing schools such as Boston Latin School and UMass Boston. Yet something was missing along my educational journey. Coding. Seriously, my ambition to build and create solutions to problems is what drives me to learn more everyday. I have a bachelors in Exercise and Health Sciences and worked at healthcare institutions such as Beth Israel Deaconess Medical Center. But creativity was missing in my day to day work and I was eager to explore the countless possibilities to explore my creativity with technology. Resilient Coders has been the bridge for me to transition from the healthcare field into the tech industry by teaching me the coding skills such as: HTML5, CSS3, JavaScript, Node, React, etc. Resilient Coders is an amazing opportunity that has sharpened my technical and professional skills. My strong analytical, communication, and adaptable skills make me more than just tech-savvy. My exponential potential for growth and continuous learning can assure you that I can be a strong addition to your company. Ultimately I want to speak up for the communities that need a need a voice through software engineering. Download my resume and let us continue the conversation.`
+  },
+  {
+    url: '/bootcamp/roster/faisal-alotaibi',
+    portfolioUrl: '',
+    name: 'Faisal Alotaibi',
+    image: EllieImage,
+    linkedin: 'https://www.linkedin.com/in/faisalalotaibi/',
+    github: 'https://github.com/FaisalRashed89',
+    resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019B/resume_faisalalotaibi.pdf',
+    bio: `I moved to the U.S. at age 24 to pursue my graduate studies and keep on my learning journey. While being thousands of miles away from home, I realized that I have to fight life’s obstacles and make good life choices. Therefore, I decided to join Resilient Coders as I have always had a passion for learning new things. I never knew I had a geek in me. I started becoming interested in coding the end of 2018 and ever since I became obsessed about the code world. I love bringing my code to life watching all the colors, design, and movements. In the future I aspire to dedicate my Software Engineering skills to create tools for underserved children to make sure everyone receive education.`
+  },
+    // {
+    //   url: '/bootcamp/roster/wiskinda-lamandier',
+    //   portfolioUrl: 'https://www.wiskinda.com/',
+    //   name: 'Wiskinda Lamandier',
+    //   image: WiskindaImage,
+    //   linkedin: 'https://www.linkedin.com/in/wslama/',
+    //   github: 'https://github.com/kendacodes',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_wiskindalamandier.pdf',
+    //   bio: "Growing up, I have always looked for the most creative approaches to complex situations. I became a consultant to put my ideas and creativity to use. My clients were entrepreneurs across different industries, and I’ve helped them launch their brands and businesses, with guidance on how to execute their strategies. Throughout this process, I’ve noticed that a common solution to their problems was integrating technology. So I delved into the tech world to better accommodate their needs. Little did I know that my love for learning how to code would lead me to Resilient Coders. This journey has allowed me to expand on my skills and provide solutions to everyday problems. I am eager to practice this in my future roles. "
+    // },
+    // {
+    //   url: '/bootcamp/roster/tehya-hubbert',
+    //   portfolioUrl: 'https://hubberttaye.com/',
+    //   name: 'Tehya Hubbert',
+    //   image: TehyaImage,
+    //   linkedin: 'https://www.linkedin.com/in/hubberttaye/',
+    //   github: 'https://github.com/HubbertTaye',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_tehyahubbert.pdf',
+    //   bio: 'I love playing MMORPGs, specifically for the multiplayer aspect. MMORPGs require teamwork, dedication and a community that gives back. While playing games like Final Fantasy 14 and MapleStory, I was able to understand the significance of a supportive and strong community in finishing timed quests, contributing loot and even mentoring other players. Through my time at Resilient Coders, I carried the same principles into my work ethic and through project completions. Whenever a teammate had a problem I could solve, I was always ready to help, and if I couldn’t solve it, I had a backup plan. Mentorship has always been a big part of my life, and I look forward to learning and sharing my knowledge at future companies.'
+    // },
+    // {
+    //   url: '/bootcamp/roster/chris-womack',
+    //   portfolioUrl: 'http://chriswomack.co',
+    //   name: 'Chris Womack',
+    //   image: ChrisImage,
+    //   linkedin: 'https://www.linkedin.com/in/chris-womack-6ab04717b/',
+    //   github: 'https://github.com/ChrisLWomack',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_chriswomack.pdf',
+    //   bio: `Growing up in inner-city Boston but being in METCO and attending school in Wellesley, MA, gave me intense perspective on the world. I was living amongst the disadvantaged but being educated and networked by some of the country’s most privileged. I realized early on that there was an expanding gap between the two, with little to no bridges to share wealth, resources or knowledge. I believe technology is a viable solution to all of these problems. Upon discovery of software engineering, I’ve been filled with passion and now the skills to find innovative ways to code and use technology to help those who have been left behind. And I will.`
+    // },
+    // {
+    //   url: '/bootcamp/roster/anwar-sabir',
+    //   portfolioUrl: 'https://www.anwarsabir.com/',
+    //   name: 'Anwar Sabir',
+    //   image: AnwarImage,
+    //   linkedin: 'https://www.linkedin.com/in/anwar-sabir-140b74102/',
+    //   github: 'https://github.com/SabirLume',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_anwarsabir.pdf',
+    //   bio: 'I’ve had a interest in gaming since I was very young. The Nintendo 64 was one of my first systems. Playing classics like Mario and 007 Golden Eye exposed me to the wonders of technology. The way the games were built was captivating and sparked something in me. This was my gateway to the tech world. In my past internship, I analyzed negative data trends, and that opened my eyes on how crucial good software plays into optimizing workflow. These experiences led me to pursue a career as a full stack web developer. I’m eager to explore the different opportunities that coding will bring me. With code, a little bit of time, practice, patience and a strong will to not give up, you can turn a thought into reality.'
+    // },
+    // {
+    //   url: '/bootcamp/roster/micah-ella-estacio',
+    //   portfolioUrl: 'http://micahellaestac.io/',
+    //   name: 'Micah-Ella Estacio',
+    //   image: MicahEllaImage,
+    //   linkedin: 'https://www.linkedin.com/in/estmicahella/',
+    //   github: 'https://github.com/micahellastc',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_micahellaestacio.pdf',
+    //   bio: 'For the first two years of my university career, I was on the road to become a nurse, until I discovered programming. It reminded me of my passion for designing experiences, from producing beats, taking photographs of the cities I explored, to now creating aesthetic experiences for users. I also realized that I am constantly practicing empathy, ensuring quality experience just as nurses empathize with their patients. I use my creativity to craft beautiful and functional products. I’m now proudly contributing to this world with a laptop instead of a stethoscope, from working with my clients on creating their digital presence to an augmented reality application.'
+    // },
+    // {
+    //   url: '/bootcamp/roster/kevin-leiva',
+    //   portfolioUrl: 'https://www.kevinleiva.com/',
+    //   name: 'Kevin Leiva',
+    //   image: KevinLeImage,
+    //   linkedin: 'https://www.linkedin.com/in/kevinrleiva/',
+    //   github: 'https://github.com/KevinRLeiva',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_kevinleiva.pdf',
+    //   bio: `I came to the U.S when I was 8 years old, I didn’t know english that well and my mother worked very hard for me to have a comfortable life. She inspired me to be a hard worker and responsible. I’ve always wanted to make her proud and provide a comfortable life for her in the future, just like she did for me. I didn’t know what I wanted to do for a while, Then slowly I started getting interested in coding. I liked the idea of creating something that someone could use and make their day a lot easier, getting the chance to solve problems with coding and seeing if I can improve an existing idea. Whatever the challenge I face, I never give up and always put in a lot of effort and hard work.`
+    // },
+    // {
+    //   url: '/bootcamp/roster/raey-abera',
+    //   portfolioUrl: 'https://raeyabera.com/',
+    //   name: 'Raey Abera',
+    //   image: RaeyImage,
+    //   linkedin: 'https://www.linkedin.com/in/raeyabera/',
+    //   github: 'https://github.com/Raey-Abera',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_raeyabera.pdf',
+    //   bio: 'I’ve always had a dedicated mindset of “there has to be a better, easier, and ultimately more efficient way to do this.” As a former account manager, my creativity for problem-solving helped me think of different ways I could streamline processes and workflow.  This experience inspired me to enhance my coding skills and delve into programming which lets me exercise this dedication. I’m a software engineer striving to build immersive web-pages and apps through carefully crafted code and user-centric design. I am passionate about building excellent software that improves the lives of those around me and has a large effect on empowering users. I’m Raey and I’m looking to grow with an innovative and mission-driven team with global reach. '
+    // },
+    // {
+    //   url: '/bootcamp/roster/samantha-casseus',
+    //   portfolioUrl: 'https://www.samcasseusdev.com/',
+    //   name: 'Samantha Casseus',
+    //   image: SamanthaImage,
+    //   linkedin: 'https://www.linkedin.com/in/samantha-casseus-55150117b/',
+    //   github: 'https://github.com/samcassdev',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_samcasseus.pdf',
+    //   bio: 'My curiosity for knowing how things work behind the user’s experience led me to hours of doing extensive research on how web applications came together, and how developers and designers are working towards building more accessible applications. My background is in psychology, and I have a passion is for community and wellness. But it turns out that I am truly a problem-solver at heart. My newfound love for web accessibility is accompanied by a drive for troubleshooting and debugging code. I want to use my creativity to style websites and create a user experience. I want to join an engineering team that works to increase access and resources to empower others.'
+    // },
+    // {
+    //   url: '/bootcamp/roster/charles-de-farias',
+    //   portfolioUrl: 'https://www.charlesdefarias.com/',
+    //   name: 'Charles De Farias',
+    //   image: CharlesImage,
+    //   linkedin: 'https://www.linkedin.com/in/defarias/',
+    //   github: 'https://github.com/CharlesDeFarias',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_charlesdefaria.pdf',
+    //   bio: 'I LOVE problems. At my first job after college, I worked as a concierge for a year before producing and presenting a 10-page document recommending strategies to implement for greater client satisfaction, employee loyalty and quality of service, creating a new consultant position in the process. When I saw my parents spending more hours and experiencing more stress over their cleaning company’s pen-and-paper administration, I digitized all documents, downloaded quickbooks, and hired administrative freelancers that were able to communicate with my parents and their employees, and do all computer-related accounting for them. I am an ambitious software engineer, and obsessed with finding and solving problems in the most creative way possible.'
+    // },
+    // {
+    //   url: '/bootcamp/roster/oraka-wellington',
+    //   portfolioUrl: 'https://www.owellthedev.com/',
+    //   name: 'Oraka Wellington',
+    //   image: OrakaImage,
+    //   linkedin: 'https://www.linkedin.com/in/oraka-wellington-6886a217b/',
+    //   github: 'https://github.com/Orakaw',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_orakawellington.pdf',
+    //   bio: `I consider myself to be upbeat, self starting, and a great team player along with being able to perform well on solo projects. Being able to collaborate with others is a huge skill I pride myself on. My experiences have taught me how to be persistent and consistent which I see as characteristics needed to thrive in any environment. I look forward to the next opportunity to bring my talents to a great organization.  `
+    // },
+    // {
+    //   url: '/bootcamp/roster/sully-martinez',
+    //   portfolioUrl: 'https://sullymartinez.netlify.com/',
+    //   name: 'Sully Martinez',
+    //   image: SullyImage,
+    //   linkedin: 'https://www.linkedin.com/in/sullymartinez/',
+    //   github: 'https://github.com/SullyMA',
+    //   resume: 'https://cdn2.hubspot.net/hubfs/2253693/resumes/2019A/resume_sullymartinez.pdf',
+    //   bio: 'When I was 10 years old, my mom and I relocated to Boston from NYC seeking better educational opportunities. The latino community is associated with high school dropouts and teen pregnancy, and I wanted to prove these stereotypes wrong. Unfortunately, my parents couldn’t afford to pay for college, but I was determined to figure it out. I did. I graduated. The lack of diversity in tech led me to pursue a career in corporate operations and community engagement. After interacting with colleagues in that industry, I became convinced that software engineering is the path for me. With this newfound passion, I’m confident that my breadth of experiences, my tenacity, and my curiosity will be an asset to your engineering team.'
+    // },
     // {
     //   url: '/bootcamp/roster/kareem-walls-sanders',
     //   portfolioUrl: 'https://kareemwallssanders.com/',
