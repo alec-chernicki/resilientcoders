@@ -9,7 +9,7 @@ import UILayout from 'UILibrary/layout/UILayout';
 import UIImage from 'UILibrary/image/UIImage';
 import UISection from 'UILibrary/layout/UISection';
 import UICard from 'UILibrary/layout/UICard';
-import UIMediaCarousel from 'UILibrary/layout/UIMediaCarousel';
+// import UIMediaCarousel from 'UILibrary/layout/UIMediaCarousel';
 import UIFlexRow from 'UILibrary/grid/UIFlexRow';
 import UIFlex from 'UILibrary/grid/UIFlex';
 // import UILayer from 'UILibrary/layer/UILayer';
@@ -17,7 +17,7 @@ import UISkewedLayer from 'UILibrary/layer/UISkewedLayer';
 import UIHero from 'UILibrary/layout/UIHero';
 
 import PaypalDonateButton from './PaypalDonateButton';
-import DonorsConfig from './Donors/DonorsConfig';
+// import DonorsConfig from './Donors/DonorsConfig';
 import donorPartnersConfig from './donorPartnersConfig';
 import Partners from '../../components/Containers/Partners/Partners';
 
