@@ -103,9 +103,24 @@ class UIInformationCarousel extends React.Component {
   }
   renderButton() {
     const { link } = this.getCurrentItem();
+    console.log(link)
 
     if(!link) {
       return null;
+    }
+
+    if (typeof link === 'object') {
+      if (link.component) {
+        let ButtonComponent = link.component;
+        return (
+          <ButtonComponent />
+        );
+      }
+      return (
+      <UIButton to={link.url}>
+          { link.text ? `${link.text}` : `Learn More` }
+      </UIButton>
+      );
     }
 
     return (
