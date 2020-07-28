@@ -20,50 +20,50 @@ import mentorImage from './mentor.png';
 import studentImage from './student.png';
 import companyImage from './company.png';
 
-// const INVOLVEMENT_TYPES = [
-//   {
-//     title: 'Hire',
-//     text: 'Hire our students and increase diversity within your workforce.',
-//     image: companyImage,
-//     url: '/get-involved/company'
-//   },
-//   {
-//     title: 'Students',
-//     text: 'Start your coding career now, learn how to start learning with us.',
-//     image: studentImage,
-//     url: '/get-involved/student'
-//   },
-//   {
-//     title: 'Volunteer',
-//     text: 'Give back to your community and become a diversity advocate.',
-//     image: mentorImage,
-//     url: '/get-involved/volunteer'
-//   }
-// ];
+const INVOLVEMENT_TYPES = [
+  {
+    title: 'Hire',
+    text: 'Hire our students and increase diversity within your workforce.',
+    image: companyImage,
+    url: '/get-involved/company'
+  },
+  {
+    title: 'Students',
+    text: 'Start your coding career now, learn how to start learning with us.',
+    image: studentImage,
+    url: '/get-involved/student'
+  },
+  {
+    title: 'Volunteer',
+    text: 'Give back to your community and become a diversity advocate.',
+    image: mentorImage,
+    url: '/get-involved/volunteer'
+  }
+];
 
-// class GetInvolved extends React.Component {
-//   renderCards() {
-//     return INVOLVEMENT_TYPES.map((item, key) => {
-//       return (
-//         <UIFlex
-//           key={key}
-//           basis="31%"
-//           grow={0}
-//           shrink={0}
-//           className="index-10 m-sm-bottom-4"
-//         >
-//           <Link to={item.url}>
-//             <UIContentButton
-//               image={item.image}
-//               title={item.title}
-//               text={item.text}
-//               buttonText="Learn more"
-//             />
-//           </Link>
-//         </UIFlex>
-//       );
-//     })
-//   }
+class GetInvolved extends React.Component {
+  renderCards() {
+    return INVOLVEMENT_TYPES.map((item, key) => {
+      return (
+        <UIFlex
+          key={key}
+          basis="31%"
+          grow={0}
+          shrink={0}
+          className="index-10 m-sm-bottom-4"
+        >
+          <Link to={item.url}>
+            <UIContentButton
+              image={item.image}
+              title={item.title}
+              text={item.text}
+              buttonText="Learn more"
+            />
+          </Link>
+        </UIFlex>
+      );
+    })
+  }
   render () {
     return (
       <RouteTransition>
