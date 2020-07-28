@@ -19,8 +19,12 @@ export default {
     route: '/team',
     name: 'Team',
   },
-  'GET_INVOLVED': {
-    route: '/get-involved',
-    name: 'Get Involved'
+  // 'GET_INVOLVED': {
+  //   route: '/get-involved',
+  //   name: 'Get Involved'
+  // },
+  'DONATE_TEST': {
+    route: '/dontate-test',
+    name: 'Donate Test'
   }
 }
