@@ -66,7 +66,7 @@
     "event-stream": "^4.0.1",
     "express": "^4.16.3",
     "express-robots": "^0.1.6",
-    "gsap": "^1.20.4",
+    "gsap": "^3.6.0",
     "modernizr": "^3.6.0",
     "modernizr-loader": "0.0.5",
     "object-fit-images": "^3.1.3",
