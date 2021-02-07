@@ -19,6 +19,8 @@ import rosterMembersConfig from '../pages/Bootcamp/Roster/rosterMembersConfig';
 import Playbook from '../pages/Playbook/Playbook';
 import IsCommunityOnToday from '../pages/Community/IsCommunityOnToday/IsCommunityOnToday';
 
+import MediaKit from '../pages/MediaKit/MediaKit';
+
 import {Route, IndexRoute, Redirect} from 'react-router';
 import App from '../App';
 
@@ -53,6 +55,7 @@ export default(
       <Route path="thankyou" component={GetInvolvedThankYou}/>
       <Redirect from="mentor" to='volunteer' />
     </Route>
+    <Route path="media-kit" component={MediaKit} />
 
     {/* This is a catch-all instead of a 404. DO NOT REMOVE */}
     <Redirect from="*" to="/" />
