@@ -64,7 +64,7 @@
     "compression": "^1.7.2",
     "cookie-parser": "^1.4.3",
     "event-stream": "^4.0.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-robots": "^0.1.6",
     "gsap": "^1.20.4",
     "modernizr": "^3.6.0",
